@@ -1,4 +1,7 @@
+const model = require('./model');
+const _ = require('underscore');
 
-exports.getGames = function(request, response) {
-  response.json({});
+exports.getGames = async function (request, response) {
+  const games = await model.Game.findAll();
+  response.json(games);
 };
