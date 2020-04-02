@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "media-mogul-two"
+    }
+  },
+  "defaultProject": "media-mogul-two",
+  "cli": {
+    "analytics": "eccd4a51-5159-4fdd-953f-16a0059f90b2"
+  }
 }
