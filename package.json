@@ -5,7 +5,10 @@
     "ng": "ng",
     "start": "node ./bin/www",
     "start-local": "ng serve",
+    "server": "ng build && node ./bin/www",
+    "debug": "ng build && node ./bin/www dev $NODE_DEBUG_OPTION",
     "build": "ng build",
+    "build-node": "ng build --configuration=node-server",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -20,6 +23,7 @@
     "@angular/platform-browser": "~9.1.0",
     "@angular/platform-browser-dynamic": "~9.1.0",
     "@angular/router": "~9.1.0",
+    "angular-in-memory-web-api": "0.10.0",
     "body-parser": "1.19.0",
     "debug": "4.1.1",
     "express": "4.17.1",

@@ -1,3 +1,6 @@
+import {HttpClientModule} from '@angular/common/http';
+
 export const environment = {
-  production: true
+  production: true,
+  httpModules: [HttpClientModule],
 };

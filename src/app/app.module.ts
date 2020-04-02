@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { GameListComponent } from './components/game-list/game-list.component';
 import {HttpClientModule} from '@angular/common/http';
+import {environment} from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import {HttpClientModule} from '@angular/common/http';
     GameListComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule
+    BrowserModule,
+    environment.httpModules,
   ],
   providers: [],
   bootstrap: [AppComponent]
