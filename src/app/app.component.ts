@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.gameService.refreshCache().subscribe(games => {
+    this.gameService.refreshCache().then(games => {
       this.arrayService.refreshArray(this.games, games);
     });
   }

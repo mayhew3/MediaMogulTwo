@@ -17,14 +17,13 @@ export class GameService {
     this.cache = [];
   }
 
-  // todo: switch to promise
-  refreshCache(): Observable<Game[]> {
-    return new Observable<Game[]>(observer => {
+  refreshCache(): Promise<Game[]> {
+    return new Promise<Game[]>(resolve => {
       this.arrayService.emptyArray(this.cache);
       const subscription = this.http.get<Game[]>(this.gamesUrl).subscribe((gameObjs) => {
         const games = plainToClass(Game, gameObjs);
         this.arrayService.refreshArray(this.cache, games);
-        observer.next(games);
+        resolve(games);
         subscription.unsubscribe();
       });
     });
