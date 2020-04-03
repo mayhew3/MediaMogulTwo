@@ -4,6 +4,6 @@ export class Game {
   igdbPoster: string;
   logo: string;
   giantBombMedium: string;
-  steamID: string;
+  steamID: number;
   brokenImage: boolean;
 }
