@@ -1,7 +1,6 @@
-/* tslint:disable:object-literal-key-quotes */
-import {Game} from '../interfaces/Game';
 /* tslint:disable quotemark */
-export const MockGames: Game[] = [
+/* tslint:disable:object-literal-key-quotes */
+export const MockGames = [
   {
     "giantBombMedium": null,
     "steamID": 286160,

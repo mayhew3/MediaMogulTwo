@@ -3,6 +3,7 @@ import {Game} from '../interfaces/Game';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {ArrayService} from './array.service';
+import {plainToClass} from 'class-transformer';
 
 @Injectable({
   providedIn: 'root'
@@ -20,10 +21,11 @@ export class GameService {
   refreshCache(): Observable<Game[]> {
     return new Observable<Game[]>(observer => {
       this.arrayService.emptyArray(this.cache);
-      // todo: unsubscribe
-      this.http.get<Game[]>(this.gamesUrl).subscribe((games: Game[]) => {
+      const subscription = this.http.get<Game[]>(this.gamesUrl).subscribe((gameObjs) => {
+        const games = plainToClass(Game, gameObjs);
         this.arrayService.refreshArray(this.cache, games);
         observer.next(games);
+        subscription.unsubscribe();
       });
     });
   }
