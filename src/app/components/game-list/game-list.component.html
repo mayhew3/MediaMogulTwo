@@ -1,8 +1,8 @@
 <div class="container">
   <div class="row" *ngIf="!!games">
-    <div class="col-12"
+    <div class="col-4 gameCard"
          *ngFor="let game of games">
-      {{game.id}}: {{game.title}}
+      <mm-game-card [game]="game"></mm-game-card>
     </div>
   </div>
 </div>

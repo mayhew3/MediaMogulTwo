@@ -1,1 +1,18 @@
-<p>game-card works!</p>
+<div class="gameCardInside">
+  <div class="col-12 gameImageContainer">
+
+    <img class="rounded gameImage"
+         *ngIf="!!getImageUrl()"
+         src="{{getImageUrl()}}"
+         alt="{{game.title}}"/>
+
+    <br>
+
+    <div class="col-12"
+         *ngIf="!getImageUrl()">
+      <span>{{game.title}}</span>
+    </div>
+
+  </div>
+
+</div>

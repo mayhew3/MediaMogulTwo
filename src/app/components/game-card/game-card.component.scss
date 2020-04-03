@@ -1,0 +1,31 @@
+
+.gameCardInside {
+  background-color: #272b30;
+  padding: 7px;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.gameImageContainer {
+  height: 100%;
+}
+
+.gameImage {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.addGameButton {
+  top: 2pt;
+  font-size: 18pt;
+  font-weight: bolder;
+  vertical-align: bottom;
+  horiz-align: center;
+  text-align: center;
+  position: relative;
+  margin-top: 0;
+  padding: 0 5pt;
+  border-radius: 3pt;
+}
