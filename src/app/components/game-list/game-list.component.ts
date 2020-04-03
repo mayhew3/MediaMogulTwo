@@ -5,7 +5,7 @@ import {GameService} from '../../services/game.service';
 @Component({
   selector: 'mm-game-list',
   templateUrl: './game-list.component.html',
-  styleUrls: ['./game-list.component.css']
+  styleUrls: ['./game-list.component.scss']
 })
 export class GameListComponent implements OnInit {
   games: Game[];
