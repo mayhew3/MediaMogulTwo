@@ -6,6 +6,7 @@ import { GameListComponent } from './components/game-list/game-list.component';
 import {environment} from '../environments/environment';
 import { GameCardComponent } from './components/game-card/game-card.component';
 import { ImagePreloadDirective } from './directives/image-preload.directive';
+import {NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ImagePreloadDirective } from './directives/image-preload.directive';
   imports: [
     BrowserModule,
     environment.httpModules,
+    NgbPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

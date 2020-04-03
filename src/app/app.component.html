@@ -1,6 +1,7 @@
 <div class="container">
   <h1>Games</h1>
   <mm-game-list *ngIf="!!games"
+                [pageSize]="9"
                 [games]="games"></mm-game-list>
 </div>
 

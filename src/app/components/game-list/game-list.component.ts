@@ -8,6 +8,8 @@ import {Game} from '../../interfaces/Game';
 })
 export class GameListComponent {
   @Input() games: Game[];
+  @Input() pageSize: number;
+  page = 1;
 
   constructor() { }
 }
