@@ -6,4 +6,5 @@ export class Game {
   giantBombMedium: string;
   steamID: number;
   brokenImage: boolean;
+  lastPlayed: string;
 }
