@@ -7,13 +7,15 @@ import {environment} from '../environments/environment';
 import { GameCardComponent } from './components/game-card/game-card.component';
 import { ImagePreloadDirective } from './directives/image-preload.directive';
 import {NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
+import { PlaytimePopupComponent } from './components/playtime-popup/playtime-popup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GameListComponent,
     GameCardComponent,
-    ImagePreloadDirective
+    ImagePreloadDirective,
+    PlaytimePopupComponent
   ],
   imports: [
     BrowserModule,

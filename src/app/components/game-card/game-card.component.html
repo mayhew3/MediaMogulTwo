@@ -9,21 +9,17 @@
            default="../../../assets/GenericSeries.gif"
            alt="{{game.title}}"/>
 
-      <br>
-
-      <div class="col-12"
-           *ngIf="!getImageUrl() || game.brokenImage">
-        <span>{{game.title}}</span>
-      </div>
-
     </div>
 
     <div class="col-6">
       {{game.title}}<br>
       <br>
       <span *ngIf="!!game.personGame.lastPlayed">
-      {{game.personGame.lastPlayed | date: game.personGame.getLastPlayedFormat():'America/Los_Angeles'}}
-    </span>
+        {{game.personGame.lastPlayed | date: game.personGame.getLastPlayedFormat():'America/Los_Angeles'}}
+      </span><br>
+      <br>
+      <button class="btn btn-success"
+              (click)="open(game)">Playtime</button>
     </div>
 
   </div>

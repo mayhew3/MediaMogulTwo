@@ -29,6 +29,7 @@ export class Game {
     this.timeTotal = gameObj.timeTotal;
     this.metacritic = gameObj.metacritic;
     this.naturalEnd = gameObj.naturalEnd;
+    this.platform = gameObj.platform;
     this.dateAdded = new Date(gameObj.dateAdded);
   }
 

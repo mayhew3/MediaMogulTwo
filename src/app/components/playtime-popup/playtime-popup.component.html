@@ -1,0 +1,29 @@
+
+  <div class="modal-header">
+    <h1>Add Playtime</h1>
+    <button type="button"
+            class="close"
+            aria-label="Close"
+            (click)="activeModal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div class="modal-body">
+    <h3>{{game.title}}</h3>
+    <form>
+      <label for="playtime">Playtime:</label>
+      <div class="input-group">
+        <input id="playtime"
+               class="form-control"
+               name="playtime"
+               type="text">
+      </div>
+    </form>
+  </div>
+
+  <div class="modal-footer">
+    <button type="button"
+            class="btn btn-success"
+            (click)="activeModal.close('Save click')">Save</button>
+  </div>
