@@ -2,6 +2,7 @@ import {Injectable} from '@angular/core';
 import {Game} from '../interfaces/Game';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {ArrayService} from './array.service';
+import * as _ from 'underscore';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -19,34 +20,19 @@ export class GameService {
     this.cache = [];
   }
 
-  refreshCache(): Promise<Game[]> {
-    return new Promise<Game[]>(resolve => {
-      this.arrayService.emptyArray(this.cache);
-      this.http.get<any[]>(this.gamesUrl).toPromise()
-        .then((gameObjs) => {
-          const games = this.convertObjectsToGames(gameObjs);
-          this.arrayService.refreshArray(this.cache, games);
-          resolve(games);
-        });
-    });
+  async refreshCache(): Promise<Game[]> {
+    const gameObjs = await this.http.get<any[]>(this.gamesUrl).toPromise();
+    const games = this.convertObjectsToGames(gameObjs);
+    this.arrayService.refreshArray(this.cache, games);
+    return this.cache;
   }
 
   convertObjectsToGames(gameObjs: any[]): Game[] {
-    const games = [];
-    for (const gameObj of gameObjs) {
-      const game = new Game(gameObj);
-      games.push(game);
-    }
-    return games;
+    return _.map(gameObjs, gameObj => new Game(gameObj));
   }
 
-  updateGame(gameID: number, changedFields): Promise<any> {
-    return new Promise<any>(resolve => {
-      const payload = {gameID, changedFields};
-      this.http.patch(this.gamesUrl, payload, httpOptions).toPromise()
-        .then(() => {
-          resolve();
-        });
-    });
+  async updateGame(gameID: number, changedFields): Promise<any> {
+    const payload = {gameID, changedFields};
+    await this.http.patch(this.gamesUrl, payload, httpOptions).toPromise();
   }
 }
