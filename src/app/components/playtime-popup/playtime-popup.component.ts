@@ -1,6 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import {Game} from '../../interfaces/Game';
+import {GameService} from '../../services/game.service';
 
 @Component({
   selector: 'mm-playtime-popup',
@@ -9,7 +10,18 @@ import {Game} from '../../interfaces/Game';
 })
 export class PlaytimePopupComponent {
   @Input() game: Game;
+  changedPlaytime: number;
 
-  constructor(public activeModal: NgbActiveModal) { }
+  constructor(public activeModal: NgbActiveModal,
+              private gameService: GameService) { }
 
+  async saveAndClose() {
+    try {
+      const changedFields = {minutesPlayed: this.changedPlaytime};
+      await this.gameService.updateGame(this.game, changedFields);
+      this.activeModal.close('Save Click');
+    } catch (err) {
+      console.error(err);
+    }
+  }
 }

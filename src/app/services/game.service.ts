@@ -31,8 +31,19 @@ export class GameService {
     return _.map(gameObjs, gameObj => new Game(gameObj));
   }
 
-  async updateGame(gameID: number, changedFields): Promise<any> {
-    const payload = {gameID, changedFields};
-    await this.http.patch(this.gamesUrl, payload, httpOptions).toPromise();
+  async updateGame(game: Game, changedFields): Promise<any> {
+    const payload = {id: game.id, changedFields};
+    await this.http.put(this.gamesUrl, payload, httpOptions).toPromise();
+    this.updateChangedFieldsOnObject(game, changedFields);
   }
+
+  // noinspection JSMethodCanBeStatic
+  private updateChangedFieldsOnObject(obj: any, changedFields: any) {
+    for (const key in changedFields) {
+      if (changedFields.hasOwnProperty(key)) {
+        obj[key] = changedFields[key];
+      }
+    }
+  }
+
 }

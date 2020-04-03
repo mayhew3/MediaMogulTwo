@@ -8,6 +8,7 @@ import { GameCardComponent } from './components/game-card/game-card.component';
 import { ImagePreloadDirective } from './directives/image-preload.directive';
 import {NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
 import { PlaytimePopupComponent } from './components/playtime-popup/playtime-popup.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PlaytimePopupComponent } from './components/playtime-popup/playtime-pop
   imports: [
     BrowserModule,
     environment.httpModules,
-    NgbPaginationModule
+    NgbPaginationModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

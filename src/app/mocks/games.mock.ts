@@ -2,67 +2,18 @@
 /* tslint:disable:object-literal-key-quotes */
 export const MockGames = [
   {
-    "giantBombMedium": null,
+    "giantBombMedium": "https://www.giantbomb.com/api/image/scale_medium/3145045-alyx_coverart.jpg",
     "howlongExtras": null,
     "timeTotal": null,
     "metacritic": null,
     "personGame": {
       "finalScore": null,
       "tier": 2,
-      "rating": null,
-      "id": 1471,
-      "replayScore": null,
-      "lastPlayed": "2020-03-31 13:10:54.201",
-      "dateAdded": "2020-03-21 14:41:11.058",
-      "finishedDate": null,
-      "replayReason": null
-    },
-    "title": "Tabletop Simulator",
-    "dateAdded": "2020-03-21 14:41:11.055",
-    "platform": "Steam",
-    "steamID": 286160,
-    "logo": "4cd5c6a6580ae6e85026ac670f9fa1a0b45372c3",
-    "id": 1032,
-    "naturalEnd": true,
-    "igdbPoster": "co20xe"
-  },
-  {
-    "giantBombMedium": "https://www.giantbomb.com/api/image/scale_medium/2994372-3242051476-BeatS.jpg",
-    "howlongExtras": 11.9333,
-    "timeTotal": null,
-    "metacritic": 93,
-    "personGame": {
-      "finalScore": null,
-      "tier": 2,
-      "rating": 96,
-      "id": 1450,
-      "replayScore": null,
-      "lastPlayed": "2020-03-30 16:09:47.492",
-      "dateAdded": "2019-07-05 18:30:13.802",
-      "finishedDate": null,
-      "replayReason": null
-    },
-    "title": "Beat Saber",
-    "dateAdded": "2019-07-05 18:30:13.8",
-    "platform": "Steam",
-    "steamID": 620980,
-    "logo": "3c62ccbe82e468b22b62fba0e254a8527445aab6",
-    "id": 1013,
-    "naturalEnd": true,
-    "igdbPoster": "co1itk"
-  },
-  {
-    "giantBombMedium": "https://www.giantbomb.com/api/image/scale_medium/3145045-alyx_coverart.jpg",
-    "howlongExtras": 10.6667,
-    "timeTotal": null,
-    "metacritic": null,
-    "personGame": {
-      "finalScore": null,
-      "tier": 2,
+      "minutesPlayed": 175,
       "rating": null,
       "id": 1467,
       "replayScore": null,
-      "lastPlayed": "2020-03-30 15:09:46.307",
+      "lastPlayed": "2020-03-26 19:05:22.989",
       "dateAdded": "2019-11-21 16:45:12.415",
       "finishedDate": null,
       "replayReason": null
@@ -77,54 +28,30 @@ export const MockGames = [
     "igdbPoster": null
   },
   {
-    "giantBombMedium": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2701424-box_lcattos.jpg",
-    "howlongExtras": 6.1,
+    "giantBombMedium": "https://www.giantbomb.com/api/image/scale_medium/2994372-3242051476-BeatS.jpg",
+    "howlongExtras": 11.9333,
     "timeTotal": null,
-    "metacritic": 73,
+    "metacritic": 93,
     "personGame": {
       "finalScore": null,
       "tier": 2,
-      "rating": null,
-      "id": 226,
+      "minutesPlayed": 3202,
+      "rating": 96,
+      "id": 1450,
       "replayScore": null,
-      "lastPlayed": "2020-03-29 23:09:24.215",
-      "dateAdded": "2015-02-05 15:00:01.129",
+      "lastPlayed": "2020-03-26 19:05:22.533",
+      "dateAdded": "2019-07-05 18:30:13.802",
       "finishedDate": null,
       "replayReason": null
     },
-    "title": "Lara Croft and the Temple of Osiris",
-    "dateAdded": "2015-02-05 15:00:01.129",
+    "title": "Beat Saber",
+    "dateAdded": "2019-07-05 18:30:13.8",
     "platform": "Steam",
-    "steamID": 289690,
-    "logo": "4e777a99ba228c1d6af4551c3c72931e355dede4",
-    "id": 371,
+    "steamID": 620980,
+    "logo": "3c62ccbe82e468b22b62fba0e254a8527445aab6",
+    "id": 1013,
     "naturalEnd": true,
-    "igdbPoster": "co1voe"
-  },
-  {
-    "giantBombMedium": "https://www.giantbomb.com/api/image/scale_medium/2966744-4737054179-JPP4P.jpg",
-    "howlongExtras": null,
-    "timeTotal": null,
-    "metacritic": null,
-    "personGame": {
-      "finalScore": null,
-      "tier": 2,
-      "rating": null,
-      "id": 215,
-      "replayScore": null,
-      "lastPlayed": "2020-03-27 22:06:43.133",
-      "dateAdded": "2017-11-23 12:10:51.205",
-      "finishedDate": null,
-      "replayReason": null
-    },
-    "title": "The Jackbox Party Pack 4",
-    "dateAdded": "2017-11-23 12:10:51.205",
-    "platform": "Steam",
-    "steamID": 610180,
-    "logo": "11f6886c1deb548887d2fff6ce742dbfc1ad5e67",
-    "id": 751,
-    "naturalEnd": false,
-    "igdbPoster": "yazbq2qvdavzanzgae8i"
+    "igdbPoster": "co1itk"
   },
   {
     "giantBombMedium": null,
@@ -134,6 +61,33 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 14,
+      "rating": null,
+      "id": 1471,
+      "replayScore": null,
+      "lastPlayed": "2020-03-23 18:45:52.771",
+      "dateAdded": "2020-03-21 14:41:11.058",
+      "finishedDate": null,
+      "replayReason": null
+    },
+    "title": "Tabletop Simulator",
+    "dateAdded": "2020-03-21 14:41:11.055",
+    "platform": "Steam",
+    "steamID": 286160,
+    "logo": "4cd5c6a6580ae6e85026ac670f9fa1a0b45372c3",
+    "id": 1032,
+    "naturalEnd": true,
+    "igdbPoster": "co20xe"
+  },
+  {
+    "giantBombMedium": null,
+    "howlongExtras": null,
+    "timeTotal": null,
+    "metacritic": null,
+    "personGame": {
+      "finalScore": null,
+      "tier": 2,
+      "minutesPlayed": 62,
       "rating": null,
       "id": 1470,
       "replayScore": null,
@@ -159,6 +113,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 224,
       "rating": null,
       "id": 1459,
       "replayScore": null,
@@ -184,6 +139,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 91,
       "rating": 60,
       "id": 115,
       "replayScore": null,
@@ -209,6 +165,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 1213,
       "rating": 97,
       "id": 220,
       "replayScore": null,
@@ -234,6 +191,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 24968,
       "rating": 96.3,
       "id": 107,
       "replayScore": null,
@@ -259,6 +217,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 1,
       "rating": null,
       "id": 1458,
       "replayScore": null,
@@ -284,6 +243,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 11592,
       "rating": 94.5,
       "id": 140,
       "replayScore": null,
@@ -309,6 +269,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 148,
       "rating": 97.5,
       "id": 392,
       "replayScore": null,
@@ -334,6 +295,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 16,
       "rating": null,
       "id": 1468,
       "replayScore": null,
@@ -359,6 +321,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 2407,
       "rating": 99,
       "id": 134,
       "replayScore": null,
@@ -384,6 +347,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 98,
       "rating": 96,
       "id": 565,
       "replayScore": null,
@@ -409,6 +373,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 2486,
       "rating": 98,
       "id": 1354,
       "replayScore": null,
@@ -434,6 +399,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 296,
       "rating": 85.3,
       "id": 727,
       "replayScore": null,
@@ -452,6 +418,32 @@ export const MockGames = [
     "igdbPoster": "co1wyy"
   },
   {
+    "giantBombMedium": "https://www.giantbomb.com/api/image/scale_medium/2966744-4737054179-JPP4P.jpg",
+    "howlongExtras": null,
+    "timeTotal": null,
+    "metacritic": null,
+    "personGame": {
+      "finalScore": null,
+      "tier": 2,
+      "minutesPlayed": 235,
+      "rating": null,
+      "id": 215,
+      "replayScore": null,
+      "lastPlayed": "2019-12-25 14:44:33.373",
+      "dateAdded": "2017-11-23 12:10:51.205",
+      "finishedDate": null,
+      "replayReason": null
+    },
+    "title": "The Jackbox Party Pack 4",
+    "dateAdded": "2017-11-23 12:10:51.205",
+    "platform": "Steam",
+    "steamID": 610180,
+    "logo": "11f6886c1deb548887d2fff6ce742dbfc1ad5e67",
+    "id": 751,
+    "naturalEnd": false,
+    "igdbPoster": "yazbq2qvdavzanzgae8i"
+  },
+  {
     "giantBombMedium": "https://www.giantbomb.com/api/image/scale_medium/3135755-box_jpp6.png",
     "howlongExtras": null,
     "timeTotal": null,
@@ -459,6 +451,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 72,
       "rating": null,
       "id": 1466,
       "replayScore": null,
@@ -484,6 +477,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 405,
       "rating": null,
       "id": 1465,
       "replayScore": null,
@@ -509,6 +503,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 721,
       "rating": 78,
       "id": 71,
       "replayScore": null,
@@ -534,6 +529,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 45,
       "rating": null,
       "id": 724,
       "replayScore": null,
@@ -559,6 +555,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 322,
       "rating": 84,
       "id": 247,
       "replayScore": null,
@@ -584,6 +581,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 49,
       "rating": 94,
       "id": 1440,
       "replayScore": null,
@@ -609,6 +607,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 136,
       "rating": 89.3,
       "id": 625,
       "replayScore": null,
@@ -634,6 +633,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 60,
       "rating": 93,
       "id": 1451,
       "replayScore": null,
@@ -659,6 +659,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 24,
       "rating": 91.8,
       "id": 20,
       "replayScore": null,
@@ -677,31 +678,6 @@ export const MockGames = [
     "igdbPoster": "co1rs4"
   },
   {
-    "giantBombMedium": "https://www.giantbomb.com/api/image/scale_medium/2892487-gears%20of%20war%204%20v1.jpg",
-    "howlongExtras": 11,
-    "timeTotal": null,
-    "metacritic": 84,
-    "personGame": {
-      "finalScore": null,
-      "tier": 2,
-      "rating": 90,
-      "id": 1462,
-      "replayScore": null,
-      "lastPlayed": "2019-08-01 00:00:00.0",
-      "dateAdded": "2019-08-01 10:30:39.832084",
-      "finishedDate": null,
-      "replayReason": null
-    },
-    "title": "Gears of War 4",
-    "dateAdded": "2019-08-01 10:30:39.825326",
-    "platform": "Xbox One",
-    "steamID": null,
-    "logo": null,
-    "id": 1024,
-    "naturalEnd": true,
-    "igdbPoster": null
-  },
-  {
     "giantBombMedium": "https://www.giantbomb.com/api/image/scale_medium/2950198-lone_echo.jpg",
     "howlongExtras": 9,
     "timeTotal": null,
@@ -709,6 +685,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": 99,
       "tier": 2,
+      "minutesPlayed": 240,
       "rating": 99,
       "id": 1463,
       "replayScore": 90,
@@ -727,6 +704,32 @@ export const MockGames = [
     "igdbPoster": "pk91ao5dhmymsdnzousl"
   },
   {
+    "giantBombMedium": "https://www.giantbomb.com/api/image/scale_medium/2892487-gears%20of%20war%204%20v1.jpg",
+    "howlongExtras": 11,
+    "timeTotal": null,
+    "metacritic": 84,
+    "personGame": {
+      "finalScore": null,
+      "tier": 2,
+      "minutesPlayed": 30,
+      "rating": 90,
+      "id": 1462,
+      "replayScore": null,
+      "lastPlayed": "2019-08-01 00:00:00.0",
+      "dateAdded": "2019-08-01 10:30:39.832084",
+      "finishedDate": null,
+      "replayReason": null
+    },
+    "title": "Gears of War 4",
+    "dateAdded": "2019-08-01 10:30:39.825326",
+    "platform": "Xbox One",
+    "steamID": null,
+    "logo": null,
+    "id": 1024,
+    "naturalEnd": true,
+    "igdbPoster": null
+  },
+  {
     "giantBombMedium": "https://www.giantbomb.com/api/image/scale_medium/3104799-box_tstu.png",
     "howlongExtras": 5,
     "timeTotal": null,
@@ -734,6 +737,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 62,
       "rating": 90,
       "id": 1456,
       "replayScore": null,
@@ -759,6 +763,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 9,
       "rating": null,
       "id": 1461,
       "replayScore": null,
@@ -784,6 +789,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 20,
       "rating": 86,
       "id": 179,
       "replayScore": null,
@@ -809,6 +815,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": 88,
       "tier": 2,
+      "minutesPlayed": 150,
       "rating": null,
       "id": 181,
       "replayScore": 80,
@@ -834,6 +841,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 6,
       "rating": 89,
       "id": 1449,
       "replayScore": null,
@@ -859,6 +867,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": 70,
       "tier": 2,
+      "minutesPlayed": 8,
       "rating": 70,
       "id": 19,
       "replayScore": 30,
@@ -884,6 +893,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 2,
       "rating": 93,
       "id": 150,
       "replayScore": null,
@@ -909,6 +919,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 36,
       "rating": 90,
       "id": 435,
       "replayScore": null,
@@ -934,6 +945,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 53,
       "rating": 88,
       "id": 297,
       "replayScore": null,
@@ -959,6 +971,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": 89,
       "tier": 2,
+      "minutesPlayed": 7723,
       "rating": 88,
       "id": 336,
       "replayScore": null,
@@ -974,7 +987,7 @@ export const MockGames = [
     "logo": "86b0fa5ddb41b4dfff7df194a017f3418130d668",
     "id": 287,
     "naturalEnd": true,
-    "igdbPoster": "co20tn"
+    "igdbPoster": "co1rbh"
   },
   {
     "giantBombMedium": "http://www.giantbomb.com/api/image/scale_medium/2849529-doom.jpg",
@@ -984,6 +997,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 789,
       "rating": 94,
       "id": 501,
       "replayScore": null,
@@ -1009,6 +1023,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 780,
       "rating": 97.6,
       "id": 175,
       "replayScore": null,
@@ -1034,6 +1049,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 61,
       "rating": 60,
       "id": 205,
       "replayScore": null,
@@ -1059,6 +1075,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 275,
       "rating": 81,
       "id": 176,
       "replayScore": null,
@@ -1084,6 +1101,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 11743,
       "rating": 89,
       "id": 154,
       "replayScore": null,
@@ -1109,6 +1127,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 1,
       "rating": null,
       "id": 1368,
       "replayScore": null,
@@ -1134,6 +1153,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 1020,
       "rating": 97,
       "id": 1379,
       "replayScore": null,
@@ -1159,6 +1179,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 39,
       "rating": null,
       "id": 1374,
       "replayScore": null,
@@ -1184,6 +1205,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 26,
       "rating": null,
       "id": 566,
       "replayScore": null,
@@ -1209,6 +1231,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 66,
       "rating": 89,
       "id": 105,
       "replayScore": null,
@@ -1234,6 +1257,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 4,
       "rating": 91,
       "id": 1362,
       "replayScore": null,
@@ -1259,6 +1283,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 4,
       "rating": null,
       "id": 92,
       "replayScore": null,
@@ -1284,6 +1309,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 20,
       "rating": 86,
       "id": 252,
       "replayScore": null,
@@ -1309,6 +1335,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 37,
       "rating": 81,
       "id": 711,
       "replayScore": null,
@@ -1334,6 +1361,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 14880,
       "rating": 90,
       "id": 657,
       "replayScore": null,
@@ -1359,6 +1387,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 144,
       "rating": null,
       "id": 809,
       "replayScore": null,
@@ -1384,6 +1413,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": 89,
       "tier": 2,
+      "minutesPlayed": 1056,
       "rating": 99,
       "id": 654,
       "replayScore": 50,
@@ -1409,6 +1439,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 1,
+      "minutesPlayed": 180,
       "rating": 99,
       "id": 772,
       "replayScore": null,
@@ -1434,6 +1465,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": 96,
       "tier": 2,
+      "minutesPlayed": 532,
       "rating": 99,
       "id": 390,
       "replayScore": null,
@@ -1459,6 +1491,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": 92,
       "tier": 2,
+      "minutesPlayed": 892,
       "rating": 1,
       "id": 87,
       "replayScore": null,
@@ -1484,6 +1517,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": 90,
       "tier": 2,
+      "minutesPlayed": 62520,
       "rating": 92.1,
       "id": 409,
       "replayScore": 78,
@@ -1509,6 +1543,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 31,
       "rating": null,
       "id": 33,
       "replayScore": null,
@@ -1534,6 +1569,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": 77,
       "tier": 2,
+      "minutesPlayed": 21,
       "rating": 80,
       "id": 225,
       "replayScore": 78,
@@ -1559,6 +1595,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 37,
       "rating": null,
       "id": 157,
       "replayScore": null,
@@ -1584,6 +1621,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 385,
       "rating": 91.7,
       "id": 198,
       "replayScore": null,
@@ -1609,6 +1647,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 152,
       "rating": 94.5,
       "id": 239,
       "replayScore": null,
@@ -1634,6 +1673,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 23,
       "rating": null,
       "id": 208,
       "replayScore": null,
@@ -1659,6 +1699,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 1868,
       "rating": null,
       "id": 221,
       "replayScore": null,
@@ -1684,6 +1725,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 41,
       "rating": 93.1,
       "id": 146,
       "replayScore": null,
@@ -1709,6 +1751,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": 80,
       "tier": 2,
+      "minutesPlayed": 171,
       "rating": 85,
       "id": 56,
       "replayScore": 83,
@@ -1734,6 +1777,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 66,
       "rating": null,
       "id": 168,
       "replayScore": null,
@@ -1752,6 +1796,32 @@ export const MockGames = [
     "igdbPoster": "zqjb9a7dp6umn2jtjsj9"
   },
   {
+    "giantBombMedium": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2701424-box_lcattos.jpg",
+    "howlongExtras": 6.1,
+    "timeTotal": null,
+    "metacritic": 73,
+    "personGame": {
+      "finalScore": null,
+      "tier": 2,
+      "minutesPlayed": 8,
+      "rating": null,
+      "id": 226,
+      "replayScore": null,
+      "lastPlayed": "2018-03-27 19:11:37.791",
+      "dateAdded": "2015-02-05 15:00:01.129",
+      "finishedDate": null,
+      "replayReason": null
+    },
+    "title": "Lara Croft and the Temple of Osiris",
+    "dateAdded": "2015-02-05 15:00:01.129",
+    "platform": "Steam",
+    "steamID": 289690,
+    "logo": "4e777a99ba228c1d6af4551c3c72931e355dede4",
+    "id": 371,
+    "naturalEnd": true,
+    "igdbPoster": "co1voe"
+  },
+  {
     "giantBombMedium": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2539437-raymanlegendsclean.jpg",
     "howlongExtras": 13,
     "timeTotal": 12.5,
@@ -1759,6 +1829,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 1,
       "rating": 78,
       "id": 279,
       "replayScore": null,
@@ -1784,6 +1855,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 1,
       "rating": 89,
       "id": 433,
       "replayScore": null,
@@ -1809,6 +1881,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": 90,
       "tier": 2,
+      "minutesPlayed": 201,
       "rating": 93.9,
       "id": 148,
       "replayScore": 40,
@@ -1834,6 +1907,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 1398,
       "rating": 94.7,
       "id": 80,
       "replayScore": null,
@@ -1859,6 +1933,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 4516,
       "rating": 90.5,
       "id": 123,
       "replayScore": null,
@@ -1884,6 +1959,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 20,
       "rating": null,
       "id": 158,
       "replayScore": null,
@@ -1909,6 +1985,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 31,
       "rating": null,
       "id": 236,
       "replayScore": null,
@@ -1934,6 +2011,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 22,
       "rating": null,
       "id": 137,
       "replayScore": null,
@@ -1959,6 +2037,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 50,
       "rating": 90.6,
       "id": 234,
       "replayScore": null,
@@ -1984,6 +2063,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 127,
       "rating": null,
       "id": 170,
       "replayScore": null,
@@ -2009,6 +2089,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 4193,
       "rating": 91,
       "id": 276,
       "replayScore": null,
@@ -2034,6 +2115,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": 94,
       "tier": 2,
+      "minutesPlayed": 5,
       "rating": 91.7,
       "id": 211,
       "replayScore": 82,
@@ -2059,6 +2141,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 29,
       "rating": 91.9,
       "id": 284,
       "replayScore": null,
@@ -2084,6 +2167,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 115,
       "rating": 89,
       "id": 130,
       "replayScore": null,
@@ -2109,6 +2193,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": 87,
       "tier": 2,
+      "minutesPlayed": 425,
       "rating": 97,
       "id": 713,
       "replayScore": 42,
@@ -2134,6 +2219,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": 93,
       "tier": 2,
+      "minutesPlayed": 131,
       "rating": 94,
       "id": 626,
       "replayScore": 83,
@@ -2159,6 +2245,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 18,
       "rating": 87.8,
       "id": 238,
       "replayScore": null,
@@ -2184,6 +2271,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 566,
       "rating": 78.3,
       "id": 144,
       "replayScore": null,
@@ -2209,6 +2297,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 258,
       "rating": 90,
       "id": 193,
       "replayScore": null,
@@ -2234,6 +2323,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": 62,
       "tier": 2,
+      "minutesPlayed": 10,
       "rating": null,
       "id": 285,
       "replayScore": 45,
@@ -2259,6 +2349,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 38,
       "rating": 83,
       "id": 243,
       "replayScore": null,
@@ -2284,6 +2375,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": 93,
       "tier": 2,
+      "minutesPlayed": 74,
       "rating": 90.2,
       "id": 490,
       "replayScore": 87,
@@ -2309,6 +2401,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 39,
       "rating": 76,
       "id": 84,
       "replayScore": null,
@@ -2334,6 +2427,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 466,
       "rating": 90.3,
       "id": 151,
       "replayScore": null,
@@ -2359,6 +2453,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 85,
       "rating": 90,
       "id": 424,
       "replayScore": null,
@@ -2384,6 +2479,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 140,
       "rating": 82,
       "id": 194,
       "replayScore": null,
@@ -2409,6 +2505,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 75,
       "rating": null,
       "id": 623,
       "replayScore": null,
@@ -2434,6 +2531,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 18,
       "rating": 87.8,
       "id": 704,
       "replayScore": null,
@@ -2459,6 +2557,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 11,
       "rating": 86.7,
       "id": 34,
       "replayScore": null,
@@ -2484,6 +2583,7 @@ export const MockGames = [
     "personGame": {
       "finalScore": null,
       "tier": 2,
+      "minutesPlayed": 10,
       "rating": null,
       "id": 44,
       "replayScore": null,

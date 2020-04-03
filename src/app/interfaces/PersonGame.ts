@@ -5,6 +5,7 @@ export class PersonGame {
   rating: number;
   finalScore: number;
   replayScore: number;
+  minutesPlayed: number;
   dateAdded: Date;
   finishedDate: Date;
   replayReason: string;
@@ -15,6 +16,7 @@ export class PersonGame {
     this.rating = gameObj.rating;
     this.finalScore = gameObj.finalScore;
     this.replayScore = gameObj.replayScore;
+    this.minutesPlayed = gameObj.minutesPlayed;
     this.dateAdded = new Date(gameObj.dateAdded);
     this.finishedDate = new Date(gameObj.finishedDate);
     this.replayReason = gameObj.replayReason;
