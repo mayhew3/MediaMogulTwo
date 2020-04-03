@@ -1,18 +1,29 @@
 <div class="gameCardInside">
-  <div class="col-12 gameImageContainer">
+  <div class="row">
+    <div class="col-6 gameImageContainer">
 
-    <img class="rounded gameImage"
-         *ngIf="!!getImageUrl()"
-         src="{{getImageUrl()}}"
-         [game]="game"
-         default="../../../assets/GenericSeries.gif"
-         alt="{{game.title}}"/>
+      <img class="rounded gameImage"
+           *ngIf="!!getImageUrl()"
+           src="{{getImageUrl()}}"
+           [game]="game"
+           default="../../../assets/GenericSeries.gif"
+           alt="{{game.title}}"/>
 
-    <br>
+      <br>
 
-    <div class="col-12"
-         *ngIf="!getImageUrl() || game.brokenImage">
-      <span>{{game.title}}</span>
+      <div class="col-12"
+           *ngIf="!getImageUrl() || game.brokenImage">
+        <span>{{game.title}}</span>
+      </div>
+
+    </div>
+
+    <div class="col-6">
+      {{game.title}}<br>
+      <br>
+      <span *ngIf="!!game.lastPlayed">
+      {{game.lastPlayed | date: game.getDateFormatString():'America/Los_Angeles'}}
+    </span>
     </div>
 
   </div>

@@ -9,7 +9,8 @@
   <div class="card-body">
     <div class="row gameRow" *ngIf="!!games">
       <div class="col-4 gameCard"
-           *ngFor="let game of games | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
+           *ngFor="let game of games |
+           slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
         <mm-game-card [game]="game"></mm-game-card>
       </div>
     </div>

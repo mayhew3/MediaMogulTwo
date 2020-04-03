@@ -2,7 +2,6 @@ import {Injectable} from '@angular/core';
 import {Game} from '../interfaces/Game';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {ArrayService} from './array.service';
-import {plainToClass} from 'class-transformer';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -23,22 +22,31 @@ export class GameService {
   refreshCache(): Promise<Game[]> {
     return new Promise<Game[]>(resolve => {
       this.arrayService.emptyArray(this.cache);
-      const subscription = this.http.get<any[]>(this.gamesUrl).subscribe((gameObjs) => {
-        const games = plainToClass(Game, gameObjs);
-        this.arrayService.refreshArray(this.cache, games);
-        resolve(games);
-        subscription.unsubscribe();
-      });
+      this.http.get<any[]>(this.gamesUrl).toPromise()
+        .then((gameObjs) => {
+          const games = this.convertObjectsToGames(gameObjs);
+          this.arrayService.refreshArray(this.cache, games);
+          resolve(games);
+        });
     });
+  }
+
+  convertObjectsToGames(gameObjs: any[]): Game[] {
+    const games = [];
+    for (const gameObj of gameObjs) {
+      const game = new Game(gameObj);
+      games.push(game);
+    }
+    return games;
   }
 
   updateGame(gameID: number, changedFields): Promise<any> {
     return new Promise<any>(resolve => {
       const payload = {gameID, changedFields};
-      const subscription = this.http.patch(this.gamesUrl, payload, httpOptions).subscribe(() => {
-        resolve();
-        subscription.unsubscribe();
-      });
+      this.http.patch(this.gamesUrl, payload, httpOptions).toPromise()
+        .then(() => {
+          resolve();
+        });
     });
   }
 }
