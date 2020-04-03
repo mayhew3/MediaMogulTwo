@@ -1,15 +1,27 @@
-<div class="container">
-  <div class="row" *ngIf="!!games">
-    <div class="col-4 gameCard"
-         *ngFor="let game of games | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
-      <mm-game-card [game]="game"></mm-game-card>
+<div class="card">
+
+  <div class="card-header">
+    <div class="row">
+      <h1>{{title}}</h1>
     </div>
   </div>
 
-  <ngb-pagination
-    [(page)]="page"
-    [pageSize]="pageSize"
-    size="lg"
-    [maxSize]="6"
-    [collectionSize]="games.length"></ngb-pagination>
+  <div class="card-body">
+    <div class="row gameRow" *ngIf="!!games">
+      <div class="col-4 gameCard"
+           *ngFor="let game of games | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
+        <mm-game-card [game]="game"></mm-game-card>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-footer">
+    <ngb-pagination
+      [(page)]="page"
+      [pageSize]="pageSize"
+      size="lg"
+      [maxSize]="6"
+      [collectionSize]="games.length"></ngb-pagination>
+  </div>
+
 </div>

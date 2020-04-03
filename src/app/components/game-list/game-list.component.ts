@@ -7,6 +7,7 @@ import {Game} from '../../interfaces/Game';
   styleUrls: ['./game-list.component.scss']
 })
 export class GameListComponent {
+  @Input() title: string;
   @Input() games: Game[];
   @Input() pageSize: number;
   page = 1;
