@@ -14,7 +14,8 @@ export class InMemoryDataService implements InMemoryDbService{
       steamID: '546560',
       logo: 'f7269f4b14f921e9dff13c05caf133ffe92b58ab',
       igdbPoster: null,
-      giantBombMedium: 'https://www.giantbomb.com/api/image/scale_medium/3145045-alyx_coverart.jpg'
+      giantBombMedium: 'https://www.giantbomb.com/api/image/scale_medium/3145045-alyx_coverart.jpg',
+      brokenImage: false,
     },
     {
       id: 2,
@@ -22,7 +23,8 @@ export class InMemoryDataService implements InMemoryDbService{
       steamID: '264710',
       logo: 'd6bfaafed7b41466cc99b70972a944ac7e4d6edf',
       igdbPoster: 'tgjqi7pnqabsvgdtdujh',
-      giantBombMedium: 'https://www.giantbomb.com/api/image/scale_medium/3067261-box_subn.png'
+      giantBombMedium: 'https://www.giantbomb.com/api/image/scale_medium/3067261-box_subn.png',
+      brokenImage: false,
     }];
 
   constructor() { }

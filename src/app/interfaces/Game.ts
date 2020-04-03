@@ -5,4 +5,5 @@ export class Game {
   logo: string;
   giantBombMedium: string;
   steamID: string;
+  brokenImage: boolean;
 }
