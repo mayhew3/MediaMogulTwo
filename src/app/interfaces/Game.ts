@@ -1,3 +1,5 @@
+import {PersonGame} from './PersonGame';
+
 export class Game {
   id: number;
   title: string;
@@ -6,7 +8,13 @@ export class Game {
   giantBombMedium: string;
   steamID: number;
   brokenImage: boolean;
-  lastPlayed: Date;
+  howLongExtras: number;
+  timeTotal: number;
+  metacritic: number;
+  personGame: PersonGame;
+  dateAdded: Date;
+  platform: string;
+  naturalEnd: boolean;
 
   constructor(gameObj) {
     this.id = gameObj.id;
@@ -16,22 +24,12 @@ export class Game {
     this.giantBombMedium = gameObj.giantBombMedium;
     this.steamID = gameObj.steamID;
     this.brokenImage = false;
-    this.lastPlayed = new Date(gameObj.lastPlayed);
+    this.personGame = new PersonGame(gameObj.personGame);
+    this.howLongExtras = gameObj.howLongExtras;
+    this.timeTotal = gameObj.timeTotal;
+    this.metacritic = gameObj.metacritic;
+    this.naturalEnd = gameObj.naturalEnd;
+    this.dateAdded = new Date(gameObj.dateAdded);
   }
 
-  getDateFormatString(): string {
-    const thisYear = (new Date()).getFullYear();
-
-    if (!!this.lastPlayed) {
-      const year = this.lastPlayed.getFullYear();
-
-      if (year === thisYear) {
-        return 'EEE M/d';
-      } else {
-        return 'yyyy.M.d';
-      }
-    } else {
-      return 'yyyy.M.d';
-    }
-  }
 }

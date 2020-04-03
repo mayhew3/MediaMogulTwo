@@ -21,8 +21,8 @@
     <div class="col-6">
       {{game.title}}<br>
       <br>
-      <span *ngIf="!!game.lastPlayed">
-      {{game.lastPlayed | date: game.getDateFormatString():'America/Los_Angeles'}}
+      <span *ngIf="!!game.personGame.lastPlayed">
+      {{game.personGame.lastPlayed | date: game.personGame.getLastPlayedFormat():'America/Los_Angeles'}}
     </span>
     </div>
 
