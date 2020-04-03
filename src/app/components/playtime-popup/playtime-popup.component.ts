@@ -18,7 +18,7 @@ export class PlaytimePopupComponent {
   async saveAndClose() {
     try {
       const changedFields = {minutesPlayed: this.changedPlaytime};
-      await this.gameService.updateGame(this.game, changedFields);
+      await this.gameService.updatePersonGame(this.game, changedFields);
       this.activeModal.close('Save Click');
     } catch (err) {
       console.error(err);

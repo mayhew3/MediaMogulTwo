@@ -3,6 +3,7 @@ import {Game} from '../interfaces/Game';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {ArrayService} from './array.service';
 import * as _ from 'underscore';
+import {PersonGame} from '../interfaces/PersonGame';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -13,6 +14,7 @@ const httpOptions = {
 })
 export class GameService {
   gamesUrl = 'api/games';
+  personGamesUrl = 'api/personGames';
   cache: Game[];
 
   constructor(private http: HttpClient,
@@ -35,6 +37,13 @@ export class GameService {
     const payload = {id: game.id, changedFields};
     await this.http.put(this.gamesUrl, payload, httpOptions).toPromise();
     this.updateChangedFieldsOnObject(game, changedFields);
+  }
+
+  async updatePersonGame(game: Game, changedFields): Promise<any> {
+    const personGame = game.personGame;
+    const payload = {id: personGame.id, changedFields};
+    await this.http.put(this.personGamesUrl, payload, httpOptions).toPromise();
+    this.updateChangedFieldsOnObject(personGame, changedFields);
   }
 
   // noinspection JSMethodCanBeStatic

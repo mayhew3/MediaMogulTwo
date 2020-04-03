@@ -22,7 +22,8 @@ export class InMemoryDataService implements InMemoryDbService{
 
   createDb(): {} {
     return {
-      games: this.games
+      games: this.games,
+      personGames: [],
     };
   }
 
@@ -32,6 +33,8 @@ export class InMemoryDataService implements InMemoryDbService{
     const collectionName = requestInfo.collectionName;
     if (collectionName === 'games') {
       this.updateGame(requestInfo);
+    } else if (collectionName === 'personGames') {
+      this.updatePersonGame(requestInfo);
     }
     return null;
   }
@@ -43,6 +46,20 @@ export class InMemoryDataService implements InMemoryDbService{
       this.updateChangedFieldsOnObject(game, jsonBody.changedFields);
       return this.packageUpResponse(game, requestInfo);
     }
+  }
+
+  private updatePersonGame(requestInfo: RequestInfo) {
+    const jsonBody = this.getBody(requestInfo);
+    const personGame = this.findPersonGame(jsonBody.id);
+    if (!!personGame) {
+      this.updateChangedFieldsOnObject(personGame, jsonBody.changedFields);
+      return this.packageUpResponse(personGame, requestInfo);
+    }
+  }
+
+  private findPersonGame(personGameID: number): any {
+    const personGames = _.map(this.games, game => game.personGame);
+    return _.findWhere(personGames, {id: personGameID});
   }
 
   // noinspection JSMethodCanBeStatic
