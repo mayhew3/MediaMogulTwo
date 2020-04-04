@@ -11,12 +11,15 @@ export class InMemoryDataService implements InMemoryDbService{
 
   games = MockGames;
 
+  // STATIC HELPERS
+
   private static finishOptions(options: ResponseOptions, {headers, url}: RequestInfo) {
     options.statusText = getStatusText(options.status);
     options.headers = headers;
     options.url = url;
     return options;
   }
+
 
   constructor() { }
 
@@ -26,6 +29,10 @@ export class InMemoryDataService implements InMemoryDbService{
       personGames: [],
     };
   }
+
+
+  // HTTP OVERRIDES
+
 
   // noinspection JSUnusedGlobalSymbols
   put(requestInfo: RequestInfo): Observable<Response> {
@@ -38,6 +45,11 @@ export class InMemoryDataService implements InMemoryDbService{
     }
     return null;
   }
+
+
+
+  // DOMAIN HELPERS
+
 
   private updateGame(requestInfo: RequestInfo) {
     const jsonBody = this.getBody(requestInfo);
@@ -61,6 +73,11 @@ export class InMemoryDataService implements InMemoryDbService{
     const personGames = _.map(this.games, game => game.personGame);
     return _.findWhere(personGames, {id: personGameID});
   }
+
+
+
+  // DOMAIN-INDEPENDENT HELPERS
+
 
   // noinspection JSMethodCanBeStatic
   private updateChangedFieldsOnObject(obj: any, changedFields: any) {
@@ -86,9 +103,4 @@ export class InMemoryDataService implements InMemoryDbService{
     return requestInfo.utils.createResponse$(() => finishedOptions);
   }
 
-  // noinspection JSUnusedGlobalSymbols
-  patch(requestInfo: RequestInfo): Observable<Response> {
-    console.log('HTTP override: PATCH');
-    return null;
-  }
 }
