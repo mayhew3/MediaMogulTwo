@@ -8,6 +8,9 @@ module.exports = function(app) {
   router.route('/games')
     .get(games.getGames);
 
+  router.route('/personGames')
+    .put(games.updatePersonGame);
+
   app.use('/api', router);
 
   // error handlers

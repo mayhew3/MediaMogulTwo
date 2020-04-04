@@ -4,8 +4,38 @@ const sequelize = require('./sequelize');
 exports.Game = sequelize.sequelize.define("game", {
   id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
   title: Sequelize.TEXT,
+  date_added: Sequelize.DATE,
+  giantbomb_medium_url: Sequelize.TEXT,
+  howlong_extras: Sequelize.DECIMAL,
+  timetotal: Sequelize.DECIMAL,
+  metacritic: Sequelize.INTEGER,
+  platform: Sequelize.TEXT,
+  steamid: Sequelize.INTEGER,
+  logo: Sequelize.TEXT,
+  natural_end: Sequelize.BOOLEAN,
+  igdb_poster: Sequelize.TEXT,
 }, {
   freezeTableName: true,
   createdAt: false,
   updatedAt: false
 });
+
+exports.PersonGame = sequelize.sequelize.define("person_game", {
+  id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
+  rating: Sequelize.DECIMAL,
+  tier: Sequelize.INTEGER,
+  final_score: Sequelize.DECIMAL,
+  minutes_played: Sequelize.INTEGER,
+  replay_score: Sequelize.DECIMAL,
+  last_played: Sequelize.DATE,
+  date_added: Sequelize.DATE,
+  finished_date: Sequelize.DATE,
+  replay_reason: Sequelize.TEXT,
+}, {
+  freezeTableName: true,
+  createdAt: false,
+  updatedAt: false
+});
+
+exports.Game.hasMany(exports.PersonGame, {foreignKey: 'game_id'});
+exports.PersonGame.belongsTo(exports.Game, {foreignKey: 'game_id'});

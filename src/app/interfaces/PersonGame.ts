@@ -14,13 +14,13 @@ export class PersonGame {
     this.id = gameObj.id;
     this.tier = gameObj.tier;
     this.rating = gameObj.rating;
-    this.finalScore = gameObj.finalScore;
-    this.replayScore = gameObj.replayScore;
-    this.minutesPlayed = gameObj.minutesPlayed;
-    this.dateAdded = new Date(gameObj.dateAdded);
-    this.finishedDate = new Date(gameObj.finishedDate);
-    this.replayReason = gameObj.replayReason;
-    this.lastPlayed = new Date(gameObj.lastPlayed);
+    this.finalScore = gameObj.final_score;
+    this.replayScore = gameObj.replay_score;
+    this.minutesPlayed = gameObj.minutes_played;
+    this.dateAdded = new Date(gameObj.date_added);
+    this.finishedDate = new Date(gameObj.finished_date);
+    this.replayReason = gameObj.replay_reason;
+    this.lastPlayed = new Date(gameObj.last_played);
   }
 
   getLastPlayedFormat(): string {

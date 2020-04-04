@@ -19,18 +19,18 @@ export class Game {
   constructor(gameObj) {
     this.id = gameObj.id;
     this.title = gameObj.title;
-    this.igdbPoster = gameObj.igdbPoster;
+    this.igdbPoster = gameObj.igdb_poster;
     this.logo = gameObj.logo;
-    this.giantBombMedium = gameObj.giantBombMedium;
-    this.steamID = gameObj.steamID;
+    this.giantBombMedium = gameObj.giantbomb_medium_url;
+    this.steamID = gameObj.steamid;
     this.brokenImage = false;
-    this.personGame = new PersonGame(gameObj.personGame);
-    this.howLongExtras = gameObj.howLongExtras;
-    this.timeTotal = gameObj.timeTotal;
+    this.personGame = new PersonGame(gameObj.person_games[0]);
+    this.howLongExtras = gameObj.howlong_extras;
+    this.timeTotal = gameObj.timetotal;
     this.metacritic = gameObj.metacritic;
-    this.naturalEnd = gameObj.naturalEnd;
+    this.naturalEnd = gameObj.natural_end;
     this.platform = gameObj.platform;
-    this.dateAdded = new Date(gameObj.dateAdded);
+    this.dateAdded = new Date(gameObj.date_added);
   }
 
 }
