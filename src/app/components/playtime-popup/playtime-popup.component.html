@@ -57,72 +57,84 @@
                      id="originalHours"
                      name="originalHours"
                      [(ngModel)]="originalHours"/>
-              <span class="input-group-addon">h</span>
+              <div class="input-group-append">
+                <span class="input-group-text">h</span>
+              </div>
             </div>
 
-            <div class="col-sm-3 input-group">
+            <div class="col-3 input-group">
               <input type="number"
                      class="darkInput form-control"
                      id="originalMinutes"
                      name="originalMinutes"
                      [(ngModel)]="originalMinutes"/>
-              <span class="input-group-addon">m</span>
+              <div class="input-group-append">
+                <span class="input-group-text">m</span>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="form-inline">
           <div class="form-group">
-            <label class="col-sm-4 control-label" for="newHours">New Total</label>
+            <label class="col-4 control-label" for="newHours">New Total</label>
 
-            <div class="col-sm-3 input-group">
+            <div class="col-3 input-group">
               <input type="number"
                      class="darkInput form-control"
                      id="newHours"
                      name="newHours"
                      [(ngModel)]="newHours"
                      (ngModelChange)="newChanged()"/>
-              <span class="input-group-addon">h</span>
+              <div class="input-group-append">
+                <span class="input-group-text">h</span>
+              </div>
             </div>
 
-            <div class="col-sm-3 input-group">
+            <div class="col-3 input-group">
               <input type="number"
                      class="darkInput form-control"
                      id="newMinutes"
                      name="newMinutes"
                      [(ngModel)]="newMinutes"
                      (ngModelChange)="newChanged()"/>
-              <span class="input-group-addon">m</span>
+              <div class="input-group-append">
+                <span class="input-group-text">m</span>
+              </div>
             </div>
           </div>
         </div>
 
       </div>
 
-      <div class="col-sm-6">
+      <div class="col-6">
 
         <div class="form-inline">
           <div class="form-group">
-            <label class="col-sm-4 control-label" for="addedHours">Add Time</label>
+            <label class="col-4 control-label" for="addedHours">Add Time</label>
 
-            <div class="col-sm-3 input-group">
+            <div class="col-3 input-group">
               <input type="number"
                      class="darkInput form-control"
                      id="addedHours"
                      name="addedHours"
                      [(ngModel)]="addedHours"
                      (ngModelChange)="addedChanged()">
-              <span class="input-group-addon">h</span>
+              <div class="input-group-append">
+                <span class="input-group-text">h</span>
+              </div>
             </div>
 
-            <div class="col-sm-3 input-group">
+            <div class="col-3 input-group">
               <input type="number"
                      class="darkInput form-control"
                      id="addedMinutes"
                      name="addedMinutes"
                      [(ngModel)]="addedMinutes"
                      (ngModelChange)="addedChanged()"/>
-              <span class="input-group-addon">m</span>
+              <div class="input-group-append">
+                <span class="input-group-text">m</span>
+              </div>
             </div>
           </div>
         </div>
