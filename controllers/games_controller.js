@@ -32,7 +32,7 @@ exports.updatePersonGame = async function(request, response) {
   const changedFields = request.body.changedFields;
 
   try {
-    const personGame = await model.Game.findByPk(personGameID);
+    const personGame = await model.PersonGame.findByPk(personGameID);
     await personGame.update(changedFields);
     response.json({});
   } catch (err) {

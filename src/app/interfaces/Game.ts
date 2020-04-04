@@ -1,9 +1,10 @@
+/* tslint:disable:variable-name */
 import {PersonGame} from './PersonGame';
 
 export class Game {
   id: number;
   title: string;
-  igdbPoster: string;
+  igdb_poster: string;
   logo: string;
   giantBombMedium: string;
   steamID: number;
@@ -19,7 +20,7 @@ export class Game {
   constructor(gameObj) {
     this.id = gameObj.id;
     this.title = gameObj.title;
-    this.igdbPoster = gameObj.igdb_poster;
+    this.igdb_poster = gameObj.igdb_poster;
     this.logo = gameObj.logo;
     this.giantBombMedium = gameObj.giantbomb_medium_url;
     this.steamID = gameObj.steamid;

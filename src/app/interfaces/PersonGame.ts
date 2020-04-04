@@ -1,3 +1,4 @@
+/* tslint:disable:variable-name */
 export class PersonGame {
   id: number;
   lastPlayed: Date;
@@ -5,7 +6,7 @@ export class PersonGame {
   rating: number;
   finalScore: number;
   replayScore: number;
-  minutesPlayed: number;
+  minutes_played: number;
   dateAdded: Date;
   finishedDate: Date;
   replayReason: string;
@@ -16,7 +17,7 @@ export class PersonGame {
     this.rating = gameObj.rating;
     this.finalScore = gameObj.final_score;
     this.replayScore = gameObj.replay_score;
-    this.minutesPlayed = gameObj.minutes_played;
+    this.minutes_played = gameObj.minutes_played;
     this.dateAdded = new Date(gameObj.date_added);
     this.finishedDate = new Date(gameObj.finished_date);
     this.replayReason = gameObj.replay_reason;
