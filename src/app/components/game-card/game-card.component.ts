@@ -39,7 +39,7 @@ export class GameCardComponent implements OnInit {
   }
 
   async open(game: Game) {
-    const modalRef = this.modalService.open(PlaytimePopupComponent);
+    const modalRef = this.modalService.open(PlaytimePopupComponent, {size: 'xl'});
     modalRef.componentInstance.game = game;
     try {
       const result = await modalRef.result;

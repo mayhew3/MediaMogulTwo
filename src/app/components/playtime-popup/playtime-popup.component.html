@@ -8,18 +8,17 @@
   </button>
 </div>
 
-<div class="modal-body">
+<div class="modal-body"  *ngIf="!!game">
 
   <h3>{{game.title}}</h3>
 
   <form>
 
-    <div class="form-group">
 
       <div class="row">
-        <div class="col-12">
+        <div class="form-group col-6">
 
-          <label for="dp">Played Date:</label>
+          <label class="control-label" for="dp">Played Date:</label>
           <div class="input-group">
             <input class="form-control"
                    placeholder="yyyy-mm-dd"
@@ -43,30 +42,96 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-12">
-          Previous: {{game.personGame.minutes_played}}
-        </div>
-      </div>
+<!--    Gameplay Time fields -->
 
-      <div class="row">
-        <div class="col-12">
+    <div class="row">
+      <div class="col-6">
 
-          <label for="playtime">Playtime:</label>
-          <div class="input-group">
-            <input id="playtime"
-                   class="form-control"
-                   name="playtime"
-                   type="text"
-                   [(ngModel)]="changedPlaytime">
+        <div class="form-inline">
+          <div class="form-group">
+            <label class="col-4 control-label" for="originalHours">Original Total</label>
+
+            <div class="col-3 input-group">
+              <input type="number"
+                     class="darkInput form-control"
+                     id="originalHours"
+                     name="originalHours"
+                     [(ngModel)]="originalHours"/>
+              <span class="input-group-addon">h</span>
+            </div>
+
+            <div class="col-sm-3 input-group">
+              <input type="number"
+                     class="darkInput form-control"
+                     id="originalMinutes"
+                     name="originalMinutes"
+                     [(ngModel)]="originalMinutes"/>
+              <span class="input-group-addon">m</span>
+            </div>
           </div>
         </div>
+
+        <div class="form-inline">
+          <div class="form-group">
+            <label class="col-sm-4 control-label" for="newHours">New Total</label>
+
+            <div class="col-sm-3 input-group">
+              <input type="number"
+                     class="darkInput form-control"
+                     id="newHours"
+                     name="newHours"
+                     [(ngModel)]="newHours"
+                     (ngModelChange)="newChanged()"/>
+              <span class="input-group-addon">h</span>
+            </div>
+
+            <div class="col-sm-3 input-group">
+              <input type="number"
+                     class="darkInput form-control"
+                     id="newMinutes"
+                     name="newMinutes"
+                     [(ngModel)]="newMinutes"
+                     (ngModelChange)="newChanged()"/>
+              <span class="input-group-addon">m</span>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <br>
+      <div class="col-sm-6">
+
+        <div class="form-inline">
+          <div class="form-group">
+            <label class="col-sm-4 control-label" for="addedHours">Add Time</label>
+
+            <div class="col-sm-3 input-group">
+              <input type="number"
+                     class="darkInput form-control"
+                     id="addedHours"
+                     name="addedHours"
+                     [(ngModel)]="addedHours"
+                     (ngModelChange)="addedChanged()">
+              <span class="input-group-addon">h</span>
+            </div>
+
+            <div class="col-sm-3 input-group">
+              <input type="number"
+                     class="darkInput form-control"
+                     id="addedMinutes"
+                     name="addedMinutes"
+                     [(ngModel)]="addedMinutes"
+                     (ngModelChange)="addedChanged()"/>
+              <span class="input-group-addon">m</span>
+            </div>
+          </div>
+        </div>
 
 
+      </div>
     </div>
+
+
 
   </form>
 </div>
