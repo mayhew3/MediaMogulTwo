@@ -1,34 +1,34 @@
 /* tslint:disable:variable-name */
 export class PersonGame {
   id: number;
-  lastPlayed: Date;
+  last_played: Date;
   tier: number;
   rating: number;
-  finalScore: number;
-  replayScore: number;
+  final_score: number;
+  replay_score: number;
   minutes_played: number;
-  dateAdded: Date;
-  finishedDate: Date;
-  replayReason: string;
+  date_added: Date;
+  finished_date: Date;
+  replay_reason: string;
 
   constructor(gameObj) {
     this.id = gameObj.id;
     this.tier = gameObj.tier;
     this.rating = gameObj.rating;
-    this.finalScore = gameObj.final_score;
-    this.replayScore = gameObj.replay_score;
+    this.final_score = gameObj.final_score;
+    this.replay_score = gameObj.replay_score;
     this.minutes_played = gameObj.minutes_played;
-    this.dateAdded = new Date(gameObj.date_added);
-    this.finishedDate = new Date(gameObj.finished_date);
-    this.replayReason = gameObj.replay_reason;
-    this.lastPlayed = new Date(gameObj.last_played);
+    this.date_added = new Date(gameObj.date_added);
+    this.finished_date = new Date(gameObj.finished_date);
+    this.replay_reason = gameObj.replay_reason;
+    this.last_played = new Date(gameObj.last_played);
   }
 
   getLastPlayedFormat(): string {
     const thisYear = (new Date()).getFullYear();
 
-    if (!!this.lastPlayed) {
-      const year = this.lastPlayed.getFullYear();
+    if (!!this.last_played) {
+      const year = this.last_played.getFullYear();
 
       if (year === thisYear) {
         return 'EEE M/d';

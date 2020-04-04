@@ -14,8 +14,8 @@
     <div class="col-6">
       {{game.title}}<br>
       <br>
-      <span *ngIf="!!game.personGame.lastPlayed">
-        {{game.personGame.lastPlayed | date: game.personGame.getLastPlayedFormat():'America/Los_Angeles'}}
+      <span *ngIf="!!game.personGame.last_played">
+        {{game.personGame.last_played | date: game.personGame.getLastPlayedFormat():'America/Los_Angeles'}}
       </span><br>
       <br>
       <button class="btn btn-success"

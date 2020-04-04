@@ -6,32 +6,32 @@ export class Game {
   title: string;
   igdb_poster: string;
   logo: string;
-  giantBombMedium: string;
-  steamID: number;
+  giantbomb_medium_url: string;
+  steamid: number;
   brokenImage: boolean;
-  howLongExtras: number;
-  timeTotal: number;
+  howlong_extras: number;
+  timetotal: number;
   metacritic: number;
   personGame: PersonGame;
-  dateAdded: Date;
+  date_added: Date;
   platform: string;
-  naturalEnd: boolean;
+  natural_end: boolean;
 
   constructor(gameObj) {
     this.id = gameObj.id;
     this.title = gameObj.title;
     this.igdb_poster = gameObj.igdb_poster;
     this.logo = gameObj.logo;
-    this.giantBombMedium = gameObj.giantbomb_medium_url;
-    this.steamID = gameObj.steamid;
+    this.giantbomb_medium_url = gameObj.giantbomb_medium_url;
+    this.steamid = gameObj.steamid;
     this.brokenImage = false;
     this.personGame = new PersonGame(gameObj.person_games[0]);
-    this.howLongExtras = gameObj.howlong_extras;
-    this.timeTotal = gameObj.timetotal;
+    this.howlong_extras = gameObj.howlong_extras;
+    this.timetotal = gameObj.timetotal;
     this.metacritic = gameObj.metacritic;
-    this.naturalEnd = gameObj.natural_end;
+    this.natural_end = gameObj.natural_end;
     this.platform = gameObj.platform;
-    this.dateAdded = new Date(gameObj.date_added);
+    this.date_added = new Date(gameObj.date_added);
   }
 
 }

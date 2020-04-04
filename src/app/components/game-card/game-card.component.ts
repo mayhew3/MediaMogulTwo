@@ -30,9 +30,9 @@ export class GameCardComponent implements OnInit {
     if (!!this.game.igdb_poster && this.game.igdb_poster !== '') {
       return 'https://images.igdb.com/igdb/image/upload/t_720p/' + this.game.igdb_poster +  '.jpg';
     } else if (!!this.game.logo && this.game.logo !== '') {
-      return 'https://cdn.edgecast.steamstatic.com/steam/apps/' + this.game.steamID + '/header.jpg';
-    } else if (!!this.game.giantBombMedium && this.game.giantBombMedium !== '') {
-      return this.game.giantBombMedium;
+      return 'https://cdn.edgecast.steamstatic.com/steam/apps/' + this.game.steamid + '/header.jpg';
+    } else if (!!this.game.giantbomb_medium_url && this.game.giantbomb_medium_url !== '') {
+      return this.game.giantbomb_medium_url;
     } else {
       return 'images/GenericSeries.gif';
     }
