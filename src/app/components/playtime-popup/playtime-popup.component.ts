@@ -14,17 +14,9 @@ export class PlaytimePopupComponent implements OnInit {
   changedPlaytime: number;
   model: NgbDateStruct;
 
-  originalDuration: moment.Duration;
-  originalHours: number;
-  originalMinutes: number;
-
-  newDuration: moment.Duration;
-  newHours: number;
-  newMinutes: number;
-
-  addedDuration: moment.Duration;
-  addedHours: number;
-  addedMinutes: number;
+  original = new GameTime();
+  resulting = new GameTime();
+  added = new GameTime();
 
   sessionRating: number;
   finished = false;
@@ -36,38 +28,20 @@ export class PlaytimePopupComponent implements OnInit {
               private gameService: GameService) { }
 
   ngOnInit(): void {
-    this.originalDuration = moment.duration(this.game.personGame.minutes_played, 'minutes');
-    this.originalHours = Math.floor(this.originalDuration.asHours());
-    this.originalMinutes = this.originalDuration.minutes();
+    this.original.initialize(this.game.personGame.minutes_played);
   }
 
   updateUIFieldsWithNewDurations() {
-    this.addedHours = Math.floor(this.addedDuration.asHours());
-    this.addedMinutes = this.addedDuration.minutes();
-
-    this.newHours = Math.floor(this.newDuration.asHours());
-    this.newMinutes = this.newDuration.minutes();
-
-    this.changedPlaytime = this.newDuration.asMinutes();
+    this.changedPlaytime = this.resulting.asMinutes();
   }
 
   newChanged() {
-    const hoursDuration = moment.duration(!this.newHours ? 0 : this.newHours, 'hours');
-    const minutesDuration = moment.duration(!this.newMinutes ? 0 : this.newMinutes, 'minutes');
-
-    this.newDuration = hoursDuration.add(minutesDuration);
-    this.addedDuration = this.newDuration.clone().subtract(this.originalDuration);
-
+    this.added.duration = this.resulting.getDurationClone().subtract(this.original.duration);
     this.updateUIFieldsWithNewDurations();
   }
 
   addedChanged() {
-    const hoursDuration = moment.duration(!this.addedHours ? 0 : this.addedHours, 'hours');
-    const minutesDuration = moment.duration(!this.addedMinutes ? 0 : this.addedMinutes, 'minutes');
-
-    this.addedDuration = hoursDuration.add(minutesDuration);
-    this.newDuration = this.addedDuration.clone().add(this.originalDuration);
-
+    this.resulting.duration = this.added.getDurationClone().add(this.original.duration);
     this.updateUIFieldsWithNewDurations();
   }
 
@@ -81,5 +55,66 @@ export class PlaytimePopupComponent implements OnInit {
     } catch (err) {
       console.error(err);
     }
+  }
+}
+
+class GameTime {
+  // tslint:disable-next-line:variable-name
+  private _duration: moment.Duration;
+  // tslint:disable-next-line:variable-name
+  private _hours: number;
+  // tslint:disable-next-line:variable-name
+  private _minutes: number;
+
+  initialize(minutesPlayed: number) {
+    this._duration = moment.duration(minutesPlayed, 'minutes');
+    this.updateHoursAndMinutes();
+  }
+
+  get hours(): number {
+    return this._hours;
+  }
+
+  set hours(newHours: number) {
+    this._hours = newHours;
+    this.updateDuration();
+  }
+
+  get minutes(): number {
+    return this._minutes;
+  }
+
+  set minutes(newMinutes: number) {
+    this._minutes = newMinutes;
+    this.updateDuration();
+  }
+
+  get duration(): moment.Duration {
+    return this._duration;
+  }
+
+  set duration(newDuration: moment.Duration) {
+    this._duration = newDuration;
+    this.updateHoursAndMinutes();
+  }
+
+  getDurationClone(): moment.Duration {
+    return this._duration.clone();
+  }
+
+  asMinutes(): number {
+    return this._duration.asMinutes();
+  }
+
+  private updateDuration() {
+    const hoursDuration = moment.duration(!this._hours ? 0 : this._hours, 'hours');
+    const minutesDuration = moment.duration(!this._minutes ? 0 : this._minutes, 'minutes');
+
+    this._duration = hoursDuration.add(minutesDuration);
+  }
+
+  private updateHoursAndMinutes() {
+    this._hours = Math.floor(this._duration.asHours());
+    this._minutes = this._duration.minutes();
   }
 }
