@@ -18,3 +18,8 @@ h2 {
 .fakeLink {
   cursor: pointer;
 }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
