@@ -137,6 +137,72 @@
 
     </div>
 
+    <div class="row">
+      <div class="col-12">
+
+        <div class="form-group form-row">
+
+          <div class="col-3">
+            <div class="form-row">
+              <label class="col-4 col-form-label" for="rating">Rating</label>
+              <div class="col-8">
+                <input [(ngModel)]="sessionRating"
+                       class="darkInput form-control"
+                       type="number"
+                       id="rating"
+                       name="rating">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-3">
+            <div class="form-row">
+              <label class="col-6 col-form-label" for="finishedInput">Finished</label>
+              <div class="col-6">
+                <input type="checkbox"
+                       id="finishedInput"
+                       name="finishedInput"
+                       checked
+                       class="form-control"
+                       [(ngModel)]="finished">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3" *ngIf="!!finished">
+            <div class="form-row">
+              <label class="col-4 col-form-label" for="finalScoreInput">Final</label>
+              <div class="col-8">
+                <input [(ngModel)]="finalScore"
+                       class="darkInput form-control"
+                       type="number"
+                       id="finalScoreInput"
+                       name="finalScoreInput">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-3" *ngIf="!!finished">
+            <div class="form-row">
+              <label class="col-4 col-form-label" for="replayInput">Replay</label>
+              <div class="col-8">
+                <input [(ngModel)]="replayScore"
+                       class="darkInput form-control"
+                       type="number"
+                       id="replayInput"
+                       name="replayInput">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
 
 
   </form>

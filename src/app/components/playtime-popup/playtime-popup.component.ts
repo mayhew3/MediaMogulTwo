@@ -29,6 +29,9 @@ export class PlaytimePopupComponent implements OnInit {
   sessionRating: number;
   finished = false;
 
+  finalScore: number;
+  replayScore: number;
+
   constructor(public activeModal: NgbActiveModal,
               private gameService: GameService) { }
 
