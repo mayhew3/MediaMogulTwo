@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {NgbActiveModal, NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
+import {NgbActiveModal, NgbCalendar, NgbDate, NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
 import {Game} from '../../interfaces/Game';
 import {GameService} from '../../services/game.service';
 import * as moment from 'moment';
@@ -12,7 +12,7 @@ import * as moment from 'moment';
 export class PlaytimePopupComponent implements OnInit {
   @Input() game: Game;
   changedPlaytime: number;
-  model: NgbDateStruct;
+  model: NgbDate;
 
   original = new GameTime();
   resulting = new GameTime();
@@ -25,7 +25,10 @@ export class PlaytimePopupComponent implements OnInit {
   replayScore: number;
 
   constructor(public activeModal: NgbActiveModal,
-              private gameService: GameService) { }
+              private gameService: GameService,
+              private calendar: NgbCalendar) {
+    this.model = calendar.getToday();
+  }
 
   ngOnInit(): void {
     this.original.initialize(this.game.personGame.minutes_played);
