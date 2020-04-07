@@ -1,12 +1,13 @@
 const model = require('./model');
-const _ = require('underscore');
 const moment = require('moment');
 const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
 
+// todo: fix sorting
 exports.getGames = async function (request, response) {
   const threeYearsAgo = moment().subtract(3, 'years');
 
+  // noinspection JSCheckFunctionSignatures
   const games = await model.Game.findAll({
     include: {
       model: model.PersonGame,
