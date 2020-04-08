@@ -2,7 +2,21 @@
 
   <div class="card-header">
     <div class="row">
-      <h1>{{title}}</h1>
+      <div class="col-9">
+        <h1>{{title}}</h1>
+      </div>
+      <div class="col-3">
+        <form class="form-inline" *ngIf="showOrderingDropdown()">
+          <label class="col-form-label" for="orderBy">Order By: </label>
+          <div class="form-group">
+            <select class="custom-select" id="orderBy">
+              <option *ngFor="let key of orderings.keys()"
+                      [selected]="selectedOrdering === key"
+                      (click)="changeOrdering(key)">{{key}}</option>
+            </select>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 

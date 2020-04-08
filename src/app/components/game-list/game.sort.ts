@@ -1,4 +1,4 @@
 export enum GameSort {
-  ByRating,
-  ByLastPlayed
+  ByRating = 'Rating',
+  ByLastPlayed = 'Last Played'
 }
