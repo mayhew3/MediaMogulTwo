@@ -3,6 +3,7 @@ import {getStatusText, InMemoryDbService, RequestInfo, ResponseOptions, STATUS} 
 import {MockGames} from '../mocks/games.mock';
 import {Observable} from 'rxjs';
 import * as _ from 'underscore';
+import {GameplaySession} from '../interfaces/GameplaySession';
 
 @Injectable({
   providedIn: 'root'
@@ -27,7 +28,12 @@ export class InMemoryDataService implements InMemoryDbService{
     return {
       games: this.games,
       personGames: [],
+      gameplaySessions: [] as GameplaySession[],
     };
+  }
+
+  genId(sessions: GameplaySession[]): number {
+    return sessions.length > 0 ? Math.max(...sessions.map(session => session.id)) + 1 : 1;
   }
 
 
@@ -46,7 +52,11 @@ export class InMemoryDataService implements InMemoryDbService{
     return null;
   }
 
-
+  // noinspection JSUnusedGlobalSymbols
+  post(requestInfo: RequestInfo): Observable<Response> {
+    console.log('HTTP override: POST');
+    return null;
+  }
 
   // DOMAIN HELPERS
 

@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {NgbActiveModal, NgbCalendar, NgbDate, NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
+import {NgbActiveModal, NgbCalendar, NgbDate} from '@ng-bootstrap/ng-bootstrap';
 import {Game} from '../../interfaces/Game';
 import {GameService} from '../../services/game.service';
 import * as moment from 'moment';
@@ -52,7 +52,17 @@ export class PlaytimePopupComponent implements OnInit {
     try {
       const momentObj = moment([this.model.year, this.model.month - 1, this.model.day]);
       const playedDate = momentObj.toDate();
-      const changedFields = {minutes_played: this.changedPlaytime};
+      const changedFields = {
+        minutes_played: this.changedPlaytime
+      };
+      const gameplaySession = {
+        minutes: this.changedPlaytime,
+        start_time: playedDate,
+        rating: this.sessionRating,
+        person_id: 1,
+      };
+
+      await this.gameService.insertGameplaySession(gameplaySession);
       await this.gameService.updatePersonGame(this.game, changedFields);
       this.activeModal.close('Save Click');
     } catch (err) {
