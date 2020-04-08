@@ -9,6 +9,7 @@ import { ImagePreloadDirective } from './directives/image-preload.directive';
 import {NgbDatepickerModule, NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
 import { PlaytimePopupComponent } from './components/playtime-popup/playtime-popup.component';
 import {FormsModule} from '@angular/forms';
+import { RatingBoxComponent } from './components/rating-box/rating-box.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {FormsModule} from '@angular/forms';
     GameListComponent,
     GameCardComponent,
     ImagePreloadDirective,
-    PlaytimePopupComponent
+    PlaytimePopupComponent,
+    RatingBoxComponent
   ],
   imports: [
     BrowserModule,
