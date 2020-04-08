@@ -1,5 +1,5 @@
 <div class="container">
-  <mm-game-list *ngIf="!!games"
+  <mm-game-list *ngIf="showGameList()"
                 title="Games"
                 [pageSize]="9"
                 [games]="games"></mm-game-list>

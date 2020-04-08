@@ -23,4 +23,7 @@ export class AppComponent implements OnInit {
     });
   }
 
+  showGameList(): boolean {
+    return !!this.games && this.games.length > 0;
+  }
 }

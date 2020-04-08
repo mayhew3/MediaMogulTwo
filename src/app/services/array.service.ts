@@ -28,4 +28,8 @@ export class ArrayService {
     }
     originalArray.splice(indexOf, 1);
   }
+
+  cloneArray(originalArray) {
+    originalArray.slice();
+  }
 }
