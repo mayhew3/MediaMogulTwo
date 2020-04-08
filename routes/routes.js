@@ -6,7 +6,8 @@ module.exports = function(app) {
   let router = express.Router();
 
   router.route('/games')
-    .get(games.getGames);
+    .get(games.getGames)
+    .put(games.updateGame);
 
   router.route('/personGames')
     .put(games.updatePersonGame);

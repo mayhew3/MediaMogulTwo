@@ -27,6 +27,20 @@ exports.getGames = async function (request, response) {
   response.json(games);
 };
 
+exports.updateGame = async function(request, response) {
+  const gameID = request.body.id;
+  const changedFields = request.body.changedFields;
+
+  try {
+    const game = await model.Game.findByPk(gameID);
+    await game.update(changedFields);
+    response.json({});
+  } catch (err) {
+    console.error(err);
+    response.send({msg: 'Error updating game: ' + JSON.stringify(changedFields)});
+  }
+};
+
 exports.updatePersonGame = async function(request, response) {
   const personGameID = request.body.id;
   const changedFields = request.body.changedFields;

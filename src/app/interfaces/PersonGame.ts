@@ -14,7 +14,7 @@ export class PersonGame {
   constructor(gameObj) {
     this.id = gameObj.id;
     this.tier = gameObj.tier;
-    this.rating = gameObj.rating;
+    this.rating = !gameObj.rating ? null : parseFloat(gameObj.rating);
     this.final_score = gameObj.final_score;
     this.replay_score = gameObj.replay_score;
     this.minutes_played = gameObj.minutes_played;

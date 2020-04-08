@@ -14,6 +14,9 @@ exports.Game = sequelize.sequelize.define("game", {
   logo: Sequelize.TEXT,
   natural_end: Sequelize.BOOLEAN,
   igdb_poster: Sequelize.TEXT,
+  metacritic_hint: Sequelize.TEXT,
+  howlong_id: Sequelize.NUMBER,
+  giantbomb_id: Sequelize.NUMBER,
 }, {
   freezeTableName: true,
   createdAt: false,
