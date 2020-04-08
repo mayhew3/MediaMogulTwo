@@ -14,12 +14,14 @@ export class GameListComponent implements OnInit{
   @Input() pageSize: number;
   page = 1;
   orderings = new Map<GameSort, any>();
+  orderingKeys: GameSort[];
   selectedOrdering = GameSort.ByRating;
   initializing = true;
 
   constructor() {
     this.orderings.set(GameSort.ByRating, game => game.personGame.rating);
     this.orderings.set(GameSort.ByLastPlayed, game => game.personGame.last_played);
+    this.orderingKeys = Array.from(this.orderings.keys());
   }
 
   ngOnInit(): void {

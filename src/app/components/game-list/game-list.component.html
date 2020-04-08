@@ -10,7 +10,7 @@
           <label class="col-form-label" for="orderBy">Order By: </label>
           <div class="form-group">
             <select class="custom-select" id="orderBy">
-              <option *ngFor="let key of orderings.keys()"
+              <option *ngFor="let key of orderingKeys"
                       [selected]="selectedOrdering === key"
                       (click)="changeOrdering(key)">{{key}}</option>
             </select>
