@@ -17,6 +17,7 @@ export class GameListComponent implements OnInit{
   orderingKeys: GameSort[];
   selectedOrdering = GameSort.ByRating;
   initializing = true;
+  thisComponent = this;
 
   constructor() {
     this.orderings.set(GameSort.ByRating, game => game.personGame.rating);

@@ -1,8 +1,9 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Game} from '../../interfaces/Game';
-import {ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {ModalDismissReasons, NgbModal, NgbModalRef} from '@ng-bootstrap/ng-bootstrap';
 import {PlaytimePopupComponent} from '../playtime-popup/playtime-popup.component';
 import {GameDetailComponent} from '../game-detail/game-detail.component';
+import {GameListComponent} from '../game-list/game-list.component';
 
 @Component({
   selector: 'mm-game-card',
@@ -11,6 +12,7 @@ import {GameDetailComponent} from '../game-detail/game-detail.component';
 })
 export class GameCardComponent implements OnInit {
   @Input() game: Game;
+  @Input() parentList: GameListComponent;
   closeResult = '';
 
   private static getDismissReason(reason: any): string {
@@ -39,26 +41,28 @@ export class GameCardComponent implements OnInit {
     }
   }
 
-  async openPlaytimePopup(game: Game) {
-    const modalRef = this.modalService.open(PlaytimePopupComponent, {size: 'lg'});
-    modalRef.componentInstance.game = game;
+  async handlePopupResult(modalRef: NgbModalRef) {
     try {
       const result = await modalRef.result;
       this.closeResult = `Closed with: ${result}`;
+      if (!!this.parentList) {
+        this.parentList.fastSortGames();
+      }
     } catch (err) {
       this.closeResult = `Dismissed ${GameCardComponent.getDismissReason(err)}`;
     }
   }
 
+  async openPlaytimePopup(game: Game) {
+    const modalRef = this.modalService.open(PlaytimePopupComponent, {size: 'lg'});
+    modalRef.componentInstance.game = game;
+    this.handlePopupResult(modalRef);
+  }
+
   async openDetailPopup(game: Game) {
     const modalRef = this.modalService.open(GameDetailComponent, {size: 'lg'});
     modalRef.componentInstance.game = game;
-    try {
-      const result = await modalRef.result;
-      this.closeResult = `Closed with: ${result}`;
-    } catch (err) {
-      this.closeResult = `Dismissed ${GameCardComponent.getDismissReason(err)}`;
-    }
+    this.handlePopupResult(modalRef);
   }
 
 }
