@@ -37,5 +37,20 @@ exports.PersonGame = sequelize.sequelize.define("person_game", {
   updatedAt: false
 });
 
+exports.GameplaySession = sequelize.sequelize.define("gameplay_session", {
+  id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
+  minutes: Sequelize.INTEGER,
+  start_time: Sequelize.DATE,
+  rating: Sequelize.DECIMAL,
+  person_id: Sequelize.INTEGER,
+}, {
+  freezeTableName: true,
+  createdAt: false,
+  updatedAt: false
+});
+
 exports.Game.hasMany(exports.PersonGame, {foreignKey: 'game_id'});
 exports.PersonGame.belongsTo(exports.Game, {foreignKey: 'game_id'});
+
+exports.Game.hasMany(exports.GameplaySession, {foreignKey: 'game_id'});
+exports.GameplaySession.belongsTo(exports.Game, {foreignKey: 'game_id'});

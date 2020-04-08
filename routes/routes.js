@@ -11,6 +11,9 @@ module.exports = function(app) {
   router.route('/personGames')
     .put(games.updatePersonGame);
 
+  router.route('/gameplaySessions')
+    .post(games.addGameplaySession);
+
   app.use('/api', router);
 
   // error handlers

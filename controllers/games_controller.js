@@ -41,3 +41,10 @@ exports.updatePersonGame = async function(request, response) {
     response.send({msg: 'Error updating personGame: ' + JSON.stringify(changedFields)});
   }
 };
+
+exports.addGameplaySession = async function(request, response) {
+  const gameplaySession = request.body;
+
+  await model.GameplaySession.create(gameplaySession);
+  response.json({});
+};
