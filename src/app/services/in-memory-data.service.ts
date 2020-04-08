@@ -52,12 +52,6 @@ export class InMemoryDataService implements InMemoryDbService{
     return null;
   }
 
-  // noinspection JSUnusedGlobalSymbols
-  post(requestInfo: RequestInfo): Observable<Response> {
-    console.log('HTTP override: POST');
-    return null;
-  }
-
   // DOMAIN HELPERS
 
 

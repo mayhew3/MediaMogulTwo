@@ -11,7 +11,6 @@ import * as moment from 'moment';
 })
 export class PlaytimePopupComponent implements OnInit {
   @Input() game: Game;
-  changedPlaytime: number;
   model: NgbDate;
 
   original = new GameTime();
@@ -34,18 +33,17 @@ export class PlaytimePopupComponent implements OnInit {
     this.original.initialize(this.game.personGame.minutes_played);
   }
 
-  updateUIFieldsWithNewDurations() {
-    this.changedPlaytime = this.resulting.asMinutes();
-  }
-
   newChanged() {
     this.added.duration = this.resulting.getDurationClone().subtract(this.original.duration);
-    this.updateUIFieldsWithNewDurations();
   }
 
   addedChanged() {
     this.resulting.duration = this.added.getDurationClone().add(this.original.duration);
-    this.updateUIFieldsWithNewDurations();
+  }
+
+  anyFieldsChanged() {
+    const gametimeChanged = this.added.asMinutes() > 0;
+    return gametimeChanged;
   }
 
   async saveAndClose() {
@@ -53,10 +51,10 @@ export class PlaytimePopupComponent implements OnInit {
       const momentObj = moment([this.model.year, this.model.month - 1, this.model.day]);
       const playedDate = momentObj.toDate();
       const changedFields = {
-        minutes_played: this.changedPlaytime
+        minutes_played: this.resulting.asMinutes()
       };
       const gameplaySession = {
-        minutes: this.changedPlaytime,
+        minutes: this.added.asMinutes(),
         start_time: playedDate,
         rating: this.sessionRating,
         person_id: 1,
@@ -116,7 +114,7 @@ class GameTime {
   }
 
   asMinutes(): number {
-    return this._duration.asMinutes();
+    return this._duration?.asMinutes();
   }
 
   private updateDuration() {
