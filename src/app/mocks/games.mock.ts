@@ -3,8 +3,8 @@
 export const MockGames = [
   {
     "timetotal": null,
-    "howlongExtras": 46.25,
     "metacritic": 61,
+    "natural_end": true,
     "title": "No Man's Sky",
     "platform": "Steam",
     "steamid": 275850,
@@ -12,8 +12,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2927125-no%20man%27s%20sky.jpg",
     "igdb_poster": "co1k01",
     "logo": "cba0b86aa959a8c63eeda8f5f6d19ef986262b67",
+    "howlong_extras": 46.25,
     "id": 721,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -29,8 +29,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": null,
+    "natural_end": true,
     "title": "Half-Life: Alyx",
     "platform": "Steam",
     "steamid": 546560,
@@ -38,8 +38,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3145045-alyx_coverart.jpg",
     "igdb_poster": null,
     "logo": "f7269f4b14f921e9dff13c05caf133ffe92b58ab",
+    "howlong_extras": null,
     "id": 1028,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -55,8 +55,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 11.9333,
     "metacritic": 93,
+    "natural_end": true,
     "title": "Beat Saber",
     "platform": "Steam",
     "steamid": 620980,
@@ -64,8 +64,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2994372-3242051476-BeatS.jpg",
     "igdb_poster": "co1itk",
     "logo": "3c62ccbe82e468b22b62fba0e254a8527445aab6",
+    "howlong_extras": 11.9333,
     "id": 1013,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -81,8 +81,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": null,
+    "natural_end": true,
     "title": "Tabletop Simulator",
     "platform": "Steam",
     "steamid": 286160,
@@ -90,8 +90,8 @@ export const MockGames = [
     "giantbomb_medium_url": null,
     "igdb_poster": "co20xe",
     "logo": "4cd5c6a6580ae6e85026ac670f9fa1a0b45372c3",
+    "howlong_extras": null,
     "id": 1032,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -107,8 +107,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": null,
+    "natural_end": true,
     "title": "Assassin's Creed Odyssey",
     "platform": "Steam",
     "steamid": 812140,
@@ -116,8 +116,8 @@ export const MockGames = [
     "giantbomb_medium_url": null,
     "igdb_poster": null,
     "logo": "fb3d894fb2a929df5fb0417f92864398a64909c6",
+    "howlong_extras": null,
     "id": 1031,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -133,8 +133,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": 74,
+    "natural_end": true,
     "title": "The Elder Scrolls V: Skyrim Special Edition",
     "platform": "Steam",
     "steamid": 489830,
@@ -142,8 +142,8 @@ export const MockGames = [
     "giantbomb_medium_url": null,
     "igdb_poster": "co1vco",
     "logo": "356b389ad5e6937f097b21b23acbb89608878ecf",
+    "howlong_extras": null,
     "id": 733,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -159,8 +159,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": null,
+    "natural_end": true,
     "title": "The Jackbox Party Pack 3",
     "platform": "Steam",
     "steamid": 434170,
@@ -168,8 +168,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2893546-capsule_main.png",
     "igdb_poster": "co1rbr",
     "logo": "d4b4a9e7eb51ae5ccd30f02f64759d6b43356b70",
+    "howlong_extras": null,
     "id": 601,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -185,8 +185,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 50.05,
     "metacritic": 81,
+    "natural_end": true,
     "title": "The Elder Scrolls V: Skyrim VR",
     "platform": "Steam",
     "steamid": 611670,
@@ -194,8 +194,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/1895988-skyrim.png",
     "igdb_poster": "co1tci",
     "logo": "9913f55f5b4e15e52d0faf66e0ed9ea06500d8c6",
+    "howlong_extras": 50.05,
     "id": 811,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -211,8 +211,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 73,
     "metacritic": 93,
+    "natural_end": true,
     "title": "Divinity: Original Sin 2",
     "platform": "Steam",
     "steamid": 435150,
@@ -220,8 +220,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2781491-photo-original.jpg",
     "igdb_poster": "co1y5v",
     "logo": "a83a75b8338e5576bea30f9f52c4eb2454e18efd",
+    "howlong_extras": 73,
     "id": 625,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -237,8 +237,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 2.45,
     "metacritic": null,
+    "natural_end": true,
     "title": "Psychonauts in the Rhombus of Ruin",
     "platform": "Steam",
     "steamid": 788690,
@@ -246,8 +246,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2920554-9112907699-32562.jpg",
     "igdb_poster": "tyqf5gif4yesxivnh9r3",
     "logo": "9ee11398aa04e6764a9ddb8582b2f1c7e7a8b466",
+    "howlong_extras": 2.45,
     "id": 1021,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -263,8 +263,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 36,
     "metacritic": 88,
+    "natural_end": false,
     "title": "XCOM 2",
     "platform": "Steam",
     "steamid": 268500,
@@ -272,8 +272,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2821995-xcom2box.jpg",
     "igdb_poster": "co1mvj",
     "logo": "10a6157d6614f63cd8a95d002d022778c207c218",
+    "howlong_extras": 36,
     "id": 479,
-    "naturalEnd": false,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -289,8 +289,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 10.3667,
     "metacritic": null,
+    "natural_end": true,
     "title": "The Walking Dead: The Final Season",
     "platform": "Steam",
     "steamid": 866800,
@@ -298,8 +298,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2952194-image%207-19-17%20at%2012.25%20pm.jpg",
     "igdb_poster": "co1v9y",
     "logo": "29dd34e5728fabaff7f66b4b214ad8ae7b7d0a81",
+    "howlong_extras": 10.3667,
     "id": 824,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -315,8 +315,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": null,
+    "natural_end": true,
     "title": "Blocks",
     "platform": "Steam",
     "steamid": 533970,
@@ -324,8 +324,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2711458-3110581229-Boxsh.png",
     "igdb_poster": "ctvdl5nwn05pqa6rggmd",
     "logo": "63d8a2f4ef9079f5c2fad1c963c4895c65665038",
+    "howlong_extras": null,
     "id": 1029,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -341,8 +341,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 11,
     "metacritic": 88,
+    "natural_end": true,
     "title": "Night in the Woods",
     "platform": "Steam",
     "steamid": 481510,
@@ -350,8 +350,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2952192-logo_nitw.png",
     "igdb_poster": "co1rc7",
     "logo": "f7e677cef75c04b719747dc892fa1411ecd7065f",
+    "howlong_extras": 11,
     "id": 770,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -367,8 +367,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 40.5,
     "metacritic": 87,
+    "natural_end": true,
     "title": "Subnautica",
     "platform": "Steam",
     "steamid": 264710,
@@ -376,8 +376,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3067261-box_subn.png",
     "igdb_poster": "tgjqi7pnqabsvgdtdujh",
     "logo": "d6bfaafed7b41466cc99b70972a944ac7e4d6edf",
+    "howlong_extras": 40.5,
     "id": 921,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -393,8 +393,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 93,
     "metacritic": 93,
+    "natural_end": true,
     "title": "The Witcher 3: Wild Hunt",
     "platform": "Steam",
     "steamid": 292030,
@@ -402,8 +402,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3699/2698809-the+witcher+3+-+wild+hunt+v7.jpg",
     "igdb_poster": "co1wyy",
     "logo": "2f22c2e5528b78662988dfcb0fc9aad372f01686",
+    "howlong_extras": 93,
     "id": 550,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -419,8 +419,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": null,
+    "natural_end": false,
     "title": "The Jackbox Party Pack 4",
     "platform": "Steam",
     "steamid": 610180,
@@ -428,8 +428,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2966744-4737054179-JPP4P.jpg",
     "igdb_poster": "yazbq2qvdavzanzgae8i",
     "logo": "11f6886c1deb548887d2fff6ce742dbfc1ad5e67",
+    "howlong_extras": null,
     "id": 751,
-    "naturalEnd": false,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -445,8 +445,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": null,
+    "natural_end": true,
     "title": "The Jackbox Party Pack 6",
     "platform": "Steam",
     "steamid": 1005300,
@@ -454,8 +454,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3135755-box_jpp6.png",
     "igdb_poster": null,
     "logo": "de4a607df1bdc81589a7e828e359e36560614b9b",
+    "howlong_extras": null,
     "id": 1027,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -471,8 +471,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 75.8667,
     "metacritic": 71,
+    "natural_end": true,
     "title": "The Elder Scrolls Online",
     "platform": "Steam",
     "steamid": 306130,
@@ -480,8 +480,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2980855-6743088497-ESO_B.jpg",
     "igdb_poster": "co1rta",
     "logo": "12b778bee50eb8d75f5ed04eb01117eae97f1e37",
+    "howlong_extras": 75.8667,
     "id": 888,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -497,8 +497,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 81,
     "metacritic": 93,
+    "natural_end": true,
     "title": "Divinity: Original Sin Enhanced Edition",
     "platform": "Steam",
     "steamid": 373420,
@@ -506,8 +506,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/19306/2219819-divinityosboxart.jpg",
     "igdb_poster": "co1z2p",
     "logo": "4e6d09ea2106beeb3ea6a481755a702f71987baf",
+    "howlong_extras": 81,
     "id": 473,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -523,8 +523,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 12.5667,
     "metacritic": 86,
+    "natural_end": true,
     "title": "Black Mesa",
     "platform": "Steam",
     "steamid": 362890,
@@ -532,8 +532,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/97089/2388988-fancover.png",
     "igdb_poster": "co1mzp",
     "logo": "07165fb02e18a4cf544125c1bd350fe300aef362",
+    "howlong_extras": 12.5667,
     "id": 469,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -549,8 +549,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": 77,
+    "natural_end": true,
     "title": "Star Trek: Bridge Crew",
     "platform": "Steam",
     "steamid": 527100,
@@ -558,8 +558,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2942779-star%20trek%20-%20bridge%20crew%20v1.jpg",
     "igdb_poster": "zmjrvtwkeci2kabkjdas",
     "logo": "78c80775d3571792d83715f064945e16b2c9d1cb",
+    "howlong_extras": null,
     "id": 691,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -575,8 +575,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 16,
     "metacritic": 78,
+    "natural_end": true,
     "title": "Mutant Year Zero: Road to Eden",
     "platform": "Steam",
     "steamid": 760060,
@@ -584,8 +584,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3064873-box_myzrte.png",
     "igdb_poster": "rybnssmgltiftj42nina",
     "logo": "10cd77a56650aa0a0018b902b7de585c007e8c31",
+    "howlong_extras": 16,
     "id": 1004,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -601,8 +601,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 70.7333,
     "metacritic": 88,
+    "natural_end": true,
     "title": "Stardew Valley",
     "platform": "Steam",
     "steamid": 413150,
@@ -610,8 +610,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2835884-sdv.jpg",
     "igdb_poster": "xrpmydnu9rpxvxfjkiu7",
     "logo": "694de1f9cf09aba9d6d118bcff07714343529a0a",
+    "howlong_extras": 70.7333,
     "id": 617,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -627,8 +627,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": 81,
+    "natural_end": true,
     "title": "Moss",
     "platform": "Steam",
     "steamid": 846470,
@@ -636,8 +636,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2980093-moss.png",
     "igdb_poster": "co1i1j",
     "logo": "79b2ee02200ba83ff285c21db203545172ddcc84",
+    "howlong_extras": null,
     "id": 1014,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -653,8 +653,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 12.5,
     "metacritic": 95,
+    "natural_end": true,
     "title": "Portal 2",
     "platform": "Steam",
     "steamid": 620,
@@ -662,8 +662,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1828915-box_portal2.png",
     "igdb_poster": "co1rs4",
     "logo": "d2a1119ddc202fab81d9b87048f495cbd6377502",
+    "howlong_extras": 12.5,
     "id": 333,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -679,8 +679,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 9,
     "metacritic": 89,
+    "natural_end": true,
     "title": "Lone Echo",
     "platform": "PC",
     "steamid": null,
@@ -688,8 +688,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2950198-lone_echo.jpg",
     "igdb_poster": "pk91ao5dhmymsdnzousl",
     "logo": null,
+    "howlong_extras": 9,
     "id": 1025,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": 90,
       "final_score": 99,
@@ -705,8 +705,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 11,
     "metacritic": 84,
+    "natural_end": true,
     "title": "Gears of War 4",
     "platform": "Xbox One",
     "steamid": null,
@@ -714,8 +714,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2892487-gears%20of%20war%204%20v1.jpg",
     "igdb_poster": null,
     "logo": null,
+    "howlong_extras": 11,
     "id": 1024,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -731,8 +731,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 5,
     "metacritic": 79,
+    "natural_end": true,
     "title": "Trover Saves the Universe",
     "platform": "Steam",
     "steamid": 1051200,
@@ -740,8 +740,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3104799-box_tstu.png",
     "igdb_poster": "co1k03",
     "logo": "32ebad00ee643b7b669c7a81e27ef49db92501eb",
+    "howlong_extras": 5,
     "id": 1019,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -757,8 +757,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": null,
+    "natural_end": true,
     "title": "Aperture Hand Lab",
     "platform": "Steam",
     "steamid": 868020,
@@ -766,8 +766,8 @@ export const MockGames = [
     "giantbomb_medium_url": null,
     "igdb_poster": "co1myo",
     "logo": "7f298880589331f806a67e8ab960c0b85cfe66a4",
+    "howlong_extras": null,
     "id": 1023,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -783,8 +783,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": 83,
+    "natural_end": true,
     "title": "SUPERHOT VR",
     "platform": "Steam",
     "steamid": 617830,
@@ -792,8 +792,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2861328-superhot%20vr%20coming%20soon.png",
     "igdb_poster": "co1noc",
     "logo": "6805f69aaea426d85b0f89ce6f81b275c585e57c",
+    "howlong_extras": null,
     "id": 706,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -809,8 +809,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 2,
     "metacritic": null,
+    "natural_end": true,
     "title": "The Lab",
     "platform": "Steam",
     "steamid": 450390,
@@ -818,8 +818,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2835479-thelab_with_logo.png",
     "igdb_poster": "co1zwc",
     "logo": "dde7f70d5d590ba242ca8fcfaac9fe9b5e5e8754",
+    "howlong_extras": 2,
     "id": 708,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": 80,
       "final_score": 88,
@@ -835,8 +835,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 16,
     "metacritic": 76,
+    "natural_end": true,
     "title": "Obduction",
     "platform": "Steam",
     "steamid": 306760,
@@ -844,8 +844,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2610116-1394802403-Deskt.png",
     "igdb_poster": "co1k88",
     "logo": "5fc89a3de35cc7829660406544bb17dc75a35983",
+    "howlong_extras": 16,
     "id": 1012,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -861,8 +861,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": null,
+    "natural_end": true,
     "title": "Blade Runner 9732",
     "platform": "Steam",
     "steamid": 770990,
@@ -870,8 +870,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2990122-9716500552-heade.jpg",
     "igdb_poster": "co1nss",
     "logo": "cbfcf82179903244b4dc8053b5dd9ad1379a5b9d",
+    "howlong_extras": null,
     "id": 780,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": 30,
       "final_score": 70,
@@ -887,8 +887,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 13,
     "metacritic": 55,
+    "natural_end": true,
     "title": "The Assembly",
     "platform": "Steam",
     "steamid": 373650,
@@ -896,8 +896,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2918125-8906007439-image",
     "igdb_poster": "co1kpk",
     "logo": "754de334f0cbac6b7eb886c6b627fd56d00be2a6",
+    "howlong_extras": 13,
     "id": 769,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -913,8 +913,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 1.5,
     "metacritic": null,
+    "natural_end": true,
     "title": "Luna",
     "platform": "Steam",
     "steamid": 605770,
@@ -922,8 +922,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2877899-screen%20shot%202016-08-18%20at%2012.10.27%20am.png",
     "igdb_poster": "dbe7fufnofbkt4n8dfmg",
     "logo": "0ba421ca123d153ef81e9754419f2ca7f52d81cb",
+    "howlong_extras": 1.5,
     "id": 755,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -939,8 +939,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": null,
+    "natural_end": true,
     "title": "Trials on Tatooine",
     "platform": "Steam",
     "steamid": 381940,
@@ -948,8 +948,8 @@ export const MockGames = [
     "giantbomb_medium_url": null,
     "igdb_poster": "co1pu1",
     "logo": "716860d540665a9f1860fa54bdef28657cb775e4",
+    "howlong_extras": null,
     "id": 690,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -965,8 +965,8 @@ export const MockGames = [
   },
   {
     "timetotal": 140,
-    "howlongExtras": 46,
     "metacritic": 89,
+    "natural_end": true,
     "title": "Borderlands 2",
     "platform": "Steam",
     "steamid": 49520,
@@ -974,8 +974,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2560027-bl2clean.jpg",
     "igdb_poster": "co1rbh",
     "logo": "86b0fa5ddb41b4dfff7df194a017f3418130d668",
+    "howlong_extras": 46,
     "id": 287,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": 89,
@@ -991,8 +991,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 14.6333,
     "metacritic": 85,
+    "natural_end": true,
     "title": "DOOM",
     "platform": "Steam",
     "steamid": 379720,
@@ -1000,8 +1000,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2849529-doom.jpg",
     "igdb_poster": "co1nc7",
     "logo": "2e6aa9a14a0da798fe9f1c0a4d0bacecf241c0a2",
+    "howlong_extras": 14.6333,
     "id": 616,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1017,8 +1017,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 30.9667,
     "metacritic": 89,
+    "natural_end": false,
     "title": "Forza Horizon 4",
     "platform": "PC",
     "steamid": null,
@@ -1026,8 +1026,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3027867-box_fh4.png",
     "igdb_poster": "co1rc5",
     "logo": null,
+    "howlong_extras": 30.9667,
     "id": 903,
-    "naturalEnd": false,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1043,8 +1043,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": null,
+    "natural_end": true,
     "title": "Drawful 2",
     "platform": "Steam",
     "steamid": 442070,
@@ -1052,8 +1052,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2864093-drawful2_gb_coverimage.png",
     "igdb_poster": "co1rqn",
     "logo": "71a80da8dcf0487458f9e8e5ef6d8ad2be7bedbb",
+    "howlong_extras": null,
     "id": 630,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1069,8 +1069,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 22.8,
     "metacritic": null,
+    "natural_end": true,
     "title": "Batman: Arkham City GOTY",
     "platform": "Steam",
     "steamid": 200260,
@@ -1078,8 +1078,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2606170-batmanaccleanbox.jpg",
     "igdb_poster": "co1voh",
     "logo": "9b229e12fd5ce27bd101d5862c19b1a6e3d01239",
+    "howlong_extras": 22.8,
     "id": 466,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1095,8 +1095,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": 94,
+    "natural_end": false,
     "title": "Sid Meier's Civilization VI",
     "platform": "Steam",
     "steamid": 289070,
@@ -1104,8 +1104,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2850388-6884774514-capsu.jpg",
     "igdb_poster": "zhqjcjfltpubefktcghk",
     "logo": "356443a094f8e20ce21293039d7226eac3d3b4d9",
+    "howlong_extras": null,
     "id": 599,
-    "naturalEnd": false,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1121,8 +1121,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 14,
     "metacritic": 90,
+    "natural_end": true,
     "title": "Into the Breach",
     "platform": "Steam",
     "steamid": 590380,
@@ -1130,8 +1130,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3070403-3646928047-SF4J4.jpg",
     "igdb_poster": "ntjvv6crd4n66steokv5",
     "logo": "4d5cc98fc191ae26c438f4eb5a6af38ff5e19600",
+    "howlong_extras": 14,
     "id": 935,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1147,8 +1147,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 24,
     "metacritic": 87,
+    "natural_end": true,
     "title": "Marvel's Spider-Man",
     "platform": "PS4",
     "steamid": null,
@@ -1156,8 +1156,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3037524-marvel%27s%20spider-man.jpg",
     "igdb_poster": "xcrfutqlaa3q81m7blmh",
     "logo": null,
+    "howlong_extras": 24,
     "id": 945,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1173,8 +1173,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 31,
     "metacritic": 74,
+    "natural_end": true,
     "title": "Just Cause 3",
     "platform": "Steam",
     "steamid": 225540,
@@ -1182,8 +1182,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2744923-just%20cause%203%20cover%20v1.jpg",
     "igdb_poster": "cnxdzlqwpv5dtvoxq90n",
     "logo": "afdb9bd71ccd65d3fcfc4735076d50cead701036",
+    "howlong_extras": 31,
     "id": 712,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1199,8 +1199,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 1.8,
     "metacritic": null,
+    "natural_end": true,
     "title": "The First Tree",
     "platform": "Steam",
     "steamid": 555150,
@@ -1208,8 +1208,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2956959-screen%20shot%202017-08-12%20at%203.00.04%20pm.png",
     "igdb_poster": "co1jy1",
     "logo": "4f6a3d7badfff4a872529f690a05d64c62b92ce6",
+    "howlong_extras": 1.8,
     "id": 744,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1225,8 +1225,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 6.5,
     "metacritic": 73,
+    "natural_end": true,
     "title": "Everybody's Gone to the Rapture",
     "platform": "Steam",
     "steamid": 417880,
@@ -1234,8 +1234,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/81005/2774607-0070203710-21296.jpg",
     "igdb_poster": "co1ktd",
     "logo": "5de03f9d628995f710011cde939b6458c88c5c33",
+    "howlong_extras": 6.5,
     "id": 553,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1251,8 +1251,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 15,
     "metacritic": 75,
+    "natural_end": true,
     "title": "Ghost of a Tale",
     "platform": "Steam",
     "steamid": 417290,
@@ -1260,8 +1260,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2472817-ghost%20of%20a%20tale%20logo.png",
     "igdb_poster": "jwuyq1umnsx7pppdk4c9",
     "logo": "a459fa7795fa68ab906d76d9fb3c4415ec8036b2",
+    "howlong_extras": 15,
     "id": 929,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1277,8 +1277,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 5.6,
     "metacritic": 86,
+    "natural_end": true,
     "title": "Day of the Tentacle Remastered",
     "platform": "Steam",
     "steamid": 388210,
@@ -1286,8 +1286,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/609071-day_of_the_tentacle_box_front_6534x8205.jpg",
     "igdb_poster": "hlpoenohjabxmn12b74o",
     "logo": "d652df906f889c9eeb47c52eb9190cbade874493",
+    "howlong_extras": 5.6,
     "id": 552,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1303,8 +1303,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 12.8333,
     "metacritic": null,
+    "natural_end": true,
     "title": "BioShock 2 Remastered",
     "platform": "Steam",
     "steamid": 409720,
@@ -1312,8 +1312,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2584143-bioshock2.jpg",
     "igdb_poster": "co1qq9",
     "logo": "34c3f591cf4cb28711d7f33f73dee0f09cdb94a4",
+    "howlong_extras": 12.8333,
     "id": 588,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1329,8 +1329,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 56,
     "metacritic": 84,
+    "natural_end": true,
     "title": "Fallout: New Vegas",
     "platform": "Steam",
     "steamid": 22380,
@@ -1338,8 +1338,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/3/30036/1563495-falloutnewvegasboxartntsc.jpg",
     "igdb_poster": "co1u60",
     "logo": "1a52975c043227184162627285e4bc0c83216e02",
+    "howlong_extras": 56,
     "id": 220,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1355,8 +1355,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": 83,
+    "natural_end": false,
     "title": "World of Warcraft: Battle for Azeroth",
     "platform": "PC",
     "steamid": null,
@@ -1364,8 +1364,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3015277-6219515987-world.jpg",
     "igdb_poster": "co1xvy",
     "logo": null,
+    "howlong_extras": null,
     "id": 889,
-    "naturalEnd": false,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1381,8 +1381,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": null,
+    "natural_end": false,
     "title": "The Jackbox Party Pack 5",
     "platform": "Steam",
     "steamid": 774461,
@@ -1390,8 +1390,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3056609-box_jpp5.png",
     "igdb_poster": "co1h3t",
     "logo": "94f3abc9787f75183cc732827dc10dadc9d44d95",
+    "howlong_extras": null,
     "id": 919,
-    "naturalEnd": false,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1407,8 +1407,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 15.1833,
     "metacritic": 94,
+    "natural_end": true,
     "title": "Uncharted 4: A Thief's End",
     "platform": "PS4",
     "steamid": null,
@@ -1416,8 +1416,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2848570-uc4boxclean.jpg",
     "igdb_poster": "co1r7h",
     "logo": null,
+    "howlong_extras": 15.1833,
     "id": 500,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": 50,
       "final_score": 89,
@@ -1433,8 +1433,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 9.75,
     "metacritic": 80,
+    "natural_end": true,
     "title": "The Walking Dead: Season Two",
     "platform": "Steam",
     "steamid": 261030,
@@ -1442,8 +1442,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/39/2565113-wds2_psn_pc_boxart.jpg",
     "igdb_poster": "jeejwyrhtcjkusr5tkma",
     "logo": "fcfbf375cb9249601eca22c1847447b92e15d82d",
+    "howlong_extras": 9.75,
     "id": 318,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": 96,
@@ -1459,8 +1459,8 @@ export const MockGames = [
   },
   {
     "timetotal": 2,
-    "howlongExtras": 13.2,
     "metacritic": 38,
+    "natural_end": true,
     "title": "The Walking Dead",
     "platform": "Steam",
     "steamid": 207610,
@@ -1468,8 +1468,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2348800-box_twdead.png",
     "igdb_poster": "kgpjyo7fl6nuue2gmd4d",
     "logo": "6d756726214dd97c54966814d58508b86d5eabcf",
+    "howlong_extras": 13.2,
     "id": 209,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": 92,
@@ -1485,8 +1485,8 @@ export const MockGames = [
   },
   {
     "timetotal": 1500,
-    "howlongExtras": null,
     "metacritic": 88,
+    "natural_end": false,
     "title": "World of Warcraft: Legion",
     "platform": "PC",
     "steamid": null,
@@ -1494,8 +1494,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2881096-box_wowl.png",
     "igdb_poster": "co1tz9",
     "logo": null,
+    "howlong_extras": null,
     "id": 590,
-    "naturalEnd": false,
     "person_games": [{
       "replay_score": 78,
       "final_score": 90,
@@ -1511,8 +1511,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": 88,
+    "natural_end": true,
     "title": "Hellblade: Senua's Sacrifice VR Edition",
     "platform": "Steam",
     "steamid": 747350,
@@ -1520,8 +1520,8 @@ export const MockGames = [
     "giantbomb_medium_url": null,
     "igdb_poster": "co1koo",
     "logo": "d644a74bacd0ecfedf6b68806c6ad6f6253a17fa",
+    "howlong_extras": null,
     "id": 884,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1537,8 +1537,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": null,
+    "natural_end": true,
     "title": "Star Wars: Droid Repair Bay",
     "platform": "Steam",
     "steamid": 726910,
@@ -1546,8 +1546,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3000378-header%20%281%29.jpg",
     "igdb_poster": "ljoc8u0pa3yxbvhuelkh",
     "logo": "fb90088d3032dec2b88a160a34ae4736c4e686d4",
+    "howlong_extras": null,
     "id": 762,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": 78,
       "final_score": 77,
@@ -1563,8 +1563,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": null,
+    "natural_end": true,
     "title": "theBlu",
     "platform": "Steam",
     "steamid": 451520,
@@ -1572,8 +1572,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2956121-header%20%287%29.jpg",
     "igdb_poster": "ncknkeo5dncm3e28iqpl",
     "logo": "7dcc941515141de366b9d57a4e1cb6125e0cd14d",
+    "howlong_extras": null,
     "id": 764,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1589,8 +1589,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 12.9833,
     "metacritic": 76,
+    "natural_end": true,
     "title": "Game of Thrones - A Telltale Games Series",
     "platform": "Steam",
     "steamid": 330840,
@@ -1598,8 +1598,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2706658-box_got.jpg",
     "igdb_poster": "co1nrt",
     "logo": "93beb587402d54d1226cda1c3ba81947eae6253f",
+    "howlong_extras": 12.9833,
     "id": 363,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1615,8 +1615,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 20.3167,
     "metacritic": 83,
+    "natural_end": true,
     "title": "Destiny 2",
     "platform": "PC",
     "steamid": null,
@@ -1624,8 +1624,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2929252-destiny%202%20v3.jpg",
     "igdb_poster": "co1n6x",
     "logo": null,
+    "howlong_extras": 20.3167,
     "id": 812,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1641,8 +1641,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 100,
     "metacritic": 78,
+    "natural_end": true,
     "title": "Fallout 4 VR",
     "platform": "Steam",
     "steamid": 611660,
@@ -1650,8 +1650,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2795700-2356006370-64616.jpg",
     "igdb_poster": "co1ybx",
     "logo": "443247728f42c8ff869006545d2d490bd1807f39",
+    "howlong_extras": 100,
     "id": 810,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1667,8 +1667,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 371.5,
     "metacritic": 66,
+    "natural_end": true,
     "title": "Star Trek Online",
     "platform": "Steam",
     "steamid": 9900,
@@ -1676,8 +1676,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/5150/1195003-924226_58206_front.jpg",
     "igdb_poster": "co1o44",
     "logo": "91fba3965f7c68399204932586de59ba0cfc96db",
+    "howlong_extras": 371.5,
     "id": 323,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1693,8 +1693,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 14.25,
     "metacritic": 84,
+    "natural_end": true,
     "title": "Pyre",
     "platform": "Steam",
     "steamid": 462770,
@@ -1702,8 +1702,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2945692-pyre%20v1.jpg",
     "igdb_poster": "co1xzl",
     "logo": "33625650a14cbb206f3eb60f23960e7046e18df8",
+    "howlong_extras": 14.25,
     "id": 736,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1719,8 +1719,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 9.3167,
     "metacritic": 58,
+    "natural_end": true,
     "title": "80 Days",
     "platform": "Steam",
     "steamid": 381780,
@@ -1728,8 +1728,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2680099-80-days.jpg",
     "igdb_poster": "co1s0w",
     "logo": "0a6721d6476e8197b7bb0f9cb7559d5147c6a18b",
+    "howlong_extras": 9.3167,
     "id": 537,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": 83,
       "final_score": 80,
@@ -1745,8 +1745,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 4.0667,
     "metacritic": 81,
+    "natural_end": true,
     "title": "Overcooked",
     "platform": "Steam",
     "steamid": 448510,
@@ -1754,8 +1754,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2839669-1030241794-overc.png",
     "igdb_poster": "zqjb9a7dp6umn2jtjsj9",
     "logo": "73dd86e8b420c419317badba04a2e350186ff974",
+    "howlong_extras": 4.0667,
     "id": 586,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1771,8 +1771,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 6.1,
     "metacritic": 73,
+    "natural_end": true,
     "title": "Lara Croft and the Temple of Osiris",
     "platform": "Steam",
     "steamid": 289690,
@@ -1780,8 +1780,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2701424-box_lcattos.jpg",
     "igdb_poster": "co1voe",
     "logo": "4e777a99ba228c1d6af4551c3c72931e355dede4",
+    "howlong_extras": 6.1,
     "id": 371,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1797,8 +1797,8 @@ export const MockGames = [
   },
   {
     "timetotal": 12.5,
-    "howlongExtras": 13,
     "metacritic": 89,
+    "natural_end": true,
     "title": "Rayman Legends",
     "platform": "Steam",
     "steamid": 242550,
@@ -1806,8 +1806,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2539437-raymanlegendsclean.jpg",
     "igdb_poster": "co1tkj",
     "logo": "b163657cc450f59ce5ba002b8cd961f54fbde6ba",
+    "howlong_extras": 13,
     "id": 29,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1823,8 +1823,8 @@ export const MockGames = [
   },
   {
     "timetotal": 3.5,
-    "howlongExtras": 3.2,
     "metacritic": 90,
+    "natural_end": true,
     "title": "Brothers - A Tale of Two Sons",
     "platform": "Steam",
     "steamid": 225080,
@@ -1832,8 +1832,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2478646-box_bros.png",
     "igdb_poster": "co1rro",
     "logo": "12f5c3aaa2b1d69d0786e1d09e0b77e2da6f8980",
+    "howlong_extras": 3.2,
     "id": 229,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1849,8 +1849,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 3.4333,
     "metacritic": 77,
+    "natural_end": true,
     "title": "Tacoma",
     "platform": "Steam",
     "steamid": 343860,
@@ -1858,8 +1858,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2954337-box_tacoma.png",
     "igdb_poster": "ajdxllbacwaq2uk67t5w",
     "logo": "f362de66e07b4bccddf753edba922d2d658d5b84",
+    "howlong_extras": 3.4333,
     "id": 734,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": 40,
       "final_score": 90,
@@ -1875,8 +1875,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": 82,
+    "natural_end": false,
     "title": "Endless Space 2",
     "platform": "Steam",
     "steamid": 392110,
@@ -1884,8 +1884,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2849137-7165554289-capsu.jpg",
     "igdb_poster": "co1qk6",
     "logo": "ca2bf6ee90af4aa0e88988792920c2de89a85043",
+    "howlong_extras": null,
     "id": 682,
-    "naturalEnd": false,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1901,8 +1901,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 20,
     "metacritic": 82,
+    "natural_end": false,
     "title": "Endless Legend",
     "platform": "Steam",
     "steamid": 289130,
@@ -1910,8 +1910,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/1992/2615275-screen+shot+2014-03-31+at+10.29.10+pm.jpg",
     "igdb_poster": "co1rgd",
     "logo": "c6f4705430c4b43450d2f9d41d1d84009d42bf9e",
+    "howlong_extras": 20,
     "id": 361,
-    "naturalEnd": false,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1927,8 +1927,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": 78,
+    "natural_end": true,
     "title": "DiRT 4",
     "platform": "Steam",
     "steamid": 421020,
@@ -1936,8 +1936,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2921871-dirt%204%20v2.jpg",
     "igdb_poster": "co1srr",
     "logo": "45c6b6ebefa3283c86f2dbbd116d8f4432f38125",
+    "howlong_extras": null,
     "id": 768,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1953,8 +1953,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": null,
+    "natural_end": true,
     "title": "Rec Room",
     "platform": "Steam",
     "steamid": 471710,
@@ -1962,8 +1962,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2885410-8174793569-21074.png",
     "igdb_poster": "co1nnb",
     "logo": "f557637186688996be65d2a6393b998c117b9447",
+    "howlong_extras": null,
     "id": 783,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -1979,8 +1979,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 4.25,
     "metacritic": null,
+    "natural_end": true,
     "title": "Vanishing Realms",
     "platform": "Steam",
     "steamid": 322770,
@@ -1988,8 +1988,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2885702-6605284553-32428.jpg",
     "igdb_poster": "banvfesn5hxprglxx5mk",
     "logo": "675b69cc7e9bc3588a9f93bd3b2a1e9a4e2757e0",
+    "howlong_extras": 4.25,
     "id": 726,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -2005,8 +2005,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 35,
     "metacritic": 81,
+    "natural_end": true,
     "title": "Middle-earth™: Shadow of War™",
     "platform": "Steam",
     "steamid": 356190,
@@ -2014,8 +2014,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2940192-middle-earth%20-%20shadow%20of%20war.jpg",
     "igdb_poster": "co1vyb",
     "logo": "5c8d36880cac09260240bc8931df20a7a19f3933",
+    "howlong_extras": 35,
     "id": 740,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -2031,8 +2031,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": 75,
+    "natural_end": true,
     "title": "Rick and Morty: Virtual Rick-ality",
     "platform": "Steam",
     "steamid": 469610,
@@ -2040,8 +2040,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2931796-5218167123-heade.jpg",
     "igdb_poster": "etsrzzkgxrhif8kfhozf",
     "logo": "a55b1d3501ae84114bf7a94681f1051cf0080d64",
+    "howlong_extras": null,
     "id": 720,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -2057,8 +2057,8 @@ export const MockGames = [
   },
   {
     "timetotal": 100,
-    "howlongExtras": 65,
     "metacritic": 89,
+    "natural_end": true,
     "title": "Fallout 4",
     "platform": "Steam",
     "steamid": 377160,
@@ -2066,8 +2066,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2795700-2356006370-64616.jpg",
     "igdb_poster": "co1yc6",
     "logo": "8977a8e98acbbdd3c0ff905afb7e0a6e2eb555ea",
+    "howlong_extras": 65,
     "id": 463,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -2083,8 +2083,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 2.5833,
     "metacritic": 90,
+    "natural_end": true,
     "title": "What Remains of Edith Finch",
     "platform": "Steam",
     "steamid": 501300,
@@ -2092,8 +2092,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2706838-8315902633-15774.jpg",
     "igdb_poster": "co1rbj",
     "logo": "290019afe6d1b5f5d95bdb78ae7e9df95c770a24",
+    "howlong_extras": 2.5833,
     "id": 685,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": 82,
       "final_score": 94,
@@ -2109,8 +2109,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 11.25,
     "metacritic": 89,
+    "natural_end": true,
     "title": "Owlboy",
     "platform": "Steam",
     "steamid": 115800,
@@ -2118,8 +2118,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/1856648-imgowlboyfront.png",
     "igdb_poster": "co1nc2",
     "logo": "3e5eaaa3a11ab21fffc4427a3ac96071f5ca3fb5",
+    "howlong_extras": 11.25,
     "id": 622,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -2135,8 +2135,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 9,
     "metacritic": 64,
+    "natural_end": true,
     "title": "Batman - The Telltale Series",
     "platform": "Steam",
     "steamid": 498240,
@@ -2144,8 +2144,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2802809-4053170348-BATMA.jpg",
     "igdb_poster": null,
     "logo": "f65743589420350c12dfa8ba7029741e7312e2bc",
+    "howlong_extras": 9,
     "id": 578,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -2161,8 +2161,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 8.1667,
     "metacritic": 86,
+    "natural_end": true,
     "title": "The Walking Dead: A New Frontier",
     "platform": "Steam",
     "steamid": 536220,
@@ -2170,8 +2170,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2881711-1740787089-latest",
     "igdb_poster": "htukasmkr6mw7pb2zezg",
     "logo": "19c4335343e096df07b8604b260801ff9485f3f6",
+    "howlong_extras": 8.1667,
     "id": 624,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": 42,
       "final_score": 87,
@@ -2187,8 +2187,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 2.55,
     "metacritic": 88,
+    "natural_end": true,
     "title": "ABZÛ",
     "platform": "Steam",
     "steamid": 384190,
@@ -2196,8 +2196,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2643576-imagen_tarreo_41398_523.jpg",
     "igdb_poster": "mvplc0engxcuxnbi5zef",
     "logo": "8ddd3b70bf7c92ad9e7fb3eda763fcf558ea8b99",
+    "howlong_extras": 2.55,
     "id": 577,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": 83,
       "final_score": 93,
@@ -2213,8 +2213,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 15,
     "metacritic": 81,
+    "natural_end": true,
     "title": "Redout: Enhanced Edition",
     "platform": "Steam",
     "steamid": 517710,
@@ -2222,8 +2222,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2877905-screen%20shot%202016-08-18%20at%2012.40.38%20am.png",
     "igdb_poster": "co1sb5",
     "logo": "401074d32fe0517830e408ac1ad1371b0ef24cec",
+    "howlong_extras": 15,
     "id": 686,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -2239,8 +2239,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 77.7833,
     "metacritic": 83,
+    "natural_end": true,
     "title": "Project CARS",
     "platform": "Steam",
     "steamid": 234630,
@@ -2248,8 +2248,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2652860-pcars.jpg",
     "igdb_poster": "co1nna",
     "logo": "88acff9eeb54253571aef8c65e8cfc57dddad493",
+    "howlong_extras": 77.7833,
     "id": 401,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -2265,8 +2265,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 115,
     "metacritic": 80,
+    "natural_end": true,
     "title": "Elite Dangerous",
     "platform": "Steam",
     "steamid": 359320,
@@ -2274,8 +2274,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/13/137364/2362002-elite_dangerous.png",
     "igdb_poster": "co1nrx",
     "logo": "8cec856f5350e59f874bc1171fc864175fe095eb",
+    "howlong_extras": 115,
     "id": 417,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -2291,8 +2291,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": null,
+    "natural_end": true,
     "title": "Spider-Man: Homecoming - Virtual Reality Experience",
     "platform": "Steam",
     "steamid": 645480,
@@ -2300,8 +2300,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3003097-9959141091-63864.jpg",
     "igdb_poster": null,
     "logo": "aeb5ceea8d597dad6f2568284fc9dbd4aba3e30d",
+    "howlong_extras": null,
     "id": 707,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": 45,
       "final_score": 62,
@@ -2317,8 +2317,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 21.6,
     "metacritic": 68,
+    "natural_end": true,
     "title": "The Solus Project",
     "platform": "Steam",
     "steamid": 313630,
@@ -2326,8 +2326,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2759396-capture.png",
     "igdb_poster": "co1z4a",
     "logo": "58e31134f2ccb87ff7f3d051e0d9d37c80bc07c0",
+    "howlong_extras": 21.6,
     "id": 613,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -2343,8 +2343,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 2.75,
     "metacritic": null,
+    "natural_end": true,
     "title": "Batman™: Arkham VR",
     "platform": "Steam",
     "steamid": 502820,
@@ -2352,8 +2352,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2861864-bavr.jpg",
     "igdb_poster": "mtn0liu6i0wdyi8ur6ya",
     "logo": "91329f946cce25b508a138be6b1658808d8f9501",
+    "howlong_extras": 2.75,
     "id": 696,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": 87,
       "final_score": 93,
@@ -2369,8 +2369,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 15,
     "metacritic": 81,
+    "natural_end": true,
     "title": "EVERSPACE™",
     "platform": "Steam",
     "steamid": 396750,
@@ -2378,8 +2378,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2896242-everspace%20twitch%20box%20art%2005.jpg",
     "igdb_poster": "co1lh1",
     "logo": "63f4fe4f63ac057156066c8ab777ef26b949cd1d",
+    "howlong_extras": 15,
     "id": 695,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -2395,8 +2395,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 32,
     "metacritic": 88,
+    "natural_end": true,
     "title": "The Witcher 2: Assassins of Kings Enhanced Edition",
     "platform": "Steam",
     "steamid": 20920,
@@ -2404,8 +2404,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2558583-w2clean.jpg",
     "igdb_poster": "co1ykc",
     "logo": "f0274a91931ed39f7c69dca9f907ceae6450785c",
+    "howlong_extras": 32,
     "id": 260,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -2421,8 +2421,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 46.5833,
     "metacritic": 85,
+    "natural_end": true,
     "title": "Planescape: Torment: Enhanced Edition",
     "platform": "Steam",
     "steamid": 466300,
@@ -2430,8 +2430,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2866834-5657312460-1067_.jpg",
     "igdb_poster": "co1u3h",
     "logo": "0331225b3ddcbdc4f3e2ff6acb4b8c614b23a841",
+    "howlong_extras": 46.5833,
     "id": 689,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -2447,8 +2447,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": 78,
+    "natural_end": false,
     "title": "Stellaris",
     "platform": "Steam",
     "steamid": 281990,
@@ -2456,8 +2456,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/28/281548/2774789-6284070328-29173.jpg",
     "igdb_poster": "co1r75",
     "logo": "f5cbaabbd315bd64e2af4c3b8193d59d310786d1",
+    "howlong_extras": null,
     "id": 530,
-    "naturalEnd": false,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -2473,8 +2473,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 25,
     "metacritic": 86,
+    "natural_end": true,
     "title": "Cities: Skylines",
     "platform": "Steam",
     "steamid": 255710,
@@ -2482,8 +2482,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/17/171291/2670675-temp-packshot-v2.jpg",
     "igdb_poster": "co1mx3",
     "logo": "1b90f32be112870a4fa22c819a358d047b38d97f",
+    "howlong_extras": 25,
     "id": 474,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -2499,8 +2499,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": 35.25,
     "metacritic": 83,
+    "natural_end": true,
     "title": "Grim Dawn",
     "platform": "Steam",
     "steamid": 219990,
@@ -2508,8 +2508,8 @@ export const MockGames = [
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2831613-gd_key_art_vertical_01.jpg",
     "igdb_poster": "co1qr9",
     "logo": "8021ad6119b367593f1b1536aafd11397fb24ae9",
+    "howlong_extras": 35.25,
     "id": 660,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -2525,8 +2525,8 @@ export const MockGames = [
   },
   {
     "timetotal": 1.5,
-    "howlongExtras": 10,
     "metacritic": 69,
+    "natural_end": true,
     "title": "Marvel's Guardians of the Galaxy: The Telltale Series",
     "platform": "Steam",
     "steamid": 579950,
@@ -2534,8 +2534,8 @@ export const MockGames = [
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2933114-image%20%282%29.jpg",
     "igdb_poster": "adhfhmtih9pohnukewhm",
     "logo": "318a001cad6624a0c9cf46c4738394c2adb08d57",
+    "howlong_extras": 10,
     "id": 673,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,
@@ -2551,8 +2551,8 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "howlongExtras": null,
     "metacritic": null,
+    "natural_end": true,
     "title": "DisplayFusion",
     "platform": "Steam",
     "steamid": 227260,
@@ -2560,8 +2560,8 @@ export const MockGames = [
     "giantbomb_medium_url": null,
     "igdb_poster": "zxzkgtg7drybfmmndz1n",
     "logo": "bf3469268ad02e6be697f1101a1b33d24675b776",
+    "howlong_extras": null,
     "id": 295,
-    "naturalEnd": true,
     "person_games": [{
       "replay_score": null,
       "final_score": null,

@@ -2,6 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {Game} from '../../interfaces/Game';
 import {ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {PlaytimePopupComponent} from '../playtime-popup/playtime-popup.component';
+import {GameDetailComponent} from '../game-detail/game-detail.component';
 
 @Component({
   selector: 'mm-game-card',
@@ -38,8 +39,19 @@ export class GameCardComponent implements OnInit {
     }
   }
 
-  async open(game: Game) {
+  async openPlaytimePopup(game: Game) {
     const modalRef = this.modalService.open(PlaytimePopupComponent, {size: 'lg'});
+    modalRef.componentInstance.game = game;
+    try {
+      const result = await modalRef.result;
+      this.closeResult = `Closed with: ${result}`;
+    } catch (err) {
+      this.closeResult = `Dismissed ${GameCardComponent.getDismissReason(err)}`;
+    }
+  }
+
+  async openDetailPopup(game: Game) {
+    const modalRef = this.modalService.open(GameDetailComponent, {size: 'lg'});
     modalRef.componentInstance.game = game;
     try {
       const result = await modalRef.result;

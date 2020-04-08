@@ -1,0 +1,97 @@
+<div class="modal-header">
+  <h1>Update Game</h1>
+  <button type="button"
+          class="btn btn-warning close"
+          aria-label="Close"
+          (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="modal-body"
+     *ngIf="!!game">
+
+  <h3>{{game.title}}</h3>
+
+  <form>
+    <div class="row">
+
+      <!--PLATFORM-->
+      <div class="col-4">
+        <label class="col-form-label" for="platform">Platform</label>
+        <select class="custom-select"
+                id="platform"
+                name="platform"
+                [(ngModel)]="interfaceFields.platform">
+          <option *ngFor="let platform of possiblePlatforms"
+                  [selected]="platform === interfaceFields.platform"
+                  (click)="updatePlatform(platform)">{{platform}}</option>
+        </select>
+      </div>
+
+      <!--METACRITIC HINT-->
+      <div class="col-4">
+        <label class="col-form-label" for="metacriticHint">Metacritic Hint</label>
+        <input type="text"
+               id="metacriticHint"
+               class="darkInput form-control"
+               name="metacriticHint"
+               [(ngModel)]="interfaceFields.metacritic_hint"
+               (ngModelChange)="onFieldEdit()"/>
+      </div>
+
+      <!--NATURAL END-->
+      <div class="col-4">
+        <label class="col-form-label" for="naturalEnd">Natural End</label>
+        <input type="checkbox"
+               id="naturalEnd"
+               name="naturalEnd"
+               class="form-control"
+               (change)="onFieldEdit()"
+               [(ngModel)]="interfaceFields.natural_end">
+      </div>
+
+      <!--RATING-->
+      <div class="col-4">
+        <label class="col-form-label" for="rating">Rating</label>
+        <input type="number"
+               id="rating"
+               name="rating"
+               class="darkInput form-control"
+               [(ngModel)]="interfacePersonFields.rating"
+               (ngModelChange)="onFieldEdit()"/>
+      </div>
+
+      <!--HOWLONG-->
+      <div class="col-4">
+        <label class="col-form-label" for="howlong">Howlong ID</label>
+        <input type="number"
+               id="howlong"
+               name="howlong"
+               class="darkInput form-control"
+               [(ngModel)]="interfacePersonFields.howlong_id"
+               (ngModelChange)="onFieldEdit()"/>
+      </div>
+
+      <!--GIANTBOMB-->
+      <div class="col-4">
+        <label class="col-form-label" for="giantbomb">GiantBomb ID</label>
+        <input type="number"
+               id="giantbomb"
+               name="giantbomb"
+               class="darkInput form-control"
+               [(ngModel)]="interfacePersonFields.giantbomb_id"
+               (ngModelChange)="onFieldEdit()"/>
+      </div>
+
+    </div>
+
+  </form>
+</div>
+
+<div class="modal-footer">
+  <button type="button"
+          class="btn btn-primary"
+          [disabled]="!anyFieldsChanged()"
+          (click)="changeValues()">Update and Close</button>
+</div>

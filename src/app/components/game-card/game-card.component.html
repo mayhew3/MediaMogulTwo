@@ -6,6 +6,7 @@
            *ngIf="!!getImageUrl()"
            src="{{getImageUrl()}}"
            [game]="game"
+           (click)="openDetailPopup(game)"
            default="../../../assets/GenericSeries.gif"
            alt="{{game.title}}"/>
 
@@ -23,7 +24,7 @@
         </div>
         <div class="col-12 m-1">
           <button class="btn btn-primary"
-                  (click)="open(game)">Playtime</button>
+                  (click)="openPlaytimePopup(game)">Playtime</button>
         </div>
         <div class="col-12 m-1">
           <mm-rating-box [value]="game.personGame.rating"

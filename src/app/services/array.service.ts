@@ -32,4 +32,23 @@ export class ArrayService {
   cloneArray(originalArray) {
     originalArray.slice();
   }
+
+  getChangedFields(changedObject, originalObject): any {
+    const changedFields = {};
+    for (const key in changedObject) {
+      if (changedObject.hasOwnProperty(key)) {
+        const value = changedObject[key];
+        if (!this.isSame(value, originalObject[key])) {
+          changedFields[key] = value;
+        }
+      }
+    }
+    return changedFields;
+  }
+
+  isSame(field1, field2): boolean {
+    const normalized1 = field1 === '' || field1 === null ? undefined : field1;
+    const normalized2 = field2 === '' || field2 === null ? undefined : field2;
+    return normalized1 === normalized2;
+  }
 }
