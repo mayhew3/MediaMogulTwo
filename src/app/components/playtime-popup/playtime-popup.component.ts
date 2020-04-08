@@ -31,6 +31,9 @@ export class PlaytimePopupComponent implements OnInit {
 
   ngOnInit(): void {
     this.original.initialize(this.game.personGame.minutes_played);
+    this.finished = !!this.game.personGame.finished_date;
+    this.finalScore = this.game.personGame.final_score;
+    this.replayScore = this.game.personGame.replay_score;
   }
 
   newChanged() {
@@ -43,7 +46,10 @@ export class PlaytimePopupComponent implements OnInit {
 
   anyFieldsChanged() {
     const gametimeChanged = this.added.asMinutes() > 0;
-    return gametimeChanged;
+    const finishedChanged = !this.finished !== !this.game.personGame.finished_date;
+    const finalScoreChanged = this.finalScore !== this.game.personGame.final_score;
+    const replayScoreChanged = this.replayScore !== this.game.personGame.replay_score;
+    return gametimeChanged || finishedChanged || finalScoreChanged || replayScoreChanged;
   }
 
   async saveAndClose() {
@@ -51,8 +57,13 @@ export class PlaytimePopupComponent implements OnInit {
       const momentObj = moment([this.model.year, this.model.month - 1, this.model.day]);
       const playedDate = momentObj.toDate();
       const changedFields = {
-        minutes_played: this.resulting.asMinutes()
+        minutes_played: this.resulting.asMinutes(),
+        final_score: this.finalScore,
+        replay_score: this.replayScore,
+        last_played: playedDate,
+        finished_date: this.finished ? playedDate : null
       };
+
       const gameplaySession = {
         minutes: this.added.asMinutes(),
         start_time: playedDate,

@@ -18,10 +18,10 @@ export class PersonGame {
     this.final_score = gameObj.final_score;
     this.replay_score = gameObj.replay_score;
     this.minutes_played = gameObj.minutes_played;
-    this.date_added = new Date(gameObj.date_added);
-    this.finished_date = new Date(gameObj.finished_date);
+    this.date_added = !!gameObj.date_added ? new Date(gameObj.date_added) : null;
+    this.finished_date = !!gameObj.finished_date ? new Date(gameObj.finished_date) : null;
     this.replay_reason = gameObj.replay_reason;
-    this.last_played = new Date(gameObj.last_played);
+    this.last_played = !!gameObj.last_played ? new Date(gameObj.last_played) : null;
   }
 
   getLastPlayedFormat(): string {

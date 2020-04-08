@@ -31,7 +31,7 @@ export class Game {
     this.metacritic = gameObj.metacritic;
     this.natural_end = gameObj.natural_end;
     this.platform = gameObj.platform;
-    this.date_added = new Date(gameObj.date_added);
+    this.date_added = !!gameObj.date_added ? new Date(gameObj.date_added) : null;
   }
 
 }
