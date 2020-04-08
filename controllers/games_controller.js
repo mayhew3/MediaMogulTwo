@@ -3,7 +3,6 @@ const moment = require('moment');
 const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
 
-// todo: fix sorting
 exports.getGames = async function (request, response) {
   const threeYearsAgo = moment().subtract(3, 'years');
 
@@ -18,11 +17,11 @@ exports.getGames = async function (request, response) {
         },
         person_id: 1
       },
-      order:
-        [
-          ['last_played', 'DESC']
-        ],
-    }
+    },
+    order:
+      [
+        [model.PersonGame, 'last_played', 'DESC']
+      ],
   });
 
   response.json(games);
