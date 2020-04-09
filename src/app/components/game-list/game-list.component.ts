@@ -2,6 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {Game} from '../../interfaces/Game';
 import fast_sort from 'fast-sort';
 import {GameSort} from './game.sort';
+import * as _ from 'underscore';
 
 @Component({
   selector: 'mm-game-list',
@@ -12,6 +13,7 @@ export class GameListComponent implements OnInit{
   @Input() title: string;
   @Input() games: Game[];
   @Input() pageSize: number;
+  filteredGames: Game[] = [];
   page = 1;
   orderings = new Map<GameSort, any>();
   orderingKeys: GameSort[];
@@ -44,7 +46,8 @@ export class GameListComponent implements OnInit{
   }
 
   fastSortGames(): void {
-    fast_sort(this.games)
+    this.filteredGames = _.filter(this.games, game => !game.personGame.finished_date);
+    fast_sort(this.filteredGames)
       .by([
         {desc: this.getCurrentOrdering()}
       ]);

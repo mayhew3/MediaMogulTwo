@@ -21,9 +21,9 @@
   </div>
 
   <div class="card-body">
-    <div class="row gameRow" *ngIf="!!games">
+    <div class="row gameRow" *ngIf="!!filteredGames">
       <div class="col-4 gameCard"
-           *ngFor="let game of games |
+           *ngFor="let game of filteredGames |
            slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
         <mm-game-card [game]="game" [parentList]="thisComponent"></mm-game-card>
       </div>
@@ -36,7 +36,7 @@
       [pageSize]="pageSize"
       size="lg"
       [maxSize]="6"
-      [collectionSize]="games.length"></ngb-pagination>
+      [collectionSize]="filteredGames.length"></ngb-pagination>
   </div>
 
 </div>
