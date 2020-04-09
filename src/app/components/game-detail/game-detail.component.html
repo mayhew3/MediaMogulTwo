@@ -23,9 +23,9 @@
                 id="platform"
                 name="platform"
                 [(ngModel)]="interfaceFields.platform">
-          <option *ngFor="let platform of possiblePlatforms"
-                  [selected]="platform === interfaceFields.platform"
-                  (click)="updatePlatform(platform)">{{platform}}</option>
+          <option *ngFor="let platform of getPlatformOptions()"
+                  [selected]="getDisplayValueOf(platform) === interfaceFields.platform"
+                  (click)="updatePlatform(platform)">{{getDisplayValueOf(platform)}}</option>
         </select>
       </div>
 

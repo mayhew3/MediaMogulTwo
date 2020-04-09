@@ -2,6 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {GameService} from '../../services/game.service';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import {ArrayService} from '../../services/array.service';
+import {Platform} from '../../interfaces/Platform';
 
 @Component({
   selector: 'mm-game-detail',
@@ -18,20 +19,6 @@ export class GameDetailComponent implements OnInit {
   changedGameFields = {};
   changedPersonFields = {};
   finished = false;
-
-  possiblePlatforms = [
-    'Steam',
-    'PC',
-    'PS4',
-    'Xbox One',
-    'Switch',
-    'Wii U',
-    'Xbox 360',
-    'PS3',
-    'Wii',
-    'DS',
-    'Xbox',
-  ];
 
   constructor(private gameService: GameService,
               public activeModal: NgbActiveModal,
@@ -97,8 +84,16 @@ export class GameDetailComponent implements OnInit {
     return this.arrayService.getChangedFields(this.interfacePersonFields, this.originalPersonFields);
   }
 
+  getPlatformOptions(): string[] {
+    return Object.keys(Platform);
+  }
+
+  getDisplayValueOf(platformOption: string): string {
+    return Platform[platformOption];
+  }
+
   updatePlatform(platform) {
-    this.interfaceFields.platform = platform;
+    this.interfaceFields.platform = this.getDisplayValueOf(platform);
     this.onFieldEdit();
   }
 

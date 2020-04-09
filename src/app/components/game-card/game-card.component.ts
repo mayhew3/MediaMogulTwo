@@ -4,6 +4,7 @@ import {ModalDismissReasons, NgbModal, NgbModalRef} from '@ng-bootstrap/ng-boots
 import {PlaytimePopupComponent} from '../playtime-popup/playtime-popup.component';
 import {GameDetailComponent} from '../game-detail/game-detail.component';
 import {GameListComponent} from '../game-list/game-list.component';
+import {Platform} from '../../interfaces/Platform';
 
 @Component({
   selector: 'mm-game-card',
@@ -66,6 +67,6 @@ export class GameCardComponent implements OnInit {
   }
 
   isSteamGame(): boolean {
-    return 'Steam' === this.game.platform;
+    return Platform.Steam === this.game.platform;
   }
 }
