@@ -84,6 +84,40 @@
                (ngModelChange)="onFieldEdit()"/>
       </div>
 
+      <!--FINISHED-->
+      <div class="col-4">
+        <label class="col-form-label" for="finished">Finished</label>
+        <input type="checkbox"
+               id="finished"
+               name="finished"
+               class="form-control"
+               (change)="onFinishedFieldEdit()"
+               [(ngModel)]="finished">
+      </div>
+
+      <!--FINAL SCORE-->
+      <div class="col-4" *ngIf="!!finished">
+        <label class="col-form-label" for="finalScore">Final Score</label>
+        <input type="number"
+               id="finalScore"
+               name="finalScore"
+               class="darkInput form-control"
+               [(ngModel)]="interfacePersonFields.final_score"
+               (ngModelChange)="onFieldEdit()"/>
+      </div>
+
+      <!--REPLAY SCORE-->
+      <div class="col-4" *ngIf="!!finished">
+        <label class="col-form-label" for="replay">Replay</label>
+        <input type="number"
+               id="replay"
+               name="replay"
+               class="darkInput form-control"
+               [(ngModel)]="interfacePersonFields.replay_score"
+               (ngModelChange)="onFieldEdit()"/>
+      </div>
+
+
     </div>
 
   </form>

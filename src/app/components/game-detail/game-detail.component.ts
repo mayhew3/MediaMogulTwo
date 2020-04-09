@@ -17,6 +17,7 @@ export class GameDetailComponent implements OnInit {
   interfacePersonFields;
   changedGameFields = {};
   changedPersonFields = {};
+  finished = false;
 
   possiblePlatforms = [
     'Steam',
@@ -37,6 +38,8 @@ export class GameDetailComponent implements OnInit {
               private arrayService: ArrayService) { }
 
   ngOnInit(): void {
+    this.finished = !!this.game.personGame.finished_date;
+
     this.originalFields = {
       platform: this.game.platform,
       metacritic: this.game.metacritic,
@@ -60,18 +63,25 @@ export class GameDetailComponent implements OnInit {
     this.originalPersonFields = {
       rating: this.game.personGame.rating,
       final_score: this.game.personGame.final_score,
-      replay_score: this.game.personGame.replay_score
+      replay_score: this.game.personGame.replay_score,
+      finished_date: this.game.personGame.finished_date,
     };
 
     this.interfacePersonFields = {
       rating: this.game.personGame.rating,
       final_score: this.game.personGame.final_score,
-      replay_score: this.game.personGame.replay_score
+      replay_score: this.game.personGame.replay_score,
+      finished_date: this.game.personGame.finished_date,
     };
   }
 
   anyFieldsChanged(): boolean {
     return Object.keys(this.changedGameFields).length > 0 || Object.keys(this.changedPersonFields).length > 0;
+  }
+
+  onFinishedFieldEdit() {
+    this.interfacePersonFields.finished_date = !!this.finished ? new Date() : undefined;
+    this.onFieldEdit();
   }
 
   onFieldEdit() {
