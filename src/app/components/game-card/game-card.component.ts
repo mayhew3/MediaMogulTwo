@@ -65,4 +65,7 @@ export class GameCardComponent implements OnInit {
     this.handlePopupResult(modalRef);
   }
 
+  isSteamGame(): boolean {
+    return 'Steam' === this.game.platform;
+  }
 }
