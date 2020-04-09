@@ -25,6 +25,7 @@ exports.Game = sequelize.sequelize.define("game", {
 
 exports.PersonGame = sequelize.sequelize.define("person_game", {
   id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
+  person_id: Sequelize.INTEGER,
   rating: Sequelize.DECIMAL,
   tier: Sequelize.INTEGER,
   final_score: Sequelize.DECIMAL,

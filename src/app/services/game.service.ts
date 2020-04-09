@@ -24,7 +24,17 @@ export class GameService {
     this.cache = [];
   }
 
-  async refreshCache(): Promise<Game[]> {
+  async maybeRefreshCache(): Promise<Game[]> {
+    return new Promise(async resolve => {
+      if (this.cache.length > 0) {
+        resolve(this.cache);
+      } else {
+        resolve(await this.refreshCache());
+      }
+    });
+  }
+
+  private async refreshCache(): Promise<Game[]> {
     const gameObjs = await this.http.get<any[]>(this.gamesUrl).toPromise();
     const games = this.convertObjectsToGames(gameObjs);
     this.arrayService.refreshArray(this.cache, games);
@@ -36,7 +46,8 @@ export class GameService {
   }
 
   async addGame(gameObj: any): Promise<Game> {
-    const returnGame = await this.http.post<Game>(this.gamesUrl, gameObj).toPromise();
+    const returnObj = await this.http.post<any>(this.gamesUrl, gameObj).toPromise();
+    const returnGame = new Game(returnObj);
     this.cache.push(returnGame);
     return returnGame;
   }

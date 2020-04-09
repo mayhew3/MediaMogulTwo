@@ -7,7 +7,8 @@ module.exports = function(app) {
 
   router.route('/games')
     .get(games.getGames)
-    .put(games.updateGame);
+    .put(games.updateGame)
+    .post(games.addGame);
 
   router.route('/personGames')
     .put(games.updatePersonGame);

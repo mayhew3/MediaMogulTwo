@@ -49,7 +49,7 @@ export class GameListComponent implements OnInit{
   }
 
   async fastSortGames() {
-    const allGames = await this.gameService.refreshCache();
+    const allGames = await this.gameService.maybeRefreshCache();
     this.filteredGames = _.filter(allGames, game => !game.personGame.finished_date);
     fast_sort(this.filteredGames)
       .by([

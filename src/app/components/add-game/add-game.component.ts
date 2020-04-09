@@ -41,7 +41,17 @@ export class AddGameComponent implements OnInit {
   }
 
   async submitAndClose() {
-    await this.gameService.addGame(this.interfaceFields);
+    const gameObj = {
+      title: this.interfaceFields.title,
+      platform: this.interfaceFields.platform,
+      personGame: {
+        person_id: 1,
+        tier: 1,
+        rating: this.interfaceFields.personGame.rating,
+        minutes_played: 0
+      }
+    };
+    await this.gameService.addGame(gameObj);
     this.activeModal.close('Submit Click');
   }
 }

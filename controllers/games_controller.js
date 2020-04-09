@@ -41,6 +41,21 @@ exports.getGames = async function (request, response) {
   response.json(outputObject);
 };
 
+exports.addGame = async function(request, response) {
+  const gameObj = request.body;
+  const personGameObj = gameObj.personGame;
+  delete gameObj.personGame;
+
+  const game = await model.Game.create(gameObj);
+  personGameObj.game_id = game.id;
+
+  const returnObj = game.dataValues;
+
+  returnObj.personGame = await model.PersonGame.create(personGameObj);
+
+  response.json(returnObj);
+};
+
 exports.updateGame = async function(request, response) {
   const gameID = request.body.id;
   const changedFields = request.body.changedFields;
