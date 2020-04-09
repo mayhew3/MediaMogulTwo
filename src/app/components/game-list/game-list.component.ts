@@ -3,6 +3,9 @@ import {Game} from '../../interfaces/Game';
 import fast_sort from 'fast-sort';
 import {GameSort} from './game.sort';
 import * as _ from 'underscore';
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {AddGameComponent} from '../add-game/add-game.component';
+import {GameService} from '../../services/game.service';
 
 @Component({
   selector: 'mm-game-list',
@@ -11,7 +14,6 @@ import * as _ from 'underscore';
 })
 export class GameListComponent implements OnInit{
   @Input() title: string;
-  @Input() games: Game[];
   @Input() pageSize: number;
   filteredGames: Game[] = [];
   page = 1;
@@ -21,7 +23,8 @@ export class GameListComponent implements OnInit{
   initializing = true;
   thisComponent = this;
 
-  constructor() {
+  constructor(private modalService: NgbModal,
+              private gameService: GameService) {
     this.orderings.set(GameSort.ByRating, game => game.personGame.rating);
     this.orderings.set(GameSort.ByLastPlayed, game => game.personGame.last_played);
     this.orderingKeys = Array.from(this.orderings.keys());
@@ -45,12 +48,19 @@ export class GameListComponent implements OnInit{
     this.fastSortGames();
   }
 
-  fastSortGames(): void {
-    this.filteredGames = _.filter(this.games, game => !game.personGame.finished_date);
+  async fastSortGames() {
+    const allGames = await this.gameService.refreshCache();
+    this.filteredGames = _.filter(allGames, game => !game.personGame.finished_date);
     fast_sort(this.filteredGames)
       .by([
         {desc: this.getCurrentOrdering()}
       ]);
+  }
+
+  async openAddGamePopup() {
+    const modalRef = this.modalService.open(AddGameComponent, {size: 'lg'});
+    await modalRef.result;
+    await this.fastSortGames();
   }
 
 }

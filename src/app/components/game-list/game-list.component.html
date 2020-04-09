@@ -2,8 +2,12 @@
 
   <div class="card-header">
     <div class="row">
-      <div class="col-9">
+      <div class="col-8">
         <h1>{{title}}</h1>
+      </div>
+      <div class="col-1">
+        <button class="btn btn-success"
+                (click)="openAddGamePopup()">+</button>
       </div>
       <div class="col-3">
         <form class="form-inline" *ngIf="showOrderingDropdown()">

@@ -11,6 +11,7 @@ import { PlaytimePopupComponent } from './components/playtime-popup/playtime-pop
 import {FormsModule} from '@angular/forms';
 import { RatingBoxComponent } from './components/rating-box/rating-box.component';
 import { GameDetailComponent } from './components/game-detail/game-detail.component';
+import { AddGameComponent } from './components/add-game/add-game.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { GameDetailComponent } from './components/game-detail/game-detail.compon
     ImagePreloadDirective,
     PlaytimePopupComponent,
     RatingBoxComponent,
-    GameDetailComponent
+    GameDetailComponent,
+    AddGameComponent
   ],
   imports: [
     BrowserModule,

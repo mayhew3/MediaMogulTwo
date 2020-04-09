@@ -2,6 +2,7 @@ const model = require('./model');
 const moment = require('moment');
 const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
+const _ = require('underscore');
 
 exports.getGames = async function (request, response) {
   const threeYearsAgo = moment().subtract(3, 'years');
@@ -24,7 +25,20 @@ exports.getGames = async function (request, response) {
       ],
   });
 
-  response.json(games);
+  const outputObject = [];
+
+  _.forEach(games, game => {
+    const personGame = game.person_games[0];
+    const resultObj = game.dataValues;
+
+    resultObj.personGame = personGame;
+
+    delete resultObj.person_games;
+
+    outputObject.push(resultObj);
+  });
+
+  response.json(outputObject);
 };
 
 exports.updateGame = async function(request, response) {
