@@ -13,9 +13,6 @@ exports.getGames = async function (request, response) {
       model: model.PersonGame,
       required: true,
       where: {
-        last_played: {
-          [Op.gt]: threeYearsAgo
-        },
         person_id: 1
       },
     },
