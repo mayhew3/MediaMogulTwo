@@ -52,6 +52,15 @@ export class GameService {
     return returnGame;
   }
 
+  async addToMyGames(game: Game): Promise<any> {
+    const payload = {
+      game_id: game.id,
+      person_id: 1
+    };
+    const returnObj = await this.http.post<any>(this.personGamesUrl, payload).toPromise();
+    game.personGame = new PersonGame(returnObj);
+  }
+
   async updateGame(game: Game, changedFields): Promise<any> {
     const payload = {id: game.id, changedFields};
     await this.http.put(this.gamesUrl, payload, httpOptions).toPromise();

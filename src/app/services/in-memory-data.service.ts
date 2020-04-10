@@ -32,6 +32,7 @@ export class InMemoryDataService implements InMemoryDbService{
     };
   }
 
+  // noinspection JSUnusedGlobalSymbols
   genId(sessions: GameplaySession[]): number {
     return sessions.length > 0 ? Math.max(...sessions.map(session => session.id)) + 1 : 1;
   }
@@ -39,6 +40,14 @@ export class InMemoryDataService implements InMemoryDbService{
 
   // HTTP OVERRIDES
 
+  post(requestInfo: RequestInfo): Observable<Response> {
+    console.log('HTTP override: POST');
+    const collectionName = requestInfo.collectionName;
+    if (collectionName === 'personGames') {
+      this.addPersonGame(requestInfo);
+    }
+    return null;
+  }
 
   // noinspection JSUnusedGlobalSymbols
   put(requestInfo: RequestInfo): Observable<Response> {
@@ -57,10 +66,24 @@ export class InMemoryDataService implements InMemoryDbService{
 
   private updateGame(requestInfo: RequestInfo) {
     const jsonBody = this.getBody(requestInfo);
-    const game = _.findWhere(this.games, {id: jsonBody.id});
+    const game = this.findGame(jsonBody.id);
     if (!!game) {
       this.updateChangedFieldsOnObject(game, jsonBody.changedFields);
       return this.packageUpResponse(game, requestInfo);
+    }
+  }
+
+  private addPersonGame(requestInfo: RequestInfo) {
+    const body = this.getBody(requestInfo);
+    const personGame = {
+      person_id: body.person_id,
+      tier: 1,
+      minutes_played: 0
+    };
+    const game = this.findGame(body.game_id);
+    if (!!game) {
+      game.personGame = personGame;
+      return this.packageUpResponse(personGame, requestInfo);
     }
   }
 
@@ -71,6 +94,10 @@ export class InMemoryDataService implements InMemoryDbService{
       this.updateChangedFieldsOnObject(personGame, jsonBody.changedFields);
       return this.packageUpResponse(personGame, requestInfo);
     }
+  }
+
+  private findGame(gameID: number): any {
+    return _.findWhere(this.games, {id: gameID});
   }
 
   private findPersonGame(personGameID: number): any {

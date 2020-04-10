@@ -5,6 +5,7 @@ import {PlaytimePopupComponent} from '../playtime-popup/playtime-popup.component
 import {GameDetailComponent} from '../game-detail/game-detail.component';
 import {GameListComponent} from '../game-list/game-list.component';
 import {Platform} from '../../interfaces/Platform';
+import {GameService} from '../../services/game.service';
 
 @Component({
   selector: 'mm-game-card',
@@ -15,6 +16,7 @@ export class GameCardComponent implements OnInit {
   @Input() game: Game;
   @Input() parentList: GameListComponent;
   closeResult = '';
+  successfullyAdded = false;
 
   private static getDismissReason(reason: any): string {
     if (reason === ModalDismissReasons.ESC) {
@@ -25,7 +27,8 @@ export class GameCardComponent implements OnInit {
       return `with: ${reason}`;
     }
   }
-  constructor(private modalService: NgbModal) { }
+  constructor(private modalService: NgbModal,
+              private gameService: GameService) { }
 
   ngOnInit(): void {
   }
@@ -54,19 +57,24 @@ export class GameCardComponent implements OnInit {
     }
   }
 
-  async openPlaytimePopup(game: Game) {
+  async openPlaytimePopup() {
     const modalRef = this.modalService.open(PlaytimePopupComponent, {size: 'lg'});
-    modalRef.componentInstance.game = game;
+    modalRef.componentInstance.game = this.game;
     this.handlePopupResult(modalRef);
   }
 
-  async openDetailPopup(game: Game) {
+  async openDetailPopup() {
     const modalRef = this.modalService.open(GameDetailComponent, {size: 'lg'});
-    modalRef.componentInstance.game = game;
+    modalRef.componentInstance.game = this.game;
     this.handlePopupResult(modalRef);
   }
 
   isSteamGame(): boolean {
     return Platform.Steam === this.game.platform;
+  }
+
+  async addToMyGames(): Promise<any> {
+    await this.gameService.addToMyGames(this.game);
+    this.successfullyAdded = true;
   }
 }

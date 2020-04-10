@@ -6,7 +6,7 @@
            *ngIf="!!getImageUrl()"
            src="{{getImageUrl()}}"
            [game]="game"
-           (click)="openDetailPopup(game)"
+           (click)="openDetailPopup()"
            default="../../../assets/GenericSeries.gif"
            alt="{{game.title}}"/>
 
@@ -19,24 +19,30 @@
           {{game.title}}
         </div>
 
-        <div class="col-12 m-1" *ngIf="!!game.personGame && !!game.personGame.last_played">
+        <div class="col-12 m-1" *ngIf="game.isOwned() && !!game.personGame.last_played">
           <span>
             {{game.personGame.last_played | date: game.personGame.getLastPlayedFormat():'America/Los_Angeles'}}
           </span>
         </div>
 
-        <div class="col-12 m-1" *ngIf="!!game.personGame">
+        <div class="col-12 m-1" *ngIf="game.isOwned() && !successfullyAdded">
           <mm-rating-box [value]="game.personGame.rating"
                          [maxValue]="100">
           </mm-rating-box>
         </div>
 
         <div class="col-12 m-1"
-             *ngIf="!isSteamGame() && !!game.personGame">
+             *ngIf="!isSteamGame() && game.isOwned() && !successfullyAdded">
           <button class="btn btn-primary"
-                  (click)="openPlaytimePopup(game)">Playtime</button>
+                  (click)="openPlaytimePopup()">Playtime</button>
         </div>
 
+        <div class="col-12 m-1"
+             *ngIf="!game.isOwned() || successfullyAdded">
+          <button class="btn btn-success"
+                  [disabled]="successfullyAdded"
+                  (click)="addToMyGames()">Add Game</button>
+        </div>
       </div>
 
     </div>
