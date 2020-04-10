@@ -3,6 +3,7 @@ import {GameService} from '../../services/game.service';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import {ArrayService} from '../../services/array.service';
 import {Platform} from '../../interfaces/Platform';
+import {AuthService} from '../../services/auth.service';
 
 @Component({
   selector: 'mm-game-detail',
@@ -20,12 +21,18 @@ export class GameDetailComponent implements OnInit {
   changedPersonFields = {};
   finished = false;
 
+  editedTitle;
+
+  titleEditMode = false;
+
   constructor(private gameService: GameService,
               public activeModal: NgbActiveModal,
-              private arrayService: ArrayService) { }
+              private arrayService: ArrayService,
+              private authService: AuthService) { }
 
   ngOnInit(): void {
     this.finished = !!this.game.personGame && !!this.game.personGame.finished_date;
+    this.editedTitle = this.game.title;
 
     this.originalFields = {
       platform: this.game.platform,
@@ -62,6 +69,14 @@ export class GameDetailComponent implements OnInit {
         finished_date: this.game.personGame.finished_date,
       };
     }
+  }
+
+  isAdmin(): boolean {
+    return this.authService.isAdmin();
+  }
+
+  toggleTitleEdit() {
+    this.titleEditMode = !this.titleEditMode;
   }
 
   anyFieldsChanged(): boolean {
@@ -148,4 +163,11 @@ export class GameDetailComponent implements OnInit {
     }
   }
 
+  async updateTitle() {
+    const changedFields = {
+      title: this.editedTitle
+    }
+    await this.gameService.updateGame(this.game, changedFields);
+    this.titleEditMode = false;
+  }
 }

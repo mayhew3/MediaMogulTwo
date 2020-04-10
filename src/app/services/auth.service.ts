@@ -16,4 +16,8 @@ export class AuthService {
       resolve(person);
     });
   }
+
+  isAdmin(): boolean {
+    return true;
+  }
 }
