@@ -1,12 +1,13 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Game} from '../../interfaces/Game';
 import fast_sort from 'fast-sort';
-import {GameSort} from './game.sort';
 import * as _ from 'underscore';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {AddGameComponent} from '../add-game/add-game.component';
 import {GameService} from '../../services/game.service';
 import {GameFilter} from '../../interfaces/GameFilter';
+import {GameOrdering} from '../../interfaces/GameOrdering';
+import {OrderingDirection} from './OrderingDirection';
 
 @Component({
   selector: 'mm-game-list',
@@ -17,24 +18,19 @@ export class GameListComponent implements OnInit{
   @Input() title: string;
   @Input() pageSize: number;
   @Input() gameFilter: GameFilter;
-  @Input() selectedOrdering: GameSort;
+  @Input() orderings: GameOrdering[];
+  selectedOrdering: GameOrdering;
   filteredGames: Game[] = [];
   page = 1;
-  orderings = new Map<GameSort, any>();
-  orderingKeys: GameSort[];
   initializing = true;
   thisComponent = this;
 
-  // todo: Ordering class that has asc/desc. Hand in all orderings, and first one is default.
   constructor(private modalService: NgbModal,
               private gameService: GameService) {
-    this.orderings.set(GameSort.ByRating, game => !!game.personGame ? game.personGame.rating : undefined);
-    this.orderings.set(GameSort.ByLastPlayed, game => !!game.personGame ? game.personGame.last_played : undefined);
-    this.orderings.set(GameSort.ByTitle, game => game.title);
-    this.orderingKeys = Array.from(this.orderings.keys());
   }
 
   async ngOnInit(): Promise<any> {
+    this.selectedOrdering = this.orderings[0];
     await this.fastSortGames();
     this.initializing = false;
   }
@@ -43,11 +39,11 @@ export class GameListComponent implements OnInit{
     return !this.initializing;
   }
 
-  getCurrentOrdering(): any {
-    return this.orderings.get(this.selectedOrdering);
+  isSelected(ordering: GameOrdering): boolean {
+    return ordering.displayName === this.selectedOrdering.displayName;
   }
 
-  async changeOrdering(ordering: GameSort) {
+  async changeOrdering(ordering: GameOrdering) {
     this.selectedOrdering = ordering;
     await this.fastSortGames();
   }
@@ -55,11 +51,14 @@ export class GameListComponent implements OnInit{
   async fastSortGames() {
     const allGames = await this.gameService.maybeRefreshCache();
     this.filteredGames = _.filter(allGames, game => this.gameFilter.apply(game));
-    // noinspection TypeScriptValidateJSTypes
-    fast_sort(this.filteredGames)
-      .by([
-        {desc: this.getCurrentOrdering()}
-      ]);
+    const isAscending = OrderingDirection[this.selectedOrdering.direction] === OrderingDirection.asc;
+    if (isAscending) {
+      // noinspection TypeScriptValidateJSTypes
+      fast_sort(this.filteredGames).asc(this.selectedOrdering.sortValue);
+    } else {
+      // noinspection TypeScriptValidateJSTypes
+      fast_sort(this.filteredGames).desc(this.selectedOrdering.sortValue);
+    }
   }
 
   async openAddGamePopup() {

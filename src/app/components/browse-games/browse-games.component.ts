@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {GameFilter} from '../../interfaces/GameFilter';
-import {DashboardGameFilter} from '../../interfaces/DashboardGameFilter';
 import {UnownedGameFilter} from '../../interfaces/UnownedGameFilter';
-import {GameSort} from '../game-list/game.sort';
+import {GameOrdering} from '../../interfaces/GameOrdering';
+import {OrderByTitle} from '../../interfaces/OrderByTitle';
+import {OrderingDirection} from '../game-list/OrderingDirection';
 
 @Component({
   selector: 'mm-browse-games',
@@ -20,7 +21,9 @@ export class BrowseGamesComponent implements OnInit {
     return new UnownedGameFilter();
   }
 
-  getOrdering(): GameSort {
-    return GameSort.ByTitle;
+  getOrderings(): GameOrdering[] {
+    return [
+      new OrderByTitle(OrderingDirection.asc)
+    ];
   }
 }

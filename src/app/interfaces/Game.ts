@@ -40,4 +40,7 @@ export class Game {
     this.giantbomb_id = gameObj.giantbomb_id;
   }
 
+  isOwned(): boolean {
+    return !!this.personGame;
+  }
 }
