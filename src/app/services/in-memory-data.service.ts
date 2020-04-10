@@ -72,28 +72,13 @@ export class InMemoryDataService implements InMemoryDbService{
 
   // DOMAIN HELPERS
 
-  private getGames(requestInfo: RequestInfo): Observable<any[]> {
-    return requestInfo.utils.createResponse$(() => {
-      console.log('HTTP GET override');
+  private getGames(requestInfo: RequestInfo): Observable<ResponseOptions> {
+    const entries = requestInfo.query.entries();
+    const person_id = entries.next().value[1][0];
 
-      const dataEncapsulation = requestInfo.utils.getConfig().dataEncapsulation;
+    const data = this.games;
 
-      const entries = requestInfo.query.entries();
-      const person_id = entries.next().value[1][0];
-
-      const data = this.games;
-
-      const options: ResponseOptions = data ?
-        {
-          body: dataEncapsulation ? { data } : data,
-          status: STATUS.OK
-        } :
-        {
-          body: dataEncapsulation ? { } : data,
-          status: STATUS.OK
-        };
-      return InMemoryDataService.finishOptions(options, requestInfo);
-    });
+    return this.packageGetData(data, requestInfo);
   }
 
   private updateGame(requestInfo: RequestInfo) {
@@ -167,6 +152,22 @@ export class InMemoryDataService implements InMemoryDbService{
   // noinspection JSMethodCanBeStatic
   private getBody(requestInfo): any {
     return requestInfo.utils.getJsonBody(requestInfo.req);
+  }
+
+  // noinspection JSMethodCanBeStatic
+  private packageGetData(data, requestInfo: RequestInfo): Observable<ResponseOptions> {
+    const dataEncapsulation = requestInfo.utils.getConfig().dataEncapsulation;
+    const options: ResponseOptions = data ?
+      {
+        body: dataEncapsulation ? { data } : data,
+        status: STATUS.OK
+      } :
+      {
+        body: dataEncapsulation ? { } : data,
+        status: STATUS.OK
+      };
+    const finishedOptions = InMemoryDataService.finishOptions(options, requestInfo);
+    return requestInfo.utils.createResponse$(() => finishedOptions);
   }
 
   private packageUpResponse(body, requestInfo) {
