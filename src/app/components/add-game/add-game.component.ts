@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {GameService} from '../../services/game.service';
 import {Platform} from '../../interfaces/Platform';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
+import * as _ from 'underscore';
 
 @Component({
   selector: 'mm-add-game',
@@ -25,7 +26,8 @@ export class AddGameComponent implements OnInit {
   }
 
   getPlatformOptions(): string[] {
-    return Object.keys(Platform);
+    const allPlatforms = Object.keys(Platform);
+    return _.without(allPlatforms, Platform.Steam);
   }
 
   getDisplayValueOf(platformOption: string): string {

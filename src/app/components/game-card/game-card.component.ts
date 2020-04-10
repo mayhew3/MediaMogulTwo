@@ -47,7 +47,7 @@ export class GameCardComponent implements OnInit {
       const result = await modalRef.result;
       this.closeResult = `Closed with: ${result}`;
       if (!!this.parentList) {
-        this.parentList.fastSortGames();
+        await this.parentList.fastSortGames();
       }
     } catch (err) {
       this.closeResult = `Dismissed ${GameCardComponent.getDismissReason(err)}`;
