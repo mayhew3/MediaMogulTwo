@@ -6,7 +6,6 @@ const _ = require('underscore');
 const ArrayService = require('./array_util');
 
 exports.getGames = async function (request, response) {
-  const threeYearsAgo = moment().subtract(3, 'years');
 
   // noinspection JSCheckFunctionSignatures
   const games = await model.Game.findAll({
@@ -16,11 +15,7 @@ exports.getGames = async function (request, response) {
       where: {
         person_id: 1
       },
-    },
-    order:
-      [
-        [model.PersonGame, 'last_played', 'DESC']
-      ],
+    }
   });
 
   const outputObject = [];
@@ -37,7 +32,9 @@ exports.getGames = async function (request, response) {
   });
 
   const notMyGames = await model.Game.findAll({
-    where: Sequelize.literal("\"person_games\".\"id\" IS NULL"),
+    where: {
+      '$person_games.id$': {[Op.is]: null}
+    },
     include: {
       model: model.PersonGame
     }
