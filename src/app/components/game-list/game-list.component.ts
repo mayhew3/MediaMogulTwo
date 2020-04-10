@@ -6,6 +6,7 @@ import * as _ from 'underscore';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {AddGameComponent} from '../add-game/add-game.component';
 import {GameService} from '../../services/game.service';
+import {GameFilter} from '../../interfaces/GameFilter';
 
 @Component({
   selector: 'mm-game-list',
@@ -15,6 +16,7 @@ import {GameService} from '../../services/game.service';
 export class GameListComponent implements OnInit{
   @Input() title: string;
   @Input() pageSize: number;
+  @Input() gameFilter: GameFilter;
   filteredGames: Game[] = [];
   page = 1;
   orderings = new Map<GameSort, any>();
@@ -50,7 +52,7 @@ export class GameListComponent implements OnInit{
 
   async fastSortGames() {
     const allGames = await this.gameService.maybeRefreshCache();
-    this.filteredGames = _.filter(allGames, game => !game.personGame.finished_date);
+    this.filteredGames = _.filter(allGames, game => this.gameFilter.apply(game));
     fast_sort(this.filteredGames)
       .by([
         {desc: this.getCurrentOrdering()}

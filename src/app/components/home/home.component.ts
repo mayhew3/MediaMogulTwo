@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {DashboardGameFilter} from '../../interfaces/DashboardGameFilter';
+import {GameFilter} from '../../interfaces/GameFilter';
 
 @Component({
   selector: 'mm-home',
@@ -12,4 +14,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getDashboardFilter(): GameFilter {
+    return new DashboardGameFilter();
+  }
 }

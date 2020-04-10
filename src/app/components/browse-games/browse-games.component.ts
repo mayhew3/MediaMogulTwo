@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {GameFilter} from '../../interfaces/GameFilter';
+import {DashboardGameFilter} from '../../interfaces/DashboardGameFilter';
+import {UnownedGameFilter} from '../../interfaces/UnownedGameFilter';
 
 @Component({
   selector: 'mm-browse-games',
@@ -12,4 +15,7 @@ export class BrowseGamesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getFilter(): GameFilter {
+    return new UnownedGameFilter();
+  }
 }
