@@ -1,8 +1,6 @@
 <mm-nav-bar></mm-nav-bar>
 
-<div class="container">
-  <mm-game-list *ngIf="showGameList()"
-                title="Games"
-                [pageSize]="9"></mm-game-list>
-</div>
+<main class="container">
+  <router-outlet></router-outlet>
+</main>
 

@@ -13,6 +13,9 @@ import { RatingBoxComponent } from './components/rating-box/rating-box.component
 import { GameDetailComponent } from './components/game-detail/game-detail.component';
 import { AddGameComponent } from './components/add-game/add-game.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { HomeComponent } from './components/home/home.component';
+import { BrowseGamesComponent } from './components/browse-games/browse-games.component';
+import {AppRoutingModule} from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -24,14 +27,17 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     RatingBoxComponent,
     GameDetailComponent,
     AddGameComponent,
-    NavBarComponent
+    NavBarComponent,
+    HomeComponent,
+    BrowseGamesComponent
   ],
   imports: [
     BrowserModule,
     environment.httpModules,
     NgbPaginationModule,
     NgbDatepickerModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
