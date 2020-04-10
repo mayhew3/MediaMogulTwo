@@ -3,6 +3,7 @@ const moment = require('moment');
 const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
 const _ = require('underscore');
+const ArrayService = require('./array_util');
 
 exports.getGames = async function (request, response) {
   const threeYearsAgo = moment().subtract(3, 'years');
@@ -35,6 +36,15 @@ exports.getGames = async function (request, response) {
     outputObject.push(resultObj);
   });
 
+  const notMyGames = await model.Game.findAll({
+    where: Sequelize.literal("\"person_games\".\"id\" IS NULL"),
+    include: {
+      model: model.PersonGame
+    }
+  })
+
+  ArrayService.addToArray(outputObject, notMyGames);
+
   response.json(outputObject);
 };
 
@@ -51,6 +61,19 @@ exports.addGame = async function(request, response) {
   returnObj.personGame = await model.PersonGame.create(personGameObj);
 
   response.json(returnObj);
+};
+
+exports.addPersonGame = async function(request, response) {
+  const payload = {
+    game_id: request.body.game_id,
+    person_id: request.body.person_id,
+    tier: 2,
+    minutes_played: 0
+  }
+
+  const personGame = await model.PersonGame.create(payload);
+
+  response.json(personGame);
 };
 
 exports.updateGame = async function(request, response) {

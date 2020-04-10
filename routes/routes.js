@@ -11,7 +11,8 @@ module.exports = function(app) {
     .post(games.addGame);
 
   router.route('/personGames')
-    .put(games.updatePersonGame);
+    .put(games.updatePersonGame)
+    .post(games.addPersonGame);
 
   router.route('/gameplaySessions')
     .post(games.addGameplaySession);
