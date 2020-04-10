@@ -15,6 +15,7 @@ export class PlaytimePopupComponent implements OnInit {
   @Input() game: Game;
   private person: Person;
   model: NgbDate;
+  validDate: boolean;
 
   original = new GameTime();
   resulting = new GameTime();
@@ -31,6 +32,7 @@ export class PlaytimePopupComponent implements OnInit {
               private calendar: NgbCalendar,
               private authService: AuthService) {
     this.model = calendar.getToday();
+    this.validDate = true;
   }
 
   async ngOnInit(): Promise<any> {
@@ -49,6 +51,30 @@ export class PlaytimePopupComponent implements OnInit {
     this.resulting.duration = this.added.getDurationClone().add(this.original.duration);
   }
 
+  validateModel() {
+    this.validDate = this.isValidDate();
+  }
+
+  convertModelToDate(): Date {
+    const momentObj = moment([this.model.year, this.model.month - 1, this.model.day]);
+    return momentObj.toDate();
+  }
+
+  isValidDate(): boolean {
+    try {
+      const converted = this.convertModelToDate();
+      return converted instanceof Date && isFinite(converted.getTime());
+    } catch (err) {
+      return false;
+    }
+  }
+
+  disableAdd(): boolean {
+    return !this.anyFieldsChanged() ||
+      !this.added.asMinutes() ||
+      !this.validDate
+  }
+
   anyFieldsChanged() {
     const gametimeChanged = this.added.asMinutes() > 0;
     const finishedChanged = !this.finished !== !this.game.personGame.finished_date;
@@ -59,8 +85,7 @@ export class PlaytimePopupComponent implements OnInit {
 
   async saveAndClose() {
     try {
-      const momentObj = moment([this.model.year, this.model.month - 1, this.model.day]);
-      const playedDate = momentObj.toDate();
+      const playedDate = this.convertModelToDate();
       const changedFields = {
         minutes_played: this.resulting.asMinutes(),
         final_score: this.finalScore,

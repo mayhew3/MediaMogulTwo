@@ -4,7 +4,7 @@ import {MockGames} from '../mocks/games.mock';
 import {Observable} from 'rxjs';
 import * as _ from 'underscore';
 import {GameplaySession} from '../interfaces/GameplaySession';
-import {PersonGame} from '../interfaces/PersonGame';
+import * as lodash from 'lodash';
 
 @Injectable({
   providedIn: 'root'
@@ -74,9 +74,17 @@ export class InMemoryDataService implements InMemoryDbService{
 
   private getGames(requestInfo: RequestInfo): Observable<ResponseOptions> {
     const entries = requestInfo.query.entries();
-    const person_id = entries.next().value[1][0];
+    const person_id = parseInt(entries.next().value[1][0]);
 
-    const data = this.games;
+    const data = [];
+
+    _.forEach(this.games, game => {
+      const gameCopy = lodash.cloneDeep(game);
+      const person_games = gameCopy.person_games;
+      gameCopy.personGame = _.findWhere(person_games, {person_id: person_id});
+      delete gameCopy.person_games;
+      data.push(gameCopy);
+    });
 
     return this.packageGetData(data, requestInfo);
   }

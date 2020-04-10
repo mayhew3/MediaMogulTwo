@@ -9,39 +9,25 @@ exports.getGames = async function (request, response) {
   const person_id = request.query.person_id;
 
   // noinspection JSCheckFunctionSignatures
-  const games = await model.Game.findAll({
-    include: {
-      model: model.PersonGame,
-      required: true,
-      where: {
-        person_id: person_id
-      },
+  const games = await model.Game.findAll();
+  const personGames = await model.PersonGame.findAll({
+    where: {
+      person_id: person_id
     }
   });
 
   const outputObject = [];
 
   _.forEach(games, game => {
-    const personGame = game.person_games[0];
+    const personGame = _.findWhere(personGames, {game_id: game.id});
     const resultObj = game.dataValues;
 
-    resultObj.personGame = personGame;
-
-    delete resultObj.person_games;
+    if (!!personGame) {
+      resultObj.personGame = personGame;
+    }
 
     outputObject.push(resultObj);
   });
-
-  const notMyGames = await model.Game.findAll({
-    where: {
-      '$person_games.id$': {[Op.is]: null}
-    },
-    include: {
-      model: model.PersonGame
-    }
-  })
-
-  ArrayService.addToArray(outputObject, notMyGames);
 
   response.json(outputObject);
 };
