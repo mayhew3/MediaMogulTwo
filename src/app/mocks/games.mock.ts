@@ -159,7 +159,7 @@ export const MockGames = [
       "replay_reason": null,
       "minutes_played": 143,
       "last_played": "2020-03-29 23:09:24.215",
-      "rating": null,
+      "rating": 70,
       "finished_date": null,
       "id": 226
     },
@@ -227,7 +227,7 @@ export const MockGames = [
     "date_added": "2020-03-19 13:38:11.681",
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
-    "igdb_poster": null,
+    "igdb_poster": "co1izc",
     "logo": "fb3d894fb2a929df5fb0417f92864398a64909c6",
     "howlong_id": null,
     "howlong_extras": null,
