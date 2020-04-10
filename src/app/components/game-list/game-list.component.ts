@@ -54,10 +54,18 @@ export class GameListComponent implements OnInit{
     const isAscending = OrderingDirection[this.selectedOrdering.direction] === OrderingDirection.asc;
     if (isAscending) {
       // noinspection TypeScriptValidateJSTypes
-      fast_sort(this.filteredGames).asc(this.selectedOrdering.sortValue);
+      fast_sort(this.filteredGames)
+        .by([
+          {asc: this.selectedOrdering.sortValue},
+          {asc: game => game.title}
+        ]);
     } else {
       // noinspection TypeScriptValidateJSTypes
-      fast_sort(this.filteredGames).desc(this.selectedOrdering.sortValue);
+      fast_sort(this.filteredGames)
+        .by([
+          {desc: this.selectedOrdering.sortValue},
+          {asc: game => game.title}
+        ]);
     }
   }
 

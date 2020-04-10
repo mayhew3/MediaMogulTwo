@@ -42,6 +42,7 @@ export class AddGameComponent implements OnInit {
     return this.interfaceFields.title !== '';
   }
 
+  // todo: Make temporary AuthService that just returns personID of 1
   async submitAndClose() {
     const gameObj = {
       title: this.interfaceFields.title,

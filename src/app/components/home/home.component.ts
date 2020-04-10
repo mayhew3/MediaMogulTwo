@@ -22,6 +22,7 @@ export class HomeComponent implements OnInit {
     return new DashboardGameFilter();
   }
 
+  // todo: add date_added ordering
   getOrderings(): GameOrdering[] {
     return [
       new OrderByRating(OrderingDirection.desc),
