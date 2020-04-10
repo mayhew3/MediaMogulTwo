@@ -12,6 +12,7 @@ import {FormsModule} from '@angular/forms';
 import { RatingBoxComponent } from './components/rating-box/rating-box.component';
 import { GameDetailComponent } from './components/game-detail/game-detail.component';
 import { AddGameComponent } from './components/add-game/add-game.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AddGameComponent } from './components/add-game/add-game.component';
     PlaytimePopupComponent,
     RatingBoxComponent,
     GameDetailComponent,
-    AddGameComponent
+    AddGameComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
