@@ -25,7 +25,7 @@ export class GameDetailComponent implements OnInit {
               private arrayService: ArrayService) { }
 
   ngOnInit(): void {
-    this.finished = !!this.game.personGame.finished_date;
+    this.finished = !!this.game.personGame && !!this.game.personGame.finished_date;
 
     this.originalFields = {
       platform: this.game.platform,
@@ -47,19 +47,21 @@ export class GameDetailComponent implements OnInit {
       giantbomb_id: this.game.giantbomb_id
     };
 
-    this.originalPersonFields = {
-      rating: this.game.personGame.rating,
-      final_score: this.game.personGame.final_score,
-      replay_score: this.game.personGame.replay_score,
-      finished_date: this.game.personGame.finished_date,
-    };
+    if (!!this.game.personGame) {
+      this.originalPersonFields = {
+        rating: this.game.personGame.rating,
+        final_score: this.game.personGame.final_score,
+        replay_score: this.game.personGame.replay_score,
+        finished_date: this.game.personGame.finished_date,
+      };
 
-    this.interfacePersonFields = {
-      rating: this.game.personGame.rating,
-      final_score: this.game.personGame.final_score,
-      replay_score: this.game.personGame.replay_score,
-      finished_date: this.game.personGame.finished_date,
-    };
+      this.interfacePersonFields = {
+        rating: this.game.personGame.rating,
+        final_score: this.game.personGame.final_score,
+        replay_score: this.game.personGame.replay_score,
+        finished_date: this.game.personGame.finished_date,
+      };
+    }
   }
 
   anyFieldsChanged(): boolean {
@@ -95,6 +97,10 @@ export class GameDetailComponent implements OnInit {
   updatePlatform(platform) {
     this.interfaceFields.platform = this.getDisplayValueOf(platform);
     this.onFieldEdit();
+  }
+
+  hasPerson(): boolean {
+    return !!this.game.personGame;
   }
 
   async changeValues() {

@@ -52,7 +52,7 @@
       </div>
 
       <!--RATING-->
-      <div class="col-4">
+      <div class="col-4" *ngIf="hasPerson()">
         <label class="col-form-label" for="rating">Rating</label>
         <input type="number"
                id="rating"
@@ -85,7 +85,7 @@
       </div>
 
       <!--FINISHED-->
-      <div class="col-4">
+      <div class="col-4" *ngIf="hasPerson()">
         <label class="col-form-label" for="finished">Finished</label>
         <input type="checkbox"
                id="finished"
@@ -96,7 +96,7 @@
       </div>
 
       <!--FINAL SCORE-->
-      <div class="col-4" *ngIf="!!finished">
+      <div class="col-4" *ngIf="hasPerson() && !!finished">
         <label class="col-form-label" for="finalScore">Final Score</label>
         <input type="number"
                id="finalScore"
@@ -107,7 +107,7 @@
       </div>
 
       <!--REPLAY SCORE-->
-      <div class="col-4" *ngIf="!!finished">
+      <div class="col-4" *ngIf="hasPerson() && !!finished">
         <label class="col-form-label" for="replay">Replay</label>
         <input type="number"
                id="replay"

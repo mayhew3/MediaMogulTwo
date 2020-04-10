@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {GameFilter} from '../../interfaces/GameFilter';
 import {DashboardGameFilter} from '../../interfaces/DashboardGameFilter';
 import {UnownedGameFilter} from '../../interfaces/UnownedGameFilter';
+import {GameSort} from '../game-list/game.sort';
 
 @Component({
   selector: 'mm-browse-games',
@@ -17,5 +18,9 @@ export class BrowseGamesComponent implements OnInit {
 
   getFilter(): GameFilter {
     return new UnownedGameFilter();
+  }
+
+  getOrdering(): GameSort {
+    return GameSort.ByTitle;
   }
 }

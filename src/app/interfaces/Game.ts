@@ -28,7 +28,7 @@ export class Game {
     this.giantbomb_medium_url = gameObj.giantbomb_medium_url;
     this.steamid = gameObj.steamid;
     this.brokenImage = false;
-    this.personGame = new PersonGame(gameObj.personGame);
+    this.personGame = !!gameObj.personGame ? new PersonGame(gameObj.personGame) : undefined;
     this.howlong_extras = gameObj.howlong_extras;
     this.timetotal = gameObj.timetotal;
     this.metacritic = gameObj.metacritic;

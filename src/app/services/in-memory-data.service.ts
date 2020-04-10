@@ -74,7 +74,7 @@ export class InMemoryDataService implements InMemoryDbService{
   }
 
   private findPersonGame(personGameID: number): any {
-    const personGames = _.map(this.games, game => game.personGame);
+    const personGames = _.map(_.filter(this.games, game => !!game.personGame), game => game.personGame);
     return _.findWhere(personGames, {id: personGameID});
   }
 

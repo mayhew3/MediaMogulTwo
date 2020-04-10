@@ -19,20 +19,20 @@
           {{game.title}}
         </div>
 
-        <div class="col-12 m-1">
-          <span *ngIf="!!game.personGame.last_played">
+        <div class="col-12 m-1" *ngIf="!!game.personGame && !!game.personGame.last_played">
+          <span>
             {{game.personGame.last_played | date: game.personGame.getLastPlayedFormat():'America/Los_Angeles'}}
           </span>
         </div>
 
-        <div class="col-12 m-1">
+        <div class="col-12 m-1" *ngIf="!!game.personGame">
           <mm-rating-box [value]="game.personGame.rating"
                          [maxValue]="100">
           </mm-rating-box>
         </div>
 
         <div class="col-12 m-1"
-             *ngIf="!isSteamGame()">
+             *ngIf="!isSteamGame() && !!game.personGame">
           <button class="btn btn-primary"
                   (click)="openPlaytimePopup(game)">Playtime</button>
         </div>
