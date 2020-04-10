@@ -5,6 +5,8 @@ import {ArrayService} from './array.service';
 import * as _ from 'underscore';
 import {PersonGame} from '../interfaces/PersonGame';
 import {GameplaySession} from '../interfaces/GameplaySession';
+import {Person} from '../interfaces/Person';
+import {AuthService} from './auth.service';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -18,9 +20,11 @@ export class GameService {
   personGamesUrl = 'api/personGames';
   gameplaySessionUrl = 'api/gameplaySessions';
   cache: Game[];
+  private person: Person;
 
   constructor(private http: HttpClient,
-              private arrayService: ArrayService) {
+              private arrayService: ArrayService,
+              private authService: AuthService) {
     this.cache = [];
   }
 
@@ -34,8 +38,24 @@ export class GameService {
     });
   }
 
+  async getPersonID(): Promise<number> {
+    return new Promise<number>(async resolve => {
+      if (!this.person) {
+        this.person = await this.authService.getPerson();
+      }
+      resolve(this.person.id);
+    });
+  }
+
   private async refreshCache(): Promise<Game[]> {
-    const gameObjs = await this.http.get<any[]>(this.gamesUrl).toPromise();
+    const personID = await this.getPersonID();
+    const payload = {
+      person_id: personID.toString()
+    };
+    const options = {
+      params: payload
+    };
+    const gameObjs = await this.http.get<any[]>(this.gamesUrl, options).toPromise();
     const games = this.convertObjectsToGames(gameObjs);
     this.arrayService.refreshArray(this.cache, games);
     return this.cache;
@@ -53,9 +73,10 @@ export class GameService {
   }
 
   async addToMyGames(game: Game): Promise<any> {
+    const personID = await this.getPersonID();
     const payload = {
       game_id: game.id,
-      person_id: 1
+      person_id: personID
     };
     const returnObj = await this.http.post<any>(this.personGamesUrl, payload).toPromise();
     game.personGame = new PersonGame(returnObj);

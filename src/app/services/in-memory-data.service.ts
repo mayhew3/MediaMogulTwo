@@ -4,6 +4,7 @@ import {MockGames} from '../mocks/games.mock';
 import {Observable} from 'rxjs';
 import * as _ from 'underscore';
 import {GameplaySession} from '../interfaces/GameplaySession';
+import {PersonGame} from '../interfaces/PersonGame';
 
 @Injectable({
   providedIn: 'root'
@@ -34,11 +35,19 @@ export class InMemoryDataService implements InMemoryDbService{
 
   // noinspection JSUnusedGlobalSymbols
   genId(sessions: GameplaySession[]): number {
-    return sessions.length > 0 ? Math.max(...sessions.map(session => session.id)) + 1 : 1;
+    return sessions.length > 0 ? _.max(sessions.map(session => session.id)) + 1 : 1;
   }
 
 
   // HTTP OVERRIDES
+
+  get(requestInfo: RequestInfo) {
+    const collectionName = requestInfo.collectionName;
+    if (collectionName === 'games') {
+      return this.getGames(requestInfo);
+    }
+    return null;
+  }
 
   post(requestInfo: RequestInfo): Observable<Response> {
     console.log('HTTP override: POST');
@@ -63,6 +72,29 @@ export class InMemoryDataService implements InMemoryDbService{
 
   // DOMAIN HELPERS
 
+  private getGames(requestInfo: RequestInfo): Observable<any[]> {
+    return requestInfo.utils.createResponse$(() => {
+      console.log('HTTP GET override');
+
+      const dataEncapsulation = requestInfo.utils.getConfig().dataEncapsulation;
+
+      const entries = requestInfo.query.entries();
+      const person_id = entries.next().value[1][0];
+
+      const data = this.games;
+
+      const options: ResponseOptions = data ?
+        {
+          body: dataEncapsulation ? { data } : data,
+          status: STATUS.OK
+        } :
+        {
+          body: dataEncapsulation ? { } : data,
+          status: STATUS.OK
+        };
+      return InMemoryDataService.finishOptions(options, requestInfo);
+    });
+  }
 
   private updateGame(requestInfo: RequestInfo) {
     const jsonBody = this.getBody(requestInfo);
@@ -76,6 +108,7 @@ export class InMemoryDataService implements InMemoryDbService{
   private addPersonGame(requestInfo: RequestInfo) {
     const body = this.getBody(requestInfo);
     const personGame = {
+      id: this.nextPersonGameID(),
       person_id: body.person_id,
       tier: 1,
       minutes_played: 0
@@ -100,9 +133,21 @@ export class InMemoryDataService implements InMemoryDbService{
     return _.findWhere(this.games, {id: gameID});
   }
 
+  private getPersonGames(): any[] {
+    return _.map(_.filter(this.games, game => !!game.personGame), game => game.personGame);
+  }
+
   private findPersonGame(personGameID: number): any {
-    const personGames = _.map(_.filter(this.games, game => !!game.personGame), game => game.personGame);
+    const personGames = this.getPersonGames();
     return _.findWhere(personGames, {id: personGameID});
+  }
+
+  private nextPersonGameID(): number {
+    const personGames = this.getPersonGames();
+    // tslint:disable-next-line:radix
+    const ids = _.map(personGames, personGame => parseInt(personGame.id));
+    const maximum = _.max(ids);
+    return maximum + 1;
   }
 
 

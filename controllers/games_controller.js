@@ -6,6 +6,7 @@ const _ = require('underscore');
 const ArrayService = require('./array_util');
 
 exports.getGames = async function (request, response) {
+  const person_id = request.query.person_id;
 
   // noinspection JSCheckFunctionSignatures
   const games = await model.Game.findAll({
@@ -13,7 +14,7 @@ exports.getGames = async function (request, response) {
       model: model.PersonGame,
       required: true,
       where: {
-        person_id: 1
+        person_id: person_id
       },
     }
   });

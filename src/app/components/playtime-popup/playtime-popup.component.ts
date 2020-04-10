@@ -3,6 +3,8 @@ import {NgbActiveModal, NgbCalendar, NgbDate} from '@ng-bootstrap/ng-bootstrap';
 import {Game} from '../../interfaces/Game';
 import {GameService} from '../../services/game.service';
 import * as moment from 'moment';
+import {Person} from '../../interfaces/Person';
+import {AuthService} from '../../services/auth.service';
 
 @Component({
   selector: 'mm-playtime-popup',
@@ -11,6 +13,7 @@ import * as moment from 'moment';
 })
 export class PlaytimePopupComponent implements OnInit {
   @Input() game: Game;
+  private person: Person;
   model: NgbDate;
 
   original = new GameTime();
@@ -25,11 +28,13 @@ export class PlaytimePopupComponent implements OnInit {
 
   constructor(public activeModal: NgbActiveModal,
               private gameService: GameService,
-              private calendar: NgbCalendar) {
+              private calendar: NgbCalendar,
+              private authService: AuthService) {
     this.model = calendar.getToday();
   }
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<any> {
+    this.person = await this.authService.getPerson();
     this.original.initialize(this.game.personGame.minutes_played);
     this.finished = !!this.game.personGame.finished_date;
     this.finalScore = this.game.personGame.final_score;
@@ -69,7 +74,7 @@ export class PlaytimePopupComponent implements OnInit {
         minutes: this.added.asMinutes(),
         start_time: playedDate,
         rating: this.sessionRating,
-        person_id: 1,
+        person_id: this.person.id,
       };
 
       await this.gameService.insertGameplaySession(gameplaySession);

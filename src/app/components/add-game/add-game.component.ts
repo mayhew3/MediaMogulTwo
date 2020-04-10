@@ -3,6 +3,7 @@ import {GameService} from '../../services/game.service';
 import {Platform} from '../../interfaces/Platform';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import * as _ from 'underscore';
+import {AuthService} from '../../services/auth.service';
 
 @Component({
   selector: 'mm-add-game',
@@ -10,6 +11,7 @@ import * as _ from 'underscore';
   styleUrls: ['./add-game.component.scss']
 })
 export class AddGameComponent implements OnInit {
+  private person;
 
   interfaceFields = {
     title: '',
@@ -20,9 +22,11 @@ export class AddGameComponent implements OnInit {
   };
 
   constructor(private gameService: GameService,
-              public activeModal: NgbActiveModal) { }
+              public activeModal: NgbActiveModal,
+              private authService: AuthService) { }
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<any> {
+    this.person = await this.authService.getPerson();
   }
 
   getPlatformOptions(): string[] {
@@ -42,13 +46,12 @@ export class AddGameComponent implements OnInit {
     return this.interfaceFields.title !== '';
   }
 
-  // todo: Make temporary AuthService that just returns personID of 1
   async submitAndClose() {
     const gameObj = {
       title: this.interfaceFields.title,
       platform: this.interfaceFields.platform,
       personGame: {
-        person_id: 1,
+        person_id: this.person.id,
         tier: 1,
         rating: this.interfaceFields.personGame.rating,
         minutes_played: 0
