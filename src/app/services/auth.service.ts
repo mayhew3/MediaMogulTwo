@@ -1,10 +1,9 @@
-import { Injectable } from '@angular/core';
-import {Person} from '../interfaces/Person';
+import {Injectable} from '@angular/core';
 import createAuth0Client from '@auth0/auth0-spa-js';
 import Auth0Client from '@auth0/auth0-spa-js/dist/typings/Auth0Client';
-import { from, of, Observable, BehaviorSubject, combineLatest, throwError } from 'rxjs';
-import { tap, catchError, concatMap, shareReplay } from 'rxjs/operators';
-import { Router } from '@angular/router';
+import {BehaviorSubject, combineLatest, from, Observable, of, throwError} from 'rxjs';
+import {catchError, concatMap, shareReplay, tap} from 'rxjs/operators';
+import {Router} from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -129,15 +128,6 @@ export class AuthService {
         client_id: 'HY2lTrNdFc6HDrTlSoKZNL0EriSi0dnW',
         returnTo: `${window.location.origin}`
       });
-    });
-  }
-
-  getPerson(): Promise<Person> {
-    return new Promise<Person>(resolve => {
-      const person: Person = {
-        id: 1
-      };
-      resolve(person);
     });
   }
 

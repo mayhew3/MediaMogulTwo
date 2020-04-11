@@ -1,7 +1,7 @@
-import {Person} from '../interfaces/Person';
 
-export const MockPersons: Person[] = [
+export const MockPersons: any[] = [
   {
-    id: 1
+    id: 1,
+    email: 'scorpy@gmail.com'
   }
 ];

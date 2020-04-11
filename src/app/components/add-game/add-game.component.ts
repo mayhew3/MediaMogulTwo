@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {GameService} from '../../services/game.service';
 import {Platform} from '../../interfaces/Platform';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import * as _ from 'underscore';
-import {AuthService} from '../../services/auth.service';
+import {PersonService} from '../../services/person.service';
 
 @Component({
   selector: 'mm-add-game',
@@ -11,7 +11,6 @@ import {AuthService} from '../../services/auth.service';
   styleUrls: ['./add-game.component.scss']
 })
 export class AddGameComponent implements OnInit {
-  private person;
 
   interfaceFields = {
     title: '',
@@ -23,10 +22,9 @@ export class AddGameComponent implements OnInit {
 
   constructor(private gameService: GameService,
               public activeModal: NgbActiveModal,
-              private authService: AuthService) { }
+              private personService: PersonService) { }
 
-  async ngOnInit(): Promise<any> {
-    this.person = await this.authService.getPerson();
+  ngOnInit() {
   }
 
   getPlatformOptions(): string[] {
@@ -47,17 +45,19 @@ export class AddGameComponent implements OnInit {
   }
 
   async submitAndClose() {
-    const gameObj = {
-      title: this.interfaceFields.title,
-      platform: this.interfaceFields.platform,
-      personGame: {
-        person_id: this.person.id,
-        tier: 1,
-        rating: this.interfaceFields.personGame.rating,
-        minutes_played: 0
-      }
-    };
-    await this.gameService.addGame(gameObj);
-    this.activeModal.close('Submit Click');
+    this.personService.me$.subscribe(async person => {
+      const gameObj = {
+        title: this.interfaceFields.title,
+        platform: this.interfaceFields.platform,
+        personGame: {
+          person_id: person.id,
+          tier: 1,
+          rating: this.interfaceFields.personGame.rating,
+          minutes_played: 0
+        }
+      };
+      await this.gameService.addGame(gameObj);
+      this.activeModal.close('Submit Click');
+    });
   }
 }

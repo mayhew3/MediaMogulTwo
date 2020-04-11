@@ -5,6 +5,7 @@ import {Observable} from 'rxjs';
 import * as _ from 'underscore';
 import {GameplaySession} from '../interfaces/GameplaySession';
 import * as lodash from 'lodash';
+import {MockPersons} from '../mocks/persons.mock';
 
 @Injectable({
   providedIn: 'root'
@@ -12,6 +13,7 @@ import * as lodash from 'lodash';
 export class InMemoryDataService implements InMemoryDbService{
 
   games = MockGames;
+  persons = MockPersons;
 
   // STATIC HELPERS
 
@@ -30,6 +32,7 @@ export class InMemoryDataService implements InMemoryDbService{
       games: this.games,
       personGames: [],
       gameplaySessions: [] as GameplaySession[],
+      persons: this.persons,
     };
   }
 
