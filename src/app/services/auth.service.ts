@@ -16,7 +16,8 @@ export class AuthService {
     createAuth0Client({
       domain: 'mayhew3.auth0.com',
       client_id: 'HY2lTrNdFc6HDrTlSoKZNL0EriSi0dnW',
-      redirect_uri: `${window.location.origin}`
+      redirect_uri: `${window.location.origin}`,
+      audience: 'https://media-mogul-two.herokuapp.com',
     })
   ) as Observable<Auth0Client>).pipe(
     shareReplay(1), // Every subscription receives the same shared value
@@ -45,6 +46,12 @@ export class AuthService {
     this.localAuthSetup();
     // Handle redirect from Auth0 login
     this.handleAuthCallback();
+  }
+
+  getTokenSilently$(options?): Observable<string> {
+    return this.auth0Client$.pipe(
+      concatMap((client: Auth0Client) => from(client.getTokenSilently(options)))
+    );
   }
 
   // When calling, options can be passed if desired
