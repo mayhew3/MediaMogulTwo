@@ -4,6 +4,7 @@ import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import {ArrayService} from '../../services/array.service';
 import {Platform} from '../../interfaces/Platform';
 import {AuthService} from '../../services/auth.service';
+import {PersonService} from '../../services/person.service';
 
 @Component({
   selector: 'mm-game-detail',
@@ -28,7 +29,7 @@ export class GameDetailComponent implements OnInit {
   constructor(private gameService: GameService,
               public activeModal: NgbActiveModal,
               private arrayService: ArrayService,
-              private authService: AuthService) { }
+              public personService: PersonService) { }
 
   ngOnInit(): void {
     this.finished = !!this.game.personGame && !!this.game.personGame.finished_date;
@@ -69,10 +70,6 @@ export class GameDetailComponent implements OnInit {
         finished_date: this.game.personGame.finished_date,
       };
     }
-  }
-
-  isAdmin(): boolean {
-    return this.authService.isAdmin();
   }
 
   toggleTitleEdit() {

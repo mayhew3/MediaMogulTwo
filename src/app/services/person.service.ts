@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Person} from '../interfaces/Person';
 import {Observable, of} from 'rxjs';
-import {catchError, concatMap} from 'rxjs/operators';
+import {catchError, concatMap, tap} from 'rxjs/operators';
 import {ArrayService} from './array.service';
 import * as _ from 'underscore';
 import {AuthService} from './auth.service';
@@ -14,8 +14,12 @@ export class PersonService {
   personsUrl = 'api/persons';
   cache: Person[];
   me$ = this.authService.getUser$().pipe(
-    concatMap((user) => this.getPersonWithEmail(user.email))
+    concatMap((user) => this.getPersonWithEmail(user.email)),
+    tap((person: Person) => {
+      this.isAdmin = person.user_role === 'admin'
+    })
   );
+  isAdmin: boolean = null;
 
   constructor(private http: HttpClient,
               private arrayService: ArrayService,
