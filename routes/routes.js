@@ -4,6 +4,7 @@ const jwks = require("jwks-rsa");
 
 module.exports = function(app) {
   let games = require('../controllers/games_controller');
+  let persons = require('../controllers/persons_controller');
 
   const authConfig = {
     domain: 'mayhew3.auth0.com',
@@ -32,6 +33,8 @@ module.exports = function(app) {
   privatePost('/personGames', games.addPersonGame);
 
   privatePost('/gameplaySessions', games.addGameplaySession);
+
+  privateGet('/persons', persons.getPersons);
 
   app.use('/api', router);
 
