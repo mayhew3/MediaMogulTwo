@@ -3,7 +3,7 @@ const debug = require('debug')('OscarsAngular');
 const app = require('../app');
 const sockets = require('../controllers/sockets_controller');
 
-app.set('port', process.env.PORT || 5550);
+app.set('port', process.env.PORT || 5555);
 
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
