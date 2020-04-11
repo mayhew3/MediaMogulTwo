@@ -18,9 +18,14 @@
 
       <!--TODO: href goes nowhere? -->
       <li class="nav-item active">
-        <a href="#" class="nav-link" (click)="auth.login()" *ngIf="!auth.loggedIn">Log In</a>
-        <a href="#" class="nav-link" (click)="auth.logout()" *ngIf="auth.loggedIn">Log Out</a>
+        <a routerLink="/" class="nav-link" (click)="auth.login()" *ngIf="!auth.loggedIn">Log In</a>
+        <a routerLink="/" class="nav-link" (click)="auth.logout()" *ngIf="auth.loggedIn">Log Out</a>
       </li>
+
+      <li class="nav-item active">
+        <a routerLink="profile" class="nav-link" *ngIf="auth.loggedIn">Profile</a>
+      </li>
+
     </ul>
 
   </div>
