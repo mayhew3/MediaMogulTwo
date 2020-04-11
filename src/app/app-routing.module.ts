@@ -4,11 +4,17 @@ import {HomeComponent} from './components/home/home.component';
 import {BrowseGamesComponent} from './components/browse-games/browse-games.component';
 import {ProfileComponent} from './components/profile/profile.component';
 import {AuthGuard} from './services/auth/auth.guard';
+import {DashboardComponent} from './components/dashboard/dashboard.component';
 
 export const routes: Routes = [
   {
     path: '',
     component: HomeComponent
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'browse',

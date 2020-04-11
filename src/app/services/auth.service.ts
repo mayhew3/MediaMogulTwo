@@ -73,7 +73,7 @@ export class AuthService {
     checkAuth$.subscribe();
   }
 
-  login(redirectPath: string = '/') {
+  login(redirectPath: string = '/dashboard') {
     // A desired redirect path can be passed to login method
     // (e.g., from a route guard)
     // Ensure Auth0 client instance exists
@@ -119,7 +119,7 @@ export class AuthService {
     this.auth0Client$.subscribe((client: Auth0Client) => {
       // Call method to log out
       client.logout({
-        client_id: "HY2lTrNdFc6HDrTlSoKZNL0EriSi0dnW",
+        client_id: 'HY2lTrNdFc6HDrTlSoKZNL0EriSi0dnW',
         returnTo: `${window.location.origin}`
       });
     });

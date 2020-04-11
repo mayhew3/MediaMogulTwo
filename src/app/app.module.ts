@@ -17,6 +17,7 @@ import { HomeComponent } from './components/home/home.component';
 import { BrowseGamesComponent } from './components/browse-games/browse-games.component';
 import {AppRoutingModule} from './app-routing.module';
 import { ProfileComponent } from './components/profile/profile.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ProfileComponent } from './components/profile/profile.component';
     NavBarComponent,
     HomeComponent,
     BrowseGamesComponent,
-    ProfileComponent
+    ProfileComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

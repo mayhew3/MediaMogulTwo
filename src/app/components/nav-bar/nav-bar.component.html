@@ -2,7 +2,8 @@
   <div class="container">
     <ul class="navbar-nav mr-auto">
 
-      <li class="nav-item dropdown active">
+      <li class="nav-item dropdown active"
+          *ngIf="auth.loggedIn">
         <a class="nav-link dropdown-toggle"
            href="#"
            id="navbarDropdown"
@@ -10,9 +11,12 @@
            data-toggle="dropdown"
            aria-haspopup="true"
            aria-expanded="false">Games</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" routerLink="/">Home</a>
-          <a class="dropdown-item" routerLink="/browse">Browse</a>
+        <div class="dropdown-menu"
+             aria-labelledby="navbarDropdown">
+          <a class="dropdown-item"
+             routerLink="/dashboard">Dashboard</a>
+          <a class="dropdown-item"
+             routerLink="/browse">Browse</a>
         </div>
       </li>
 
