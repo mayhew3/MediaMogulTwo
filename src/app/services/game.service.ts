@@ -6,7 +6,9 @@ import * as _ from 'underscore';
 import {PersonGame} from '../interfaces/PersonGame';
 import {GameplaySession} from '../interfaces/GameplaySession';
 import {Person} from '../interfaces/Person';
-import {AuthService} from './auth.service';
+import {PersonService} from './person.service';
+import {Observable} from 'rxjs';
+import {concatMap} from 'rxjs/operators';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -24,8 +26,9 @@ export class GameService {
 
   constructor(private http: HttpClient,
               private arrayService: ArrayService,
-              private authService: AuthService) {
+              private personService: PersonService) {
     this.cache = [];
+    this.personService.me$.subscribe(person => this.person = person);
   }
 
   async maybeRefreshCache(): Promise<Game[]> {
@@ -33,32 +36,26 @@ export class GameService {
       if (this.cache.length > 0) {
         resolve(this.cache);
       } else {
-        resolve(await this.refreshCache());
+        this.refreshCache().subscribe(games => resolve(games));
       }
     });
   }
 
-  async getPersonID(): Promise<number> {
-    return new Promise<number>(async resolve => {
-      if (!this.person) {
-        this.person = await this.authService.getPerson();
-      }
-      resolve(this.person.id);
-    });
-  }
-
-  private async refreshCache(): Promise<Game[]> {
-    const personID = await this.getPersonID();
-    const payload = {
-      person_id: personID.toString()
-    };
-    const options = {
-      params: payload
-    };
-    const gameObjs = await this.http.get<any[]>(this.gamesUrl, options).toPromise();
-    const games = this.convertObjectsToGames(gameObjs);
-    this.arrayService.refreshArray(this.cache, games);
-    return this.cache;
+  private refreshCache(): Observable<Game[]> {
+    return this.personService.me$.pipe(
+      concatMap(async (person) => {
+        const personID = person.id;
+        const payload = {
+          person_id: personID.toString()
+        };
+        const options = {
+          params: payload
+        };
+        const gameObjs = await this.http.get<any[]>(this.gamesUrl, options).toPromise();
+        const games = this.convertObjectsToGames(gameObjs);
+        this.arrayService.refreshArray(this.cache, games);
+        return this.cache;
+      }));
   }
 
   convertObjectsToGames(gameObjs: any[]): Game[] {
@@ -73,13 +70,15 @@ export class GameService {
   }
 
   async addToMyGames(game: Game): Promise<any> {
-    const personID = await this.getPersonID();
-    const payload = {
-      game_id: game.id,
-      person_id: personID
-    };
-    const returnObj = await this.http.post<any>(this.personGamesUrl, payload).toPromise();
-    game.personGame = new PersonGame(returnObj);
+    this.personService.me$.subscribe(async person => {
+      const personID = person.id;
+      const payload = {
+        game_id: game.id,
+        person_id: personID
+      };
+      const returnObj = await this.http.post<any>(this.personGamesUrl, payload).toPromise();
+      game.personGame = new PersonGame(returnObj);
+    });
   }
 
   async updateGame(game: Game, changedFields): Promise<any> {

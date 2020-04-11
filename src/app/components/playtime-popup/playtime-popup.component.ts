@@ -3,8 +3,7 @@ import {NgbActiveModal, NgbCalendar, NgbDate} from '@ng-bootstrap/ng-bootstrap';
 import {Game} from '../../interfaces/Game';
 import {GameService} from '../../services/game.service';
 import * as moment from 'moment';
-import {Person} from '../../interfaces/Person';
-import {AuthService} from '../../services/auth.service';
+import {PersonService} from '../../services/person.service';
 
 @Component({
   selector: 'mm-playtime-popup',
@@ -13,7 +12,6 @@ import {AuthService} from '../../services/auth.service';
 })
 export class PlaytimePopupComponent implements OnInit {
   @Input() game: Game;
-  private person: Person;
   model: NgbDate;
   validDate: boolean;
 
@@ -30,13 +28,12 @@ export class PlaytimePopupComponent implements OnInit {
   constructor(public activeModal: NgbActiveModal,
               private gameService: GameService,
               private calendar: NgbCalendar,
-              private authService: AuthService) {
+              private personService: PersonService) {
     this.model = calendar.getToday();
     this.validDate = true;
   }
 
   async ngOnInit(): Promise<any> {
-    this.person = await this.authService.getPerson();
     this.original.initialize(this.game.personGame.minutes_played);
     this.finished = !!this.game.personGame.finished_date;
     this.finalScore = this.game.personGame.final_score;
@@ -72,7 +69,7 @@ export class PlaytimePopupComponent implements OnInit {
   disableAdd(): boolean {
     return !this.anyFieldsChanged() ||
       !this.added.asMinutes() ||
-      !this.validDate
+      !this.validDate;
   }
 
   anyFieldsChanged() {
@@ -84,30 +81,32 @@ export class PlaytimePopupComponent implements OnInit {
   }
 
   async saveAndClose() {
-    try {
-      const playedDate = this.convertModelToDate();
-      const changedFields = {
-        minutes_played: this.resulting.asMinutes(),
-        final_score: this.finalScore,
-        replay_score: this.replayScore,
-        last_played: playedDate,
-        finished_date: this.finished ? playedDate : null
-      };
+    this.personService.me$.subscribe(async person => {
+      try {
+        const playedDate = this.convertModelToDate();
+        const changedFields = {
+          minutes_played: this.resulting.asMinutes(),
+          final_score: this.finalScore,
+          replay_score: this.replayScore,
+          last_played: playedDate,
+          finished_date: this.finished ? playedDate : null
+        };
 
-      const gameplaySession = {
-        game_id: this.game.id,
-        minutes: this.added.asMinutes(),
-        start_time: playedDate,
-        rating: this.sessionRating,
-        person_id: this.person.id,
-      };
+        const gameplaySession = {
+          game_id: this.game.id,
+          minutes: this.added.asMinutes(),
+          start_time: playedDate,
+          rating: this.sessionRating,
+          person_id: person.id,
+        };
 
-      await this.gameService.insertGameplaySession(gameplaySession);
-      await this.gameService.updatePersonGame(this.game, changedFields);
-      this.activeModal.close('Save Click');
-    } catch (err) {
-      console.error(err);
-    }
+        await this.gameService.insertGameplaySession(gameplaySession);
+        await this.gameService.updatePersonGame(this.game, changedFields);
+        this.activeModal.close('Save Click');
+      } catch (err) {
+        console.error(err);
+      }
+    });
   }
 }
 

@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import {AuthService} from '../../services/auth.service';
 
 @Component({
-  selector: 'mm-nav-bar',
-  templateUrl: './nav-bar.component.html',
-  styleUrls: ['./nav-bar.component.scss']
+  selector: 'mm-profile',
+  templateUrl: './profile.component.html',
+  styleUrls: ['./profile.component.scss']
 })
-export class NavBarComponent implements OnInit {
+export class ProfileComponent implements OnInit {
 
   constructor(public auth: AuthService) { }
 

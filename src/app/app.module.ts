@@ -16,6 +16,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HomeComponent } from './components/home/home.component';
 import { BrowseGamesComponent } from './components/browse-games/browse-games.component';
 import {AppRoutingModule} from './app-routing.module';
+import { ProfileComponent } from './components/profile/profile.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import {AppRoutingModule} from './app-routing.module';
     AddGameComponent,
     NavBarComponent,
     HomeComponent,
-    BrowseGamesComponent
+    BrowseGamesComponent,
+    ProfileComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

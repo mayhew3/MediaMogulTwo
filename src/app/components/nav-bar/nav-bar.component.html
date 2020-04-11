@@ -1,7 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
   <div class="container">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown active">
+
+      <li class="nav-item dropdown active"
+          *ngIf="auth.loggedIn">
         <a class="nav-link dropdown-toggle"
            href="#"
            id="navbarDropdown"
@@ -9,10 +11,23 @@
            data-toggle="dropdown"
            aria-haspopup="true"
            aria-expanded="false">Games</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" routerLink="/">Home</a>
-          <a class="dropdown-item" routerLink="/browse">Browse</a>
+        <div class="dropdown-menu"
+             aria-labelledby="navbarDropdown">
+          <a class="dropdown-item"
+             routerLink="/dashboard">Dashboard</a>
+          <a class="dropdown-item"
+             routerLink="/browse">Browse</a>
         </div>
+      </li>
+
+      <!--TODO: href goes nowhere? -->
+      <li class="nav-item active">
+        <a routerLink="/" class="nav-link" (click)="auth.login()" *ngIf="!auth.loggedIn">Log In</a>
+        <a routerLink="/" class="nav-link" (click)="auth.logout()" *ngIf="auth.loggedIn">Log Out</a>
+      </li>
+
+      <li class="nav-item active">
+        <a routerLink="profile" class="nav-link" *ngIf="auth.loggedIn">Profile</a>
       </li>
 
     </ul>

@@ -23,6 +23,16 @@ exports.Game = sequelize.sequelize.define("game", {
   updatedAt: false
 });
 
+exports.Person = sequelize.sequelize.define('person', {
+  id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
+  email: Sequelize.TEXT,
+  user_role: Sequelize.TEXT,
+}, {
+  freezeTableName: true,
+  createdAt: false,
+  updatedAt: false
+});
+
 exports.PersonGame = sequelize.sequelize.define("person_game", {
   id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
   person_id: Sequelize.INTEGER,
