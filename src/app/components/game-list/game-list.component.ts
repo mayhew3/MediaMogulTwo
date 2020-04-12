@@ -8,6 +8,8 @@ import {GameService} from '../../services/game.service';
 import {GameFilter} from '../../interfaces/GameFilter';
 import {GameOrdering} from '../../interfaces/GameOrdering';
 import {OrderingDirection} from './OrderingDirection';
+import {PlatformGameFilter} from '../../interfaces/PlatformGameFilter';
+import {GameFilterWithOptions} from '../../interfaces/GameFilterWithOptions';
 
 @Component({
   selector: 'mm-game-list',
@@ -24,6 +26,10 @@ export class GameListComponent implements OnInit{
   page = 1;
   initializing = true;
   thisComponent = this;
+  platformFilter = new PlatformGameFilter();
+  additionalFilters: GameFilterWithOptions[] = [
+    this.platformFilter
+  ];
 
   constructor(private modalService: NgbModal,
               private gameService: GameService) {
