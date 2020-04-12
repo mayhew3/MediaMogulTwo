@@ -3,6 +3,7 @@ import {GameFilterWithOptions} from './GameFilterWithOptions';
 import {Game} from './Game';
 import * as _ from 'underscore';
 import {Platform} from './Platform';
+import {ArrayService} from '../services/array.service';
 
 export class PlatformGameFilter extends GameFilterWithOptions {
 
@@ -14,6 +15,15 @@ export class PlatformGameFilter extends GameFilterWithOptions {
 
   constructor() {
     super(PlatformGameFilter.initializeOptions());
+  }
+
+  static removeFromArray(originalArray, element) {
+    const indexOf = originalArray.indexOf(element);
+    if (indexOf < 0) {
+      console.debug('No element found!');
+      return;
+    }
+    originalArray.splice(indexOf, 1);
   }
 
   apply(game: Game): boolean {

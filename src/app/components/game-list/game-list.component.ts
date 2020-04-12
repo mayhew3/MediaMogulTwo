@@ -59,23 +59,17 @@ export class GameListComponent implements OnInit{
 
   applyAll(games: Game[], filters: GameFilter[]): Game[] {
     let filtered = this.arrayService.cloneArray(games);
-    _.forEach(filters, filter => filtered = _.filter(filtered, filter.apply));
+    _.forEach(filters, filter => {
+      filtered = filter.applyToList(filtered);
+    });
     return filtered;
-  }
-
-  manualFilter(games: Game[], filter: PlatformGameFilter): Game[] {
-    const resultGames = [];
-    for (const dhsjakd of games) {
-      if (filter.apply(dhsjakd)) {
-        resultGames.push(dhsjakd);
-      }
-    }
-    return resultGames;
   }
 
   async fastSortGames() {
     const allGames = await this.gameService.maybeRefreshCache();
-    this.filteredGames = this.manualFilter(allGames, this.platformFilter);
+    const allFilters = this.arrayService.cloneArray(this.additionalFilters);
+    allFilters.push(this.gameFilter);
+    this.filteredGames = this.applyAll(allGames, allFilters);
     const isAscending = OrderingDirection[this.selectedOrdering.direction] === OrderingDirection.asc;
     if (isAscending) {
       // noinspection TypeScriptValidateJSTypes
@@ -103,8 +97,9 @@ export class GameListComponent implements OnInit{
     return classes.join(' ');
   }
 
-  toggleOption(option: GameFilterOption) {
+  async toggleOption(option: GameFilterOption) {
     option.isActive = !option.isActive;
+    await this.fastSortGames();
   }
 
   async openAddGamePopup() {
