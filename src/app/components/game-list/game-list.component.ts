@@ -12,6 +12,7 @@ import {PlatformGameFilter} from '../../interfaces/PlatformGameFilter';
 import {GameFilterWithOptions} from '../../interfaces/GameFilterWithOptions';
 import {GameFilterOption} from '../../interfaces/GameFilterOption';
 import {ArrayService} from '../../services/array.service';
+import {CloudGameFilter} from '../../interfaces/CloudGameFilter';
 
 @Component({
   selector: 'mm-game-list',
@@ -29,8 +30,10 @@ export class GameListComponent implements OnInit{
   initializing = true;
   thisComponent = this;
   platformFilter = new PlatformGameFilter();
+  cloudFilter = new CloudGameFilter();
   additionalFilters: GameFilterWithOptions[] = [
-    this.platformFilter
+    this.platformFilter,
+    this.cloudFilter
   ];
 
   constructor(private modalService: NgbModal,

@@ -19,6 +19,7 @@ export class Game {
   natural_end: boolean;
   howlong_id: number;
   giantbomb_id: number;
+  steam_cloud: boolean;
 
   constructor(gameObj) {
     this.id = gameObj.id;
@@ -38,6 +39,7 @@ export class Game {
     this.date_added = !!gameObj.date_added ? new Date(gameObj.date_added) : null;
     this.howlong_id = gameObj.howlong_id;
     this.giantbomb_id = gameObj.giantbomb_id;
+    this.steam_cloud = gameObj.steam_cloud;
   }
 
   isOwned(): boolean {

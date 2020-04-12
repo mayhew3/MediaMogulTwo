@@ -7,16 +7,32 @@
       </div>
       <div class="d-flex justify-content-end">
 
-        <button class="btn btn-success"
+        <button class="btn btn-success mx-1"
                 (click)="openAddGamePopup()">+</button>
 
         <form class="form-inline" *ngIf="showOrderingDropdown()">
 
-          <label class="col-form-label" for="orderBy">Order By: </label>
-          <div class="form-group">
 
             <div ngbDropdown
-                 class="d-inline-block"
+                 class="d-inline-block mx-1"
+                 [autoClose]="'outside'">
+              <button class="btn btn-primary"
+                      id="dropdownCloud"
+                      name="dropdownCloud"
+                      ngbDropdownToggle>Cloud</button>
+              <div ngbDropdownMenu
+                   aria-labelledby="dropdownCloud">
+                <button *ngFor="let option of cloudFilter.options"
+                        ngbDropdownItem
+                        (click)="toggleOption(option)"
+                        [ngClass]="getOptionClass(option)">
+                  {{option.label}}
+                </button>
+              </div>
+            </div>
+
+            <div ngbDropdown
+                 class="d-inline-block mx-1"
                  [autoClose]="'outside'">
               <button class="btn btn-primary"
                       id="dropdownPlatform"
@@ -32,6 +48,9 @@
                 </button>
               </div>
             </div>
+
+          <label class="col-form-label mx-1" for="orderBy">Order By: </label>
+          <div class="form-group mx-1">
 
             <select class="custom-select" id="orderBy">
               <option *ngFor="let ordering of orderings"
