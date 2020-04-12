@@ -29,8 +29,8 @@ export class ArrayService {
     originalArray.splice(indexOf, 1);
   }
 
-  cloneArray(originalArray) {
-    originalArray.slice();
+  cloneArray(originalArray): any[] {
+    return originalArray.slice();
   }
 
   getChangedFields(changedObject, originalObject): any {

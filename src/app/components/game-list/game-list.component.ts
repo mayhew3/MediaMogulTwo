@@ -11,6 +11,7 @@ import {OrderingDirection} from './OrderingDirection';
 import {PlatformGameFilter} from '../../interfaces/PlatformGameFilter';
 import {GameFilterWithOptions} from '../../interfaces/GameFilterWithOptions';
 import {GameFilterOption} from '../../interfaces/GameFilterOption';
+import {ArrayService} from '../../services/array.service';
 
 @Component({
   selector: 'mm-game-list',
@@ -33,7 +34,8 @@ export class GameListComponent implements OnInit{
   ];
 
   constructor(private modalService: NgbModal,
-              private gameService: GameService) {
+              private gameService: GameService,
+              private arrayService: ArrayService) {
   }
 
   async ngOnInit(): Promise<any> {
@@ -55,9 +57,25 @@ export class GameListComponent implements OnInit{
     await this.fastSortGames();
   }
 
+  applyAll(games: Game[], filters: GameFilter[]): Game[] {
+    let filtered = this.arrayService.cloneArray(games);
+    _.forEach(filters, filter => filtered = _.filter(filtered, filter.apply));
+    return filtered;
+  }
+
+  manualFilter(games: Game[], filter: PlatformGameFilter): Game[] {
+    const resultGames = [];
+    for (const dhsjakd of games) {
+      if (filter.apply(dhsjakd)) {
+        resultGames.push(dhsjakd);
+      }
+    }
+    return resultGames;
+  }
+
   async fastSortGames() {
     const allGames = await this.gameService.maybeRefreshCache();
-    this.filteredGames = _.filter(allGames, game => this.gameFilter.apply(game));
+    this.filteredGames = this.manualFilter(allGames, this.platformFilter);
     const isAscending = OrderingDirection[this.selectedOrdering.direction] === OrderingDirection.asc;
     if (isAscending) {
       // noinspection TypeScriptValidateJSTypes
