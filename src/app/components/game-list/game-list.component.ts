@@ -60,7 +60,8 @@ export class GameListComponent implements OnInit{
   applyAll(games: Game[], filters: GameFilter[]): Game[] {
     let filtered = this.arrayService.cloneArray(games);
     _.forEach(filters, filter => {
-      filtered = filter.applyToList(filtered);
+      // bind() returns a copy of a function with 'this' bound to an object.
+      filtered = _.filter(filtered, filter.apply.bind(filter))
     });
     return filtered;
   }
