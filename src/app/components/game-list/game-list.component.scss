@@ -8,3 +8,10 @@
   margin-top: -15px;
   margin-bottom: -15px;
 }
+
+.filterItem {
+  color: black;
+  &:hover {
+    color: white;
+  }
+}

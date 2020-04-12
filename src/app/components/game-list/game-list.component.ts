@@ -10,6 +10,7 @@ import {GameOrdering} from '../../interfaces/GameOrdering';
 import {OrderingDirection} from './OrderingDirection';
 import {PlatformGameFilter} from '../../interfaces/PlatformGameFilter';
 import {GameFilterWithOptions} from '../../interfaces/GameFilterWithOptions';
+import {GameFilterOption} from '../../interfaces/GameFilterOption';
 
 @Component({
   selector: 'mm-game-list',
@@ -73,6 +74,19 @@ export class GameListComponent implements OnInit{
           {asc: game => game.title}
         ]);
     }
+  }
+
+  getOptionClass(option: GameFilterOption): string {
+    const classes = [];
+    if (option.isActive) {
+      classes.push('btn-success');
+      classes.push('filterItem');
+    }
+    return classes.join(' ');
+  }
+
+  toggleOption(option: GameFilterOption) {
+    option.isActive = !option.isActive;
   }
 
   async openAddGamePopup() {

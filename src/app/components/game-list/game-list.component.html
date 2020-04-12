@@ -6,17 +6,41 @@
         <h1>{{title}}</h1>
       </div>
       <div class="d-flex justify-content-end">
+
         <button class="btn btn-success"
                 (click)="openAddGamePopup()">+</button>
+
         <form class="form-inline" *ngIf="showOrderingDropdown()">
+
           <label class="col-form-label" for="orderBy">Order By: </label>
           <div class="form-group">
+
+            <div ngbDropdown
+                 class="d-inline-block"
+                 [autoClose]="'outside'">
+              <button class="btn btn-primary"
+                      id="dropdownPlatform"
+                      name="dropdownPlatform"
+                      ngbDropdownToggle>Platform</button>
+              <div ngbDropdownMenu
+                   aria-labelledby="dropdownPlatform">
+                <button *ngFor="let option of platformFilter.options"
+                        ngbDropdownItem
+                        (click)="toggleOption(option)"
+                        [ngClass]="getOptionClass(option)">
+                  {{option.label}}
+                </button>
+              </div>
+            </div>
+
             <select class="custom-select" id="orderBy">
               <option *ngFor="let ordering of orderings"
                       [selected]="isSelected(ordering)"
                       (click)="changeOrdering(ordering)">{{ordering.displayName}}</option>
             </select>
+
           </div>
+
         </form>
       </div>
 
