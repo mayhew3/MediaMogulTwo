@@ -12,6 +12,8 @@ export const environment = {
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false, delay: 0 }
     )],
+  clientID: 'HY2lTrNdFc6HDrTlSoKZNL0EriSi0dnW',
+  domain: 'mayhew3.auth0.com'
 };
 
 /*
