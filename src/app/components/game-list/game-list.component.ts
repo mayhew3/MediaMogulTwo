@@ -101,8 +101,26 @@ export class GameListComponent implements OnInit{
     return classes.join(' ');
   }
 
-  async toggleOption(option: GameFilterOption) {
-    option.isActive = !option.isActive;
+  async toggleOption(option: GameFilterOption, parentFilter: GameFilterWithOptions) {
+    const regularOptions = _.where(parentFilter.options, {special: false});
+    const specialOptions = _.where(parentFilter.options, {special: true});
+    if (option.special) {
+      const expectedValue = (option.label === 'All');
+      _.forEach(regularOptions, childOption => childOption.isActive = expectedValue);
+    } else {
+      option.isActive = !option.isActive;
+    }
+    const activeRegular = _.where(regularOptions, {isActive: true});
+    const inactiveRegular = _.where(regularOptions, {isActive: false});
+    const allOption = _.findWhere(specialOptions, {label: 'All'});
+    const noneOption = _.findWhere(specialOptions, {label: 'None'});
+    if (!!allOption) {
+      allOption.isActive = inactiveRegular.length === 0;
+    }
+    if (!!noneOption) {
+      noneOption.isActive = activeRegular.length === 0;
+    }
+
     await this.fastSortGames();
   }
 

@@ -24,7 +24,7 @@
                    aria-labelledby="dropdownCloud">
                 <button *ngFor="let option of cloudFilter.options"
                         ngbDropdownItem
-                        (click)="toggleOption(option)"
+                        (click)="toggleOption(option, cloudFilter)"
                         [ngClass]="getOptionClass(option)">
                   {{option.label}}
                 </button>
@@ -40,9 +40,16 @@
                       ngbDropdownToggle>Platform</button>
               <div ngbDropdownMenu
                    aria-labelledby="dropdownPlatform">
-                <button *ngFor="let option of platformFilter.options"
+                <button *ngFor="let option of platformFilter.getRegularOptions()"
                         ngbDropdownItem
-                        (click)="toggleOption(option)"
+                        (click)="toggleOption(option, platformFilter)"
+                        [ngClass]="getOptionClass(option)">
+                  {{option.label}}
+                </button>
+                <div class="dropdown-divider"></div>
+                <button *ngFor="let option of platformFilter.getSpecialOptions()"
+                        ngbDropdownItem
+                        (click)="toggleOption(option, platformFilter)"
                         [ngClass]="getOptionClass(option)">
                   {{option.label}}
                 </button>
