@@ -5,6 +5,9 @@ import {Observable} from 'rxjs';
 import {distinctUntilChanged, map} from 'rxjs/operators';
 import {ArrayService} from '../../services/array.service';
 import * as _ from 'underscore';
+import {Game} from '../../interfaces/Game';
+import {NgbModal, NgbTypeaheadSelectItemEvent} from '@ng-bootstrap/ng-bootstrap';
+import {GameDetailComponent} from '../game-detail/game-detail.component';
 
 @Component({
   selector: 'mm-nav-bar',
@@ -15,19 +18,22 @@ export class NavBarComponent implements OnInit {
 
   games = [];
   initializing = true;
-  public model: any;
+  public model: Game;
+
+  formatter = (game: Game) => game.title;
 
   search = (text$: Observable<string>) =>
     text$.pipe(
       distinctUntilChanged(),
       map(term =>
-        _.filter(_.map(this.games, game => game.title), v => v.toLowerCase().indexOf(term.toLowerCase()) > -1)
+        _.filter(this.games, v => v.title.toLowerCase().indexOf(term.toLowerCase()) > -1)
           .slice(0, 6))
     );
 
   constructor(public auth: AuthService,
               private gameService: GameService,
-              private arrayService: ArrayService) { }
+              private arrayService: ArrayService,
+              private modalService: NgbModal) { }
 
   ngOnInit(): void {
     this.gameService.maybeRefreshCache().then(games => {
@@ -36,4 +42,8 @@ export class NavBarComponent implements OnInit {
     });
   }
 
+  async openPopup(event: NgbTypeaheadSelectItemEvent) {
+    const modalRef = this.modalService.open(GameDetailComponent, {size: 'lg'});
+    modalRef.componentInstance.game = event.item;
+  }
 }
