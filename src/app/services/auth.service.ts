@@ -4,6 +4,7 @@ import Auth0Client from '@auth0/auth0-spa-js/dist/typings/Auth0Client';
 import {BehaviorSubject, combineLatest, from, Observable, of, throwError} from 'rxjs';
 import {catchError, concatMap, shareReplay, tap} from 'rxjs/operators';
 import {Router} from '@angular/router';
+import {environment} from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -13,8 +14,8 @@ export class AuthService {
   // Create an observable of Auth0 instance of client
   auth0Client$ = (from(
     createAuth0Client({
-      domain: 'mayhew3.auth0.com',
-      client_id: 'HY2lTrNdFc6HDrTlSoKZNL0EriSi0dnW',
+      domain: environment.domain,
+      client_id: environment.clientID,
       redirect_uri: `${window.location.origin}`,
       audience: 'https://media-mogul-two.herokuapp.com',
     })
