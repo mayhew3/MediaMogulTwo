@@ -17,6 +17,7 @@ exports.Game = sequelize.sequelize.define("game", {
   metacritic_hint: Sequelize.TEXT,
   howlong_id: Sequelize.NUMBER,
   giantbomb_id: Sequelize.NUMBER,
+  steam_cloud: Sequelize.BOOLEAN,
 }, {
   freezeTableName: true,
   createdAt: false,
