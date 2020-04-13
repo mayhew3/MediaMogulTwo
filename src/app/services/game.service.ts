@@ -5,10 +5,10 @@ import {ArrayService} from './array.service';
 import * as _ from 'underscore';
 import {PersonGame} from '../interfaces/PersonGame';
 import {GameplaySession} from '../interfaces/GameplaySession';
-import {Person} from '../interfaces/Person';
 import {PersonService} from './person.service';
 import {Observable} from 'rxjs';
 import {concatMap} from 'rxjs/operators';
+import {Person} from '../interfaces/data_object/Person';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -44,7 +44,7 @@ export class GameService {
   private refreshCache(): Observable<Game[]> {
     return this.personService.me$.pipe(
       concatMap(async (person) => {
-        const personID = person.id;
+        const personID = person.id.getValue();
         const payload = {
           person_id: personID.toString()
         };
@@ -71,7 +71,7 @@ export class GameService {
 
   async addToMyGames(game: Game): Promise<any> {
     this.personService.me$.subscribe(async person => {
-      const personID = person.id;
+      const personID = person.id.getValue();
       const payload = {
         game_id: game.id,
         person_id: personID

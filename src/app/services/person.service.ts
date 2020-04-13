@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Person} from '../interfaces/Person';
 import {Observable, of} from 'rxjs';
 import {catchError, concatMap, tap} from 'rxjs/operators';
 import {ArrayService} from './array.service';
 import * as _ from 'underscore';
 import {AuthService} from './auth.service';
+import {Person} from '../interfaces/data_object/Person';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +16,7 @@ export class PersonService {
   me$ = this.authService.getUser$().pipe(
     concatMap((user) => this.getPersonWithEmail(user.email)),
     tap((person: Person) => {
-      this.isAdmin = person.user_role === 'admin'
+      this.isAdmin = person.user_role.getValue() === 'admin'
     })
   );
   isAdmin: boolean = null;
@@ -34,7 +34,7 @@ export class PersonService {
   }
 
   private getPersonWithEmailFromCache(email: string): Person {
-    return _.findWhere(this.cache, {email: email});
+    return _.find(this.cache, person => person.email.getValue() === email);
   }
 
 
@@ -52,12 +52,13 @@ export class PersonService {
   private maybeUpdateCache(): Observable<Person[]> {
     if (this.cache.length === 0) {
       return new Observable<Person[]>((observer) => {
-        this.http.get<Person[]>(this.personsUrl)
+        this.http.get<any[]>(this.personsUrl)
           .pipe(
-            catchError(this.handleError<Person[]>('getPersons', []))
+            catchError(this.handleError<any[]>('getPersons', []))
           )
           .subscribe(
-            (persons: Person[]) => {
+            (personObjs: any[]) => {
+              const persons = _.map(personObjs, personObj => new Person().initializedFromJSON(personObj));
               this.arrayService.addToArray(this.cache, persons);
               observer.next(persons);
             },

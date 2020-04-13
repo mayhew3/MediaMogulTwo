@@ -50,7 +50,7 @@ export class AddGameComponent implements OnInit {
         title: this.interfaceFields.title,
         platform: this.interfaceFields.platform,
         personGame: {
-          person_id: person.id,
+          person_id: person.id.getValue(),
           tier: 1,
           rating: this.interfaceFields.personGame.rating,
           minutes_played: 0
