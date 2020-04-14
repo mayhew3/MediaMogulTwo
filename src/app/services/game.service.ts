@@ -81,10 +81,8 @@ export class GameService {
     });
   }
 
-  async updateGame(game: Game, changedFields): Promise<any> {
-    const payload = {id: game.id.value, changedFields};
-    await this.http.put(this.gamesUrl, payload, httpOptions).toPromise();
-    game.moveChanges();
+  async updateGame(game: Game): Promise<any> {
+    await game.commit(this.http);
   }
 
   async updatePersonGame(personGame: PersonGame): Promise<any> {

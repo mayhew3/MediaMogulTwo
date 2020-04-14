@@ -73,7 +73,7 @@ export class GameDetailComponent implements OnInit {
     }
 
     if (Object.getOwnPropertyNames(this.changedGameFields).length > 0) {
-      allUpdates.push(this.doGameUpdate(this.changedGameFields));
+      allUpdates.push(this.doGameUpdate());
     }
 
     await Promise.all(allUpdates);
@@ -84,15 +84,12 @@ export class GameDetailComponent implements OnInit {
     await this.gameService.updatePersonGame(this.game.personGame);
   }
 
-  async doGameUpdate(changedFields) {
-    await this.gameService.updateGame(this.game, changedFields);
+  async doGameUpdate() {
+    await this.gameService.updateGame(this.game);
   }
 
   async updateTitle() {
-    const changedFields = {
-      title: this.editedTitle
-    }
-    await this.gameService.updateGame(this.game, changedFields);
+    await this.gameService.updateGame(this.game);
     this.titleEditMode = false;
   }
 }
