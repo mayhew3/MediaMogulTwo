@@ -20,7 +20,7 @@ export class PlatformGameFilter extends GameFilterWithOptions {
   apply(game: Game): boolean {
     const gameFilterOptions = this.options;
     const selectedOptionKeys = _.map(_.where(gameFilterOptions, {isActive: true, special: false}), option => option.value);
-    return _.contains(selectedOptionKeys, game.platform);
+    return _.contains(selectedOptionKeys, game.platform.value);
   }
 
 }

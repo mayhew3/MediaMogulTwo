@@ -3,8 +3,8 @@
 export abstract class FieldValue<T> {
   private readonly fieldName: string;
 
-  private originalValue: T;
-  private _value: T;
+  protected originalValue: T;
+  protected _value: T;
   strValue: string;
   private explicitNull = false;
   private required = false;

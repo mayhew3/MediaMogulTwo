@@ -26,7 +26,7 @@ export class CloudGameFilter extends GameFilterWithOptions {
   apply(game: Game): boolean {
     const gameFilterOptions = this.options;
     const selectedOptionKeys = _.map(_.where(gameFilterOptions, {isActive: true}), option => option.value);
-    return _.contains(selectedOptionKeys, game.steam_cloud);
+    return _.contains(selectedOptionKeys, game.steam_cloud.value);
   }
 
 }

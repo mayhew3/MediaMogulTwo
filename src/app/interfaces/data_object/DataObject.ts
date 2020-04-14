@@ -20,7 +20,7 @@ export abstract class DataObject {
   initializedFromJSON(jsonObj: any): DataObject {
     for (const fieldValue of this.allFieldValues) {
       const jsonField = jsonObj[fieldValue.getFieldName()];
-      if (!!jsonField) {
+      if (jsonField !== undefined) {
         if (typeof jsonField === 'string') {
           fieldValue.initializeValueFromString(jsonField);
         } else {

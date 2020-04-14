@@ -35,7 +35,7 @@ export class GameCardComponent implements OnInit {
 
   getImageUrl(): string {
     if (!!this.game.igdb_poster.value && this.game.igdb_poster.value !== '') {
-      return 'https://images.igdb.com/igdb/image/upload/t_720p/' + this.game.igdb_poster +  '.jpg';
+      return 'https://images.igdb.com/igdb/image/upload/t_720p/' + this.game.igdb_poster.value +  '.jpg';
     } else if (!!this.game.logo.value && this.game.logo.value !== '') {
       return 'https://cdn.edgecast.steamstatic.com/steam/apps/' + this.game.steamid.value + '/header.jpg';
     } else if (!!this.game.giantbomb_medium_url.value && this.game.giantbomb_medium_url.value !== '') {
