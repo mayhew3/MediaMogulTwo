@@ -94,8 +94,9 @@ export class GameService {
     personGame.update();
   }
 
-  async insertGameplaySession(gameplaySession: any): Promise<any> {
-    await this.http.post<GameplaySession>(this.gameplaySessionUrl, gameplaySession, httpOptions).toPromise();
+  async insertGameplaySession(gameplaySession: GameplaySession): Promise<any> {
+    const changedFields = gameplaySession.getChangedFields();
+    await this.http.post<any>(this.gameplaySessionUrl, changedFields, httpOptions).toPromise();
   }
 
 }

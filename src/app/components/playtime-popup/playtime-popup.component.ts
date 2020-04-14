@@ -4,6 +4,7 @@ import {Game} from '../../interfaces/Model/Game';
 import {GameService} from '../../services/game.service';
 import * as moment from 'moment';
 import {PersonService} from '../../services/person.service';
+import {GameplaySession} from '../../interfaces/Model/GameplaySession';
 
 @Component({
   selector: 'mm-playtime-popup',
@@ -92,13 +93,13 @@ export class PlaytimePopupComponent implements OnInit {
           finished_date: this.finished ? playedDate : null
         };
 
-        const gameplaySession = {
-          game_id: this.game.id.value,
-          minutes: this.added.asMinutes(),
-          start_time: playedDate,
-          rating: this.sessionRating,
-          person_id: person.id.value,
-        };
+        const gameplaySession = new GameplaySession();
+
+        gameplaySession.game_id.value = this.game.id.value;
+        gameplaySession.minutes.value = this.added.asMinutes();
+        gameplaySession.start_time.value = playedDate;
+        gameplaySession.rating.value = this.sessionRating;
+        gameplaySession.person_id.value = person.id.value;
 
         await this.gameService.insertGameplaySession(gameplaySession);
         await this.gameService.updatePersonGame(this.game, changedFields);
