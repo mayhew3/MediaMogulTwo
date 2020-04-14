@@ -4,6 +4,7 @@ import {FieldValueInteger} from './FieldValueInteger';
 import {FieldValueDecimal} from './FieldValueDecimal';
 import {FieldValueDate} from './FieldValueDate';
 import {FieldValueBoolean} from './FieldValueBoolean';
+import * as _ from 'underscore';
 
 enum EditMode {INSERT, UPDATE}
 
@@ -30,6 +31,21 @@ export abstract class DataObject {
     return this;
   }
 
+  getChangedFields(): any {
+    const returnObj = {};
+    for (const fieldValue of this.allFieldValues) {
+      if (fieldValue.isChanged()) {
+        returnObj[fieldValue.getFieldName()] = fieldValue.getChangedValue();
+      }
+    }
+    return returnObj;
+  }
+
+  update(): void {
+    for (const fieldValue of this.allFieldValues) {
+      fieldValue.update();
+    }
+  }
 
   protected registerStringField(fieldName: string, required: boolean): FieldValueString {
     const fieldValue = new FieldValueString(fieldName, required);

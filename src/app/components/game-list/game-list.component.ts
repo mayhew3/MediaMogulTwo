@@ -80,14 +80,14 @@ export class GameListComponent implements OnInit{
       fast_sort(this.filteredGames)
         .by([
           {asc: this.selectedOrdering.sortValue},
-          {asc: game => game.title}
+          {asc: game => game.title.value}
         ]);
     } else {
       // noinspection TypeScriptValidateJSTypes
       fast_sort(this.filteredGames)
         .by([
           {desc: this.selectedOrdering.sortValue},
-          {asc: game => game.title}
+          {asc: game => game.title.value}
         ]);
     }
   }

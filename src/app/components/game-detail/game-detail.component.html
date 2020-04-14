@@ -11,7 +11,7 @@
 <div class="modal-body"
      *ngIf="!!game">
 
-  <h3 *ngIf="!titleEditMode">{{game.title}} <span (click)="toggleTitleEdit()"
+  <h3 *ngIf="!titleEditMode">{{game.title.value}} <span (click)="toggleTitleEdit()"
                                                   *ngIf="personService.isAdmin">
     <svg class="bi bi-pencil" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 011.414 0l2 2a1 1 0 010 1.414l-9 9a1 1 0 01-.39.242l-3 1a1 1 0 01-1.266-1.265l1-3a1 1 0 01.242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z" clip-rule="evenodd"/>
@@ -24,7 +24,7 @@
     <!--suppress HtmlFormInputWithoutLabel -->
     <input type="text"
            class="form-control darkInput"
-           [(ngModel)]="editedTitle"/>
+           [(ngModel)]="game.title.value"/>
     <div class="input-group-append">
       <button class="btn btn-default"
               (click)="updateTitle()"
@@ -42,9 +42,9 @@
         <select class="custom-select darkInput"
                 id="platform"
                 name="platform"
-                [(ngModel)]="interfaceFields.platform">
+                [(ngModel)]="game.platform.value">
           <option *ngFor="let platform of getPlatformOptions()"
-                  [selected]="getDisplayValueOf(platform) === interfaceFields.platform"
+                  [selected]="getDisplayValueOf(platform) === game.platform.value"
                   (click)="updatePlatform(platform)">{{getDisplayValueOf(platform)}}</option>
         </select>
       </div>
@@ -56,7 +56,7 @@
                id="metacriticHint"
                class="darkInput form-control"
                name="metacriticHint"
-               [(ngModel)]="interfaceFields.metacritic_hint"
+               [(ngModel)]="game.metacritic_hint.value"
                (ngModelChange)="onFieldEdit()"/>
       </div>
 
@@ -68,7 +68,7 @@
                name="naturalEnd"
                class="form-control"
                (change)="onFieldEdit()"
-               [(ngModel)]="interfaceFields.natural_end">
+               [(ngModel)]="game.natural_end.value">
       </div>
 
       <!--RATING-->
@@ -89,7 +89,7 @@
                id="howlong"
                name="howlong"
                class="darkInput form-control"
-               [(ngModel)]="interfaceFields.howlong_id"
+               [(ngModel)]="game.howlong_id.value"
                (ngModelChange)="onFieldEdit()"/>
       </div>
 
@@ -100,7 +100,7 @@
                id="giantbomb"
                name="giantbomb"
                class="darkInput form-control"
-               [(ngModel)]="interfaceFields.giantbomb_id"
+               [(ngModel)]="game.giantbomb_id.value"
                (ngModelChange)="onFieldEdit()"/>
       </div>
 

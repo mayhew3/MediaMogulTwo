@@ -1,9 +1,11 @@
 
+
 export abstract class FieldValue<T> {
   private readonly fieldName: string;
 
   private originalValue: T;
-  private changedValue: T;
+  private _value: T;
+  strValue: string;
   private explicitNull = false;
   private required = false;
 
@@ -19,8 +21,15 @@ export abstract class FieldValue<T> {
     return this.originalValue;
   }
 
-  getValue(): T {
-    return this.changedValue;
+  get value(): T {
+    return this._value;
+  }
+
+  set value(newValue: T) {
+    if (newValue === null) {
+      this.explicitNull = true;
+    }
+    this._value = newValue;
   }
 
   getFieldName(): string {
@@ -29,7 +38,7 @@ export abstract class FieldValue<T> {
 
   initializeValue(value: T) {
     this.originalValue = value;
-    this.changedValue = value;
+    this._value = value;
   }
 
   initializeValueFromString(valueString: string) {
@@ -46,26 +55,17 @@ export abstract class FieldValue<T> {
     }
   }
 
-  changeValue(newValue: T) {
-    if (newValue === null) {
-      this.explicitNull = true;
-    }
-    this.changedValue = newValue;
-  }
-
   changeValueFromString(valueString: string) {
-    const convertedValue = this.getConversion(valueString);
-    this.changeValue(convertedValue);
+    this.value = this.getConversion(valueString);
   }
-
 
   discardChange() {
-    this.changedValue = this.originalValue;
+    this._value = this.originalValue;
   }
 
   nullValue() {
     this.explicitNull = true;
-    this.changedValue = null;
+    this._value = null;
   }
 
   isChanged(): boolean {
@@ -77,11 +77,38 @@ export abstract class FieldValue<T> {
   }
 
   private valueHasChanged() {
-    return !Object.is(this.originalValue, this.changedValue);
+    const converted = this.convertFromString(this.strValue);
+    return !this.isSame(this.originalValue, this._value) || !this.isSame(this.originalValue, converted);
+  }
+
+  // noinspection JSMethodCanBeStatic
+  private isSame(field1, field2): boolean {
+    const normalized1 = field1 === '' || field1 === null ? undefined : field1;
+    const normalized2 = field2 === '' || field2 === null ? undefined : field2;
+    return normalized1 === normalized2;
+  }
+
+  getChangedValue(): T {
+    const converted = this.convertFromString(this.strValue);
+    if (!this.isSame(this.originalValue, this.value)) {
+      return this.value;
+    } else if (!this.isSame(this.originalValue, converted)) {
+      return converted;
+    }
   }
 
   update() {
-    this.originalValue = this.changedValue;
+    const converted = this.convertFromString(this.strValue);
+    if (!Object.is(this.originalValue, this._value) &&
+      !Object.is(this._value, converted) &&
+      !Object.is(this._value, converted)) {
+      throw new Error("Multiple changes to same field.")
+    } else {
+      const changed = this.getChangedValue();
+      this.strValue = changed.toString();
+      this._value = changed;
+      this.originalValue = this._value;
+    }
   }
 
   isExplicitNull(): boolean {

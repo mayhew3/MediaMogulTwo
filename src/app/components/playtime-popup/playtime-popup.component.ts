@@ -93,11 +93,11 @@ export class PlaytimePopupComponent implements OnInit {
         };
 
         const gameplaySession = {
-          game_id: this.game.id,
+          game_id: this.game.id.value,
           minutes: this.added.asMinutes(),
           start_time: playedDate,
           rating: this.sessionRating,
-          person_id: person.id.getValue(),
+          person_id: person.id.value,
         };
 
         await this.gameService.insertGameplaySession(gameplaySession);

@@ -16,7 +16,7 @@ export class PersonService {
   me$ = this.authService.getUser$().pipe(
     concatMap((user) => this.getPersonWithEmail(user.email)),
     tap((person: Person) => {
-      this.isAdmin = person.user_role.getValue() === 'admin'
+      this.isAdmin = person.user_role.value === 'admin'
     })
   );
   isAdmin: boolean = null;
@@ -34,7 +34,7 @@ export class PersonService {
   }
 
   private getPersonWithEmailFromCache(email: string): Person {
-    return _.find(this.cache, person => person.email.getValue() === email);
+    return _.find(this.cache, person => person.email.value === email);
   }
 
 

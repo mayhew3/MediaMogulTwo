@@ -44,7 +44,7 @@ export class GameService {
   private refreshCache(): Observable<Game[]> {
     return this.personService.me$.pipe(
       concatMap(async (person) => {
-        const personID = person.id.getValue();
+        const personID = person.id.value;
         const payload = {
           person_id: personID.toString()
         };
@@ -59,21 +59,21 @@ export class GameService {
   }
 
   convertObjectsToGames(gameObjs: any[]): Game[] {
-    return _.map(gameObjs, gameObj => new Game(gameObj));
+    return _.map(gameObjs, gameObj => new Game().initializedFromJSON(gameObj));
   }
 
   async addGame(gameObj: any): Promise<Game> {
     const returnObj = await this.http.post<any>(this.gamesUrl, gameObj).toPromise();
-    const returnGame = new Game(returnObj);
+    const returnGame = new Game().initializedFromJSON(returnObj);
     this.cache.push(returnGame);
     return returnGame;
   }
 
   async addToMyGames(game: Game): Promise<any> {
     this.personService.me$.subscribe(async person => {
-      const personID = person.id.getValue();
+      const personID = person.id.value;
       const payload = {
-        game_id: game.id,
+        game_id: game.id.value,
         person_id: personID
       };
       const returnObj = await this.http.post<any>(this.personGamesUrl, payload).toPromise();
@@ -82,7 +82,7 @@ export class GameService {
   }
 
   async updateGame(game: Game, changedFields): Promise<any> {
-    const payload = {id: game.id, changedFields};
+    const payload = {id: game.id.value, changedFields};
     await this.http.put(this.gamesUrl, payload, httpOptions).toPromise();
     this.updateChangedFieldsOnObject(game, changedFields);
   }

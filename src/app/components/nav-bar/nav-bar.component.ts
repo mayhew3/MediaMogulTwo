@@ -20,13 +20,13 @@ export class NavBarComponent implements OnInit {
   initializing = true;
   public model: Game;
 
-  formatter = (game: Game) => game.title;
+  formatter = (game: Game) => game.title.value;
 
   search = (text$: Observable<string>) =>
     text$.pipe(
       distinctUntilChanged(),
       map(term =>
-        _.filter(this.games, v => v.title.toLowerCase().indexOf(term.toLowerCase()) > -1)
+        _.filter(this.games, v => v.title.value.toLowerCase().indexOf(term.toLowerCase()) > -1)
           .slice(0, 6))
     );
 

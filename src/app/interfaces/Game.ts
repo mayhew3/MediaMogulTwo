@@ -1,45 +1,31 @@
 /* tslint:disable:variable-name */
 import {PersonGame} from './PersonGame';
+import {DataObject} from './data_object/DataObject';
 
-export class Game {
-  id: number;
-  title: string;
-  igdb_poster: string;
-  logo: string;
-  giantbomb_medium_url: string;
-  steamid: number;
-  brokenImage: boolean;
-  howlong_extras: number;
-  timetotal: number;
-  metacritic: number;
-  metacritic_hint: string;
+export class Game extends DataObject {
+  title = this.registerStringField('title', true);
+  igdb_poster = this.registerStringField('igdb_poster', false);
+  logo = this.registerStringField('logo', false);
+  giantbomb_medium_url = this.registerStringField('giantbomb_medium_url', false);
+  steamid = this.registerIntegerField('steamid', false);
+  howlong_extras = this.registerDecimalField('howlong_extras', false);
+  timetotal = this.registerDecimalField('timetotal', false);
+  metacritic = this.registerIntegerField('metacritic', false);
+  metacritic_hint = this.registerStringField('metacritic_hint', false);
+  platform = this.registerStringField('platform', true);
+  natural_end = this.registerBooleanField('natural_end', false);
+  howlong_id = this.registerIntegerField('howlong_id', false);
+  giantbomb_id = this.registerIntegerField('giantbomb_id', false);
+  steam_cloud = this.registerBooleanField('steam_cloud', false);
+
+  brokenImage = false;
+
   personGame: PersonGame;
-  date_added: Date;
-  platform: string;
-  natural_end: boolean;
-  howlong_id: number;
-  giantbomb_id: number;
-  steam_cloud: boolean;
 
-  constructor(gameObj) {
-    this.id = gameObj.id;
-    this.title = gameObj.title;
-    this.igdb_poster = gameObj.igdb_poster;
-    this.logo = gameObj.logo;
-    this.giantbomb_medium_url = gameObj.giantbomb_medium_url;
-    this.steamid = gameObj.steamid;
-    this.brokenImage = false;
-    this.personGame = !!gameObj.personGame ? new PersonGame(gameObj.personGame) : undefined;
-    this.howlong_extras = gameObj.howlong_extras;
-    this.timetotal = gameObj.timetotal;
-    this.metacritic = gameObj.metacritic;
-    this.metacritic_hint = gameObj.metacritic_hint;
-    this.natural_end = gameObj.natural_end;
-    this.platform = gameObj.platform;
-    this.date_added = !!gameObj.date_added ? new Date(gameObj.date_added) : null;
-    this.howlong_id = gameObj.howlong_id;
-    this.giantbomb_id = gameObj.giantbomb_id;
-    this.steam_cloud = gameObj.steam_cloud;
+  initializedFromJSON(jsonObj: any): Game {
+    super.initializedFromJSON(jsonObj);
+    this.personGame = !!jsonObj.personGame ? new PersonGame(jsonObj.personGame) : undefined;
+    return this;
   }
 
   isOwned(): boolean {

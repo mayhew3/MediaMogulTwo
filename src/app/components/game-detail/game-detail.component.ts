@@ -3,8 +3,8 @@ import {GameService} from '../../services/game.service';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import {ArrayService} from '../../services/array.service';
 import {Platform} from '../../interfaces/Platform';
-import {AuthService} from '../../services/auth.service';
 import {PersonService} from '../../services/person.service';
+import {Game} from '../../interfaces/Game';
 
 @Component({
   selector: 'mm-game-detail',
@@ -12,7 +12,7 @@ import {PersonService} from '../../services/person.service';
   styleUrls: ['./game-detail.component.scss']
 })
 export class GameDetailComponent implements OnInit {
-  @Input() game;
+  @Input() game: Game;
 
   originalFields;
   interfaceFields;
@@ -33,27 +33,7 @@ export class GameDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.finished = !!this.game.personGame && !!this.game.personGame.finished_date;
-    this.editedTitle = this.game.title;
-
-    this.originalFields = {
-      platform: this.game.platform,
-      metacritic: this.game.metacritic,
-      metacritic_hint: this.game.metacritic_hint,
-      timetotal: this.game.timetotal,
-      natural_end: this.game.natural_end,
-      howlong_id: this.game.howlong_id,
-      giantbomb_id: this.game.giantbomb_id
-    };
-
-    this.interfaceFields = {
-      platform: this.game.platform,
-      metacritic: this.game.metacritic,
-      metacritic_hint: this.game.metacritic_hint,
-      timetotal: this.game.timetotal,
-      natural_end: this.game.natural_end,
-      howlong_id: this.game.howlong_id,
-      giantbomb_id: this.game.giantbomb_id
-    };
+    this.editedTitle = this.game.title.value;
 
     if (!!this.game.personGame) {
       this.originalPersonFields = {
@@ -86,12 +66,8 @@ export class GameDetailComponent implements OnInit {
   }
 
   onFieldEdit() {
-    this.changedGameFields = this.getChangedFields();
+    this.changedGameFields = this.game.getChangedFields();
     this.changedPersonFields = this.getChangedPersonFields();
-  }
-
-  getChangedFields() {
-    return this.arrayService.getChangedFields(this.interfaceFields, this.originalFields);
   }
 
   getChangedPersonFields() {
@@ -107,7 +83,7 @@ export class GameDetailComponent implements OnInit {
   }
 
   updatePlatform(platform) {
-    this.interfaceFields.platform = this.getDisplayValueOf(platform);
+    this.game.platform.value = this.getDisplayValueOf(platform);
     this.onFieldEdit();
   }
 
@@ -137,7 +113,7 @@ export class GameDetailComponent implements OnInit {
 
   async doGameUpdate(changedFields) {
     await this.gameService.updateGame(this.game, changedFields);
-    this.refreshGameFields(changedFields);
+    this.game.update();
   }
 
   refreshPersonFields(changedFields) {
@@ -146,16 +122,6 @@ export class GameDetailComponent implements OnInit {
         const changedField = changedFields[key];
         this.game.personGame[key] = changedField;
         this.originalPersonFields[key] = changedField;
-      }
-    }
-  }
-
-  refreshGameFields(changedFields) {
-    for (const key in changedFields) {
-      if (changedFields.hasOwnProperty(key)) {
-        const changedField = changedFields[key];
-        this.game[key] = changedField;
-        this.originalFields[key] = changedField;
       }
     }
   }

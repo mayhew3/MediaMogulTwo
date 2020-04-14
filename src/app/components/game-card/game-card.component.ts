@@ -34,12 +34,12 @@ export class GameCardComponent implements OnInit {
   }
 
   getImageUrl(): string {
-    if (!!this.game.igdb_poster && this.game.igdb_poster !== '') {
+    if (!!this.game.igdb_poster.value && this.game.igdb_poster.value !== '') {
       return 'https://images.igdb.com/igdb/image/upload/t_720p/' + this.game.igdb_poster +  '.jpg';
-    } else if (!!this.game.logo && this.game.logo !== '') {
-      return 'https://cdn.edgecast.steamstatic.com/steam/apps/' + this.game.steamid + '/header.jpg';
-    } else if (!!this.game.giantbomb_medium_url && this.game.giantbomb_medium_url !== '') {
-      return this.game.giantbomb_medium_url;
+    } else if (!!this.game.logo.value && this.game.logo.value !== '') {
+      return 'https://cdn.edgecast.steamstatic.com/steam/apps/' + this.game.steamid.value + '/header.jpg';
+    } else if (!!this.game.giantbomb_medium_url.value && this.game.giantbomb_medium_url.value !== '') {
+      return this.game.giantbomb_medium_url.value;
     } else {
       return 'images/GenericSeries.gif';
     }
@@ -70,7 +70,7 @@ export class GameCardComponent implements OnInit {
   }
 
   isSteamGame(): boolean {
-    return Platform.Steam === this.game.platform;
+    return Platform.Steam === this.game.platform.value;
   }
 
   async addToMyGames(): Promise<any> {
