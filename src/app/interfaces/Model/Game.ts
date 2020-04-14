@@ -22,7 +22,7 @@ export class Game extends DataObject {
 
   personGame: PersonGame;
 
-  initializedFromJSON(jsonObj: any): Game {
+  initializedFromJSON(jsonObj: any): this {
     super.initializedFromJSON(jsonObj);
     this.personGame = !!jsonObj.personGame ? new PersonGame().initializedFromJSON(jsonObj.personGame) : undefined;
     return this;
@@ -30,5 +30,9 @@ export class Game extends DataObject {
 
   isOwned(): boolean {
     return !!this.personGame;
+  }
+
+  getApiMethod(): string {
+    return 'games';
   }
 }

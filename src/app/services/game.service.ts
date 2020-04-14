@@ -84,19 +84,18 @@ export class GameService {
   async updateGame(game: Game, changedFields): Promise<any> {
     const payload = {id: game.id.value, changedFields};
     await this.http.put(this.gamesUrl, payload, httpOptions).toPromise();
-    game.update();
+    game.moveChanges();
   }
 
   async updatePersonGame(game: Game, changedFields): Promise<any> {
     const personGame = game.personGame;
     const payload = {id: personGame.id.value, changedFields};
     await this.http.put(this.personGamesUrl, payload, httpOptions).toPromise();
-    personGame.update();
+    personGame.moveChanges();
   }
 
-  async insertGameplaySession(gameplaySession: GameplaySession): Promise<any> {
-    const changedFields = gameplaySession.getChangedFields();
-    await this.http.post<any>(this.gameplaySessionUrl, changedFields, httpOptions).toPromise();
+  async insertGameplaySession(gameplaySession: GameplaySession): Promise<GameplaySession> {
+    return gameplaySession.commit(this.http);
   }
 
 }

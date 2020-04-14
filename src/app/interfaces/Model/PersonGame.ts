@@ -11,12 +11,6 @@ export class PersonGame extends DataObject {
   finished_date = this.registerDateField('finished_date', false);
   replay_reason = this.registerStringField('replay_reason', false);
 
-
-  initializedFromJSON(jsonObj: any): PersonGame {
-    super.initializedFromJSON(jsonObj);
-    return this;
-  }
-
   getLastPlayedFormat(): string {
     const thisYear = (new Date()).getFullYear();
 
@@ -31,5 +25,9 @@ export class PersonGame extends DataObject {
     } else {
       return 'yyyy.M.d';
     }
+  }
+
+  getApiMethod(): string {
+    return 'personGames';
   }
 }

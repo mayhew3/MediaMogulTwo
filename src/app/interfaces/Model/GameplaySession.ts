@@ -7,4 +7,8 @@ export class GameplaySession extends DataObject {
   minutes = this.registerIntegerField('minutes', true);
   rating = this.registerDecimalField('rating', false);
   person_id = this.registerIntegerField('person_id', false);
+
+  getApiMethod(): string {
+    return 'gameplaySessions';
+  }
 }
