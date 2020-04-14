@@ -62,22 +62,26 @@ export class GameService {
     return _.map(gameObjs, gameObj => new Game().initializedFromJSON(gameObj));
   }
 
-  async addGame(gameObj: any): Promise<Game> {
-    const returnObj = await this.http.post<any>(this.gamesUrl, gameObj).toPromise();
-    const returnGame = new Game().initializedFromJSON(returnObj);
-    this.cache.push(returnGame);
-    return returnGame;
+  async addGame(game: Game): Promise<Game> {
+    const personGame = game.personGame;
+    if (!!personGame) {
+      delete game.personGame;
+    }
+    const resultGame = await game.commit(this.http);
+    if (!!personGame) {
+      personGame.game_id.value = resultGame.id.value;
+      resultGame.personGame = await personGame.commit(this.http);
+    }
+    return resultGame;
   }
 
   async addToMyGames(game: Game): Promise<any> {
     this.personService.me$.subscribe(async person => {
-      const personID = person.id.value;
-      const payload = {
-        game_id: game.id.value,
-        person_id: personID
-      };
-      const returnObj = await this.http.post<any>(this.personGamesUrl, payload).toPromise();
-      game.personGame = new PersonGame().initializedFromJSON(returnObj);
+      const personGame = new PersonGame();
+      personGame.person_id.value = person.id.value;
+      personGame.game_id.value = game.id.value;
+
+      game.personGame = await personGame.commit(this.http);
     });
   }
 

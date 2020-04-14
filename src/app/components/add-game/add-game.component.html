@@ -20,7 +20,7 @@
                id="name"
                name="name"
                [required]="true"
-               [(ngModel)]="interfaceFields.title"/>
+               [(ngModel)]="game.title.value"/>
       </div>
 
       <div class="col-3">
@@ -28,9 +28,9 @@
         <select class="custom-select darkInput"
                 id="platform"
                 name="platform"
-                [(ngModel)]="interfaceFields.platform">
+                [(ngModel)]="game.platform.value">
           <option *ngFor="let platform of getPlatformOptions()"
-                  [selected]="getDisplayValueOf(platform) === interfaceFields.platform"
+                  [selected]="getDisplayValueOf(platform) === game.platform.value"
                   (click)="updatePlatform(platform)">{{getDisplayValueOf(platform)}}</option>
         </select>
       </div>
@@ -41,7 +41,7 @@
                class="darkInput form-control"
                id="rating"
                name="rating"
-               [(ngModel)]="interfaceFields.personGame.rating"/>
+               [(ngModel)]="personGame.rating.value"/>
       </div>
 
     </div>

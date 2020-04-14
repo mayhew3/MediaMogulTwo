@@ -10,6 +10,8 @@ export class PersonGame extends DataObject {
   minutes_played = this.registerIntegerField('minutes_played', false);
   finished_date = this.registerDateField('finished_date', false);
   replay_reason = this.registerStringField('replay_reason', false);
+  person_id = this.registerIntegerField('person_id', true);
+  game_id = this.registerIntegerField('game_id', true);
 
   getLastPlayedFormat(): string {
     const thisYear = (new Date()).getFullYear();

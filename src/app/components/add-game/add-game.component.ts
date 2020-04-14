@@ -4,6 +4,8 @@ import {Platform} from '../../interfaces/Enum/Platform';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import * as _ from 'underscore';
 import {PersonService} from '../../services/person.service';
+import {Game} from '../../interfaces/Model/Game';
+import {PersonGame} from '../../interfaces/Model/PersonGame';
 
 @Component({
   selector: 'mm-add-game',
@@ -11,6 +13,9 @@ import {PersonService} from '../../services/person.service';
   styleUrls: ['./add-game.component.scss']
 })
 export class AddGameComponent implements OnInit {
+
+  game = new Game();
+  personGame = new PersonGame();
 
   interfaceFields = {
     title: '',
@@ -37,26 +42,22 @@ export class AddGameComponent implements OnInit {
   }
 
   updatePlatform(platform) {
-    this.interfaceFields.platform = this.getDisplayValueOf(platform);
+    this.game.platform.value = this.getDisplayValueOf(platform);
   }
 
   canSubmit(): boolean {
-    return this.interfaceFields.title !== '';
+    return this.game.title.value !== '';
   }
 
   async submitAndClose() {
     this.personService.me$.subscribe(async person => {
-      const gameObj = {
-        title: this.interfaceFields.title,
-        platform: this.interfaceFields.platform,
-        personGame: {
-          person_id: person.id.value,
-          tier: 1,
-          rating: this.interfaceFields.personGame.rating,
-          minutes_played: 0
-        }
-      };
-      await this.gameService.addGame(gameObj);
+      this.personGame.person_id.value = person.id.value;
+      this.personGame.tier.value = 1;
+      this.personGame.minutes_played.value = 0;
+
+      this.game.personGame = this.personGame;
+
+      await this.gameService.addGame(this.game);
       this.activeModal.close('Submit Click');
     });
   }

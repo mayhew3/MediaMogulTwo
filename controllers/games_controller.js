@@ -38,12 +38,12 @@ exports.addGame = async function(request, response) {
   delete gameObj.personGame;
 
   const game = await model.Game.create(gameObj);
-  personGameObj.game_id = game.id;
-
   const returnObj = game.dataValues;
 
-  returnObj.personGame = await model.PersonGame.create(personGameObj);
-
+  if (!!personGameObj) {
+    personGameObj.game_id = game.id;
+    returnObj.personGame = await model.PersonGame.create(personGameObj);
+  }
   response.json(returnObj);
 };
 
