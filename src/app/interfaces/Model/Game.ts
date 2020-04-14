@@ -20,16 +20,27 @@ export class Game extends DataObject {
 
   brokenImage = false;
 
-  personGame: PersonGame;
+  private _personGame: PersonGame;
+
+  get personGame(): PersonGame {
+    return this._personGame;
+  }
+
+  set personGame(personGame: PersonGame) {
+    this._personGame = personGame;
+    if (!!personGame && !!personGame.game_id) {
+      personGame.game_id.value = this.id.value;
+    }
+  }
 
   initializedFromJSON(jsonObj: any): this {
     super.initializedFromJSON(jsonObj);
-    this.personGame = !!jsonObj.personGame ? new PersonGame().initializedFromJSON(jsonObj.personGame) : undefined;
+    this._personGame = !!jsonObj.personGame ? new PersonGame().initializedFromJSON(jsonObj.personGame) : undefined;
     return this;
   }
 
   isOwned(): boolean {
-    return !!this.personGame;
+    return !!this._personGame;
   }
 
   getApiMethod(): string {

@@ -48,15 +48,8 @@ exports.addGame = async function(request, response) {
 };
 
 exports.addPersonGame = async function(request, response) {
-  const payload = {
-    game_id: request.body.game_id,
-    person_id: request.body.person_id,
-    tier: 2,
-    minutes_played: 0
-  }
-
-  const personGame = await model.PersonGame.create(payload);
-
+  const personGameObj = request.body;
+  const personGame = await model.PersonGame.create(personGameObj);
   response.json(personGame);
 };
 

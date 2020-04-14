@@ -13,6 +13,12 @@ export class PersonGame extends DataObject {
   person_id = this.registerIntegerField('person_id', true);
   game_id = this.registerIntegerField('game_id', true);
 
+  constructor() {
+    super();
+    this.minutes_played.value = 0;
+    this.tier.value = 2;
+  }
+
   getLastPlayedFormat(): string {
     const thisYear = (new Date()).getFullYear();
 

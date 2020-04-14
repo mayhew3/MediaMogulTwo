@@ -60,9 +60,7 @@ export abstract class DataObject {
     const url = '/api/' + this.getApiMethod();
     const changedFields = this.getChangedFields();
     const returnObj = await http.post<any>(url, changedFields).toPromise();
-    this.id.value = returnObj.id;
-    this.date_added.value = returnObj.date_added;
-    this.moveChanges();
+    this.initializedFromJSON(returnObj);
     return this;
   }
 

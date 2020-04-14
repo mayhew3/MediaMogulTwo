@@ -19,8 +19,6 @@ const httpOptions = {
 })
 export class GameService {
   gamesUrl = 'api/games';
-  personGamesUrl = 'api/personGames';
-  gameplaySessionUrl = 'api/gameplaySessions';
   cache: Game[];
   private person: Person;
 
@@ -72,6 +70,7 @@ export class GameService {
       personGame.game_id.value = resultGame.id.value;
       resultGame.personGame = await personGame.commit(this.http);
     }
+    this.cache.push(resultGame);
     return resultGame;
   }
 
