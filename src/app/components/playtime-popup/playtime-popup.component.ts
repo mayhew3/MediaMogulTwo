@@ -92,6 +92,10 @@ export class PlaytimePopupComponent implements OnInit {
           last_played: playedDate,
           finished_date: this.finished ? playedDate : null
         };
+        const personGame = this.game.personGame;
+        personGame.minutes_played.value = this.resulting.asMinutes();
+        personGame.final_score.value = this.resulting.asMinutes();
+        personGame.replay_score.value = this.resulting.asMinutes();
 
         const gameplaySession = new GameplaySession();
 
@@ -102,7 +106,7 @@ export class PlaytimePopupComponent implements OnInit {
         gameplaySession.person_id.value = person.id.value;
 
         await this.gameService.insertGameplaySession(gameplaySession);
-        await this.gameService.updatePersonGame(this.game, changedFields);
+        await this.gameService.updatePersonGame(personGame);
         this.activeModal.close('Save Click');
       } catch (err) {
         console.error(err);

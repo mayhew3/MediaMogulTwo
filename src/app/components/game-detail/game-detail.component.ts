@@ -69,7 +69,7 @@ export class GameDetailComponent implements OnInit {
     const allUpdates = [];
 
     if (Object.getOwnPropertyNames(this.changedPersonFields).length > 0) {
-      allUpdates.push(this.doPersonUpdate(this.changedPersonFields));
+      allUpdates.push(this.doPersonUpdate());
     }
 
     if (Object.getOwnPropertyNames(this.changedGameFields).length > 0) {
@@ -80,8 +80,8 @@ export class GameDetailComponent implements OnInit {
     this.activeModal.close('Update Click');
   }
 
-  async doPersonUpdate(changedFields) {
-    await this.gameService.updatePersonGame(this.game, changedFields);
+  async doPersonUpdate() {
+    await this.gameService.updatePersonGame(this.game.personGame);
   }
 
   async doGameUpdate(changedFields) {
