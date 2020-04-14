@@ -34,10 +34,10 @@ export class PlaytimePopupComponent implements OnInit {
   }
 
   async ngOnInit(): Promise<any> {
-    this.original.initialize(this.game.personGame.minutes_played);
-    this.finished = !!this.game.personGame.finished_date;
-    this.finalScore = this.game.personGame.final_score;
-    this.replayScore = this.game.personGame.replay_score;
+    this.original.initialize(this.game.personGame.minutes_played.value);
+    this.finished = !!this.game.personGame.finished_date.value;
+    this.finalScore = this.game.personGame.final_score.value;
+    this.replayScore = this.game.personGame.replay_score.value;
   }
 
   newChanged() {
@@ -74,9 +74,9 @@ export class PlaytimePopupComponent implements OnInit {
 
   anyFieldsChanged() {
     const gametimeChanged = this.added.asMinutes() > 0;
-    const finishedChanged = !this.finished !== !this.game.personGame.finished_date;
-    const finalScoreChanged = this.finalScore !== this.game.personGame.final_score;
-    const replayScoreChanged = this.replayScore !== this.game.personGame.replay_score;
+    const finishedChanged = !this.finished !== !this.game.personGame.finished_date.value;
+    const finalScoreChanged = this.finalScore !== this.game.personGame.final_score.value;
+    const replayScoreChanged = this.replayScore !== this.game.personGame.replay_score.value;
     return gametimeChanged || finishedChanged || finalScoreChanged || replayScoreChanged;
   }
 

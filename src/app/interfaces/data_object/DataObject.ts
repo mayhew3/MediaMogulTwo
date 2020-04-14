@@ -19,16 +19,19 @@ export abstract class DataObject {
 
   initializedFromJSON(jsonObj: any): DataObject {
     for (const fieldValue of this.allFieldValues) {
-      const jsonField = jsonObj[fieldValue.getFieldName()];
-      if (jsonField !== undefined) {
-        if (typeof jsonField === 'string') {
-          fieldValue.initializeValueFromString(jsonField);
-        } else {
-          fieldValue.initializeValue(jsonField);
-        }
+      const jsonField = this.getValueFromJSON(fieldValue.getFieldName(), jsonObj);
+      if (typeof jsonField === 'string') {
+        fieldValue.initializeValueFromString(jsonField);
+      } else {
+        fieldValue.initializeValue(jsonField);
       }
     }
     return this;
+  }
+
+  getValueFromJSON(fieldName: string, jsonObj: any): any {
+    const jsonField = jsonObj[fieldName];
+    return jsonField === undefined ? null : jsonField;
   }
 
   getChangedFields(): any {

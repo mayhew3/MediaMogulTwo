@@ -1,34 +1,27 @@
 /* tslint:disable:variable-name */
-export class PersonGame {
-  id: number;
-  last_played: Date;
-  tier: number;
-  rating: number;
-  final_score: number;
-  replay_score: number;
-  minutes_played: number;
-  date_added: Date;
-  finished_date: Date;
-  replay_reason: string;
+import {DataObject} from './data_object/DataObject';
 
-  constructor(gameObj) {
-    this.id = gameObj.id;
-    this.tier = gameObj.tier;
-    this.rating = !gameObj.rating ? null : parseFloat(gameObj.rating);
-    this.final_score = gameObj.final_score;
-    this.replay_score = gameObj.replay_score;
-    this.minutes_played = gameObj.minutes_played;
-    this.date_added = !!gameObj.date_added ? new Date(gameObj.date_added) : null;
-    this.finished_date = !!gameObj.finished_date ? new Date(gameObj.finished_date) : null;
-    this.replay_reason = gameObj.replay_reason;
-    this.last_played = !!gameObj.last_played ? new Date(gameObj.last_played) : null;
+export class PersonGame extends DataObject {
+  last_played = this.registerDateField('last_played', false);
+  tier = this.registerIntegerField('tier', true);
+  rating = this.registerDecimalField('rating', false);
+  final_score = this.registerDecimalField('final_score', false);
+  replay_score = this.registerDecimalField('replay_score', false);
+  minutes_played = this.registerIntegerField('minutes_played', false);
+  finished_date = this.registerDateField('finished_date', false);
+  replay_reason = this.registerStringField('replay_reason', false);
+
+
+  initializedFromJSON(jsonObj: any): PersonGame {
+    super.initializedFromJSON(jsonObj);
+    return this;
   }
 
   getLastPlayedFormat(): string {
     const thisYear = (new Date()).getFullYear();
 
-    if (!!this.last_played) {
-      const year = this.last_played.getFullYear();
+    if (!!this.last_played.value) {
+      const year = this.last_played.value.getFullYear();
 
       if (year === thisYear) {
         return 'EEE M/d';

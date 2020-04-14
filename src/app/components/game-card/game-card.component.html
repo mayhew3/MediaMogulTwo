@@ -19,14 +19,14 @@
           {{game.title.value}}
         </div>
 
-        <div class="col-12 m-1" *ngIf="game.isOwned() && !!game.personGame.last_played">
+        <div class="col-12 m-1" *ngIf="game.isOwned() && !!game.personGame.last_played.value">
           <span>
-            {{game.personGame.last_played | date: game.personGame.getLastPlayedFormat():'America/Los_Angeles'}}
+            {{game.personGame.last_played.value | date: game.personGame.getLastPlayedFormat():'America/Los_Angeles'}}
           </span>
         </div>
 
         <div class="col-12 m-1" *ngIf="game.isOwned() && !successfullyAdded">
-          <mm-rating-box [value]="game.personGame.rating"
+          <mm-rating-box [value]="game.personGame.rating.value"
                          [maxValue]="100">
           </mm-rating-box>
         </div>

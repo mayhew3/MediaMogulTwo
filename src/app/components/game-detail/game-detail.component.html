@@ -78,7 +78,7 @@
                id="rating"
                name="rating"
                class="darkInput form-control"
-               [(ngModel)]="interfacePersonFields.rating"
+               [(ngModel)]="game.personGame.rating.value"
                (ngModelChange)="onFieldEdit()"/>
       </div>
 
@@ -122,7 +122,7 @@
                id="finalScore"
                name="finalScore"
                class="darkInput form-control"
-               [(ngModel)]="interfacePersonFields.final_score"
+               [(ngModel)]="game.personGame.final_score.value"
                (ngModelChange)="onFieldEdit()"/>
       </div>
 
@@ -133,7 +133,7 @@
                id="replay"
                name="replay"
                class="darkInput form-control"
-               [(ngModel)]="interfacePersonFields.replay_score"
+               [(ngModel)]="game.personGame.replay_score.value"
                (ngModelChange)="onFieldEdit()"/>
       </div>
 

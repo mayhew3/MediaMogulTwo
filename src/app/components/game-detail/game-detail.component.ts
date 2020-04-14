@@ -1,7 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {GameService} from '../../services/game.service';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
-import {ArrayService} from '../../services/array.service';
 import {Platform} from '../../interfaces/Platform';
 import {PersonService} from '../../services/person.service';
 import {Game} from '../../interfaces/Game';
@@ -14,10 +13,6 @@ import {Game} from '../../interfaces/Game';
 export class GameDetailComponent implements OnInit {
   @Input() game: Game;
 
-  originalFields;
-  interfaceFields;
-  originalPersonFields;
-  interfacePersonFields;
   changedGameFields = {};
   changedPersonFields = {};
   finished = false;
@@ -28,28 +23,11 @@ export class GameDetailComponent implements OnInit {
 
   constructor(private gameService: GameService,
               public activeModal: NgbActiveModal,
-              private arrayService: ArrayService,
               public personService: PersonService) { }
 
   ngOnInit(): void {
-    this.finished = !!this.game.personGame && !!this.game.personGame.finished_date;
+    this.finished = !!this.game.personGame && !!this.game.personGame.finished_date.value;
     this.editedTitle = this.game.title.value;
-
-    if (!!this.game.personGame) {
-      this.originalPersonFields = {
-        rating: this.game.personGame.rating,
-        final_score: this.game.personGame.final_score,
-        replay_score: this.game.personGame.replay_score,
-        finished_date: this.game.personGame.finished_date,
-      };
-
-      this.interfacePersonFields = {
-        rating: this.game.personGame.rating,
-        final_score: this.game.personGame.final_score,
-        replay_score: this.game.personGame.replay_score,
-        finished_date: this.game.personGame.finished_date,
-      };
-    }
   }
 
   toggleTitleEdit() {
@@ -61,17 +39,13 @@ export class GameDetailComponent implements OnInit {
   }
 
   onFinishedFieldEdit() {
-    this.interfacePersonFields.finished_date = !!this.finished ? new Date() : undefined;
+    this.game.personGame.finished_date.value = !!this.finished ? new Date() : undefined;
     this.onFieldEdit();
   }
 
   onFieldEdit() {
     this.changedGameFields = this.game.getChangedFields();
-    this.changedPersonFields = this.getChangedPersonFields();
-  }
-
-  getChangedPersonFields() {
-    return this.arrayService.getChangedFields(this.interfacePersonFields, this.originalPersonFields);
+    this.changedPersonFields = this.game.personGame.getChangedFields();
   }
 
   getPlatformOptions(): string[] {
@@ -108,22 +82,10 @@ export class GameDetailComponent implements OnInit {
 
   async doPersonUpdate(changedFields) {
     await this.gameService.updatePersonGame(this.game, changedFields);
-    this.refreshPersonFields(changedFields);
   }
 
   async doGameUpdate(changedFields) {
     await this.gameService.updateGame(this.game, changedFields);
-    this.game.update();
-  }
-
-  refreshPersonFields(changedFields) {
-    for (const key in changedFields) {
-      if (changedFields.hasOwnProperty(key)) {
-        const changedField = changedFields[key];
-        this.game.personGame[key] = changedField;
-        this.originalPersonFields[key] = changedField;
-      }
-    }
   }
 
   async updateTitle() {

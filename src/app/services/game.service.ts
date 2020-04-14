@@ -77,34 +77,25 @@ export class GameService {
         person_id: personID
       };
       const returnObj = await this.http.post<any>(this.personGamesUrl, payload).toPromise();
-      game.personGame = new PersonGame(returnObj);
+      game.personGame = new PersonGame().initializedFromJSON(returnObj);
     });
   }
 
   async updateGame(game: Game, changedFields): Promise<any> {
     const payload = {id: game.id.value, changedFields};
     await this.http.put(this.gamesUrl, payload, httpOptions).toPromise();
-    this.updateChangedFieldsOnObject(game, changedFields);
+    game.update();
   }
 
   async updatePersonGame(game: Game, changedFields): Promise<any> {
     const personGame = game.personGame;
-    const payload = {id: personGame.id, changedFields};
+    const payload = {id: personGame.id.value, changedFields};
     await this.http.put(this.personGamesUrl, payload, httpOptions).toPromise();
-    this.updateChangedFieldsOnObject(personGame, changedFields);
+    personGame.update();
   }
 
   async insertGameplaySession(gameplaySession: any): Promise<any> {
     await this.http.post<GameplaySession>(this.gameplaySessionUrl, gameplaySession, httpOptions).toPromise();
-  }
-
-  // noinspection JSMethodCanBeStatic
-  private updateChangedFieldsOnObject(obj: any, changedFields: any) {
-    for (const key in changedFields) {
-      if (changedFields.hasOwnProperty(key)) {
-        obj[key] = changedFields[key];
-      }
-    }
   }
 
 }

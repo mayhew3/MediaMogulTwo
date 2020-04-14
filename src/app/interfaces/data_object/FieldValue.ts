@@ -10,7 +10,7 @@ export abstract class FieldValue<T> {
   private required = false;
 
   private wasText = false;
-  private isText = false;
+  protected isText = false;
 
   constructor(fieldName: string, required: boolean) {
     this.fieldName = fieldName;
@@ -69,7 +69,7 @@ export abstract class FieldValue<T> {
   }
 
   isChanged(): boolean {
-    return this.shouldUpgradeText() || this.valueHasChanged();
+    return this.valueHasChanged();
   }
 
   private shouldUpgradeText(): boolean {
@@ -77,8 +77,7 @@ export abstract class FieldValue<T> {
   }
 
   private valueHasChanged() {
-    const converted = this.convertFromString(this.strValue);
-    return !this.isSame(this.originalValue, this._value) || !this.isSame(this.originalValue, converted);
+    return !this.isSame(this.originalValue, this._value);
   }
 
   // noinspection JSMethodCanBeStatic
@@ -89,23 +88,16 @@ export abstract class FieldValue<T> {
   }
 
   getChangedValue(): T {
-    const converted = this.convertFromString(this.strValue);
     if (!this.isSame(this.originalValue, this.value)) {
       return this.value;
-    } else if (!this.isSame(this.originalValue, converted)) {
-      return converted;
+    } else {
+      return null;
     }
   }
 
   update() {
-    const converted = this.convertFromString(this.strValue);
-    if (!Object.is(this.originalValue, this._value) &&
-      !Object.is(this._value, converted) &&
-      !Object.is(this._value, converted)) {
-      throw new Error("Multiple changes to same field.")
-    } else {
-      const changed = this.getChangedValue();
-      this.strValue = changed.toString();
+    const changed = this.getChangedValue();
+    if (!!changed) {
       this._value = changed;
       this.originalValue = this._value;
     }

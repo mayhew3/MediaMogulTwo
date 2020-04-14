@@ -9,7 +9,7 @@ export class OrderByRating extends GameOrdering {
   }
 
   sortValue(game: Game): any {
-    return game.isOwned() ? game.personGame.rating : -1;
+    return game.isOwned() ? game.personGame.rating.value : -1;
   }
 }
 

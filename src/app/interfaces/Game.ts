@@ -24,7 +24,7 @@ export class Game extends DataObject {
 
   initializedFromJSON(jsonObj: any): Game {
     super.initializedFromJSON(jsonObj);
-    this.personGame = !!jsonObj.personGame ? new PersonGame(jsonObj.personGame) : undefined;
+    this.personGame = !!jsonObj.personGame ? new PersonGame().initializedFromJSON(jsonObj.personGame) : undefined;
     return this;
   }
 

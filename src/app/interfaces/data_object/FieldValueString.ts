@@ -6,4 +6,13 @@ export class FieldValueString extends FieldValue<string> {
     return dataStr;
   }
 
+  initializeValue(value: string) {
+    super.initializeValue(value);
+    this.isText = true;
+  }
+
+  initializeValueFromString(valueString: string) {
+    super.initializeValueFromString(valueString);
+    this.isText = true;
+  }
 }
