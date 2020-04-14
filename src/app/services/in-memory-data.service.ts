@@ -52,6 +52,7 @@ export class InMemoryDataService implements InMemoryDbService{
     return null;
   }
 
+  // noinspection JSUnusedGlobalSymbols
   post(requestInfo: RequestInfo): Observable<Response> {
     console.log('HTTP override: POST');
     const collectionName = requestInfo.collectionName;
@@ -103,16 +104,12 @@ export class InMemoryDataService implements InMemoryDbService{
 
   private addPersonGame(requestInfo: RequestInfo) {
     const body = this.getBody(requestInfo);
-    const personGame = {
-      id: this.nextPersonGameID(),
-      person_id: body.person_id,
-      tier: 1,
-      minutes_played: 0
-    };
+    body.id = this.nextPersonGameID();
+    body.date_added = new Date();
     const game = this.findGame(body.game_id);
     if (!!game) {
-      game.personGame = personGame;
-      return this.packageUpResponse(personGame, requestInfo);
+      game.personGame = body;
+      return this.packageUpResponse(body, requestInfo);
     }
   }
 
@@ -181,7 +178,7 @@ export class InMemoryDataService implements InMemoryDbService{
     return requestInfo.utils.createResponse$(() => finishedOptions);
   }
 
-  private packageUpResponse(body, requestInfo) {
+  private packageUpResponse(body, requestInfo): Observable<ResponseOptions> {
     const options: ResponseOptions = {
       body,
       status: STATUS.OK

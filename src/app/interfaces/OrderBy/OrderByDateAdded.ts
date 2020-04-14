@@ -9,7 +9,9 @@ export class OrderByDateAdded extends GameOrdering {
   }
 
   sortValue(game: Game): any {
-    return !game.date_added ? null : game.date_added;
+    return !game.personGame ?
+      (!game.date_added.value ? null : game.date_added.value) :
+      game.personGame.date_added.value;
   }
 }
 

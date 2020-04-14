@@ -28,6 +28,7 @@ exports.Person = sequelize.sequelize.define('person', {
   id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
   email: Sequelize.TEXT,
   user_role: Sequelize.TEXT,
+  date_added: Sequelize.DATE,
 }, {
   freezeTableName: true,
   createdAt: false,
@@ -58,6 +59,7 @@ exports.GameplaySession = sequelize.sequelize.define("gameplay_session", {
   start_time: Sequelize.DATE,
   rating: Sequelize.DECIMAL,
   person_id: Sequelize.INTEGER,
+  date_added: Sequelize.DATE,
 }, {
   freezeTableName: true,
   createdAt: false,
