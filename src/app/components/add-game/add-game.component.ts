@@ -17,14 +17,6 @@ export class AddGameComponent implements OnInit {
   game = new Game();
   personGame = new PersonGame();
 
-  interfaceFields = {
-    title: '',
-    platform: this.getDisplayValueOf(Platform.PC),
-    personGame: {
-      rating: null
-    }
-  };
-
   constructor(private gameService: GameService,
               public activeModal: NgbActiveModal,
               private personService: PersonService) { }
