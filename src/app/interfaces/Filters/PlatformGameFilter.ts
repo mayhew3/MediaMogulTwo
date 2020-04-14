@@ -1,8 +1,8 @@
 import {GameFilterOption} from './GameFilterOption';
 import {GameFilterWithOptions} from './GameFilterWithOptions';
-import {Game} from './Game';
+import {Game} from '../Model/Game';
 import * as _ from 'underscore';
-import {Platform} from './Platform';
+import {Platform} from '../Enum/Platform';
 
 export class PlatformGameFilter extends GameFilterWithOptions {
 

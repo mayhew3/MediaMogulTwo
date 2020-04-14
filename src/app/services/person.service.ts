@@ -5,7 +5,7 @@ import {catchError, concatMap, tap} from 'rxjs/operators';
 import {ArrayService} from './array.service';
 import * as _ from 'underscore';
 import {AuthService} from './auth.service';
-import {Person} from '../interfaces/data_object/Person';
+import {Person} from '../interfaces/Model/Person';
 
 @Injectable({
   providedIn: 'root'

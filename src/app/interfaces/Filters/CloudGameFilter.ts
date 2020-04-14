@@ -1,6 +1,6 @@
 import {GameFilterOption} from './GameFilterOption';
 import {GameFilterWithOptions} from './GameFilterWithOptions';
-import {Game} from './Game';
+import {Game} from '../Model/Game';
 import * as _ from 'underscore';
 
 enum CloudOptions {

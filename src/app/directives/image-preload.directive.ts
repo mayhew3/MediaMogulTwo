@@ -1,5 +1,5 @@
 import {Directive, Input, HostBinding, HostListener, ElementRef} from '@angular/core';
-import {Game} from '../interfaces/Game';
+import {Game} from '../interfaces/Model/Game';
 
 @Directive({
   // tslint:disable-next-line:directive-selector

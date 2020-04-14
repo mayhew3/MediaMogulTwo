@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {GameFilter} from '../../interfaces/GameFilter';
-import {UnownedGameFilter} from '../../interfaces/UnownedGameFilter';
-import {GameOrdering} from '../../interfaces/GameOrdering';
-import {OrderByTitle} from '../../interfaces/OrderByTitle';
+import {GameFilter} from '../../interfaces/Filters/GameFilter';
+import {UnownedGameFilter} from '../../interfaces/Filters/UnownedGameFilter';
+import {GameOrdering} from '../../interfaces/OrderBy/GameOrdering';
+import {OrderByTitle} from '../../interfaces/OrderBy/OrderByTitle';
 import {OrderingDirection} from '../game-list/OrderingDirection';
 
 @Component({

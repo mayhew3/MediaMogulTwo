@@ -1,4 +1,4 @@
-import {DataObject} from './DataObject';
+import {DataObject} from '../DataObject/DataObject';
 
 export class Person extends DataObject {
   email = this.registerStringField('email', true);

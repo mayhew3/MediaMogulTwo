@@ -1,18 +1,18 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Game} from '../../interfaces/Game';
+import {Game} from '../../interfaces/Model/Game';
 import fast_sort from 'fast-sort';
 import * as _ from 'underscore';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {AddGameComponent} from '../add-game/add-game.component';
 import {GameService} from '../../services/game.service';
-import {GameFilter} from '../../interfaces/GameFilter';
-import {GameOrdering} from '../../interfaces/GameOrdering';
+import {GameFilter} from '../../interfaces/Filters/GameFilter';
+import {GameOrdering} from '../../interfaces/OrderBy/GameOrdering';
 import {OrderingDirection} from './OrderingDirection';
-import {PlatformGameFilter} from '../../interfaces/PlatformGameFilter';
-import {GameFilterWithOptions} from '../../interfaces/GameFilterWithOptions';
-import {GameFilterOption} from '../../interfaces/GameFilterOption';
+import {PlatformGameFilter} from '../../interfaces/Filters/PlatformGameFilter';
+import {GameFilterWithOptions} from '../../interfaces/Filters/GameFilterWithOptions';
+import {GameFilterOption} from '../../interfaces/Filters/GameFilterOption';
 import {ArrayService} from '../../services/array.service';
-import {CloudGameFilter} from '../../interfaces/CloudGameFilter';
+import {CloudGameFilter} from '../../interfaces/Filters/CloudGameFilter';
 
 @Component({
   selector: 'mm-game-list',

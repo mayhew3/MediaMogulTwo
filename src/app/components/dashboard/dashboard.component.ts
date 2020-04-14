@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import {GameFilter} from '../../interfaces/GameFilter';
-import {DashboardGameFilter} from '../../interfaces/DashboardGameFilter';
-import {GameOrdering} from '../../interfaces/GameOrdering';
-import {OrderByRating} from '../../interfaces/OrderByRating';
+import {GameFilter} from '../../interfaces/Filters/GameFilter';
+import {DashboardGameFilter} from '../../interfaces/Filters/DashboardGameFilter';
+import {GameOrdering} from '../../interfaces/OrderBy/GameOrdering';
+import {OrderByRating} from '../../interfaces/OrderBy/OrderByRating';
 import {OrderingDirection} from '../game-list/OrderingDirection';
-import {OrderByLastPlayed} from '../../interfaces/OrderByLastPlayed';
-import {OrderByDateAdded} from '../../interfaces/OrderByDateAdded';
+import {OrderByLastPlayed} from '../../interfaces/OrderBy/OrderByLastPlayed';
+import {OrderByDateAdded} from '../../interfaces/OrderBy/OrderByDateAdded';
 
 @Component({
   selector: 'mm-dashboard',

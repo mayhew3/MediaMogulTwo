@@ -1,10 +1,10 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Game} from '../../interfaces/Game';
+import {Game} from '../../interfaces/Model/Game';
 import {ModalDismissReasons, NgbModal, NgbModalRef} from '@ng-bootstrap/ng-bootstrap';
 import {PlaytimePopupComponent} from '../playtime-popup/playtime-popup.component';
 import {GameDetailComponent} from '../game-detail/game-detail.component';
 import {GameListComponent} from '../game-list/game-list.component';
-import {Platform} from '../../interfaces/Platform';
+import {Platform} from '../../interfaces/Enum/Platform';
 import {GameService} from '../../services/game.service';
 
 @Component({

@@ -1,5 +1,5 @@
-import {Game} from './Game';
-import {OrderingDirection} from '../components/game-list/OrderingDirection';
+import {Game} from '../Model/Game';
+import {OrderingDirection} from '../../components/game-list/OrderingDirection';
 
 export abstract class GameOrdering {
   direction: OrderingDirection;

@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {GameService} from '../../services/game.service';
-import {Platform} from '../../interfaces/Platform';
+import {Platform} from '../../interfaces/Enum/Platform';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import * as _ from 'underscore';
 import {PersonService} from '../../services/person.service';

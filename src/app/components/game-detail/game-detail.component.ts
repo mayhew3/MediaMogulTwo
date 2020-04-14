@@ -1,9 +1,9 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {GameService} from '../../services/game.service';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
-import {Platform} from '../../interfaces/Platform';
+import {Platform} from '../../interfaces/Enum/Platform';
 import {PersonService} from '../../services/person.service';
-import {Game} from '../../interfaces/Game';
+import {Game} from '../../interfaces/Model/Game';
 
 @Component({
   selector: 'mm-game-detail',

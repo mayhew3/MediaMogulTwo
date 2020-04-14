@@ -1,5 +1,5 @@
 /* tslint:disable:variable-name */
-import {DataObject} from './data_object/DataObject';
+import {DataObject} from '../DataObject/DataObject';
 
 export class PersonGame extends DataObject {
   last_played = this.registerDateField('last_played', false);

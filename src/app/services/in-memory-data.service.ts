@@ -3,7 +3,7 @@ import {getStatusText, InMemoryDbService, RequestInfo, ResponseOptions, STATUS} 
 import {MockGames} from '../mocks/games.mock';
 import {Observable} from 'rxjs';
 import * as _ from 'underscore';
-import {GameplaySession} from '../interfaces/GameplaySession';
+import {GameplaySession} from '../interfaces/Model/GameplaySession';
 import * as lodash from 'lodash';
 import {MockPersons} from '../mocks/persons.mock';
 

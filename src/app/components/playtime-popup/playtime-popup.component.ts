@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {NgbActiveModal, NgbCalendar, NgbDate} from '@ng-bootstrap/ng-bootstrap';
-import {Game} from '../../interfaces/Game';
+import {Game} from '../../interfaces/Model/Game';
 import {GameService} from '../../services/game.service';
 import * as moment from 'moment';
 import {PersonService} from '../../services/person.service';

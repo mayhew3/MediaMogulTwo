@@ -1,14 +1,14 @@
 import {Injectable} from '@angular/core';
-import {Game} from '../interfaces/Game';
+import {Game} from '../interfaces/Model/Game';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {ArrayService} from './array.service';
 import * as _ from 'underscore';
-import {PersonGame} from '../interfaces/PersonGame';
-import {GameplaySession} from '../interfaces/GameplaySession';
+import {PersonGame} from '../interfaces/Model/PersonGame';
+import {GameplaySession} from '../interfaces/Model/GameplaySession';
 import {PersonService} from './person.service';
 import {Observable} from 'rxjs';
 import {concatMap} from 'rxjs/operators';
-import {Person} from '../interfaces/data_object/Person';
+import {Person} from '../interfaces/Model/Person';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })

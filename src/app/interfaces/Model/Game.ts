@@ -1,6 +1,6 @@
 /* tslint:disable:variable-name */
 import {PersonGame} from './PersonGame';
-import {DataObject} from './data_object/DataObject';
+import {DataObject} from '../DataObject/DataObject';
 
 export class Game extends DataObject {
   title = this.registerStringField('title', true);
