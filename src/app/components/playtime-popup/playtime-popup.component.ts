@@ -20,6 +20,8 @@ export class PlaytimePopupComponent implements OnInit {
   resulting = new GameTime();
   added = new GameTime();
 
+  gameplaySession = new GameplaySession();
+
   sessionRating: number;
   finished = false;
 
@@ -85,27 +87,17 @@ export class PlaytimePopupComponent implements OnInit {
     this.personService.me$.subscribe(async person => {
       try {
         const playedDate = this.convertModelToDate();
-        const changedFields = {
-          minutes_played: this.resulting.asMinutes(),
-          final_score: this.finalScore,
-          replay_score: this.replayScore,
-          last_played: playedDate,
-          finished_date: this.finished ? playedDate : null
-        };
         const personGame = this.game.personGame;
         personGame.minutes_played.value = this.resulting.asMinutes();
-        personGame.final_score.value = this.resulting.asMinutes();
-        personGame.replay_score.value = this.resulting.asMinutes();
+        personGame.last_played.value = playedDate;
+        personGame.finished_date.value = this.finished ? playedDate : null;
 
-        const gameplaySession = new GameplaySession();
+        this.gameplaySession.game_id.value = this.game.id.value;
+        this.gameplaySession.minutes.value = this.added.asMinutes();
+        this.gameplaySession.start_time.value = playedDate;
+        this.gameplaySession.person_id.value = person.id.value;
 
-        gameplaySession.game_id.value = this.game.id.value;
-        gameplaySession.minutes.value = this.added.asMinutes();
-        gameplaySession.start_time.value = playedDate;
-        gameplaySession.rating.value = this.sessionRating;
-        gameplaySession.person_id.value = person.id.value;
-
-        await this.gameService.insertGameplaySession(gameplaySession);
+        await this.gameService.insertGameplaySession(this.gameplaySession);
         await this.gameService.updatePersonGame(personGame);
         this.activeModal.close('Save Click');
       } catch (err) {
