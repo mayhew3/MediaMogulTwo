@@ -69,6 +69,7 @@ export abstract class DataObject {
   async update(http: HttpClient): Promise<this> {
     const url = '/api/' + this.getApiMethod();
     const changedFields = this.getChangedFields();
+    // todo: check if changedFields is empty
     const payload = {
       id: this.id.value,
       changedFields: changedFields
