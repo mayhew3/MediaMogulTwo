@@ -40,8 +40,7 @@ export class GameService {
   }
 
   private refreshCache(): Observable<Game[]> {
-    return this.personService.me$.pipe(
-      concatMap(async (person) => {
+    const mapping = concatMap(async (person: Person) => {
         const personID = person.id.value;
         const payload = {
           person_id: personID.toString()
@@ -53,7 +52,8 @@ export class GameService {
         const games = this.convertObjectsToGames(gameObjs);
         this.arrayService.refreshArray(this.cache, games);
         return this.cache;
-      }));
+      });
+    return mapping(this.personService.me$);
   }
 
   convertObjectsToGames(gameObjs: any[]): Game[] {
