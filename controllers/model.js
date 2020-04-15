@@ -13,7 +13,6 @@ exports.Game = sequelize.sequelize.define("game", {
   steamid: Sequelize.INTEGER,
   logo: Sequelize.TEXT,
   natural_end: Sequelize.BOOLEAN,
-  igdb_poster: Sequelize.TEXT,
   metacritic_hint: Sequelize.TEXT,
   howlong_id: Sequelize.NUMBER,
   giantbomb_id: Sequelize.NUMBER,
@@ -59,6 +58,20 @@ exports.GameplaySession = sequelize.sequelize.define("gameplay_session", {
   start_time: Sequelize.DATE,
   rating: Sequelize.DECIMAL,
   person_id: Sequelize.INTEGER,
+  date_added: Sequelize.DATE,
+}, {
+  freezeTableName: true,
+  createdAt: false,
+  updatedAt: false
+});
+
+exports.IGDBPoster = sequelize.sequelize.define("igdb_poster", {
+  id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
+  image_id: Sequelize.TEXT,
+  default_for_game: Sequelize.BOOLEAN,
+  width: Sequelize.INTEGER,
+  height: Sequelize.INTEGER,
+  game_id: Sequelize.INTEGER,
   date_added: Sequelize.DATE,
 }, {
   freezeTableName: true,

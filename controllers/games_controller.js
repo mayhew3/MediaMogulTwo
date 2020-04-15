@@ -1,9 +1,5 @@
 const model = require('./model');
-const moment = require('moment');
-const Sequelize = require('sequelize');
-const Op = Sequelize.Op;
 const _ = require('underscore');
-const ArrayService = require('./array_util');
 
 exports.getGames = async function (request, response) {
   const person_id = request.query.person_id;
@@ -15,15 +11,25 @@ exports.getGames = async function (request, response) {
       person_id: person_id
     }
   });
+  const defaultPosters = await model.IGDBPoster.findAll({
+    where: {
+      default_for_game: true
+    }
+  });
 
   const outputObject = [];
 
   _.forEach(games, game => {
-    const personGame = _.findWhere(personGames, {game_id: game.id});
     const resultObj = game.dataValues;
 
+    const personGame = _.findWhere(personGames, {game_id: game.id});
     if (!!personGame) {
       resultObj.personGame = personGame;
+    }
+
+    const poster = _.findWhere(defaultPosters, {game_id: game.id});
+    if (!!poster) {
+      resultObj.igdb_poster = poster.image_id;
     }
 
     outputObject.push(resultObj);
