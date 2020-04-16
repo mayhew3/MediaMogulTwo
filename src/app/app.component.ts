@@ -1,7 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {GameService} from './services/game.service';
-import {Game} from './interfaces/Model/Game';
-import {ArrayService} from './services/array.service';
 
 @Component({
   selector: 'mm-root',
@@ -10,17 +7,11 @@ import {ArrayService} from './services/array.service';
 })
 export class AppComponent implements OnInit {
   title = 'media-mogul-two';
-  games: Game[];
 
-  constructor(private gameService: GameService,
-              private arrayService: ArrayService) {
-    this.games = [];
+  constructor() {
   }
 
   ngOnInit(): void {
-    this.gameService.maybeRefreshCache().then(games => {
-      this.arrayService.refreshArray(this.games, games);
-    });
   }
 
 }

@@ -1,64 +1,46 @@
 import {Injectable} from '@angular/core';
 import {Game} from '../interfaces/Model/Game';
-import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
 import {ArrayService} from './array.service';
 import * as _ from 'underscore';
 import {PersonGame} from '../interfaces/Model/PersonGame';
 import {GameplaySession} from '../interfaces/Model/GameplaySession';
 import {PersonService} from './person.service';
-import {Observable} from 'rxjs';
-import {concatMap} from 'rxjs/operators';
+import {BehaviorSubject} from 'rxjs';
 import {Person} from '../interfaces/Model/Person';
-
-const httpOptions = {
-  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-};
 
 @Injectable({
   providedIn: 'root'
 })
 export class GameService {
-  gamesUrl = 'api/games';
-  cache: Game[];
-  private person: Person;
+  private _gamesUrl = 'api/games';
+  private _me: Person;
+  private _games$ = new BehaviorSubject<Game[]>([]);
+  private _dataStore: {games: Game[]} = {games: []};
+
+  private _fetching = false;
 
   constructor(private http: HttpClient,
               private arrayService: ArrayService,
               private personService: PersonService) {
-    this.cache = [];
-    this.personService.me$.subscribe(person => this.person = person);
+    this.personService.me$.subscribe(person => this._me = person);
   }
 
-  async maybeRefreshCache(): Promise<Game[]> {
-    return new Promise(async resolve => {
-      if (this.cache.length > 0) {
-        resolve(this.cache);
-      } else {
-        this.refreshCache().subscribe(games => resolve(games));
-      }
-    });
+  // public observable for all changes to game list
+  get games() {
+    return this._games$.asObservable();
   }
 
-  private refreshCache(): Observable<Game[]> {
-    return this.personService.me$.pipe(
-      concatMap(async (person) => {
-        const personID = person.id.value;
-        const payload = {
-          person_id: personID.toString()
-        };
-        const options = {
-          params: payload
-        };
-        const gameObjs = await this.http.get<any[]>(this.gamesUrl, options).toPromise();
-        const games = this.convertObjectsToGames(gameObjs);
-        this.arrayService.refreshArray(this.cache, games);
-        return this.cache;
-      }));
+  // trigger fetching of game list if it doesn't exist already.
+  maybeRefreshCache() {
+    if (this._dataStore.games.length === 0 && !this._fetching) {
+      this._fetching = true;
+      this.refreshCache();
+    }
   }
 
-  convertObjectsToGames(gameObjs: any[]): Game[] {
-    return _.map(gameObjs, gameObj => new Game().initializedFromJSON(gameObj));
-  }
+
+  // PUBLIC CHANGE APIs. Make sure to call pushGameListChange() at the end of each operation.
 
   async addGame(game: Game): Promise<Game> {
     const personGame = game.personGame;
@@ -70,7 +52,8 @@ export class GameService {
       personGame.game_id.value = resultGame.id.value;
       resultGame.personGame = await personGame.commit(this.http);
     }
-    this.cache.push(resultGame);
+    this._dataStore.games.push(resultGame);
+    this.pushGameListChange();
     return resultGame;
   }
 
@@ -81,19 +64,53 @@ export class GameService {
       personGame.game_id.value = game.id.value;
 
       game.personGame = await personGame.commit(this.http);
+      this.pushGameListChange();
     });
   }
 
   async updateGame(game: Game): Promise<any> {
     await game.commit(this.http);
+    this.pushGameListChange();
   }
 
   async updatePersonGame(personGame: PersonGame): Promise<any> {
     await personGame.commit(this.http);
+    this.pushGameListChange();
   }
 
   async insertGameplaySession(gameplaySession: GameplaySession): Promise<GameplaySession> {
-    return gameplaySession.commit(this.http);
+    const returnObj = await gameplaySession.commit(this.http);
+    this.pushGameListChange();
+    return returnObj;
+  }
+
+
+  // PRIVATE CACHE MANAGEMENT METHODS
+
+  private refreshCache() {
+    this.personService.me$.subscribe(person => {
+      const personID = person.id.value;
+      const payload = {
+        person_id: personID.toString()
+      };
+      const options = {
+        params: payload
+      };
+      this.http.get<any[]>(this._gamesUrl, options).subscribe(gameObjs => {
+        this._dataStore.games = this.convertObjectsToGames(gameObjs);
+        this.pushGameListChange();
+        this._fetching = false;
+      })
+    });
+  }
+
+  // re-pushes full game list out to all subscribers. Call this after any changes are made.
+  private pushGameListChange() {
+    this._games$.next(this.arrayService.cloneArray(this._dataStore.games));
+  }
+
+  private convertObjectsToGames(gameObjs: any[]): Game[] {
+    return _.map(gameObjs, gameObj => new Game().initializedFromJSON(gameObj));
   }
 
 }

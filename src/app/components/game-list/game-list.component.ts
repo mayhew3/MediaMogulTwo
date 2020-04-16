@@ -70,26 +70,27 @@ export class GameListComponent implements OnInit{
   }
 
   async fastSortGames() {
-    const allGames = await this.gameService.maybeRefreshCache();
-    const allFilters = this.arrayService.cloneArray(this.additionalFilters);
-    allFilters.push(this.gameFilter);
-    this.filteredGames = this.applyAll(allGames, allFilters);
-    const isAscending = OrderingDirection[this.selectedOrdering.direction] === OrderingDirection.asc;
-    if (isAscending) {
-      // noinspection TypeScriptValidateJSTypes
-      fast_sort(this.filteredGames)
-        .by([
-          {asc: this.selectedOrdering.sortValue},
-          {asc: game => game.title.value}
-        ]);
-    } else {
-      // noinspection TypeScriptValidateJSTypes
-      fast_sort(this.filteredGames)
-        .by([
-          {desc: this.selectedOrdering.sortValue},
-          {asc: game => game.title.value}
-        ]);
-    }
+    this.gameService.games.subscribe(allGames => {
+      const allFilters = this.arrayService.cloneArray(this.additionalFilters);
+      allFilters.push(this.gameFilter);
+      this.filteredGames = this.applyAll(allGames, allFilters);
+      const isAscending = OrderingDirection[this.selectedOrdering.direction] === OrderingDirection.asc;
+      if (isAscending) {
+        // noinspection TypeScriptValidateJSTypes
+        fast_sort(this.filteredGames)
+          .by([
+            {asc: this.selectedOrdering.sortValue},
+            {asc: game => game.title.value}
+          ]);
+      } else {
+        // noinspection TypeScriptValidateJSTypes
+        fast_sort(this.filteredGames)
+          .by([
+            {desc: this.selectedOrdering.sortValue},
+            {asc: game => game.title.value}
+          ]);
+      }
+    });
   }
 
   getOptionClass(option: GameFilterOption): string {

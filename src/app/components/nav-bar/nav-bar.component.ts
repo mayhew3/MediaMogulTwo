@@ -36,10 +36,11 @@ export class NavBarComponent implements OnInit {
               private modalService: NgbModal) { }
 
   ngOnInit(): void {
-    this.gameService.maybeRefreshCache().then(games => {
+    this.gameService.games.subscribe(games => {
       this.arrayService.refreshArray(this.games, games);
       this.initializing = false;
     });
+    this.gameService.maybeRefreshCache();
   }
 
   async openPopup(event: NgbTypeaheadSelectItemEvent) {
