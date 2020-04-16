@@ -105,6 +105,12 @@ export class PlaytimePopupComponent implements OnInit {
       }
     });
   }
+
+  dismiss() {
+    this.game.discardChanges();
+    this.activeModal.dismiss('Cross Click');
+  }
+
 }
 
 class GameTime {
