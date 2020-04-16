@@ -85,6 +85,12 @@ export abstract class DataObject {
     }
   }
 
+  discardChanges(): void {
+    for (const fieldValue of this.allFieldValues) {
+      fieldValue.discardChange();
+    }
+  }
+
   protected registerStringField(fieldName: string, required: boolean): FieldValueString {
     const fieldValue = new FieldValueString(fieldName, required);
     this.allFieldValues.push(fieldValue);

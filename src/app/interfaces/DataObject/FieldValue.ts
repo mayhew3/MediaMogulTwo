@@ -3,7 +3,7 @@
 export abstract class FieldValue<T> {
   private readonly fieldName: string;
 
-  protected originalValue: T;
+  protected _originalValue: T;
   protected _value: T;
   strValue: string;
   private explicitNull = false;
@@ -17,8 +17,8 @@ export abstract class FieldValue<T> {
     this.required = required;
   }
 
-  getOriginalValue(): T {
-    return this.originalValue;
+  get originalValue(): T {
+    return this._originalValue;
   }
 
   get value(): T {
@@ -37,7 +37,7 @@ export abstract class FieldValue<T> {
   }
 
   initializeValue(value: T) {
-    this.originalValue = value;
+    this._originalValue = value;
     this._value = value;
   }
 
@@ -60,7 +60,7 @@ export abstract class FieldValue<T> {
   }
 
   discardChange() {
-    this._value = this.originalValue;
+    this._value = this._originalValue;
   }
 
   nullValue() {
@@ -73,11 +73,11 @@ export abstract class FieldValue<T> {
   }
 
   private shouldUpgradeText(): boolean {
-    return (this.originalValue !== null && this.wasText && !this.isText);
+    return (this._originalValue !== null && this.wasText && !this.isText);
   }
 
   private valueHasChanged() {
-    return !this.isSame(this.originalValue, this._value);
+    return !this.isSame(this._originalValue, this._value);
   }
 
   // noinspection JSMethodCanBeStatic
@@ -88,7 +88,7 @@ export abstract class FieldValue<T> {
   }
 
   getChangedValue(): T {
-    if (!this.isSame(this.originalValue, this.value)) {
+    if (!this.isSame(this._originalValue, this.value)) {
       return this.value;
     } else {
       return null;
@@ -99,7 +99,7 @@ export abstract class FieldValue<T> {
     const changed = this.getChangedValue();
     if (!!changed) {
       this._value = changed;
-      this.originalValue = this._value;
+      this._originalValue = this._value;
     }
   }
 

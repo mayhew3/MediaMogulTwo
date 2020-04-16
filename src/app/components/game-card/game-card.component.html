@@ -8,7 +8,7 @@
            [game]="game"
            (click)="openDetailPopup()"
            default="../../../assets/GenericSeries.gif"
-           alt="{{game.title.value}}"/>
+           alt="{{game.title.originalValue}}"/>
 
     </div>
 
@@ -16,17 +16,17 @@
       <div class="row">
 
         <div class="col-12 m-1">
-          {{game.title.value}}
+          {{game.title.originalValue}}
         </div>
 
-        <div class="col-12 m-1" *ngIf="game.isOwned() && !!game.personGame.last_played.value">
+        <div class="col-12 m-1" *ngIf="game.isOwned() && !!game.personGame.last_played.originalValue">
           <span>
-            {{game.personGame.last_played.value | date: game.personGame.getLastPlayedFormat():'America/Los_Angeles'}}
+            {{game.personGame.last_played.originalValue | date: game.personGame.getLastPlayedFormat():'America/Los_Angeles'}}
           </span>
         </div>
 
         <div class="col-12 m-1" *ngIf="game.isOwned() && !successfullyAdded">
-          <mm-rating-box [value]="game.personGame.rating.value"
+          <mm-rating-box [value]="game.personGame.rating.originalValue"
                          [maxValue]="100">
           </mm-rating-box>
         </div>

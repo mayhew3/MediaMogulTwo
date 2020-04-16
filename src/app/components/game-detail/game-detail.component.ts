@@ -80,6 +80,11 @@ export class GameDetailComponent implements OnInit {
     this.activeModal.close('Update Click');
   }
 
+  dismiss() {
+    this.game.discardChanges();
+    this.activeModal.dismiss('Cross Click');
+  }
+
   async doPersonUpdate() {
     await this.gameService.updatePersonGame(this.game.personGame);
   }

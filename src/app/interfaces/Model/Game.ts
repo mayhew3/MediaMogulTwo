@@ -46,4 +46,9 @@ export class Game extends DataObject {
   getApiMethod(): string {
     return 'games';
   }
+
+  discardChanges(): void {
+    super.discardChanges();
+    this._personGame.discardChanges();
+  }
 }
