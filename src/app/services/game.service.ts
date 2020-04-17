@@ -1,4 +1,4 @@
-import {Injectable} from '@angular/core';
+import {Injectable, OnDestroy} from '@angular/core';
 import {Game} from '../interfaces/Model/Game';
 import {HttpClient} from '@angular/common/http';
 import {ArrayService} from './array.service';
@@ -6,19 +6,23 @@ import * as _ from 'underscore';
 import {PersonGame} from '../interfaces/Model/PersonGame';
 import {GameplaySession} from '../interfaces/Model/GameplaySession';
 import {PersonService} from './person.service';
-import {BehaviorSubject} from 'rxjs';
+import {BehaviorSubject, Subject} from 'rxjs';
 import {Person} from '../interfaces/Model/Person';
+import {takeUntil} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
-export class GameService {
-  private _gamesUrl = 'api/games';
+export class GameService implements OnDestroy {
   private _me: Person;
+
+  private _gamesUrl = 'api/games';
   private _games$ = new BehaviorSubject<Game[]>([]);
   private _dataStore: {games: Game[]} = {games: []};
-
   private _fetching = false;
+
+  private _destroy$ = new Subject();
+
 
   constructor(private http: HttpClient,
               private arrayService: ArrayService,
@@ -39,6 +43,10 @@ export class GameService {
     }
   }
 
+  ngOnDestroy(): void {
+    this._destroy$.next();
+    this._destroy$.complete();
+  }
 
   // PUBLIC CHANGE APIs. Make sure to call pushGameListChange() at the end of each operation.
 
@@ -96,11 +104,14 @@ export class GameService {
       const options = {
         params: payload
       };
-      this.http.get<any[]>(this._gamesUrl, options).subscribe(gameObjs => {
-        this._dataStore.games = this.convertObjectsToGames(gameObjs);
-        this.pushGameListChange();
-        this._fetching = false;
-      })
+      this.http
+        .get<any[]>(this._gamesUrl, options)
+        .pipe(takeUntil(this._destroy$))
+        .subscribe(gameObjs => {
+          this._dataStore.games = this.convertObjectsToGames(gameObjs);
+          this.pushGameListChange();
+          this._fetching = false;
+        })
     });
   }
 

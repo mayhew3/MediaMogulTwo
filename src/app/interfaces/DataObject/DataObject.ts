@@ -5,6 +5,9 @@ import {FieldValueDecimal} from './FieldValueDecimal';
 import {FieldValueDate} from './FieldValueDate';
 import {FieldValueBoolean} from './FieldValueBoolean';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {Subject} from 'rxjs';
+import {OnDestroy} from '@angular/core';
+import {takeUntil} from 'rxjs/operators';
 
 enum EditMode {INSERT, UPDATE}
 
@@ -12,10 +15,12 @@ const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
 
-export abstract class DataObject {
+export abstract class DataObject implements OnDestroy {
   private editMode = EditMode.INSERT;
   private initialized = false;
   private allFieldValues: FieldValue<any>[] = [];
+
+  private _destroy$ = new Subject();
 
   id = this.registerIntegerField('id', true);
   date_added = this.registerDateField('date_added', true);
@@ -31,6 +36,11 @@ export abstract class DataObject {
       }
     }
     return this;
+  }
+
+  ngOnDestroy(): void {
+    this._destroy$.next();
+    this._destroy$.complete();
   }
 
   getValueFromJSON(fieldName: string, jsonObj: any): any {
@@ -59,7 +69,9 @@ export abstract class DataObject {
   async insert(http: HttpClient): Promise<this> {
     const url = '/api/' + this.getApiMethod();
     const changedFields = this.getChangedFields();
-    const returnObj = await http.post<any>(url, changedFields).toPromise();
+    const returnObj = await http.post<any>(url, changedFields)
+      .pipe(takeUntil(this._destroy$))
+      .toPromise();
     this.initializedFromJSON(returnObj);
     return this;
   }
@@ -72,7 +84,9 @@ export abstract class DataObject {
       id: this.id.value,
       changedFields: changedFields
     }
-    await http.put<any>(url, payload, httpOptions).toPromise();
+    await http.put<any>(url, payload, httpOptions)
+      .pipe(takeUntil(this._destroy$))
+      .toPromise();
     this.moveChanges();
     return this;
   }

@@ -1,7 +1,7 @@
-import { Injectable } from '@angular/core';
+import {Injectable, OnDestroy} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Observable, of} from 'rxjs';
-import {catchError, concatMap, tap} from 'rxjs/operators';
+import {Observable, of, Subject} from 'rxjs';
+import {catchError, concatMap, takeUntil, tap} from 'rxjs/operators';
 import {ArrayService} from './array.service';
 import * as _ from 'underscore';
 import {AuthService} from './auth.service';
@@ -10,9 +10,11 @@ import {Person} from '../interfaces/Model/Person';
 @Injectable({
   providedIn: 'root'
 })
-export class PersonService {
+export class PersonService implements OnDestroy {
   personsUrl = 'api/persons';
   cache: Person[];
+  private _destroy$ = new Subject();
+
   me$ = this.authService.getUser$().pipe(
     concatMap((user) => this.getPersonWithEmail(user.email)),
     tap((person: Person) => {
@@ -37,6 +39,11 @@ export class PersonService {
     return _.find(this.cache, person => person.email.value === email);
   }
 
+  ngOnDestroy(): void {
+    this._destroy$.next();
+    this._destroy$.complete();
+  }
+
 
   // DATA HELPERS
 
@@ -54,7 +61,8 @@ export class PersonService {
       return new Observable<Person[]>((observer) => {
         this.http.get<any[]>(this.personsUrl)
           .pipe(
-            catchError(this.handleError<any[]>('getPersons', []))
+            takeUntil(this._destroy$),
+            catchError(this.handleError<any[]>('getPersons', [])),
           )
           .subscribe(
             (personObjs: any[]) => {
