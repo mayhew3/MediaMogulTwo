@@ -8,11 +8,9 @@ import {GameService} from '../../services/game.service';
 import {GameFilter} from '../../interfaces/Filters/GameFilter';
 import {GameOrdering} from '../../interfaces/OrderBy/GameOrdering';
 import {OrderingDirection} from './OrderingDirection';
-import {PlatformGameFilter} from '../../interfaces/Filters/PlatformGameFilter';
 import {GameFilterWithOptions} from '../../interfaces/Filters/GameFilterWithOptions';
 import {GameFilterOption} from '../../interfaces/Filters/GameFilterOption';
 import {ArrayService} from '../../services/array.service';
-import {CloudGameFilter} from '../../interfaces/Filters/CloudGameFilter';
 
 @Component({
   selector: 'mm-game-list',
@@ -22,19 +20,19 @@ import {CloudGameFilter} from '../../interfaces/Filters/CloudGameFilter';
 export class GameListComponent implements OnInit{
   @Input() title: string;
   @Input() pageSize: number;
-  @Input() gameFilter: GameFilter;
+  @Input() baseFilter: GameFilter;
+  @Input() changeableFilters: GameFilterWithOptions[];
   @Input() orderings: GameOrdering[];
+  nailedDownFilters: GameFilter[];
   selectedOrdering: GameOrdering;
   filteredGames: Game[] = [];
   page = 1;
   initializing = true;
   thisComponent = this;
-  platformFilter = new PlatformGameFilter();
-  cloudFilter = new CloudGameFilter();
-  additionalFilters: GameFilterWithOptions[] = [
-    this.platformFilter,
-    this.cloudFilter
-  ];
+
+  platformFilter: GameFilterWithOptions;
+  cloudFilter: GameFilterWithOptions;
+  finishedFilter: GameFilterWithOptions;
 
   constructor(private modalService: NgbModal,
               private gameService: GameService,
@@ -43,6 +41,10 @@ export class GameListComponent implements OnInit{
 
   async ngOnInit(): Promise<any> {
     this.selectedOrdering = this.orderings[0];
+    this.nailedDownFilters = this.arrayService.cloneArray(this.changeableFilters);
+    this.platformFilter = _.find(this.nailedDownFilters, filter => filter.getLabel() === 'Platform');
+    this.cloudFilter = _.find(this.nailedDownFilters, filter => filter.getLabel() === 'Cloud');
+    this.finishedFilter = _.find(this.nailedDownFilters, filter => filter.getLabel() === 'Finished');
     await this.fastSortGames();
     this.initializing = false;
   }
@@ -71,8 +73,10 @@ export class GameListComponent implements OnInit{
 
   async fastSortGames() {
     this.gameService.games.subscribe(allGames => {
-      const allFilters = this.arrayService.cloneArray(this.additionalFilters);
-      allFilters.push(this.gameFilter);
+      const allFilters = this.arrayService.cloneArray(this.nailedDownFilters);
+      if (!!this.baseFilter) {
+        allFilters.push(this.baseFilter);
+      }
       this.filteredGames = this.applyAll(allGames, allFilters);
       const isAscending = OrderingDirection[this.selectedOrdering.direction] === OrderingDirection.asc;
       if (isAscending) {

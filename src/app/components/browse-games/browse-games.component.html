@@ -1,4 +1,5 @@
 <mm-game-list title="Browse Games"
               [pageSize]="9"
-              [gameFilter]="getFilter()"
+              [baseFilter]="getBaseFilter()"
+              [changeableFilters]="getChangeableFilters()"
               [orderings]="getOrderings()"></mm-game-list>

@@ -5,6 +5,8 @@ import * as _ from 'underscore';
 export abstract class GameFilterWithOptions extends GameFilter {
   public options: GameFilterOption[];
 
+  abstract getLabel(): string;
+
   getRegularOptions(): GameFilterOption[] {
     return _.where(this.options, {special: false});
   }

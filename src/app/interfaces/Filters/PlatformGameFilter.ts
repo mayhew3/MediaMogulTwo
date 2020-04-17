@@ -23,5 +23,9 @@ export class PlatformGameFilter extends GameFilterWithOptions {
     return _.contains(selectedOptionKeys, game.platform.value);
   }
 
+  getLabel(): string {
+    return 'Platform';
+  }
+
 }
 
