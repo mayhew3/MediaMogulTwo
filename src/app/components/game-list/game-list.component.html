@@ -12,75 +12,31 @@
 
         <form class="form-inline" *ngIf="showOrderingDropdown()">
 
-
-            <div ngbDropdown
-                 class="d-inline-block mx-1"
-                 [autoClose]="'outside'">
-              <button class="btn btn-primary"
-                      id="dropdownCloud"
-                      name="dropdownCloud"
-                      ngbDropdownToggle>Cloud</button>
-              <div ngbDropdownMenu
-                   aria-labelledby="dropdownCloud">
-                <button *ngFor="let option of cloudFilter.options"
-                        ngbDropdownItem
-                        (click)="toggleOption(option, cloudFilter)"
-                        [ngClass]="getOptionClass(option)">
-                  {{option.label}}
-                </button>
-              </div>
+          <div ngbDropdown
+               *ngFor="let filter of nailedDownFilters"
+               class="d-inline-block mx-1"
+               [autoClose]="'outside'">
+            <button class="btn btn-primary"
+                    id="dropdown{{filter.getLabel()}}"
+                    name="dropdown{{filter.getLabel()}}"
+                    ngbDropdownToggle>{{filter.getLabel()}}</button>
+            <div ngbDropdownMenu
+                 [attr.aria-labelledby]="'dropdown' + filter.getLabel()">
+              <button *ngFor="let option of filter.getRegularOptions()"
+                      ngbDropdownItem
+                      (click)="toggleOption(option, filter)"
+                      [ngClass]="getOptionClass(option)">
+                {{option.label}}
+              </button>
+              <div class="dropdown-divider" *ngIf="filter.getSpecialOptions().length > 0"></div>
+              <button *ngFor="let option of filter.getSpecialOptions()"
+                      ngbDropdownItem
+                      (click)="toggleOption(option, filter)"
+                      [ngClass]="getOptionClass(option)">
+                {{option.label}}
+              </button>
             </div>
-
-            <div ngbDropdown
-                 class="d-inline-block mx-1"
-                 [autoClose]="'outside'">
-              <button class="btn btn-primary"
-                      id="dropdownPlatform"
-                      name="dropdownPlatform"
-                      ngbDropdownToggle>Platform</button>
-              <div ngbDropdownMenu
-                   aria-labelledby="dropdownPlatform">
-                <button *ngFor="let option of platformFilter.getRegularOptions()"
-                        ngbDropdownItem
-                        (click)="toggleOption(option, platformFilter)"
-                        [ngClass]="getOptionClass(option)">
-                  {{option.label}}
-                </button>
-                <div class="dropdown-divider"></div>
-                <button *ngFor="let option of platformFilter.getSpecialOptions()"
-                        ngbDropdownItem
-                        (click)="toggleOption(option, platformFilter)"
-                        [ngClass]="getOptionClass(option)">
-                  {{option.label}}
-                </button>
-              </div>
-            </div>
-
-            <div ngbDropdown
-                 *ngIf="!!finishedFilter"
-                 class="d-inline-block mx-1"
-                 [autoClose]="'outside'">
-              <button class="btn btn-primary"
-                      id="dropdownFinished"
-                      name="dropdownFinished"
-                      ngbDropdownToggle>Finished</button>
-              <div ngbDropdownMenu
-                   aria-labelledby="dropdownFinished">
-                <button *ngFor="let option of finishedFilter.getRegularOptions()"
-                        ngbDropdownItem
-                        (click)="toggleOption(option, finishedFilter)"
-                        [ngClass]="getOptionClass(option)">
-                  {{option.label}}
-                </button>
-                <div class="dropdown-divider"></div>
-                <button *ngFor="let option of finishedFilter.getSpecialOptions()"
-                        ngbDropdownItem
-                        (click)="toggleOption(option, finishedFilter)"
-                        [ngClass]="getOptionClass(option)">
-                  {{option.label}}
-                </button>
-              </div>
-            </div>
+          </div>
 
           <label class="col-form-label mx-1" for="orderBy">Order By: </label>
           <div class="form-group mx-1">

@@ -23,16 +23,12 @@ export class GameListComponent implements OnInit{
   @Input() baseFilter: GameFilter;
   @Input() changeableFilters: GameFilterWithOptions[];
   @Input() orderings: GameOrdering[];
-  nailedDownFilters: GameFilter[];
+  nailedDownFilters: GameFilterWithOptions[];
   selectedOrdering: GameOrdering;
   filteredGames: Game[] = [];
   page = 1;
   initializing = true;
   thisComponent = this;
-
-  platformFilter: GameFilterWithOptions;
-  cloudFilter: GameFilterWithOptions;
-  finishedFilter: GameFilterWithOptions;
 
   constructor(private modalService: NgbModal,
               private gameService: GameService,
@@ -42,9 +38,6 @@ export class GameListComponent implements OnInit{
   async ngOnInit(): Promise<any> {
     this.selectedOrdering = this.orderings[0];
     this.nailedDownFilters = this.arrayService.cloneArray(this.changeableFilters);
-    this.platformFilter = _.find(this.nailedDownFilters, filter => filter.getLabel() === 'Platform');
-    this.cloudFilter = _.find(this.nailedDownFilters, filter => filter.getLabel() === 'Cloud');
-    this.finishedFilter = _.find(this.nailedDownFilters, filter => filter.getLabel() === 'Finished');
     await this.fastSortGames();
     this.initializing = false;
   }
