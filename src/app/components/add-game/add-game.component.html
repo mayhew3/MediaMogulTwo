@@ -23,13 +23,83 @@
 </form>
 
 <div class="row">
-  <div class="col-3"
+  <div class="col-6"
        *ngFor="let match of matches">
-    {{match.name}}<br>
-    <button type="button"
-            class="btn btn-sm btn-success"
-            (click)="addGame(match)">
-      Add Game
-    </button>
+
+    <div class="gameCardInside">
+
+      <div class="row">
+
+        <div class="col-6 gameImageContainer">
+          <img class="rounded gameImage"
+               *ngIf="!!getImageUrlForMatch(match)"
+               default="../../../assets/GenericSeries.gif"
+               src="{{getImageUrlForMatch(match)}}"
+               [match]="match"
+               alt="{{match.name}}">
+        </div>
+
+        <div class="col-6">
+          <div class="row">
+            <div class="col-12 m-1">
+              <h3>{{match.name}}</h3>
+            </div>
+
+            <div class="col-12 m-1" *ngIf="match.first_release_date">
+              {{getDateFrom(match.first_release_date) | date: getLastPlayedFormat(getDateFrom(match.first_release_date)):'America/Los_Angeles'}}
+            </div>
+
+            <div class="col-12 m-1" *ngIf="!!match.platforms && match.platforms.length > 0">
+              Platforms:
+              <ul>
+                <li *ngFor="let platform of match.platforms">
+                  {{platform.name}}
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-12 m-1" *ngIf="!!match.genres && match.genres.length > 0">
+              Genres:
+              <ul>
+                <li *ngFor="let genre of match.genres">
+                  {{genre.name}}
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-12 m-1" *ngIf="!!match.rating">
+              Rating:
+              <mm-rating-box [maxValue]="100"
+                             [value]="match.rating"></mm-rating-box>
+            </div>
+
+
+
+            <div class="col-12 m-1">
+              <button type="button"
+                      class="btn btn-sm btn-success"
+                      (click)="addGame(match)">
+                Add Game
+              </button>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-12 m-1">
+          {{match.summary}}
+        </div>
+
+        <div class="col-12 m-1">
+          <strong>Last Updated</strong>: {{getLastUpdatedFromNow(match)}}
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </div>

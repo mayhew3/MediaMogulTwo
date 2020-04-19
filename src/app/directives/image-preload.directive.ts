@@ -9,6 +9,7 @@ import {Game} from '../interfaces/Model/Game';
 export class ImagePreloadDirective {
   @Input() default: string;
   @Input() game: Game;
+  @Input() match: any;
   @HostBinding('class') className;
 
   constructor(private eRef: ElementRef) {
@@ -18,6 +19,11 @@ export class ImagePreloadDirective {
   load(){
     const element: HTMLImageElement = this.eRef.nativeElement;
     element.src = this.default;
-    this.game.brokenImage = true;
+    if (!!this.game) {
+      this.game.brokenImage = true;
+    }
+    if (!!this.match) {
+      this.match.brokenImage = true;
+    }
   }
 }

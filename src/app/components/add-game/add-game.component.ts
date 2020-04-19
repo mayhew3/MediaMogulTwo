@@ -1,12 +1,12 @@
 import {Component, OnInit} from '@angular/core';
 import {GameService} from '../../services/game.service';
 import {Platform} from '../../interfaces/Enum/Platform';
-import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import * as _ from 'underscore';
 import {PersonService} from '../../services/person.service';
 import {Game} from '../../interfaces/Model/Game';
 import {PersonGame} from '../../interfaces/Model/PersonGame';
 import {ArrayService} from '../../services/array.service';
+import * as moment from 'moment';
 
 @Component({
   selector: 'mm-add-game',
@@ -36,6 +36,34 @@ export class AddGameComponent implements OnInit {
 
   canSearch(): boolean {
     return this.searchTitle !== '';
+  }
+
+  getDateFrom(unixTimestamp: number): Date {
+    return moment.unix(unixTimestamp).toDate();
+  }
+
+  getLastPlayedFormat(dateToFormat: Date): string {
+    const thisYear = (new Date()).getFullYear();
+
+    if (!!dateToFormat) {
+      const year = dateToFormat.getFullYear();
+
+      if (year === thisYear) {
+        return 'EEE M/d';
+      } else {
+        return 'yyyy.M.d';
+      }
+    } else {
+      return 'yyyy.M.d';
+    }
+  }
+
+  getImageUrlForMatch(match: any): string {
+    return 'https://images.igdb.com/igdb/image/upload/t_720p/' + match.cover.image_id + '.jpg';
+  }
+
+  getLastUpdatedFromNow(match: any): string {
+    return moment.unix(match.updated_at).fromNow();
   }
 
   async getMatches() {
