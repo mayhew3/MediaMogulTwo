@@ -43,7 +43,9 @@ export class AddGameComponent implements OnInit {
   }
 
   getImageUrlForMatch(match: any): string {
-    return 'https://images.igdb.com/igdb/image/upload/t_720p/' + match.cover.image_id + '.jpg';
+    return !!match.cover ?
+      'https://images.igdb.com/igdb/image/upload/t_720p/' + match.cover.image_id + '.jpg' :
+      'images/GenericSeries.gif';
   }
 
   getLastUpdatedFromNow(match: any): string {
