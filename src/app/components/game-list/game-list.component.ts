@@ -122,10 +122,4 @@ export class GameListComponent implements OnInit{
     await this.fastSortGames();
   }
 
-  async openAddGamePopup() {
-    const modalRef = this.modalService.open(AddGameComponent, {size: 'lg'});
-    await modalRef.result;
-    await this.fastSortGames();
-  }
-
 }

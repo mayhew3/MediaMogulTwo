@@ -6,6 +6,7 @@ import * as _ from 'underscore';
 import {PersonService} from '../../services/person.service';
 import {Game} from '../../interfaces/Model/Game';
 import {PersonGame} from '../../interfaces/Model/PersonGame';
+import {ArrayService} from '../../services/array.service';
 
 @Component({
   selector: 'mm-add-game',
@@ -14,12 +15,12 @@ import {PersonGame} from '../../interfaces/Model/PersonGame';
 })
 export class AddGameComponent implements OnInit {
 
-  game = new Game();
-  personGame = new PersonGame();
+  searchTitle = '';
+  matches = [];
 
   constructor(private gameService: GameService,
-              public activeModal: NgbActiveModal,
-              private personService: PersonService) { }
+              private personService: PersonService,
+              private arrayService: ArrayService) { }
 
   ngOnInit() {
   }
@@ -33,27 +34,30 @@ export class AddGameComponent implements OnInit {
     return Platform[platformOption];
   }
 
-  updatePlatform(platform) {
-    this.game.platform.value = this.getDisplayValueOf(platform);
+  canSearch(): boolean {
+    return this.searchTitle !== '';
   }
 
-  canSubmit(): boolean {
-    return this.game.title.value !== '';
+  async getMatches() {
+    const matches = await this.gameService.getIGDBMatches(this.searchTitle);
+    this.arrayService.refreshArray(this.matches, matches);
   }
 
-  async submitAndClose() {
+  async addGame(match: any) {
     this.personService.me$.subscribe(async person => {
+      const game = new Game();
+      const personGame = new PersonGame();
 
-      const matches = await this.gameService.getIGDBMatches(this.game.title.value);
+      personGame.person_id.value = person.id.value;
+      personGame.tier.value = 1;
+      personGame.minutes_played.value = 0;
+      personGame.rating.value = 100;
 
-      this.personGame.person_id.value = person.id.value;
-      this.personGame.tier.value = 1;
-      this.personGame.minutes_played.value = 0;
+      game.personGame = personGame;
+      game.title.value = match.name;
+      game.platform.value = 'PC';
 
-      this.game.personGame = this.personGame;
-
-      await this.gameService.addGame(this.game);
-      this.activeModal.close('Submit Click');
+      await this.gameService.addGame(game);
     });
   }
 }

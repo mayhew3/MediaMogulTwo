@@ -1,57 +1,35 @@
-<div class="modal-header">
-  <h1>Add Game</h1>
-  <button type="button"
-          class="btn btn-warning close"
-          aria-label="Close"
-          (click)="activeModal.dismiss('Cross click')">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-
-<div class="modal-body">
-
-  <form>
-    <div class="form-row">
-
-      <div class="col-6">
-        <label class="col-form-label" for="name">Name</label>
+<form>
+  <div class="form-row">
+    <div class="col-6">
+      <label class="col-form-label" for="name">Name</label>
+      <div class="input-group">
         <input type="text"
                class="darkInput form-control"
                id="name"
                name="name"
                [required]="true"
-               [(ngModel)]="game.title.value"/>
-      </div>
-
-      <div class="col-3">
-        <label class="col-form-label" for="platform">Platform</label>
-        <select class="custom-select darkInput"
-                id="platform"
-                name="platform"
-                [(ngModel)]="game.platform.value">
-          <option *ngFor="let platform of getPlatformOptions()"
-                  [selected]="getDisplayValueOf(platform) === game.platform.value"
-                  (click)="updatePlatform(platform)">{{getDisplayValueOf(platform)}}</option>
-        </select>
-      </div>
-
-      <div class="col-3">
-        <label class="col-form-label" for="rating">Rating</label>
-        <input type="number"
-               class="darkInput form-control"
-               id="rating"
-               name="rating"
-               [(ngModel)]="personGame.rating.value"/>
+               [(ngModel)]="searchTitle"/>
+        <span class="input-group-append">
+          <input type="button"
+                 class="btn btn-info"
+                 [disabled]="!canSearch()"
+                 (click)="getMatches()"
+                 value="Search">
+        </span>
       </div>
 
     </div>
+  </div>
+</form>
 
-  </form>
-</div>
-
-<div class="modal-footer">
-  <button type="button"
-          class="btn btn-primary"
-          [disabled]="!canSubmit()"
-          (click)="submitAndClose()">Submit and Close</button>
+<div class="row">
+  <div class="col-3"
+       *ngFor="let match of matches">
+    {{match.name}}<br>
+    <button type="button"
+            class="btn btn-sm btn-success"
+            (click)="addGame(match)">
+      Add Game
+    </button>
+  </div>
 </div>
