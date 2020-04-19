@@ -43,6 +43,9 @@ export class AddGameComponent implements OnInit {
 
   async submitAndClose() {
     this.personService.me$.subscribe(async person => {
+
+      const matches = await this.gameService.getIGDBMatches(this.game.title.value);
+
       this.personGame.person_id.value = person.id.value;
       this.personGame.tier.value = 1;
       this.personGame.minutes_played.value = 0;

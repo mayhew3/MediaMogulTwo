@@ -81,6 +81,16 @@ export class GameService implements OnDestroy {
     this.pushGameListChange();
   }
 
+  async getIGDBMatches(searchTitle: string): Promise<any[]> {
+    const payload = {
+      game_title: searchTitle
+    };
+    const options = {
+      params: payload
+    };
+    return await this.http.get<any[]>('/api/igdbMatches', options).toPromise();
+  }
+
   async updatePersonGame(personGame: PersonGame): Promise<any> {
     await personGame.commit(this.http);
     this.pushGameListChange();
