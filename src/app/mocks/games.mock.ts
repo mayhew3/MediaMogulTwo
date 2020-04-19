@@ -29398,8 +29398,8 @@ export const MockGames = [
       "date_added": "2019-07-05 18:30:13.802",
       "tier": 2,
       "replay_reason": null,
-      "minutes_played": 3467,
-      "last_played": "2020-04-12 21:02:52.288",
+      "minutes_played": 3499,
+      "last_played": "2020-04-17 17:09:37.927",
       "rating": 96,
       "finished_date": null,
       "id": 1450,
@@ -29811,7 +29811,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 80,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "The Jackbox Party Pack 6",
@@ -29842,7 +29842,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 93,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "Half-Life: Alyx",
@@ -29935,7 +29935,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 86,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "Assassin's Creed Odyssey",
@@ -30059,7 +30059,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 84,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "DiRT Rally 2.0",
@@ -30090,7 +30090,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 83,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "Call of Duty: Modern Warfare Remastered",
@@ -30121,7 +30121,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 86,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "MLB The Show 19",
@@ -30152,7 +30152,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 86,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "Sonic Mania",
@@ -30183,7 +30183,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 78,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "Detroit: Become Human",
@@ -30214,7 +30214,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 78,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "Horizon Chase Turbo",
@@ -30245,7 +30245,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 85,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "WipEout Omega Collection",
@@ -30276,7 +30276,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 77,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "Sniper Elite 4",
@@ -30307,7 +30307,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 87,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "Batman™: Arkham Knight",
@@ -30338,7 +30338,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 95,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "The Last of Us Remastered",
@@ -30369,7 +30369,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 88,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "Nioh",
@@ -30400,7 +30400,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 68,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "Outlast 2",
@@ -30431,7 +30431,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 89,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "Titanfall 2",
@@ -30462,7 +30462,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 58,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "Goat Simulator",
@@ -30493,7 +30493,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 86,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "Uncharted The Nathan Drake Collection",
@@ -30524,7 +30524,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 66,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "The Sims 4",
@@ -30555,7 +30555,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 79,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "Firewall Zero Hour",
@@ -30586,7 +30586,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 84,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "BioShock: The Collection",
@@ -30617,7 +30617,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 91,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "Shadow of the Colossus",
@@ -30648,7 +30648,7 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": null,
+    "metacritic": 57,
     "metacritic_hint": null,
     "natural_end": true,
     "title": "Sonic Forces",
