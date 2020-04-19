@@ -57,6 +57,11 @@ export class GameCardComponent implements OnInit {
     }
   }
 
+  getMyRatingOrMetacritic(): number {
+    const myRating = this.game.personGame.rating.originalValue;
+    return !!myRating ? myRating : this.game.metacritic.originalValue;
+  }
+
   async openPlaytimePopup() {
     const modalRef = this.modalService.open(PlaytimePopupComponent, {size: 'lg'});
     modalRef.componentInstance.game = this.game;
