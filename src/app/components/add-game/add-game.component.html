@@ -22,8 +22,8 @@
   </div>
 </form>
 
-<div class="row">
-  <div class="col-6"
+<div class="form-row">
+  <div class="col-6 my-1"
        *ngFor="let match of matches">
 
     <div class="gameCardInside">
@@ -46,7 +46,7 @@
             </div>
 
             <div class="col-12 m-1" *ngIf="match.first_release_date">
-              {{getDateFrom(match.first_release_date) | date: getLastPlayedFormat(getDateFrom(match.first_release_date)):'America/Los_Angeles'}}
+              Released: {{getDateFrom(match.first_release_date) | date: 'MMM d, yyyy':'America/Los_Angeles'}}
             </div>
 
             <div class="col-12 m-1" *ngIf="!!match.platforms && match.platforms.length > 0">
@@ -67,21 +67,28 @@
               </ul>
             </div>
 
-            <div class="col-12 m-1" *ngIf="!!match.rating">
-              Rating:
-              <mm-rating-box [maxValue]="100"
-                             [value]="match.rating"></mm-rating-box>
-            </div>
-
-
-
             <div class="col-12 m-1">
-              <button type="button"
-                      class="btn btn-sm btn-success"
-                      (click)="addGame(match)">
-                Add Game
-              </button>
+              <div class="row">
+
+                <div class="col-6">
+                  <button type="button"
+                          class="btn btn-sm btn-success"
+                          (click)="addGame(match)">
+                    Add Game
+                  </button>
+                </div>
+
+                <div class="col-6" *ngIf="!!match.rating">
+                  Rating:
+                  <mm-rating-box [maxValue]="100"
+                                 [value]="match.rating"></mm-rating-box>
+                </div>
+
+              </div>
             </div>
+
+
+
           </div>
 
 
