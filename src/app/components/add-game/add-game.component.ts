@@ -17,6 +17,8 @@ export class AddGameComponent implements OnInit {
   matches = [];
   igdbPlatformMap = new Map();
   rating: number;
+  loading = false;
+  error: string;
 
   constructor(private gameService: GameService,
               private arrayService: ArrayService) {
@@ -79,15 +81,22 @@ export class AddGameComponent implements OnInit {
   }
 
   async getMatches() {
-    const matches = await this.gameService.getIGDBMatches(this.searchTitle);
-    this.arrayService.refreshArray(this.matches, matches);
-    _.forEach(this.matches, match => {
-      _.forEach(match.platforms, platform => {
-        const existing = this.findMatchingGameForPlatform(match, platform);
-        platform.exists = !!existing;
-        platform.owned = !!existing && !!existing.personGame;
+    this.loading = true;
+    try {
+      const matches = await this.gameService.getIGDBMatches(this.searchTitle);
+      this.arrayService.refreshArray(this.matches, matches);
+      _.forEach(this.matches, match => {
+        _.forEach(match.platforms, platform => {
+          const existing = this.findMatchingGameForPlatform(match, platform);
+          platform.exists = !!existing;
+          platform.owned = !!existing && !!existing.personGame;
+        });
       });
-    });
+    } catch (err) {
+      this.error = err.message;
+    } finally {
+      this.loading = false;
+    }
   }
 
   async handleAddClick(match: any, platform: any) {

@@ -28,6 +28,7 @@ export class GameListComponent implements OnInit{
   filteredGames: Game[] = [];
   page = 1;
   initializing = true;
+  error: string;
   thisComponent = this;
 
   constructor(private modalService: NgbModal,
@@ -38,8 +39,13 @@ export class GameListComponent implements OnInit{
   async ngOnInit(): Promise<any> {
     this.selectedOrdering = this.orderings[0];
     this.nailedDownFilters = this.arrayService.cloneArray(this.changeableFilters);
-    await this.fastSortGames();
-    this.initializing = false;
+    try {
+      await this.fastSortGames();
+    } catch (err) {
+      this.error = err.message;
+    } finally {
+      this.initializing = false;
+    }
   }
 
   showOrderingDropdown(): boolean {
