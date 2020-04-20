@@ -1,10 +1,12 @@
 
-export const MockIGDBMatches: any[] = [
+export const MockIGDBMatches = [
   {
     "id": 119388,
     "cover": {
       "id": 86205,
-      "image_id": "co1uil"
+      "height": 1033,
+      "image_id": "co1uil",
+      "width": 775
     },
     "genres": [
       {
@@ -67,7 +69,9 @@ export const MockIGDBMatches: any[] = [
     "aggregated_rating_count": 31,
     "cover": {
       "id": 87289,
-      "image_id": "co1vcp"
+      "height": 2000,
+      "image_id": "co1vcp",
+      "width": 1500
     },
     "first_release_date": 1488499200,
     "genres": [
@@ -722,7 +726,7 @@ export const MockIGDBMatches: any[] = [
       }
     ],
     "popularity": 63.63239354877328,
-    "pulse_count": 954,
+    "pulse_count": 959,
     "rating": 92.80643117953501,
     "rating_count": 971,
     "release_dates": [
@@ -924,7 +928,9 @@ export const MockIGDBMatches: any[] = [
     "aggregated_rating_count": 5,
     "cover": {
       "id": 86233,
-      "image_id": "co1ujd"
+      "height": 1415,
+      "image_id": "co1ujd",
+      "width": 1061
     },
     "first_release_date": 1512604800,
     "genres": [
@@ -1007,7 +1013,9 @@ export const MockIGDBMatches: any[] = [
     "aggregated_rating_count": 3,
     "cover": {
       "id": 86236,
-      "image_id": "co1ujg"
+      "height": 2048,
+      "image_id": "co1ujg",
+      "width": 1536
     },
     "first_release_date": 1498780800,
     "genres": [
@@ -1078,7 +1086,9 @@ export const MockIGDBMatches: any[] = [
     "id": 41829,
     "cover": {
       "id": 25555,
-      "image_id": "fv5kxlrz58noqfy3hao2"
+      "height": 720,
+      "image_id": "fv5kxlrz58noqfy3hao2",
+      "width": 794
     },
     "first_release_date": 1488499200,
     "genres": [
@@ -1164,7 +1174,9 @@ export const MockIGDBMatches: any[] = [
     "id": 50598,
     "cover": {
       "id": 97680,
-      "image_id": "co23dc"
+      "height": 3046,
+      "image_id": "co23dc",
+      "width": 2285
     },
     "first_release_date": 1488412800,
     "genres": [

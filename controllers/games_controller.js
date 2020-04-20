@@ -30,6 +30,8 @@ exports.getGames = async function (request, response) {
     const poster = _.findWhere(defaultPosters, {game_id: game.id});
     if (!!poster) {
       resultObj.igdb_poster = poster.image_id;
+      resultObj.igdb_width = poster.width;
+      resultObj.igdb_height = poster.height;
     }
 
     outputObject.push(resultObj);
@@ -43,12 +45,29 @@ exports.addGame = async function(request, response) {
   const personGameObj = gameObj.personGame;
   delete gameObj.personGame;
 
+  const coverObj = {
+    igdb_game_id: gameObj.igdb_id,
+    image_id: gameObj.igdb_poster,
+    width: gameObj.igdb_width,
+    height: gameObj.igdb_height,
+    default_for_game: true,
+  }
+  delete gameObj.igdb_width;
+  delete gameObj.igdb_height;
+
   const game = await model.Game.create(gameObj);
   const returnObj = game.dataValues;
 
   if (!!personGameObj) {
     personGameObj.game_id = game.id;
     returnObj.personGame = await model.PersonGame.create(personGameObj);
+  }
+  if (!!coverObj.image_id) {
+    coverObj.game_id = game.id;
+    const posterObj = await model.IGDBPoster.create(coverObj);
+    returnObj.igdb_poster = posterObj.image_id;
+    returnObj.igdb_width = posterObj.width;
+    returnObj.igdb_height = posterObj.height;
   }
   response.json(returnObj);
 };

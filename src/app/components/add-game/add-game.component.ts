@@ -105,7 +105,11 @@ export class AddGameComponent implements OnInit {
     game.title.value = match.name;
     game.platform.value = this.translatePlatformName(platform);
     game.igdb_id.value = match.id;
-    game.igdb_poster.value = !!match.cover ? match.cover.image_id : null;
+    if (!!match.cover) {
+      game.igdb_poster.value = match.cover.image_id;
+      game.igdb_width.value = match.cover.width;
+      game.igdb_height.value = match.cover.height;
+    }
 
     const returnGame = await this.gameService.addGame(game);
     platform.exists = true;

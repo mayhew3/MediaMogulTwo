@@ -17,7 +17,12 @@ exports.getIGDBMatches = async function (request, response) {
     .replace('™', '')
     .replace('®', '');
 
-  const body = `search "${formatted_name}"; fields name,platforms.name,cover.image_id,keywords.name,aggregated_rating,aggregated_rating_count,version_parent,first_release_date,genres.name,involved_companies.company.name,player_perspectives.name,popularity,pulse_count,rating,rating_count,release_dates.date,release_dates.platform.name,slug,summary,tags,updated_at,url; where release_dates.region = (2,8);`;
+  const body = `search "${formatted_name}";
+  fields name, platforms.name, cover.image_id, cover.width, cover.height, keywords.name, aggregated_rating,
+    aggregated_rating_count, version_parent, first_release_date, genres.name, involved_companies.company.name,
+    player_perspectives.name, popularity,pulse_count, rating, rating_count, release_dates.date, release_dates.platform.name,
+    slug, summary, tags, updated_at, url;
+  where release_dates.region = (2,8);`;
 
   const config = {
     headers: {

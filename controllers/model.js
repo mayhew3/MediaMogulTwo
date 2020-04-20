@@ -73,6 +73,7 @@ exports.IGDBPoster = sequelize.sequelize.define("igdb_poster", {
   width: Sequelize.INTEGER,
   height: Sequelize.INTEGER,
   game_id: Sequelize.INTEGER,
+  igdb_game_id: Sequelize.INTEGER,
   date_added: Sequelize.DATE,
 }, {
   freezeTableName: true,

@@ -18,6 +18,8 @@ export class Game extends DataObject {
   giantbomb_id = this.registerIntegerField('giantbomb_id', false);
   steam_cloud = this.registerBooleanField('steam_cloud', false);
   igdb_id = this.registerIntegerField('igdb_id', false);
+  igdb_width = this.registerIntegerField('igdb_width', false);
+  igdb_height = this.registerIntegerField('igdb_height', false);
 
   brokenImage = false;
 
