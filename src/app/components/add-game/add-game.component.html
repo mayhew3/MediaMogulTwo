@@ -51,11 +51,19 @@
 
             <div class="col-12 m-1" *ngIf="!!match.platforms && match.platforms.length > 0">
               Platforms:
-              <ul>
-                <li *ngFor="let platform of match.platforms">
+              <div class="row"
+                   *ngFor="let platform of match.platforms">
+                <div class="col-9">
                   {{platform.name}}
-                </li>
-              </ul>
+                </div>
+                <div class="col-3">
+                  <button class="btn btn-sm btn-success platformAddButton p-0"
+                          *ngIf="!platform.owned"
+                          [ngClass]="getButtonClass(platform)"
+                          (click)="addGame(match, platform)">+</button>
+                </div>
+              </div>
+
             </div>
 
             <div class="col-12 m-1" *ngIf="!!match.genres && match.genres.length > 0">
@@ -70,14 +78,6 @@
             <div class="col-12 m-1">
               <div class="row">
 
-                <div class="col-6">
-                  <button type="button"
-                          class="btn btn-sm btn-success"
-                          (click)="addGame(match)">
-                    Add Game
-                  </button>
-                </div>
-
                 <div class="col-6" *ngIf="!!match.rating">
                   Rating:
                   <mm-rating-box [maxValue]="100"
@@ -86,8 +86,6 @@
 
               </div>
             </div>
-
-
 
           </div>
 

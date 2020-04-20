@@ -17,10 +17,15 @@ export class AddGameComponent implements OnInit {
 
   searchTitle = '';
   matches = [];
+  igdbPlatformMap = new Map();
 
   constructor(private gameService: GameService,
               private personService: PersonService,
-              private arrayService: ArrayService) { }
+              private arrayService: ArrayService) {
+    this.igdbPlatformMap.set('PC (Microsoft Windows)', Platform.PC);
+    this.igdbPlatformMap.set('Nintendo Switch', Platform.SWITCH);
+    this.igdbPlatformMap.set('Wii U', Platform.WII_U);
+  }
 
   ngOnInit() {
   }
@@ -52,12 +57,28 @@ export class AddGameComponent implements OnInit {
     return moment.unix(match.updated_at).fromNow();
   }
 
+  getButtonClass(platform): string {
+    if (!!platform.exists) {
+      return 'btn-warning';
+    } else {
+      return 'btn-success';
+    }
+  }
+
   async getMatches() {
     const matches = await this.gameService.getIGDBMatches(this.searchTitle);
     this.arrayService.refreshArray(this.matches, matches);
+    _.forEach(this.matches, match => {
+      _.forEach(match.platforms, platform => {
+        const myPlatform = this.igdbPlatformMap.get(platform.name);
+        const existing = this.gameService.findGame(match.id, myPlatform);
+        platform.exists = !!existing;
+        platform.owned = !!existing && !!existing.personGame;
+      });
+    });
   }
 
-  async addGame(match: any) {
+  async addGame(match: any, platform: any) {
     this.personService.me$.subscribe(async person => {
       const game = new Game();
       const personGame = new PersonGame();
@@ -65,13 +86,17 @@ export class AddGameComponent implements OnInit {
       personGame.person_id.value = person.id.value;
       personGame.tier.value = 1;
       personGame.minutes_played.value = 0;
-      personGame.rating.value = 100;
 
       game.personGame = personGame;
       game.title.value = match.name;
-      game.platform.value = 'PC';
+      game.platform.value = platform;
+      game.igdb_id.value = match.id;
+      game.igdb_poster.value = !!match.cover ? match.cover.image_id : null;
 
       await this.gameService.addGame(game);
+
+      platform.exists = true;
+      platform.owned = true;
     });
   }
 }

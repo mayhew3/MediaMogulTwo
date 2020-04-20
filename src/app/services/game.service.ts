@@ -48,6 +48,10 @@ export class GameService implements OnDestroy {
     this._destroy$.complete();
   }
 
+  findGame(igdb_id: number, platform: string): Game {
+    return _.find(this._dataStore.games, game => game.igdb_id.value === igdb_id && game.platform.value === platform);
+  }
+
   // PUBLIC CHANGE APIs. Make sure to call pushGameListChange() at the end of each operation.
 
   async addGame(game: Game): Promise<Game> {
