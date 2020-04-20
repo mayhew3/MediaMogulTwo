@@ -16,6 +16,7 @@ export class AddGameComponent implements OnInit {
   searchTitle = '';
   matches = [];
   igdbPlatformMap = new Map();
+  rating: number;
 
   constructor(private gameService: GameService,
               private arrayService: ArrayService) {
@@ -95,7 +96,7 @@ export class AddGameComponent implements OnInit {
       game = await this.addGame(match, platform);
     }
 
-    await this.gameService.addToMyGames(game);
+    await this.gameService.addToMyGames(game, this.rating);
     platform.owned = true;
   }
 

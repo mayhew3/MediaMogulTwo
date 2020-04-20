@@ -73,11 +73,12 @@ export class GameService implements OnDestroy {
     return resultGame;
   }
 
-  async addToMyGames(game: Game): Promise<any> {
+  async addToMyGames(game: Game, rating: number): Promise<any> {
     this.personService.me$.subscribe(async person => {
       const personGame = new PersonGame();
       personGame.person_id.value = person.id.value;
       personGame.game_id.value = game.id.value;
+      personGame.rating.value = rating;
 
       game.personGame = await personGame.commit(this.http);
       this.pushGameListChange();

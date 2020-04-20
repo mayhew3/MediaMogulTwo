@@ -79,7 +79,7 @@ export class GameCardComponent implements OnInit {
   }
 
   async addToMyGames(): Promise<any> {
-    await this.gameService.addToMyGames(this.game);
+    await this.gameService.addToMyGames(this.game, null);
     this.successfullyAdded = true;
   }
 }
