@@ -39,13 +39,7 @@ export class GameListComponent implements OnInit{
   async ngOnInit(): Promise<any> {
     this.selectedOrdering = this.orderings[0];
     this.nailedDownFilters = this.arrayService.cloneArray(this.changeableFilters);
-    try {
-      await this.fastSortGames();
-    } catch (err) {
-      this.error = err.message;
-    } finally {
-      this.initializing = false;
-    }
+    this.fastSortGames();
   }
 
   showOrderingDropdown(): boolean {
@@ -58,7 +52,7 @@ export class GameListComponent implements OnInit{
 
   async changeOrdering(ordering: GameOrdering) {
     this.selectedOrdering = ordering;
-    await this.fastSortGames();
+    this.fastSortGames();
   }
 
   applyAll(games: Game[], filters: GameFilter[]): Game[] {
@@ -70,7 +64,7 @@ export class GameListComponent implements OnInit{
     return filtered;
   }
 
-  async fastSortGames() {
+  fastSortGames() {
     this.gameService.games.subscribe(allGames => {
       const allFilters = this.arrayService.cloneArray(this.nailedDownFilters);
       if (!!this.baseFilter) {
@@ -93,6 +87,7 @@ export class GameListComponent implements OnInit{
             {asc: game => game.title.value}
           ]);
       }
+      this.initializing = false;
     });
   }
 
@@ -105,7 +100,7 @@ export class GameListComponent implements OnInit{
     return classes.join(' ');
   }
 
-  async toggleOption(option: GameFilterOption, parentFilter: GameFilterWithOptions) {
+  toggleOption(option: GameFilterOption, parentFilter: GameFilterWithOptions) {
     const regularOptions = _.where(parentFilter.options, {special: false});
     const specialOptions = _.where(parentFilter.options, {special: true});
     if (option.special) {
@@ -125,7 +120,7 @@ export class GameListComponent implements OnInit{
       noneOption.isActive = activeRegular.length === 0;
     }
 
-    await this.fastSortGames();
+    this.fastSortGames();
   }
 
 }
