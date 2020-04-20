@@ -68,38 +68,48 @@ export class AddGameComponent implements OnInit {
     }
   }
 
+  private findMatchingGame(match: any, platform: any): Game {
+    return this.gameService.findGame(match.id, this.translatePlatformName(platform));
+  }
+
+  private translatePlatformName(platform: any): string {
+    const myPlatform = this.igdbPlatformMap.get(platform.name);
+    return !!myPlatform ? myPlatform : platform.name;
+  }
+
   async getMatches() {
     const matches = await this.gameService.getIGDBMatches(this.searchTitle);
     this.arrayService.refreshArray(this.matches, matches);
     _.forEach(this.matches, match => {
       _.forEach(match.platforms, platform => {
-        const myPlatform = this.igdbPlatformMap.get(platform.name);
-        const existing = this.gameService.findGame(match.id, !!myPlatform ? myPlatform : platform.name);
+        const existing = this.findMatchingGame(match, platform);
         platform.exists = !!existing;
         platform.owned = !!existing && !!existing.personGame;
       });
     });
   }
 
-  async addGame(match: any, platform: any) {
-    this.personService.me$.subscribe(async person => {
-      const game = new Game();
-      const personGame = new PersonGame();
+  async handleAddClick(match: any, platform: any) {
+    let game: Game = this.findMatchingGame(match, platform);
+    if (!game) {
+      game = await this.addGame(match, platform);
+    }
 
-      personGame.person_id.value = person.id.value;
-      personGame.tier.value = 1;
-      personGame.minutes_played.value = 0;
+    await this.gameService.addToMyGames(game);
+    platform.owned = true;
+  }
 
-      game.personGame = personGame;
-      game.title.value = match.name;
-      game.platform.value = platform;
-      game.igdb_id.value = match.id;
-      game.igdb_poster.value = !!match.cover ? match.cover.image_id : null;
+  async addGame(match: any, platform: any): Promise<Game> {
+    const game = new Game();
 
-      await this.gameService.addGame(game);
+    game.title.value = match.name;
+    game.platform.value = this.translatePlatformName(platform);
+    game.igdb_id.value = match.id;
+    game.igdb_poster.value = !!match.cover ? match.cover.image_id : null;
 
-      platform.exists = true;
-      platform.owned = true;
-    });
+    const returnGame = await this.gameService.addGame(game);
+    platform.exists = true;
+
+    return returnGame;
   }
 }
