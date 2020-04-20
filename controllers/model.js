@@ -17,6 +17,7 @@ exports.Game = sequelize.sequelize.define("game", {
   howlong_id: Sequelize.NUMBER,
   giantbomb_id: Sequelize.NUMBER,
   steam_cloud: Sequelize.BOOLEAN,
+  igdb_id: Sequelize.NUMBER,
 }, {
   freezeTableName: true,
   createdAt: false,
