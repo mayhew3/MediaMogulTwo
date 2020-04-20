@@ -28,6 +28,7 @@ export class AddGameComponent implements OnInit {
     this.igdbPlatformMap.set('PlayStation 4', Platform.PS4);
     this.igdbPlatformMap.set('PlayStation 3', Platform.PS3);
     this.igdbPlatformMap.set('Nintendo DS', Platform.DS);
+    this.igdbPlatformMap.set('SteamVR', Platform.Steam);
   }
 
   ngOnInit() {
@@ -68,7 +69,18 @@ export class AddGameComponent implements OnInit {
     }
   }
 
-  private findMatchingGame(match: any, platform: any): Game {
+  findMyPlatformsNotListed(match: any): string[] {
+    const myGames = this.findAllExistingPlatformsForGame(match);
+    const myPlatforms = _.map(myGames, game => game.platform.value);
+    const theirPlatforms = _.map(match.platforms, platform => this.translatePlatformName(platform));
+    return _.difference(myPlatforms, theirPlatforms);
+  }
+
+  private findAllExistingPlatformsForGame(match: any): Game[] {
+    return this.gameService.findGames(match.id);
+  }
+
+  private findMatchingGameForPlatform(match: any, platform: any): Game {
     return this.gameService.findGame(match.id, this.translatePlatformName(platform));
   }
 
@@ -82,7 +94,7 @@ export class AddGameComponent implements OnInit {
     this.arrayService.refreshArray(this.matches, matches);
     _.forEach(this.matches, match => {
       _.forEach(match.platforms, platform => {
-        const existing = this.findMatchingGame(match, platform);
+        const existing = this.findMatchingGameForPlatform(match, platform);
         platform.exists = !!existing;
         platform.owned = !!existing && !!existing.personGame;
       });
@@ -90,7 +102,7 @@ export class AddGameComponent implements OnInit {
   }
 
   async handleAddClick(match: any, platform: any) {
-    let game: Game = this.findMatchingGame(match, platform);
+    let game: Game = this.findMatchingGameForPlatform(match, platform);
     if (!game) {
       game = await this.addGame(match, platform);
     }
