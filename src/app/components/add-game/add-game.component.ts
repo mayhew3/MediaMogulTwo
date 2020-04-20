@@ -2,9 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {GameService} from '../../services/game.service';
 import {Platform} from '../../interfaces/Enum/Platform';
 import * as _ from 'underscore';
-import {PersonService} from '../../services/person.service';
 import {Game} from '../../interfaces/Model/Game';
-import {PersonGame} from '../../interfaces/Model/PersonGame';
 import {ArrayService} from '../../services/array.service';
 import * as moment from 'moment';
 
@@ -20,7 +18,6 @@ export class AddGameComponent implements OnInit {
   igdbPlatformMap = new Map();
 
   constructor(private gameService: GameService,
-              private personService: PersonService,
               private arrayService: ArrayService) {
     this.igdbPlatformMap.set('PC (Microsoft Windows)', Platform.PC);
     this.igdbPlatformMap.set('Nintendo Switch', Platform.SWITCH);
@@ -32,15 +29,6 @@ export class AddGameComponent implements OnInit {
   }
 
   ngOnInit() {
-  }
-
-  getPlatformOptions(): string[] {
-    const allPlatforms = Object.keys(Platform);
-    return _.without(allPlatforms, Platform.Steam);
-  }
-
-  getDisplayValueOf(platformOption: string): string {
-    return Platform[platformOption];
   }
 
   canSearch(): boolean {
