@@ -50,6 +50,8 @@ export class Game extends DataObject {
 
   discardChanges(): void {
     super.discardChanges();
-    this._personGame.discardChanges();
+    if (!!this._personGame) {
+      this._personGame.discardChanges();
+    }
   }
 }

@@ -25,6 +25,9 @@ export class AddGameComponent implements OnInit {
     this.igdbPlatformMap.set('PC (Microsoft Windows)', Platform.PC);
     this.igdbPlatformMap.set('Nintendo Switch', Platform.SWITCH);
     this.igdbPlatformMap.set('Wii U', Platform.WII_U);
+    this.igdbPlatformMap.set('PlayStation 4', Platform.PS4);
+    this.igdbPlatformMap.set('PlayStation 3', Platform.PS3);
+    this.igdbPlatformMap.set('Nintendo DS', Platform.DS);
   }
 
   ngOnInit() {
@@ -59,9 +62,9 @@ export class AddGameComponent implements OnInit {
 
   getButtonClass(platform): string {
     if (!!platform.exists) {
-      return 'btn-warning';
+      return 'btn-primary';
     } else {
-      return 'btn-success';
+      return 'btn-warning';
     }
   }
 
@@ -71,7 +74,7 @@ export class AddGameComponent implements OnInit {
     _.forEach(this.matches, match => {
       _.forEach(match.platforms, platform => {
         const myPlatform = this.igdbPlatformMap.get(platform.name);
-        const existing = this.gameService.findGame(match.id, myPlatform);
+        const existing = this.gameService.findGame(match.id, !!myPlatform ? myPlatform : platform.name);
         platform.exists = !!existing;
         platform.owned = !!existing && !!existing.personGame;
       });
