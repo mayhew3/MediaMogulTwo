@@ -87,7 +87,9 @@ export class GameListComponent implements OnInit{
             {asc: game => game.title.value}
           ]);
       }
-      this.initializing = false;
+      if (allGames.length > 0) {
+        this.initializing = false;
+      }
     });
   }
 
