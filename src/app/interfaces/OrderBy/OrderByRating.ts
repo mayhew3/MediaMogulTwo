@@ -9,7 +9,8 @@ export class OrderByRating extends GameOrdering {
   }
 
   sortValue(game: Game): any {
-    return game.isOwned() ? game.personGame.rating.value : -1;
+    return game.isOwned() ?
+      (!!game.personGame.rating.value ? game.personGame.rating.value : game.metacritic.value) : -1;
   }
 }
 

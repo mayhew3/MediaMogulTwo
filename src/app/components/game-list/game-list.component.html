@@ -7,9 +7,6 @@
       </div>
       <div class="d-flex justify-content-end">
 
-        <button class="btn btn-success mx-1"
-                (click)="openAddGamePopup()">+</button>
-
         <form class="form-inline" *ngIf="showOrderingDropdown()">
 
           <div ngbDropdown
@@ -55,8 +52,24 @@
     </div>
   </div>
 
+
+  <div class="row"
+       *ngIf="initializing">
+    <div class="col-4">
+      Loading...
+    </div>
+  </div>
+
+  <div class="row"
+       *ngIf="!!error">
+    <div class="col-4">
+      Error while loading: {{error}}
+    </div>
+  </div>
+
+
   <div class="card-body">
-    <div class="row gameRow" *ngIf="!!filteredGames">
+    <div class="row gameRow" *ngIf="!!filteredGames && filteredGames.length > 0">
       <div class="col-4 gameCard"
            *ngFor="let game of filteredGames |
            slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">

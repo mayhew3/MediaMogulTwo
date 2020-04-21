@@ -17,6 +17,7 @@ exports.Game = sequelize.sequelize.define("game", {
   howlong_id: Sequelize.NUMBER,
   giantbomb_id: Sequelize.NUMBER,
   steam_cloud: Sequelize.BOOLEAN,
+  igdb_id: Sequelize.NUMBER,
 }, {
   freezeTableName: true,
   createdAt: false,
@@ -72,6 +73,7 @@ exports.IGDBPoster = sequelize.sequelize.define("igdb_poster", {
   width: Sequelize.INTEGER,
   height: Sequelize.INTEGER,
   game_id: Sequelize.INTEGER,
+  igdb_game_id: Sequelize.INTEGER,
   date_added: Sequelize.DATE,
 }, {
   freezeTableName: true,

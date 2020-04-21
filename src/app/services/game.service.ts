@@ -48,6 +48,14 @@ export class GameService implements OnDestroy {
     this._destroy$.complete();
   }
 
+  findGame(igdb_id: number, platform: string): Game {
+    return _.find(this._dataStore.games, game => game.igdb_id.value === igdb_id && game.platform.value === platform);
+  }
+
+  findGames(igdb_id: number): Game[] {
+    return _.filter(this._dataStore.games, game => game.igdb_id.value === igdb_id);
+  }
+
   // PUBLIC CHANGE APIs. Make sure to call pushGameListChange() at the end of each operation.
 
   async addGame(game: Game): Promise<Game> {
@@ -65,11 +73,12 @@ export class GameService implements OnDestroy {
     return resultGame;
   }
 
-  async addToMyGames(game: Game): Promise<any> {
+  async addToMyGames(game: Game, rating: number): Promise<any> {
     this.personService.me$.subscribe(async person => {
       const personGame = new PersonGame();
       personGame.person_id.value = person.id.value;
       personGame.game_id.value = game.id.value;
+      personGame.rating.value = rating;
 
       game.personGame = await personGame.commit(this.http);
       this.pushGameListChange();
@@ -79,6 +88,16 @@ export class GameService implements OnDestroy {
   async updateGame(game: Game): Promise<any> {
     await game.commit(this.http);
     this.pushGameListChange();
+  }
+
+  async getIGDBMatches(searchTitle: string): Promise<any[]> {
+    const payload = {
+      game_title: searchTitle
+    };
+    const options = {
+      params: payload
+    };
+    return await this.http.get<any[]>('/api/igdbMatches', options).toPromise();
   }
 
   async updatePersonGame(personGame: PersonGame): Promise<any> {

@@ -17,6 +17,9 @@ export class Game extends DataObject {
   howlong_id = this.registerIntegerField('howlong_id', false);
   giantbomb_id = this.registerIntegerField('giantbomb_id', false);
   steam_cloud = this.registerBooleanField('steam_cloud', false);
+  igdb_id = this.registerIntegerField('igdb_id', false);
+  igdb_width = this.registerIntegerField('igdb_width', false);
+  igdb_height = this.registerIntegerField('igdb_height', false);
 
   brokenImage = false;
 
@@ -49,6 +52,8 @@ export class Game extends DataObject {
 
   discardChanges(): void {
     super.discardChanges();
-    this._personGame.discardChanges();
+    if (!!this._personGame) {
+      this._personGame.discardChanges();
+    }
   }
 }

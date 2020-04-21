@@ -6,6 +6,7 @@ import * as _ from 'underscore';
 import {GameplaySession} from '../interfaces/Model/GameplaySession';
 import * as lodash from 'lodash';
 import {MockPersons} from '../mocks/persons.mock';
+import {MockIGDBMatches} from '../mocks/igdb.matches.mock';
 
 @Injectable({
   providedIn: 'root'
@@ -33,6 +34,7 @@ export class InMemoryDataService implements InMemoryDbService{
       personGames: [],
       gameplaySessions: [] as GameplaySession[],
       persons: this.persons,
+      igdbMatches: [],
     };
   }
 
@@ -48,6 +50,8 @@ export class InMemoryDataService implements InMemoryDbService{
     const collectionName = requestInfo.collectionName;
     if (collectionName === 'games') {
       return this.getGames(requestInfo);
+    } else if (collectionName === 'igdbMatches') {
+      return this.getIGDBMatches(requestInfo);
     }
     return null;
   }
@@ -91,6 +95,10 @@ export class InMemoryDataService implements InMemoryDbService{
     });
 
     return this.packageGetData(data, requestInfo);
+  }
+
+  private getIGDBMatches(requestInfo: RequestInfo): Observable<ResponseOptions> {
+    return this.packageGetData(MockIGDBMatches, requestInfo);
   }
 
   private updateGame(requestInfo: RequestInfo) {
