@@ -8,6 +8,7 @@
                id="name"
                name="name"
                [required]="true"
+               (keyup.enter)="getMatches()"
                [(ngModel)]="searchTitle"/>
         <span class="input-group-append">
           <input type="button"
