@@ -9,6 +9,7 @@ import {ColorTransformService} from '../../services/color-transform.service';
 export class RatingBoxComponent implements OnInit {
   @Input() value: number;
   @Input() maxValue: number;
+  @Input() faded: boolean;
 
   constructor(private colorTransformService: ColorTransformService) { }
 
@@ -33,7 +34,15 @@ export class RatingBoxComponent implements OnInit {
     }
   }
 
-  colorStyle() {
-    return this.colorTransformService.colorStyle(this.value, this.maxValue);
+  colorStyle(): string {
+    return this.colorTransformService.colorStyle(this.value, this.maxValue, this.faded);;
+  }
+
+  boxShadow(): string {
+    if (!!this.faded) {
+      return null;
+    } else {
+      return '1px 1px 2px #000';
+    }
   }
 }
