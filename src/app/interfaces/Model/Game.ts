@@ -21,6 +21,14 @@ export class Game extends DataObject {
   igdb_width = this.registerIntegerField('igdb_width', false);
   igdb_height = this.registerIntegerField('igdb_height', false);
 
+  igdb_rating = this.registerDecimalField('igdb_rating', false);
+  igdb_rating_count = this.registerIntegerField('igdb_rating_count', false);
+  igdb_release_date = this.registerDateField('igdb_release_date', false);
+  igdb_popularity = this.registerDecimalField('igdb_popularity', false);
+  igdb_slug = this.registerStringField('igdb_slug', false);
+  igdb_summary = this.registerStringField('igdb_summary', false);
+  igdb_updated = this.registerDateField('igdb_updated', false);
+
   brokenImage = false;
 
   private _personGame: PersonGame;

@@ -39,7 +39,7 @@ export class AddGameComponent implements OnInit {
   }
 
   getDateFrom(unixTimestamp: number): Date {
-    return moment.unix(unixTimestamp).toDate();
+    return !unixTimestamp ? null : moment.unix(unixTimestamp).toDate();
   }
 
   getImageUrlForMatch(match: any): string {
@@ -54,9 +54,9 @@ export class AddGameComponent implements OnInit {
 
   getButtonClass(platform): string {
     if (!!platform.exists) {
-      return 'btn-primary';
+      return 'btn-success';
     } else {
-      return 'btn-warning';
+      return 'btn-primary';
     }
   }
 
@@ -115,6 +115,21 @@ export class AddGameComponent implements OnInit {
     game.title.value = match.name;
     game.platform.value = this.translatePlatformName(platform);
     game.igdb_id.value = match.id;
+
+    game.igdb_rating.value = match.rating;
+    game.igdb_rating_count.value = match.rating_count;
+    game.igdb_popularity.value = match.popularity;
+    game.igdb_slug.value = match.slug;
+    game.igdb_summary.value = match.summary;
+    game.igdb_updated.value = this.getDateFrom(match.updated_at);
+
+    const releaseDates = _.map(match.release_dates, release_date => release_date.date);
+    const compact = _.compact(releaseDates);
+    const minUnixDate = _.min(compact);
+
+    game.igdb_release_date.value = this.getDateFrom(minUnixDate);
+
+
     if (!!match.cover) {
       game.igdb_poster.value = match.cover.image_id;
       game.igdb_width.value = match.cover.width;

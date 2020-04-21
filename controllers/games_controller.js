@@ -1,5 +1,6 @@
 const model = require('./model');
 const _ = require('underscore');
+const moment = require('moment');
 
 exports.getGames = async function (request, response) {
   const person_id = request.query.person_id;
@@ -54,6 +55,11 @@ exports.addGame = async function(request, response) {
   }
   delete gameObj.igdb_width;
   delete gameObj.igdb_height;
+
+  if (!!gameObj.igdb_id) {
+    gameObj.igdb_success = new Date();
+    gameObj.igdb_next_update = moment().add(7, 'days').toDate();
+  }
 
   const game = await model.Game.create(gameObj);
   const returnObj = game.dataValues;
