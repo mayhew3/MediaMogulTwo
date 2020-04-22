@@ -1,6 +1,7 @@
 const model = require('./model');
 const _ = require('underscore');
 const moment = require('moment');
+const arrayService = require('./array_util');
 
 exports.getGames = async function (request, response) {
   const person_id = request.query.person_id;
@@ -46,6 +47,9 @@ exports.addGame = async function(request, response) {
   const personGameObj = gameObj.personGame;
   delete gameObj.personGame;
 
+  const availablePlatforms = gameObj.availablePlatforms;
+  delete gameObj.availablePlatforms;
+
   const coverObj = {
     igdb_game_id: gameObj.igdb_id,
     image_id: gameObj.igdb_poster,
@@ -61,7 +65,7 @@ exports.addGame = async function(request, response) {
     gameObj.igdb_next_update = moment().add(7, 'days').toDate();
   }
 
-  const game = await model.Game.create(gameObj);
+  const game = await tryToAddGame(gameObj);
   const returnObj = game.dataValues;
 
   if (!!personGameObj) {
@@ -75,8 +79,40 @@ exports.addGame = async function(request, response) {
     returnObj.igdb_width = posterObj.width;
     returnObj.igdb_height = posterObj.height;
   }
+
+  const platformsToAdd = _.filter(availablePlatforms, platform => !platform.id);
+  const platformInserts = [];
+  _.forEach(platformsToAdd, platform => platformInserts.push(model.GamePlatform.create(platform)));
+  const addedPlatforms = await Promise.all(platformInserts);
+
+  const availableInserts = [];
+  _.forEach(addedPlatforms, platform => availableInserts.push(addAvailablePlatform(platform, game)));
+  await Promise.all(availableInserts);
+
+  const existingPlatforms = _.filter(availablePlatforms, platform => !!platform.id);
+
+  returnObj.availablePlatforms = [];
+  arrayService.addToArray(returnObj.availablePlatforms, addedPlatforms);
+  arrayService.addToArray(returnObj.availablePlatforms, existingPlatforms);
+
   response.json(returnObj);
 };
+
+async function tryToAddGame(gameObj) {
+  try {
+    return await model.Game.create(gameObj);
+  } catch (err) {
+    throw err;
+  }
+}
+
+async function addAvailablePlatform(platform, game) {
+  const payload = {
+    game_id: game.id,
+    game_platform_id: platform.id
+  }
+  await model.AvailableGamePlatform.create(payload);
+}
 
 exports.addPersonGame = async function(request, response) {
   const personGameObj = request.body;

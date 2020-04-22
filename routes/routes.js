@@ -5,6 +5,7 @@ const jwks = require("jwks-rsa");
 module.exports = function(app) {
   let games = require('../controllers/games_controller');
   let persons = require('../controllers/persons_controller');
+  let platforms = require('../controllers/platforms_controller');
   let addGame = require('../controllers/add_game_controller');
 
   const authConfig = {
@@ -36,6 +37,8 @@ module.exports = function(app) {
   privatePost('/gameplaySessions', games.addGameplaySession);
 
   privateGet('/persons', persons.getPersons);
+
+  privateGet('/gamePlatforms', platforms.getPlatforms);
 
   privateGet('/igdbMatches', addGame.getIGDBMatches);
 
