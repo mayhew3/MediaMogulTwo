@@ -7,6 +7,9 @@ import {ArrayService} from '../../services/array.service';
 import * as moment from 'moment';
 import {PlatformService} from '../../services/platform.service';
 import {GamePlatform} from '../../interfaces/Model/GamePlatform';
+import {Person} from '../../interfaces/Model/Person';
+import {PersonService} from '../../services/person.service';
+import {PersonGame} from '../../interfaces/Model/PersonGame';
 
 @Component({
   selector: 'mm-add-game',
@@ -21,10 +24,13 @@ export class AddGameComponent implements OnInit {
   rating: number;
   loading = false;
   error: string;
+  allPlatforms: GamePlatform[] = [];
+  me: Person;
 
   constructor(private gameService: GameService,
               private arrayService: ArrayService,
-              private platformService: PlatformService) {
+              private platformService: PlatformService,
+              private personService: PersonService) {
     this.igdbPlatformMap.set('PC (Microsoft Windows)', Platform.PC);
     this.igdbPlatformMap.set('Nintendo Switch', Platform.SWITCH);
     this.igdbPlatformMap.set('Wii U', Platform.WII_U);
@@ -35,6 +41,8 @@ export class AddGameComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.platformService.platforms.subscribe(platforms => this.arrayService.refreshArray(this.allPlatforms, platforms));
+    this.personService.me$.subscribe(person => this.me = person);
   }
 
   canSearch(): boolean {
@@ -112,26 +120,18 @@ export class AddGameComponent implements OnInit {
     platform.owned = true;
   }
 
-  private getOrCreateExistingGamePlatform(platform: any, game: Game): Promise<any> {
-    return new Promise<any>(next => {
-      this.platformService.platforms.subscribe(async allPlatforms => {
-          const existing = _.find(allPlatforms, existingPlatform => existingPlatform.igdb_platform_id.value === platform.id);
-          if (!existing) {
-            const gamePlatform = new GamePlatform();
-            gamePlatform.full_name.value = platform.name;
-            gamePlatform.short_name.value = platform.name;
-            gamePlatform.igdb_name.value = platform.name;
-            gamePlatform.igdb_platform_id.value = platform.id;
-            const returnPlatform: GamePlatform = await this.platformService.addPlatform(gamePlatform);
-            game.addToAvailablePlatforms(returnPlatform);
-            next(returnPlatform);
-          } else {
-            game.addToAvailablePlatforms(existing);
-            next(existing);
-          }
-        }
-      );
-    });
+  private getOrCreateExistingGamePlatform(platform: any, game: Game, allPlatforms: GamePlatform[]): void {
+    const existing = _.find(allPlatforms, existingPlatform => existingPlatform.igdb_platform_id.value === platform.id);
+    if (!existing) {
+      const gamePlatform = new GamePlatform();
+      gamePlatform.full_name.value = platform.name;
+      gamePlatform.short_name.value = platform.name;
+      gamePlatform.igdb_name.value = platform.name;
+      gamePlatform.igdb_platform_id.value = platform.id;
+      game.addToAvailablePlatforms(gamePlatform);
+    } else {
+      game.addToAvailablePlatforms(existing);
+    }
   }
 
   addGame(match: any, platform: any): Promise<Game> {
@@ -161,12 +161,18 @@ export class AddGameComponent implements OnInit {
         game.igdb_height.value = match.cover.height;
       }
 
-      const platformPromises = [];
-      _.forEach(match.platforms, platform => platformPromises.push(this.getOrCreateExistingGamePlatform(platform, game)));
-      await Promise.all(platformPromises);
+      game.personGame = new PersonGame();
+      game.personGame.person_id.value = this.me.id.value;
+      game.personGame.game_id.value = game.id.value;
+      game.personGame.rating.value = this.rating;
+
+      _.forEach(match.platforms, platform => this.getOrCreateExistingGamePlatform(platform, game, this.allPlatforms));
 
       const returnGame = await this.gameService.addGame(game);
-      platform.exists = true;
+
+      const availablePlatforms = returnGame.availablePlatforms;
+      _.forEach(availablePlatforms, availablePlatform => this.platformService.addToPlatformsIfDoesntExist(availablePlatform));
+      _.forEach(match.platforms, matchPlatform => matchPlatform.exists = true);
 
       next(returnGame);
 

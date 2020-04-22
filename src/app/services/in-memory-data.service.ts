@@ -7,6 +7,7 @@ import {GameplaySession} from '../interfaces/Model/GameplaySession';
 import * as lodash from 'lodash';
 import {MockPersons} from '../mocks/persons.mock';
 import {MockIGDBMatches} from '../mocks/igdb.matches.mock';
+import {MockGamePlatforms} from '../mocks/gamePlatforms.mock';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +16,7 @@ export class InMemoryDataService implements InMemoryDbService{
 
   games = MockGames;
   persons = MockPersons;
+  gamePlatforms = MockGamePlatforms;
 
   // STATIC HELPERS
 
@@ -35,7 +37,7 @@ export class InMemoryDataService implements InMemoryDbService{
       gameplaySessions: [] as GameplaySession[],
       persons: this.persons,
       igdbMatches: [],
-      gamePlatforms: [],
+      gamePlatforms: this.gamePlatforms,
     };
   }
 
@@ -61,8 +63,8 @@ export class InMemoryDataService implements InMemoryDbService{
   post(requestInfo: RequestInfo): Observable<Response> {
     console.log('HTTP override: POST');
     const collectionName = requestInfo.collectionName;
-    if (collectionName === 'personGames') {
-      this.addPersonGame(requestInfo);
+    if (collectionName === 'games') {
+      this.addGame(requestInfo);
     }
     return null;
   }
@@ -111,15 +113,24 @@ export class InMemoryDataService implements InMemoryDbService{
     }
   }
 
-  private addPersonGame(requestInfo: RequestInfo) {
-    const body = this.getBody(requestInfo);
-    body.id = this.nextPersonGameID();
-    body.date_added = new Date();
-    const game = this.findGame(body.game_id);
-    if (!!game) {
-      game.personGame = body;
-      return this.packageUpResponse(body, requestInfo);
+  private addGame(requestInfo: RequestInfo) {
+    const game = this.getBody(requestInfo);
+    game.id = this.nextGameID();
+    game.date_added = new Date();
+    const personGame = game.personGame;
+    if (!!personGame) {
+      personGame.id = this.nextPersonGameID();
+      personGame.game_id = game.id;
+      personGame.date_added = new Date();
     }
+    const newPlatforms = _.filter(game.availablePlatforms, platform => !platform.id);
+    _.forEach(newPlatforms, platform => this.addGamePlatform(platform));
+    return this.packageUpResponse(game, requestInfo);
+  }
+
+  private addGamePlatform(gamePlatform: any) {
+    gamePlatform.id = this.nextGamePlatformID();
+    this.gamePlatforms.push(gamePlatform);
   }
 
   private updatePersonGame(requestInfo: RequestInfo) {
@@ -144,14 +155,23 @@ export class InMemoryDataService implements InMemoryDbService{
     return _.findWhere(personGames, {id: personGameID});
   }
 
-  private nextPersonGameID(): number {
-    const personGames = this.getPersonGames();
-    // tslint:disable-next-line:radix
-    const ids = _.map(personGames, personGame => parseInt(personGame.id));
-    const maximum = _.max(ids);
-    return maximum + 1;
+  private nextID(array: any[]): number {
+    const ids = _.map(array, item => parseInt(item.id));
+    return ids.length > 0 ? _.max(ids) + 1 : 1;
   }
 
+  private nextGameID(): number {
+    return this.nextID(this.games);
+  }
+
+  private nextPersonGameID(): number {
+    const personGames = this.getPersonGames();
+    return this.nextID(personGames);
+  }
+
+  private nextGamePlatformID(): number {
+    return this.nextID(this.gamePlatforms);
+  }
 
 
   // DOMAIN-INDEPENDENT HELPERS

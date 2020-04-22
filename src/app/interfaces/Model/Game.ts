@@ -4,6 +4,8 @@ import {DataObject} from '../DataObject/DataObject';
 import {GamePlatform} from './GamePlatform';
 import * as _ from 'underscore';
 import {PlatformService} from '../../services/platform.service';
+import {GameOrdering} from '../OrderBy/GameOrdering';
+import {ArrayUtil} from '../../utility/ArrayUtil';
 
 export class Game extends DataObject {
   title = this.registerStringField('title', true);
@@ -37,8 +39,12 @@ export class Game extends DataObject {
   private _personGame: PersonGame;
   private _availablePlatforms: GamePlatform[] = [];
 
+  private allPlatforms: GamePlatform[];
+
   constructor(private platformService: PlatformService) {
     super();
+    this.platformService.platforms.subscribe(platforms => this.allPlatforms = platforms);
+    this.platformService.maybeRefreshCache();
   }
 
   get personGame(): PersonGame {
@@ -59,16 +65,17 @@ export class Game extends DataObject {
     }
     base.availablePlatforms = [];
     _.forEach(this.availablePlatforms, availablePlatform => {
-      base.availablePlatforms.push({
-        igdb_platform_id: availablePlatform.igdb_platform_id.value
-      });
+      base.availablePlatforms.push(availablePlatform.getChangedFields());
     });
     return base;
   }
 
   addToAvailablePlatforms(gamePlatform: GamePlatform) {
-    const existing = _.find(this._availablePlatforms, platform => platform.id.value === gamePlatform.id.value);
+    const existing = _.find(this._availablePlatforms, platform => platform.full_name.value === gamePlatform.full_name.value);
     if (!existing) {
+      this._availablePlatforms.push(gamePlatform);
+    } else if (!existing.id.value) {
+      ArrayUtil.removeFromArray(this._availablePlatforms, existing);
       this._availablePlatforms.push(gamePlatform);
     }
   }
@@ -83,15 +90,26 @@ export class Game extends DataObject {
 
   initializedFromJSON(jsonObj: any): this {
     super.initializedFromJSON(jsonObj);
+    if (!this.allPlatforms) {
+      throw new Error('Initialize called before platforms were available.');
+    }
     this._personGame = !!jsonObj.personGame ? new PersonGame().initializedFromJSON(jsonObj.personGame) : undefined;
-    this.platformService.platforms.subscribe(allPlatforms => {
-      _.forEach(jsonObj.availablePlatforms, availablePlatform => {
-        const foundPlatform = _.find(allPlatforms, platform => platform.id.value === availablePlatform.id);
-        this.addToAvailablePlatforms(foundPlatform);
-      });
+    _.forEach(jsonObj.availablePlatforms, availablePlatform => {
+      const realPlatform = this.getOrCreateGamePlatform(availablePlatform, this.allPlatforms);
+      this.addToAvailablePlatforms(realPlatform);
     });
-    this.platformService.maybeRefreshCache();
     return this;
+  }
+
+  getOrCreateGamePlatform(platformObj: any, allPlatforms: GamePlatform[]): GamePlatform {
+    const foundPlatform = _.find(allPlatforms, platform => platform.id.value === platformObj.id);
+    if (!foundPlatform) {
+      const newPlatform = new GamePlatform().initializedFromJSON(platformObj);
+      this.platformService.addToPlatformsIfDoesntExist(newPlatform);
+      return newPlatform;
+    } else {
+      return foundPlatform;
+    }
   }
 
   isOwned(): boolean {
