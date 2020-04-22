@@ -90,6 +90,41 @@ exports.IGDBPoster = sequelize.sequelize.define("igdb_poster", {
   updatedAt: false
 });
 
+exports.GamePlatform = sequelize.sequelize.define("game_platform", {
+  id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
+  full_name: Sequelize.TEXT,
+  short_name: Sequelize.TEXT,
+  igdb_name: Sequelize.TEXT,
+  parent_id: Sequelize.INTEGER,
+  date_added: Sequelize.DATE,
+}, {
+  freezeTableName: true,
+  createdAt: false,
+  updatedAt: false
+});
+
+exports.AvailableGamePlatform = sequelize.sequelize.define("available_game_platform", {
+  id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
+  game_id: Sequelize.INTEGER,
+  game_platform_id: Sequelize.INTEGER,
+  date_added: Sequelize.DATE,
+}, {
+  freezeTableName: true,
+  createdAt: false,
+  updatedAt: false
+});
+
+exports.MyGamePlatform = sequelize.sequelize.define("my_game_platform", {
+  id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
+  person_id: Sequelize.INTEGER,
+  available_game_platform_id: Sequelize.INTEGER,
+  date_added: Sequelize.DATE,
+}, {
+  freezeTableName: true,
+  createdAt: false,
+  updatedAt: false
+});
+
 exports.Game.hasMany(exports.PersonGame, {foreignKey: 'game_id'});
 exports.PersonGame.belongsTo(exports.Game, {foreignKey: 'game_id'});
 
