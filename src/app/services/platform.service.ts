@@ -63,6 +63,9 @@ export class PlatformService implements OnDestroy {
   }
 
   addToPlatformsIfDoesntExist(gamePlatform: GamePlatform): void {
+    if (gamePlatform.isTemporary()) {
+      throw new Error('PlatformService cannot contain temporary platforms');
+    }
     const existing = _.find(this._platforms, platform => platform.id.value === gamePlatform.id.value);
     if (!existing) {
       this._platforms.push(gamePlatform);

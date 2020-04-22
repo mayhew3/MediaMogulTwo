@@ -128,7 +128,7 @@ export class AddGameComponent implements OnInit {
       gamePlatform.short_name.value = platform.name;
       gamePlatform.igdb_name.value = platform.name;
       gamePlatform.igdb_platform_id.value = platform.id;
-      game.addToAvailablePlatforms(gamePlatform);
+      game.addTemporaryPlatform(gamePlatform);
     } else {
       game.addToAvailablePlatforms(existing);
     }

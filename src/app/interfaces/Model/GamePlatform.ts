@@ -13,4 +13,8 @@ export class GamePlatform extends DataObject {
     return 'gamePlatforms';
   }
 
+  isTemporary(): boolean {
+    return !this.id.value;
+  }
+
 }

@@ -70,14 +70,29 @@ export class Game extends DataObject {
     return base;
   }
 
-  addToAvailablePlatforms(gamePlatform: GamePlatform) {
+  addTemporaryPlatform(gamePlatform: GamePlatform) {
+    if (!gamePlatform.isTemporary()) {
+      throw new Error('Cannot add platform with id using addTemporaryPlatform!');
+    }
     const existing = _.find(this._availablePlatforms, platform => platform.full_name.value === gamePlatform.full_name.value);
     if (!existing) {
       this._availablePlatforms.push(gamePlatform);
-    } else if (!existing.id.value) {
-      ArrayUtil.removeFromArray(this._availablePlatforms, existing);
+    }
+  }
+
+  addToAvailablePlatforms(gamePlatform: GamePlatform) {
+    if (gamePlatform.isTemporary()) {
+      throw new Error('Cannot add platform without id using addToAvailablePlatforms!');
+    }
+    const existing = _.find(this._availablePlatforms, platform => platform.id.value === gamePlatform.id.value);
+    if (!existing) {
       this._availablePlatforms.push(gamePlatform);
     }
+  }
+
+  private removeTemporaryPlatforms() {
+    const temporaryPlatforms = _.filter(this._availablePlatforms, platform => platform.isTemporary());
+    _.forEach(temporaryPlatforms, platform => ArrayUtil.removeFromArray(this._availablePlatforms, platform));
   }
 
   private static cloneArray(originalArray): any[] {
@@ -94,6 +109,7 @@ export class Game extends DataObject {
       throw new Error('Initialize called before platforms were available.');
     }
     this._personGame = !!jsonObj.personGame ? new PersonGame().initializedFromJSON(jsonObj.personGame) : undefined;
+    this.removeTemporaryPlatforms();
     _.forEach(jsonObj.availablePlatforms, availablePlatform => {
       const realPlatform = this.getOrCreateGamePlatform(availablePlatform, this.allPlatforms);
       this.addToAvailablePlatforms(realPlatform);
