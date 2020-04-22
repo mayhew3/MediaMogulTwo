@@ -95,6 +95,7 @@ exports.GamePlatform = sequelize.sequelize.define("game_platform", {
   full_name: Sequelize.TEXT,
   short_name: Sequelize.TEXT,
   igdb_name: Sequelize.TEXT,
+  igdb_platform_id: Sequelize.INTEGER,
   parent_id: Sequelize.INTEGER,
   date_added: Sequelize.DATE,
 }, {
