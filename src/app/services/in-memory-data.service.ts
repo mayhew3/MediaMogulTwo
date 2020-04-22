@@ -35,6 +35,7 @@ export class InMemoryDataService implements InMemoryDbService{
       gameplaySessions: [] as GameplaySession[],
       persons: this.persons,
       igdbMatches: [],
+      gamePlatforms: [],
     };
   }
 

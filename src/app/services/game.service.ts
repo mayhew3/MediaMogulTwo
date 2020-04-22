@@ -9,6 +9,7 @@ import {PersonService} from './person.service';
 import {BehaviorSubject, Subject} from 'rxjs';
 import {Person} from '../interfaces/Model/Person';
 import {takeUntil} from 'rxjs/operators';
+import {PlatformService} from './platform.service';
 
 @Injectable({
   providedIn: 'root'
@@ -26,7 +27,8 @@ export class GameService implements OnDestroy {
 
   constructor(private http: HttpClient,
               private arrayService: ArrayService,
-              private personService: PersonService) {
+              private personService: PersonService,
+              private platformService: PlatformService) {
     this.personService.me$.subscribe(person => this._me = person);
   }
 
@@ -140,7 +142,7 @@ export class GameService implements OnDestroy {
   }
 
   private convertObjectsToGames(gameObjs: any[]): Game[] {
-    return _.map(gameObjs, gameObj => new Game().initializedFromJSON(gameObj));
+    return _.map(gameObjs, gameObj => new Game(this.platformService).initializedFromJSON(gameObj));
   }
 
 }

@@ -1,5 +1,6 @@
 /* tslint:disable:variable-name */
 import {DataObject} from '../DataObject/DataObject';
+import {GamePlatform} from './GamePlatform';
 
 export class PersonGame extends DataObject {
   last_played = this.registerDateField('last_played', false);
@@ -12,6 +13,8 @@ export class PersonGame extends DataObject {
   replay_reason = this.registerStringField('replay_reason', false);
   person_id = this.registerIntegerField('person_id', true);
   game_id = this.registerIntegerField('game_id', true);
+
+  private _myPlatforms: GamePlatform[];
 
   constructor() {
     super();

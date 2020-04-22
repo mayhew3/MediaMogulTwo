@@ -1,6 +1,9 @@
 /* tslint:disable:variable-name */
 import {PersonGame} from './PersonGame';
 import {DataObject} from '../DataObject/DataObject';
+import {GamePlatform} from './GamePlatform';
+import * as _ from 'underscore';
+import {PlatformService} from '../../services/platform.service';
 
 export class Game extends DataObject {
   title = this.registerStringField('title', true);
@@ -32,6 +35,11 @@ export class Game extends DataObject {
   brokenImage = false;
 
   private _personGame: PersonGame;
+  private _availablePlatforms: GamePlatform[] = [];
+
+  constructor(private platformService: PlatformService) {
+    super();
+  }
 
   get personGame(): PersonGame {
     return this._personGame;
@@ -44,9 +52,31 @@ export class Game extends DataObject {
     }
   }
 
+  addToAvailablePlatforms(gamePlatform: GamePlatform) {
+    const existing = _.find(this._availablePlatforms, platform => platform.id.value === gamePlatform.id.value);
+    if (!existing) {
+      this._availablePlatforms.push(gamePlatform);
+    }
+  }
+
+  private static cloneArray(originalArray): any[] {
+    return originalArray.slice();
+  }
+
+  get availablePlatforms(): GamePlatform[] {
+    return Game.cloneArray(this._availablePlatforms);
+  }
+
   initializedFromJSON(jsonObj: any): this {
     super.initializedFromJSON(jsonObj);
     this._personGame = !!jsonObj.personGame ? new PersonGame().initializedFromJSON(jsonObj.personGame) : undefined;
+    this.platformService.platforms.subscribe(allPlatforms => {
+      _.forEach(jsonObj.availablePlatforms, availablePlatform => {
+        const foundPlatform = _.find(allPlatforms, platform => platform.id.value === availablePlatform.id);
+        this.addToAvailablePlatforms(foundPlatform);
+      });
+    });
+    this.platformService.maybeRefreshCache();
     return this;
   }
 

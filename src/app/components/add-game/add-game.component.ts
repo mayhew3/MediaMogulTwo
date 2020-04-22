@@ -5,6 +5,9 @@ import * as _ from 'underscore';
 import {Game} from '../../interfaces/Model/Game';
 import {ArrayService} from '../../services/array.service';
 import * as moment from 'moment';
+import {PlatformService} from '../../services/platform.service';
+import {GamePlatform} from '../../interfaces/Model/GamePlatform';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'mm-add-game',
@@ -21,7 +24,8 @@ export class AddGameComponent implements OnInit {
   error: string;
 
   constructor(private gameService: GameService,
-              private arrayService: ArrayService) {
+              private arrayService: ArrayService,
+              private platformService: PlatformService) {
     this.igdbPlatformMap.set('PC (Microsoft Windows)', Platform.PC);
     this.igdbPlatformMap.set('Nintendo Switch', Platform.SWITCH);
     this.igdbPlatformMap.set('Wii U', Platform.WII_U);
@@ -109,36 +113,46 @@ export class AddGameComponent implements OnInit {
     platform.owned = true;
   }
 
-  async addGame(match: any, platform: any): Promise<Game> {
-    const game = new Game();
+  private findExistingGamePlatform(platform: any): Observable<GamePlatform> {
+    return this.platformService.platforms.pipe(
+      allPlatforms => _.find(allPlatforms, platform => platform.igdb_platform_id.value === platform.id)
+    );
+  }
 
-    game.title.value = match.name;
-    game.platform.value = this.translatePlatformName(platform);
-    game.igdb_id.value = match.id;
+  addGame(match: any, platform: any): Observable<Game> {
+    return this.findExistingGamePlatform(platform).pipe(
+      (existingPlatform) => {
+        const game = new Game(this.platformService);
 
-    game.igdb_rating.value = match.rating;
-    game.igdb_rating_count.value = match.rating_count;
-    game.igdb_popularity.value = match.popularity;
-    game.igdb_slug.value = match.slug;
-    game.igdb_summary.value = match.summary;
-    game.igdb_updated.value = this.getDateFrom(match.updated_at);
+        game.title.value = match.name;
+        game.platform.value = this.translatePlatformName(platform);
+        game.igdb_id.value = match.id;
 
-    const releaseDates = _.map(match.release_dates, release_date => release_date.date);
-    const compact = _.compact(releaseDates);
-    const minUnixDate = _.min(compact);
+        game.igdb_rating.value = match.rating;
+        game.igdb_rating_count.value = match.rating_count;
+        game.igdb_popularity.value = match.popularity;
+        game.igdb_slug.value = match.slug;
+        game.igdb_summary.value = match.summary;
+        game.igdb_updated.value = this.getDateFrom(match.updated_at);
 
-    game.igdb_release_date.value = this.getDateFrom(minUnixDate);
+        const releaseDates = _.map(match.release_dates, release_date => release_date.date);
+        const compact = _.compact(releaseDates);
+        const minUnixDate = _.min(compact);
 
+        game.igdb_release_date.value = this.getDateFrom(minUnixDate);
 
-    if (!!match.cover) {
-      game.igdb_poster.value = match.cover.image_id;
-      game.igdb_width.value = match.cover.width;
-      game.igdb_height.value = match.cover.height;
-    }
+        if (!!match.cover) {
+          game.igdb_poster.value = match.cover.image_id;
+          game.igdb_width.value = match.cover.width;
+          game.igdb_height.value = match.cover.height;
+        }
 
-    const returnGame = await this.gameService.addGame(game);
-    platform.exists = true;
+        const returnGame = this.gameService.addGame(game);
+        platform.exists = true;
 
-    return returnGame;
+        return returnGame;
+      }
+    );
+
   }
 }
