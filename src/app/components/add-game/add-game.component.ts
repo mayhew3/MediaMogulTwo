@@ -7,7 +7,6 @@ import {ArrayService} from '../../services/array.service';
 import * as moment from 'moment';
 import {PlatformService} from '../../services/platform.service';
 import {GamePlatform} from '../../interfaces/Model/GamePlatform';
-import {Observable} from 'rxjs';
 
 @Component({
   selector: 'mm-add-game',
@@ -113,46 +112,66 @@ export class AddGameComponent implements OnInit {
     platform.owned = true;
   }
 
-  private findExistingGamePlatform(platform: any): Observable<GamePlatform> {
-    return this.platformService.platforms.pipe(
-      allPlatforms => _.find(allPlatforms, platform => platform.igdb_platform_id.value === platform.id)
-    );
+  private getOrCreateExistingGamePlatform(platform: any, game: Game): Promise<any> {
+    return new Promise<any>(next => {
+      this.platformService.platforms.subscribe(async allPlatforms => {
+          const existing = _.find(allPlatforms, existingPlatform => existingPlatform.igdb_platform_id.value === platform.id);
+          if (!existing) {
+            const gamePlatform = new GamePlatform();
+            gamePlatform.full_name.value = platform.name;
+            gamePlatform.short_name.value = platform.name;
+            gamePlatform.igdb_name.value = platform.name;
+            gamePlatform.igdb_platform_id.value = platform.id;
+            const returnPlatform: GamePlatform = await this.platformService.addPlatform(gamePlatform);
+            game.addToAvailablePlatforms(returnPlatform);
+            next(returnPlatform);
+          } else {
+            game.addToAvailablePlatforms(existing);
+            next(existing);
+          }
+        }
+      );
+    });
   }
 
-  addGame(match: any, platform: any): Observable<Game> {
-    return this.findExistingGamePlatform(platform).pipe(
-      (existingPlatform) => {
-        const game = new Game(this.platformService);
+  addGame(match: any, platform: any): Promise<Game> {
+    return new Promise<Game>(async next => {
+      const game = new Game(this.platformService);
 
-        game.title.value = match.name;
-        game.platform.value = this.translatePlatformName(platform);
-        game.igdb_id.value = match.id;
+      game.title.value = match.name;
+      game.platform.value = this.translatePlatformName(platform);
+      game.igdb_id.value = match.id;
 
-        game.igdb_rating.value = match.rating;
-        game.igdb_rating_count.value = match.rating_count;
-        game.igdb_popularity.value = match.popularity;
-        game.igdb_slug.value = match.slug;
-        game.igdb_summary.value = match.summary;
-        game.igdb_updated.value = this.getDateFrom(match.updated_at);
+      game.igdb_rating.value = match.rating;
+      game.igdb_rating_count.value = match.rating_count;
+      game.igdb_popularity.value = match.popularity;
+      game.igdb_slug.value = match.slug;
+      game.igdb_summary.value = match.summary;
+      game.igdb_updated.value = this.getDateFrom(match.updated_at);
 
-        const releaseDates = _.map(match.release_dates, release_date => release_date.date);
-        const compact = _.compact(releaseDates);
-        const minUnixDate = _.min(compact);
+      const releaseDates = _.map(match.release_dates, release_date => release_date.date);
+      const compact = _.compact(releaseDates);
+      const minUnixDate = _.min(compact);
 
-        game.igdb_release_date.value = this.getDateFrom(minUnixDate);
+      game.igdb_release_date.value = this.getDateFrom(minUnixDate);
 
-        if (!!match.cover) {
-          game.igdb_poster.value = match.cover.image_id;
-          game.igdb_width.value = match.cover.width;
-          game.igdb_height.value = match.cover.height;
-        }
-
-        const returnGame = this.gameService.addGame(game);
-        platform.exists = true;
-
-        return returnGame;
+      if (!!match.cover) {
+        game.igdb_poster.value = match.cover.image_id;
+        game.igdb_width.value = match.cover.width;
+        game.igdb_height.value = match.cover.height;
       }
-    );
+
+      const platformPromises = [];
+      _.forEach(match.platforms, platform => platformPromises.push(this.getOrCreateExistingGamePlatform(platform, game)));
+      await Promise.all(platformPromises);
+
+      const returnGame = await this.gameService.addGame(game);
+      platform.exists = true;
+
+      next(returnGame);
+
+    });
+
 
   }
 }

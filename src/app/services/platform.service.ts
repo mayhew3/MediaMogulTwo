@@ -54,4 +54,11 @@ export class PlatformService implements OnDestroy {
   private convertObjectsToPlatforms(platformObjs: any[]): GamePlatform[] {
     return _.map(platformObjs, platformObj => new GamePlatform().initializedFromJSON(platformObj));
   }
+
+  async addPlatform(gamePlatform: GamePlatform): Promise<GamePlatform> {
+    const returnObj = await gamePlatform.commit(this.http);
+    this._platforms.push(returnObj);
+    this.pushPlatformListChange();
+    return returnObj;
+  }
 }

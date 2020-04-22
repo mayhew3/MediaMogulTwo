@@ -61,15 +61,7 @@ export class GameService implements OnDestroy {
   // PUBLIC CHANGE APIs. Make sure to call pushGameListChange() at the end of each operation.
 
   async addGame(game: Game): Promise<Game> {
-    const personGame = game.personGame;
-    if (!!personGame) {
-      delete game.personGame;
-    }
     const resultGame = await game.commit(this.http);
-    if (!!personGame) {
-      personGame.game_id.value = resultGame.id.value;
-      resultGame.personGame = await personGame.commit(this.http);
-    }
     this._dataStore.games.push(resultGame);
     this.pushGameListChange();
     return resultGame;

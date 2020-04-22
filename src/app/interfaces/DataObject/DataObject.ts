@@ -66,10 +66,15 @@ export abstract class DataObject implements OnDestroy {
     }
   }
 
+  protected makeChangesToInsertPayload(json: any): any {
+    return json;
+  }
+
   async insert(http: HttpClient): Promise<this> {
     const url = '/api/' + this.getApiMethod();
     const changedFields = this.getChangedFields();
-    const returnObj = await http.post<any>(url, changedFields)
+    const insertPayload = this.makeChangesToInsertPayload(changedFields);
+    const returnObj = await http.post<any>(url, insertPayload)
       .pipe(takeUntil(this._destroy$))
       .toPromise();
     this.initializedFromJSON(returnObj);

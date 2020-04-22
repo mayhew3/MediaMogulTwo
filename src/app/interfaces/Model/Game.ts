@@ -52,6 +52,20 @@ export class Game extends DataObject {
     }
   }
 
+  protected makeChangesToInsertPayload(json: any): any {
+    const base = super.makeChangesToInsertPayload(json);
+    if (!!this._personGame) {
+      base.personGame = this._personGame.getChangedFields();
+    }
+    base.availablePlatforms = [];
+    _.forEach(this.availablePlatforms, availablePlatform => {
+      base.availablePlatforms.push({
+        igdb_platform_id: availablePlatform.igdb_platform_id.value
+      });
+    });
+    return base;
+  }
+
   addToAvailablePlatforms(gamePlatform: GamePlatform) {
     const existing = _.find(this._availablePlatforms, platform => platform.id.value === gamePlatform.id.value);
     if (!existing) {

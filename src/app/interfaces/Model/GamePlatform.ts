@@ -10,7 +10,7 @@ export class GamePlatform extends DataObject {
   parent: GamePlatform;
 
   getApiMethod(): string {
-    return 'platforms';
+    return 'gamePlatforms';
   }
 
 }
