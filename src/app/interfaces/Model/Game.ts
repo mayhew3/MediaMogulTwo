@@ -90,6 +90,15 @@ export class Game extends DataObject {
     }
   }
 
+  hasPlatform(platformName: string): boolean {
+    const existing = _.find(this.availablePlatforms, platform => platform.full_name.value === platformName);
+    return !!existing;
+  }
+
+  getPlatformNames(): string[] {
+    return _.map(this.availablePlatforms, platform => platform.full_name.value);
+  }
+
   private removeTemporaryPlatforms() {
     const temporaryPlatforms = _.filter(this._availablePlatforms, platform => platform.isTemporary());
     _.forEach(temporaryPlatforms, platform => ArrayUtil.removeFromArray(this._availablePlatforms, platform));

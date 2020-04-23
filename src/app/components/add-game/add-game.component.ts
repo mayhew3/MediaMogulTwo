@@ -10,6 +10,7 @@ import {GamePlatform} from '../../interfaces/Model/GamePlatform';
 import {Person} from '../../interfaces/Model/Person';
 import {PersonService} from '../../services/person.service';
 import {PersonGame} from '../../interfaces/Model/PersonGame';
+import {flatMap} from 'rxjs/operators';
 
 @Component({
   selector: 'mm-add-game',
@@ -72,14 +73,25 @@ export class AddGameComponent implements OnInit {
   }
 
   findMyPlatformsNotListed(match: any): string[] {
-    const myGames = this.findAllExistingPlatformsForGame(match);
-    const myPlatforms = _.map(myGames, game => game.platform.value);
+    const existingGames = this.findAllExistingGameMatches(match);
+    const existingPlatforms = _.flatten(_.map(existingGames, game => game.getPlatformNames()));
     const theirPlatforms = _.map(match.platforms, platform => this.translatePlatformName(platform));
-    return _.difference(myPlatforms, theirPlatforms);
+    return _.difference(existingPlatforms, theirPlatforms);
   }
 
-  private findAllExistingPlatformsForGame(match: any): Game[] {
+  private findAllExistingGameMatches(match: any): Game[] {
     return this.gameService.findGames(match.id);
+  }
+
+  private findAvailablePlatformsForMatch(match: any): string[] {
+    const existingGames = this.findAllExistingGameMatches(match);
+    return _.flatten(_.map(existingGames, game => game.getPlatformNames()));
+  }
+
+  private findMyPlatformsForMatch(match: any): string[] {
+    const existingGames = this.findAllExistingGameMatches(match);
+    const personGames = _.map(_.filter(existingGames, game => !!game.personGame), game => game.personGame);
+    return _.flatten(_.map(personGames, personGame => personGame._myPlatforms))
   }
 
   private findMatchingGameForPlatform(match: any, platform: any): Game {
@@ -97,6 +109,7 @@ export class AddGameComponent implements OnInit {
       const matches = await this.gameService.getIGDBMatches(this.searchTitle);
       this.arrayService.refreshArray(this.matches, matches);
       _.forEach(this.matches, match => {
+        const existingGames = this.findAllExistingGameMatches(match);
         _.forEach(match.platforms, platform => {
           const existing = this.findMatchingGameForPlatform(match, platform);
           platform.exists = !!existing;

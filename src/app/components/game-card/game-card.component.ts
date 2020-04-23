@@ -75,7 +75,7 @@ export class GameCardComponent implements OnInit {
   }
 
   isSteamGame(): boolean {
-    return Platform.Steam === this.game.platform.value;
+    return this.game.hasPlatform(Platform.Steam);
   }
 
   async addToMyGames(): Promise<any> {

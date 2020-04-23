@@ -20,7 +20,8 @@ export class PlatformGameFilter extends GameFilterWithOptions {
   apply(game: Game): boolean {
     const gameFilterOptions = this.options;
     const selectedOptionKeys = _.map(_.where(gameFilterOptions, {isActive: true, special: false}), option => option.value);
-    return _.contains(selectedOptionKeys, game.platform.value);
+    const filtered = _.filter(selectedOptionKeys, key => game.hasPlatform(key));
+    return filtered.length > 0;
   }
 
   getLabel(): string {
