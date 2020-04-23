@@ -9,4 +9,8 @@ export class ArrayUtil {
     originalArray.splice(indexOf, 1);
   }
 
+  static cloneArray(originalArray): any[] {
+    return originalArray.slice();
+  }
+
 }

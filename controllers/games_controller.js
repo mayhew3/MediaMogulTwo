@@ -91,7 +91,7 @@ exports.addGame = async function(request, response) {
 
   const existingPlatforms = _.filter(availablePlatforms, platform => !!platform.id);
 
-  returnObj.availablePlatforms = [];
+  returnObj.myPlatforms = [];
   arrayService.addToArray(returnObj.availablePlatforms, addedPlatforms);
   arrayService.addToArray(returnObj.availablePlatforms, existingPlatforms);
 

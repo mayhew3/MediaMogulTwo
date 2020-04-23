@@ -91,7 +91,7 @@ export class AddGameComponent implements OnInit {
   private findMyPlatformsForMatch(match: any): string[] {
     const existingGames = this.findAllExistingGameMatches(match);
     const personGames = _.map(_.filter(existingGames, game => !!game.personGame), game => game.personGame);
-    return _.flatten(_.map(personGames, personGame => personGame._myPlatforms))
+    return _.flatten(_.map(personGames, personGame => personGame.getPlatformNames()));
   }
 
   private findMatchingGameForPlatform(match: any, platform: any): Game {
@@ -109,11 +109,12 @@ export class AddGameComponent implements OnInit {
       const matches = await this.gameService.getIGDBMatches(this.searchTitle);
       this.arrayService.refreshArray(this.matches, matches);
       _.forEach(this.matches, match => {
-        const existingGames = this.findAllExistingGameMatches(match);
+        const existingPlatforms = this.findAvailablePlatformsForMatch(match);
+        const myPlatforms = this.findMyPlatformsForMatch(match);
         _.forEach(match.platforms, platform => {
-          const existing = this.findMatchingGameForPlatform(match, platform);
-          platform.exists = !!existing;
-          platform.owned = !!existing && !!existing.personGame;
+          const platformName = this.translatePlatformName(platform);
+          platform.exists = _.contains(existingPlatforms, platformName);
+          platform.owned = _.contains(myPlatforms, platformName);
         });
       });
     } catch (err) {
@@ -174,7 +175,7 @@ export class AddGameComponent implements OnInit {
         game.igdb_height.value = match.cover.height;
       }
 
-      game.personGame = new PersonGame();
+      game.personGame = new PersonGame(this.platformService);
       game.personGame.person_id.value = this.me.id.value;
       game.personGame.game_id.value = game.id.value;
       game.personGame.rating.value = this.rating;

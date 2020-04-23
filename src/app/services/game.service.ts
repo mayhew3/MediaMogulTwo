@@ -69,7 +69,7 @@ export class GameService implements OnDestroy {
 
   async addToMyGames(game: Game, rating: number): Promise<any> {
     this.personService.me$.subscribe(async person => {
-      const personGame = new PersonGame();
+      const personGame = new PersonGame(this.platformService);
       personGame.person_id.value = person.id.value;
       personGame.game_id.value = game.id.value;
       personGame.rating.value = rating;
