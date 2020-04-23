@@ -13,4 +13,17 @@ export class ArrayUtil {
     return originalArray.slice();
   }
 
+  static addToArray(originalArray, newArray) {
+    originalArray.push.apply(originalArray, newArray);
+  }
+
+  static refreshArray(originalArray, newArray) {
+    this.emptyArray(originalArray);
+    this.addToArray(originalArray, newArray);
+  }
+
+  static emptyArray(originalArray) {
+    originalArray.length = 0;
+  }
+
 }

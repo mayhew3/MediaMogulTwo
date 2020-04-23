@@ -103,6 +103,11 @@ export class Game extends DataObject {
     return !!existing;
   }
 
+  hasPlatformWithID(platformID: number): boolean {
+    const existing = _.find(this.availablePlatforms, platform => platform.id.value === platformID);
+    return !!existing;
+  }
+
   hasPlatformWithIGDBID(igdbID: number): boolean {
     const existing = _.find(this.availablePlatforms, platform => platform.igdb_platform_id.value === igdbID);
     return !!existing;
@@ -110,6 +115,10 @@ export class Game extends DataObject {
 
   getPlatformNames(): string[] {
     return _.map(this.availablePlatforms, platform => platform.full_name.value);
+  }
+
+  getPlatformIGDBIDs(): number[] {
+    return _.map(this.availablePlatforms, platform => platform.igdb_platform_id.value);
   }
 
   private removeTemporaryPlatforms() {

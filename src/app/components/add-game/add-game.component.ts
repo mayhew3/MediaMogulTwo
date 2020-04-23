@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {GameService} from '../../services/game.service';
-import {Platform} from '../../interfaces/Enum/Platform';
 import * as _ from 'underscore';
 import {Game} from '../../interfaces/Model/Game';
 import {ArrayService} from '../../services/array.service';
@@ -20,7 +19,6 @@ export class AddGameComponent implements OnInit {
 
   searchTitle = '';
   matches = [];
-  igdbPlatformMap = new Map();
   rating: number;
   loading = false;
   error: string;
@@ -31,13 +29,6 @@ export class AddGameComponent implements OnInit {
               private arrayService: ArrayService,
               private platformService: PlatformService,
               private personService: PersonService) {
-    this.igdbPlatformMap.set('PC (Microsoft Windows)', Platform.PC);
-    this.igdbPlatformMap.set('Nintendo Switch', Platform.SWITCH);
-    this.igdbPlatformMap.set('Wii U', Platform.WII_U);
-    this.igdbPlatformMap.set('PlayStation 4', Platform.PS4);
-    this.igdbPlatformMap.set('PlayStation 3', Platform.PS3);
-    this.igdbPlatformMap.set('Nintendo DS', Platform.DS);
-    this.igdbPlatformMap.set('SteamVR', Platform.Steam);
   }
 
   ngOnInit() {
@@ -71,36 +62,24 @@ export class AddGameComponent implements OnInit {
     }
   }
 
-  findMyPlatformsNotListed(match: any): string[] {
-    const existingGames = this.findAllExistingGameMatches(match);
-    const existingPlatforms = _.flatten(_.map(existingGames, game => game.getPlatformNames()));
-    const theirPlatforms = _.map(match.platforms, platform => this.translatePlatformName(platform));
-    return _.difference(existingPlatforms, theirPlatforms);
-  }
-
-  private findAllExistingGameMatches(match: any): Game[] {
-    return this.gameService.findGames(match.id);
+  findExistingPlatformsNotListed(match: any): string[] {
+    const existingGame = this.findMatchingGameForPlatform(match);
+    const existingPlatformIDs = existingGame.getPlatformIGDBIDs();
+    return _.filter(match.platforms, platform => !_.contains(existingPlatformIDs, platform.id));
   }
 
   private gameExistsWithPlatform(match: any, platform: any): boolean {
-    const existingGames = this.findAllExistingGameMatches(match);
-    const hasPlatformBooleans = _.map(existingGames, game => game.hasPlatformWithIGDBID(platform.id));
-    return _.contains(hasPlatformBooleans, true);
+    const existingGame = this.findMatchingGameForPlatform(match);
+    return existingGame.hasPlatformWithIGDBID(platform.id);
   }
 
   private gameOwnedWithPlatform(match: any, platform: any): boolean {
-    const existingGames = this.findAllExistingGameMatches(match);
-    const hasPlatformBooleans = _.map(existingGames, game => game.personGame.hasPlatformWithIGDBID(platform.id));
-    return _.contains(hasPlatformBooleans, true);
+    const existingGame = this.findMatchingGameForPlatform(match);
+    return existingGame.personGame.hasPlatformWithIGDBID(platform.id);
   }
 
-  private findMatchingGameForPlatform(match: any, platform: any): Game {
-    return this.gameService.findGame(match.id, this.translatePlatformName(platform));
-  }
-
-  private translatePlatformName(platform: any): string {
-    const myPlatform = this.igdbPlatformMap.get(platform.name);
-    return !!myPlatform ? myPlatform : platform.name;
+  private findMatchingGameForPlatform(match: any): Game {
+    return this.gameService.findGame(match.id);
   }
 
   async getMatches() {
@@ -122,7 +101,7 @@ export class AddGameComponent implements OnInit {
   }
 
   async handleAddClick(match: any, platform: any) {
-    let game: Game = this.findMatchingGameForPlatform(match, platform);
+    let game: Game = this.findMatchingGameForPlatform(match);
     if (!game) {
       game = await this.addGame(match, platform);
     }

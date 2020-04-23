@@ -1,4 +1,4 @@
-import {Injectable, OnDestroy, OnInit} from '@angular/core';
+import {Injectable, OnDestroy} from '@angular/core';
 import {Game} from '../interfaces/Model/Game';
 import {HttpClient} from '@angular/common/http';
 import {ArrayService} from './array.service';
@@ -60,12 +60,16 @@ export class GameService implements OnDestroy {
     this._destroy$.complete();
   }
 
-  findGame(igdb_id: number, platform: string): Game {
-    return _.find(this._dataStore.games, game => game.igdb_id.value === igdb_id && game.platform.value === platform);
-  }
-
-  findGames(igdb_id: number): Game[] {
-    return _.filter(this._dataStore.games, game => game.igdb_id.value === igdb_id);
+  // todo: prune data so igdb_id is unique
+  findGame(igdb_id: number): Game {
+    const matching = _.filter(this._dataStore.games, game => game.igdb_id.value === igdb_id);
+    if (matching.length > 1) {
+      throw new Error(`Found multiple games with IGDB_ID ${igdb_id}`);
+    } else if (matching.length === 0) {
+      return null;
+    } else {
+      return matching[0];
+    }
   }
 
   // PUBLIC CHANGE APIs. Make sure to call pushGameListChange() at the end of each operation.
