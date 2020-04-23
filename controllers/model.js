@@ -27,6 +27,8 @@ exports.Game = sequelize.sequelize.define("game", {
   igdb_updated: Sequelize.DATE,
   igdb_success: Sequelize.DATE,
   igdb_next_update: Sequelize.DATE,
+  retired: Sequelize.INTEGER,
+  retired_date: Sequelize.DATE,
 }, {
   freezeTableName: true,
   createdAt: false,

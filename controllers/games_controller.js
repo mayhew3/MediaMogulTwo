@@ -7,7 +7,11 @@ exports.getGames = async function (request, response) {
   const person_id = request.query.person_id;
 
   // noinspection JSCheckFunctionSignatures
-  const games = await model.Game.findAll();
+  const games = await model.Game.findAll({
+    where: {
+      retired: 0
+    }
+  });
   const personGames = await model.PersonGame.findAll({
     where: {
       person_id: person_id
@@ -18,14 +22,31 @@ exports.getGames = async function (request, response) {
       default_for_game: true
     }
   });
+  const availablePlatforms = await model.AvailableGamePlatform.findAll();
+  const myPlatforms = await model.MyGamePlatform.findAll({
+    where: {
+      person_id: person_id
+    }
+  });
 
   const outputObject = [];
 
   _.forEach(games, game => {
     const resultObj = game.dataValues;
 
+    const availableForGame = _.where(availablePlatforms, {game_id: game.id});
+    resultObj.availablePlatforms = _.map(availableForGame, platform => {
+      return {id: platform.game_platform_id};
+    });
+
     const personGame = _.findWhere(personGames, {game_id: game.id});
     if (!!personGame) {
+      const availableIDs = _.pluck(resultObj.availablePlatforms, 'id');
+      const myPlatformsForGame = _.filter(myPlatforms, platform => _.contains(availableIDs, platform.available_game_platform_id));
+      personGame.myPlatforms = _.map(myPlatformsForGame, platform => {
+        const availableGamePlatform = _.findWhere(availablePlatforms, {id: platform.available_game_platform_id});
+        return {id: availableGamePlatform.game_platform_id};
+      });
       resultObj.personGame = personGame;
     }
 
@@ -68,10 +89,6 @@ exports.addGame = async function(request, response) {
   const game = await tryToAddGame(gameObj);
   const returnObj = game.dataValues;
 
-  if (!!personGameObj) {
-    personGameObj.game_id = game.id;
-    returnObj.personGame = await model.PersonGame.create(personGameObj);
-  }
   if (!!coverObj.image_id) {
     coverObj.game_id = game.id;
     const posterObj = await model.IGDBPoster.create(coverObj);
@@ -91,9 +108,31 @@ exports.addGame = async function(request, response) {
 
   const existingPlatforms = _.filter(availablePlatforms, platform => !!platform.id);
 
-  returnObj.myPlatforms = [];
+  returnObj.availablePlatforms = [];
   arrayService.addToArray(returnObj.availablePlatforms, addedPlatforms);
   arrayService.addToArray(returnObj.availablePlatforms, existingPlatforms);
+
+  if (!!personGameObj) {
+    personGameObj.game_id = game.id;
+    try {
+      const returnPersonGame = await model.PersonGame.create(personGameObj);
+      returnObj.personGame = returnPersonGame.dataValues;
+    } catch (err) {
+      throw new Error(err);
+    }
+
+    const myPlatforms = personGameObj.myPlatforms;
+    delete personGameObj.myPlatforms;
+    const newPlatforms = _.filter(myPlatforms, platform => !platform.id);
+    returnObj.personGame.myPlatforms = [];
+    const justAdded = _.map(newPlatforms, platform => {
+      const found = _.findWhere(addedPlatforms, {full_name: platform.full_name});
+      return {id: found.id};
+    });
+    arrayService.addToArray(returnObj.personGame.myPlatforms, justAdded);
+    const oldPlatforms = _.filter(myPlatforms, platform => !!platform.id);
+    arrayService.addToArray(returnObj.personGame.myPlatforms, oldPlatforms);
+  }
 
   response.json(returnObj);
 };

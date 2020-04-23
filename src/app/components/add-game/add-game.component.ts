@@ -76,7 +76,7 @@ export class AddGameComponent implements OnInit {
 
   private gameOwnedWithPlatform(match: any, platform: any): boolean {
     const existingGame = this.findMatchingGameForPlatform(match);
-    return !!existingGame && existingGame.personGame.hasPlatformWithIGDBID(platform.id);
+    return !!existingGame && !!existingGame.personGame && existingGame.personGame.hasPlatformWithIGDBID(platform.id);
   }
 
   private findMatchingGameForPlatform(match: any): Game {
@@ -184,6 +184,7 @@ export class AddGameComponent implements OnInit {
       const availablePlatforms = returnGame.availablePlatforms;
       _.forEach(availablePlatforms, availablePlatform => this.platformService.addToPlatformsIfDoesntExist(availablePlatform));
       _.forEach(match.platforms, matchPlatform => matchPlatform.exists = true);
+      selectedPlatform.owned = true;
 
       next(returnGame);
 
