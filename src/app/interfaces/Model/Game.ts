@@ -60,14 +60,20 @@ export class Game extends DataObject {
       base.personGame = this._personGame.getChangedFields();
       base.personGame.myPlatforms = [];
       _.forEach(this._personGame.myPlatforms, myPlatform => {
-        // todo: don't use changed fields, but id?
-        base.personGame.myPlatforms.push(myPlatform.getChangedFields());
+        if (!myPlatform.id) {
+          base.personGame.myPlatforms.push(myPlatform.getChangedFields());
+        } else {
+          base.personGame.myPlatforms.push({id: myPlatform.id.value});
+        }
       });
     }
     base.availablePlatforms = [];
     _.forEach(this.availablePlatforms, availablePlatform => {
-      // todo: don't use changed fields, but id?
-      base.availablePlatforms.push(availablePlatform.getChangedFields());
+      if (!availablePlatform.id) {
+        base.availablePlatforms.push(availablePlatform.getChangedFields());
+      } else {
+        base.availablePlatforms.push({id: availablePlatform.id.value});
+      }
     });
     return base;
   }

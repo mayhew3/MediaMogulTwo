@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {getStatusText, InMemoryDbService, RequestInfo, ResponseOptions, STATUS} from 'angular-in-memory-web-api';
 import {MockGames} from '../mocks/games.mock';
 import {Observable} from 'rxjs';
@@ -122,20 +122,23 @@ export class InMemoryDataService implements InMemoryDbService{
       personGame.id = this.nextPersonGameID();
       personGame.game_id = game.id;
       personGame.date_added = new Date();
-      this.addNewPlatforms(personGame.myPlatforms);
+      this.updatePlatforms(personGame.myPlatforms);
     }
-    this.addNewPlatforms(game.availablePlatforms);
+    this.updatePlatforms(game.availablePlatforms);
     return this.packageUpResponse(game, requestInfo);
   }
 
-  private addNewPlatforms(array: any[]) {
+  private updatePlatforms(array: any[]) {
     const newPlatforms = _.filter(array, platform => !platform.id);
-    _.forEach(newPlatforms, platform => this.addGamePlatform(platform));
+    _.forEach(newPlatforms, platform => {
+      platform.id = this.addGamePlatform(platform);
+    });
   }
 
-  private addGamePlatform(gamePlatform: any) {
+  private addGamePlatform(gamePlatform: any): number {
     gamePlatform.id = this.nextGamePlatformID();
     this.gamePlatforms.push(gamePlatform);
+    return gamePlatform.id;
   }
 
   private updatePersonGame(requestInfo: RequestInfo) {
