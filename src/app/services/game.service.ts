@@ -10,7 +10,7 @@ import {BehaviorSubject, Subject} from 'rxjs';
 import {PlatformService} from './platform.service';
 import {GamePlatform} from '../interfaces/Model/GamePlatform';
 import {Person} from '../interfaces/Model/Person';
-import {first} from 'rxjs/operators';
+import {first, takeUntil} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -132,11 +132,11 @@ export class GameService implements OnDestroy {
           };
           this.http
             .get<any[]>(this._gamesUrl, options)
-            // .pipe(takeUntil(this._destroy$))
+            .pipe(takeUntil(this._destroy$))
             .subscribe(gameObjs => {
               this._dataStore.games = this.convertObjectsToGames(gameObjs, platforms);
               this.gameRefreshCount++;
-              console.log(`Refreshing games for the ${this.gameRefreshCount} time.`);
+              console.log(`Refreshing games for the ${this.gameRefreshCount} time: ${this._dataStore.games.length} games fetched.`);
               this.pushGameListChange();
               this._fetching = false;
             });
