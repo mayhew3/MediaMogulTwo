@@ -11,7 +11,7 @@ import * as _ from 'underscore';
 })
 export class PlatformService implements OnDestroy {
   private _platforms$ = new BehaviorSubject<GamePlatform[]>([]);
-  private _platforms: GamePlatform[] = [];
+  private _platforms: GamePlatform[];
   private _fetching = false;
 
   private _destroy$ = new Subject();
@@ -25,7 +25,7 @@ export class PlatformService implements OnDestroy {
   }
 
   maybeRefreshCache() {
-    if (this._platforms.length === 0 && !this._fetching) {
+    if (!this._platforms) {
       this._fetching = true;
       this.refreshCache();
     }

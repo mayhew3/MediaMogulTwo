@@ -1,4 +1,4 @@
-import {Injectable, OnDestroy} from '@angular/core';
+import {Injectable, OnDestroy, OnInit} from '@angular/core';
 import {Game} from '../interfaces/Model/Game';
 import {HttpClient} from '@angular/common/http';
 import {ArrayService} from './array.service';
@@ -7,16 +7,14 @@ import {PersonGame} from '../interfaces/Model/PersonGame';
 import {GameplaySession} from '../interfaces/Model/GameplaySession';
 import {PersonService} from './person.service';
 import {BehaviorSubject, Subject} from 'rxjs';
-import {Person} from '../interfaces/Model/Person';
-import {takeUntil} from 'rxjs/operators';
 import {PlatformService} from './platform.service';
+import {GamePlatform} from '../interfaces/Model/GamePlatform';
+import {Person} from '../interfaces/Model/Person';
 
 @Injectable({
   providedIn: 'root'
 })
-export class GameService implements OnDestroy {
-  private _me: Person;
-
+export class GameService implements OnInit, OnDestroy {
   private _gamesUrl = 'api/games';
   private _games$ = new BehaviorSubject<Game[]>([]);
   private _dataStore: {games: Game[]} = {games: []};
@@ -24,12 +22,19 @@ export class GameService implements OnDestroy {
 
   private _destroy$ = new Subject();
 
+  private me: Person;
+  private allPlatforms: GamePlatform[];
 
   constructor(private http: HttpClient,
               private arrayService: ArrayService,
               private personService: PersonService,
               private platformService: PlatformService) {
-    this.personService.me$.subscribe(person => this._me = person);
+    this.platformService.maybeRefreshCache();
+  }
+
+
+  ngOnInit(): void {
+
   }
 
   // public observable for all changes to game list
@@ -68,15 +73,13 @@ export class GameService implements OnDestroy {
   }
 
   async addToMyGames(game: Game, rating: number): Promise<any> {
-    this.personService.me$.subscribe(async person => {
-      const personGame = new PersonGame(this.platformService);
-      personGame.person_id.value = person.id.value;
-      personGame.game_id.value = game.id.value;
-      personGame.rating.value = rating;
+    const personGame = new PersonGame(this.platformService, this.allPlatforms);
+    personGame.person_id.value = this.me.id.value;
+    personGame.game_id.value = game.id.value;
+    personGame.rating.value = rating;
 
-      game.personGame = await personGame.commit(this.http);
-      this.pushGameListChange();
-    });
+    game.personGame = await personGame.commit(this.http);
+    this.pushGameListChange();
   }
 
   async updateGame(game: Game): Promise<any> {
@@ -109,22 +112,28 @@ export class GameService implements OnDestroy {
   // PRIVATE CACHE MANAGEMENT METHODS
 
   private refreshCache() {
-    this.personService.me$.subscribe(person => {
-      const personID = person.id.value;
-      const payload = {
-        person_id: personID.toString()
-      };
-      const options = {
-        params: payload
-      };
-      this.http
-        .get<any[]>(this._gamesUrl, options)
-        .pipe(takeUntil(this._destroy$))
-        .subscribe(gameObjs => {
-          this._dataStore.games = this.convertObjectsToGames(gameObjs);
-          this.pushGameListChange();
-          this._fetching = false;
-        })
+    this.platformService.platforms.subscribe(platforms => {
+      this.personService.me$.subscribe(person => {
+        this.me = person;
+        if (!!platforms && platforms.length > 0) {
+          this.allPlatforms = platforms;
+          const personID = person.id.value;
+          const payload = {
+            person_id: personID.toString()
+          };
+          const options = {
+            params: payload
+          };
+          this.http
+            .get<any[]>(this._gamesUrl, options)
+            // .pipe(takeUntil(this._destroy$))
+            .subscribe(gameObjs => {
+              this._dataStore.games = this.convertObjectsToGames(gameObjs, platforms);
+              this.pushGameListChange();
+              this._fetching = false;
+            });
+        }
+      });
     });
   }
 
@@ -133,8 +142,9 @@ export class GameService implements OnDestroy {
     this._games$.next(this.arrayService.cloneArray(this._dataStore.games));
   }
 
-  private convertObjectsToGames(gameObjs: any[]): Game[] {
-    return _.map(gameObjs, gameObj => new Game(this.platformService).initializedFromJSON(gameObj));
+  private convertObjectsToGames(gameObjs: any[], platforms: GamePlatform[]): Game[] {
+    return _.map(gameObjs, gameObj => new Game(this.platformService, platforms).initializedFromJSON(gameObj));
   }
+
 
 }

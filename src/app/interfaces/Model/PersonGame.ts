@@ -19,14 +19,11 @@ export class PersonGame extends DataObject {
 
   private _myPlatforms: GamePlatform[] = [];
 
-  private allPlatforms: GamePlatform[];
-
-  constructor(private platformService: PlatformService) {
+  constructor(private platformService: PlatformService,
+              private allPlatforms: GamePlatform[]) {
     super();
     this.minutes_played.value = 0;
     this.tier.value = 2;
-    this.platformService.platforms.subscribe(platforms => this.allPlatforms = platforms);
-    this.platformService.maybeRefreshCache();
   }
 
   get myPlatforms(): GamePlatform[] {

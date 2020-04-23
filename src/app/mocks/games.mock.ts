@@ -9,13 +9,7 @@ export const MockGames = [
     "title": "Dragon Age II",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2558591-da2clean.jpg",
     "giantbomb_id": 30995,
     "steam_cloud": null,
@@ -35,13 +29,7 @@ export const MockGames = [
       "rating": 84.1,
       "finished_date": null,
       "id": 588,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 78
@@ -54,13 +42,7 @@ export const MockGames = [
     "title": "New Super Mario Bros. U",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Wii U",
-      "igdb_platform_id": 41,
-      "short_name": "Wii U",
-      "id": 5,
-      "igdb_name": "Wii U"
-    }],
+    "availablePlatforms": [{"id": 5}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2392120-nsmbu_illu01_1_ad.png",
     "giantbomb_id": 35574,
     "steam_cloud": null,
@@ -80,13 +62,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 650,
-      "myPlatforms": [{
-        "full_name": "Wii U",
-        "igdb_platform_id": 41,
-        "short_name": "Wii U",
-        "id": 5,
-        "igdb_name": "Wii U"
-      }],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 2171
@@ -99,11 +75,7 @@ export const MockGames = [
     "title": "Papo & Yo",
     "steamid": 227080,
     "date_added": "2013-10-31 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/17/171291/2554102-1903214966-480_6.jpg",
     "giantbomb_id": 35512,
     "steam_cloud": true,
@@ -123,11 +95,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 101,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7388
@@ -140,11 +108,7 @@ export const MockGames = [
     "title": "Kentucky Route Zero",
     "steamid": 231200,
     "date_added": "2014-06-24 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/81005/2409605-.png",
     "giantbomb_id": 41082,
     "steam_cloud": false,
@@ -164,11 +128,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 272,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 5614
@@ -181,13 +141,7 @@ export const MockGames = [
     "title": "Forza Motorsport 4",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1974939-box_forza4.png",
     "giantbomb_id": 33400,
     "steam_cloud": null,
@@ -207,13 +161,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 718,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 3068
@@ -226,13 +174,7 @@ export const MockGames = [
     "title": "Mario Kart 8",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Wii U",
-      "igdb_platform_id": 41,
-      "short_name": "Wii U",
-      "id": 5,
-      "igdb_name": "Wii U"
-    }],
+    "availablePlatforms": [{"id": 5}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2600974-12510938343_01c49da2be_o.jpg",
     "giantbomb_id": 42929,
     "steam_cloud": null,
@@ -252,13 +194,7 @@ export const MockGames = [
       "rating": 30,
       "finished_date": null,
       "id": 447,
-      "myPlatforms": [{
-        "full_name": "Wii U",
-        "igdb_platform_id": 41,
-        "short_name": "Wii U",
-        "id": 5,
-        "igdb_name": "Wii U"
-      }],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 2350
@@ -271,13 +207,7 @@ export const MockGames = [
     "title": "The Witcher",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2558589-w1clean.jpg",
     "giantbomb_id": 10473,
     "steam_cloud": null,
@@ -297,13 +227,7 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 584,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 80
@@ -317,18 +241,8 @@ export const MockGames = [
     "steamid": 33230,
     "date_added": "2014-06-26 00:00:00.0",
     "availablePlatforms": [
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      },
-      {
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }
+      {"id": 1},
+      {"id": 7}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2167089-box_ac2.png",
     "giantbomb_id": 22928,
@@ -350,18 +264,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 731,
       "myPlatforms": [
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        },
-        {
-          "full_name": "Xbox 360",
-          "igdb_platform_id": 12,
-          "short_name": "Xbox 360",
-          "id": 7,
-          "igdb_name": "Xbox 360"
-        }
+        {"id": 1},
+        {"id": 7}
       ],
       "person_id": 1
     }],
@@ -375,13 +279,7 @@ export const MockGames = [
     "title": "MLB 13: The Show",
     "steamid": null,
     "date_added": "2014-05-02 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2421661-box_mlb13ts.png",
     "giantbomb_id": 40654,
     "steam_cloud": null,
@@ -401,13 +299,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 70,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 7375
@@ -420,13 +312,7 @@ export const MockGames = [
     "title": "Shadow of the Colossus",
     "steamid": null,
     "date_added": "2013-11-02 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2481874-box_sotc.png",
     "giantbomb_id": 6522,
     "steam_cloud": null,
@@ -446,13 +332,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 444,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 2207
@@ -465,13 +345,7 @@ export const MockGames = [
     "title": "Red Dead Redemption",
     "steamid": null,
     "date_added": "2013-11-22 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2737123-reddeadredemption.jpg",
     "giantbomb_id": 25249,
     "steam_cloud": null,
@@ -491,13 +365,7 @@ export const MockGames = [
       "rating": 82.6,
       "finished_date": null,
       "id": 396,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 434
@@ -510,13 +378,7 @@ export const MockGames = [
     "title": "Guild Wars 2",
     "steamid": null,
     "date_added": "2013-12-28 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2323860-box_gw2.png",
     "giantbomb_id": 21223,
     "steam_cloud": null,
@@ -536,13 +398,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 370,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 1183
@@ -555,13 +411,7 @@ export const MockGames = [
     "title": "The Last of Us",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2419553-397060_386577108098888_427807760_n.jpg",
     "giantbomb_id": 36989,
     "steam_cloud": null,
@@ -581,13 +431,7 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 491,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 1009
@@ -600,13 +444,7 @@ export const MockGames = [
     "title": "Planescape: Torment",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/118/685958-planescape.jpeg",
     "giantbomb_id": 2235,
     "steam_cloud": null,
@@ -626,13 +464,7 @@ export const MockGames = [
       "rating": 10,
       "finished_date": null,
       "id": 250,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 832
@@ -645,11 +477,7 @@ export const MockGames = [
     "title": "Sid Meier's Civilization V",
     "steamid": 8930,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1777728-box_civ5.png",
     "giantbomb_id": 30057,
     "steam_cloud": true,
@@ -669,11 +497,7 @@ export const MockGames = [
       "rating": 78.8,
       "finished_date": null,
       "id": 753,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 866
@@ -686,13 +510,7 @@ export const MockGames = [
     "title": "Fallout 3",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1974388-box_fallout3.png",
     "giantbomb_id": 20504,
     "steam_cloud": null,
@@ -712,13 +530,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 653,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 15
@@ -731,13 +543,7 @@ export const MockGames = [
     "title": "ICO",
     "steamid": null,
     "date_added": "2013-11-02 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2380170-yande.re_154252_ico_ico__character__landscape_paper_texture_ueda_fumito_yorda.jpg",
     "giantbomb_id": 9638,
     "steam_cloud": null,
@@ -757,13 +563,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 649,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 7170
@@ -776,13 +576,7 @@ export const MockGames = [
     "title": "Braid",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1331143-braid_box.png",
     "giantbomb_id": 20716,
     "steam_cloud": null,
@@ -802,13 +596,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 318,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 2853
@@ -821,11 +609,7 @@ export const MockGames = [
     "title": "Sonic & All-Stars Racing Transformed Collection",
     "steamid": 212480,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2348795-box_saasrt.png",
     "giantbomb_id": 38173,
     "steam_cloud": true,
@@ -845,11 +629,7 @@ export const MockGames = [
       "rating": 85.8,
       "finished_date": null,
       "id": 187,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 53626
@@ -862,11 +642,7 @@ export const MockGames = [
     "title": "The Stanley Parable",
     "steamid": 221910,
     "date_added": "2013-10-31 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/9712/2520236-2947127290-",
     "giantbomb_id": 43344,
     "steam_cloud": true,
@@ -886,11 +662,7 @@ export const MockGames = [
       "rating": 89.5,
       "finished_date": "2020-04-20 18:22:58.172",
       "id": 619,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3035
@@ -903,11 +675,7 @@ export const MockGames = [
     "title": "Transistor",
     "steamid": 237930,
     "date_added": "2014-06-27 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/97089/2632715-untitled.jpg",
     "giantbomb_id": 42012,
     "steam_cloud": true,
@@ -927,11 +695,7 @@ export const MockGames = [
       "rating": 90.4,
       "finished_date": null,
       "id": 283,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3022
@@ -944,13 +708,7 @@ export const MockGames = [
     "title": "Puppeteer",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2525231-box_puppeteer.png",
     "giantbomb_id": 39361,
     "steam_cloud": null,
@@ -970,13 +728,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 743,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 7391
@@ -989,13 +741,7 @@ export const MockGames = [
     "title": "Ratchet and Clank",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1832157-box_racftod.png",
     "giantbomb_id": 15212,
     "steam_cloud": null,
@@ -1015,13 +761,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 443,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 1792
@@ -1034,13 +774,7 @@ export const MockGames = [
     "title": "Mirror's Edge",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1810159-box_medge.png",
     "giantbomb_id": 21213,
     "steam_cloud": null,
@@ -1060,13 +794,7 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 450,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 1051
@@ -1080,20 +808,8 @@ export const MockGames = [
     "steamid": null,
     "date_added": null,
     "availablePlatforms": [
-      {
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 6},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2139780-box_gow.png",
     "giantbomb_id": 6959,
@@ -1115,20 +831,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 448,
       "myPlatforms": [
-        {
-          "full_name": "PS3",
-          "igdb_platform_id": 9,
-          "short_name": "PS3",
-          "id": 6,
-          "igdb_name": "PlayStation 3"
-        },
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }
+        {"id": 6},
+        {"id": 11}
       ],
       "person_id": 1
     }],
@@ -1142,13 +846,7 @@ export const MockGames = [
     "title": "Half-Life 2: Episode One",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2489841-box_hl2e1.png",
     "giantbomb_id": 14328,
     "steam_cloud": null,
@@ -1168,13 +866,7 @@ export const MockGames = [
       "rating": 94,
       "finished_date": null,
       "id": 261,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 338
@@ -1187,11 +879,7 @@ export const MockGames = [
     "title": "Mark of the Ninja",
     "steamid": 214560,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/3/34651/2406738-mark_of_the_ninja.png",
     "giantbomb_id": 37615,
     "steam_cloud": true,
@@ -1211,11 +899,7 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 499,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2129
@@ -1229,18 +913,8 @@ export const MockGames = [
     "steamid": 242550,
     "date_added": "2014-06-24 00:00:00.0",
     "availablePlatforms": [
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 1},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2539437-raymanlegendsclean.jpg",
     "giantbomb_id": 38141,
@@ -1262,18 +936,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 279,
       "myPlatforms": [
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        },
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }
+        {"id": 1},
+        {"id": 11}
       ],
       "person_id": 1
     }],
@@ -1287,13 +951,7 @@ export const MockGames = [
     "title": "Outland",
     "steamid": null,
     "date_added": "2013-12-27 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1771221-box_outland.png",
     "giantbomb_id": 32552,
     "steam_cloud": null,
@@ -1313,13 +971,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 286,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 8371
@@ -1332,11 +984,7 @@ export const MockGames = [
     "title": "Super Hexagon",
     "steamid": 221640,
     "date_added": "2013-12-28 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2418687-mzl.grebaimp.png",
     "giantbomb_id": 39686,
     "steam_cloud": false,
@@ -1356,11 +1004,7 @@ export const MockGames = [
       "rating": 69,
       "finished_date": null,
       "id": 365,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3251
@@ -1373,11 +1017,7 @@ export const MockGames = [
     "title": "Guacamelee! Gold Edition",
     "steamid": 214770,
     "date_added": "2013-12-28 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/90628/2772306-header_image.jpg",
     "giantbomb_id": 50541,
     "steam_cloud": true,
@@ -1397,11 +1037,7 @@ export const MockGames = [
       "rating": 84.4,
       "finished_date": null,
       "id": 363,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19121
@@ -1414,13 +1050,7 @@ export const MockGames = [
     "title": "Infamous",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1967509-box_infamous.png",
     "giantbomb_id": 20599,
     "steam_cloud": null,
@@ -1440,13 +1070,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 744,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 523
@@ -1459,13 +1083,7 @@ export const MockGames = [
     "title": "Resident Evil 4",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Wii",
-      "igdb_platform_id": 5,
-      "short_name": "Wii",
-      "id": 8,
-      "igdb_name": "Wii"
-    }],
+    "availablePlatforms": [{"id": 8}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2566479-re4.jpg",
     "giantbomb_id": 1578,
     "steam_cloud": null,
@@ -1485,13 +1103,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 367,
-      "myPlatforms": [{
-        "full_name": "Wii",
-        "igdb_platform_id": 5,
-        "short_name": "Wii",
-        "id": 8,
-        "igdb_name": "Wii"
-      }],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 974
@@ -1504,13 +1116,7 @@ export const MockGames = [
     "title": "Shadow Complex",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/13158/1087721-gb.png",
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -1530,13 +1136,7 @@ export const MockGames = [
     "title": "The Legend of Zelda: Twilight Princess",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Wii",
-      "igdb_platform_id": 5,
-      "short_name": "Wii",
-      "id": 8,
-      "igdb_name": "Wii"
-    }],
+    "availablePlatforms": [{"id": 8}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2427157-tp2.jpg",
     "giantbomb_id": 19467,
     "steam_cloud": null,
@@ -1556,13 +1156,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 698,
-      "myPlatforms": [{
-        "full_name": "Wii",
-        "igdb_platform_id": 5,
-        "short_name": "Wii",
-        "id": 8,
-        "igdb_name": "Wii"
-      }],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 1036
@@ -1575,13 +1169,7 @@ export const MockGames = [
     "title": "The Legend of Zelda: Skyward Sword",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Wii",
-      "igdb_platform_id": 5,
-      "short_name": "Wii",
-      "id": 8,
-      "igdb_name": "Wii"
-    }],
+    "availablePlatforms": [{"id": 8}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2338815-skywardcolor.jpg",
     "giantbomb_id": 26934,
     "steam_cloud": null,
@@ -1601,13 +1189,7 @@ export const MockGames = [
       "rating": 83.4,
       "finished_date": null,
       "id": 601,
-      "myPlatforms": [{
-        "full_name": "Wii",
-        "igdb_platform_id": 5,
-        "short_name": "Wii",
-        "id": 8,
-        "igdb_name": "Wii"
-      }],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 534
@@ -1620,11 +1202,7 @@ export const MockGames = [
     "title": "Strike Suit Zero",
     "steamid": 209540,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2420646-1359010657_j4hplgwbrt9vfvm.jpeg",
     "giantbomb_id": 36090,
     "steam_cloud": true,
@@ -1644,11 +1222,7 @@ export const MockGames = [
       "rating": 84.5,
       "finished_date": null,
       "id": 710,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 8507
@@ -1661,13 +1235,7 @@ export const MockGames = [
     "title": "New Super Mario Bros. Wii",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Wii",
-      "igdb_platform_id": 5,
-      "short_name": "Wii",
-      "id": 8,
-      "igdb_name": "Wii"
-    }],
+    "availablePlatforms": [{"id": 8}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2609765-nsmbwii.jpg",
     "giantbomb_id": 26841,
     "steam_cloud": null,
@@ -1687,13 +1255,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 746,
-      "myPlatforms": [{
-        "full_name": "Wii",
-        "igdb_platform_id": 5,
-        "short_name": "Wii",
-        "id": 8,
-        "igdb_name": "Wii"
-      }],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 2178
@@ -1707,20 +1269,8 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2014-01-03 00:00:00.0",
     "availablePlatforms": [
-      {
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 6},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1794108-box_heavyrain.png",
     "giantbomb_id": 21304,
@@ -1742,20 +1292,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 747,
       "myPlatforms": [
-        {
-          "full_name": "PS3",
-          "igdb_platform_id": 9,
-          "short_name": "PS3",
-          "id": 6,
-          "igdb_name": "PlayStation 3"
-        },
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }
+        {"id": 6},
+        {"id": 11}
       ],
       "person_id": 1
     }],
@@ -1769,11 +1307,7 @@ export const MockGames = [
     "title": "XCOM: Enemy Unknown",
     "steamid": 200510,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2560503-xcomclean.jpg",
     "giantbomb_id": 37152,
     "steam_cloud": true,
@@ -1793,11 +1327,7 @@ export const MockGames = [
       "rating": 90,
       "finished_date": "2016-01-15 00:00:00.0",
       "id": 725,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1318
@@ -1810,13 +1340,7 @@ export const MockGames = [
     "title": "Resistance: Fall of Man",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1789601-box_resfom.png",
     "giantbomb_id": 9741,
     "steam_cloud": null,
@@ -1836,13 +1360,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 680,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 1278
@@ -1855,13 +1373,7 @@ export const MockGames = [
     "title": "Dragon's Dogma",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2111576-box_ddogma.png",
     "giantbomb_id": 34776,
     "steam_cloud": null,
@@ -1881,13 +1393,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 338,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 3968
@@ -1900,13 +1406,7 @@ export const MockGames = [
     "title": "The Elder Scrolls IV: Oblivion",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2280495-box_oblivion.png",
     "giantbomb_id": 20238,
     "steam_cloud": null,
@@ -1926,13 +1426,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 384,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 59
@@ -1945,13 +1439,7 @@ export const MockGames = [
     "title": "Gran Turismo 5",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1794106-box_gt5.png",
     "giantbomb_id": 21790,
     "steam_cloud": null,
@@ -1971,13 +1459,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 636,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 1602
@@ -1990,11 +1472,7 @@ export const MockGames = [
     "title": "Path of Exile",
     "steamid": 238960,
     "date_added": "2013-10-31 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/6/62890/2381999-path_of_exile_box.jpg",
     "giantbomb_id": 32562,
     "steam_cloud": false,
@@ -2014,11 +1492,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 189,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1911
@@ -2031,11 +1505,7 @@ export const MockGames = [
     "title": "Lone Survivor: The Director's Cut",
     "steamid": 209830,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/15/155745/2188072-lone_survivor_l__en__2012_1333561198_442490.png",
     "giantbomb_id": 37794,
     "steam_cloud": true,
@@ -2055,11 +1525,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 733,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 21683
@@ -2072,11 +1538,7 @@ export const MockGames = [
     "title": "Bioshock Burial At Sea",
     "steamid": null,
     "date_added": "2014-01-03 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -2096,11 +1558,7 @@ export const MockGames = [
       "rating": 91.6,
       "finished_date": "2014-05-18 00:00:00.0",
       "id": 547,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 10047
@@ -2113,11 +1571,7 @@ export const MockGames = [
     "title": "Tomb Raider II",
     "steamid": 225300,
     "date_added": "2014-08-25 22:57:38.917",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1810971-box_traider2.png",
     "giantbomb_id": 337,
     "steam_cloud": false,
@@ -2137,11 +1591,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 313,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1156
@@ -2154,11 +1604,7 @@ export const MockGames = [
     "title": "Frozen Synapse",
     "steamid": 98200,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3699/1795005-frozen_synapse.jpg",
     "giantbomb_id": 26505,
     "steam_cloud": false,
@@ -2178,11 +1624,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 256,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2248
@@ -2195,11 +1637,7 @@ export const MockGames = [
     "title": "Q.U.B.E.",
     "steamid": 203730,
     "date_added": "2013-10-31 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2103141-box_qube.png",
     "giantbomb_id": 36268,
     "steam_cloud": null,
@@ -2219,11 +1657,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 281,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 5445
@@ -2236,11 +1670,7 @@ export const MockGames = [
     "title": "Q.U.B.E: Director's Cut",
     "steamid": 239430,
     "date_added": "2014-08-25 22:57:38.919",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2635435-qubedc.jpg",
     "giantbomb_id": 42875,
     "steam_cloud": true,
@@ -2260,11 +1690,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 477,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19961
@@ -2277,11 +1703,7 @@ export const MockGames = [
     "title": "Deponia",
     "steamid": 214340,
     "date_added": "2013-10-31 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/97089/2102771-box.jpg",
     "giantbomb_id": 36334,
     "steam_cloud": true,
@@ -2301,11 +1723,7 @@ export const MockGames = [
       "rating": 84.7,
       "finished_date": null,
       "id": 319,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 5060
@@ -2318,11 +1736,7 @@ export const MockGames = [
     "title": "Universe Sandbox",
     "steamid": 72200,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1777674-box_unisand.png",
     "giantbomb_id": 34987,
     "steam_cloud": false,
@@ -2342,11 +1756,7 @@ export const MockGames = [
       "rating": 50,
       "finished_date": null,
       "id": 735,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 11812
@@ -2359,11 +1769,7 @@ export const MockGames = [
     "title": "Awesomenauts",
     "steamid": 204300,
     "date_added": "2014-06-23 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2188497-box_anauts.png",
     "giantbomb_id": 35377,
     "steam_cloud": true,
@@ -2383,11 +1789,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 391,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1281
@@ -2400,11 +1802,7 @@ export const MockGames = [
     "title": "Deadlight",
     "steamid": 211400,
     "date_added": "2013-10-31 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2132183-box_dlight.png",
     "giantbomb_id": 37262,
     "steam_cloud": true,
@@ -2424,11 +1822,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 347,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2354
@@ -2441,11 +1835,7 @@ export const MockGames = [
     "title": "System Shock 2",
     "steamid": 238210,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/15693/608097-systemshock2box_1_.jpg",
     "giantbomb_id": 8870,
     "steam_cloud": false,
@@ -2465,11 +1855,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 751,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 22
@@ -2482,11 +1868,7 @@ export const MockGames = [
     "title": "The Swapper",
     "steamid": 231160,
     "date_added": "2013-10-31 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/13/133506/2502628-the-swapper-cover.png",
     "giantbomb_id": 32940,
     "steam_cloud": false,
@@ -2506,11 +1888,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 345,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 5892
@@ -2523,11 +1901,7 @@ export const MockGames = [
     "title": "Shelter 1",
     "steamid": 244710,
     "date_added": "2013-12-28 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/1992/2486904-steamworkshop_collection_139295005_collection_branding.jpg",
     "giantbomb_id": 42713,
     "steam_cloud": false,
@@ -2547,11 +1921,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 421,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7832
@@ -2564,11 +1934,7 @@ export const MockGames = [
     "title": "The Mysterious Cities of Gold - Secret Paths",
     "steamid": 261940,
     "date_added": "2014-08-26 17:22:21.573",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/18/181144/2664073-the+mysterious+cities+of+gold-+secret+paths.jpg",
     "giantbomb_id": 47208,
     "steam_cloud": false,
@@ -2588,11 +1954,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 204,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 53763
@@ -2605,11 +1967,7 @@ export const MockGames = [
     "title": "Broken Age",
     "steamid": 232790,
     "date_added": "2014-06-28 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/8169/2473205-brokenage-960x664.jpg",
     "giantbomb_id": 37448,
     "steam_cloud": true,
@@ -2629,11 +1987,7 @@ export const MockGames = [
       "rating": 89,
       "finished_date": null,
       "id": 245,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3087
@@ -2646,11 +2000,7 @@ export const MockGames = [
     "title": "Sins of a Solar Empire: Rebellion",
     "steamid": 204880,
     "date_added": "2014-09-29 03:48:16.554",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/13/136036/2492737-81rztwbwwcl._sl1500_.jpg",
     "giantbomb_id": 34294,
     "steam_cloud": true,
@@ -2670,11 +2020,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 340,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9924
@@ -2687,11 +2033,7 @@ export const MockGames = [
     "title": "Injustice: Gods Among Us Ultimate Edition",
     "steamid": 242700,
     "date_added": "2014-10-18 03:45:07.47",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -2711,11 +2053,7 @@ export const MockGames = [
     "title": "The Longest Journey",
     "steamid": 6310,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/4969/664019-longest.jpg",
     "giantbomb_id": 8759,
     "steam_cloud": false,
@@ -2735,11 +2073,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 333,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 895
@@ -2752,11 +2086,7 @@ export const MockGames = [
     "title": "DiRT 3",
     "steamid": 44320,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1891340-box_dirt3.png",
     "giantbomb_id": 30383,
     "steam_cloud": null,
@@ -2776,11 +2106,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 709,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 524
@@ -2793,13 +2119,7 @@ export const MockGames = [
     "title": "Super Mario Galaxy",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Wii",
-      "igdb_platform_id": 5,
-      "short_name": "Wii",
-      "id": 8,
-      "igdb_name": "Wii"
-    }],
+    "availablePlatforms": [{"id": 8}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/13774/488943-super_mario_galaxy.jpg",
     "giantbomb_id": 16094,
     "steam_cloud": null,
@@ -2819,13 +2139,7 @@ export const MockGames = [
       "rating": 85.5,
       "finished_date": null,
       "id": 277,
-      "myPlatforms": [{
-        "full_name": "Wii",
-        "igdb_platform_id": 5,
-        "short_name": "Wii",
-        "id": 8,
-        "igdb_name": "Wii"
-      }],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 1077
@@ -2838,13 +2152,7 @@ export const MockGames = [
     "title": "Star Wars: Empire at War",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/118/616437-eaw_keyart.jpg",
     "giantbomb_id": 4614,
     "steam_cloud": null,
@@ -2864,13 +2172,7 @@ export const MockGames = [
       "rating": 81.5,
       "finished_date": null,
       "id": 496,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 144
@@ -2883,13 +2185,7 @@ export const MockGames = [
     "title": "MLB 11: The Show",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2146376-box_mlb11ts.png",
     "giantbomb_id": 33424,
     "steam_cloud": null,
@@ -2909,13 +2205,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 581,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 7373
@@ -2928,11 +2218,7 @@ export const MockGames = [
     "title": "Far Cry® 3 Blood Dragon",
     "steamid": 233270,
     "date_added": "2014-06-20 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2468656-box_fc3bd.png",
     "giantbomb_id": 42241,
     "steam_cloud": false,
@@ -2952,11 +2238,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 197,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2001
@@ -2969,11 +2251,7 @@ export const MockGames = [
     "title": "Dust: An Elysian Tail",
     "steamid": 236090,
     "date_added": "2013-12-01 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2232808-box_dustaet.png",
     "giantbomb_id": 27691,
     "steam_cloud": true,
@@ -2993,11 +2271,7 @@ export const MockGames = [
       "rating": 84.5,
       "finished_date": null,
       "id": 91,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2130
@@ -3010,11 +2284,7 @@ export const MockGames = [
     "title": "State of Decay",
     "steamid": 241540,
     "date_added": "2014-06-20 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2303996-box_sod.png",
     "giantbomb_id": 34088,
     "steam_cloud": false,
@@ -3034,11 +2304,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 759,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3049
@@ -3051,13 +2317,7 @@ export const MockGames = [
     "title": "Metroid Prime: Trilogy",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Wii",
-      "igdb_platform_id": 5,
-      "short_name": "Wii",
-      "id": 8,
-      "igdb_name": "Wii"
-    }],
+    "availablePlatforms": [{"id": 8}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2550133-mptrilogy.jpg",
     "giantbomb_id": 26559,
     "steam_cloud": null,
@@ -3077,13 +2337,7 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 374,
-      "myPlatforms": [{
-        "full_name": "Wii",
-        "igdb_platform_id": 5,
-        "short_name": "Wii",
-        "id": 8,
-        "igdb_name": "Wii"
-      }],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 1112
@@ -3096,11 +2350,7 @@ export const MockGames = [
     "title": "The Lord of the Rings Online",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1852734-box_lotrosoa.png",
     "giantbomb_id": 12376,
     "steam_cloud": null,
@@ -3120,11 +2370,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 67,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3092
@@ -3137,13 +2383,7 @@ export const MockGames = [
     "title": "Tom Clancy's Rainbox Six: Vegas",
     "steamid": null,
     "date_added": "2013-11-02 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/13158/1048160-gb.png",
     "giantbomb_id": 3550,
     "steam_cloud": null,
@@ -3163,13 +2403,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 368,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 909
@@ -3182,13 +2416,7 @@ export const MockGames = [
     "title": "Rock Band 3",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1885919-box_rockband3.png",
     "giantbomb_id": 27919,
     "steam_cloud": null,
@@ -3208,13 +2436,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 651,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 2691
@@ -3228,18 +2450,8 @@ export const MockGames = [
     "steamid": 239030,
     "date_added": "2013-11-28 00:00:00.0",
     "availablePlatforms": [
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 1},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2478680-box_pp.png",
     "giantbomb_id": 41931,
@@ -3261,18 +2473,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 383,
       "myPlatforms": [
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        },
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }
+        {"id": 1},
+        {"id": 11}
       ],
       "person_id": 1
     }],
@@ -3286,13 +2488,7 @@ export const MockGames = [
     "title": "Devil May Cry 4",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2372454-box_dmc4.png",
     "giantbomb_id": 6681,
     "steam_cloud": null,
@@ -3312,13 +2508,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 401,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 112
@@ -3331,11 +2521,7 @@ export const MockGames = [
     "title": "Crusader Kings II",
     "steamid": 203770,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2132181-box_ck2.png",
     "giantbomb_id": 32622,
     "steam_cloud": false,
@@ -3355,11 +2541,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 298,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2918
@@ -3372,13 +2554,7 @@ export const MockGames = [
     "title": "DmC: Devil May Cry",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2348779-box_dmc.png",
     "giantbomb_id": 32686,
     "steam_cloud": null,
@@ -3398,13 +2574,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 294,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 1254
@@ -3417,13 +2587,7 @@ export const MockGames = [
     "title": "Forza Horizon",
     "steamid": null,
     "date_added": "2014-01-03 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2348781-box_forzah.png",
     "giantbomb_id": 37648,
     "steam_cloud": null,
@@ -3443,13 +2607,7 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 310,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 3047
@@ -3462,11 +2620,7 @@ export const MockGames = [
     "title": "TrackMania² Canyon",
     "steamid": 228760,
     "date_added": "2013-12-28 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3699/1868742-trackmania_2___canyon.jpg",
     "giantbomb_id": 28194,
     "steam_cloud": false,
@@ -3486,11 +2640,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 481,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 508
@@ -3503,13 +2653,7 @@ export const MockGames = [
     "title": "Mario Kart DS",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "NDS",
-      "igdb_platform_id": 20,
-      "short_name": "NDS",
-      "id": 9,
-      "igdb_name": "Nintendo DS"
-    }],
+    "availablePlatforms": [{"id": 9}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2261114-box_mkds.png",
     "giantbomb_id": 6539,
     "steam_cloud": null,
@@ -3529,13 +2673,7 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 689,
-      "myPlatforms": [{
-        "full_name": "NDS",
-        "igdb_platform_id": 20,
-        "short_name": "NDS",
-        "id": 9,
-        "igdb_name": "Nintendo DS"
-      }],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 2345
@@ -3548,13 +2686,7 @@ export const MockGames = [
     "title": "Star Wars Pinball",
     "steamid": null,
     "date_added": "2013-11-02 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3155906-1921528714-3102534_R_Z001A",
     "giantbomb_id": 76577,
     "steam_cloud": null,
@@ -3574,13 +2706,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 114,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 86260
@@ -3593,11 +2719,7 @@ export const MockGames = [
     "title": "Space Pirates and Zombies",
     "steamid": 107200,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1867221-box_spaz.png",
     "giantbomb_id": 35942,
     "steam_cloud": true,
@@ -3617,11 +2739,7 @@ export const MockGames = [
       "rating": 78.9,
       "finished_date": null,
       "id": 358,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2989
@@ -3634,11 +2752,7 @@ export const MockGames = [
     "title": "Torchlight II",
     "steamid": 200710,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/3/30036/2090837-torchlight_2_cover_art.png",
     "giantbomb_id": 32255,
     "steam_cloud": true,
@@ -3658,11 +2772,7 @@ export const MockGames = [
       "rating": 84.5,
       "finished_date": null,
       "id": 348,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1337
@@ -3675,11 +2785,7 @@ export const MockGames = [
     "title": "Dear Esther",
     "steamid": 203810,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2174133-dearesther.jpg",
     "giantbomb_id": 33629,
     "steam_cloud": true,
@@ -3699,11 +2805,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 342,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3082
@@ -3716,13 +2818,7 @@ export const MockGames = [
     "title": "Beyond Good & Evil",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2167090-box_bgae.png",
     "giantbomb_id": 15835,
     "steam_cloud": null,
@@ -3742,13 +2838,7 @@ export const MockGames = [
       "rating": 1,
       "finished_date": null,
       "id": 682,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 1341
@@ -3761,13 +2851,7 @@ export const MockGames = [
     "title": "Starcraft II: Heart of the Swarm",
     "steamid": null,
     "date_added": "2013-12-28 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/99864/2456912-954721_114462_front.jpg",
     "giantbomb_id": 24078,
     "steam_cloud": null,
@@ -3787,13 +2871,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 410,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 457
@@ -3806,11 +2884,7 @@ export const MockGames = [
     "title": "Beat Hazard",
     "steamid": 49600,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1370480-dd_beha.jpg",
     "giantbomb_id": 29407,
     "steam_cloud": true,
@@ -3830,11 +2904,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 126,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7404
@@ -3848,18 +2918,8 @@ export const MockGames = [
     "steamid": 43160,
     "date_added": "2014-06-24 00:00:00.0",
     "availablePlatforms": [
-      {
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      },
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }
+      {"id": 6},
+      {"id": 1}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2213657-metroart.jpg",
     "giantbomb_id": 35485,
@@ -3881,18 +2941,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 622,
       "myPlatforms": [
-        {
-          "full_name": "PS3",
-          "igdb_platform_id": 9,
-          "short_name": "PS3",
-          "id": 6,
-          "igdb_name": "PlayStation 3"
-        },
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }
+        {"id": 6},
+        {"id": 1}
       ],
       "person_id": 1
     }],
@@ -3906,11 +2956,7 @@ export const MockGames = [
     "title": "The Binding of Isaac",
     "steamid": 113200,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2246611-box_tboi.png",
     "giantbomb_id": 35899,
     "steam_cloud": false,
@@ -3930,11 +2976,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 321,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2132
@@ -3947,13 +2989,7 @@ export const MockGames = [
     "title": "Might and Magic: Clash of Heroes",
     "steamid": null,
     "date_added": "2013-11-02 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1744557-box_mmcoh.png",
     "giantbomb_id": 26436,
     "steam_cloud": null,
@@ -3973,13 +3009,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 128,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 1889
@@ -3992,13 +3022,7 @@ export const MockGames = [
     "title": "Need for Speed: Most Wanted",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/89459/2223911-ex2it.jpg",
     "giantbomb_id": 38497,
     "steam_cloud": null,
@@ -4018,13 +3042,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 452,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 98
@@ -4037,13 +3055,7 @@ export const MockGames = [
     "title": "Thomas Was Alone",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/12/121643/2248655-twa_poster.png",
     "giantbomb_id": 38825,
     "steam_cloud": null,
@@ -4063,13 +3075,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 690,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 2291
@@ -4082,13 +3088,7 @@ export const MockGames = [
     "title": "Hotline Miami",
     "steamid": null,
     "date_added": "2013-11-02 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2343271-hotline_miami_poster_728x1024.jpg",
     "giantbomb_id": 39452,
     "steam_cloud": null,
@@ -4108,13 +3108,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 765,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 1384
@@ -4127,13 +3121,7 @@ export const MockGames = [
     "title": "Fallout 2",
     "steamid": null,
     "date_added": "2013-12-28 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/3/30036/1285936-fallout2front.jpg",
     "giantbomb_id": 5559,
     "steam_cloud": null,
@@ -4153,13 +3141,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 190,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 14
@@ -4172,13 +3154,7 @@ export const MockGames = [
     "title": "Crackdown",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1786961-box_cdown.png",
     "giantbomb_id": 4065,
     "steam_cloud": null,
@@ -4198,13 +3174,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 325,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 2896
@@ -4217,13 +3187,7 @@ export const MockGames = [
     "title": "Star Wars: The Force Unleashed",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/628/235514-swfu_final.jpg",
     "giantbomb_id": 20626,
     "steam_cloud": null,
@@ -4243,13 +3207,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 694,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 475
@@ -4262,11 +3220,7 @@ export const MockGames = [
     "title": "Monaco",
     "steamid": 113020,
     "date_added": "2013-10-31 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/10/103881/1713588-monaco.jpg",
     "giantbomb_id": 28726,
     "steam_cloud": true,
@@ -4286,11 +3240,7 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 191,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 8739
@@ -4303,13 +3253,7 @@ export const MockGames = [
     "title": "Need for Speed: Hot Pursuit",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1828913-box_nfshp.png",
     "giantbomb_id": 31698,
     "steam_cloud": null,
@@ -4329,13 +3273,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 663,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 105
@@ -4348,13 +3286,7 @@ export const MockGames = [
     "title": "Star Wars: The Old Republic",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2323886-box_swtor.png",
     "giantbomb_id": 24205,
     "steam_cloud": null,
@@ -4374,13 +3306,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 531,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 114
@@ -4393,11 +3319,7 @@ export const MockGames = [
     "title": "Prince of Persia",
     "steamid": 19980,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2280498-box_pop.png",
     "giantbomb_id": 20961,
     "steam_cloud": false,
@@ -4417,11 +3339,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 482,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2438
@@ -4434,11 +3352,7 @@ export const MockGames = [
     "title": "Quantum Conundrum",
     "steamid": 200010,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/81005/2239623-quantum_conundrum_poster.jpg",
     "giantbomb_id": 36234,
     "steam_cloud": true,
@@ -4458,11 +3372,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 273,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2448
@@ -4475,11 +3385,7 @@ export const MockGames = [
     "title": "Giana Sisters: Twisted Dreams",
     "steamid": 223220,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2478661-box_gstd.png",
     "giantbomb_id": 39484,
     "steam_cloud": true,
@@ -4499,11 +3405,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 379,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3098
@@ -4516,13 +3418,7 @@ export const MockGames = [
     "title": "Runner2: Future Legend of Rhythm Alien",
     "steamid": null,
     "date_added": "2013-11-02 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2452906-box_runner2.png",
     "giantbomb_id": 36644,
     "steam_cloud": null,
@@ -4542,13 +3438,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 460,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 5592
@@ -4561,13 +3451,7 @@ export const MockGames = [
     "title": "Defense Grid: The Awakening",
     "steamid": null,
     "date_added": "2013-11-02 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1357284-dgrid_box.png",
     "giantbomb_id": 23311,
     "steam_cloud": null,
@@ -4587,13 +3471,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 617,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 8190
@@ -4606,13 +3484,7 @@ export const MockGames = [
     "title": "Dyad",
     "steamid": null,
     "date_added": "2014-01-03 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/6/63119/1819183-dyad.jpg",
     "giantbomb_id": 35713,
     "steam_cloud": null,
@@ -4632,13 +3504,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 398,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 9132
@@ -4651,13 +3517,7 @@ export const MockGames = [
     "title": "NBA 2K14",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2575467-box_nba2k14.png",
     "giantbomb_id": 42632,
     "steam_cloud": null,
@@ -4677,13 +3537,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 691,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 5329
@@ -4696,11 +3550,7 @@ export const MockGames = [
     "title": "LEGO® The Lord of the Rings™",
     "steamid": 214510,
     "date_added": "2014-06-23 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/5207/2303686-gaming_lego_lotr_box_art.jpg",
     "giantbomb_id": 38282,
     "steam_cloud": true,
@@ -4720,11 +3570,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 394,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 4969
@@ -4737,11 +3583,7 @@ export const MockGames = [
     "title": "LEGO® MARVEL Super Heroes",
     "steamid": 249130,
     "date_added": "2014-06-23 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/5/56735/2513533-lego-marvel-cover.jpg",
     "giantbomb_id": 41090,
     "steam_cloud": true,
@@ -4761,11 +3603,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 200,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2050
@@ -4778,11 +3616,7 @@ export const MockGames = [
     "title": "Vindictus",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87298/1429573-vindictus_logo.jpg",
     "giantbomb_id": 32055,
     "steam_cloud": null,
@@ -4802,11 +3636,7 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 416,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7887
@@ -4819,13 +3649,7 @@ export const MockGames = [
     "title": "The Sims 3",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/8169/881083-936498_81672_front.jpg",
     "giantbomb_id": 20581,
     "steam_cloud": null,
@@ -4846,13 +3670,7 @@ export const MockGames = [
         "rating": 68,
         "finished_date": null,
         "id": 399,
-        "myPlatforms": [{
-          "full_name": "PC",
-          "igdb_platform_id": 6,
-          "short_name": "PC",
-          "id": 10,
-          "igdb_name": "PC (Microsoft Windows)"
-        }],
+        "myPlatforms": [{"id": 10}],
         "person_id": 1
       },
       {
@@ -4866,13 +3684,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 797,
-        "myPlatforms": [{
-          "full_name": "PC",
-          "igdb_platform_id": 6,
-          "short_name": "PC",
-          "id": 10,
-          "igdb_name": "PC (Microsoft Windows)"
-        }],
+        "myPlatforms": [{"id": 10}],
         "person_id": 4
       }
     ],
@@ -4886,13 +3698,7 @@ export const MockGames = [
     "title": "Max Payne",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox",
-      "igdb_platform_id": 11,
-      "short_name": "Xbox",
-      "id": 2,
-      "igdb_name": "Xbox"
-    }],
+    "availablePlatforms": [{"id": 2}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2737109-maxpayne.jpg",
     "giantbomb_id": 2414,
     "steam_cloud": null,
@@ -4912,13 +3718,7 @@ export const MockGames = [
       "rating": 45,
       "finished_date": null,
       "id": 529,
-      "myPlatforms": [{
-        "full_name": "Xbox",
-        "igdb_platform_id": 11,
-        "short_name": "Xbox",
-        "id": 2,
-        "igdb_name": "Xbox"
-      }],
+      "myPlatforms": [{"id": 2}],
       "person_id": 1
     }],
     "igdb_id": 18
@@ -4931,13 +3731,7 @@ export const MockGames = [
     "title": "Oddworld: Stranger's Wrath",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox",
-      "igdb_platform_id": 11,
-      "short_name": "Xbox",
-      "id": 2,
-      "igdb_name": "Xbox"
-    }],
+    "availablePlatforms": [{"id": 2}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2098006-box_owsw.png",
     "giantbomb_id": 21431,
     "steam_cloud": null,
@@ -4957,13 +3751,7 @@ export const MockGames = [
       "rating": 1,
       "finished_date": null,
       "id": 439,
-      "myPlatforms": [{
-        "full_name": "Xbox",
-        "igdb_platform_id": 11,
-        "short_name": "Xbox",
-        "id": 2,
-        "igdb_name": "Xbox"
-      }],
+      "myPlatforms": [{"id": 2}],
       "person_id": 1
     }],
     "igdb_id": 1002
@@ -4976,13 +3764,7 @@ export const MockGames = [
     "title": "Trials HD",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1841455-box_thd.png",
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -5002,13 +3784,7 @@ export const MockGames = [
     "title": "Worms 2",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/5822/852157-worms_2_front.jpg",
     "giantbomb_id": 10097,
     "steam_cloud": null,
@@ -5028,13 +3804,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 767,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 947
@@ -5047,13 +3817,7 @@ export const MockGames = [
     "title": "Burnout Paradise",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/7465/1382188-picture_2.png",
     "giantbomb_id": 5648,
     "steam_cloud": null,
@@ -5073,13 +3837,7 @@ export const MockGames = [
       "rating": 12,
       "finished_date": null,
       "id": 360,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 620
@@ -5092,13 +3850,7 @@ export const MockGames = [
     "title": "Hitman: Absolution",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/97594/2148126-34163412hma_x360_pft_pegi.jpg",
     "giantbomb_id": 26417,
     "steam_cloud": null,
@@ -5118,13 +3870,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 610,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 530
@@ -5137,11 +3883,7 @@ export const MockGames = [
     "title": "Everquest II",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/7930/389357-everquest_ii_uk_box_art.jpg",
     "giantbomb_id": 18547,
     "steam_cloud": null,
@@ -5161,11 +3903,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 479,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 18293
@@ -5178,13 +3916,7 @@ export const MockGames = [
     "title": "Forza Motorsport 2",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2213158-box_forza2.png",
     "giantbomb_id": 5881,
     "steam_cloud": null,
@@ -5204,13 +3936,7 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 591,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 3072
@@ -5223,11 +3949,7 @@ export const MockGames = [
     "title": "Marvel Heroes",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/4647/841556-marvelheroesgamepack.jpg",
     "giantbomb_id": 24894,
     "steam_cloud": null,
@@ -5247,11 +3969,7 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 627,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 50867
@@ -5264,13 +3982,7 @@ export const MockGames = [
     "title": "Battlefield: Bad Company",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2409897-box_bfbc.png",
     "giantbomb_id": 20655,
     "steam_cloud": null,
@@ -5290,13 +4002,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 685,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 473
@@ -5309,13 +4015,7 @@ export const MockGames = [
     "title": "The Sims 2: University",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/4938/609985-sims2_university.jpg",
     "giantbomb_id": 6256,
     "steam_cloud": null,
@@ -5335,13 +4035,7 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 404,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 13126
@@ -5354,11 +4048,7 @@ export const MockGames = [
     "title": "From Dust",
     "steamid": 33460,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/880/1847819-untitled_1.jpg",
     "giantbomb_id": 31722,
     "steam_cloud": false,
@@ -5378,11 +4068,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 323,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3160
@@ -5395,13 +4081,7 @@ export const MockGames = [
     "title": "Halo: Reach",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/5150/1331572-reach.jpg",
     "giantbomb_id": 26786,
     "steam_cloud": null,
@@ -5421,13 +4101,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 308,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 990
@@ -5440,13 +4114,7 @@ export const MockGames = [
     "title": "Mario Kart Wii",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Wii",
-      "igdb_platform_id": 5,
-      "short_name": "Wii",
-      "id": 8,
-      "igdb_name": "Wii"
-    }],
+    "availablePlatforms": [{"id": 8}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2560979-mkwiiclean.jpg",
     "giantbomb_id": 20645,
     "steam_cloud": null,
@@ -5466,13 +4134,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 337,
-      "myPlatforms": [{
-        "full_name": "Wii",
-        "igdb_platform_id": 5,
-        "short_name": "Wii",
-        "id": 8,
-        "igdb_name": "Wii"
-      }],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 2183
@@ -5485,13 +4147,7 @@ export const MockGames = [
     "title": "Marvel: Ultimate Alliance 2",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1891350-box_marvelua2.png",
     "giantbomb_id": 21559,
     "steam_cloud": null,
@@ -5511,13 +4167,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 740,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 568
@@ -5530,13 +4180,7 @@ export const MockGames = [
     "title": "Mass Effect 2",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2577248-me2.jpg",
     "giantbomb_id": 21590,
     "steam_cloud": null,
@@ -5556,13 +4200,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 324,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 74
@@ -5575,13 +4213,7 @@ export const MockGames = [
     "title": "Project Gotham Racing 4",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2213169-box_pgr4.png",
     "giantbomb_id": 5607,
     "steam_cloud": null,
@@ -5601,13 +4233,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 354,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 2540
@@ -5620,11 +4246,7 @@ export const MockGames = [
     "title": "Anomaly Warzone Earth",
     "steamid": 91200,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2132180-box_awe.png",
     "giantbomb_id": 33329,
     "steam_cloud": true,
@@ -5644,11 +4266,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 486,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 8758
@@ -5661,11 +4279,7 @@ export const MockGames = [
     "title": "Contrast",
     "steamid": 224460,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2560197-box_contrast.png",
     "giantbomb_id": 37669,
     "steam_cloud": true,
@@ -5685,11 +4299,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 612,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3839
@@ -5702,11 +4312,7 @@ export const MockGames = [
     "title": "Starbound",
     "steamid": 211820,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/14230/2165185-starbound.jpg",
     "giantbomb_id": 37839,
     "steam_cloud": false,
@@ -5726,11 +4332,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 98,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3019
@@ -5743,13 +4345,7 @@ export const MockGames = [
     "title": "Sleeping Dogs",
     "steamid": null,
     "date_added": "2014-01-03 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2393013-sd_coverart_tylerstout.jpg",
     "giantbomb_id": 29441,
     "steam_cloud": null,
@@ -5769,13 +4365,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 766,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 1267
@@ -5788,13 +4378,7 @@ export const MockGames = [
     "title": "Spore",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2243877-box_spore.png",
     "giantbomb_id": 14139,
     "steam_cloud": null,
@@ -5814,13 +4398,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 400,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 1876
@@ -5833,13 +4411,7 @@ export const MockGames = [
     "title": "Torchlight",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/1099/1251559-torchlight.png",
     "giantbomb_id": 25983,
     "steam_cloud": null,
@@ -5859,13 +4431,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 302,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 2480
@@ -5878,11 +4444,7 @@ export const MockGames = [
     "title": "Deus Ex: Human Revolution",
     "steamid": 28050,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1974385-box_deusexhr.png",
     "giantbomb_id": 21358,
     "steam_cloud": null,
@@ -5902,11 +4464,7 @@ export const MockGames = [
       "rating": 71,
       "finished_date": null,
       "id": 253,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 43
@@ -5919,13 +4477,7 @@ export const MockGames = [
     "title": "Civilization IV",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2492897-box_civ4.png",
     "giantbomb_id": 16457,
     "steam_cloud": null,
@@ -5945,13 +4497,7 @@ export const MockGames = [
       "rating": 61,
       "finished_date": null,
       "id": 634,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 293
@@ -5964,13 +4510,7 @@ export const MockGames = [
     "title": "Dead Rising 2",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1988272-box_dr2.png",
     "giantbomb_id": 25187,
     "steam_cloud": null,
@@ -5990,13 +4530,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 582,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 496
@@ -6009,13 +4543,7 @@ export const MockGames = [
     "title": "Grand Theft Auto IV",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2446670-gta_1446_a023.jpg",
     "giantbomb_id": 20457,
     "steam_cloud": null,
@@ -6035,13 +4563,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 692,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 731
@@ -6054,13 +4576,7 @@ export const MockGames = [
     "title": "Hexic HD",
     "steamid": null,
     "date_added": "2013-11-02 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1331155-hexic_box.png",
     "giantbomb_id": 18287,
     "steam_cloud": null,
@@ -6080,13 +4596,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 687,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 2732
@@ -6099,13 +4609,7 @@ export const MockGames = [
     "title": "LittleBigPlanet",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1794115-box_lbp.png",
     "giantbomb_id": 20602,
     "steam_cloud": null,
@@ -6125,13 +4629,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 438,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 1058
@@ -6144,11 +4642,7 @@ export const MockGames = [
     "title": "Monkey Island 2: Special Edition",
     "steamid": 32460,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/24/379393-1216513843243.jpg",
     "giantbomb_id": 10528,
     "steam_cloud": true,
@@ -6168,11 +4662,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 201,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 66
@@ -6185,13 +4675,7 @@ export const MockGames = [
     "title": "Fable",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox",
-      "igdb_platform_id": 11,
-      "short_name": "Xbox",
-      "id": 2,
-      "igdb_name": "Xbox"
-    }],
+    "availablePlatforms": [{"id": 2}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1803629-box_fabletlc.png",
     "giantbomb_id": 2092,
     "steam_cloud": null,
@@ -6211,13 +4695,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 440,
-      "myPlatforms": [{
-        "full_name": "Xbox",
-        "igdb_platform_id": 11,
-        "short_name": "Xbox",
-        "id": 2,
-        "igdb_name": "Xbox"
-      }],
+      "myPlatforms": [{"id": 2}],
       "person_id": 1
     }],
     "igdb_id": 521
@@ -6230,11 +4708,7 @@ export const MockGames = [
     "title": "Baldur's Gate: Enhanced Edition",
     "steamid": 228280,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2360279-baldur.png",
     "giantbomb_id": 52,
     "steam_cloud": false,
@@ -6254,11 +4728,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 309,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1880
@@ -6271,13 +4741,7 @@ export const MockGames = [
     "title": "ibb & obb",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/14/149021/2340208-ibb.png",
     "giantbomb_id": 39948,
     "steam_cloud": null,
@@ -6297,13 +4761,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 453,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 9139
@@ -6316,11 +4774,7 @@ export const MockGames = [
     "title": "Proteus",
     "steamid": 219680,
     "date_added": "2013-10-31 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2418588-proteus_2012_08_17_96upub760729353_0001.png",
     "giantbomb_id": 37608,
     "steam_cloud": false,
@@ -6340,11 +4794,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 730,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2163
@@ -6357,13 +4807,7 @@ export const MockGames = [
     "title": "LittleBigPlanet Karting",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2323869-box_lbpk.png",
     "giantbomb_id": 37441,
     "steam_cloud": null,
@@ -6383,13 +4827,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 628,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 8186
@@ -6402,13 +4840,7 @@ export const MockGames = [
     "title": "Advance Wars: Dual Strike",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "NDS",
-      "igdb_platform_id": 20,
-      "short_name": "NDS",
-      "id": 9,
-      "igdb_name": "Nintendo DS"
-    }],
+    "availablePlatforms": [{"id": 9}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1841700-box_awarsds.png",
     "giantbomb_id": 11939,
     "steam_cloud": null,
@@ -6428,13 +4860,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 388,
-      "myPlatforms": [{
-        "full_name": "NDS",
-        "igdb_platform_id": 20,
-        "short_name": "NDS",
-        "id": 9,
-        "igdb_name": "Nintendo DS"
-      }],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 1693
@@ -6447,13 +4873,7 @@ export const MockGames = [
     "title": "The Gunstringer",
     "steamid": null,
     "date_added": "2013-11-02 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1894019-box_gunstringer.png",
     "giantbomb_id": 34073,
     "steam_cloud": null,
@@ -6473,13 +4893,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 768,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 7588
@@ -6492,11 +4906,7 @@ export const MockGames = [
     "title": "Dungeon Defenders",
     "steamid": 65800,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1821526-box_ddefenders.png",
     "giantbomb_id": 32474,
     "steam_cloud": true,
@@ -6516,11 +4926,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 752,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3043
@@ -6533,13 +4939,7 @@ export const MockGames = [
     "title": "Crysis 3",
     "steamid": null,
     "date_added": "2014-08-19 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2417187-box_crysis3.png",
     "giantbomb_id": 37957,
     "steam_cloud": null,
@@ -6559,13 +4959,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 526,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 1268
@@ -6578,13 +4972,7 @@ export const MockGames = [
     "title": "Tom Clancy's Ghost Recon: Advanced Warfighter",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2215045-box_graw.png",
     "giantbomb_id": 2397,
     "steam_cloud": null,
@@ -6604,13 +4992,7 @@ export const MockGames = [
       "rating": 45,
       "finished_date": null,
       "id": 484,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 1300
@@ -6623,13 +5005,7 @@ export const MockGames = [
     "title": "Magic: The Gathering - Duels of the Planeswalkers 2013",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2222520-box_mtg2013.png",
     "giantbomb_id": 37907,
     "steam_cloud": null,
@@ -6649,13 +5025,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 769,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 1891
@@ -6668,13 +5038,7 @@ export const MockGames = [
     "title": "Poker Night at the Inventory 2",
     "steamid": null,
     "date_added": "2013-11-02 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2472248-box_pn2.png",
     "giantbomb_id": 42089,
     "steam_cloud": null,
@@ -6694,13 +5058,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 473,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 2047
@@ -6713,13 +5071,7 @@ export const MockGames = [
     "title": "DC Universe Online",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/26/1683160-dcuo_pcbox.jpg",
     "giantbomb_id": 21110,
     "steam_cloud": null,
@@ -6739,13 +5091,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 248,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 576
@@ -6758,13 +5104,7 @@ export const MockGames = [
     "title": "Dead Space 3",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2529722-cleanboxds3.jpg",
     "giantbomb_id": 38270,
     "steam_cloud": null,
@@ -6784,13 +5124,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 607,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 1216
@@ -6803,13 +5137,7 @@ export const MockGames = [
     "title": "Guitar Hero 5",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1891344-box_ghero5.png",
     "giantbomb_id": 24711,
     "steam_cloud": null,
@@ -6829,13 +5157,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 631,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 2672
@@ -6848,13 +5170,7 @@ export const MockGames = [
     "title": "Rock Band 2",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/8169/963183-rb2_box.jpg",
     "giantbomb_id": 20714,
     "steam_cloud": null,
@@ -6874,13 +5190,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 594,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 2692
@@ -6893,11 +5203,7 @@ export const MockGames = [
     "title": "Nihilumbra",
     "steamid": 252670,
     "date_added": "2014-01-03 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2749844-ce-lp5mw8aayvjn.jpg",
     "giantbomb_id": 38899,
     "steam_cloud": true,
@@ -6917,11 +5223,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 745,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3026
@@ -6934,11 +5236,7 @@ export const MockGames = [
     "title": "Star Conflict",
     "steamid": null,
     "date_added": "2013-12-28 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/10935/2418792-star_conflict_header_530x298.jpg",
     "giantbomb_id": 41335,
     "steam_cloud": null,
@@ -6958,11 +5256,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 656,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3210
@@ -6975,13 +5269,7 @@ export const MockGames = [
     "title": "Undertow",
     "steamid": null,
     "date_added": "2013-11-02 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1860134-box_utow.png",
     "giantbomb_id": 19512,
     "steam_cloud": null,
@@ -7001,13 +5289,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 605,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 20898
@@ -7020,13 +5302,7 @@ export const MockGames = [
     "title": "Black",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox",
-      "igdb_platform_id": 11,
-      "short_name": "Xbox",
-      "id": 2,
-      "igdb_name": "Xbox"
-    }],
+    "availablePlatforms": [{"id": 2}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2405680-box_black.png",
     "giantbomb_id": 8369,
     "steam_cloud": null,
@@ -7046,13 +5322,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 423,
-      "myPlatforms": [{
-        "full_name": "Xbox",
-        "igdb_platform_id": 11,
-        "short_name": "Xbox",
-        "id": 2,
-        "igdb_name": "Xbox"
-      }],
+      "myPlatforms": [{"id": 2}],
       "person_id": 1
     }],
     "igdb_id": 5749
@@ -7065,13 +5335,7 @@ export const MockGames = [
     "title": "A World of Keflings",
     "steamid": null,
     "date_added": "2013-11-02 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1676346-box_keflings2.png",
     "giantbomb_id": 31348,
     "steam_cloud": null,
@@ -7091,13 +5355,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 684,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 21077
@@ -7110,13 +5368,7 @@ export const MockGames = [
     "title": "Sid Meier's Civilization Revolution",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2114369-box_civrev.png",
     "giantbomb_id": 20580,
     "steam_cloud": null,
@@ -7136,13 +5388,7 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 748,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 2152
@@ -7155,13 +5401,7 @@ export const MockGames = [
     "title": "Forza Motorsport 3",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1887888-box_forza3.png",
     "giantbomb_id": 24995,
     "steam_cloud": null,
@@ -7181,13 +5421,7 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 359,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 3069
@@ -7200,13 +5434,7 @@ export const MockGames = [
     "title": "Resident Evil: The Darkside Chronicles",
     "steamid": null,
     "date_added": "2013-11-02 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1790024-box_retdc.png",
     "giantbomb_id": 25558,
     "steam_cloud": null,
@@ -7226,13 +5454,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 603,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 497
@@ -7245,13 +5467,7 @@ export const MockGames = [
     "title": "Resident Evil: The Umbrella Chronicles",
     "steamid": null,
     "date_added": "2013-11-02 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1790025-box_retuc.png",
     "giantbomb_id": 11454,
     "steam_cloud": null,
@@ -7271,13 +5487,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 681,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 975
@@ -7290,11 +5500,7 @@ export const MockGames = [
     "title": "Atom Zombie Smasher ",
     "steamid": 55040,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/97089/2428199-z.png",
     "giantbomb_id": 34104,
     "steam_cloud": false,
@@ -7314,11 +5520,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 474,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 8388
@@ -7331,11 +5533,7 @@ export const MockGames = [
     "title": "Reus",
     "steamid": 222730,
     "date_added": "2013-12-28 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/17/171291/2554079-8315539992-BoxAr.png",
     "giantbomb_id": 42645,
     "steam_cloud": false,
@@ -7355,11 +5553,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 729,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 5523
@@ -7372,11 +5566,7 @@ export const MockGames = [
     "title": "Superbrothers: Sword & Sworcery EP",
     "steamid": 204060,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/2123/1563810-image3.jpg",
     "giantbomb_id": 33139,
     "steam_cloud": true,
@@ -7396,11 +5586,7 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 716,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2991
@@ -7413,13 +5599,7 @@ export const MockGames = [
     "title": "Black & White",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3740/813169-black__26_white_coverart_1_.png",
     "giantbomb_id": 18623,
     "steam_cloud": null,
@@ -7439,13 +5619,7 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 455,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 308
@@ -7458,13 +5632,7 @@ export const MockGames = [
     "title": "Star Wars: Knights of the Old Republic II",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox",
-      "igdb_platform_id": 11,
-      "short_name": "Xbox",
-      "id": 2,
-      "igdb_name": "Xbox"
-    }],
+    "availablePlatforms": [{"id": 2}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/118/647342-kotor2box.jpg",
     "giantbomb_id": 8852,
     "steam_cloud": null,
@@ -7484,13 +5652,7 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 483,
-      "myPlatforms": [{
-        "full_name": "Xbox",
-        "igdb_platform_id": 11,
-        "short_name": "Xbox",
-        "id": 2,
-        "igdb_name": "Xbox"
-      }],
+      "myPlatforms": [{"id": 2}],
       "person_id": 1
     }],
     "igdb_id": 118
@@ -7503,13 +5665,7 @@ export const MockGames = [
     "title": "New Super Mario Bros.",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "NDS",
-      "igdb_platform_id": 20,
-      "short_name": "NDS",
-      "id": 9,
-      "igdb_name": "Nintendo DS"
-    }],
+    "availablePlatforms": [{"id": 9}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2119731-box_nsmb.png",
     "giantbomb_id": 8224,
     "steam_cloud": null,
@@ -7529,13 +5685,7 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 349,
-      "myPlatforms": [{
-        "full_name": "NDS",
-        "igdb_platform_id": 20,
-        "short_name": "NDS",
-        "id": 9,
-        "igdb_name": "Nintendo DS"
-      }],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 1076
@@ -7548,13 +5698,7 @@ export const MockGames = [
     "title": "Grand Theft Auto III",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox",
-      "igdb_platform_id": 11,
-      "short_name": "Xbox",
-      "id": 2,
-      "igdb_name": "Xbox"
-    }],
+    "availablePlatforms": [{"id": 2}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2737120-grandtheftauto3.jpg",
     "giantbomb_id": 3724,
     "steam_cloud": null,
@@ -7574,13 +5718,7 @@ export const MockGames = [
       "rating": 45,
       "finished_date": null,
       "id": 515,
-      "myPlatforms": [{
-        "full_name": "Xbox",
-        "igdb_platform_id": 11,
-        "short_name": "Xbox",
-        "id": 2,
-        "igdb_name": "Xbox"
-      }],
+      "myPlatforms": [{"id": 2}],
       "person_id": 1
     }],
     "igdb_id": 730
@@ -7593,13 +5731,7 @@ export const MockGames = [
     "title": "The Lord of the Rings: The Third Age",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox",
-      "igdb_platform_id": 11,
-      "short_name": "Xbox",
-      "id": 2,
-      "igdb_name": "Xbox"
-    }],
+    "availablePlatforms": [{"id": 2}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2276091-box_tlotrtta.png",
     "giantbomb_id": 2959,
     "steam_cloud": null,
@@ -7619,13 +5751,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 695,
-      "myPlatforms": [{
-        "full_name": "Xbox",
-        "igdb_platform_id": 11,
-        "short_name": "Xbox",
-        "id": 2,
-        "igdb_name": "Xbox"
-      }],
+      "myPlatforms": [{"id": 2}],
       "person_id": 1
     }],
     "igdb_id": 6500
@@ -7638,13 +5764,7 @@ export const MockGames = [
     "title": "The Lord of the Rings: The Return of the King",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox",
-      "igdb_platform_id": 11,
-      "short_name": "Xbox",
-      "id": 2,
-      "igdb_name": "Xbox"
-    }],
+    "availablePlatforms": [{"id": 2}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2115765-box_lotrtrotk.png",
     "giantbomb_id": 17686,
     "steam_cloud": null,
@@ -7664,13 +5784,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 446,
-      "myPlatforms": [{
-        "full_name": "Xbox",
-        "igdb_platform_id": 11,
-        "short_name": "Xbox",
-        "id": 2,
-        "igdb_name": "Xbox"
-      }],
+      "myPlatforms": [{"id": 2}],
       "person_id": 1
     }],
     "igdb_id": 2973
@@ -7683,13 +5797,7 @@ export const MockGames = [
     "title": "Knytt Underground",
     "steamid": null,
     "date_added": "2013-11-02 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2389032-knytt.png",
     "giantbomb_id": 40056,
     "steam_cloud": null,
@@ -7709,13 +5817,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 504,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 16633
@@ -7728,13 +5830,7 @@ export const MockGames = [
     "title": "Project Gotham Racing 3",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2213167-box_pgr3.png",
     "giantbomb_id": 19809,
     "steam_cloud": null,
@@ -7754,13 +5850,7 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 652,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 3322
@@ -7773,13 +5863,7 @@ export const MockGames = [
     "title": "Star Wars: Battlefront II",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox",
-      "igdb_platform_id": 11,
-      "short_name": "Xbox",
-      "id": 2,
-      "igdb_name": "Xbox"
-    }],
+    "availablePlatforms": [{"id": 2}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2285707-box_swbf2.png",
     "giantbomb_id": 7094,
     "steam_cloud": null,
@@ -7799,13 +5883,7 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 407,
-      "myPlatforms": [{
-        "full_name": "Xbox",
-        "igdb_platform_id": 11,
-        "short_name": "Xbox",
-        "id": 2,
-        "igdb_name": "Xbox"
-      }],
+      "myPlatforms": [{"id": 2}],
       "person_id": 1
     }],
     "igdb_id": 142
@@ -7818,13 +5896,7 @@ export const MockGames = [
     "title": "Binary Domain",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2112204-box_bd.png",
     "giantbomb_id": 33304,
     "steam_cloud": null,
@@ -7844,13 +5916,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 30,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 6913
@@ -7863,13 +5929,7 @@ export const MockGames = [
     "title": "Castle of Illusion Starring Mickey Mouse",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2370009-genesis_castleofillusion.jpg",
     "giantbomb_id": 9513,
     "steam_cloud": null,
@@ -7889,13 +5949,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 475,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 11495
@@ -7908,13 +5962,7 @@ export const MockGames = [
     "title": "Galaga Legions DX",
     "steamid": null,
     "date_added": "2013-11-02 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1830272-box_galagaldx.png",
     "giantbomb_id": 35732,
     "steam_cloud": null,
@@ -7934,13 +5982,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 527,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 10762
@@ -7953,13 +5995,7 @@ export const MockGames = [
     "title": "Guitar Hero II",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1891343-box_ghero2.png",
     "giantbomb_id": 14916,
     "steam_cloud": null,
@@ -7979,13 +6015,7 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 331,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 2670
@@ -7998,11 +6028,7 @@ export const MockGames = [
     "title": "FORCED",
     "steamid": 249990,
     "date_added": "2013-12-01 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2526630-steamworkshop_collection_92915870_collection_branding.jpg",
     "giantbomb_id": 41938,
     "steam_cloud": true,
@@ -8022,11 +6048,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 734,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 5626
@@ -8039,13 +6061,7 @@ export const MockGames = [
     "title": "The Lord of the Rings: Conquest",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/14036/872980-front.jpg",
     "giantbomb_id": 20965,
     "steam_cloud": null,
@@ -8065,13 +6081,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 763,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 7056
@@ -8084,13 +6094,7 @@ export const MockGames = [
     "title": "Fruit Ninja Kinect",
     "steamid": null,
     "date_added": "2013-11-02 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1865887-box_fnc.png",
     "giantbomb_id": 35537,
     "steam_cloud": null,
@@ -8110,13 +6114,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 615,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 65910
@@ -8129,13 +6127,7 @@ export const MockGames = [
     "title": "Battlefield 2: Modern Combat",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox",
-      "igdb_platform_id": 11,
-      "short_name": "Xbox",
-      "id": 2,
-      "igdb_name": "Xbox"
-    }],
+    "availablePlatforms": [{"id": 2}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1897517-box_bf2mc.png",
     "giantbomb_id": 21646,
     "steam_cloud": null,
@@ -8155,13 +6147,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 437,
-      "myPlatforms": [{
-        "full_name": "Xbox",
-        "igdb_platform_id": 11,
-        "short_name": "Xbox",
-        "id": 2,
-        "igdb_name": "Xbox"
-      }],
+      "myPlatforms": [{"id": 2}],
       "person_id": 1
     }],
     "igdb_id": 348
@@ -8174,13 +6160,7 @@ export const MockGames = [
     "title": "MLB 08: The Show",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1832149-box_mlb08.png",
     "giantbomb_id": 20835,
     "steam_cloud": null,
@@ -8200,13 +6180,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 316,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 7370
@@ -8219,13 +6193,7 @@ export const MockGames = [
     "title": "MLB 09: The Show",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1832924-box_mlb09.png",
     "giantbomb_id": 24901,
     "steam_cloud": null,
@@ -8245,13 +6213,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 659,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 7371
@@ -8264,13 +6226,7 @@ export const MockGames = [
     "title": "Kameo: Elements of Power",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2213163-box_kameoeop.png",
     "giantbomb_id": 19228,
     "steam_cloud": null,
@@ -8290,13 +6246,7 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 697,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 7029
@@ -8309,11 +6259,7 @@ export const MockGames = [
     "title": "Eufloria",
     "steamid": 41210,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/15/155745/2168568-eufloria_banner_d2_486x630.jpg",
     "giantbomb_id": 25339,
     "steam_cloud": null,
@@ -8333,11 +6279,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 353,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7596
@@ -8350,13 +6292,7 @@ export const MockGames = [
     "title": "Black & White 2",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/6384/629733-blackandwhite2boxart.jpg",
     "giantbomb_id": 12474,
     "steam_cloud": null,
@@ -8376,13 +6312,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 469,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 1921
@@ -8395,13 +6325,7 @@ export const MockGames = [
     "title": "Batman Begins",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox",
-      "igdb_platform_id": 11,
-      "short_name": "Xbox",
-      "id": 2,
-      "igdb_name": "Xbox"
-    }],
+    "availablePlatforms": [{"id": 2}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/1614/1213254-batmanbegins_xbox_us.jpg",
     "giantbomb_id": 34,
     "steam_cloud": null,
@@ -8421,13 +6345,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 597,
-      "myPlatforms": [{
-        "full_name": "Xbox",
-        "igdb_platform_id": 11,
-        "short_name": "Xbox",
-        "id": 2,
-        "igdb_name": "Xbox"
-      }],
+      "myPlatforms": [{"id": 2}],
       "person_id": 1
     }],
     "igdb_id": 3063
@@ -8440,13 +6358,7 @@ export const MockGames = [
     "title": "Skate",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1897553-box_skate.png",
     "giantbomb_id": 5228,
     "steam_cloud": null,
@@ -8466,13 +6378,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 688,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 2585
@@ -8485,13 +6391,7 @@ export const MockGames = [
     "title": "The Lord of the Rings: The Battle for Middle-earth II",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2276087-box_tlotrtbfme2.png",
     "giantbomb_id": 4867,
     "steam_cloud": null,
@@ -8511,13 +6411,7 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 406,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 3155
@@ -8530,13 +6424,7 @@ export const MockGames = [
     "title": "Halo 3",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2079826-box_halo3.png",
     "giantbomb_id": 9993,
     "steam_cloud": null,
@@ -8556,13 +6444,7 @@ export const MockGames = [
       "rating": 54,
       "finished_date": null,
       "id": 375,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 987
@@ -8575,11 +6457,7 @@ export const MockGames = [
     "title": "A Valley Without Wind",
     "steamid": 209330,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/2891/1909675-avww_cover.jpg",
     "giantbomb_id": 32969,
     "steam_cloud": false,
@@ -8599,11 +6477,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 720,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1625
@@ -8616,13 +6490,7 @@ export const MockGames = [
     "title": "Major League Baseball 2K8",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2146367-box_mlb2k8.png",
     "giantbomb_id": 20876,
     "steam_cloud": null,
@@ -8642,13 +6510,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 762,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 4989
@@ -8662,16 +6524,8 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2013-10-31 00:00:00.0",
     "availablePlatforms": [
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      },
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }
+      {"id": 1},
+      {"id": 1}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/5872/192398-tmnfbox.jpg",
     "giantbomb_id": 21436,
@@ -8693,16 +6547,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 604,
       "myPlatforms": [
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        },
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }
+        {"id": 1},
+        {"id": 1}
       ],
       "person_id": 1
     }],
@@ -8716,13 +6562,7 @@ export const MockGames = [
     "title": "Mass Effect 3",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2126447-box_me3.png",
     "giantbomb_id": 29935,
     "steam_cloud": null,
@@ -8742,13 +6582,7 @@ export const MockGames = [
       "rating": 10,
       "finished_date": null,
       "id": 291,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 75
@@ -8761,11 +6595,7 @@ export const MockGames = [
     "title": "The Walking Dead",
     "steamid": 207610,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2348800-box_twdead.png",
     "giantbomb_id": 34205,
     "steam_cloud": false,
@@ -8785,11 +6615,7 @@ export const MockGames = [
       "rating": 1,
       "finished_date": "2012-11-28 00:00:00.0",
       "id": 87,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1871
@@ -8802,13 +6628,7 @@ export const MockGames = [
     "title": "Castlevania",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "NDS",
-      "igdb_platform_id": 20,
-      "short_name": "NDS",
-      "id": 9,
-      "igdb_name": "Nintendo DS"
-    }],
+    "availablePlatforms": [{"id": 9}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/10460/965246-ps360_alucard_face.jpg",
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -8828,13 +6648,7 @@ export const MockGames = [
     "title": "Indigo Prophecy",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox",
-      "igdb_platform_id": 11,
-      "short_name": "Xbox",
-      "id": 2,
-      "igdb_name": "Xbox"
-    }],
+    "availablePlatforms": [{"id": 2}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2280470-box_ip.png",
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -8854,13 +6668,7 @@ export const MockGames = [
     "title": "Jade Empire",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox",
-      "igdb_platform_id": 11,
-      "short_name": "Xbox",
-      "id": 2,
-      "igdb_name": "Xbox"
-    }],
+    "availablePlatforms": [{"id": 2}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2129484-box_jempire.png",
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -8880,13 +6688,7 @@ export const MockGames = [
     "title": "Kirby Canvas Curse",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "NDS",
-      "igdb_platform_id": 20,
-      "short_name": "NDS",
-      "id": 9,
-      "igdb_name": "Nintendo DS"
-    }],
+    "availablePlatforms": [{"id": 9}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -8906,13 +6708,7 @@ export const MockGames = [
     "title": "Mario & Luigi Partners in Time",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "NDS",
-      "igdb_platform_id": 20,
-      "short_name": "NDS",
-      "id": 9,
-      "igdb_name": "Nintendo DS"
-    }],
+    "availablePlatforms": [{"id": 9}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -8932,13 +6728,7 @@ export const MockGames = [
     "title": "Metal Gear Solid 4: Guns of the Patriots",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -8958,13 +6748,7 @@ export const MockGames = [
     "title": "Ninja Gaiden Black",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox",
-      "igdb_platform_id": 11,
-      "short_name": "Xbox",
-      "id": 2,
-      "igdb_name": "Xbox"
-    }],
+    "availablePlatforms": [{"id": 2}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2367512-box_ngb.png",
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -8984,13 +6768,7 @@ export const MockGames = [
     "title": "Splinter Cell: Chaos Theory",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox",
-      "igdb_platform_id": 11,
-      "short_name": "Xbox",
-      "id": 2,
-      "igdb_name": "Xbox"
-    }],
+    "availablePlatforms": [{"id": 2}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -9010,13 +6788,7 @@ export const MockGames = [
     "title": "SSX On Tour",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Xbox",
-      "igdb_platform_id": 11,
-      "short_name": "Xbox",
-      "id": 2,
-      "igdb_name": "Xbox"
-    }],
+    "availablePlatforms": [{"id": 2}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2139877-box_ssx4.png",
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -9036,13 +6808,7 @@ export const MockGames = [
     "title": "World of Warcraft: Mists of Pandaria",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -9062,11 +6828,7 @@ export const MockGames = [
     "title": "Fallout: New Vegas",
     "steamid": 22380,
     "date_added": "2013-10-31 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/3/30036/1563495-falloutnewvegasboxartntsc.jpg",
     "giantbomb_id": 25933,
     "steam_cloud": false,
@@ -9086,11 +6848,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 711,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 16
@@ -9103,11 +6861,7 @@ export const MockGames = [
     "title": "RUSH",
     "steamid": 38720,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/17823/1656611-rush_title_image.jpg",
     "giantbomb_id": 33376,
     "steam_cloud": true,
@@ -9127,11 +6881,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 478,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7634
@@ -9144,11 +6894,7 @@ export const MockGames = [
     "title": "Trine 2",
     "steamid": 35720,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2478708-box_trine2.png",
     "giantbomb_id": 31661,
     "steam_cloud": true,
@@ -9168,11 +6914,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 264,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 6250
@@ -9185,11 +6927,7 @@ export const MockGames = [
     "title": "Legend of Grimrock",
     "steamid": 207170,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/81005/2175295-log.png",
     "giantbomb_id": 36231,
     "steam_cloud": false,
@@ -9209,11 +6947,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 315,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 6328
@@ -9226,11 +6960,7 @@ export const MockGames = [
     "title": "The Baconing",
     "steamid": 18070,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/15693/1828696-baconingcover.jpg",
     "giantbomb_id": 35449,
     "steam_cloud": true,
@@ -9250,11 +6980,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 352,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2251
@@ -9267,11 +6993,7 @@ export const MockGames = [
     "title": "Cave Story+",
     "steamid": 200900,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/5353/483734-doukutsu.jpg",
     "giantbomb_id": 20124,
     "steam_cloud": false,
@@ -9291,11 +7013,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 330,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 8214
@@ -9308,11 +7026,7 @@ export const MockGames = [
     "title": "Machinarium",
     "steamid": 40700,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3699/1816768-machinarium.jpg",
     "giantbomb_id": 23648,
     "steam_cloud": false,
@@ -9332,11 +7046,7 @@ export const MockGames = [
       "rating": 30,
       "finished_date": null,
       "id": 371,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2990
@@ -9349,11 +7059,7 @@ export const MockGames = [
     "title": "Dishonored",
     "steamid": 205100,
     "date_added": "2014-06-26 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2560870-dishonoredhigh.jpg",
     "giantbomb_id": 35850,
     "steam_cloud": true,
@@ -9373,11 +7079,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 728,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 533
@@ -9390,11 +7092,7 @@ export const MockGames = [
     "title": "FLY'N",
     "steamid": 223730,
     "date_added": "2013-10-31 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2367003-264023596874865336_fqgt09zb.jpg",
     "giantbomb_id": 40464,
     "steam_cloud": false,
@@ -9414,11 +7112,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 758,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 10327
@@ -9431,11 +7125,7 @@ export const MockGames = [
     "title": "Brothers - A Tale of Two Sons",
     "steamid": 225080,
     "date_added": "2013-12-28 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2478646-box_bros.png",
     "giantbomb_id": 39854,
     "steam_cloud": false,
@@ -9455,11 +7145,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 433,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1334
@@ -9472,11 +7158,7 @@ export const MockGames = [
     "title": "The Wolf Among Us",
     "steamid": 250320,
     "date_added": "2013-12-28 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2586376-box_twau.png",
     "giantbomb_id": 34213,
     "steam_cloud": false,
@@ -9496,11 +7178,7 @@ export const MockGames = [
       "rating": 92,
       "finished_date": "2014-07-16 20:52:00.0",
       "id": 278,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2993
@@ -9513,11 +7191,7 @@ export const MockGames = [
     "title": "SteamWorld Dig",
     "steamid": 252410,
     "date_added": "2014-06-26 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2672216-3i6vcyl.jpg",
     "giantbomb_id": 43416,
     "steam_cloud": true,
@@ -9537,11 +7211,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 322,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 5772
@@ -9554,11 +7224,7 @@ export const MockGames = [
     "title": "Far Cry 2",
     "steamid": 19900,
     "date_added": "2014-06-20 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2381878-win_farcry2_cropped.jpg",
     "giantbomb_id": 20665,
     "steam_cloud": false,
@@ -9578,11 +7244,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 265,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 361
@@ -9595,11 +7257,7 @@ export const MockGames = [
     "title": "Sins of a Solar Empire: Trinity",
     "steamid": 201290,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2531066-box_soase.png",
     "giantbomb_id": 9115,
     "steam_cloud": false,
@@ -9619,11 +7277,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 386,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 10870
@@ -9636,11 +7290,7 @@ export const MockGames = [
     "title": "Kingdoms of Amalur: Reckoning™",
     "steamid": 102500,
     "date_added": "2013-10-31 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2121648-box_koar.png",
     "giantbomb_id": 30330,
     "steam_cloud": true,
@@ -9660,11 +7310,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 749,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1059
@@ -9677,11 +7323,7 @@ export const MockGames = [
     "title": "FTL: Faster Than Light",
     "steamid": 212680,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2326566-ftl_box.jpg",
     "giantbomb_id": 37770,
     "steam_cloud": false,
@@ -9701,11 +7343,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 307,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3075
@@ -9718,11 +7356,7 @@ export const MockGames = [
     "title": "Long Live The Queen",
     "steamid": 251990,
     "date_added": "2014-01-03 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/97089/2658784-p.jpg",
     "giantbomb_id": 40310,
     "steam_cloud": false,
@@ -9742,11 +7376,7 @@ export const MockGames = [
       "rating": 83.2,
       "finished_date": null,
       "id": 714,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9722
@@ -9759,11 +7389,7 @@ export const MockGames = [
     "title": "Dragon Age Awakening",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2167094-box_da1a.png",
     "giantbomb_id": 29675,
     "steam_cloud": null,
@@ -9783,11 +7409,7 @@ export const MockGames = [
       "rating": 94,
       "finished_date": "2020-04-20 18:12:23.178",
       "id": 468,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 77
@@ -9800,13 +7422,7 @@ export const MockGames = [
     "title": "Journey",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/4/44183/2388618-2172218_journey_detailcropped.png",
     "giantbomb_id": 31772,
     "steam_cloud": null,
@@ -9826,13 +7442,7 @@ export const MockGames = [
       "rating": 98,
       "finished_date": "2020-04-14 11:17:38.639",
       "id": 648,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 1352
@@ -9845,11 +7455,7 @@ export const MockGames = [
     "title": "The Walking Dead: 400 Days",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -9869,11 +7475,7 @@ export const MockGames = [
       "rating": 90.5,
       "finished_date": "2014-01-15 00:00:00.0",
       "id": 445,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3015
@@ -9886,11 +7488,7 @@ export const MockGames = [
     "title": "Bastion",
     "steamid": 107100,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1821524-box_bastion.png",
     "giantbomb_id": 32085,
     "steam_cloud": true,
@@ -9910,11 +7508,7 @@ export const MockGames = [
       "rating": 92.5,
       "finished_date": "2014-08-19 00:00:00.0",
       "id": 402,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1983
@@ -9927,11 +7521,7 @@ export const MockGames = [
     "title": "Dragon Age: Origins - Ultimate Edition",
     "steamid": 47810,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2558592-daoclean.jpg",
     "giantbomb_id": 20738,
     "steam_cloud": false,
@@ -9951,11 +7541,7 @@ export const MockGames = [
       "rating": 94,
       "finished_date": "2020-04-20 18:12:27.065",
       "id": 314,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 27911
@@ -9968,11 +7554,7 @@ export const MockGames = [
     "title": "Out of the Park Baseball 15",
     "steamid": 272670,
     "date_added": "2014-07-15 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3505/2598117-2598116-0951533434-OOTP1.jpg",
     "giantbomb_id": 45337,
     "steam_cloud": false,
@@ -9992,11 +7574,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 420,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 16955
@@ -10009,11 +7587,7 @@ export const MockGames = [
     "title": "ORION: Prelude",
     "steamid": 104900,
     "date_added": "2014-08-25 22:57:38.924",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/19088/1466173-prelude01.png",
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -10033,11 +7607,7 @@ export const MockGames = [
     "title": "Alan Wake's American Nightmare",
     "steamid": 202750,
     "date_added": "2014-08-25 22:57:38.925",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2108505-box_awan.png",
     "giantbomb_id": 35157,
     "steam_cloud": false,
@@ -10057,11 +7627,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 304,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2602
@@ -10074,11 +7640,7 @@ export const MockGames = [
     "title": "Half-Life 2",
     "steamid": 220,
     "date_added": "2014-08-25 22:57:38.922",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/2787/625502-hl2box.jpg",
     "giantbomb_id": 1539,
     "steam_cloud": true,
@@ -10098,11 +7660,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": "2009-08-22 00:00:00.0",
       "id": 305,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 233
@@ -10115,11 +7673,7 @@ export const MockGames = [
     "title": "Counter-Strike: Source",
     "steamid": 240,
     "date_added": "2014-08-25 22:57:38.926",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/6384/629747-counterstrikesourceboxart.jpg",
     "giantbomb_id": 11339,
     "steam_cloud": true,
@@ -10139,11 +7693,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 237,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 307
@@ -10156,11 +7706,7 @@ export const MockGames = [
     "title": "Half-Life 2: Deathmatch",
     "steamid": 320,
     "date_added": "2014-08-25 22:57:38.924",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2491505-box_hl2dm.png",
     "giantbomb_id": 14714,
     "steam_cloud": false,
@@ -10180,11 +7726,7 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 50,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9471
@@ -10197,11 +7739,7 @@ export const MockGames = [
     "title": "Half-Life 2: Lost Coast",
     "steamid": 340,
     "date_added": "2014-08-25 22:57:38.918",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/14741/1056592-header.jpg",
     "giantbomb_id": 3015,
     "steam_cloud": false,
@@ -10221,11 +7759,7 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 339,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 10395
@@ -10238,11 +7772,7 @@ export const MockGames = [
     "title": "Psychonauts",
     "steamid": 3830,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1841447-box_pnauts.png",
     "giantbomb_id": 2906,
     "steam_cloud": true,
@@ -10262,11 +7792,7 @@ export const MockGames = [
       "rating": 81.5,
       "finished_date": null,
       "id": 332,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1339
@@ -10279,11 +7805,7 @@ export const MockGames = [
     "title": "Crysis",
     "steamid": 17300,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2392174-crysis_01_artwork.jpg",
     "giantbomb_id": 11757,
     "steam_cloud": false,
@@ -10303,11 +7825,7 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 737,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 296
@@ -10320,11 +7838,7 @@ export const MockGames = [
     "title": "Prince of Persia: The Sands of Time",
     "steamid": 13600,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2280502-box_poptsot.png",
     "giantbomb_id": 5235,
     "steam_cloud": false,
@@ -10344,11 +7858,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 618,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 836
@@ -10361,11 +7871,7 @@ export const MockGames = [
     "title": "Dark Void",
     "steamid": 45710,
     "date_added": "2013-10-31 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1825078-box_darkvoid.png",
     "giantbomb_id": 20703,
     "steam_cloud": false,
@@ -10385,11 +7891,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 351,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 4220
@@ -10402,11 +7904,7 @@ export const MockGames = [
     "title": "Just Cause 2",
     "steamid": 8190,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1897530-box_jcause2.png",
     "giantbomb_id": 20742,
     "steam_cloud": true,
@@ -10426,11 +7924,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 32,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 558
@@ -10443,11 +7937,7 @@ export const MockGames = [
     "title": "The Secret of Monkey Island: Special Edition",
     "steamid": 32360,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/4938/609632-secret_of_monkey_island_box_front_6588x8280.jpg",
     "giantbomb_id": 3019,
     "steam_cloud": false,
@@ -10467,11 +7957,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 382,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 65
@@ -10484,11 +7970,7 @@ export const MockGames = [
     "title": "Super Meat Boy",
     "steamid": 40800,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1633133-box_supermeatboy.png",
     "giantbomb_id": 25114,
     "steam_cloud": false,
@@ -10509,11 +7991,7 @@ export const MockGames = [
         "rating": 84,
         "finished_date": null,
         "id": 75,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 1
       },
       {
@@ -10527,11 +8005,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 788,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 4
       }
     ],
@@ -10545,11 +8019,7 @@ export const MockGames = [
     "title": "SpaceChem",
     "steamid": 92800,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/5275/1724808-spacechem_logo_white.png",
     "giantbomb_id": 34342,
     "steam_cloud": true,
@@ -10569,11 +8039,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 258,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 8390
@@ -10586,11 +8052,7 @@ export const MockGames = [
     "title": "Terraria",
     "steamid": 105600,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2383168-box_terraria.png",
     "giantbomb_id": 34940,
     "steam_cloud": true,
@@ -10610,11 +8072,7 @@ export const MockGames = [
       "rating": 87.5,
       "finished_date": null,
       "id": 356,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1879
@@ -10627,11 +8085,7 @@ export const MockGames = [
     "title": "The Witcher 2: Assassins of Kings Enhanced Edition",
     "steamid": 20920,
     "date_added": "2014-08-25 22:57:38.919",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2558583-w2clean.jpg",
     "giantbomb_id": 28178,
     "steam_cloud": true,
@@ -10651,11 +8105,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 151,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 20740
@@ -10669,18 +8119,8 @@ export const MockGames = [
     "steamid": 17470,
     "date_added": "2013-12-28 00:00:00.0",
     "availablePlatforms": [
-      {
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      },
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }
+      {"id": 6},
+      {"id": 1}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2529747-deadspaceclean.jpg",
     "giantbomb_id": 20800,
@@ -10702,18 +8142,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 266,
       "myPlatforms": [
-        {
-          "full_name": "PS3",
-          "igdb_platform_id": 9,
-          "short_name": "PS3",
-          "id": 6,
-          "igdb_name": "PlayStation 3"
-        },
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }
+        {"id": 6},
+        {"id": 1}
       ],
       "person_id": 1
     }],
@@ -10727,11 +8157,7 @@ export const MockGames = [
     "title": "Dead Space 2",
     "steamid": 47780,
     "date_added": "2013-12-28 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2529748-cleands2.jpg",
     "giantbomb_id": 25444,
     "steam_cloud": false,
@@ -10751,11 +8177,7 @@ export const MockGames = [
       "rating": 80.9,
       "finished_date": null,
       "id": 271,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 38
@@ -10768,11 +8190,7 @@ export const MockGames = [
     "title": "LIMBO",
     "steamid": 48000,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2136549-box_limbo.png",
     "giantbomb_id": 30380,
     "steam_cloud": true,
@@ -10792,11 +8210,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 335,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1331
@@ -10809,11 +8223,7 @@ export const MockGames = [
     "title": "The Lord of the Rings: War in the North",
     "steamid": 32800,
     "date_added": "2013-10-31 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2276095-box_tlotrwitn.png",
     "giantbomb_id": 30425,
     "steam_cloud": true,
@@ -10833,11 +8243,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 739,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1052
@@ -10850,11 +8256,7 @@ export const MockGames = [
     "title": "AaaaaAAaaaAAAaaAAAAaAAAAA!!! for the Awesome",
     "steamid": 15560,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/7/74361/2075399-awesome_2011_11_20_14_55_18_93.png",
     "giantbomb_id": 36987,
     "steam_cloud": false,
@@ -10874,11 +8276,7 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 373,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3240
@@ -10891,11 +8289,7 @@ export const MockGames = [
     "title": "Galactic Civilizations II: Ultimate Edition",
     "steamid": 202200,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/13692/1349646-galactic_civilizations_ii___dread_lords_coverart.png",
     "giantbomb_id": 5861,
     "steam_cloud": false,
@@ -10915,11 +8309,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 183,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 102111
@@ -10932,11 +8322,7 @@ export const MockGames = [
     "title": "Evochron Mercenary",
     "steamid": 71000,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/5/58746/2111893-logo.png",
     "giantbomb_id": 32102,
     "steam_cloud": false,
@@ -10956,11 +8342,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 262,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 15071
@@ -10973,11 +8355,7 @@ export const MockGames = [
     "title": "Serious Sam 2",
     "steamid": 204340,
     "date_added": "2013-10-31 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2251204-box_ss2.png",
     "giantbomb_id": 5036,
     "steam_cloud": false,
@@ -10997,11 +8375,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 68,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 787
@@ -11014,11 +8388,7 @@ export const MockGames = [
     "title": "Vessel",
     "steamid": 108500,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2371672-box_vessel.png",
     "giantbomb_id": 32070,
     "steam_cloud": false,
@@ -11038,11 +8408,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 341,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 8382
@@ -11055,11 +8421,7 @@ export const MockGames = [
     "title": "Insanely Twisted Shadow Planet",
     "steamid": 205730,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1865884-box_itsp.png",
     "giantbomb_id": 27375,
     "steam_cloud": false,
@@ -11079,11 +8441,7 @@ export const MockGames = [
       "rating": 81.5,
       "finished_date": null,
       "id": 703,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 6168
@@ -11096,11 +8454,7 @@ export const MockGames = [
     "title": "Spec Ops: The Line",
     "steamid": 50300,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2244610-specopsfront.jpg",
     "giantbomb_id": 29445,
     "steam_cloud": true,
@@ -11120,11 +8474,7 @@ export const MockGames = [
       "rating": 93,
       "finished_date": "2013-01-10 23:13:00.0",
       "id": 620,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1377
@@ -11137,11 +8487,7 @@ export const MockGames = [
     "title": "LEGO Batman 2",
     "steamid": 213330,
     "date_added": "2014-06-23 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2199357-box_lbm2.png",
     "giantbomb_id": 36898,
     "steam_cloud": false,
@@ -11161,11 +8507,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 199,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 6836
@@ -11178,11 +8520,7 @@ export const MockGames = [
     "title": "Endless Space",
     "steamid": 208140,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/15/155745/2271790-328534_endless_space.jpg",
     "giantbomb_id": 38217,
     "steam_cloud": true,
@@ -11202,11 +8540,7 @@ export const MockGames = [
       "rating": 78.6,
       "finished_date": null,
       "id": 364,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9634
@@ -11219,11 +8553,7 @@ export const MockGames = [
     "title": "EDGE",
     "steamid": 38740,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/15284/1335663-edge.jpg",
     "giantbomb_id": 30847,
     "steam_cloud": true,
@@ -11243,11 +8573,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 520,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 8392
@@ -11260,11 +8586,7 @@ export const MockGames = [
     "title": "E.Y.E: Divine Cybermancy",
     "steamid": 91700,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2275989-box_eye.png",
     "giantbomb_id": 29717,
     "steam_cloud": false,
@@ -11284,11 +8606,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 378,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 6230
@@ -11301,11 +8619,7 @@ export const MockGames = [
     "title": "Oil Rush",
     "steamid": 200390,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/6/62890/2113844-oil_rush_boxart.jpg",
     "giantbomb_id": 37334,
     "steam_cloud": true,
@@ -11325,11 +8639,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 334,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1054
@@ -11342,11 +8652,7 @@ export const MockGames = [
     "title": "Botanicula",
     "steamid": 207690,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/4344/2142965-botanicula_cover_600.jpg",
     "giantbomb_id": 35011,
     "steam_cloud": false,
@@ -11366,11 +8672,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 613,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 6611
@@ -11383,11 +8685,7 @@ export const MockGames = [
     "title": "Splice",
     "steamid": 209790,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/81005/2234222-header_292x136.jpg",
     "giantbomb_id": 38661,
     "steam_cloud": true,
@@ -11407,11 +8705,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 329,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 11640
@@ -11424,11 +8718,7 @@ export const MockGames = [
     "title": "Sanctum",
     "steamid": 91600,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/4344/1760553-sanctum_logo__2_.jpg",
     "giantbomb_id": 34811,
     "steam_cloud": true,
@@ -11448,11 +8738,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 471,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3183
@@ -11465,11 +8751,7 @@ export const MockGames = [
     "title": "Blocks That Matter",
     "steamid": 111800,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3699/1868754-blocks_that_matter.jpg",
     "giantbomb_id": 35429,
     "steam_cloud": true,
@@ -11489,11 +8771,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 355,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 8984
@@ -11506,11 +8784,7 @@ export const MockGames = [
     "title": "A Valley Without Wind 2",
     "steamid": 228320,
     "date_added": "2014-08-25 22:57:38.926",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/10/100150/2402346-valley2header.jpg",
     "giantbomb_id": 40983,
     "steam_cloud": false,
@@ -11530,11 +8804,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 328,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9718
@@ -11547,11 +8817,7 @@ export const MockGames = [
     "title": "BIT.TRIP RUNNER",
     "steamid": 63710,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/4/48176/1381328-bit.trip_runner.jpg",
     "giantbomb_id": 29550,
     "steam_cloud": true,
@@ -11571,11 +8837,7 @@ export const MockGames = [
       "rating": 25,
       "finished_date": null,
       "id": 326,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 6246
@@ -11588,11 +8850,7 @@ export const MockGames = [
     "title": "All Zombies Must Die!",
     "steamid": 204140,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2092585-box_azmd.png",
     "giantbomb_id": 36297,
     "steam_cloud": null,
@@ -11612,11 +8870,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 343,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9971
@@ -11629,11 +8883,7 @@ export const MockGames = [
     "title": "Alan Wake",
     "steamid": 108710,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/3/30036/2134607-345678908765.png",
     "giantbomb_id": 20982,
     "steam_cloud": true,
@@ -11653,11 +8903,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 346,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1062
@@ -11670,11 +8916,7 @@ export const MockGames = [
     "title": "Resonance",
     "steamid": 212050,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/97089/2240228-resonanceposter.png",
     "giantbomb_id": 37223,
     "steam_cloud": true,
@@ -11694,11 +8936,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 295,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 6327
@@ -11711,11 +8949,7 @@ export const MockGames = [
     "title": "Secret World Legends",
     "steamid": 215280,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2392942-tsw_01_art.jpg",
     "giantbomb_id": 21369,
     "steam_cloud": false,
@@ -11735,11 +8969,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 108,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 28008
@@ -11752,11 +8982,7 @@ export const MockGames = [
     "title": "Borderlands 2",
     "steamid": 49520,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2560027-bl2clean.jpg",
     "giantbomb_id": 36055,
     "steam_cloud": true,
@@ -11776,11 +9002,7 @@ export const MockGames = [
       "rating": 88,
       "finished_date": "2020-04-20 18:37:37.697",
       "id": 336,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1011
@@ -11793,11 +9015,7 @@ export const MockGames = [
     "title": "Darksiders",
     "steamid": 50620,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2566753-ds1.jpg",
     "giantbomb_id": 20991,
     "steam_cloud": true,
@@ -11817,11 +9035,7 @@ export const MockGames = [
       "rating": 66,
       "finished_date": null,
       "id": 510,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1270
@@ -11834,11 +9048,7 @@ export const MockGames = [
     "title": "Darksiders II",
     "steamid": 50650,
     "date_added": "2014-08-25 22:57:38.908",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2702304-ds2nologo.jpg",
     "giantbomb_id": 29941,
     "steam_cloud": true,
@@ -11858,11 +9068,7 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 299,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1269
@@ -11875,11 +9081,7 @@ export const MockGames = [
     "title": "The Cave",
     "steamid": 221810,
     "date_added": "2013-12-28 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2421394-13f9af544e789819fdb845bab7c35944.jpg",
     "giantbomb_id": 38390,
     "steam_cloud": true,
@@ -11899,11 +9101,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 36,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2175
@@ -11916,11 +9114,7 @@ export const MockGames = [
     "title": "Antichamber",
     "steamid": 219890,
     "date_added": "2013-12-28 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2419538-antichamber_final.jpg",
     "giantbomb_id": 32844,
     "steam_cloud": false,
@@ -11940,11 +9134,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 306,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2064
@@ -11957,11 +9147,7 @@ export const MockGames = [
     "title": "Neverwinter",
     "steamid": 109600,
     "date_added": "2014-08-25 22:57:38.917",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/97089/2502904-untitled.png",
     "giantbomb_id": 32417,
     "steam_cloud": false,
@@ -11981,11 +9167,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 145,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1908
@@ -12031,11 +9213,7 @@ export const MockGames = [
     "title": "Brütal Legend",
     "steamid": 225260,
     "date_added": "2013-12-01 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2085660-box_blegend.png",
     "giantbomb_id": 20700,
     "steam_cloud": true,
@@ -12055,11 +9233,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 361,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 212
@@ -12105,11 +9279,7 @@ export const MockGames = [
     "title": "BioShock Infinite",
     "steamid": 8870,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/4344/2379677-bioshockinfinite_boxart.jpg",
     "giantbomb_id": 32317,
     "steam_cloud": true,
@@ -12129,11 +9299,7 @@ export const MockGames = [
       "rating": 93,
       "finished_date": "2013-11-22 00:00:00.0",
       "id": 38,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 538
@@ -12146,11 +9312,7 @@ export const MockGames = [
     "title": "Tomb Raider: Legend",
     "steamid": 7000,
     "date_added": "2014-08-25 22:57:38.925",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1795440-box_lctrl.png",
     "giantbomb_id": 8554,
     "steam_cloud": false,
@@ -12170,11 +9332,7 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 259,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1161
@@ -12187,11 +9345,7 @@ export const MockGames = [
     "title": "Tomb Raider: Anniversary",
     "steamid": 8000,
     "date_added": "2014-08-25 22:57:38.921",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1881091-box_traidera.png",
     "giantbomb_id": 8201,
     "steam_cloud": false,
@@ -12211,11 +9365,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 614,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1162
@@ -12228,11 +9378,7 @@ export const MockGames = [
     "title": "Tomb Raider: Underworld",
     "steamid": 8140,
     "date_added": "2014-08-25 22:57:38.922",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1881094-box_traideru.png",
     "giantbomb_id": 20694,
     "steam_cloud": false,
@@ -12252,11 +9398,7 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 425,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1163
@@ -12270,18 +9412,8 @@ export const MockGames = [
     "steamid": 203160,
     "date_added": null,
     "availablePlatforms": [
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      },
-      {
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }
+      {"id": 1},
+      {"id": 4}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2351232-tomb_raider.jpg",
     "giantbomb_id": 27312,
@@ -12303,18 +9435,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 83,
       "myPlatforms": [
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        },
-        {
-          "full_name": "Xbox One",
-          "igdb_platform_id": 49,
-          "short_name": "Xbox One",
-          "id": 4,
-          "igdb_name": "Xbox One"
-        }
+        {"id": 1},
+        {"id": 4}
       ],
       "person_id": 1
     }],
@@ -12328,11 +9450,7 @@ export const MockGames = [
     "title": "Tomb Raider I",
     "steamid": 224960,
     "date_added": "2014-08-25 22:57:38.918",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/2560/217714-tombraiderpccover.jpg",
     "giantbomb_id": 3023,
     "steam_cloud": false,
@@ -12352,11 +9470,7 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 47,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 912
@@ -12369,11 +9483,7 @@ export const MockGames = [
     "title": "Tomb Raider: The Last Revelation",
     "steamid": 224980,
     "date_added": "2014-08-25 22:57:38.923",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1810977-box_traidertlr.png",
     "giantbomb_id": 10570,
     "steam_cloud": false,
@@ -12393,11 +9503,7 @@ export const MockGames = [
       "rating": 64,
       "finished_date": null,
       "id": 251,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1158
@@ -12410,11 +9516,7 @@ export const MockGames = [
     "title": "Tomb Raider: Chronicles",
     "steamid": 225000,
     "date_added": "2014-08-25 22:57:38.922",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1810974-box_traiderc.png",
     "giantbomb_id": 10135,
     "steam_cloud": false,
@@ -12434,11 +9536,7 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 69,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1160
@@ -12451,11 +9549,7 @@ export const MockGames = [
     "title": "Tomb Raider (VI): The Angel of Darkness",
     "steamid": 225020,
     "date_added": "2014-08-25 22:57:38.925",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1881092-box_traidertaod.png",
     "giantbomb_id": 6742,
     "steam_cloud": false,
@@ -12475,11 +9569,7 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 74,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1159
@@ -12492,11 +9582,7 @@ export const MockGames = [
     "title": "Tomb Raider III: Adventures of Lara Croft",
     "steamid": 225320,
     "date_added": "2014-08-25 22:57:38.926",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1810972-box_traider3.png",
     "giantbomb_id": 19596,
     "steam_cloud": false,
@@ -12516,11 +9602,7 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 320,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1157
@@ -12533,11 +9615,7 @@ export const MockGames = [
     "title": "Anno 2070",
     "steamid": 48240,
     "date_added": "2013-12-28 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/7/71217/2023486-anno2070usboxartpc.jpg",
     "giantbomb_id": 34703,
     "steam_cloud": false,
@@ -12557,11 +9635,7 @@ export const MockGames = [
       "rating": 82.8,
       "finished_date": null,
       "id": 357,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2959
@@ -12574,11 +9648,7 @@ export const MockGames = [
     "title": "Defiance",
     "steamid": 224600,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2428389-box_defiance.png",
     "giantbomb_id": 35523,
     "steam_cloud": false,
@@ -12598,11 +9668,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 180,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1973
@@ -12616,18 +9682,8 @@ export const MockGames = [
     "steamid": 224760,
     "date_added": "2013-11-28 00:00:00.0",
     "availablePlatforms": [
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 1},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2166793-box_fez.png",
     "giantbomb_id": 24768,
@@ -12649,18 +9705,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 39,
       "myPlatforms": [
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        },
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }
+        {"id": 1},
+        {"id": 11}
       ],
       "person_id": 1
     }],
@@ -12674,11 +9720,7 @@ export const MockGames = [
     "title": "GRID 2",
     "steamid": 44350,
     "date_added": "2014-01-03 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2452886-box_grid2.png",
     "giantbomb_id": 33118,
     "steam_cloud": true,
@@ -12698,11 +9740,7 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 260,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2138
@@ -12715,11 +9753,7 @@ export const MockGames = [
     "title": "Remember Me",
     "steamid": 228300,
     "date_added": "2014-01-03 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2488952-rememberme.jpg",
     "giantbomb_id": 36172,
     "steam_cloud": true,
@@ -12739,11 +9773,7 @@ export const MockGames = [
       "rating": 82.7,
       "finished_date": null,
       "id": 606,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1827
@@ -12756,11 +9786,7 @@ export const MockGames = [
     "title": "Giana Sisters: Twisted Dreams - Rise of the Owlverlord",
     "steamid": 246960,
     "date_added": "2014-08-25 22:57:38.921",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/17/171291/2551740-0569805287-heade.jpg",
     "giantbomb_id": 44033,
     "steam_cloud": true,
@@ -12780,11 +9806,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 263,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 53080
@@ -12797,11 +9819,7 @@ export const MockGames = [
     "title": "Cook, Serve, Delicious!",
     "steamid": 247020,
     "date_added": "2013-12-28 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2390953-pf_csd_boxart.jpg",
     "giantbomb_id": 40093,
     "steam_cloud": true,
@@ -12821,11 +9839,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 377,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 11238
@@ -12838,11 +9852,7 @@ export const MockGames = [
     "title": "Spelunky",
     "steamid": 239350,
     "date_added": "2013-11-28 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2288493-spelunky.png",
     "giantbomb_id": 24999,
     "steam_cloud": false,
@@ -12862,11 +9872,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 202,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3029
@@ -12879,11 +9885,7 @@ export const MockGames = [
     "title": "Gone Home",
     "steamid": 232430,
     "date_added": "2013-11-28 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/81005/2741729-2843104209-40837.jpg",
     "giantbomb_id": 38327,
     "steam_cloud": false,
@@ -12903,11 +9905,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": "2014-05-01 00:00:00.0",
       "id": 380,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1906
@@ -12920,11 +9918,7 @@ export const MockGames = [
     "title": "Batman™: Arkham Origins",
     "steamid": 209000,
     "date_added": "2013-12-28 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2485321-486263.jpg",
     "giantbomb_id": 42245,
     "steam_cloud": true,
@@ -12944,11 +9938,7 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 18,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2003
@@ -12961,11 +9951,7 @@ export const MockGames = [
     "title": "Baldur's Gate II: Enhanced Edition",
     "steamid": 257350,
     "date_added": "2014-06-28 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/14741/961234-throne_of_bhaal_front.jpg",
     "giantbomb_id": 6795,
     "steam_cloud": false,
@@ -12985,11 +9971,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 756,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 5613
@@ -13002,11 +9984,7 @@ export const MockGames = [
     "title": "Democracy 3",
     "steamid": 245470,
     "date_added": "2014-06-20 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/2/22486/2559523-header.png",
     "giantbomb_id": 44236,
     "steam_cloud": false,
@@ -13026,11 +10004,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 624,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 5506
@@ -13043,11 +10017,7 @@ export const MockGames = [
     "title": "The Walking Dead: Season Two",
     "steamid": 261030,
     "date_added": "2014-08-25 22:57:38.924",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/39/2565113-wds2_psn_pc_boxart.jpg",
     "giantbomb_id": 39042,
     "steam_cloud": false,
@@ -13067,11 +10037,7 @@ export const MockGames = [
       "rating": 99,
       "finished_date": "2014-08-26 20:09:00.0",
       "id": 390,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3097
@@ -13084,11 +10050,7 @@ export const MockGames = [
     "title": "TrackMania² Stadium",
     "steamid": 232910,
     "date_added": "2014-08-25 22:57:38.923",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/26/2358524-screen_shot_2012_11_02_at_5.42.52_pm.png",
     "giantbomb_id": 40347,
     "steam_cloud": false,
@@ -13108,11 +10070,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 393,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9448
@@ -13125,11 +10083,7 @@ export const MockGames = [
     "title": "TrackMania² Valley",
     "steamid": 243360,
     "date_added": "2014-08-25 22:57:38.926",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/26/2358526-screen_shot_2012_11_02_at_5.45.04_pm.png",
     "giantbomb_id": 40348,
     "steam_cloud": false,
@@ -13149,11 +10103,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 63,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 25393
@@ -13166,11 +10116,7 @@ export const MockGames = [
     "title": "Far Cry",
     "steamid": 13520,
     "date_added": "2014-06-20 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1897522-box_farcry.jpg",
     "giantbomb_id": 14782,
     "steam_cloud": false,
@@ -13190,11 +10136,7 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 366,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 306
@@ -13207,11 +10149,7 @@ export const MockGames = [
     "title": "Far Cry® 3",
     "steamid": 220240,
     "date_added": "2014-06-20 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2367497-box_fc3.png",
     "giantbomb_id": 32933,
     "steam_cloud": false,
@@ -13231,11 +10169,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 196,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 529
@@ -13248,11 +10182,7 @@ export const MockGames = [
     "title": "Star Trek Online",
     "steamid": 9900,
     "date_added": "2014-08-25 22:57:38.92",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/5150/1195003-924226_58206_front.jpg",
     "giantbomb_id": 21810,
     "steam_cloud": false,
@@ -13272,11 +10202,7 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 221,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7584
@@ -13289,11 +10215,7 @@ export const MockGames = [
     "title": "The Crew",
     "steamid": 241560,
     "date_added": "2014-08-25 22:57:38.92",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3699/2671767-the+crew+v1.jpg",
     "giantbomb_id": 42914,
     "steam_cloud": false,
@@ -13313,11 +10235,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 254,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2137
@@ -13330,11 +10248,7 @@ export const MockGames = [
     "title": "Contagion",
     "steamid": 238430,
     "date_added": "2014-08-28 23:57:11.646",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/18142/1467885-contagion_box_art.jpg",
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -13354,11 +10268,7 @@ export const MockGames = [
     "title": "Call of Duty: Ghosts - Multiplayer",
     "steamid": 209170,
     "date_added": "2014-08-28 23:57:16.499",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -13378,11 +10288,7 @@ export const MockGames = [
     "title": "Age of Empires® III: Complete Collection",
     "steamid": 105450,
     "date_added": "2014-09-01 14:47:08.213",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/14036/654351-aoeiiiboxart.jpg",
     "giantbomb_id": 8546,
     "steam_cloud": false,
@@ -13402,11 +10308,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 461,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 28723
@@ -13419,11 +10321,7 @@ export const MockGames = [
     "title": "Age of Empires II: HD Edition",
     "steamid": 221380,
     "date_added": "2014-09-01 14:47:08.382",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/14036/654354-aoeiitceboxart.jpg",
     "giantbomb_id": 14590,
     "steam_cloud": true,
@@ -13443,11 +10341,7 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 736,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2950
@@ -13460,11 +10354,7 @@ export const MockGames = [
     "title": "Middle-earth™: Shadow of Mordor™",
     "steamid": 241930,
     "date_added": "2014-09-18 03:45:07.011",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2642252-box_mesom.jpg",
     "giantbomb_id": 44484,
     "steam_cloud": true,
@@ -13484,11 +10374,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 8,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3025
@@ -13501,11 +10387,7 @@ export const MockGames = [
     "title": "Ironclad Tactics",
     "steamid": 226960,
     "date_added": "2014-09-19 03:45:06.465",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/17/171291/2557158-7107997127-60ec4.png",
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -13525,11 +10407,7 @@ export const MockGames = [
     "title": "PAC-MAN Championship Edition DX+",
     "steamid": 236450,
     "date_added": "2014-09-26 03:45:06.716",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -13549,11 +10427,7 @@ export const MockGames = [
     "title": "Total War: ROME II - Emperor Edition",
     "steamid": 214950,
     "date_added": "2014-09-26 03:45:06.732",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -13574,18 +10448,8 @@ export const MockGames = [
     "steamid": 620,
     "date_added": "2014-09-29 03:48:16.504",
     "availablePlatforms": [
-      {
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      },
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }
+      {"id": 7},
+      {"id": 1}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1828915-box_portal2.png",
     "giantbomb_id": 21662,
@@ -13608,18 +10472,8 @@ export const MockGames = [
         "finished_date": null,
         "id": 20,
         "myPlatforms": [
-          {
-            "full_name": "Xbox 360",
-            "igdb_platform_id": 12,
-            "short_name": "Xbox 360",
-            "id": 7,
-            "igdb_name": "Xbox 360"
-          },
-          {
-            "full_name": "Steam",
-            "short_name": "Steam",
-            "id": 1
-          }
+          {"id": 7},
+          {"id": 1}
         ],
         "person_id": 1
       },
@@ -13634,11 +10488,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 789,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 4
       }
     ],
@@ -13652,11 +10502,7 @@ export const MockGames = [
     "title": "Rise of the Triad",
     "steamid": 217140,
     "date_added": "2014-10-03 03:45:05.341",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2489843-box_rott.png",
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -13676,11 +10522,7 @@ export const MockGames = [
     "title": "Space Engineers",
     "steamid": 244850,
     "date_added": "2014-10-13 03:45:08.752",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/84290/2728906-9468891516-box_c.jpg",
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -13700,11 +10542,7 @@ export const MockGames = [
     "title": "Borderlands: The Pre-Sequel",
     "steamid": 261640,
     "date_added": "2014-10-14 03:45:07.617",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3699/2693633-borderlands+-+the+pre-sequel%21.jpg",
     "giantbomb_id": 45955,
     "steam_cloud": true,
@@ -13724,11 +10562,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 616,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 6032
@@ -13741,11 +10575,7 @@ export const MockGames = [
     "title": "Eufloria HD",
     "steamid": 221180,
     "date_added": "2014-10-15 03:45:06.918",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/15/155745/2168568-eufloria_banner_d2_486x630.jpg",
     "giantbomb_id": 25339,
     "steam_cloud": false,
@@ -13765,11 +10595,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 760,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 15395
@@ -13782,11 +10608,7 @@ export const MockGames = [
     "title": "RIFT",
     "steamid": 39120,
     "date_added": "2013-10-31 00:00:00.0",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3661/1675692-81xb0wqwz6l._aa1118_.jpg",
     "giantbomb_id": 26770,
     "steam_cloud": false,
@@ -13806,11 +10628,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 41,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 489
@@ -13823,11 +10641,7 @@ export const MockGames = [
     "title": "Trine",
     "steamid": 35700,
     "date_added": "2014-10-18 03:45:07.473",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3699/1839753-trine.jpg",
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -13847,11 +10661,7 @@ export const MockGames = [
     "title": "Company of Heroes 2",
     "steamid": 231430,
     "date_added": "2014-10-18 03:45:07.475",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2531058-box_coh2.png",
     "giantbomb_id": 38224,
     "steam_cloud": true,
@@ -13871,11 +10681,7 @@ export const MockGames = [
     "title": "Killing Floor",
     "steamid": 1250,
     "date_added": "2014-10-18 03:45:07.478",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1500319-kfloor_box.png",
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -13915,11 +10721,7 @@ export const MockGames = [
     "title": "PAYDAY 2",
     "steamid": 218620,
     "date_added": "2014-10-18 03:45:07.482",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2489461-box_payday2.png",
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -13939,11 +10741,7 @@ export const MockGames = [
     "title": "Blade Symphony",
     "steamid": 225600,
     "date_added": "2014-10-18 03:45:07.485",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3118/2426694-blade_symphony.jpg",
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -13963,11 +10761,7 @@ export const MockGames = [
     "title": "Don't Starve",
     "steamid": 219740,
     "date_added": "2014-10-18 03:45:07.487",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2578162-box_dstarve.png",
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -13987,11 +10781,7 @@ export const MockGames = [
     "title": "Sid Meier's Civilization: Beyond Earth",
     "steamid": 65980,
     "date_added": "2014-10-22 03:45:08.186",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3699/2662171-civilization+-+beyond+earth+v1.jpg",
     "giantbomb_id": 45979,
     "steam_cloud": true,
@@ -14011,11 +10801,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 156,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 6038
@@ -14028,11 +10814,7 @@ export const MockGames = [
     "title": "Arma 3",
     "steamid": 107410,
     "date_added": "2014-10-24 18:52:50.426",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -14052,11 +10834,7 @@ export const MockGames = [
     "title": "NBA 2K15",
     "steamid": 282350,
     "date_added": "2014-10-31 03:45:12.34",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2701426-box_nba2k15.jpg",
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -14076,11 +10854,7 @@ export const MockGames = [
     "title": "Marvel Heroes Omega",
     "steamid": 226320,
     "date_added": "2014-11-04 11:43:42.07",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/1749/2640958-mh2015_wallpaper_key-art_16x9_1920x1080.jpg",
     "giantbomb_id": 35003,
     "steam_cloud": false,
@@ -14100,11 +10874,7 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 167,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 28080
@@ -14117,11 +10887,7 @@ export const MockGames = [
     "title": "Unturned",
     "steamid": 304930,
     "date_added": "2014-11-04 11:44:06.489",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/2/28649/2655878-4709919265-heade.jpg",
     "giantbomb_id": 46963,
     "steam_cloud": true,
@@ -14141,11 +10907,7 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 327,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7878
@@ -14158,11 +10920,7 @@ export const MockGames = [
     "title": "Metro 2033",
     "steamid": 43110,
     "date_added": "2014-11-07 23:57:42.859",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/3/30036/1301207-1256226508.jpg",
     "giantbomb_id": 20964,
     "steam_cloud": true,
@@ -14182,11 +10940,7 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 249,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 495
@@ -14199,11 +10953,7 @@ export const MockGames = [
     "title": "Darkfall Unholy Wars",
     "steamid": 227400,
     "date_added": "2014-11-13 03:45:51.993",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/11/118846/2389779-darkfall_unholy_wars_box_large.jpeg",
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -14223,11 +10973,7 @@ export const MockGames = [
     "title": "Rising Storm/Red Orchestra 2 Multiplayer",
     "steamid": 35450,
     "date_added": "2014-11-19 03:45:46.137",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -14247,11 +10993,7 @@ export const MockGames = [
     "title": "Fractured Space",
     "steamid": 310380,
     "date_added": "2014-11-21 03:45:41.764",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/2/27163/2697984-9655717490-11.jp.jpg",
     "giantbomb_id": 48152,
     "steam_cloud": false,
@@ -14271,11 +11013,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 42,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9815
@@ -14288,11 +11026,7 @@ export const MockGames = [
     "title": "Chivalry: Medieval Warfare",
     "steamid": 219640,
     "date_added": "2014-11-21 03:45:41.874",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2428386-box_chivalry.png",
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -14312,11 +11046,7 @@ export const MockGames = [
     "title": "Pool Nation",
     "steamid": 254440,
     "date_added": "2014-11-22 03:45:45.163",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2251198-box_pn.png",
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -14336,11 +11066,7 @@ export const MockGames = [
     "title": "Call of Duty: Advanced Warfare - Multiplayer",
     "steamid": 209660,
     "date_added": "2014-12-12 03:45:41.775",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -14360,11 +11086,7 @@ export const MockGames = [
     "title": "Galactic Civilizations III",
     "steamid": 226860,
     "date_added": "2014-12-20 03:45:46.224",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/84290/2750075-galciv3+2015-05-15+16-43-48-03.jpg",
     "giantbomb_id": 45986,
     "steam_cloud": false,
@@ -14384,11 +11106,7 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 133,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 10345
@@ -14401,11 +11119,7 @@ export const MockGames = [
     "title": "Age of Wonders III",
     "steamid": 226840,
     "date_added": "2014-12-21 03:45:46.404",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/13/136461/2428284-aow3_logo2.png",
     "giantbomb_id": 41503,
     "steam_cloud": true,
@@ -14425,11 +11139,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 726,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 5652
@@ -14442,11 +11152,7 @@ export const MockGames = [
     "title": "Saints Row IV",
     "steamid": 206420,
     "date_added": "2014-12-23 03:45:45.725",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2525258-box_sr4.png",
     "giantbomb_id": 36884,
     "steam_cloud": true,
@@ -14466,11 +11172,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 161,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1981
@@ -14483,11 +11185,7 @@ export const MockGames = [
     "title": "Endless Legend",
     "steamid": 289130,
     "date_added": "2014-12-23 03:45:45.975",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/1992/2615275-screen+shot+2014-03-31+at+10.29.10+pm.jpg",
     "giantbomb_id": 43720,
     "steam_cloud": true,
@@ -14507,11 +11205,7 @@ export const MockGames = [
       "rating": 90.5,
       "finished_date": null,
       "id": 123,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9278
@@ -14525,18 +11219,8 @@ export const MockGames = [
     "steamid": 330830,
     "date_added": "2014-12-23 03:45:45.975",
     "availablePlatforms": [
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 1},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2706659-box_tftb.jpg",
     "giantbomb_id": 44653,
@@ -14558,18 +11242,8 @@ export const MockGames = [
       "finished_date": "2015-10-25 00:00:00.0",
       "id": 241,
       "myPlatforms": [
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        },
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }
+        {"id": 1},
+        {"id": 11}
       ],
       "person_id": 1
     }],
@@ -14583,11 +11257,7 @@ export const MockGames = [
     "title": "Game of Thrones - A Telltale Games Series",
     "steamid": 330840,
     "date_added": "2014-12-23 03:45:45.991",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2706658-box_got.jpg",
     "giantbomb_id": 44655,
     "steam_cloud": false,
@@ -14607,11 +11277,7 @@ export const MockGames = [
       "rating": 84.5,
       "finished_date": null,
       "id": 198,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7610
@@ -14624,11 +11290,7 @@ export const MockGames = [
     "title": "To the Moon",
     "steamid": 206440,
     "date_added": "2015-01-02 03:45:45.151",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/15/155745/2550621-8260917012-jaque.jpg",
     "giantbomb_id": 36242,
     "steam_cloud": true,
@@ -14649,11 +11311,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 791,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 4
       },
       {
@@ -14667,11 +11325,7 @@ export const MockGames = [
         "rating": 88,
         "finished_date": null,
         "id": 85,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 1
       }
     ],
@@ -14685,11 +11339,7 @@ export const MockGames = [
     "title": "Shadowrun: Dragonfall - Director's Cut",
     "steamid": 300550,
     "date_added": "2015-01-02 03:45:45.321",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/15/154284/2670996-dfdcimage.jpg",
     "giantbomb_id": 47411,
     "steam_cloud": true,
@@ -14709,11 +11359,7 @@ export const MockGames = [
       "rating": 90.4,
       "finished_date": null,
       "id": 97,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 8864
@@ -14726,11 +11372,7 @@ export const MockGames = [
     "title": "Fallen Enchantress: Legendary Heroes",
     "steamid": 228260,
     "date_added": "2015-01-03 03:45:45.976",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/18149/2561567-4648738363-Falle.png",
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -14750,11 +11392,7 @@ export const MockGames = [
     "title": "Evolve [Closed Beta]",
     "steamid": 203190,
     "date_added": "2015-01-15 03:45:41.334",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -14775,18 +11413,8 @@ export const MockGames = [
     "steamid": 55230,
     "date_added": "2015-01-18 00:42:05.09",
     "availablePlatforms": [
-      {
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      },
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }
+      {"id": 6},
+      {"id": 1}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2058139-box_srow3.png",
     "giantbomb_id": null,
@@ -14807,11 +11435,7 @@ export const MockGames = [
     "title": "Saints Row 2",
     "steamid": 9480,
     "date_added": "2015-01-18 00:42:05.09",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1967525-box_sr2.png",
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -14831,11 +11455,7 @@ export const MockGames = [
     "title": "Dino D-Day",
     "steamid": 70000,
     "date_added": "2015-01-29 15:00:02.548",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/880/1839580-untitled2.jpg",
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -14855,11 +11475,7 @@ export const MockGames = [
     "title": "Lara Croft and the Temple of Osiris",
     "steamid": 289690,
     "date_added": "2015-02-05 15:00:01.129",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2701424-box_lcattos.jpg",
     "giantbomb_id": 46556,
     "steam_cloud": false,
@@ -14879,11 +11495,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 226,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7325
@@ -14896,11 +11508,7 @@ export const MockGames = [
     "title": "Interstellar Marines",
     "steamid": 236370,
     "date_added": "2015-02-10 00:00:03.133",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3026/298615-interstellar_marines_logo.jpg",
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -14920,11 +11528,7 @@ export const MockGames = [
     "title": "Europa Universalis IV",
     "steamid": 236850,
     "date_added": "2015-02-27 01:00:04.419",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2331106-box_eu4.png",
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -14944,11 +11548,7 @@ export const MockGames = [
     "title": "X Rebirth",
     "steamid": 2870,
     "date_added": "2015-03-12 16:00:01.465",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/7/74295/1763956-xrebirth1.jpg",
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -14968,11 +11568,7 @@ export const MockGames = [
     "title": "X: Beyond the Frontier",
     "steamid": 2840,
     "date_added": "2015-03-12 16:00:01.528",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/56/670565-x_screen_016.jpg",
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -14992,11 +11588,7 @@ export const MockGames = [
     "title": "X-Tension",
     "steamid": 2850,
     "date_added": "2015-03-12 16:00:01.532",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/2352/1390790-x_tension_box_small.jpg",
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -15016,11 +11608,7 @@ export const MockGames = [
     "title": "X2: The Threat",
     "steamid": 2800,
     "date_added": "2015-03-12 16:00:01.536",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3344/618561-533501_44561_front.jpg",
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -15040,11 +11628,7 @@ export const MockGames = [
     "title": "X3: Reunion",
     "steamid": 2810,
     "date_added": "2015-03-12 16:00:01.541",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -15064,11 +11648,7 @@ export const MockGames = [
     "title": "X3: Terran Conflict",
     "steamid": 2820,
     "date_added": "2015-03-12 16:00:01.545",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3699/1837171-x3___terran_conflict_pc_cover.jpg",
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -15088,11 +11668,7 @@ export const MockGames = [
     "title": "X3: Albion Prelude",
     "steamid": 201310,
     "date_added": "2015-03-12 16:00:01.549",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/15/155745/2168573-i1k0w_dcmagnets.ru_x3_albion_prelude_2011.jpg",
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -15112,11 +11688,7 @@ export const MockGames = [
     "title": "Red Faction: Guerrilla Steam Edition",
     "steamid": 20500,
     "date_added": "2015-03-12 16:00:01.554",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -15136,11 +11708,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1445,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 28988
@@ -15153,11 +11721,7 @@ export const MockGames = [
     "title": "Line of Defense MMO",
     "steamid": 266620,
     "date_added": "2015-03-13 14:00:06.197",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -15177,11 +11741,7 @@ export const MockGames = [
     "title": "Fable Anniversary",
     "steamid": 288470,
     "date_added": "2015-03-18 16:00:01.438",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/4/49445/2492013-uwrjqid.jpg",
     "giantbomb_id": 42844,
     "steam_cloud": true,
@@ -15201,11 +11761,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 274,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7658
@@ -15219,18 +11775,8 @@ export const MockGames = [
     "steamid": 245620,
     "date_added": "2015-03-19 22:00:01.382",
     "availablePlatforms": [
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 1},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2635549-t5.jpg",
     "giantbomb_id": null,
@@ -15251,11 +11797,7 @@ export const MockGames = [
     "title": "Men of War: Assault Squad 2",
     "steamid": 244450,
     "date_added": "2015-03-27 10:00:08.902",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -15308,11 +11850,7 @@ export const MockGames = [
     "title": "DiRT 3 Complete Edition",
     "steamid": 321040,
     "date_added": "2015-04-01 09:00:00.999",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1891340-box_dirt3.png",
     "giantbomb_id": 30383,
     "steam_cloud": true,
@@ -15332,11 +11870,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 188,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 47381
@@ -15349,11 +11883,7 @@ export const MockGames = [
     "title": "GRID Autosport",
     "steamid": 255220,
     "date_added": "2015-04-02 11:00:01.872",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3699/2633135-grid+autosport.jpg",
     "giantbomb_id": 46078,
     "steam_cloud": true,
@@ -15373,11 +11903,7 @@ export const MockGames = [
       "rating": 85.2,
       "finished_date": null,
       "id": 109,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 6415
@@ -15390,11 +11916,7 @@ export const MockGames = [
     "title": "Talisman: Digital Edition",
     "steamid": 247000,
     "date_added": "2015-04-02 11:00:02.272",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -15414,11 +11936,7 @@ export const MockGames = [
     "title": "Dungeon of the Endless",
     "steamid": 249050,
     "date_added": "2015-04-18 10:00:08.498",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/12565/2533666-dote_logo.jpg",
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -15439,18 +11957,8 @@ export const MockGames = [
     "steamid": 72850,
     "date_added": "2015-04-23 11:00:03.434",
     "availablePlatforms": [
-      {
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      },
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }
+      {"id": 6},
+      {"id": 1}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3661/1895988-skyrim.png",
     "giantbomb_id": null,
@@ -15471,11 +11979,7 @@ export const MockGames = [
     "title": "Grimoire: Manastorm",
     "steamid": 335430,
     "date_added": "2015-04-25 01:00:01.79",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/23/238775/2719337-grimoire_cover_square_full.jpg",
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -15495,11 +11999,7 @@ export const MockGames = [
     "title": "Starbound - Unstable",
     "steamid": 367540,
     "date_added": "2015-04-28 05:00:06.307",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -15519,11 +12019,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 432,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3019
@@ -15536,11 +12032,7 @@ export const MockGames = [
     "title": "Block N Load",
     "steamid": 299360,
     "date_added": "2015-04-30 22:00:08.146",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -15560,11 +12052,7 @@ export const MockGames = [
     "title": "Ultra Street Fighter IV",
     "steamid": 45760,
     "date_added": "2015-05-15 21:00:09.208",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/16/164924/2515618-usf4.jpg",
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -15584,11 +12072,7 @@ export const MockGames = [
     "title": "Assetto Corsa",
     "steamid": 244210,
     "date_added": "2015-05-20 23:00:08.706",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/17/177367/2517110-9139061657-asset.jpg",
     "giantbomb_id": 43281,
     "steam_cloud": false,
@@ -15608,11 +12092,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 732,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 5597
@@ -15625,11 +12105,7 @@ export const MockGames = [
     "title": "Skullgirls ∞Endless Beta∞",
     "steamid": 208610,
     "date_added": "2015-06-02 17:00:01.868",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -15649,11 +12125,7 @@ export const MockGames = [
     "title": "Skullgirls",
     "steamid": 245170,
     "date_added": "2015-06-02 17:00:01.915",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2531065-box_sg.png",
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -15673,11 +12145,7 @@ export const MockGames = [
     "title": "Football Manager 2015",
     "steamid": 295270,
     "date_added": "2015-06-04 17:00:01.907",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/16/164924/2669300-7287590369-thumb.jpg",
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -15697,11 +12165,7 @@ export const MockGames = [
     "title": "Homeworld Remastered Collection",
     "steamid": 244160,
     "date_added": "2015-06-11 15:00:05.705",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/84290/2730473-untitled.jpg",
     "giantbomb_id": 48984,
     "steam_cloud": true,
@@ -15721,11 +12185,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 470,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 8773
@@ -15738,11 +12198,7 @@ export const MockGames = [
     "title": "Project CARS",
     "steamid": 234630,
     "date_added": "2015-06-11 15:00:06.159",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2652860-pcars.jpg",
     "giantbomb_id": 36993,
     "steam_cloud": false,
@@ -15762,11 +12218,7 @@ export const MockGames = [
       "rating": 78.3,
       "finished_date": null,
       "id": 144,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 5319
@@ -15779,11 +12231,7 @@ export const MockGames = [
     "title": "Valiant Hearts: The Great War™ / Soldats Inconnus : Mémoires de la Grande Guerre™",
     "steamid": 260230,
     "date_added": "2015-06-12 16:00:01.725",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/17/171291/2664006-7158019745-VH-BA.jpg",
     "giantbomb_id": 43885,
     "steam_cloud": false,
@@ -15803,11 +12251,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 436,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7327
@@ -15820,11 +12264,7 @@ export const MockGames = [
     "title": "Grey Goo",
     "steamid": 290790,
     "date_added": "2015-06-12 19:00:07.276",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/84290/2722294-7594790952-50342.jpg",
     "giantbomb_id": 45727,
     "steam_cloud": true,
@@ -15844,11 +12284,7 @@ export const MockGames = [
       "rating": 83.9,
       "finished_date": null,
       "id": 289,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 8232
@@ -15862,18 +12298,8 @@ export const MockGames = [
     "steamid": 316790,
     "date_added": "2015-06-15 01:00:02.728",
     "availablePlatforms": [
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 1},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/595/2660822-gffinal+candidate.jpg",
     "giantbomb_id": 13230,
@@ -15895,18 +12321,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 611,
       "myPlatforms": [
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        },
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }
+        {"id": 1},
+        {"id": 11}
       ],
       "person_id": 1
     }],
@@ -15920,11 +12336,7 @@ export const MockGames = [
     "title": "Grow Home",
     "steamid": 323320,
     "date_added": "2015-06-16 15:00:01.771",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/84290/2723142-7042607860-27880.jpg",
     "giantbomb_id": 48631,
     "steam_cloud": true,
@@ -15944,11 +12356,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 723,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 8774
@@ -15961,11 +12369,7 @@ export const MockGames = [
     "title": "Planetary Annihilation",
     "steamid": 233250,
     "date_added": "2015-06-17 21:00:02.137",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/11/117587/2313052-pa_logo.jpg",
     "giantbomb_id": 39698,
     "steam_cloud": false,
@@ -15985,11 +12389,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 300,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2958
@@ -16002,11 +12402,7 @@ export const MockGames = [
     "title": "Ori and the Blind Forest",
     "steamid": 261570,
     "date_added": "2015-06-18 14:00:02.147",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3699/2665148-ori+and+the+blind+forest.jpg",
     "giantbomb_id": 46548,
     "steam_cloud": true,
@@ -16026,11 +12422,7 @@ export const MockGames = [
       "rating": 10,
       "finished_date": null,
       "id": 369,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7344
@@ -16043,11 +12435,7 @@ export const MockGames = [
     "title": "BattleBlock Theater",
     "steamid": 238460,
     "date_added": "2015-06-18 14:00:02.595",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/2/20255/2413432-bbtgraphic1.png",
     "giantbomb_id": 27817,
     "steam_cloud": true,
@@ -16067,11 +12455,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 317,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2605
@@ -16084,11 +12468,7 @@ export const MockGames = [
     "title": "Life is Strange™",
     "steamid": 319630,
     "date_added": "2015-06-18 14:00:02.626",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/18/187968/2721398-rsz_image.jpg",
     "giantbomb_id": 47342,
     "steam_cloud": true,
@@ -16109,11 +12489,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 808,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 5
       },
       {
@@ -16127,11 +12503,7 @@ export const MockGames = [
         "rating": 80,
         "finished_date": "2016-12-27 00:00:00.0",
         "id": 2,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 1
       }
     ],
@@ -16146,18 +12518,8 @@ export const MockGames = [
     "steamid": 208650,
     "date_added": "2015-06-23 16:00:00.921",
     "availablePlatforms": [
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 1},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2606852-keyfull+9237457203.jpg",
     "giantbomb_id": 45577,
@@ -16179,18 +12541,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 120,
       "myPlatforms": [
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        },
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }
+        {"id": 1},
+        {"id": 11}
       ],
       "person_id": 1
     }],
@@ -16204,11 +12556,7 @@ export const MockGames = [
     "title": "Total War: ATTILA",
     "steamid": 325610,
     "date_added": "2015-06-25 14:00:01.203",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/13/136036/2708506-unknown.jpeg",
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -16228,11 +12576,7 @@ export const MockGames = [
     "title": "Total War: SHOGUN 2",
     "steamid": 34330,
     "date_added": "2015-06-25 14:00:01.225",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2392974-shogun_2_total_war_01_artwork.jpg",
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -16252,11 +12596,7 @@ export const MockGames = [
     "title": "Empire: Total War",
     "steamid": 10500,
     "date_added": "2015-06-25 14:00:01.231",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/11423/778816-aaa_rgb.jpg",
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -16276,11 +12616,7 @@ export const MockGames = [
     "title": "Medieval II: Total War",
     "steamid": 4700,
     "date_added": "2015-06-25 14:00:01.233",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/2/23808/1094290-medieval_2.jpg",
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -16300,11 +12636,7 @@ export const MockGames = [
     "title": "Rome: Total War",
     "steamid": 4760,
     "date_added": "2015-06-25 14:00:01.235",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/864/676163-589390_front.jpg",
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -16324,11 +12656,7 @@ export const MockGames = [
     "title": "Depth",
     "steamid": 274940,
     "date_added": "2015-07-09 17:00:03.826",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/5/58746/2102733-1824311703.jpg",
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -16348,11 +12676,7 @@ export const MockGames = [
     "title": "Elite Dangerous",
     "steamid": 359320,
     "date_added": "2015-07-11 10:00:17.418",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/13/137364/2362002-elite_dangerous.png",
     "giantbomb_id": 40419,
     "steam_cloud": false,
@@ -16372,11 +12696,7 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 193,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2955
@@ -16389,11 +12709,7 @@ export const MockGames = [
     "title": "Etherium",
     "steamid": 245370,
     "date_added": "2015-07-14 02:00:01.246",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/10/103881/2651071-etherium.jpg",
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -16413,11 +12729,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1474,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 8923
@@ -16430,13 +12742,7 @@ export const MockGames = [
     "title": "Uncharted 3: Drake's Deception",
     "steamid": null,
     "date_added": null,
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2215091-box_unch3.png",
     "giantbomb_id": 32982,
     "steam_cloud": null,
@@ -16456,13 +12762,7 @@ export const MockGames = [
       "rating": 94,
       "finished_date": "2020-04-20 18:12:48.545",
       "id": 600,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 512
@@ -16475,11 +12775,7 @@ export const MockGames = [
     "title": "H-Hour: World's Elite",
     "steamid": 293220,
     "date_added": "2015-08-27 22:11:28.235",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/20/200386/2504045-10019e465ba33aab7c5a01ff454617a3_large.png",
     "giantbomb_id": 43032,
     "steam_cloud": false,
@@ -16499,11 +12795,7 @@ export const MockGames = [
     "title": "ARK: Survival Evolved",
     "steamid": 346110,
     "date_added": "2015-08-27 22:11:28.42",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/17/171939/2749258-7668003434-heade.jpg",
     "giantbomb_id": 49642,
     "steam_cloud": true,
@@ -16523,11 +12815,7 @@ export const MockGames = [
     "title": "Company of Heroes (New Steam Version)",
     "steamid": 228200,
     "date_added": "2015-08-27 22:11:28.588",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2531057-box_coh.png",
     "giantbomb_id": 18930,
     "steam_cloud": null,
@@ -16547,11 +12835,7 @@ export const MockGames = [
     "title": "Mount & Blade: Warband",
     "steamid": 48700,
     "date_added": "2015-08-27 22:11:28.924",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1849085-box_mabw.png",
     "giantbomb_id": 25622,
     "steam_cloud": false,
@@ -16571,11 +12855,7 @@ export const MockGames = [
     "title": "Rocket League",
     "steamid": 252950,
     "date_added": "2015-09-06 00:37:36.739",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/6/66643/2764383-8004960431-image",
     "giantbomb_id": 34407,
     "steam_cloud": true,
@@ -16595,11 +12875,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 292,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 11198
@@ -16612,11 +12888,7 @@ export const MockGames = [
     "title": "Abyss Odyssey",
     "steamid": 255070,
     "date_added": "2015-09-06 00:37:36.909",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/17/171291/2660633-1776005078-abyss.jpg",
     "giantbomb_id": 45583,
     "steam_cloud": true,
@@ -16636,11 +12908,7 @@ export const MockGames = [
     "title": "Killing Floor 2",
     "steamid": 232090,
     "date_added": "2015-09-06 00:37:37.079",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/22/221564/2637074-3949366575-killi.jpg",
     "giantbomb_id": 46434,
     "steam_cloud": false,
@@ -16660,11 +12928,7 @@ export const MockGames = [
     "title": "Evolve",
     "steamid": 273350,
     "date_added": "2015-09-06 00:37:37.337",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/18/187968/2715748-rsz_91xwbmqgaml_sl1500_.jpg",
     "giantbomb_id": 41357,
     "steam_cloud": false,
@@ -16685,20 +12949,8 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2015-09-09 06:23:46.503",
     "availablePlatforms": [
-      {
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      },
-      {
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }
+      {"id": 4},
+      {"id": 6}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2701420-box_chariot.jpg",
     "giantbomb_id": 45729,
@@ -16720,20 +12972,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 677,
       "myPlatforms": [
-        {
-          "full_name": "Xbox One",
-          "igdb_platform_id": 49,
-          "short_name": "Xbox One",
-          "id": 4,
-          "igdb_name": "Xbox One"
-        },
-        {
-          "full_name": "PS3",
-          "igdb_platform_id": 9,
-          "short_name": "PS3",
-          "id": 6,
-          "igdb_name": "PlayStation 3"
-        }
+        {"id": 4},
+        {"id": 6}
       ],
       "person_id": 1
     }],
@@ -16747,13 +12987,7 @@ export const MockGames = [
     "title": "Massive Chalice",
     "steamid": null,
     "date_added": "2015-09-09 06:58:59.714",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2768044-box_mchalice.jpg",
     "giantbomb_id": 42775,
     "steam_cloud": null,
@@ -16773,13 +13007,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": "2016-01-22 00:00:00.0",
       "id": 596,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 15861
@@ -16792,13 +13020,7 @@ export const MockGames = [
     "title": "Forza Motorsport 5",
     "steamid": null,
     "date_added": "2015-09-09 07:04:10.134",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2573477-box_forza5.png",
     "giantbomb_id": 42693,
     "steam_cloud": null,
@@ -16818,13 +13040,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 646,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 2131
@@ -16837,13 +13053,7 @@ export const MockGames = [
     "title": "Child of Light",
     "steamid": null,
     "date_added": "2015-09-09 07:07:02.555",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2624132-2766761797-Child.jpg",
     "giantbomb_id": 43612,
     "steam_cloud": null,
@@ -16863,13 +13073,7 @@ export const MockGames = [
       "rating": 84.3,
       "finished_date": null,
       "id": 403,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 4756
@@ -16882,13 +13086,7 @@ export const MockGames = [
     "title": "So Many Me",
     "steamid": null,
     "date_added": "2015-09-09 07:09:09.727",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/10/103881/2656706-so+many+me.jpg",
     "giantbomb_id": 46997,
     "steam_cloud": null,
@@ -16908,13 +13106,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 667,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 9478
@@ -16927,13 +13119,7 @@ export const MockGames = [
     "title": "The Deer God",
     "steamid": null,
     "date_added": "2015-09-09 07:12:06.603",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/16/164924/2658759-7654083622-photo.jpg",
     "giantbomb_id": 47049,
     "steam_cloud": null,
@@ -16953,13 +13139,7 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 665,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 17952
@@ -16972,13 +13152,7 @@ export const MockGames = [
     "title": "rain",
     "steamid": null,
     "date_added": "2015-09-09 07:22:01.863",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2295843-610rain_gamescom_keyart.jpg",
     "giantbomb_id": 39359,
     "steam_cloud": null,
@@ -16998,13 +13172,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 426,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 2969
@@ -17017,13 +13185,7 @@ export const MockGames = [
     "title": "Hoard",
     "steamid": null,
     "date_added": "2015-09-09 07:26:56.892",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3503/1512007-hoardbanner1.jpg",
     "giantbomb_id": 32604,
     "steam_cloud": null,
@@ -17043,13 +13205,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 508,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 7402
@@ -17062,13 +13218,7 @@ export const MockGames = [
     "title": "Dead Island",
     "steamid": null,
     "date_added": "2015-09-09 07:33:25.384",
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2079822-box_disland.png",
     "giantbomb_id": 21534,
     "steam_cloud": null,
@@ -17088,13 +13238,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 602,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 536
@@ -17107,13 +13251,7 @@ export const MockGames = [
     "title": "Shoot Many Robots",
     "steamid": null,
     "date_added": "2015-09-09 07:35:05.946",
-    "availablePlatforms": [{
-      "full_name": "Xbox 360",
-      "igdb_platform_id": 12,
-      "short_name": "Xbox 360",
-      "id": 7,
-      "igdb_name": "Xbox 360"
-    }],
+    "availablePlatforms": [{"id": 7}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2104767-box_smr.png",
     "giantbomb_id": 32898,
     "steam_cloud": null,
@@ -17133,13 +13271,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 246,
-      "myPlatforms": [{
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      }],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 11643
@@ -17152,11 +13284,7 @@ export const MockGames = [
     "title": "Ratz Instagib 2.0",
     "steamid": 338170,
     "date_added": "2015-09-11 03:46:07.02",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -17176,11 +13304,7 @@ export const MockGames = [
     "title": "Oddworld: Abe's Oddysee",
     "steamid": 15700,
     "date_added": "2015-09-24 03:46:05.348",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/4938/872380-abe.png",
     "giantbomb_id": 5269,
     "steam_cloud": false,
@@ -17200,11 +13324,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 738,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 999
@@ -17217,11 +13337,7 @@ export const MockGames = [
     "title": "Warhammer 40,000: Dawn of War \u2013 Dark Crusade",
     "steamid": 4580,
     "date_added": "2015-09-25 03:46:10.635",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -17241,11 +13357,7 @@ export const MockGames = [
     "title": "Warhammer® 40,000™: Dawn of War® II \u2013 Retribution™",
     "steamid": 56400,
     "date_added": "2015-09-25 03:46:11.177",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -17265,11 +13377,7 @@ export const MockGames = [
     "title": "Warhammer® 40,000™: Dawn of War® II",
     "steamid": 15620,
     "date_added": "2015-09-25 03:46:11.347",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -17289,11 +13397,7 @@ export const MockGames = [
     "title": "Sanctum 2",
     "steamid": 210770,
     "date_added": "2015-09-30 03:46:12.205",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2472249-box_sanctum2.png",
     "giantbomb_id": 37420,
     "steam_cloud": true,
@@ -17313,13 +13417,7 @@ export const MockGames = [
     "title": "Dragon Age: Inquisition",
     "steamid": null,
     "date_added": "2015-10-01 01:26:08.159",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/10354/2623521-10154056_10152337452839367_3774822524613655828_n.jpg",
     "giantbomb_id": 35398,
     "steam_cloud": null,
@@ -17339,13 +13437,7 @@ export const MockGames = [
       "rating": 99,
       "finished_date": "2015-10-02 00:00:00.0",
       "id": 500,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 1887
@@ -17358,13 +13450,7 @@ export const MockGames = [
     "title": "Forza Motorsport 6",
     "steamid": null,
     "date_added": "2015-10-02 04:59:41.574",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/18/187968/2760583-rsz_image_2.jpg",
     "giantbomb_id": 48568,
     "steam_cloud": null,
@@ -17384,13 +13470,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 564,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 8558
@@ -17403,11 +13483,7 @@ export const MockGames = [
     "title": "SpeedRunners",
     "steamid": 207140,
     "date_added": "2015-10-02 03:46:11.292",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -17427,13 +13503,7 @@ export const MockGames = [
     "title": "Unmechanical",
     "steamid": null,
     "date_added": "2015-10-23 03:53:10.384",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/84290/2727169-boxshot.jpg",
     "giantbomb_id": 39154,
     "steam_cloud": null,
@@ -17453,13 +13523,7 @@ export const MockGames = [
       "rating": 33,
       "finished_date": null,
       "id": 567,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 16368
@@ -17472,13 +13536,7 @@ export const MockGames = [
     "title": "KickBeat",
     "steamid": null,
     "date_added": "2015-10-23 03:53:53.382",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/6/63119/2255930-kickbeat.jpg",
     "giantbomb_id": 38893,
     "steam_cloud": null,
@@ -17498,13 +13556,7 @@ export const MockGames = [
       "rating": 62,
       "finished_date": null,
       "id": 673,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 7683
@@ -17517,13 +13569,7 @@ export const MockGames = [
     "title": "Kung Fu Rabbit",
     "steamid": null,
     "date_added": "2015-10-23 03:54:07.638",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2471424-ps_wiiuds_kungfurabbit.png",
     "giantbomb_id": 42418,
     "steam_cloud": null,
@@ -17543,13 +13589,7 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 674,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 23584
@@ -17562,13 +13602,7 @@ export const MockGames = [
     "title": "Destiny",
     "steamid": null,
     "date_added": "2015-11-05 03:22:10.391",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2669576-destiny%20v2.jpg",
     "giantbomb_id": 36067,
     "steam_cloud": null,
@@ -17588,13 +13622,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 451,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 1939
@@ -17607,13 +13635,7 @@ export const MockGames = [
     "title": "Forza Horizon 2",
     "steamid": null,
     "date_added": "2015-11-05 03:22:41.814",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3699/2669575-forza+horizon+2+-+cover+2.jpg",
     "giantbomb_id": 46474,
     "steam_cloud": null,
@@ -17633,13 +13655,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 397,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 7326
@@ -17652,11 +13668,7 @@ export const MockGames = [
     "title": "Darksiders II Deathinitive Edition",
     "steamid": 388410,
     "date_added": "2015-11-06 03:45:58.61",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2702304-ds2nologo.jpg",
     "giantbomb_id": 29941,
     "steam_cloud": true,
@@ -17676,11 +13688,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 118,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 20048
@@ -17693,11 +13701,7 @@ export const MockGames = [
     "title": "Fallout 4",
     "steamid": 377160,
     "date_added": "2015-11-10 03:46:10.517",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2795700-2356006370-64616.jpg",
     "giantbomb_id": 49833,
     "steam_cloud": true,
@@ -17717,11 +13721,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 276,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9630
@@ -17734,11 +13734,7 @@ export const MockGames = [
     "title": "This War of Mine",
     "steamid": 282070,
     "date_added": "2015-11-26 03:46:03.734",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/10354/2702669-this_war_of_mine_header.jpg",
     "giantbomb_id": 45657,
     "steam_cloud": true,
@@ -17758,11 +13754,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 702,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7706
@@ -17775,11 +13767,7 @@ export const MockGames = [
     "title": "Batman: Arkham Asylum GOTY Edition",
     "steamid": 35140,
     "date_added": "2015-12-02 03:46:10.302",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2606172-batmanaaclean.jpg",
     "giantbomb_id": 23245,
     "steam_cloud": true,
@@ -17799,11 +13787,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 177,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 27862
@@ -17816,11 +13800,7 @@ export const MockGames = [
     "title": "Batman: Arkham City GOTY",
     "steamid": 200260,
     "date_added": "2015-12-02 03:46:10.474",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2606170-batmanaccleanbox.jpg",
     "giantbomb_id": 29443,
     "steam_cloud": true,
@@ -17840,11 +13820,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 176,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 501
@@ -17857,11 +13833,7 @@ export const MockGames = [
     "title": "Batman™: Arkham Origins Blackgate - Deluxe Edition",
     "steamid": 267490,
     "date_added": "2015-12-02 03:46:10.74",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -17881,11 +13853,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 15,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 21066
@@ -17898,11 +13866,7 @@ export const MockGames = [
     "title": "Black Mesa Dedicated Server",
     "steamid": 346680,
     "date_added": "2015-12-02 03:46:10.99",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -17922,11 +13886,7 @@ export const MockGames = [
     "title": "Black Mesa",
     "steamid": 362890,
     "date_added": "2015-12-02 03:46:11.162",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/97089/2388988-fancover.png",
     "giantbomb_id": 39814,
     "steam_cloud": true,
@@ -17946,11 +13906,7 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 724,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 6739
@@ -17963,11 +13919,7 @@ export const MockGames = [
     "title": "The Jackbox Party Pack",
     "steamid": 331670,
     "date_added": "2015-12-24 03:46:04.616",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/18/187968/2715962-2702418-rsz_1rsz_image.jpg",
     "giantbomb_id": 48241,
     "steam_cloud": true,
@@ -17987,11 +13939,7 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 162,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 11529
@@ -18004,11 +13952,7 @@ export const MockGames = [
     "title": "The Jackbox Party Pack 2",
     "steamid": 397460,
     "date_added": "2015-12-24 03:46:05.874",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/11/115535/2788095-feature_tjpp2.jpg",
     "giantbomb_id": 51103,
     "steam_cloud": true,
@@ -18028,11 +13972,7 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 186,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19081
@@ -18045,11 +13985,7 @@ export const MockGames = [
     "title": "DiRT Rally",
     "steamid": 310560,
     "date_added": "2015-12-26 03:46:09.665",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/2840/2745058-header.jpg",
     "giantbomb_id": 49556,
     "steam_cloud": true,
@@ -18069,11 +14005,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 270,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9928
@@ -18086,11 +14018,7 @@ export const MockGames = [
     "title": "Divinity: Original Sin Enhanced Edition",
     "steamid": 373420,
     "date_added": "2015-12-26 03:46:11.998",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/19306/2219819-divinityosboxart.jpg",
     "giantbomb_id": 38446,
     "steam_cloud": true,
@@ -18110,11 +14038,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 71,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 14177
@@ -18127,11 +14051,7 @@ export const MockGames = [
     "title": "Cities: Skylines",
     "steamid": 255710,
     "date_added": "2016-01-01 03:46:05.966",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/17/171291/2670675-temp-packshot-v2.jpg",
     "giantbomb_id": 47402,
     "steam_cloud": true,
@@ -18151,11 +14071,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 623,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9066
@@ -18168,11 +14084,7 @@ export const MockGames = [
     "title": "Dream",
     "steamid": 229580,
     "date_added": "2016-01-01 03:46:06.96",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/17/171291/2529242-dream-by-hypersloth-0.jpg",
     "giantbomb_id": 43514,
     "steam_cloud": true,
@@ -18192,11 +14104,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 192,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 63020
@@ -18209,11 +14117,7 @@ export const MockGames = [
     "title": "Undertale",
     "steamid": 391540,
     "date_added": "2016-01-01 03:46:07.135",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/81005/2792695-8926799964-capsu.jpg",
     "giantbomb_id": 50897,
     "steam_cloud": false,
@@ -18233,11 +14137,7 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 76,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 12517
@@ -18250,11 +14150,7 @@ export const MockGames = [
     "title": "Divinity: Original Sin (Classic)",
     "steamid": 230230,
     "date_added": "2016-01-05 03:46:05.707",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -18275,11 +14171,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 429,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 1
       },
       {
@@ -18293,11 +14185,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 802,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 5
       }
     ],
@@ -18345,18 +14233,8 @@ export const MockGames = [
     "steamid": 268500,
     "date_added": "2016-03-02 21:31:55.856",
     "availablePlatforms": [
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 1},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2821995-xcom2box.jpg",
     "giantbomb_id": 49817,
@@ -18378,18 +14256,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 140,
       "myPlatforms": [
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        },
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }
+        {"id": 1},
+        {"id": 11}
       ],
       "person_id": 1
     }],
@@ -18403,11 +14271,7 @@ export const MockGames = [
     "title": "The Walking Dead: Michonne",
     "steamid": 429570,
     "date_added": "2016-03-02 21:31:56.028",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/11/115535/2761861-twd_michonne_e3_key_art_650px.jpg",
     "giantbomb_id": 50180,
     "steam_cloud": null,
@@ -18427,11 +14291,7 @@ export const MockGames = [
       "rating": 81.9,
       "finished_date": null,
       "id": 621,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 11204
@@ -18444,11 +14304,7 @@ export const MockGames = [
     "title": "SEGA Mega Drive & Genesis Classics",
     "steamid": 34270,
     "date_added": "2016-03-02 21:31:56.301",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2948289-header.jpg",
     "giantbomb_id": 58967,
     "steam_cloud": null,
@@ -18468,11 +14324,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 417,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 80185
@@ -18485,11 +14337,7 @@ export const MockGames = [
     "title": "Hell Yeah!",
     "steamid": 205230,
     "date_added": "2016-03-02 21:31:56.491",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -18509,11 +14357,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 178,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 5618
@@ -18526,11 +14370,7 @@ export const MockGames = [
     "title": "Jet Set Radio",
     "steamid": 205950,
     "date_added": "2016-03-02 21:31:56.677",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -18550,11 +14390,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 598,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1569
@@ -18567,13 +14403,7 @@ export const MockGames = [
     "title": "MLB The Show 16",
     "steamid": null,
     "date_added": "2016-04-08 05:56:37.227",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/26/2804211-71qovwdotdl._sl1247_.jpg",
     "giantbomb_id": 51758,
     "steam_cloud": null,
@@ -18593,13 +14423,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 742,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 2212
@@ -18612,13 +14436,7 @@ export const MockGames = [
     "title": "Star Wars Battlefront",
     "steamid": null,
     "date_added": "2016-04-08 06:12:08.635",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/18/187968/2743161-5356.jpg",
     "giantbomb_id": 42912,
     "steam_cloud": null,
@@ -18638,13 +14456,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 43,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 2113
@@ -18657,13 +14469,7 @@ export const MockGames = [
     "title": "Driveclub",
     "steamid": null,
     "date_added": "2016-04-08 06:12:34.216",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2560905-driveclub.jpg",
     "giantbomb_id": 41693,
     "steam_cloud": null,
@@ -18683,13 +14489,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 668,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 1940
@@ -18702,13 +14502,7 @@ export const MockGames = [
     "title": "inFamous: Second Son",
     "steamid": null,
     "date_added": "2016-04-08 06:13:17.579",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2578164-box_ifss.png",
     "giantbomb_id": 41695,
     "steam_cloud": null,
@@ -18728,13 +14522,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 522,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 1941
@@ -18747,13 +14535,7 @@ export const MockGames = [
     "title": "MLB The Show 15",
     "steamid": null,
     "date_added": "2016-04-08 06:22:41.975",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2706666-mlb-15-the-show_615.0.jpg",
     "giantbomb_id": 48328,
     "steam_cloud": null,
@@ -18773,13 +14555,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 103,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 8655
@@ -18792,13 +14568,7 @@ export const MockGames = [
     "title": "Galak-Z",
     "steamid": null,
     "date_added": "2016-04-08 06:23:13.657",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2496428-gz.jpg",
     "giantbomb_id": 42925,
     "steam_cloud": null,
@@ -18818,13 +14588,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 376,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 11203
@@ -18837,13 +14601,7 @@ export const MockGames = [
     "title": "Broforce",
     "steamid": null,
     "date_added": "2016-04-08 06:23:28.907",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/84290/2728814-7740550763-1boxs.jpg",
     "giantbomb_id": 43346,
     "steam_cloud": null,
@@ -18863,13 +14621,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 686,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 5973
@@ -18882,13 +14634,7 @@ export const MockGames = [
     "title": "Nom Nom Galaxy",
     "steamid": null,
     "date_added": "2016-04-08 06:23:42.845",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/1992/2696062-copy-copy-logo_nmg5.jpg",
     "giantbomb_id": 40371,
     "steam_cloud": null,
@@ -18908,13 +14654,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 608,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 10602
@@ -18927,13 +14667,7 @@ export const MockGames = [
     "title": "HELLDIVERS",
     "steamid": null,
     "date_added": "2016-04-08 06:24:00.724",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/14741/2532452-helldivers-promo-image-440x270.jpg",
     "giantbomb_id": 43613,
     "steam_cloud": null,
@@ -18953,13 +14687,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 519,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 14523
@@ -18972,13 +14700,7 @@ export const MockGames = [
     "title": "Nova-111",
     "steamid": null,
     "date_added": "2016-04-08 06:24:13.998",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2684271-nova-blog-header.jpg",
     "giantbomb_id": 45643,
     "steam_cloud": null,
@@ -18998,13 +14720,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 609,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 12561
@@ -19017,11 +14733,7 @@ export const MockGames = [
     "title": "DOOM Open Beta",
     "steamid": 350470,
     "date_added": "2016-04-15 03:46:02.672",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -19041,11 +14753,7 @@ export const MockGames = [
     "title": "Tom Clancy's Rainbow Six Siege",
     "steamid": 359550,
     "date_added": "2016-04-15 03:46:02.846",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -19065,11 +14773,7 @@ export const MockGames = [
     "title": "The Average Everyday Adventures of Samantha Browne",
     "steamid": 445130,
     "date_added": "2016-04-24 03:46:02.643",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2892207-header%20%282%29.jpg",
     "giantbomb_id": 56613,
     "steam_cloud": null,
@@ -19089,11 +14793,7 @@ export const MockGames = [
       "rating": 90.7,
       "finished_date": null,
       "id": 290,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 16984
@@ -19106,13 +14806,7 @@ export const MockGames = [
     "title": "Sunset Overdrive",
     "steamid": null,
     "date_added": "2016-05-08 03:52:33.957",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/18/187968/2631498-3224852370-Sunse.jpg",
     "giantbomb_id": 42898,
     "steam_cloud": null,
@@ -19132,13 +14826,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 506,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 3247
@@ -19184,13 +14872,7 @@ export const MockGames = [
     "title": "Uncharted 4: A Thief's End",
     "steamid": null,
     "date_added": "2016-05-10 01:14:29.369",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2848570-uc4boxclean.jpg",
     "giantbomb_id": 44507,
     "steam_cloud": null,
@@ -19211,13 +14893,7 @@ export const MockGames = [
         "rating": 99,
         "finished_date": "2018-11-02 00:00:00.0",
         "id": 654,
-        "myPlatforms": [{
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }],
+        "myPlatforms": [{"id": 11}],
         "person_id": 1
       },
       {
@@ -19231,13 +14907,7 @@ export const MockGames = [
         "rating": 99,
         "finished_date": null,
         "id": 772,
-        "myPlatforms": [{
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }],
+        "myPlatforms": [{"id": 11}],
         "person_id": 2
       }
     ],
@@ -19251,13 +14921,7 @@ export const MockGames = [
     "title": "Defense Grid 2",
     "steamid": null,
     "date_added": "2016-05-10 01:20:37.926",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2701422-box_dg2.jpg",
     "giantbomb_id": 39001,
     "steam_cloud": null,
@@ -19277,13 +14941,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 505,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 10184
@@ -19297,20 +14955,8 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2016-05-10 01:20:59.298",
     "availablePlatforms": [
-      {
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 4},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3699/2659999-lords+of+the+fallen+v1.jpg",
     "giantbomb_id": 42672,
@@ -19332,20 +14978,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 660,
       "myPlatforms": [
-        {
-          "full_name": "Xbox One",
-          "igdb_platform_id": 49,
-          "short_name": "Xbox One",
-          "id": 4,
-          "igdb_name": "Xbox One"
-        },
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }
+        {"id": 4},
+        {"id": 11}
       ],
       "person_id": 1
     }],
@@ -19359,13 +14993,7 @@ export const MockGames = [
     "title": "Sherlock Holmes: Crimes and Punishments",
     "steamid": null,
     "date_added": "2016-05-10 01:21:31.326",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2701429-box_shcap.jpg",
     "giantbomb_id": 46253,
     "steam_cloud": null,
@@ -19385,13 +15013,7 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 635,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 5541
@@ -19404,13 +15026,7 @@ export const MockGames = [
     "title": "Styx: Master of Shadows",
     "steamid": null,
     "date_added": "2016-05-10 01:21:47.418",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2701431-box_styxmos.jpg",
     "giantbomb_id": 45430,
     "steam_cloud": null,
@@ -19430,13 +15046,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 498,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 6072
@@ -19449,13 +15059,7 @@ export const MockGames = [
     "title": "Hand of Fate",
     "steamid": null,
     "date_added": "2016-05-10 01:22:00.109",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87610/2727898-handoffatetwitch600.jpg",
     "giantbomb_id": 43290,
     "steam_cloud": null,
@@ -19475,13 +15079,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 514,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 9101
@@ -19494,13 +15092,7 @@ export const MockGames = [
     "title": "ZHEROS",
     "steamid": null,
     "date_added": "2016-05-10 01:23:01.562",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/18/187968/2714698-capture.jpg",
     "giantbomb_id": 48505,
     "steam_cloud": null,
@@ -19520,13 +15112,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 699,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 34209
@@ -19539,13 +15125,7 @@ export const MockGames = [
     "title": "The Incredible Adventures of Van Helsing",
     "steamid": null,
     "date_added": "2016-05-10 01:23:27.285",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/17/171291/2486193-the-incredible-adventures-of-van-helsing_pc_cover.jpg",
     "giantbomb_id": 38294,
     "steam_cloud": null,
@@ -19565,13 +15145,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 516,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 2638
@@ -19584,13 +15158,7 @@ export const MockGames = [
     "title": "Knight Squad",
     "steamid": null,
     "date_added": "2016-05-10 01:23:38.705",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/19/194982/2807828-promo.png",
     "giantbomb_id": 46058,
     "steam_cloud": null,
@@ -19610,13 +15178,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 21,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 14380
@@ -19629,13 +15191,7 @@ export const MockGames = [
     "title": "Pneuma: Breath of Life",
     "steamid": null,
     "date_added": "2016-05-10 01:23:53.999",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/84290/2730450-untitled.jpg",
     "giantbomb_id": 47310,
     "steam_cloud": null,
@@ -19655,13 +15211,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 518,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 9178
@@ -19674,13 +15224,7 @@ export const MockGames = [
     "title": "Valiant Hearts: The Great War",
     "steamid": null,
     "date_added": "2016-05-10 01:24:14.161",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/17/171291/2664006-7158019745-VH-BA.jpg",
     "giantbomb_id": 43885,
     "steam_cloud": null,
@@ -19700,13 +15244,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 184,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 7327
@@ -19719,13 +15257,7 @@ export const MockGames = [
     "title": "How to Survive: Storm Warning Edition",
     "steamid": null,
     "date_added": "2016-05-10 01:24:36.661",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2549845-box_hts.png",
     "giantbomb_id": 43405,
     "steam_cloud": null,
@@ -19745,13 +15277,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 761,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 20311
@@ -19764,13 +15290,7 @@ export const MockGames = [
     "title": "Table Top Racing: World Tour",
     "steamid": null,
     "date_added": "2016-05-10 01:33:32.507",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/28/285386/2848248-image.jpg",
     "giantbomb_id": 53599,
     "steam_cloud": null,
@@ -19790,13 +15310,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 125,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 18978
@@ -19809,13 +15323,7 @@ export const MockGames = [
     "title": "Switch Galaxy Ultra",
     "steamid": null,
     "date_added": "2016-05-10 01:33:46.209",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/14/149021/2533880-4738123185-95408.png",
     "giantbomb_id": 43675,
     "steam_cloud": null,
@@ -19835,13 +15343,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 550,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 35517
@@ -19855,20 +15357,8 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2016-05-10 01:34:19.456",
     "availablePlatforms": [
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      },
-      {
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }
+      {"id": 11},
+      {"id": 4}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/1270/645939-zombi.jpg",
     "giantbomb_id": 18449,
@@ -19890,20 +15380,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 415,
       "myPlatforms": [
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        },
-        {
-          "full_name": "Xbox One",
-          "igdb_platform_id": 49,
-          "short_name": "Xbox One",
-          "id": 4,
-          "igdb_name": "Xbox One"
-        }
+        {"id": 11},
+        {"id": 4}
       ],
       "person_id": 1
     }],
@@ -19917,13 +15395,7 @@ export const MockGames = [
     "title": "Dead Star",
     "steamid": null,
     "date_added": "2016-05-10 01:34:36.619",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/26/2788223-screen+shot+2015-10-06+at+10.22.58+am.png",
     "giantbomb_id": 51112,
     "steam_cloud": null,
@@ -19943,13 +15415,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 534,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 21960
@@ -19962,13 +15428,7 @@ export const MockGames = [
     "title": "Shutshimi",
     "steamid": null,
     "date_added": "2016-05-10 01:35:08.805",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/22/226108/2593187-itchio-cover-image.png",
     "giantbomb_id": 45194,
     "steam_cloud": null,
@@ -19988,13 +15448,7 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 525,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 23319
@@ -20007,13 +15461,7 @@ export const MockGames = [
     "title": "Dragon Fin Soup",
     "steamid": null,
     "date_added": "2016-05-10 01:36:19.883",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/1992/2552959-6542719240-11853.jpg",
     "giantbomb_id": 44066,
     "steam_cloud": null,
@@ -20033,13 +15481,7 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 662,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 17377
@@ -20052,13 +15494,7 @@ export const MockGames = [
     "title": "Gauntlet",
     "steamid": null,
     "date_added": "2016-05-10 01:36:35.986",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/84290/2744881-cove.jpg",
     "giantbomb_id": 45705,
     "steam_cloud": null,
@@ -20078,13 +15514,7 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 462,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 7293
@@ -20097,13 +15527,7 @@ export const MockGames = [
     "title": "Hardware: Rivals",
     "steamid": null,
     "date_added": "2016-05-10 01:36:54.517",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/19/194982/2812850-psn_packshot.png",
     "giantbomb_id": 52204,
     "steam_cloud": null,
@@ -20123,13 +15547,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 517,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 15695
@@ -20142,13 +15560,7 @@ export const MockGames = [
     "title": "King's Quest",
     "steamid": null,
     "date_added": "2016-05-10 01:37:06.421",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/18/187968/2764793-rsz_ciw0kh9veaawj_03kq6o.jpg",
     "giantbomb_id": 47353,
     "steam_cloud": null,
@@ -20168,13 +15580,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 489,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 8260
@@ -20187,13 +15593,7 @@ export const MockGames = [
     "title": "Magicka 2",
     "steamid": null,
     "date_added": "2016-05-10 01:37:16.685",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3699/2649477-magicka+2+v1.jpg",
     "giantbomb_id": 46571,
     "steam_cloud": null,
@@ -20213,13 +15613,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 664,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 9807
@@ -20232,13 +15626,7 @@ export const MockGames = [
     "title": "MouseCraft",
     "steamid": null,
     "date_added": "2016-05-10 01:37:31.26",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/17/171291/2660634-1535441868-boxsh.jpg",
     "giantbomb_id": 44117,
     "steam_cloud": null,
@@ -20258,13 +15646,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 78,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 8992
@@ -20277,13 +15659,7 @@ export const MockGames = [
     "title": "Race the Sun",
     "steamid": null,
     "date_added": "2016-05-10 01:38:54.425",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/510/2480057-racethesun-giantbomb-art.png",
     "giantbomb_id": 42239,
     "steam_cloud": null,
@@ -20303,13 +15679,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 633,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 7876
@@ -20322,13 +15692,7 @@ export const MockGames = [
     "title": "Star Wars Bounty Hunter",
     "steamid": null,
     "date_added": "2016-05-10 01:39:09.328",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2285708-box_swbh.png",
     "giantbomb_id": 17571,
     "steam_cloud": null,
@@ -20348,13 +15712,7 @@ export const MockGames = [
       "rating": 69,
       "finished_date": null,
       "id": 427,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 4180
@@ -20367,13 +15725,7 @@ export const MockGames = [
     "title": "Star Wars: Jedi Starfighter",
     "steamid": null,
     "date_added": "2016-05-10 01:39:22.673",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2285710-box_swjs.png",
     "giantbomb_id": 4017,
     "steam_cloud": null,
@@ -20393,13 +15745,7 @@ export const MockGames = [
       "rating": 56,
       "finished_date": null,
       "id": 632,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 6160
@@ -20412,13 +15758,7 @@ export const MockGames = [
     "title": "Star Wars: Racer Revenge",
     "steamid": null,
     "date_added": "2016-05-10 01:39:38.04",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2285712-box_swrr.png",
     "giantbomb_id": 7746,
     "steam_cloud": null,
@@ -20438,13 +15778,7 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 639,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 19419
@@ -20457,13 +15791,7 @@ export const MockGames = [
     "title": "Super Star Wars",
     "steamid": null,
     "date_added": "2016-05-10 01:39:48.683",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/93770/2364847-snes_superstarwars.jpg",
     "giantbomb_id": 14450,
     "steam_cloud": null,
@@ -20483,13 +15811,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 552,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 20031
@@ -20502,13 +15824,7 @@ export const MockGames = [
     "title": "Teslagrad",
     "steamid": null,
     "date_added": "2016-05-10 01:40:08.231",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2701135-teslagradu.jpg",
     "giantbomb_id": 41238,
     "steam_cloud": null,
@@ -20528,13 +15844,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 13,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 7641
@@ -20547,11 +15857,7 @@ export const MockGames = [
     "title": "Stellaris",
     "steamid": 281990,
     "date_added": "2016-05-12 03:46:01.72",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/28/281548/2774789-6284070328-29173.jpg",
     "giantbomb_id": 50618,
     "steam_cloud": true,
@@ -20571,11 +15877,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 194,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 11582
@@ -20588,13 +15890,7 @@ export const MockGames = [
     "title": "World of Warcraft: Warlords of Draenor",
     "steamid": null,
     "date_added": "2016-05-14 00:28:50.326",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2849279-box_wowwod.png",
     "giantbomb_id": 44468,
     "steam_cloud": null,
@@ -20615,20 +15911,8 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2016-05-20 05:14:11.836",
     "availablePlatforms": [
-      {
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      },
-      {
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }
+      {"id": 4},
+      {"id": 6}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2701421-box_cq2.jpg",
     "giantbomb_id": 45634,
@@ -20650,20 +15934,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 509,
       "myPlatforms": [
-        {
-          "full_name": "Xbox One",
-          "igdb_platform_id": 49,
-          "short_name": "Xbox One",
-          "id": 4,
-          "igdb_name": "Xbox One"
-        },
-        {
-          "full_name": "PS3",
-          "igdb_platform_id": 9,
-          "short_name": "PS3",
-          "id": 6,
-          "igdb_name": "PlayStation 3"
-        }
+        {"id": 4},
+        {"id": 6}
       ],
       "person_id": 1
     }],
@@ -20677,11 +15949,7 @@ export const MockGames = [
     "title": "2064: Read Only Memories",
     "steamid": 330820,
     "date_added": "2016-06-02 03:45:59.408",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/18/187788/2855037-6623351492-2772714-1530052291-",
     "giantbomb_id": 50551,
     "steam_cloud": true,
@@ -20701,11 +15969,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 485,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 84927
@@ -20718,11 +15982,7 @@ export const MockGames = [
     "title": "Shadowrun: Hong Kong - Extended Edition",
     "steamid": 346940,
     "date_added": "2016-06-02 03:46:00.473",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2717105-srhk.jpg",
     "giantbomb_id": 48586,
     "steam_cloud": true,
@@ -20742,11 +16002,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 94,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 35842
@@ -20759,11 +16015,7 @@ export const MockGames = [
     "title": "Her Story",
     "steamid": 368370,
     "date_added": "2016-06-02 03:46:01.093",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/17/171939/2756360-1602871111-heade.jpg",
     "giantbomb_id": 49898,
     "steam_cloud": false,
@@ -20783,11 +16035,7 @@ export const MockGames = [
       "rating": 87.6,
       "finished_date": null,
       "id": 267,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 11346
@@ -20800,11 +16048,7 @@ export const MockGames = [
     "title": "80 Days",
     "steamid": 381780,
     "date_added": "2016-06-02 03:46:01.629",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2680099-80-days.jpg",
     "giantbomb_id": 47793,
     "steam_cloud": false,
@@ -20825,11 +16069,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 790,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 4
       },
       {
@@ -20843,11 +16083,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 803,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 5
       },
       {
@@ -20861,11 +16097,7 @@ export const MockGames = [
         "rating": 85,
         "finished_date": "2018-04-05 00:00:00.0",
         "id": 56,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 1
       }
     ],
@@ -20879,11 +16111,7 @@ export const MockGames = [
     "title": "Cibele",
     "steamid": 408120,
     "date_added": "2016-06-02 03:46:02.252",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/5370/2814205-cibele_1.jpg",
     "giantbomb_id": 50722,
     "steam_cloud": false,
@@ -20903,11 +16131,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 503,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 14702
@@ -20920,11 +16144,7 @@ export const MockGames = [
     "title": "Sorcery! Parts 1 & 2",
     "steamid": 411000,
     "date_added": "2016-06-02 03:46:02.449",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2680428-879091_512x512.png",
     "giantbomb_id": 47802,
     "steam_cloud": false,
@@ -20944,11 +16164,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 293,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 24618
@@ -20961,13 +16177,7 @@ export const MockGames = [
     "title": "Technobabylon",
     "steamid": null,
     "date_added": "2016-06-12 03:01:13.11",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/6/66643/2747825-8893086082-heade.jpg",
     "giantbomb_id": 49605,
     "steam_cloud": null,
@@ -20987,13 +16197,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 669,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 13232
@@ -21006,11 +16210,7 @@ export const MockGames = [
     "title": "The Beginner's Guide",
     "steamid": 303210,
     "date_added": "2016-06-19 03:45:58.331",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/3/32132/2787561-header.jpg",
     "giantbomb_id": 51033,
     "steam_cloud": false,
@@ -21030,11 +16230,7 @@ export const MockGames = [
       "rating": 84.6,
       "finished_date": null,
       "id": 507,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 13212
@@ -21047,11 +16243,7 @@ export const MockGames = [
     "title": "Pillars of Eternity",
     "steamid": 291650,
     "date_added": "2016-06-21 03:45:59.906",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/84290/2735665-5250698812-Pilla.jpg",
     "giantbomb_id": 39775,
     "steam_cloud": true,
@@ -21071,11 +16263,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 88,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1593
@@ -21088,11 +16276,7 @@ export const MockGames = [
     "title": "Aquaria",
     "steamid": 24420,
     "date_added": "2016-06-24 03:45:42.794",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/5740/839529-gdc_poster_big.jpg",
     "giantbomb_id": 6630,
     "steam_cloud": false,
@@ -21112,11 +16296,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 511,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7406
@@ -21129,11 +16309,7 @@ export const MockGames = [
     "title": "Shadowrun Returns",
     "steamid": 234650,
     "date_added": "2016-06-24 03:45:54.333",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/9/99864/2518007-9798814274-Shado.jpg",
     "giantbomb_id": 37894,
     "steam_cloud": true,
@@ -21153,11 +16329,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 717,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3020
@@ -21170,11 +16342,7 @@ export const MockGames = [
     "title": "The Age of Decadence",
     "steamid": 230070,
     "date_added": "2016-06-24 03:45:57.598",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/1468/178518-aod.jpg",
     "giantbomb_id": 21194,
     "steam_cloud": false,
@@ -21194,11 +16362,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 586,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 4641
@@ -21211,11 +16375,7 @@ export const MockGames = [
     "title": "Age of Mythology: Extended Edition",
     "steamid": 266840,
     "date_added": "2016-06-24 03:45:58.038",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/627182-256px_age_of_mythology_liner.jpg",
     "giantbomb_id": 13076,
     "steam_cloud": true,
@@ -21235,11 +16395,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 707,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9902
@@ -21252,11 +16408,7 @@ export const MockGames = [
     "title": "Homeworld: Deserts of Kharak",
     "steamid": 281610,
     "date_added": "2016-06-24 03:45:58.648",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/15/156597/2463808-ck_baserunner-scale-set.png",
     "giantbomb_id": 42153,
     "steam_cloud": true,
@@ -21276,11 +16428,7 @@ export const MockGames = [
       "rating": 82.3,
       "finished_date": null,
       "id": 244,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 15444
@@ -21293,11 +16441,7 @@ export const MockGames = [
     "title": "You Must Build A Boat",
     "steamid": 290890,
     "date_added": "2016-06-24 03:45:59.09",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/26/2752988-logo1.jpg",
     "giantbomb_id": 45389,
     "steam_cloud": true,
@@ -21317,11 +16461,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 171,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19955
@@ -21334,11 +16474,7 @@ export const MockGames = [
     "title": "Apotheon",
     "steamid": 208750,
     "date_added": "2016-06-24 03:46:01.19",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/84290/2722297-vlc+2015-02-02+20-34-30-22.jpg",
     "giantbomb_id": 37707,
     "steam_cloud": true,
@@ -21358,11 +16494,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 102,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9016
@@ -21375,11 +16507,7 @@ export const MockGames = [
     "title": "The Witcher 3: Wild Hunt",
     "steamid": 292030,
     "date_added": "2016-06-24 03:46:03.208",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3699/2698809-the+witcher+3+-+wild+hunt+v7.jpg",
     "giantbomb_id": 41484,
     "steam_cloud": true,
@@ -21399,11 +16527,7 @@ export const MockGames = [
       "rating": 85.3,
       "finished_date": null,
       "id": 727,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1942
@@ -21416,11 +16540,7 @@ export const MockGames = [
     "title": "Firewatch",
     "steamid": 383870,
     "date_added": "2016-06-24 03:46:03.818",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3699/2634187-firewatch.jpg",
     "giantbomb_id": 45658,
     "steam_cloud": true,
@@ -21440,11 +16560,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": "2016-07-26 00:00:00.0",
       "id": 185,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9730
@@ -21458,18 +16574,8 @@ export const MockGames = [
     "steamid": 388210,
     "date_added": "2016-06-24 03:46:04.001",
     "availablePlatforms": [
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 1},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/609071-day_of_the_tentacle_box_front_6534x8205.jpg",
     "giantbomb_id": 4372,
@@ -21491,11 +16597,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 804,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 5
       },
       {
@@ -21510,18 +16612,8 @@ export const MockGames = [
         "finished_date": null,
         "id": 92,
         "myPlatforms": [
-          {
-            "full_name": "Steam",
-            "short_name": "Steam",
-            "id": 1
-          },
-          {
-            "full_name": "PS4",
-            "igdb_platform_id": 48,
-            "short_name": "PS4",
-            "id": 11,
-            "igdb_name": "PlayStation 4"
-          }
+          {"id": 1},
+          {"id": 11}
         ],
         "person_id": 1
       }
@@ -21537,18 +16629,8 @@ export const MockGames = [
     "steamid": 417880,
     "date_added": "2016-06-24 03:46:04.794",
     "availablePlatforms": [
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 1},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/81005/2774607-0070203710-21296.jpg",
     "giantbomb_id": 37690,
@@ -21570,18 +16652,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 105,
       "myPlatforms": [
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        },
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }
+        {"id": 1},
+        {"id": 11}
       ],
       "person_id": 1
     }],
@@ -21595,11 +16667,7 @@ export const MockGames = [
     "title": "The Talos Principle",
     "steamid": 257510,
     "date_added": "2016-06-25 03:46:02.269",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/18/187968/2748164-rsz_71zm1hitmml.jpg",
     "giantbomb_id": 46572,
     "steam_cloud": true,
@@ -21619,11 +16687,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 715,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7386
@@ -21636,11 +16700,7 @@ export const MockGames = [
     "title": "Ori and the Blind Forest: Definitive Edition",
     "steamid": 387290,
     "date_added": "2016-06-29 03:46:03.752",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2665148-ori%20and%20the%20blind%20forest.jpg",
     "giantbomb_id": 46548,
     "steam_cloud": true,
@@ -21660,11 +16720,7 @@ export const MockGames = [
       "rating": 90.3,
       "finished_date": null,
       "id": 4,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19456
@@ -21677,11 +16733,7 @@ export const MockGames = [
     "title": "Oxenfree",
     "steamid": 388880,
     "date_added": "2016-06-29 03:46:04.103",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/16/165036/2814622-oxenfree.jpg",
     "giantbomb_id": 52278,
     "steam_cloud": true,
@@ -21702,11 +16754,7 @@ export const MockGames = [
         "rating": 91,
         "finished_date": "2016-08-02 00:00:00.0",
         "id": 172,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 1
       },
       {
@@ -21720,11 +16768,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 795,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 4
       }
     ],
@@ -21738,11 +16782,7 @@ export const MockGames = [
     "title": "Sonic and SEGA All Stars Racing",
     "steamid": 34190,
     "date_added": "2016-06-29 03:46:05.601",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -21762,11 +16802,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 431,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 5165
@@ -21779,11 +16815,7 @@ export const MockGames = [
     "title": "SONIC THE HEDGEHOG 4 Episode I",
     "steamid": 202530,
     "date_added": "2016-06-29 03:46:05.776",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -21803,11 +16835,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 64,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9473
@@ -21820,11 +16848,7 @@ export const MockGames = [
     "title": "Sonic Adventure™ 2 ",
     "steamid": 213610,
     "date_added": "2016-06-29 03:46:05.95",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -21844,11 +16868,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 127,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7858
@@ -21861,11 +16881,7 @@ export const MockGames = [
     "title": "Sonic Adventure DX",
     "steamid": 71250,
     "date_added": "2016-06-29 03:46:06.127",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -21885,11 +16901,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 9,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 23695
@@ -21902,11 +16914,7 @@ export const MockGames = [
     "title": "Sonic CD",
     "steamid": 200940,
     "date_added": "2016-06-29 03:46:06.299",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/1486/2078290-soniccd_brighterandcleaner.png",
     "giantbomb_id": 14433,
     "steam_cloud": false,
@@ -21926,11 +16934,7 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 456,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 86807
@@ -21943,11 +16947,7 @@ export const MockGames = [
     "title": "Sonic Generations",
     "steamid": 71340,
     "date_added": "2016-06-29 03:46:06.474",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2211868-box_sonicgen.png",
     "giantbomb_id": 34833,
     "steam_cloud": true,
@@ -21967,11 +16967,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 169,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 506
@@ -21984,11 +16980,7 @@ export const MockGames = [
     "title": "SONIC THE HEDGEHOG 4 Episode II",
     "steamid": 203650,
     "date_added": "2016-06-29 03:46:06.649",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -22008,11 +17000,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 301,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9474
@@ -22058,11 +17046,7 @@ export const MockGames = [
     "title": "Sonic Lost World",
     "steamid": 329440,
     "date_added": "2016-06-29 03:46:06.997",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2550409-cleansonic.jpg",
     "giantbomb_id": 42655,
     "steam_cloud": true,
@@ -22082,11 +17066,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 110,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2607
@@ -22099,11 +17079,7 @@ export const MockGames = [
     "title": "The Silent Age",
     "steamid": 352520,
     "date_added": "2016-06-30 03:46:02.106",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/4/47855/2453760-mzl.tedxzrzx.png",
     "giantbomb_id": 41907,
     "steam_cloud": true,
@@ -22123,11 +17099,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 174,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 11444
@@ -22140,11 +17112,7 @@ export const MockGames = [
     "title": "Fran Bow",
     "steamid": 362680,
     "date_added": "2016-06-30 03:46:02.98",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/18/187968/2715347-fran_poster_07.jpg",
     "giantbomb_id": 48519,
     "steam_cloud": false,
@@ -22164,11 +17132,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 113,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 11821
@@ -22181,11 +17145,7 @@ export const MockGames = [
     "title": "The Banner Saga",
     "steamid": 237990,
     "date_added": "2016-07-02 03:46:02.692",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/81005/2710752-4737011104-capsu.jpg",
     "giantbomb_id": 37629,
     "steam_cloud": true,
@@ -22205,11 +17165,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 24,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 5508
@@ -22222,11 +17178,7 @@ export const MockGames = [
     "title": "Cinders",
     "steamid": 293680,
     "date_added": "2016-07-02 03:46:03.567",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/22/221258/2617592-steamworkshop_collection_1390217444_collection_branding.jpg",
     "giantbomb_id": 39641,
     "steam_cloud": false,
@@ -22246,11 +17198,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 497,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9723
@@ -22263,11 +17211,7 @@ export const MockGames = [
     "title": "Valkyria Chronicles™",
     "steamid": 294860,
     "date_added": "2016-07-02 03:46:03.832",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2698054-vcclean.jpg",
     "giantbomb_id": 20971,
     "steam_cloud": true,
@@ -22287,11 +17231,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 119,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7477
@@ -22304,11 +17244,7 @@ export const MockGames = [
     "title": "Never Alone (Kisima Ingitchuna)",
     "steamid": 295790,
     "date_added": "2016-07-02 03:46:04.008",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2710974-6999890341-capsu.jpg",
     "giantbomb_id": 46277,
     "steam_cloud": false,
@@ -22329,11 +17265,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 1427,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 4
       },
       {
@@ -22347,11 +17279,7 @@ export const MockGames = [
         "rating": 80,
         "finished_date": null,
         "id": 77,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 1
       }
     ],
@@ -22366,18 +17294,8 @@ export const MockGames = [
     "steamid": 7670,
     "date_added": "2016-07-03 03:45:42.483",
     "availablePlatforms": [
-      {
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      },
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }
+      {"id": 7},
+      {"id": 1}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2584146-bioshock.jpg",
     "giantbomb_id": 17280,
@@ -22399,18 +17317,8 @@ export const MockGames = [
       "finished_date": "2013-09-12 00:00:00.0",
       "id": 122,
       "myPlatforms": [
-        {
-          "full_name": "Xbox 360",
-          "igdb_platform_id": 12,
-          "short_name": "Xbox 360",
-          "id": 7,
-          "igdb_name": "Xbox 360"
-        },
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }
+        {"id": 7},
+        {"id": 1}
       ],
       "person_id": 1
     }],
@@ -22425,18 +17333,8 @@ export const MockGames = [
     "steamid": 8850,
     "date_added": "2016-07-03 03:46:02.436",
     "availablePlatforms": [
-      {
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      },
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }
+      {"id": 7},
+      {"id": 1}
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2584143-bioshock2.jpg",
     "giantbomb_id": 20827,
@@ -22458,18 +17356,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 117,
       "myPlatforms": [
-        {
-          "full_name": "Xbox 360",
-          "igdb_platform_id": 12,
-          "short_name": "Xbox 360",
-          "id": 7,
-          "igdb_name": "Xbox 360"
-        },
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }
+        {"id": 7},
+        {"id": 1}
       ],
       "person_id": 1
     }],
@@ -22483,11 +17371,7 @@ export const MockGames = [
     "title": "Deponia: The Complete Journey",
     "steamid": 292910,
     "date_added": "2016-07-08 03:46:03.064",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/27/275592/2823944-deponia.jpg",
     "giantbomb_id": 52682,
     "steam_cloud": true,
@@ -22507,11 +17391,7 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 268,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 17224
@@ -22524,11 +17404,7 @@ export const MockGames = [
     "title": "Riders of Icarus",
     "steamid": 442080,
     "date_added": "2016-07-08 03:46:10.433",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/31/319073/2857635-9ej7vlre.jpg",
     "giantbomb_id": 54082,
     "steam_cloud": false,
@@ -22548,11 +17424,7 @@ export const MockGames = [
       "rating": 49,
       "finished_date": null,
       "id": 232,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19012
@@ -22565,11 +17437,7 @@ export const MockGames = [
     "title": "Chaos Reborn",
     "steamid": 319050,
     "date_added": "2016-07-27 03:46:03.282",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2853576-gblogo.png",
     "giantbomb_id": 41763,
     "steam_cloud": false,
@@ -22589,11 +17457,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 492,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 13222
@@ -22607,18 +17471,8 @@ export const MockGames = [
     "steamid": 384190,
     "date_added": "2016-08-03 03:46:06.238",
     "availablePlatforms": [
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 1},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2643576-imagen_tarreo_41398_523.jpg",
     "giantbomb_id": 46573,
@@ -22640,18 +17494,8 @@ export const MockGames = [
       "finished_date": "2017-07-20 00:00:00.0",
       "id": 626,
       "myPlatforms": [
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        },
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }
+        {"id": 1},
+        {"id": 11}
       ],
       "person_id": 1
     }],
@@ -22698,11 +17542,7 @@ export const MockGames = [
     "title": "EVE Online",
     "steamid": 8500,
     "date_added": "2016-08-20 03:46:05.988",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -22722,13 +17562,7 @@ export const MockGames = [
     "title": "Tricky Towers",
     "steamid": null,
     "date_added": "2016-08-24 03:04:56.999",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2801955-screen%20shot%202015-11-29%20at%207.44.46%20pm.png",
     "giantbomb_id": 51691,
     "steam_cloud": null,
@@ -22748,13 +17582,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 528,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 21623
@@ -22767,13 +17595,7 @@ export const MockGames = [
     "title": "Ultratron",
     "steamid": null,
     "date_added": "2016-08-24 03:05:19.766",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2459235-ultratron-box-cover-01.jpg",
     "giantbomb_id": 26331,
     "steam_cloud": null,
@@ -22793,13 +17615,7 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 502,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 14327
@@ -22812,13 +17628,7 @@ export const MockGames = [
     "title": "Yakuza 5",
     "steamid": null,
     "date_added": "2016-08-24 03:05:31.18",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2508499-yakuza5crop.png",
     "giantbomb_id": 36277,
     "steam_cloud": null,
@@ -22838,13 +17648,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 95,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 2063
@@ -22857,13 +17661,7 @@ export const MockGames = [
     "title": "Retro/Grade",
     "steamid": null,
     "date_added": "2016-08-24 03:05:45.903",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2859650-0642039568-heade.jpg",
     "giantbomb_id": 27445,
     "steam_cloud": null,
@@ -22883,13 +17681,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 589,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 16431
@@ -22935,11 +17727,7 @@ export const MockGames = [
     "title": "Overcooked",
     "steamid": 448510,
     "date_added": "2016-09-13 03:46:04.97",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2839669-1030241794-overc.png",
     "giantbomb_id": 53284,
     "steam_cloud": true,
@@ -22960,11 +17748,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 796,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 4
       },
       {
@@ -22978,11 +17762,7 @@ export const MockGames = [
         "rating": 81,
         "finished_date": null,
         "id": 168,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 1
       }
     ],
@@ -22996,11 +17776,7 @@ export const MockGames = [
     "title": "BioShock Remastered",
     "steamid": 409710,
     "date_added": "2016-09-16 03:45:42.32",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2584146-bioshock.jpg",
     "giantbomb_id": 17280,
     "steam_cloud": true,
@@ -23020,11 +17796,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 7,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 34293
@@ -23037,11 +17809,7 @@ export const MockGames = [
     "title": "BioShock 2 Remastered",
     "steamid": 409720,
     "date_added": "2016-09-16 03:46:02.328",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2584143-bioshock2.jpg",
     "giantbomb_id": 20827,
     "steam_cloud": true,
@@ -23061,11 +17829,7 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 252,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 34294
@@ -23078,13 +17842,7 @@ export const MockGames = [
     "title": "Forza Horizon 3",
     "steamid": null,
     "date_added": "2016-09-30 19:06:57.729",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2887948-forza%20horizon%203%20v2.jpg",
     "giantbomb_id": 54214,
     "steam_cloud": null,
@@ -23104,13 +17862,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 405,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 19539
@@ -23123,13 +17875,7 @@ export const MockGames = [
     "title": "World of Warcraft: Legion",
     "steamid": null,
     "date_added": "2016-09-30 19:08:35.588",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2881096-box_wowl.png",
     "giantbomb_id": 50520,
     "steam_cloud": null,
@@ -23149,13 +17895,7 @@ export const MockGames = [
       "rating": 92.1,
       "finished_date": "2018-08-14 00:00:00.0",
       "id": 409,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 11593
@@ -23168,13 +17908,7 @@ export const MockGames = [
     "title": "Earthlock: Festival of Magic",
     "steamid": null,
     "date_added": "2016-09-30 19:12:43.075",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2643344-earthlock-early-key-art-vertical-low-res.jpg",
     "giantbomb_id": 42628,
     "steam_cloud": null,
@@ -23194,13 +17928,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 701,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 7202
@@ -23213,13 +17941,7 @@ export const MockGames = [
     "title": "WARRIORS OROCHI 3 Ultimate",
     "steamid": null,
     "date_added": "2016-09-30 19:34:04.84",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -23239,13 +17961,7 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 512,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 20058
@@ -23258,13 +17974,7 @@ export const MockGames = [
     "title": "Tumblestone",
     "steamid": null,
     "date_added": "2016-09-30 19:34:18.161",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2843437-1379834945-conte.png",
     "giantbomb_id": 45457,
     "steam_cloud": null,
@@ -23284,13 +17994,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 658,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 16926
@@ -23303,13 +18007,7 @@ export const MockGames = [
     "title": "The Banner Saga 2",
     "steamid": null,
     "date_added": "2016-09-30 19:34:28.06",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2706669-screen%20shot%202014-12-05%20at%2011.39.31%20pm.png",
     "giantbomb_id": 48326,
     "steam_cloud": null,
@@ -23329,13 +18027,7 @@ export const MockGames = [
       "rating": 50,
       "finished_date": null,
       "id": 530,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 8288
@@ -23349,20 +18041,8 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2016-09-30 19:34:49.044",
     "availablePlatforms": [
-      {
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 4},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2743091-untitled.png",
     "giantbomb_id": 45405,
@@ -23384,20 +18064,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 719,
       "myPlatforms": [
-        {
-          "full_name": "Xbox One",
-          "igdb_platform_id": 49,
-          "short_name": "Xbox One",
-          "id": 4,
-          "igdb_name": "Xbox One"
-        },
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }
+        {"id": 4},
+        {"id": 11}
       ],
       "person_id": 1
     }],
@@ -23411,13 +18079,7 @@ export const MockGames = [
     "title": "BADLAND: Game of the Year Edition",
     "steamid": null,
     "date_added": "2016-09-30 19:36:06.912",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2646158-badland.png",
     "giantbomb_id": 42361,
     "steam_cloud": null,
@@ -23437,13 +18099,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 583,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 20042
@@ -23456,11 +18112,7 @@ export const MockGames = [
     "title": "Primordia",
     "steamid": 227000,
     "date_added": "2016-10-05 03:45:50.979",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2378798-caja_primordia.jpg",
     "giantbomb_id": 39355,
     "steam_cloud": false,
@@ -23480,11 +18132,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 106,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7635
@@ -23497,11 +18145,7 @@ export const MockGames = [
     "title": "Sunless Sea",
     "steamid": 304650,
     "date_added": "2016-10-14 03:46:02.687",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2633388-4790959418-sunle.jpg",
     "giantbomb_id": 46325,
     "steam_cloud": false,
@@ -23521,11 +18165,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 111,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 8925
@@ -23538,11 +18178,7 @@ export const MockGames = [
     "title": "Sid Meier's Civilization VI",
     "steamid": 289070,
     "date_added": "2016-10-21 03:46:05.714",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2850388-6884774514-capsu.jpg",
     "giantbomb_id": 53696,
     "steam_cloud": false,
@@ -23562,11 +18198,7 @@ export const MockGames = [
       "rating": 89,
       "finished_date": null,
       "id": 154,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19130
@@ -23579,11 +18211,7 @@ export const MockGames = [
     "title": "Dreamfall Chapters",
     "steamid": 237850,
     "date_added": "2016-10-29 03:46:01.574",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2429477-dreamfall_1.jpg",
     "giantbomb_id": 24081,
     "steam_cloud": true,
@@ -23603,11 +18231,7 @@ export const MockGames = [
       "rating": 85.7,
       "finished_date": null,
       "id": 242,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1962
@@ -23620,11 +18244,7 @@ export const MockGames = [
     "title": "The Jackbox Party Pack 3",
     "steamid": 434170,
     "date_added": "2016-10-29 03:46:06.69",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2893546-capsule_main.png",
     "giantbomb_id": 54322,
     "steam_cloud": true,
@@ -23644,11 +18264,7 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 115,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19082
@@ -23662,20 +18278,8 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2016-11-09 20:34:49.129",
     "availablePlatforms": [
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      },
-      {
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }
+      {"id": 11},
+      {"id": 6}
     ],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2853800-9873722270-26655.jpg",
     "giantbomb_id": 47251,
@@ -23697,20 +18301,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 454,
       "myPlatforms": [
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        },
-        {
-          "full_name": "PS3",
-          "igdb_platform_id": 9,
-          "short_name": "PS3",
-          "id": 6,
-          "igdb_name": "PlayStation 3"
-        }
+        {"id": 11},
+        {"id": 6}
       ],
       "person_id": 1
     }],
@@ -23724,13 +18316,7 @@ export const MockGames = [
     "title": "Pumped BMX+",
     "steamid": null,
     "date_added": "2016-11-09 20:35:36.886",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2781578-pumped.jpg",
     "giantbomb_id": 50807,
     "steam_cloud": null,
@@ -23750,13 +18336,7 @@ export const MockGames = [
       "rating": 56,
       "finished_date": null,
       "id": 533,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 20955
@@ -23769,13 +18349,7 @@ export const MockGames = [
     "title": "The Deadly Tower of Monsters",
     "steamid": null,
     "date_added": "2016-11-09 20:35:54.721",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2817034-scarlet_poster_1.jpg",
     "giantbomb_id": 52371,
     "steam_cloud": null,
@@ -23795,13 +18369,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 521,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 14740
@@ -23814,13 +18382,7 @@ export const MockGames = [
     "title": "DIRT 3",
     "steamid": null,
     "date_added": "2016-11-09 20:36:16.442",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/1891340-box_dirt3.png",
     "giantbomb_id": 30383,
     "steam_cloud": null,
@@ -23840,13 +18402,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 599,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 524
@@ -23859,11 +18415,7 @@ export const MockGames = [
     "title": "Seasons after Fall",
     "steamid": 366320,
     "date_added": "2016-11-20 03:46:02.999",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2876326-boxart.png",
     "giantbomb_id": 55011,
     "steam_cloud": true,
@@ -23883,11 +18435,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 6,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 15821
@@ -23900,11 +18448,7 @@ export const MockGames = [
     "title": "Rise of the Tomb Raider",
     "steamid": 391220,
     "date_added": "2016-11-20 03:46:05.178",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2795702-rise.jpg",
     "giantbomb_id": 46549,
     "steam_cloud": true,
@@ -23924,11 +18468,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 296,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7323
@@ -23941,11 +18481,7 @@ export const MockGames = [
     "title": "Loom",
     "steamid": 32340,
     "date_added": "2016-11-24 03:45:44.11",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/609394-loom_box_front_6552x8262.jpg",
     "giantbomb_id": 10927,
     "steam_cloud": false,
@@ -23965,11 +18501,7 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 387,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 191
@@ -23983,18 +18515,8 @@ export const MockGames = [
     "steamid": 290300,
     "date_added": "2016-11-24 03:45:59.547",
     "availablePlatforms": [
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      },
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }
+      {"id": 11},
+      {"id": 1}
     ],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2788861-untitled.png",
     "giantbomb_id": 48057,
@@ -24016,18 +18538,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 96,
       "myPlatforms": [
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        },
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }
+        {"id": 11},
+        {"id": 1}
       ],
       "person_id": 1
     }],
@@ -24041,11 +18553,7 @@ export const MockGames = [
     "title": "The Solus Project",
     "steamid": 313630,
     "date_added": "2016-11-24 03:46:01.52",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2759396-capture.png",
     "giantbomb_id": 50016,
     "steam_cloud": false,
@@ -24065,11 +18573,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 243,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 11221
@@ -24082,11 +18586,7 @@ export const MockGames = [
     "title": "Solstice",
     "steamid": 317280,
     "date_added": "2016-11-24 03:46:01.953",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2828256-sol1.jpg",
     "giantbomb_id": 52723,
     "steam_cloud": false,
@@ -24106,11 +18606,7 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 592,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 36253
@@ -24123,11 +18619,7 @@ export const MockGames = [
     "title": "Kathy Rain",
     "steamid": 370910,
     "date_added": "2016-11-24 03:46:04.705",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2772775-bannerwithborder.png",
     "giantbomb_id": 50555,
     "steam_cloud": false,
@@ -24147,11 +18639,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 381,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 18997
@@ -24164,11 +18652,7 @@ export const MockGames = [
     "title": "DOOM",
     "steamid": 379720,
     "date_added": "2016-11-24 03:46:07.366",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2849529-doom.jpg",
     "giantbomb_id": 20654,
     "steam_cloud": true,
@@ -24188,11 +18672,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 501,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7351
@@ -24205,11 +18685,7 @@ export const MockGames = [
     "title": "Stardew Valley",
     "steamid": 413150,
     "date_added": "2016-11-25 03:46:06.051",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2835884-sdv.jpg",
     "giantbomb_id": 50899,
     "steam_cloud": true,
@@ -24229,11 +18705,7 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 625,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 17000
@@ -24246,11 +18718,7 @@ export const MockGames = [
     "title": "Darksiders Warmastered Edition",
     "steamid": 462780,
     "date_added": "2016-11-30 03:45:51.082",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2566753-ds1.jpg",
     "giantbomb_id": 20991,
     "steam_cloud": null,
@@ -24270,11 +18738,7 @@ export const MockGames = [
       "rating": 56,
       "finished_date": null,
       "id": 55,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 25081
@@ -24287,11 +18751,7 @@ export const MockGames = [
     "title": "Door Kickers",
     "steamid": 248610,
     "date_added": "2016-12-02 03:46:03.894",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2695093-doorkickers.png",
     "giantbomb_id": 42792,
     "steam_cloud": true,
@@ -24311,11 +18771,7 @@ export const MockGames = [
       "rating": 81.1,
       "finished_date": null,
       "id": 585,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3099
@@ -24328,13 +18784,7 @@ export const MockGames = [
     "title": "Sleeping Dogs Definitive Edition",
     "steamid": null,
     "date_added": "2016-12-04 23:29:02.686",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2393013-sd_coverart_tylerstout.jpg",
     "giantbomb_id": 29441,
     "steam_cloud": null,
@@ -24354,13 +18804,7 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 139,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 20228
@@ -24373,13 +18817,7 @@ export const MockGames = [
     "title": "Starcraft II: Legacy of the Void",
     "steamid": null,
     "date_added": "2016-12-04 23:30:00.975",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2849274-box_sc2lotv.png",
     "giantbomb_id": 24079,
     "steam_cloud": null,
@@ -24399,13 +18837,7 @@ export const MockGames = [
       "rating": 89,
       "finished_date": null,
       "id": 630,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 458
@@ -24418,11 +18850,7 @@ export const MockGames = [
     "title": "Owlboy",
     "steamid": 115800,
     "date_added": "2016-12-16 04:45:27.774",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/1856648-imgowlboyfront.png",
     "giantbomb_id": 23714,
     "steam_cloud": true,
@@ -24442,11 +18870,7 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 284,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 12597
@@ -24459,11 +18883,7 @@ export const MockGames = [
     "title": "LEGO® STAR WARS™: The Force Awakens",
     "steamid": 438640,
     "date_added": "2016-12-17 04:45:25.426",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2822264-lswtfa.jpg",
     "giantbomb_id": 52537,
     "steam_cloud": false,
@@ -24483,11 +18903,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 46,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 17030
@@ -24500,11 +18916,7 @@ export const MockGames = [
     "title": "The Walking Dead: A New Frontier",
     "steamid": 536220,
     "date_added": "2016-12-22 04:45:27.681",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2881711-1740787089-latest",
     "giantbomb_id": 47195,
     "steam_cloud": null,
@@ -24524,11 +18936,7 @@ export const MockGames = [
       "rating": 97,
       "finished_date": "2017-07-26 21:00:00.0",
       "id": 713,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19000
@@ -24541,11 +18949,7 @@ export const MockGames = [
     "title": "Divinity: Original Sin 2",
     "steamid": 435150,
     "date_added": "2016-12-26 04:45:25.176",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2781491-photo-original.jpg",
     "giantbomb_id": 50803,
     "steam_cloud": true,
@@ -24566,11 +18970,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 806,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 5
       },
       {
@@ -24584,11 +18984,7 @@ export const MockGames = [
         "rating": 96.3,
         "finished_date": "2020-04-20 18:11:07.765",
         "id": 107,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 1
       }
     ],
@@ -24602,11 +18998,7 @@ export const MockGames = [
     "title": "INSIDE",
     "steamid": 304430,
     "date_added": "2016-12-27 04:45:19.501",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2868627-2867607-downloadimage+%281%29.jpg",
     "giantbomb_id": 46558,
     "steam_cloud": null,
@@ -24626,11 +19018,7 @@ export const MockGames = [
       "rating": 88,
       "finished_date": null,
       "id": 89,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7342
@@ -24643,11 +19031,7 @@ export const MockGames = [
     "title": "Metrico+",
     "steamid": 373990,
     "date_added": "2016-12-27 04:45:23.803",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2461786-5386501235-metri.png",
     "giantbomb_id": 42090,
     "steam_cloud": true,
@@ -24667,11 +19051,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 81,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 22017
@@ -24684,11 +19064,7 @@ export const MockGames = [
     "title": "Valley",
     "steamid": 378610,
     "date_added": "2016-12-27 04:45:24.069",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2843219-12993548_1012821318793628_9080732346239538384_n.png",
     "giantbomb_id": 53567,
     "steam_cloud": true,
@@ -24708,11 +19084,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 60,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 18859
@@ -24726,18 +19098,8 @@ export const MockGames = [
     "steamid": 439190,
     "date_added": "2016-12-27 04:45:26.128",
     "availablePlatforms": [
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 1},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2825959-storiesthepathofdestinies_fullgame_masterart.png",
     "giantbomb_id": 50996,
@@ -24759,18 +19121,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 311,
       "myPlatforms": [
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        },
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }
+        {"id": 1},
+        {"id": 11}
       ],
       "person_id": 1
     }],
@@ -24784,11 +19136,7 @@ export const MockGames = [
     "title": "Drawful 2",
     "steamid": 442070,
     "date_added": "2016-12-27 04:45:26.379",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2864093-drawful2_gb_coverimage.png",
     "giantbomb_id": 54286,
     "steam_cloud": true,
@@ -24808,11 +19156,7 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 205,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19083
@@ -24825,11 +19169,7 @@ export const MockGames = [
     "title": "SUPERHOT",
     "steamid": 322500,
     "date_added": "2016-12-28 04:45:23.48",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2686875-superhot_mainpromo.png",
     "giantbomb_id": 43663,
     "steam_cloud": false,
@@ -24849,11 +19189,7 @@ export const MockGames = [
       "rating": 84.2,
       "finished_date": null,
       "id": 385,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7205
@@ -25163,11 +19499,7 @@ export const MockGames = [
     "title": "Kerbal Space Program",
     "steamid": 220200,
     "date_added": "2017-01-01 04:45:14.823",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/1914424-logo.jpg",
     "giantbomb_id": 36494,
     "steam_cloud": false,
@@ -25187,11 +19519,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 287,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3102
@@ -25204,11 +19532,7 @@ export const MockGames = [
     "title": "Armello",
     "steamid": 290340,
     "date_added": "2017-01-01 04:45:26.622",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2529920-screen%20shot%202013-08-15%20at%201.53.51%20pm.png",
     "giantbomb_id": 39813,
     "steam_cloud": true,
@@ -25228,11 +19552,7 @@ export const MockGames = [
       "rating": 84.9,
       "finished_date": null,
       "id": 708,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 11260
@@ -25245,13 +19565,7 @@ export const MockGames = [
     "title": "Furi",
     "steamid": null,
     "date_added": "2017-01-04 18:45:55.073",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2814957-furi%20ps4.jpg",
     "giantbomb_id": 52304,
     "steam_cloud": null,
@@ -25271,13 +19585,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 155,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 17026
@@ -25290,13 +19598,7 @@ export const MockGames = [
     "title": "Paragon",
     "steamid": null,
     "date_added": "2017-01-04 18:51:36.219",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2852947-screen%20shot%202016-05-18%20at%2010.29.28%20pm.png",
     "giantbomb_id": 51414,
     "steam_cloud": null,
@@ -25316,13 +19618,7 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 595,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 14410
@@ -25335,13 +19631,7 @@ export const MockGames = [
     "title": "Transformers: Devastation",
     "steamid": null,
     "date_added": "2017-01-04 18:51:55.014",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2759166-transformersdevastation.png",
     "giantbomb_id": 49939,
     "steam_cloud": null,
@@ -25361,13 +19651,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 679,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 11175
@@ -25380,13 +19664,7 @@ export const MockGames = [
     "title": "Resident Evil",
     "steamid": null,
     "date_added": "2017-01-04 18:52:05.155",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2566505-remake.jpg",
     "giantbomb_id": 27715,
     "steam_cloud": null,
@@ -25406,13 +19684,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 372,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 24869
@@ -25425,13 +19697,7 @@ export const MockGames = [
     "title": "Saints Row: Gat out of Hell",
     "steamid": null,
     "date_added": "2017-01-04 18:54:11.323",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2676178-8129300452-gatou.jpg",
     "giantbomb_id": 47679,
     "steam_cloud": null,
@@ -25451,13 +19717,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 676,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 7708
@@ -25470,13 +19730,7 @@ export const MockGames = [
     "title": "This War of Mine: The Little Ones",
     "steamid": null,
     "date_added": "2017-01-04 18:58:04.738",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2702669-this_war_of_mine_header.jpg",
     "giantbomb_id": 45657,
     "steam_cloud": null,
@@ -25496,13 +19750,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 513,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 19979
@@ -25515,13 +19763,7 @@ export const MockGames = [
     "title": "Titan Souls",
     "steamid": null,
     "date_added": "2017-01-04 18:58:26.981",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2653523-6787669712-14510.jpg",
     "giantbomb_id": 46622,
     "steam_cloud": null,
@@ -25541,13 +19783,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 700,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 9559
@@ -25560,13 +19796,7 @@ export const MockGames = [
     "title": "The Swindle",
     "steamid": null,
     "date_added": "2017-01-04 18:58:37.982",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2725642-logo.jpg",
     "giantbomb_id": 35940,
     "steam_cloud": null,
@@ -25586,13 +19816,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 280,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 18006
@@ -25605,13 +19829,7 @@ export const MockGames = [
     "title": "Azkend 2",
     "steamid": null,
     "date_added": "2017-01-04 18:58:49.523",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2910153-1024x1024_master_art_azkend2.png",
     "giantbomb_id": 57569,
     "steam_cloud": null,
@@ -25631,13 +19849,7 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 546,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 19893
@@ -25650,13 +19862,7 @@ export const MockGames = [
     "title": "Invisible, Inc.",
     "steamid": null,
     "date_added": "2017-01-04 18:59:02.118",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2591453-screen%20shot%202014-01-16%20at%2011.03.24%20pm.png",
     "giantbomb_id": 43107,
     "steam_cloud": null,
@@ -25676,13 +19882,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 463,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 6044
@@ -25695,13 +19895,7 @@ export const MockGames = [
     "title": "Hyper Void",
     "steamid": null,
     "date_added": "2017-01-04 18:59:20.379",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2544742-1238874_10201889344623588_603978548_n.jpg",
     "giantbomb_id": 43902,
     "steam_cloud": null,
@@ -25721,13 +19915,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 754,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 20966
@@ -25740,13 +19928,7 @@ export const MockGames = [
     "title": "Color Guardians",
     "steamid": null,
     "date_added": "2017-01-04 18:59:34.081",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2707631-4109139473-181x3.png",
     "giantbomb_id": 48352,
     "steam_cloud": null,
@@ -25766,13 +19948,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 750,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 19947
@@ -25785,13 +19961,7 @@ export const MockGames = [
     "title": "Tiny Troopers Joint Ops",
     "steamid": null,
     "date_added": "2017-01-04 18:59:51.933",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2608945-7874861463-Tiny_.jpg",
     "giantbomb_id": 45646,
     "steam_cloud": null,
@@ -25811,13 +19981,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 467,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 21320
@@ -25830,11 +19994,7 @@ export const MockGames = [
     "title": "Grim Dawn",
     "steamid": 219990,
     "date_added": "2017-01-15 04:45:17.601",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2831613-gd_key_art_vertical_01.jpg",
     "giantbomb_id": 29823,
     "steam_cloud": true,
@@ -25854,11 +20014,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 704,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1907
@@ -25871,13 +20027,7 @@ export const MockGames = [
     "title": "Lovers in a Dangerous Spacetime",
     "steamid": null,
     "date_added": "2017-02-08 01:08:15.235",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2643395-lovers-game-logo-star-background-square-small.jpg",
     "giantbomb_id": 41122,
     "steam_cloud": null,
@@ -25898,13 +20048,7 @@ export const MockGames = [
         "rating": 85,
         "finished_date": null,
         "id": 551,
-        "myPlatforms": [{
-          "full_name": "Xbox One",
-          "igdb_platform_id": 49,
-          "short_name": "Xbox One",
-          "id": 4,
-          "igdb_name": "Xbox One"
-        }],
+        "myPlatforms": [{"id": 4}],
         "person_id": 1
       },
       {
@@ -25918,13 +20062,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 800,
-        "myPlatforms": [{
-          "full_name": "Xbox One",
-          "igdb_platform_id": 49,
-          "short_name": "Xbox One",
-          "id": 4,
-          "igdb_name": "Xbox One"
-        }],
+        "myPlatforms": [{"id": 4}],
         "person_id": 4
       }
     ],
@@ -25938,13 +20076,7 @@ export const MockGames = [
     "title": "Little Big Planet 3",
     "steamid": null,
     "date_added": "2017-02-13 08:07:59.602",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2703325-littlebigplanet%203%20v3.jpeg",
     "giantbomb_id": 46567,
     "steam_cloud": null,
@@ -25964,13 +20096,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 472,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 7330
@@ -25983,13 +20109,7 @@ export const MockGames = [
     "title": "Not A Hero",
     "steamid": null,
     "date_added": "2017-02-13 08:08:28.282",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2853832-0518582999-heade.jpg",
     "giantbomb_id": 45802,
     "steam_cloud": null,
@@ -26009,13 +20129,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 683,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 6045
@@ -26028,13 +20142,7 @@ export const MockGames = [
     "title": "STARWHAL",
     "steamid": null,
     "date_added": "2017-02-13 08:08:47.46",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2581285-starwhal_promo1280.jpg",
     "giantbomb_id": 44806,
     "steam_cloud": null,
@@ -26054,13 +20162,7 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 288,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 6781
@@ -26073,13 +20175,7 @@ export const MockGames = [
     "title": "Ninja Senki DX",
     "steamid": null,
     "date_added": "2017-02-13 08:09:18.086",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -26099,13 +20195,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 173,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 20082
@@ -26118,13 +20208,7 @@ export const MockGames = [
     "title": "TorqueL",
     "steamid": null,
     "date_added": "2017-02-13 08:09:34.566",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2719078-6271132973-capsu.jpg",
     "giantbomb_id": 48621,
     "steam_cloud": null,
@@ -26144,13 +20228,7 @@ export const MockGames = [
       "rating": 61,
       "finished_date": null,
       "id": 678,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 16654
@@ -26163,13 +20241,7 @@ export const MockGames = [
     "title": "Anna",
     "steamid": null,
     "date_added": "2017-02-13 08:10:01.347",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2469127-header_292x136.jpg",
     "giantbomb_id": 37904,
     "steam_cloud": null,
@@ -26189,13 +20261,7 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 638,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 9976
@@ -26208,11 +20274,7 @@ export const MockGames = [
     "title": "Dear Esther: Landmark Edition",
     "steamid": 520720,
     "date_added": "2017-02-15 04:45:06.798",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2174133-dearesther.jpg",
     "giantbomb_id": 33629,
     "steam_cloud": true,
@@ -26232,11 +20294,7 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 389,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 24051
@@ -26249,13 +20307,7 @@ export const MockGames = [
     "title": "Horizon: Zero Dawn",
     "steamid": null,
     "date_added": "2017-03-06 08:40:00.63",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2920671-horizon%20-%20zero%20dawn%20v2.jpg",
     "giantbomb_id": 49973,
     "steam_cloud": null,
@@ -26275,13 +20327,7 @@ export const MockGames = [
       "rating": 88,
       "finished_date": null,
       "id": 441,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 11156
@@ -26294,13 +20340,7 @@ export const MockGames = [
     "title": "Mass Effect Andromeda",
     "steamid": null,
     "date_added": "2017-03-22 15:35:23.51",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2926655-mass%20effect%20-%20andromeda.jpg",
     "giantbomb_id": 46631,
     "steam_cloud": null,
@@ -26320,13 +20360,7 @@ export const MockGames = [
       "rating": 95.1,
       "finished_date": "2017-07-23 00:00:00.0",
       "id": 442,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 7349
@@ -26340,20 +20374,8 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2017-03-28 21:05:00.931",
     "availablePlatforms": [
-      {
-        "full_name": "Wii U",
-        "igdb_platform_id": 41,
-        "short_name": "Wii U",
-        "id": 5,
-        "igdb_name": "Wii U"
-      },
-      {
-        "full_name": "Switch",
-        "igdb_platform_id": 130,
-        "short_name": "Switch",
-        "id": 3,
-        "igdb_name": "Nintendo Switch"
-      }
+      {"id": 5},
+      {"id": 3}
     ],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2920687-the%20legend%20of%20zelda%20-%20breath%20of%20the%20wild%20v7.jpg",
     "giantbomb_id": 41355,
@@ -26375,20 +20397,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 408,
       "myPlatforms": [
-        {
-          "full_name": "Wii U",
-          "igdb_platform_id": 41,
-          "short_name": "Wii U",
-          "id": 5,
-          "igdb_name": "Wii U"
-        },
-        {
-          "full_name": "Switch",
-          "igdb_platform_id": 130,
-          "short_name": "Switch",
-          "id": 3,
-          "igdb_name": "Nintendo Switch"
-        }
+        {"id": 5},
+        {"id": 3}
       ],
       "person_id": 1
     }],
@@ -26402,11 +20412,7 @@ export const MockGames = [
     "title": "Moirai",
     "steamid": 496920,
     "date_added": "2017-04-11 04:45:28.678",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2875120-moirai.jpg",
     "giantbomb_id": 54927,
     "steam_cloud": false,
@@ -26426,11 +20432,7 @@ export const MockGames = [
       "rating": 50,
       "finished_date": "2017-06-15 00:00:00.0",
       "id": 82,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 22365
@@ -26443,11 +20445,7 @@ export const MockGames = [
     "title": "Marvel's Guardians of the Galaxy: The Telltale Series",
     "steamid": 579950,
     "date_added": "2017-04-26 04:45:32.182",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2933114-image%20%282%29.jpg",
     "giantbomb_id": 57203,
     "steam_cloud": false,
@@ -26467,11 +20465,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 34,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 26165
@@ -26484,11 +20478,7 @@ export const MockGames = [
     "title": "Shardbound",
     "steamid": 586030,
     "date_added": "2017-05-06 04:45:29.337",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -26508,11 +20498,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 104,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 27747
@@ -26525,13 +20511,7 @@ export const MockGames = [
     "title": "LASER DISCO DEFENDERS",
     "steamid": null,
     "date_added": "2017-05-07 00:33:28.984",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2934685-laser%20disco%20defenders.jpg",
     "giantbomb_id": 59315,
     "steam_cloud": null,
@@ -26551,13 +20531,7 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 672,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 22362
@@ -26571,20 +20545,8 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2017-05-07 00:33:38.866",
     "availablePlatforms": [
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      },
-      {
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }
+      {"id": 11},
+      {"id": 6}
     ],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2859627-4115876634-heade.jpg",
     "giantbomb_id": 44436,
@@ -26606,20 +20568,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 45,
       "myPlatforms": [
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        },
-        {
-          "full_name": "PS3",
-          "igdb_platform_id": 9,
-          "short_name": "PS3",
-          "id": 6,
-          "igdb_name": "PlayStation 3"
-        }
+        {"id": 11},
+        {"id": 6}
       ],
       "person_id": 1
     }],
@@ -26633,13 +20583,7 @@ export const MockGames = [
     "title": "Blood Knights",
     "steamid": null,
     "date_added": "2017-05-07 00:33:49.819",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2452872-box_bk.png",
     "giantbomb_id": 39132,
     "steam_cloud": null,
@@ -26659,13 +20603,7 @@ export const MockGames = [
       "rating": 43,
       "finished_date": null,
       "id": 593,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 8421
@@ -26678,13 +20616,7 @@ export const MockGames = [
     "title": "Port Royale 3 Pirates & Merchants",
     "steamid": null,
     "date_added": "2017-05-07 00:34:10.981",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -26704,13 +20636,7 @@ export const MockGames = [
       "rating": 54,
       "finished_date": null,
       "id": 35,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 7134
@@ -26723,11 +20649,7 @@ export const MockGames = [
     "title": "Endless Space 2",
     "steamid": 392110,
     "date_added": "2017-06-01 04:45:31.294",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2849137-7165554289-capsu.jpg",
     "giantbomb_id": 52924,
     "steam_cloud": true,
@@ -26747,11 +20669,7 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 80,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 11550
@@ -26764,11 +20682,7 @@ export const MockGames = [
     "title": "Eon Altar",
     "steamid": 382050,
     "date_added": "2017-06-02 04:45:30.171",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2467083-eon_webonblack.png",
     "giantbomb_id": 42240,
     "steam_cloud": true,
@@ -26788,11 +20702,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 22,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19867
@@ -26805,11 +20715,7 @@ export const MockGames = [
     "title": "Tyranny",
     "steamid": 362960,
     "date_added": "2017-06-14 04:45:31.355",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2899343-tyranny_cover_art.png",
     "giantbomb_id": 53069,
     "steam_cloud": null,
@@ -26829,11 +20735,7 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 182,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 18398
@@ -26846,11 +20748,7 @@ export const MockGames = [
     "title": "What Remains of Edith Finch",
     "steamid": 501300,
     "date_added": "2017-06-28 04:45:32.173",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2706838-8315902633-15774.jpg",
     "giantbomb_id": 48329,
     "steam_cloud": true,
@@ -26870,11 +20768,7 @@ export const MockGames = [
       "rating": 91.7,
       "finished_date": "2017-08-08 00:00:00.0",
       "id": 211,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 11233
@@ -26887,11 +20781,7 @@ export const MockGames = [
     "title": "Redout: Enhanced Edition",
     "steamid": 517710,
     "date_added": "2017-06-28 04:45:32.351",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2877905-screen%20shot%202016-08-18%20at%2012.40.38%20am.png",
     "giantbomb_id": 55096,
     "steam_cloud": true,
@@ -26911,11 +20801,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 238,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 31598
@@ -26928,11 +20814,7 @@ export const MockGames = [
     "title": "Windward",
     "steamid": 326410,
     "date_added": "2017-07-04 04:45:24.127",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2749832-5556820537-heade.jpg",
     "giantbomb_id": 49663,
     "steam_cloud": true,
@@ -26952,11 +20834,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 29,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 17902
@@ -26969,11 +20847,7 @@ export const MockGames = [
     "title": "The Uncertain: Episode 1 - The Last Quiet Day",
     "steamid": 406970,
     "date_added": "2017-07-04 04:45:28.651",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2889767-main%20capsule.png",
     "giantbomb_id": 55752,
     "steam_cloud": false,
@@ -26993,11 +20867,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 257,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 34366
@@ -27010,11 +20880,7 @@ export const MockGames = [
     "title": "Planescape: Torment: Enhanced Edition",
     "steamid": 466300,
     "date_added": "2017-07-04 04:45:31.201",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2866834-5657312460-1067_.jpg",
     "giantbomb_id": 2235,
     "steam_cloud": null,
@@ -27034,11 +20900,7 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 424,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 27988
@@ -27051,11 +20913,7 @@ export const MockGames = [
     "title": "Trials on Tatooine",
     "steamid": 381940,
     "date_added": "2017-07-07 04:45:27.705",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -27075,11 +20933,7 @@ export const MockGames = [
       "rating": 88,
       "finished_date": "2020-04-20 18:38:16.357",
       "id": 297,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 34982
@@ -27092,11 +20946,7 @@ export const MockGames = [
     "title": "Star Trek: Bridge Crew",
     "steamid": 527100,
     "date_added": "2017-07-07 04:45:33.048",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2942779-star%20trek%20-%20bridge%20crew%20v1.jpg",
     "giantbomb_id": 54194,
     "steam_cloud": false,
@@ -27116,11 +20966,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 247,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19519
@@ -27133,11 +20979,7 @@ export const MockGames = [
     "title": "SportsBar VR ",
     "steamid": 269170,
     "date_added": "2017-07-08 04:45:20.535",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2900579-sportsbar%20vr%20logo.png",
     "giantbomb_id": 57050,
     "steam_cloud": true,
@@ -27157,11 +20999,7 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 213,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 25185
@@ -27174,11 +21012,7 @@ export const MockGames = [
     "title": "Universe Sandbox ²",
     "steamid": 230290,
     "date_added": "2017-07-08 04:45:24.931",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2672049-screen%20shot%202014-08-18%20at%2010.51.04%20pm.png",
     "giantbomb_id": 47450,
     "steam_cloud": false,
@@ -27198,11 +21032,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 303,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 11813
@@ -27215,11 +21045,7 @@ export const MockGames = [
     "title": "Crashed Lander",
     "steamid": 340450,
     "date_added": "2017-07-08 04:45:25.527",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -27239,11 +21065,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 218,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19026
@@ -27256,11 +21078,7 @@ export const MockGames = [
     "title": "EVERSPACE™",
     "steamid": 396750,
     "date_added": "2017-07-08 04:45:28.567",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2896242-everspace%20twitch%20box%20art%2005.jpg",
     "giantbomb_id": 52950,
     "steam_cloud": true,
@@ -27280,11 +21098,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 84,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 14172
@@ -27297,11 +21111,7 @@ export const MockGames = [
     "title": "Batman™: Arkham VR",
     "steamid": 502820,
     "date_added": "2017-07-08 04:45:33.41",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2861864-bavr.jpg",
     "giantbomb_id": 54242,
     "steam_cloud": false,
@@ -27321,11 +21131,7 @@ export const MockGames = [
       "rating": 90.2,
       "finished_date": "2017-07-07 00:00:00.0",
       "id": 490,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19563
@@ -27338,11 +21144,7 @@ export const MockGames = [
     "title": "Caketomino",
     "steamid": 517770,
     "date_added": "2017-07-08 04:45:33.663",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2881494-0165616486-heade.jpg",
     "giantbomb_id": 55351,
     "steam_cloud": false,
@@ -27362,11 +21164,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 494,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 31599
@@ -27379,11 +21177,7 @@ export const MockGames = [
     "title": "Candy Kingdom",
     "steamid": 525500,
     "date_added": "2017-07-08 04:45:33.996",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -27403,11 +21197,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 16,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 31395
@@ -27420,11 +21210,7 @@ export const MockGames = [
     "title": "Seabed Prelude",
     "steamid": 529730,
     "date_added": "2017-07-08 04:45:34.327",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -27444,11 +21230,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 11,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 31241
@@ -27461,11 +21243,7 @@ export const MockGames = [
     "title": "VR Fun World",
     "steamid": 535750,
     "date_added": "2017-07-08 04:45:34.571",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -27485,11 +21263,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 17,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 31140
@@ -27502,11 +21276,7 @@ export const MockGames = [
     "title": "Marlene Act 1 Betwixt",
     "steamid": 536530,
     "date_added": "2017-07-08 04:45:34.906",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2920180-betwixedcover1920.png",
     "giantbomb_id": 58426,
     "steam_cloud": false,
@@ -27526,11 +21296,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 214,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 31116
@@ -27543,11 +21309,7 @@ export const MockGames = [
     "title": "Sky Climbers : Rise of The Hero ",
     "steamid": 583750,
     "date_added": "2017-07-08 04:45:35.479",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -27567,11 +21329,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 124,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 108776
@@ -27584,11 +21342,7 @@ export const MockGames = [
     "title": "Warpaint",
     "steamid": 600150,
     "date_added": "2017-07-08 04:45:35.803",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2926343-banner2.png",
     "giantbomb_id": 58788,
     "steam_cloud": false,
@@ -27608,11 +21362,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 216,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 29358
@@ -27625,11 +21375,7 @@ export const MockGames = [
     "title": "VectorWars",
     "steamid": 600350,
     "date_added": "2017-07-08 04:45:36.046",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -27649,11 +21395,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 26,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 29365
@@ -27666,11 +21408,7 @@ export const MockGames = [
     "title": "Gem Hunter",
     "steamid": 613020,
     "date_added": "2017-07-08 04:45:36.288",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -27690,11 +21428,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 540,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 29057
@@ -27707,11 +21441,7 @@ export const MockGames = [
     "title": "SUPERHOT VR",
     "steamid": 617830,
     "date_added": "2017-07-08 04:45:36.532",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2861328-superhot%20vr%20coming%20soon.png",
     "giantbomb_id": 54217,
     "steam_cloud": false,
@@ -27731,11 +21461,7 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 179,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 25632
@@ -27748,11 +21474,7 @@ export const MockGames = [
     "title": "Spider-Man: Homecoming - Virtual Reality Experience",
     "steamid": 645480,
     "date_added": "2017-07-08 04:45:36.781",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3003097-9959141091-63864.jpg",
     "giantbomb_id": 66784,
     "steam_cloud": false,
@@ -27772,11 +21494,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": "2017-07-08 00:00:00.0",
       "id": 285,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 43066
@@ -27789,11 +21507,7 @@ export const MockGames = [
     "title": "The Lab",
     "steamid": 450390,
     "date_added": "2017-07-10 04:45:36.652",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2835479-thelab_with_logo.png",
     "giantbomb_id": 53080,
     "steam_cloud": false,
@@ -27813,11 +21527,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": "2017-07-09 00:00:00.0",
       "id": 181,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 33308
@@ -27830,13 +21540,7 @@ export const MockGames = [
     "title": "Until Dawn",
     "steamid": null,
     "date_added": "2017-07-11 21:38:20.591",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2805496-until%20dawn%20v6.jpg",
     "giantbomb_id": 39358,
     "steam_cloud": null,
@@ -27856,13 +21560,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 37,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 7609
@@ -27875,11 +21573,7 @@ export const MockGames = [
     "title": "ADR1FT",
     "steamid": 300060,
     "date_added": "2017-07-12 04:45:22.453",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2647158-2101176100-adr1f.jpg",
     "giantbomb_id": 45403,
     "steam_cloud": false,
@@ -27899,11 +21593,7 @@ export const MockGames = [
       "rating": 88,
       "finished_date": null,
       "id": 240,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 8654
@@ -27916,11 +21606,7 @@ export const MockGames = [
     "title": "Jotun: Valhalla Edition",
     "steamid": 323580,
     "date_added": "2017-07-19 16:46:02.387",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2786630-logo.png",
     "giantbomb_id": 48488,
     "steam_cloud": true,
@@ -27940,11 +21626,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 61,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 18149
@@ -27958,18 +21640,8 @@ export const MockGames = [
     "steamid": 225540,
     "date_added": "2017-07-26 04:45:33.892",
     "availablePlatforms": [
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 1},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2744923-just%20cause%203%20cover%20v1.jpg",
     "giantbomb_id": 48207,
@@ -27991,18 +21663,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 1374,
       "myPlatforms": [
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        },
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }
+        {"id": 1},
+        {"id": 11}
       ],
       "person_id": 1
     }],
@@ -28017,20 +21679,8 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2017-08-02 00:59:35.361",
     "availablePlatforms": [
-      {
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      },
-      {
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }
+      {"id": 4},
+      {"id": 10}
     ],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2954338-box_sr.png",
     "giantbomb_id": 52163,
@@ -28052,20 +21702,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 164,
       "myPlatforms": [
-        {
-          "full_name": "Xbox One",
-          "igdb_platform_id": 49,
-          "short_name": "Xbox One",
-          "id": 4,
-          "igdb_name": "Xbox One"
-        },
-        {
-          "full_name": "PC",
-          "igdb_platform_id": 6,
-          "short_name": "PC",
-          "id": 10,
-          "igdb_name": "PC (Microsoft Windows)"
-        }
+        {"id": 4},
+        {"id": 10}
       ],
       "person_id": 1
     }],
@@ -28079,13 +21717,7 @@ export const MockGames = [
     "title": "Assassin's Creed Freedom Cry",
     "steamid": null,
     "date_added": "2017-08-02 13:56:10.644",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2598626-screen%20shot%202014-02-05%20at%208.14.35%20pm.png",
     "giantbomb_id": 45343,
     "steam_cloud": null,
@@ -28105,13 +21737,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 487,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 3775
@@ -28124,13 +21750,7 @@ export const MockGames = [
     "title": "Downwell",
     "steamid": null,
     "date_added": "2017-08-02 13:56:20.545",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2791508-downwell.png",
     "giantbomb_id": 48935,
     "steam_cloud": null,
@@ -28150,13 +21770,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 195,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 13677
@@ -28169,13 +21783,7 @@ export const MockGames = [
     "title": "Super Motherload",
     "steamid": null,
     "date_added": "2017-08-02 13:56:31.895",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2578171-box_sml.png",
     "giantbomb_id": 41717,
     "steam_cloud": null,
@@ -28195,13 +21803,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 536,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 20078
@@ -28214,13 +21816,7 @@ export const MockGames = [
     "title": "Snakeball",
     "steamid": null,
     "date_added": "2017-08-02 13:56:43.883",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/1298234-snakeball_icon.png",
     "giantbomb_id": 30371,
     "steam_cloud": null,
@@ -28240,13 +21836,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 580,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 21881
@@ -28259,11 +21849,7 @@ export const MockGames = [
     "title": "Rick and Morty: Virtual Rick-ality",
     "steamid": 469610,
     "date_added": "2017-08-11 04:45:32.79",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2931796-5218167123-heade.jpg",
     "giantbomb_id": 54668,
     "steam_cloud": null,
@@ -28283,11 +21869,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": "2020-04-20 18:48:18.151",
       "id": 170,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 20459
@@ -28300,11 +21882,7 @@ export const MockGames = [
     "title": "No Man's Sky",
     "steamid": 275850,
     "date_added": "2017-08-11 20:02:44.787",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2927125-no%20man%27s%20sky.jpg",
     "giantbomb_id": 44656,
     "steam_cloud": true,
@@ -28324,11 +21902,7 @@ export const MockGames = [
       "rating": 95,
       "finished_date": null,
       "id": 134,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3225
@@ -28342,18 +21916,8 @@ export const MockGames = [
     "steamid": 493200,
     "date_added": "2017-08-17 04:45:31.367",
     "availablePlatforms": [
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 1},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2940457-rime%20v3.jpg",
     "giantbomb_id": 43611,
@@ -28375,18 +21939,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 135,
       "myPlatforms": [
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        },
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }
+        {"id": 1},
+        {"id": 11}
       ],
       "person_id": 1
     }],
@@ -28401,20 +21955,8 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2017-08-17 21:02:23.24",
     "availablePlatforms": [
-      {
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 10},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2643656-ts4_keyart_rgb.png",
     "giantbomb_id": 42574,
@@ -28436,13 +21978,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 799,
-        "myPlatforms": [{
-          "full_name": "PC",
-          "igdb_platform_id": 6,
-          "short_name": "PC",
-          "id": 10,
-          "igdb_name": "PC (Microsoft Windows)"
-        }],
+        "myPlatforms": [{"id": 10}],
         "person_id": 4
       },
       {
@@ -28457,20 +21993,8 @@ export const MockGames = [
         "finished_date": null,
         "id": 538,
         "myPlatforms": [
-          {
-            "full_name": "PC",
-            "igdb_platform_id": 6,
-            "short_name": "PC",
-            "id": 10,
-            "igdb_name": "PC (Microsoft Windows)"
-          },
-          {
-            "full_name": "PS4",
-            "igdb_platform_id": 48,
-            "short_name": "PS4",
-            "id": 11,
-            "igdb_name": "PlayStation 4"
-          }
+          {"id": 10},
+          {"id": 11}
         ],
         "person_id": 1
       }
@@ -28485,11 +22009,7 @@ export const MockGames = [
     "title": "Total War: WARHAMMER",
     "steamid": 364360,
     "date_added": "2017-08-21 01:25:27.941",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2744336-warhammer_flat_fina_black_1429545576.jpg",
     "giantbomb_id": 49524,
     "steam_cloud": false,
@@ -28509,11 +22029,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 138,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9898
@@ -28526,11 +22042,7 @@ export const MockGames = [
     "title": "Pan-Pan",
     "steamid": 471920,
     "date_added": "2017-08-21 01:25:29.069",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2879732-panpan.jpg",
     "giantbomb_id": 55247,
     "steam_cloud": false,
@@ -28550,11 +22062,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 136,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 23352
@@ -28567,11 +22075,7 @@ export const MockGames = [
     "title": "Vanishing Realms",
     "steamid": 322770,
     "date_added": "2017-08-30 20:42:25.756",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2885702-6605284553-32428.jpg",
     "giantbomb_id": 55561,
     "steam_cloud": false,
@@ -28591,11 +22095,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 137,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 18694
@@ -28608,11 +22108,7 @@ export const MockGames = [
     "title": "Life is Strange: Before the Storm",
     "steamid": 554620,
     "date_added": "2017-08-31 11:07:46.089",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2945312-screen%20shot%202017-06-11%20at%208.09.07%20pm.png",
     "giantbomb_id": 59903,
     "steam_cloud": true,
@@ -28632,11 +22128,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 159,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 29004
@@ -28649,13 +22141,7 @@ export const MockGames = [
     "title": "Strike Vector EX",
     "steamid": null,
     "date_added": "2017-09-06 18:00:36.799",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2595790-8561360582-268x268.resizedimage",
     "giantbomb_id": 45277,
     "steam_cloud": null,
@@ -28675,13 +22161,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 637,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 22798
@@ -28694,13 +22174,7 @@ export const MockGames = [
     "title": "WE ARE DOOMED",
     "steamid": null,
     "date_added": "2017-09-06 18:00:53.321",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2768052-box_wad.png",
     "giantbomb_id": 45908,
     "steam_cloud": null,
@@ -28720,13 +22194,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 539,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 20894
@@ -28739,13 +22207,7 @@ export const MockGames = [
     "title": "Hatoful Boyfriend",
     "steamid": null,
     "date_added": "2017-09-06 18:01:20.014",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2105398-cover.jpg",
     "giantbomb_id": 37243,
     "steam_cloud": null,
@@ -28765,13 +22227,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 537,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 8874
@@ -28784,13 +22240,7 @@ export const MockGames = [
     "title": "Truck Racer",
     "steamid": null,
     "date_added": "2017-09-06 18:01:33.102",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -28810,13 +22260,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 116,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 16719
@@ -28829,13 +22273,7 @@ export const MockGames = [
     "title": "Handball 16",
     "steamid": null,
     "date_added": "2017-09-06 18:01:45.945",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2801364-0347386343-heade.jpg",
     "giantbomb_id": 49821,
     "steam_cloud": null,
@@ -28855,13 +22293,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 418,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 34927
@@ -28874,11 +22306,7 @@ export const MockGames = [
     "title": "The Elder Scrolls V: Skyrim Special Edition",
     "steamid": 489830,
     "date_added": "2017-09-07 11:19:10.248",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -28898,11 +22326,7 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 1459,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19457
@@ -28915,11 +22339,7 @@ export const MockGames = [
     "title": "Tacoma",
     "steamid": 343860,
     "date_added": "2017-09-19 20:08:18.453",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2954337-box_tacoma.png",
     "giantbomb_id": 48325,
     "steam_cloud": true,
@@ -28940,11 +22360,7 @@ export const MockGames = [
         "rating": 93.9,
         "finished_date": "2018-03-02 21:10:28.030697",
         "id": 148,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 1
       },
       {
@@ -28958,11 +22374,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 807,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 5
       }
     ],
@@ -28977,18 +22389,8 @@ export const MockGames = [
     "steamid": 460790,
     "date_added": "2017-09-20 13:58:02.756",
     "availablePlatforms": [
-      {
-        "full_name": "Xbox 360",
-        "igdb_platform_id": 12,
-        "short_name": "Xbox 360",
-        "id": 7,
-        "igdb_name": "Xbox 360"
-      },
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }
+      {"id": 7},
+      {"id": 1}
     ],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/1124551-gb.png",
     "giantbomb_id": 20710,
@@ -29010,18 +22412,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 210,
       "myPlatforms": [
-        {
-          "full_name": "Xbox 360",
-          "igdb_platform_id": 12,
-          "short_name": "Xbox 360",
-          "id": 7,
-          "igdb_name": "Xbox 360"
-        },
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }
+        {"id": 7},
+        {"id": 1}
       ],
       "person_id": 1
     }],
@@ -29035,11 +22427,7 @@ export const MockGames = [
     "title": "Pyre",
     "steamid": 462770,
     "date_added": "2017-09-28 11:49:08.687",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2945692-pyre%20v1.jpg",
     "giantbomb_id": 53436,
     "steam_cloud": true,
@@ -29060,11 +22448,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 793,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 4
       },
       {
@@ -29078,11 +22462,7 @@ export const MockGames = [
         "rating": 84,
         "finished_date": null,
         "id": 146,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 1
       }
     ],
@@ -29096,11 +22476,7 @@ export const MockGames = [
     "title": "Tropico 4",
     "steamid": 57690,
     "date_added": "2017-09-29 14:16:23.528",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/1817246-tropico_4.jpg",
     "giantbomb_id": 32326,
     "steam_cloud": false,
@@ -29120,11 +22496,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 23,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2595
@@ -29137,13 +22509,7 @@ export const MockGames = [
     "title": "Forza Motorsport 7",
     "steamid": null,
     "date_added": "2017-10-04 18:29:38.219",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2945471-screen%20shot%202017-06-12%20at%2011.40.19%20am.png",
     "giantbomb_id": 59896,
     "steam_cloud": null,
@@ -29163,13 +22529,7 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 559,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 36872
@@ -29182,11 +22542,7 @@ export const MockGames = [
     "title": "Raw Data",
     "steamid": 436320,
     "date_added": "2017-10-05 16:12:41.751",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2869163-9181922690-heade.jpg",
     "giantbomb_id": 54614,
     "steam_cloud": true,
@@ -29206,11 +22562,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 542,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19169
@@ -29223,11 +22575,7 @@ export const MockGames = [
     "title": "Middle-earth™: Shadow of War™",
     "steamid": 356190,
     "date_added": "2017-10-08 12:03:34.716",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2940192-middle-earth%20-%20shadow%20of%20war.jpg",
     "giantbomb_id": 58573,
     "steam_cloud": true,
@@ -29247,11 +22595,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 234,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 27421
@@ -29264,11 +22608,7 @@ export const MockGames = [
     "title": "Ashes of the Singularity: Escalation",
     "steamid": 507490,
     "date_added": "2017-10-16 23:50:19.376",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2899842-f3e059_ashesofthesingularity.jpg",
     "giantbomb_id": 49088,
     "steam_cloud": true,
@@ -29288,11 +22628,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 549,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 25741
@@ -29305,11 +22641,7 @@ export const MockGames = [
     "title": "Torment: Tides of Numenera",
     "steamid": 272270,
     "date_added": "2017-10-31 14:15:12.784",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2954947-tormenttoncover.jpg",
     "giantbomb_id": 41792,
     "steam_cloud": true,
@@ -29329,11 +22661,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 706,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2004
@@ -29346,11 +22674,7 @@ export const MockGames = [
     "title": "Please, Don't Touch Anything 3D",
     "steamid": 529590,
     "date_added": "2017-10-31 14:15:25.754",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2906866-giantbomb.png",
     "giantbomb_id": 57420,
     "steam_cloud": false,
@@ -29370,11 +22694,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 166,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 31235
@@ -29387,11 +22707,7 @@ export const MockGames = [
     "title": "The First Tree",
     "steamid": 555150,
     "date_added": "2017-10-31 14:15:26.594",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2956959-screen%20shot%202017-08-12%20at%203.00.04%20pm.png",
     "giantbomb_id": 60812,
     "steam_cloud": true,
@@ -29411,11 +22727,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 566,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 20909
@@ -29428,11 +22740,7 @@ export const MockGames = [
     "title": "Sentience: The Android's Tale",
     "steamid": 635850,
     "date_added": "2017-10-31 14:15:27.613",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2994385-sentience.jpg",
     "giantbomb_id": 65666,
     "steam_cloud": false,
@@ -29452,11 +22760,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 545,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 36631
@@ -29469,13 +22773,7 @@ export const MockGames = [
     "title": "Super Mario Odyssey",
     "steamid": null,
     "date_added": "2017-11-05 05:11:40.141",
-    "availablePlatforms": [{
-      "full_name": "Switch",
-      "igdb_platform_id": 130,
-      "short_name": "Switch",
-      "id": 3,
-      "igdb_name": "Nintendo Switch"
-    }],
+    "availablePlatforms": [{"id": 3}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2972168-smoboxartfinal.jpg",
     "giantbomb_id": 56733,
     "steam_cloud": null,
@@ -29495,13 +22793,7 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 655,
-      "myPlatforms": [{
-        "full_name": "Switch",
-        "igdb_platform_id": 130,
-        "short_name": "Switch",
-        "id": 3,
-        "igdb_name": "Nintendo Switch"
-      }],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 26758
@@ -29514,13 +22806,7 @@ export const MockGames = [
     "title": "Bound",
     "steamid": null,
     "date_added": "2017-11-12 22:33:30.625",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2802521-9640726099-23490.jpg",
     "giantbomb_id": 51735,
     "steam_cloud": null,
@@ -29540,13 +22826,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 555,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 14790
@@ -29559,13 +22839,7 @@ export const MockGames = [
     "title": "Until Dawn: Rush of Blood",
     "steamid": null,
     "date_added": "2017-11-12 22:33:44.856",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2793820-screen%20shot%202015-10-27%20at%206.33.44%20pm.png",
     "giantbomb_id": 51355,
     "steam_cloud": null,
@@ -29585,13 +22859,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 560,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 14366
@@ -29604,13 +22872,7 @@ export const MockGames = [
     "title": "Worms Battlegrounds",
     "steamid": null,
     "date_added": "2017-11-12 22:33:59.11",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2642262-box_wormsbg.png",
     "giantbomb_id": 45386,
     "steam_cloud": null,
@@ -29630,13 +22892,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 557,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 8967
@@ -29649,13 +22905,7 @@ export const MockGames = [
     "title": "Dungeon Punks",
     "steamid": null,
     "date_added": "2017-11-12 22:34:11.45",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2850800-screen%20shot%202016-05-12%20at%207.56.25%20pm.png",
     "giantbomb_id": 53724,
     "steam_cloud": null,
@@ -29675,13 +22925,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 642,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 32021
@@ -29694,11 +22938,7 @@ export const MockGames = [
     "title": "The Jackbox Party Pack 4",
     "steamid": 610180,
     "date_added": "2017-11-23 12:10:51.205",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2966744-4737054179-JPP4P.jpg",
     "giantbomb_id": 60771,
     "steam_cloud": true,
@@ -29718,11 +22958,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 215,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 28213
@@ -29735,11 +22971,7 @@ export const MockGames = [
     "title": "OneShot",
     "steamid": 420530,
     "date_added": "2017-11-23 17:19:38.867",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2849563-logo.png",
     "giantbomb_id": 53659,
     "steam_cloud": true,
@@ -29759,11 +22991,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 554,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 23181
@@ -29776,11 +23004,7 @@ export const MockGames = [
     "title": "This Is the Police",
     "steamid": 443810,
     "date_added": "2017-11-23 17:19:41.138",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2929865-image%20%281%29.png",
     "giantbomb_id": 53376,
     "steam_cloud": true,
@@ -29800,11 +23024,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 558,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 11423
@@ -29817,11 +23037,7 @@ export const MockGames = [
     "title": "VR Ping Pong",
     "steamid": 492710,
     "date_added": "2017-11-23 17:19:43.054",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2886995-vr%20ping%20pong%20image.png",
     "giantbomb_id": 55619,
     "steam_cloud": false,
@@ -29841,11 +23057,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 207,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 21602
@@ -29858,11 +23070,7 @@ export const MockGames = [
     "title": "Luna",
     "steamid": 605770,
     "date_added": "2017-11-23 17:19:45.761",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2877899-screen%20shot%202016-08-18%20at%2012.10.27%20am.png",
     "giantbomb_id": 48372,
     "steam_cloud": false,
@@ -29882,11 +23090,7 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 435,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 43166
@@ -29899,11 +23103,7 @@ export const MockGames = [
     "title": "Jazzpunk: Director's Cut",
     "steamid": 250260,
     "date_added": "2017-11-28 00:19:18.701",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2854992-2670405-box.jpg",
     "giantbomb_id": 44063,
     "steam_cloud": false,
@@ -29923,11 +23123,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 5,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 52242
@@ -29940,11 +23136,7 @@ export const MockGames = [
     "title": "Republique",
     "steamid": 317100,
     "date_added": "2017-11-28 00:19:24.495",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2694769-republique_promoart.jpeg",
     "giantbomb_id": 37963,
     "steam_cloud": true,
@@ -29964,11 +23156,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 53,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 17719
@@ -29981,11 +23169,7 @@ export const MockGames = [
     "title": "Sparc",
     "steamid": 601770,
     "date_added": "2017-11-28 00:19:36.171",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2946223-dckplwqvyaa3r9v.jpg",
     "giantbomb_id": 59951,
     "steam_cloud": false,
@@ -30005,11 +23189,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 165,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 27430
@@ -30022,11 +23202,7 @@ export const MockGames = [
     "title": "EVE: Valkyrie - Warzone",
     "steamid": 688480,
     "date_added": "2017-11-28 00:19:36.981",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2546886-eve%20val%20art%202.jpg",
     "giantbomb_id": 43609,
     "steam_cloud": false,
@@ -30046,11 +23222,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 59,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 68444
@@ -30063,11 +23235,7 @@ export const MockGames = [
     "title": "DOOM VFR",
     "steamid": 650000,
     "date_added": "2017-11-30 22:26:51.322",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2977969-doom%20vfr.jpg",
     "giantbomb_id": 59905,
     "steam_cloud": true,
@@ -30087,11 +23255,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 149,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 37031
@@ -30104,11 +23268,7 @@ export const MockGames = [
     "title": "Alien: Isolation",
     "steamid": 214490,
     "date_added": "2017-12-06 16:13:13.579",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2580333-alien-isolation-2.jpg",
     "giantbomb_id": 44296,
     "steam_cloud": true,
@@ -30128,11 +23288,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 755,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 4754
@@ -30145,11 +23301,7 @@ export const MockGames = [
     "title": "Star Wars: Droid Repair Bay",
     "steamid": 726910,
     "date_added": "2017-12-06 23:55:41.766",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3000378-header%20%281%29.jpg",
     "giantbomb_id": 66485,
     "steam_cloud": false,
@@ -30169,11 +23321,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": "2018-08-07 17:00:00.0",
       "id": 225,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 76946
@@ -30186,13 +23334,7 @@ export const MockGames = [
     "title": "Star Wars Battlefront II",
     "steamid": null,
     "date_added": "2017-12-08 05:08:10.892",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2932265-wario64_2017-apr-15.jpg",
     "giantbomb_id": 53692,
     "steam_cloud": null,
@@ -30212,13 +23354,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 563,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 26401
@@ -30231,11 +23367,7 @@ export const MockGames = [
     "title": "theBlu",
     "steamid": 451520,
     "date_added": "2017-12-22 11:11:12.71",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2956121-header%20%287%29.jpg",
     "giantbomb_id": 60716,
     "steam_cloud": false,
@@ -30256,11 +23388,7 @@ export const MockGames = [
         "rating": 80,
         "finished_date": "2020-04-20 18:47:20.958",
         "id": 157,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 1
       },
       {
@@ -30274,11 +23402,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 794,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 4
       }
     ],
@@ -30292,11 +23416,7 @@ export const MockGames = [
     "title": "Violet Cycle",
     "steamid": 595010,
     "date_added": "2017-12-22 11:11:16.446",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2997017-1607331146-heade.jpg",
     "giantbomb_id": 66159,
     "steam_cloud": false,
@@ -30316,11 +23436,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 40,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 81245
@@ -30333,11 +23449,7 @@ export const MockGames = [
     "title": "Velocibox",
     "steamid": 317710,
     "date_added": "2017-12-22 12:12:41.863",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2730480-boxshot.png",
     "giantbomb_id": 48999,
     "steam_cloud": false,
@@ -30357,11 +23469,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 556,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 15548
@@ -30374,11 +23482,7 @@ export const MockGames = [
     "title": "Zombie Kill of the Week - Reborn",
     "steamid": 342300,
     "date_added": "2017-12-22 12:12:43.989",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2819279-zombie-kill-of-the-week-reborn.jpg",
     "giantbomb_id": 52471,
     "steam_cloud": false,
@@ -30398,11 +23502,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 153,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9307
@@ -30415,11 +23515,7 @@ export const MockGames = [
     "title": "DiRT 4",
     "steamid": 421020,
     "date_added": "2017-12-25 15:23:10.597",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2921871-dirt%204%20v2.jpg",
     "giantbomb_id": 57911,
     "steam_cloud": true,
@@ -30439,11 +23535,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 158,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 26948
@@ -30456,11 +23548,7 @@ export const MockGames = [
     "title": "The Assembly",
     "steamid": 373650,
     "date_added": "2018-01-03 21:39:39.573",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2918125-8906007439-image",
     "giantbomb_id": 46608,
     "steam_cloud": false,
@@ -30480,11 +23568,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 150,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 20787
@@ -30497,11 +23581,7 @@ export const MockGames = [
     "title": "Night in the Woods",
     "steamid": 481510,
     "date_added": "2018-01-03 21:39:44.834",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2952192-logo_nitw.png",
     "giantbomb_id": 44986,
     "steam_cloud": false,
@@ -30522,11 +23602,7 @@ export const MockGames = [
         "rating": 96,
         "finished_date": null,
         "id": 771,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 2
       },
       {
@@ -30540,11 +23616,7 @@ export const MockGames = [
         "rating": 90,
         "finished_date": null,
         "id": 565,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 1
       }
     ],
@@ -30558,11 +23630,7 @@ export const MockGames = [
     "title": "The Talos Principle VR",
     "steamid": 552440,
     "date_added": "2018-01-03 21:39:47.532",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2748164-rsz_71zm1hitmml.jpg",
     "giantbomb_id": 46572,
     "steam_cloud": true,
@@ -30582,11 +23650,7 @@ export const MockGames = [
       "rating": 89,
       "finished_date": null,
       "id": 449,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 36775
@@ -30599,13 +23663,7 @@ export const MockGames = [
     "title": "StarBlood Arena",
     "steamid": null,
     "date_added": "2018-01-05 22:29:13.633",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2904134-starbloodarena_1.jpg",
     "giantbomb_id": 57215,
     "steam_cloud": null,
@@ -30625,13 +23683,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 465,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 26231
@@ -30644,13 +23696,7 @@ export const MockGames = [
     "title": "Deus Ex: Mankind Divided",
     "steamid": null,
     "date_added": "2018-01-05 22:29:24.446",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2879175-mankind_divided_cover.jpg",
     "giantbomb_id": 49379,
     "steam_cloud": null,
@@ -30670,13 +23716,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 757,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 9498
@@ -30689,13 +23729,7 @@ export const MockGames = [
     "title": "Batman: The Telltale Series",
     "steamid": null,
     "date_added": "2018-01-05 22:29:36.219",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2948216-box_batmantts.png",
     "giantbomb_id": 51726,
     "steam_cloud": null,
@@ -30715,13 +23749,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 641,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 14746
@@ -30734,13 +23762,7 @@ export const MockGames = [
     "title": "PSYCHO-PASS: Mandatory Happiness",
     "steamid": null,
     "date_added": "2018-01-05 22:29:50.564",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2755095-rsz_image.jpg",
     "giantbomb_id": 46461,
     "steam_cloud": null,
@@ -30760,13 +23782,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 543,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 23849
@@ -30779,13 +23795,7 @@ export const MockGames = [
     "title": "Uncanny Valley",
     "steamid": null,
     "date_added": "2018-01-05 22:30:00.139",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2918631-1803789583-image",
     "giantbomb_id": 49546,
     "steam_cloud": null,
@@ -30805,13 +23815,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 544,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 10140
@@ -30824,13 +23828,7 @@ export const MockGames = [
     "title": "Sacred 3",
     "steamid": null,
     "date_added": "2018-01-05 22:30:10.706",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2663949-3252393812-image.jpg",
     "giantbomb_id": 39513,
     "steam_cloud": null,
@@ -30850,13 +23848,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 541,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 5615
@@ -30869,13 +23861,7 @@ export const MockGames = [
     "title": "The Book of Unwritten Tales 2",
     "steamid": null,
     "date_added": "2018-01-05 22:30:24.228",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2730472-5847272216-94624.jpg",
     "giantbomb_id": 46535,
     "steam_cloud": null,
@@ -30895,13 +23881,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 562,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 9112
@@ -30914,11 +23894,7 @@ export const MockGames = [
     "title": "Blade Runner 9732",
     "steamid": 770990,
     "date_added": "2018-01-08 15:20:34.423",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2990122-9716500552-heade.jpg",
     "giantbomb_id": 64692,
     "steam_cloud": false,
@@ -30938,11 +23914,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": "2019-07-06 00:00:00.0",
       "id": 19,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 80854
@@ -30955,11 +23927,7 @@ export const MockGames = [
     "title": "Google Earth VR",
     "steamid": 348250,
     "date_added": "2018-01-14 14:10:33.491",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -30979,11 +23947,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 466,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 35775
@@ -30996,11 +23960,7 @@ export const MockGames = [
     "title": "VRChat",
     "steamid": 438100,
     "date_added": "2018-01-14 14:10:38.536",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2964752-header.jpg",
     "giantbomb_id": 61444,
     "steam_cloud": false,
@@ -31020,11 +23980,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 206,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 33615
@@ -31037,11 +23993,7 @@ export const MockGames = [
     "title": "Rec Room",
     "steamid": 471710,
     "date_added": "2018-01-14 14:10:40.213",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2885410-8174793569-21074.png",
     "giantbomb_id": 54721,
     "steam_cloud": false,
@@ -31061,11 +24013,7 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 236,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 32617
@@ -31078,11 +24026,7 @@ export const MockGames = [
     "title": "The Witness",
     "steamid": 210970,
     "date_added": "2018-01-25 14:55:14.478",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2994285-box_tw.png",
     "giantbomb_id": 27668,
     "steam_cloud": true,
@@ -31102,11 +24046,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 90,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 5601
@@ -31119,13 +24059,7 @@ export const MockGames = [
     "title": "Knack",
     "steamid": null,
     "date_added": "2018-02-08 05:32:09.263",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2543315-box_knack.png",
     "giantbomb_id": 41687,
     "steam_cloud": null,
@@ -31145,13 +24079,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 568,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 2957
@@ -31164,13 +24092,7 @@ export const MockGames = [
     "title": "Grand Kingdom",
     "steamid": null,
     "date_added": "2018-02-08 05:32:33.517",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2793259-ps4.png",
     "giantbomb_id": 49888,
     "steam_cloud": null,
@@ -31190,13 +24112,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 570,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 19163
@@ -31209,13 +24125,7 @@ export const MockGames = [
     "title": "Spelunker™ HD",
     "steamid": null,
     "date_added": "2018-02-08 05:33:03.33",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -31235,13 +24145,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 488,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 45281
@@ -31254,13 +24158,7 @@ export const MockGames = [
     "title": "Mugen Souls Z",
     "steamid": null,
     "date_added": "2018-02-08 05:34:00.35",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2617758-box_msz.png",
     "giantbomb_id": 41474,
     "steam_cloud": null,
@@ -31280,13 +24178,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 223,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 11503
@@ -31299,13 +24191,7 @@ export const MockGames = [
     "title": "Shadow Warrior",
     "steamid": null,
     "date_added": "2018-02-08 05:55:16.586",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2951186-box_swnew.png",
     "giantbomb_id": 42610,
     "steam_cloud": null,
@@ -31325,13 +24211,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 227,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 6057
@@ -31344,13 +24224,7 @@ export const MockGames = [
     "title": "Bloodborne",
     "steamid": null,
     "date_added": "2018-03-13 00:22:40.402",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2734931-bloodborne%20v5.jpg",
     "giantbomb_id": 46569,
     "steam_cloud": null,
@@ -31370,13 +24244,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 643,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 7334
@@ -31389,13 +24257,7 @@ export const MockGames = [
     "title": "Ratchet & Clank",
     "steamid": null,
     "date_added": "2018-03-13 00:22:57.989",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2988441-box_racps4.png",
     "giantbomb_id": 48727,
     "steam_cloud": null,
@@ -31415,13 +24277,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 344,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 11065
@@ -31434,13 +24290,7 @@ export const MockGames = [
     "title": "Bombing Busters",
     "steamid": null,
     "date_added": "2018-03-13 00:23:06.2",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2993427-box_bb.png",
     "giantbomb_id": 50692,
     "steam_cloud": null,
@@ -31460,13 +24310,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 569,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 52145
@@ -31479,13 +24323,7 @@ export const MockGames = [
     "title": "Claire: Extended Cut",
     "steamid": null,
     "date_added": "2018-03-13 00:23:19.389",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2554808-claire.jpg",
     "giantbomb_id": 44112,
     "steam_cloud": null,
@@ -31505,13 +24343,7 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 666,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 23508
@@ -31524,13 +24356,7 @@ export const MockGames = [
     "title": "Mighty No. 9",
     "steamid": null,
     "date_added": "2018-03-13 00:23:28.437",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2768045-box_mno9.png",
     "giantbomb_id": 43790,
     "steam_cloud": null,
@@ -31550,13 +24376,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 28,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 5327
@@ -31569,13 +24389,7 @@ export const MockGames = [
     "title": "Legend of Kay",
     "steamid": null,
     "date_added": "2018-03-13 00:23:40.135",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2491511-box_lok.png",
     "giantbomb_id": 14582,
     "steam_cloud": null,
@@ -31595,13 +24409,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 571,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 3219
@@ -31614,13 +24422,7 @@ export const MockGames = [
     "title": "Mad Max",
     "steamid": null,
     "date_added": "2018-04-08 23:48:54.466",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2986577-box_mm.png",
     "giantbomb_id": 42927,
     "steam_cloud": null,
@@ -31640,13 +24442,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 464,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 2552
@@ -31659,13 +24455,7 @@ export const MockGames = [
     "title": "Trackmania Turbo",
     "steamid": null,
     "date_added": "2018-04-08 23:49:27.2",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2973354-box_tmt.png",
     "giantbomb_id": 49971,
     "steam_cloud": null,
@@ -31685,13 +24475,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 572,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 11172
@@ -31704,13 +24488,7 @@ export const MockGames = [
     "title": "99Vidas",
     "steamid": null,
     "date_added": "2018-04-08 23:49:37.841",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2957739-99vidas.jpg",
     "giantbomb_id": 60870,
     "steam_cloud": null,
@@ -31730,13 +24508,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 229,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 26678
@@ -31749,13 +24521,7 @@ export const MockGames = [
     "title": "In Space We Brawl",
     "steamid": null,
     "date_added": "2018-04-08 23:49:55.553",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2856585-3621540440-heade.jpg",
     "giantbomb_id": 47394,
     "steam_cloud": null,
@@ -31775,13 +24541,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 419,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 20919
@@ -31794,13 +24554,7 @@ export const MockGames = [
     "title": "Q*Bert: Rebooted",
     "steamid": null,
     "date_added": "2018-04-08 23:50:19.803",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2994815-box_qbr.png",
     "giantbomb_id": 46990,
     "steam_cloud": null,
@@ -31820,13 +24574,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 573,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 17158
@@ -31839,13 +24587,7 @@ export const MockGames = [
     "title": "Toy Home",
     "steamid": null,
     "date_added": "2018-04-08 23:50:29.108",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/298616-toy_home_demo.jpg",
     "giantbomb_id": 22108,
     "steam_cloud": null,
@@ -31865,13 +24607,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 233,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 27001
@@ -31884,11 +24620,7 @@ export const MockGames = [
     "title": "Gorogoa",
     "steamid": 557600,
     "date_added": "2018-04-15 13:37:40.9",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2993837-header.jpg",
     "giantbomb_id": 41173,
     "steam_cloud": true,
@@ -31909,11 +24641,7 @@ export const MockGames = [
         "rating": 86,
         "finished_date": null,
         "id": 553,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 1
       },
       {
@@ -31927,11 +24655,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 801,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 4
       }
     ],
@@ -31945,13 +24669,7 @@ export const MockGames = [
     "title": "Snipperclips",
     "steamid": null,
     "date_added": "2018-04-19 19:28:18.571",
-    "availablePlatforms": [{
-      "full_name": "Switch",
-      "igdb_platform_id": 130,
-      "short_name": "Switch",
-      "id": 3,
-      "igdb_name": "Nintendo Switch"
-    }],
+    "availablePlatforms": [{"id": 3}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2912170-sq_nswitch_snipperclips.jpg",
     "giantbomb_id": 57698,
     "steam_cloud": null,
@@ -31972,13 +24690,7 @@ export const MockGames = [
         "rating": 85,
         "finished_date": null,
         "id": 100,
-        "myPlatforms": [{
-          "full_name": "Switch",
-          "igdb_platform_id": 130,
-          "short_name": "Switch",
-          "id": 3,
-          "igdb_name": "Nintendo Switch"
-        }],
+        "myPlatforms": [{"id": 3}],
         "person_id": 1
       },
       {
@@ -31992,13 +24704,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 792,
-        "myPlatforms": [{
-          "full_name": "Switch",
-          "igdb_platform_id": 130,
-          "short_name": "Switch",
-          "id": 3,
-          "igdb_name": "Nintendo Switch"
-        }],
+        "myPlatforms": [{"id": 3}],
         "person_id": 4
       },
       {
@@ -32012,13 +24718,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 805,
-        "myPlatforms": [{
-          "full_name": "Switch",
-          "igdb_platform_id": 130,
-          "short_name": "Switch",
-          "id": 3,
-          "igdb_name": "Nintendo Switch"
-        }],
+        "myPlatforms": [{"id": 3}],
         "person_id": 5
       }
     ],
@@ -32032,13 +24732,7 @@ export const MockGames = [
     "title": "Rock Band 4",
     "steamid": null,
     "date_added": "2018-04-19 19:32:17.146",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2949246-box_rb4.png",
     "giantbomb_id": 49077,
     "steam_cloud": null,
@@ -32058,13 +24752,7 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 235,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 10128
@@ -32077,13 +24765,7 @@ export const MockGames = [
     "title": "Recore",
     "steamid": null,
     "date_added": "2018-04-19 19:32:56.725",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2883851-recore%20v1.jpg",
     "giantbomb_id": 49962,
     "steam_cloud": null,
@@ -32103,13 +24785,7 @@ export const MockGames = [
       "rating": 85.1,
       "finished_date": null,
       "id": 203,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 11131
@@ -32122,11 +24798,7 @@ export const MockGames = [
     "title": "Thumper",
     "steamid": 356400,
     "date_added": "2018-04-19 15:02:49.84",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2892488-thumper.png",
     "giantbomb_id": 44425,
     "steam_cloud": true,
@@ -32146,11 +24818,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 705,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 10960
@@ -32163,11 +24831,7 @@ export const MockGames = [
     "title": "Eagle Flight",
     "steamid": 408250,
     "date_added": "2018-04-19 15:02:52.772",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2813687-2029735407-eagle.png",
     "giantbomb_id": 51750,
     "steam_cloud": true,
@@ -32187,11 +24851,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 209,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 14765
@@ -32204,11 +24864,7 @@ export const MockGames = [
     "title": "Fallout 4 VR",
     "steamid": 611660,
     "date_added": "2018-04-19 15:03:00.483",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2795700-2356006370-64616.jpg",
     "giantbomb_id": 49833,
     "steam_cloud": false,
@@ -32228,11 +24884,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 208,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 27922
@@ -32245,11 +24897,7 @@ export const MockGames = [
     "title": "The Elder Scrolls V: Skyrim VR",
     "steamid": 611670,
     "date_added": "2018-04-20 16:10:58.387",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/1895988-skyrim.png",
     "giantbomb_id": 33394,
     "steam_cloud": true,
@@ -32269,11 +24917,7 @@ export const MockGames = [
       "rating": 93,
       "finished_date": null,
       "id": 220,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 37088
@@ -32287,20 +24931,8 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2018-05-05 00:47:04.271",
     "availablePlatforms": [
-      {
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 10},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2929252-destiny%202%20v3.jpg",
     "giantbomb_id": 52647,
@@ -32322,20 +24954,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 239,
       "myPlatforms": [
-        {
-          "full_name": "PC",
-          "igdb_platform_id": 6,
-          "short_name": "PC",
-          "id": 10,
-          "igdb_name": "PC (Microsoft Windows)"
-        },
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }
+        {"id": 10},
+        {"id": 11}
       ],
       "person_id": 1
     }],
@@ -32349,13 +24969,7 @@ export const MockGames = [
     "title": "Beyond: Two Souls",
     "steamid": null,
     "date_added": "2018-05-15 00:13:41.872",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2555559-beyondclean.jpg",
     "giantbomb_id": 38541,
     "steam_cloud": null,
@@ -32375,13 +24989,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 645,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 1342
@@ -32394,13 +25002,7 @@ export const MockGames = [
     "title": "King Oddball",
     "steamid": null,
     "date_added": "2018-05-15 00:14:44.953",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2993175-box_ko.png",
     "giantbomb_id": 44976,
     "steam_cloud": null,
@@ -32420,13 +25022,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 644,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 20079
@@ -32439,13 +25035,7 @@ export const MockGames = [
     "title": "Risen 3: Titan Lords",
     "steamid": null,
     "date_added": "2018-05-15 00:14:58.969",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2853842-3787155115-heade.jpg",
     "giantbomb_id": 45503,
     "steam_cloud": null,
@@ -32465,13 +25055,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 577,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 6142
@@ -32484,13 +25068,7 @@ export const MockGames = [
     "title": "Eat Them!",
     "steamid": null,
     "date_added": "2018-05-15 00:15:13.382",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/1412853-eatthem1.jpg",
     "giantbomb_id": 31892,
     "steam_cloud": null,
@@ -32510,13 +25088,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 575,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 21167
@@ -32529,11 +25101,7 @@ export const MockGames = [
     "title": "Batman: The Enemy Within - The Telltale Series",
     "steamid": 675260,
     "date_added": "2018-06-02 11:43:20.68",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2956380-box_btew.png",
     "giantbomb_id": 60398,
     "steam_cloud": null,
@@ -32553,11 +25121,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 27,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 51525
@@ -32570,13 +25134,7 @@ export const MockGames = [
     "title": "Tom Clancy's Ghost Recon: Future Soldier",
     "steamid": null,
     "date_added": "2018-06-05 16:45:51.631",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2160623-box_grfs.png",
     "giantbomb_id": 26095,
     "steam_cloud": null,
@@ -32596,13 +25154,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 722,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 1293
@@ -32615,13 +25167,7 @@ export const MockGames = [
     "title": "Trials Fusion",
     "steamid": null,
     "date_added": "2018-06-05 16:46:09.574",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2642259-box_tfusion.png",
     "giantbomb_id": 42915,
     "steam_cloud": null,
@@ -32641,13 +25187,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 411,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 3191
@@ -32660,13 +25200,7 @@ export const MockGames = [
     "title": "Atomic Ninjas",
     "steamid": null,
     "date_added": "2018-06-05 16:46:41.022",
-    "availablePlatforms": [{
-      "full_name": "PS3",
-      "igdb_platform_id": 9,
-      "short_name": "PS3",
-      "id": 6,
-      "igdb_name": "PlayStation 3"
-    }],
+    "availablePlatforms": [{"id": 6}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2483325-2894290390-featu.jpg",
     "giantbomb_id": 42639,
     "steam_cloud": null,
@@ -32686,13 +25220,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 721,
-      "myPlatforms": [{
-        "full_name": "PS3",
-        "igdb_platform_id": 9,
-        "short_name": "PS3",
-        "id": 6,
-        "igdb_name": "PlayStation 3"
-      }],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
     "igdb_id": 8649
@@ -32705,11 +25233,7 @@ export const MockGames = [
     "title": "The Walking Dead: The Final Season",
     "steamid": 866800,
     "date_added": "2018-06-08 16:53:20.497",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2952194-image%207-19-17%20at%2012.25%20pm.jpg",
     "giantbomb_id": 60396,
     "steam_cloud": null,
@@ -32729,11 +25253,7 @@ export const MockGames = [
       "rating": 96,
       "finished_date": null,
       "id": 392,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 51524
@@ -32746,11 +25266,7 @@ export const MockGames = [
     "title": "Yooka-Laylee",
     "steamid": 360830,
     "date_added": "2018-06-21 12:17:47.033",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2948218-box_ylaylee.png",
     "giantbomb_id": 49158,
     "steam_cloud": true,
@@ -32770,11 +25286,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 79,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 10031
@@ -32787,11 +25299,7 @@ export const MockGames = [
     "title": "Cook, Serve, Delicious! 2!!",
     "steamid": 386620,
     "date_added": "2018-06-21 12:17:48.774",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2947549-9042453223-heade.jpg",
     "giantbomb_id": 50254,
     "steam_cloud": true,
@@ -32811,11 +25319,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 217,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 23236
@@ -32828,11 +25332,7 @@ export const MockGames = [
     "title": "Acceleration of SUGURI 2",
     "steamid": 390710,
     "date_added": "2018-06-21 12:17:49.282",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2104778-aos2logo.jpg",
     "giantbomb_id": 37241,
     "steam_cloud": true,
@@ -32852,11 +25352,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 48,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 25702
@@ -32869,11 +25365,7 @@ export const MockGames = [
     "title": "Styx: Shards of Darkness",
     "steamid": 355790,
     "date_added": "2018-06-21 12:17:56.997",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3008928-box_styxsod.png",
     "giantbomb_id": 54181,
     "steam_cloud": null,
@@ -32893,11 +25385,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 219,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 13554
@@ -32910,11 +25398,7 @@ export const MockGames = [
     "title": "Ken Follett's The Pillars of the Earth",
     "steamid": 234270,
     "date_added": "2018-06-21 12:17:58.174",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3030465-ken2.jpg",
     "giantbomb_id": 60874,
     "steam_cloud": null,
@@ -32934,11 +25418,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 142,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19297
@@ -32951,11 +25431,7 @@ export const MockGames = [
     "title": "Bear With Me - Collector's Edition",
     "steamid": 783050,
     "date_added": "2018-06-21 12:17:59.01",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2876102-bearwithme.jpg",
     "giantbomb_id": 54995,
     "steam_cloud": false,
@@ -32975,11 +25451,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 282,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 84023
@@ -32992,11 +25464,7 @@ export const MockGames = [
     "title": "Operation Apex",
     "steamid": 728070,
     "date_added": "2018-06-21 13:19:44.002",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2978668-headercapsuleimage%28460x215%29.png",
     "giantbomb_id": 62924,
     "steam_cloud": true,
@@ -33016,11 +25484,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 72,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 75498
@@ -33033,11 +25497,7 @@ export const MockGames = [
     "title": "Icewind Dale: Enhanced Edition",
     "steamid": 321800,
     "date_added": "2018-06-22 13:44:35.486",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/1713099-619swqm3awl.jpg",
     "giantbomb_id": 5242,
     "steam_cloud": false,
@@ -33057,11 +25517,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 493,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 36240
@@ -33074,11 +25530,7 @@ export const MockGames = [
     "title": "Little Nightmares",
     "steamid": 424840,
     "date_added": "2018-06-22 14:46:32.776",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2916304-3999825019-tVGG_.jpg",
     "giantbomb_id": 55211,
     "steam_cloud": true,
@@ -33098,11 +25550,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 86,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9174
@@ -33115,11 +25563,7 @@ export const MockGames = [
     "title": "Job Simulator",
     "steamid": 448280,
     "date_added": "2018-06-22 14:46:35.206",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2803208-2050%20archives.jpg",
     "giantbomb_id": 51766,
     "steam_cloud": false,
@@ -33139,11 +25583,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 52,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 12596
@@ -33156,11 +25596,7 @@ export const MockGames = [
     "title": "Prey",
     "steamid": 480490,
     "date_added": "2018-06-22 14:46:36.247",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2921872-prey%20%282017%29.jpg",
     "giantbomb_id": 54211,
     "steam_cloud": null,
@@ -33180,11 +25616,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 350,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19531
@@ -33197,11 +25629,7 @@ export const MockGames = [
     "title": "Battlestar Galactica Deadlock",
     "steamid": 544610,
     "date_added": "2018-06-22 14:46:38.989",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2993641-box_bgd.png",
     "giantbomb_id": 60623,
     "steam_cloud": true,
@@ -33221,11 +25649,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 224,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 28842
@@ -33238,11 +25662,7 @@ export const MockGames = [
     "title": "Hellblade: Senua's Sacrifice",
     "steamid": 414340,
     "date_added": "2018-06-22 14:46:41.425",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3016169-box_hbss.png",
     "giantbomb_id": 47363,
     "steam_cloud": true,
@@ -33262,11 +25682,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 712,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7603
@@ -33279,11 +25695,7 @@ export const MockGames = [
     "title": "Catan VR",
     "steamid": 857680,
     "date_added": "2018-06-22 14:46:42.088",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2964864-catan-promo-poster-small.jpg",
     "giantbomb_id": 61456,
     "steam_cloud": false,
@@ -33303,11 +25715,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 222,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 56868
@@ -33320,13 +25728,7 @@ export const MockGames = [
     "title": "Extreme Exorcism",
     "steamid": null,
     "date_added": "2018-07-16 20:04:43.963",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2786934-tm_wiiuds_extremeexorcism.jpg",
     "giantbomb_id": 47457,
     "steam_cloud": null,
@@ -33346,13 +25748,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 495,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 20026
@@ -33365,13 +25761,7 @@ export const MockGames = [
     "title": "Space Overlords",
     "steamid": null,
     "date_added": "2018-07-16 20:05:26.686",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3040891-dd-space-overlords.jpg",
     "giantbomb_id": 69843,
     "steam_cloud": null,
@@ -33391,13 +25781,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 255,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 25547
@@ -33410,11 +25794,7 @@ export const MockGames = [
     "title": "Forts",
     "steamid": 410900,
     "date_added": "2018-07-19 11:45:48.582",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -33434,11 +25814,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 129,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 34269
@@ -33451,11 +25827,7 @@ export const MockGames = [
     "title": "Blackwake",
     "steamid": 420290,
     "date_added": "2018-07-19 11:45:49.006",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2773237-bwgb2.jpg",
     "giantbomb_id": 50431,
     "steam_cloud": false,
@@ -33475,11 +25847,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 66,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 14206
@@ -33492,11 +25860,7 @@ export const MockGames = [
     "title": "Hearts of Iron IV",
     "steamid": 394360,
     "date_added": "2018-07-19 11:45:53.019",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2594042-gaming-hearts-of-iron-4.jpg",
     "giantbomb_id": 45214,
     "steam_cloud": true,
@@ -33516,11 +25880,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 141,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 15894
@@ -33533,11 +25893,7 @@ export const MockGames = [
     "title": "Serial Cleaner",
     "steamid": 522210,
     "date_added": "2018-07-19 11:45:54.955",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2991348-box_sc.png",
     "giantbomb_id": 55577,
     "steam_cloud": true,
@@ -33557,11 +25913,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 535,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19450
@@ -33574,11 +25926,7 @@ export const MockGames = [
     "title": "Shiness: The Lightning Kingdom",
     "steamid": 366640,
     "date_added": "2018-07-19 11:45:55.134",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2991330-box_shiness.png",
     "giantbomb_id": 46499,
     "steam_cloud": true,
@@ -33598,11 +25946,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 131,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 15490
@@ -33616,18 +25960,8 @@ export const MockGames = [
     "steamid": 374040,
     "date_added": "2018-07-19 11:45:58.139",
     "availablePlatforms": [
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 1},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2939734-image.png",
     "giantbomb_id": 52974,
@@ -33649,18 +25983,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 58,
       "myPlatforms": [
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        },
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }
+        {"id": 1},
+        {"id": 11}
       ],
       "person_id": 1
     }],
@@ -33674,11 +25998,7 @@ export const MockGames = [
     "title": "Interplanetary",
     "steamid": 278910,
     "date_added": "2018-07-19 11:45:58.939",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2622030-ip_logo_space_bg.jpg",
     "giantbomb_id": 46036,
     "steam_cloud": false,
@@ -33698,11 +26018,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 65,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 17083
@@ -33715,11 +26031,7 @@ export const MockGames = [
     "title": "Interplanetary: Enhanced Edition",
     "steamid": 650220,
     "date_added": "2018-07-19 11:45:59.183",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -33739,11 +26051,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 51,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 54506
@@ -33756,11 +26064,7 @@ export const MockGames = [
     "title": "Titan Quest Anniversary Edition",
     "steamid": 475150,
     "date_added": "2018-07-19 11:45:59.939",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -33780,11 +26084,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 49,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 32614
@@ -33797,11 +26097,7 @@ export const MockGames = [
     "title": "Hellblade: Senua's Sacrifice VR Edition",
     "steamid": 747350,
     "date_added": "2018-07-26 14:50:17.594",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -33821,11 +26117,7 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 33,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 106107
@@ -33838,11 +26130,7 @@ export const MockGames = [
     "title": "A Hat in Time",
     "steamid": 253230,
     "date_added": "2018-07-27 13:50:47.588",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2993638-box_ahit.png",
     "giantbomb_id": 42389,
     "steam_cloud": true,
@@ -33862,11 +26150,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 579,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 6705
@@ -33879,11 +26163,7 @@ export const MockGames = [
     "title": "The Escapists 2",
     "steamid": 641990,
     "date_added": "2018-07-27 13:51:08.065",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2958576-box_te2.png",
     "giantbomb_id": 58597,
     "steam_cloud": true,
@@ -33903,11 +26183,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 25,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 25653
@@ -33921,18 +26197,8 @@ export const MockGames = [
     "steamid": 440900,
     "date_added": "2018-07-27 13:51:09.418",
     "availablePlatforms": [
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 1},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3019906-box_ce.png",
     "giantbomb_id": 54974,
@@ -33954,18 +26220,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 578,
       "myPlatforms": [
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        },
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }
+        {"id": 1},
+        {"id": 11}
       ],
       "person_id": 1
     }],
@@ -33979,11 +26235,7 @@ export const MockGames = [
     "title": "The Elder Scrolls Online",
     "steamid": 306130,
     "date_added": "2018-08-11 11:35:32.049",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2980855-6743088497-ESO_B.jpg",
     "giantbomb_id": 38206,
     "steam_cloud": false,
@@ -34003,11 +26255,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 1465,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1081
@@ -34020,13 +26268,7 @@ export const MockGames = [
     "title": "World of Warcraft: Battle for Azeroth",
     "steamid": null,
     "date_added": "2018-08-24 17:26:26.527",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3015277-6219515987-world.jpg",
     "giantbomb_id": 64475,
     "steam_cloud": null,
@@ -34046,13 +26288,7 @@ export const MockGames = [
       "rating": 91,
       "finished_date": null,
       "id": 657,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 75380
@@ -34065,11 +26301,7 @@ export const MockGames = [
     "title": "Sudden Strike 4",
     "steamid": 373930,
     "date_added": "2018-08-28 01:58:18.125",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2891935-sudden-strike-4-640x325.jpg",
     "giantbomb_id": 56587,
     "steam_cloud": true,
@@ -34089,11 +26321,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 228,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 22399
@@ -34106,11 +26334,7 @@ export const MockGames = [
     "title": "Kona",
     "steamid": 365160,
     "date_added": "2018-08-28 01:58:18.373",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2986574-box_kona.png",
     "giantbomb_id": 50438,
     "steam_cloud": false,
@@ -34130,11 +26354,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 230,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 14404
@@ -34147,11 +26367,7 @@ export const MockGames = [
     "title": "Pathologic Classic HD",
     "steamid": 384110,
     "date_added": "2018-08-28 01:58:18.955",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -34171,11 +26387,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 31,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 13204
@@ -34189,18 +26401,8 @@ export const MockGames = [
     "steamid": 378540,
     "date_added": "2018-08-28 01:58:28.54",
     "availablePlatforms": [
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 1},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2926503-surge.png",
     "giantbomb_id": 50421,
@@ -34222,18 +26424,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 99,
       "myPlatforms": [
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        },
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }
+        {"id": 1},
+        {"id": 11}
       ],
       "person_id": 1
     }],
@@ -34247,11 +26439,7 @@ export const MockGames = [
     "title": "Forged Battalion",
     "steamid": 686260,
     "date_added": "2018-08-28 01:58:30.032",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2974405-forgedbattalion_keyart%20%281%29.png",
     "giantbomb_id": 62533,
     "steam_cloud": true,
@@ -34271,11 +26459,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 231,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 74528
@@ -34288,11 +26472,7 @@ export const MockGames = [
     "title": "Staxel",
     "steamid": 405710,
     "date_added": "2018-09-06 09:51:27.697",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2812794-vlcsnap-2015-09-12-01h22m27s46.png",
     "giantbomb_id": 52220,
     "steam_cloud": false,
@@ -34312,11 +26492,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 132,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 37294
@@ -34330,18 +26506,8 @@ export const MockGames = [
     "steamid": 312660,
     "date_added": "2018-09-06 09:51:34.01",
     "availablePlatforms": [
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      },
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }
+      {"id": 1},
+      {"id": 11}
     ],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2918762-9684237653-32810.jpg",
     "giantbomb_id": 52953,
@@ -34363,18 +26529,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 413,
       "myPlatforms": [
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        },
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        }
+        {"id": 1},
+        {"id": 11}
       ],
       "person_id": 1
     }],
@@ -34388,11 +26544,7 @@ export const MockGames = [
     "title": "Tales of Berseria",
     "steamid": 429660,
     "date_added": "2018-09-06 09:51:35.71",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2915098-main.png",
     "giantbomb_id": 49874,
     "steam_cloud": true,
@@ -34412,11 +26564,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 62,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 18812
@@ -34429,11 +26577,7 @@ export const MockGames = [
     "title": "Minion Masters",
     "steamid": 489520,
     "date_added": "2018-09-06 10:53:18.799",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2899825-minionmasters-272x380.png",
     "giantbomb_id": 57014,
     "steam_cloud": true,
@@ -34453,11 +26597,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 152,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 27150
@@ -34470,11 +26610,7 @@ export const MockGames = [
     "title": "Hidden Folks",
     "steamid": 435400,
     "date_added": "2018-10-02 13:48:39.393",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2839320-header.jpg",
     "giantbomb_id": 53269,
     "steam_cloud": true,
@@ -34495,11 +26631,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 1426,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 4
       },
       {
@@ -34513,11 +26645,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 414,
-        "myPlatforms": [{
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }],
+        "myPlatforms": [{"id": 1}],
         "person_id": 1
       }
     ],
@@ -34531,11 +26659,7 @@ export const MockGames = [
     "title": "Battle Chef Brigade",
     "steamid": 452570,
     "date_added": "2018-10-02 13:48:40.901",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3041506-438123-battle-chef-brigade-nintendo-switch-front-cover.jpg",
     "giantbomb_id": 46378,
     "steam_cloud": true,
@@ -34555,11 +26679,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 696,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 23689
@@ -34572,11 +26692,7 @@ export const MockGames = [
     "title": "Figment",
     "steamid": 493540,
     "date_added": "2018-10-02 13:48:42.65",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -34596,11 +26712,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 112,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 20329
@@ -34613,11 +26725,7 @@ export const MockGames = [
     "title": "Dungeons 3",
     "steamid": 493900,
     "date_added": "2018-10-02 13:48:47.097",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2963529-d3image.jpg",
     "giantbomb_id": 61324,
     "steam_cloud": true,
@@ -34637,11 +26745,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 143,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 27353
@@ -34654,13 +26758,7 @@ export const MockGames = [
     "title": "Forza Horizon 4",
     "steamid": null,
     "date_added": "2018-10-06 16:18:03.071",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3027867-box_fh4.png",
     "giantbomb_id": 68909,
     "steam_cloud": null,
@@ -34681,13 +26779,7 @@ export const MockGames = [
         "rating": 93,
         "finished_date": null,
         "id": 175,
-        "myPlatforms": [{
-          "full_name": "PC",
-          "igdb_platform_id": 6,
-          "short_name": "PC",
-          "id": 10,
-          "igdb_name": "PC (Microsoft Windows)"
-        }],
+        "myPlatforms": [{"id": 10}],
         "person_id": 1
       },
       {
@@ -34701,13 +26793,7 @@ export const MockGames = [
         "rating": 99,
         "finished_date": null,
         "id": 770,
-        "myPlatforms": [{
-          "full_name": "PC",
-          "igdb_platform_id": 6,
-          "short_name": "PC",
-          "id": 10,
-          "igdb_name": "PC (Microsoft Windows)"
-        }],
+        "myPlatforms": [{"id": 10}],
         "person_id": 2
       }
     ],
@@ -34721,11 +26807,7 @@ export const MockGames = [
     "title": "Sniper Elite V2",
     "steamid": 63380,
     "date_added": "2018-11-08 17:09:47.258",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2681591-sev2.jpg",
     "giantbomb_id": 34715,
     "steam_cloud": true,
@@ -34745,11 +26827,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 773,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3078
@@ -34762,11 +26840,7 @@ export const MockGames = [
     "title": "Sniper Elite",
     "steamid": 3700,
     "date_added": "2018-11-08 17:09:54.173",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2199371-box_selite.png",
     "giantbomb_id": 17853,
     "steam_cloud": false,
@@ -34786,11 +26860,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 774,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 3077
@@ -34803,11 +26873,7 @@ export const MockGames = [
     "title": "Resident Evil Revelations / Biohazard Revelations",
     "steamid": 222480,
     "date_added": "2018-11-08 17:10:00.551",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -34827,11 +26893,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 775,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 978
@@ -34844,11 +26906,7 @@ export const MockGames = [
     "title": "7 Days to Die",
     "steamid": 251570,
     "date_added": "2018-11-08 17:10:04.304",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2986589-box_7dtd.png",
     "giantbomb_id": 43583,
     "steam_cloud": false,
@@ -34868,11 +26926,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 776,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 5574
@@ -34885,11 +26939,7 @@ export const MockGames = [
     "title": "Hollow Knight",
     "steamid": 367520,
     "date_added": "2018-11-08 17:10:21.258",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2710030-hk.jpg",
     "giantbomb_id": 48412,
     "steam_cloud": true,
@@ -34909,11 +26959,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 777,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 14593
@@ -34926,11 +26972,7 @@ export const MockGames = [
     "title": "Gremlins, Inc.",
     "steamid": 369990,
     "date_added": "2018-11-08 17:10:21.639",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2791531-giant%20bomb.jpg",
     "giantbomb_id": 51300,
     "steam_cloud": false,
@@ -34950,11 +26992,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 778,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 18394
@@ -34967,11 +27005,7 @@ export const MockGames = [
     "title": "HITMAN™",
     "steamid": 236870,
     "date_added": "2018-11-08 17:10:23.702",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -34991,11 +27025,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 779,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 11157
@@ -35008,11 +27038,7 @@ export const MockGames = [
     "title": "The Dwarves",
     "steamid": 403970,
     "date_added": "2018-11-08 17:10:26.524",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2993430-box_td.png",
     "giantbomb_id": 50417,
     "steam_cloud": false,
@@ -35032,11 +27058,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 780,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 13164
@@ -35049,11 +27071,7 @@ export const MockGames = [
     "title": "Hard Reset",
     "steamid": 98400,
     "date_added": "2018-11-08 17:10:27.364",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/1866368-hard_reset.jpg",
     "giantbomb_id": 35888,
     "steam_cloud": null,
@@ -35073,11 +27091,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 781,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 532
@@ -35090,11 +27104,7 @@ export const MockGames = [
     "title": "Hard Reset Redux",
     "steamid": 407810,
     "date_added": "2018-11-08 17:10:27.747",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -35114,11 +27124,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 782,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 17994
@@ -35131,11 +27137,7 @@ export const MockGames = [
     "title": "Zombie Night Terror",
     "steamid": 416680,
     "date_added": "2018-11-08 17:10:29.046",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2840181-1281696212-key_a.png",
     "giantbomb_id": 53597,
     "steam_cloud": true,
@@ -35155,11 +27157,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 783,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9546
@@ -35172,11 +27170,7 @@ export const MockGames = [
     "title": "American Truck Simulator",
     "steamid": 270880,
     "date_added": "2018-11-08 17:10:30.332",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2843071-3730221427-Ameri.jpg",
     "giantbomb_id": 48805,
     "steam_cloud": false,
@@ -35196,11 +27190,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 784,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9667
@@ -35213,11 +27203,7 @@ export const MockGames = [
     "title": "Dead Island Definitive Edition",
     "steamid": 383150,
     "date_added": "2018-11-08 17:10:36.778",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -35237,11 +27223,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 785,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 34951
@@ -35254,11 +27236,7 @@ export const MockGames = [
     "title": "Old Man's Journey",
     "steamid": 581270,
     "date_added": "2018-11-08 17:10:43.866",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2869865-screen%20shot%202016-07-14%20at%209.59.22%20pm.png",
     "giantbomb_id": 54665,
     "steam_cloud": false,
@@ -35278,11 +27256,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 786,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 21604
@@ -35295,11 +27269,7 @@ export const MockGames = [
     "title": "We Were Here Too",
     "steamid": 677160,
     "date_added": "2018-11-08 17:10:48.234",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2992265-wewereherelogo_render%20%280;00;00;01%29.png",
     "giantbomb_id": 65264,
     "steam_cloud": true,
@@ -35319,11 +27289,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 787,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 54486
@@ -35336,11 +27302,7 @@ export const MockGames = [
     "title": "The Jackbox Party Pack 5",
     "steamid": 774461,
     "date_added": "2018-11-20 15:07:33.092",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3056609-box_jpp5.png",
     "giantbomb_id": 69447,
     "steam_cloud": true,
@@ -35360,11 +27322,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 809,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 96213
@@ -35410,11 +27368,7 @@ export const MockGames = [
     "title": "Subnautica",
     "steamid": 264710,
     "date_added": "2019-02-04 17:20:35.588",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3067261-box_subn.png",
     "giantbomb_id": 46006,
     "steam_cloud": false,
@@ -35434,11 +27388,7 @@ export const MockGames = [
       "rating": 96,
       "finished_date": null,
       "id": 1354,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9254
@@ -35451,11 +27401,7 @@ export const MockGames = [
     "title": "METAL GEAR SOLID V: THE PHANTOM PAIN",
     "steamid": 287700,
     "date_added": "2019-02-04 17:20:39.696",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2731604-mgsvclean.jpg",
     "giantbomb_id": 40796,
     "steam_cloud": null,
@@ -35475,11 +27421,7 @@ export const MockGames = [
       "rating": 66,
       "finished_date": null,
       "id": 1355,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1985
@@ -35492,11 +27434,7 @@ export const MockGames = [
     "title": "Zombie Army Trilogy",
     "steamid": 301640,
     "date_added": "2019-02-04 17:20:43.397",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2715381-rcvf.jpg",
     "giantbomb_id": 48522,
     "steam_cloud": true,
@@ -35516,11 +27454,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1356,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 20871
@@ -35533,11 +27467,7 @@ export const MockGames = [
     "title": "METAL GEAR SOLID V: GROUND ZEROES",
     "steamid": 311340,
     "date_added": "2019-02-04 17:20:46.358",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2578540-mgsvgz.png",
     "giantbomb_id": 39575,
     "steam_cloud": null,
@@ -35557,11 +27487,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1357,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 5328
@@ -35574,11 +27500,7 @@ export const MockGames = [
     "title": "Q.U.B.E. 2",
     "steamid": 359100,
     "date_added": "2019-02-04 17:20:56.993",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3004362-qube2_portrait.jpg",
     "giantbomb_id": 47395,
     "steam_cloud": true,
@@ -35598,11 +27520,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1358,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 36766
@@ -35615,11 +27533,7 @@ export const MockGames = [
     "title": "Mega Man Legacy Collection",
     "steamid": 363440,
     "date_added": "2019-02-04 17:20:58.554",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2776309-5804188639-28800.jpg",
     "giantbomb_id": 49878,
     "steam_cloud": true,
@@ -35639,11 +27553,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1359,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19874
@@ -35656,11 +27566,7 @@ export const MockGames = [
     "title": "Project CARS 2",
     "steamid": 378860,
     "date_added": "2019-02-04 17:21:03.205",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2970420-box_pcars2.png",
     "giantbomb_id": 50138,
     "steam_cloud": true,
@@ -35680,11 +27586,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1360,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 26709
@@ -35697,11 +27599,7 @@ export const MockGames = [
     "title": "NeuroVoider",
     "steamid": 400450,
     "date_added": "2019-02-04 17:21:08.055",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2991320-box_nv.png",
     "giantbomb_id": 53244,
     "steam_cloud": true,
@@ -35721,11 +27619,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1361,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 23581
@@ -35738,11 +27632,7 @@ export const MockGames = [
     "title": "Ghost of a Tale",
     "steamid": 417290,
     "date_added": "2019-02-04 17:21:11.702",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2472817-ghost%20of%20a%20tale%20logo.png",
     "giantbomb_id": 42460,
     "steam_cloud": true,
@@ -35762,11 +27652,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 1362,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7684
@@ -35779,11 +27665,7 @@ export const MockGames = [
     "title": "Wizard of Legend",
     "steamid": 445980,
     "date_added": "2019-02-04 17:21:21.911",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3017470-box_wol.png",
     "giantbomb_id": 54673,
     "steam_cloud": true,
@@ -35803,11 +27685,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1363,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19935
@@ -35820,11 +27698,7 @@ export const MockGames = [
     "title": "The Darkside Detective",
     "steamid": 368390,
     "date_added": "2019-02-04 17:21:23.831",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2953754-header.jpg",
     "giantbomb_id": 60561,
     "steam_cloud": true,
@@ -35844,11 +27718,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1364,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 35283
@@ -35861,11 +27731,7 @@ export const MockGames = [
     "title": "Seven: The Days Long Gone",
     "steamid": 471010,
     "date_added": "2019-02-04 17:21:25.496",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2775775-sevenlogo.png",
     "giantbomb_id": 50641,
     "steam_cloud": true,
@@ -35885,11 +27751,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1365,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 18908
@@ -35902,11 +27764,7 @@ export const MockGames = [
     "title": "Observer",
     "steamid": 514900,
     "date_added": "2019-02-04 17:21:31.583",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2986567-box_obs.png",
     "giantbomb_id": 54218,
     "steam_cloud": null,
@@ -35926,11 +27784,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1366,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19545
@@ -35943,11 +27797,7 @@ export const MockGames = [
     "title": "Purrfect Date",
     "steamid": 520600,
     "date_added": "2019-02-04 17:21:32.717",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2952343-purrfect_date_splash.2.large.png",
     "giantbomb_id": 60412,
     "steam_cloud": true,
@@ -35967,11 +27817,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1367,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 54634
@@ -35984,11 +27830,7 @@ export const MockGames = [
     "title": "Into the Breach",
     "steamid": 590380,
     "date_added": "2019-02-04 17:21:39.852",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3070403-3646928047-SF4J4.jpg",
     "giantbomb_id": 58234,
     "steam_cloud": true,
@@ -36008,11 +27850,7 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 1368,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 27117
@@ -36025,11 +27863,7 @@ export const MockGames = [
     "title": "Immortal Redneck",
     "steamid": 595140,
     "date_added": "2019-02-04 17:21:41.24",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2913476-cover.jpg",
     "giantbomb_id": 57796,
     "steam_cloud": true,
@@ -36049,11 +27883,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1369,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 23188
@@ -36066,11 +27896,7 @@ export const MockGames = [
     "title": "Regions Of Ruin",
     "steamid": 680360,
     "date_added": "2019-02-04 17:21:47.293",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2978335-2723933156-heade.jpg",
     "giantbomb_id": 61272,
     "steam_cloud": true,
@@ -36090,11 +27916,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1370,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 61884
@@ -36107,11 +27929,7 @@ export const MockGames = [
     "title": "Rapture Rejects",
     "steamid": 686600,
     "date_added": "2019-02-04 17:21:47.94",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3028083-rapturerejects.png",
     "giantbomb_id": 68932,
     "steam_cloud": false,
@@ -36131,11 +27949,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1371,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 103327
@@ -36148,11 +27962,7 @@ export const MockGames = [
     "title": "Sundered",
     "steamid": 535480,
     "date_added": "2019-02-04 17:21:49.073",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2912516-sundered_key%20art_1920x1080_all%20platforms.png",
     "giantbomb_id": 57732,
     "steam_cloud": null,
@@ -36172,11 +27982,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1372,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 24428
@@ -36189,11 +27995,7 @@ export const MockGames = [
     "title": "Yakuza 0",
     "steamid": 638970,
     "date_added": "2019-02-04 17:21:51.936",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2914803-yakuza%200%20v2.jpg",
     "giantbomb_id": 47551,
     "steam_cloud": null,
@@ -36213,11 +28015,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1373,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 11397
@@ -36230,11 +28028,7 @@ export const MockGames = [
     "title": "A Story About My Uncle",
     "steamid": 278360,
     "date_added": "2019-02-04 17:21:52.854",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2883997-a-story-about-my-uncle-free-download.jpg",
     "giantbomb_id": 39637,
     "steam_cloud": true,
@@ -36254,11 +28048,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1375,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 7211
@@ -36271,11 +28061,7 @@ export const MockGames = [
     "title": "Forgotton Anne",
     "steamid": 542050,
     "date_added": "2019-02-05 17:34:52.806",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3020077-box_fa.png",
     "giantbomb_id": 55713,
     "steam_cloud": null,
@@ -36295,11 +28081,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1376,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 24426
@@ -36312,11 +28094,7 @@ export const MockGames = [
     "title": "Thimbleweed Park",
     "steamid": 569860,
     "date_added": "2019-02-05 17:34:54.359",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2991324-box_tp.png",
     "giantbomb_id": 50511,
     "steam_cloud": true,
@@ -36336,11 +28114,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1377,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 10232
@@ -36353,11 +28127,7 @@ export const MockGames = [
     "title": "Return of the Obra Dinn",
     "steamid": 653530,
     "date_added": "2019-02-05 17:34:59.329",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2647921-return-of-the-obra-dinn.png",
     "giantbomb_id": 46427,
     "steam_cloud": false,
@@ -36377,11 +28147,7 @@ export const MockGames = [
       "rating": 92,
       "finished_date": null,
       "id": 1378,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 9643
@@ -36394,13 +28160,7 @@ export const MockGames = [
     "title": "Marvel's Spider-Man",
     "steamid": null,
     "date_added": "2019-02-13 11:48:35.499442",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3037524-marvel%27s%20spider-man.jpg",
     "giantbomb_id": 54233,
     "steam_cloud": null,
@@ -36420,13 +28180,7 @@ export const MockGames = [
       "rating": 94,
       "finished_date": null,
       "id": 1379,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 19565
@@ -36439,11 +28193,7 @@ export const MockGames = [
     "title": "Sniper Elite 3",
     "steamid": 238090,
     "date_added": "2019-03-18 14:56:28.29",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -36463,11 +28213,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1380,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 8366
@@ -36480,11 +28226,7 @@ export const MockGames = [
     "title": "Tower Unite",
     "steamid": 394690,
     "date_added": "2019-03-18 14:56:42.985",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2840214-8161906739-oOsSq.png",
     "giantbomb_id": 53354,
     "steam_cloud": true,
@@ -36504,11 +28246,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1381,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 27927
@@ -36521,11 +28259,7 @@ export const MockGames = [
     "title": "Bleed 2",
     "steamid": 396350,
     "date_added": "2019-03-18 14:56:43.238",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3005659-box_bleed2.png",
     "giantbomb_id": 55090,
     "steam_cloud": true,
@@ -36545,11 +28279,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1382,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 26725
@@ -36562,11 +28292,7 @@ export const MockGames = [
     "title": "EARTH DEFENSE FORCE 4.1  The Shadow of New Despair",
     "steamid": 410320,
     "date_added": "2019-03-18 14:56:45.666",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -36586,11 +28312,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1383,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 11002
@@ -36603,11 +28325,7 @@ export const MockGames = [
     "title": "Full Metal Furies",
     "steamid": 416600,
     "date_added": "2019-03-18 14:56:46.408",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3005640-box_fmf.png",
     "giantbomb_id": 65434,
     "steam_cloud": true,
@@ -36627,11 +28345,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1384,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 27343
@@ -36644,11 +28358,7 @@ export const MockGames = [
     "title": "Rock of Ages 2",
     "steamid": 434460,
     "date_added": "2019-03-18 14:56:50.322",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -36668,11 +28378,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1385,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 19407
@@ -36685,11 +28391,7 @@ export const MockGames = [
     "title": "Super Daryl Deluxe",
     "steamid": 361230,
     "date_added": "2019-03-18 14:56:57.962",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2839227-icon.png",
     "giantbomb_id": 53257,
     "steam_cloud": true,
@@ -36709,11 +28411,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1386,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 21994
@@ -36726,11 +28424,7 @@ export const MockGames = [
     "title": "Aaero",
     "steamid": 499890,
     "date_added": "2019-03-18 14:56:59.371",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2931951-image.png",
     "giantbomb_id": 57250,
     "steam_cloud": true,
@@ -36750,11 +28444,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1387,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 18637
@@ -36767,11 +28457,7 @@ export const MockGames = [
     "title": "Late Shift",
     "steamid": 584980,
     "date_added": "2019-03-18 14:57:05.291",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2933135-image.jpg",
     "giantbomb_id": 58185,
     "steam_cloud": true,
@@ -36791,11 +28477,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1388,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 27717
@@ -36808,11 +28490,7 @@ export const MockGames = [
     "title": "Paradigm",
     "steamid": 600370,
     "date_added": "2019-03-18 14:57:07.009",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -36832,11 +28510,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1389,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 27762
@@ -36849,11 +28523,7 @@ export const MockGames = [
     "title": "Fight'N Rage",
     "steamid": 674520,
     "date_added": "2019-03-18 14:57:10.58",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2965814-fightnrageheader.jpg",
     "giantbomb_id": 61613,
     "steam_cloud": true,
@@ -36873,11 +28543,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1390,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 59573
@@ -36890,11 +28556,7 @@ export const MockGames = [
     "title": "Slipstream",
     "steamid": 732810,
     "date_added": "2019-03-18 14:57:12.961",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -36914,11 +28576,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1391,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 75096
@@ -36931,11 +28589,7 @@ export const MockGames = [
     "title": "Warhammer: Vermintide 2",
     "steamid": 552500,
     "date_added": "2019-03-18 14:57:14.028",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3035726-box_whvm2.png",
     "giantbomb_id": 61138,
     "steam_cloud": false,
@@ -36955,11 +28609,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1392,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 55189
@@ -37005,11 +28655,7 @@ export const MockGames = [
     "title": "Cultist Simulator",
     "steamid": 718670,
     "date_added": "2019-03-18 14:57:15.51",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3024740-boxart_cultistsimulator.jpg",
     "giantbomb_id": 67907,
     "steam_cloud": false,
@@ -37029,11 +28675,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1394,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 26878
@@ -37046,13 +28688,7 @@ export const MockGames = [
     "title": "The Technomancer",
     "steamid": null,
     "date_added": "2019-04-02 13:11:00.652389",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -37072,13 +28708,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 1395,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 9919
@@ -37091,13 +28721,7 @@ export const MockGames = [
     "title": "Plants vs. Zombies™ Garden Warfare 2",
     "steamid": null,
     "date_added": "2019-04-02 13:12:46.173628",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -37117,13 +28741,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 1396,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 11148
@@ -37136,13 +28754,7 @@ export const MockGames = [
     "title": "Red Dead Redemption 2",
     "steamid": null,
     "date_added": "2019-04-04 19:22:02.150518",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -37162,13 +28774,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 1397,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 25076
@@ -37181,13 +28787,7 @@ export const MockGames = [
     "title": "Hitman",
     "steamid": null,
     "date_added": "2019-04-04 20:54:37.370055",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2950665-hitman%20v3.jpg",
     "giantbomb_id": 45150,
     "steam_cloud": null,
@@ -37207,13 +28807,7 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 1400,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 11157
@@ -37226,13 +28820,7 @@ export const MockGames = [
     "title": "Fallen Legion: Flames of Rebellion",
     "steamid": null,
     "date_added": "2019-04-04 20:55:45.422517",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -37252,13 +28840,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1401,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 52018
@@ -37271,13 +28853,7 @@ export const MockGames = [
     "title": "STEEP",
     "steamid": null,
     "date_added": "2019-04-04 20:56:03.263593",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2903754-steep%20v3.jpg",
     "giantbomb_id": 54225,
     "steam_cloud": null,
@@ -37297,13 +28873,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1403,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 19554
@@ -37316,13 +28886,7 @@ export const MockGames = [
     "title": "Iconoclasts",
     "steamid": null,
     "date_added": "2019-04-04 20:59:48.591688",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2788677-poster.png",
     "giantbomb_id": 38695,
     "steam_cloud": null,
@@ -37342,13 +28906,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1404,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 34705
@@ -37362,20 +28920,8 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2019-04-04 21:00:47.188632",
     "availablePlatforms": [
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      },
-      {
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }
+      {"id": 11},
+      {"id": 10}
     ],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2770337-11828592_1002747999769767_1419826424428422606_n.jpg",
     "giantbomb_id": 44072,
@@ -37397,20 +28943,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 1406,
       "myPlatforms": [
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        },
-        {
-          "full_name": "PC",
-          "igdb_platform_id": 6,
-          "short_name": "PC",
-          "id": 10,
-          "igdb_name": "PC (Microsoft Windows)"
-        }
+        {"id": 11},
+        {"id": 10}
       ],
       "person_id": 1
     }],
@@ -37424,13 +28958,7 @@ export const MockGames = [
     "title": "ONRUSH",
     "steamid": null,
     "date_added": "2019-04-04 21:00:59.598009",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3026059-box_or.png",
     "giantbomb_id": 62394,
     "steam_cloud": null,
@@ -37450,13 +28978,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1407,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 75244
@@ -37469,13 +28991,7 @@ export const MockGames = [
     "title": "Yakuza Kiwami",
     "steamid": null,
     "date_added": "2019-04-04 21:01:24.631622",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2933924-main.png",
     "giantbomb_id": 50873,
     "steam_cloud": null,
@@ -37495,13 +29011,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1408,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 12595
@@ -37514,13 +29024,7 @@ export const MockGames = [
     "title": "Bulletstorm",
     "steamid": null,
     "date_added": "2019-04-04 21:01:33.348223",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/1824024-box_bstorm.png",
     "giantbomb_id": 30088,
     "steam_cloud": null,
@@ -37540,13 +29044,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1409,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 494
@@ -37559,13 +29057,7 @@ export const MockGames = [
     "title": "Burly Men at Sea",
     "steamid": null,
     "date_added": "2019-04-04 21:01:41.258057",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2772993-screen%20shot%202015-08-12%20at%206.44.30%20pm.png",
     "giantbomb_id": 50565,
     "steam_cloud": null,
@@ -37585,13 +29077,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1410,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 24501
@@ -37604,13 +29090,7 @@ export const MockGames = [
     "title": "Roundabout",
     "steamid": null,
     "date_added": "2019-04-04 21:01:48.9143",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2560572-screen%20shot%202013-10-17%20at%203.51.31%20pm.png",
     "giantbomb_id": 44258,
     "steam_cloud": null,
@@ -37630,13 +29110,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1411,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 15852
@@ -37649,13 +29123,7 @@ export const MockGames = [
     "title": "Friday the 13th: The Game",
     "steamid": null,
     "date_added": "2019-04-04 21:02:13.130417",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2942252-box_ft13th.png",
     "giantbomb_id": 48132,
     "steam_cloud": null,
@@ -37675,13 +29143,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1412,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 14389
@@ -37694,13 +29156,7 @@ export const MockGames = [
     "title": "Laser League",
     "steamid": null,
     "date_added": "2019-04-04 21:02:19.977627",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3021352-box_ll.png",
     "giantbomb_id": 59869,
     "steam_cloud": null,
@@ -37720,13 +29176,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1413,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 36912
@@ -37739,13 +29189,7 @@ export const MockGames = [
     "title": "2064: Read Only Memories",
     "steamid": null,
     "date_added": "2019-04-04 21:02:45.267733",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3043098-5tmgwjq.jpg",
     "giantbomb_id": 50551,
     "steam_cloud": null,
@@ -37765,13 +29209,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 1414,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 13171
@@ -37784,13 +29222,7 @@ export const MockGames = [
     "title": "Rocketbirds 2: Evolution",
     "steamid": null,
     "date_added": "2019-04-04 21:02:54.289765",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2441265-2013-02-21-010449.jpg",
     "giantbomb_id": 41720,
     "steam_cloud": null,
@@ -37810,13 +29242,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1415,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 20074
@@ -37829,13 +29255,7 @@ export const MockGames = [
     "title": "The Bridge",
     "steamid": null,
     "date_added": "2019-04-04 21:03:00.93505",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2549850-box_tbridge.png",
     "giantbomb_id": 39011,
     "steam_cloud": null,
@@ -37855,13 +29275,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1416,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 8440
@@ -37874,13 +29288,7 @@ export const MockGames = [
     "title": "God of War III Remastered",
     "steamid": null,
     "date_added": "2019-04-04 21:03:48.997412",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -37900,13 +29308,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1417,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 19959
@@ -37919,13 +29321,7 @@ export const MockGames = [
     "title": "Foul Play",
     "steamid": null,
     "date_added": "2019-04-04 21:04:03.974212",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2525180-box_foulplay.png",
     "giantbomb_id": 39282,
     "steam_cloud": null,
@@ -37945,13 +29341,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1418,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 5895
@@ -37964,13 +29354,7 @@ export const MockGames = [
     "title": "Sparkle 2",
     "steamid": null,
     "date_added": "2019-04-04 21:04:12.201652",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2994806-box_spk2.png",
     "giantbomb_id": 46289,
     "steam_cloud": null,
@@ -37990,13 +29374,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1419,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 20069
@@ -38009,13 +29387,7 @@ export const MockGames = [
     "title": "Dead by Daylight: Special Edition",
     "steamid": null,
     "date_added": "2019-04-04 21:04:54.896704",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -38035,13 +29407,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1421,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 106079
@@ -38054,13 +29420,7 @@ export const MockGames = [
     "title": "Here They Lie",
     "steamid": null,
     "date_added": "2019-04-04 21:05:01.534555",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2861596-screen%20shot%202016-06-14%20at%2012.07.40%20am.png",
     "giantbomb_id": 54244,
     "steam_cloud": null,
@@ -38080,13 +29440,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1422,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 19572
@@ -38099,13 +29453,7 @@ export const MockGames = [
     "title": "Knowledge is Power",
     "steamid": null,
     "date_added": "2019-04-04 21:05:10.312287",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2958174-knowledge%20is%20power.jpg",
     "giantbomb_id": 60906,
     "steam_cloud": null,
@@ -38125,13 +29473,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1423,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 70833
@@ -38144,13 +29486,7 @@ export const MockGames = [
     "title": "Mafia III",
     "steamid": null,
     "date_added": "2019-04-04 21:05:16.697702",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2986575-box_m3.png",
     "giantbomb_id": 50449,
     "steam_cloud": null,
@@ -38170,13 +29506,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1424,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 11492
@@ -38189,13 +29519,7 @@ export const MockGames = [
     "title": "Bound by Flame",
     "steamid": null,
     "date_added": "2019-04-04 21:05:24.44578",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2634388-bbf.jpg",
     "giantbomb_id": 41791,
     "steam_cloud": null,
@@ -38215,13 +29539,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1425,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 7208
@@ -38234,11 +29552,7 @@ export const MockGames = [
     "title": "Northgard",
     "steamid": 466560,
     "date_added": "2019-05-31 11:11:17.225",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2920072-title%20screen%20v1.jpg",
     "giantbomb_id": 58396,
     "steam_cloud": true,
@@ -38258,11 +29572,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1428,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 18918
@@ -38275,11 +29585,7 @@ export const MockGames = [
     "title": "She Remembered Caterpillars",
     "steamid": 470780,
     "date_added": "2019-05-31 11:12:28.948",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2853212-screen%20shot%202016-05-19%20at%206.42.07%20pm.png",
     "giantbomb_id": 53913,
     "steam_cloud": false,
@@ -38299,11 +29605,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1429,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 26808
@@ -38317,18 +29619,8 @@ export const MockGames = [
     "steamid": 473690,
     "date_added": "2019-05-31 11:12:33.356",
     "availablePlatforms": [
-      {
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      },
-      {
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }
+      {"id": 11},
+      {"id": 1}
     ],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2858277-5905205749-heade.jpg",
     "giantbomb_id": 54110,
@@ -38350,18 +29642,8 @@ export const MockGames = [
       "finished_date": null,
       "id": 1430,
       "myPlatforms": [
-        {
-          "full_name": "PS4",
-          "igdb_platform_id": 48,
-          "short_name": "PS4",
-          "id": 11,
-          "igdb_name": "PlayStation 4"
-        },
-        {
-          "full_name": "Steam",
-          "short_name": "Steam",
-          "id": 1
-        }
+        {"id": 11},
+        {"id": 1}
       ],
       "person_id": 1
     }],
@@ -38375,11 +29657,7 @@ export const MockGames = [
     "title": "Wandersong",
     "steamid": 530320,
     "date_added": "2019-05-31 11:12:37.67",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2877913-screen%20shot%202016-08-18%20at%201.11.54%20am.png",
     "giantbomb_id": 55099,
     "steam_cloud": false,
@@ -38399,11 +29677,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1431,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 23851
@@ -38416,11 +29690,7 @@ export const MockGames = [
     "title": "Finding Paradise",
     "steamid": 337340,
     "date_added": "2019-05-31 11:12:41.296",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3043073-mv5by2ywy2y3nmitytiyyy00ymfhlthmndgtmzfjmtfimzkynwy2xkeyxkfqcgdeqxvynjm3nzc4mti@._v1_.jpg",
     "giantbomb_id": 56951,
     "steam_cloud": true,
@@ -38440,11 +29710,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1432,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 36044
@@ -38457,11 +29723,7 @@ export const MockGames = [
     "title": "The Journey Down: Chapter Three",
     "steamid": 579760,
     "date_added": "2019-05-31 11:12:50.25",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3034948-box_tjdc3.png",
     "giantbomb_id": 58600,
     "steam_cloud": false,
@@ -38481,11 +29743,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1433,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 15911
@@ -38498,11 +29756,7 @@ export const MockGames = [
     "title": "Minit",
     "steamid": 609490,
     "date_added": "2019-05-31 11:12:54.449",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3017062-box_minit.png",
     "giantbomb_id": 58197,
     "steam_cloud": true,
@@ -38522,11 +29776,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1434,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 118746
@@ -38539,11 +29789,7 @@ export const MockGames = [
     "title": "Dandara",
     "steamid": 612390,
     "date_added": "2019-05-31 11:13:02.92",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3005648-box_dandara.png",
     "giantbomb_id": 58595,
     "steam_cloud": true,
@@ -38563,11 +29809,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1435,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 27435
@@ -38580,11 +29822,7 @@ export const MockGames = [
     "title": "Steel Rats",
     "steamid": 619700,
     "date_added": "2019-05-31 11:13:35.75",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3101553-box_sr.png",
     "giantbomb_id": 62405,
     "steam_cloud": true,
@@ -38604,11 +29842,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1436,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 74881
@@ -38621,11 +29855,7 @@ export const MockGames = [
     "title": "Tannenberg",
     "steamid": 633460,
     "date_added": "2019-05-31 11:13:39.947",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2975721-tannenberg_twitch_boxart.png",
     "giantbomb_id": 62658,
     "steam_cloud": true,
@@ -38645,11 +29875,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1437,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 36718
@@ -38662,11 +29888,7 @@ export const MockGames = [
     "title": "Do Not Feed the Monkeys",
     "steamid": 658850,
     "date_added": "2019-05-31 11:15:08.899",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3050574-header%20%281%29.jpg",
     "giantbomb_id": 70292,
     "steam_cloud": true,
@@ -38686,11 +29908,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1438,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 52014
@@ -38703,11 +29921,7 @@ export const MockGames = [
     "title": "Monster Prom",
     "steamid": 743450,
     "date_added": "2019-05-31 11:15:12.604",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2956835-logo.png",
     "giantbomb_id": 60794,
     "steam_cloud": false,
@@ -38727,11 +29941,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1439,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 69483
@@ -38744,11 +29954,7 @@ export const MockGames = [
     "title": "Mutant Year Zero: Road to Eden",
     "steamid": 760060,
     "date_added": "2019-05-31 11:15:15.532",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3064873-box_myzrte.png",
     "giantbomb_id": 66712,
     "steam_cloud": true,
@@ -38768,11 +29974,7 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 1440,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 89560
@@ -38785,11 +29987,7 @@ export const MockGames = [
     "title": "I\u2019m not a Monster",
     "steamid": 826600,
     "date_added": "2019-05-31 11:15:22.196",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -38809,11 +30007,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1441,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 105442
@@ -38826,11 +30020,7 @@ export const MockGames = [
     "title": "Duskers",
     "steamid": 254320,
     "date_added": "2019-06-08 10:40:59.105",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2775809-4678989648-29126.jpg",
     "giantbomb_id": 50650,
     "steam_cloud": false,
@@ -38850,11 +30040,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1442,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 16707
@@ -38867,11 +30053,7 @@ export const MockGames = [
     "title": "911 Operator",
     "steamid": 503560,
     "date_added": "2019-06-08 10:41:45.664",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3058621-653593_front.jpg",
     "giantbomb_id": 55574,
     "steam_cloud": true,
@@ -38891,11 +30073,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1443,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 20927
@@ -38908,11 +30086,7 @@ export const MockGames = [
     "title": "Pool Panic",
     "steamid": 522240,
     "date_added": "2019-06-08 10:42:56.439",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3026741-1587810740-Pool-.jpg",
     "giantbomb_id": 68878,
     "steam_cloud": false,
@@ -38932,11 +30106,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1444,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 95028
@@ -38949,11 +30119,7 @@ export const MockGames = [
     "title": "Red Faction Guerrilla Re-Mars-tered",
     "steamid": 667720,
     "date_added": "2019-06-08 10:43:04.916",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": true,
@@ -38973,11 +30139,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1446,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 96027
@@ -38990,11 +30152,7 @@ export const MockGames = [
     "title": "Paratopic",
     "steamid": 897030,
     "date_added": "2019-06-08 10:43:09.152",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3006249-9eiz3s.jpg",
     "giantbomb_id": 67277,
     "steam_cloud": false,
@@ -39014,11 +30172,7 @@ export const MockGames = [
       "rating": 56,
       "finished_date": null,
       "id": 1447,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 97690
@@ -39031,11 +30185,7 @@ export const MockGames = [
     "title": "NVIDIA® VR Funhouse",
     "steamid": 468700,
     "date_added": "2019-07-05 15:28:13.846",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -39055,11 +30205,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1448,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 56867
@@ -39072,11 +30218,7 @@ export const MockGames = [
     "title": "Obduction",
     "steamid": 306760,
     "date_added": "2019-07-05 18:29:27.69",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2610116-1394802403-Deskt.png",
     "giantbomb_id": 44273,
     "steam_cloud": true,
@@ -39096,11 +30238,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 1449,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 8983
@@ -39113,11 +30251,7 @@ export const MockGames = [
     "title": "Beat Saber",
     "steamid": 620980,
     "date_added": "2019-07-05 18:30:13.8",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2994372-3242051476-BeatS.jpg",
     "giantbomb_id": 65652,
     "steam_cloud": false,
@@ -39137,11 +30271,7 @@ export const MockGames = [
       "rating": 92,
       "finished_date": null,
       "id": 1450,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 83731
@@ -39154,11 +30284,7 @@ export const MockGames = [
     "title": "Moss",
     "steamid": 846470,
     "date_added": "2019-07-05 18:30:24.85",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2980093-moss.png",
     "giantbomb_id": 59927,
     "steam_cloud": false,
@@ -39178,11 +30304,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 1451,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 37095
@@ -39195,11 +30317,7 @@ export const MockGames = [
     "title": "Keep Talking and Nobody Explodes",
     "steamid": 341800,
     "date_added": "2019-07-07 12:49:22.51",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3040264-box_ktane.png",
     "giantbomb_id": 47445,
     "steam_cloud": false,
@@ -39219,11 +30337,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 1452,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 13226
@@ -39236,11 +30350,7 @@ export const MockGames = [
     "title": "Neverwinter Nights: Enhanced Edition",
     "steamid": 704450,
     "date_added": "2019-07-07 12:50:44.044",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -39260,11 +30370,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 1453,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 23719
@@ -39277,11 +30383,7 @@ export const MockGames = [
     "title": "BATTLETECH",
     "steamid": 637090,
     "date_added": "2019-07-07 13:50:58.811",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3016889-main.png",
     "giantbomb_id": 50915,
     "steam_cloud": true,
@@ -39301,11 +30403,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 1454,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 18279
@@ -39318,11 +30416,7 @@ export const MockGames = [
     "title": "Sally Face",
     "steamid": 541570,
     "date_added": "2019-07-08 14:59:14.787",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2892590-coverlogo__medium.png",
     "giantbomb_id": 56623,
     "steam_cloud": true,
@@ -39342,11 +30436,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 1455,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 26580
@@ -39359,11 +30449,7 @@ export const MockGames = [
     "title": "Trover Saves the Universe",
     "steamid": 1051200,
     "date_added": "2019-07-09 12:04:56.739",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3104799-box_tstu.png",
     "giantbomb_id": 68939,
     "steam_cloud": false,
@@ -39383,11 +30469,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 1456,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 103331
@@ -39400,11 +30482,7 @@ export const MockGames = [
     "title": "Waltz of the Wizard",
     "steamid": 436820,
     "date_added": "2019-07-10 13:23:32.123",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3026329-gb_default-16_9.png",
     "giantbomb_id": 63017,
     "steam_cloud": false,
@@ -39424,11 +30502,7 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 1457,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 33680
@@ -39441,11 +30515,7 @@ export const MockGames = [
     "title": "Psychonauts in the Rhombus of Ruin",
     "steamid": 788690,
     "date_added": "2019-07-22 15:50:56.77",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2920554-9112907699-32562.jpg",
     "giantbomb_id": 51751,
     "steam_cloud": false,
@@ -39465,11 +30535,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1458,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 15572
@@ -39482,11 +30548,7 @@ export const MockGames = [
     "title": "Bigscreen Beta",
     "steamid": 457550,
     "date_added": "2019-07-26 00:06:35.245",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -39506,11 +30568,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1460,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 33135
@@ -39523,11 +30581,7 @@ export const MockGames = [
     "title": "Aperture Hand Lab",
     "steamid": 868020,
     "date_added": "2019-07-29 17:02:00.552",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -39547,11 +30601,7 @@ export const MockGames = [
       "rating": 89,
       "finished_date": "2020-04-20 18:45:59.414",
       "id": 1461,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 120607
@@ -39564,13 +30614,7 @@ export const MockGames = [
     "title": "Gears of War 4",
     "steamid": null,
     "date_added": "2019-08-01 10:30:39.825326",
-    "availablePlatforms": [{
-      "full_name": "Xbox One",
-      "igdb_platform_id": 49,
-      "short_name": "Xbox One",
-      "id": 4,
-      "igdb_name": "Xbox One"
-    }],
+    "availablePlatforms": [{"id": 4}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2892487-gears%20of%20war%204%20v1.jpg",
     "giantbomb_id": 45269,
     "steam_cloud": null,
@@ -39590,13 +30634,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1462,
-      "myPlatforms": [{
-        "full_name": "Xbox One",
-        "igdb_platform_id": 49,
-        "short_name": "Xbox One",
-        "id": 4,
-        "igdb_name": "Xbox One"
-      }],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 11186
@@ -39609,13 +30647,7 @@ export const MockGames = [
     "title": "Lone Echo",
     "steamid": null,
     "date_added": "2019-08-01 22:56:41.442375",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2950198-lone_echo.jpg",
     "giantbomb_id": 58724,
     "steam_cloud": null,
@@ -39635,13 +30667,7 @@ export const MockGames = [
       "rating": 99,
       "finished_date": "2019-07-31 21:00:00.0",
       "id": 1463,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 24917
@@ -39654,13 +30680,7 @@ export const MockGames = [
     "title": "Darksiders III",
     "steamid": null,
     "date_added": "2019-09-05 11:15:48.597338",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2966105-box_ds3.png",
     "giantbomb_id": 59346,
     "steam_cloud": null,
@@ -39680,13 +30700,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1464,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 28380
@@ -39699,11 +30713,7 @@ export const MockGames = [
     "title": "The Jackbox Party Pack 6",
     "steamid": 1005300,
     "date_added": "2019-11-13 17:35:46.212",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3135755-box_jpp6.png",
     "giantbomb_id": 72712,
     "steam_cloud": true,
@@ -39723,11 +30733,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1466,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 125021
@@ -39740,11 +30746,7 @@ export const MockGames = [
     "title": "Half-Life: Alyx",
     "steamid": 546560,
     "date_added": "2019-11-21 16:45:12.412",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/3145045-alyx_coverart.jpg",
     "giantbomb_id": 76068,
     "steam_cloud": false,
@@ -39764,11 +30766,7 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 1467,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 126098
@@ -39781,11 +30779,7 @@ export const MockGames = [
     "title": "Blocks",
     "steamid": 533970,
     "date_added": "2019-12-19 15:01:17.935",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2711458-3110581229-Boxsh.png",
     "giantbomb_id": 48453,
     "steam_cloud": false,
@@ -39805,11 +30799,7 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 1468,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 27136
@@ -39822,11 +30812,7 @@ export const MockGames = [
     "title": "LEGO® MARVEL Super Heroes 2",
     "steamid": 647830,
     "date_added": "2019-12-31 13:44:15.401",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -39846,11 +30832,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 1469,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 28815
@@ -39863,11 +30845,7 @@ export const MockGames = [
     "title": "Assassin's Creed Odyssey",
     "steamid": 812140,
     "date_added": "2020-03-19 13:38:11.681",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": false,
@@ -39887,11 +30865,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1473,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 103054
@@ -39904,11 +30878,7 @@ export const MockGames = [
     "title": "Tabletop Simulator",
     "steamid": 286160,
     "date_added": "2020-03-21 14:41:11.055",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 46105,
     "steam_cloud": true,
@@ -39928,11 +30898,7 @@ export const MockGames = [
       "rating": 92,
       "finished_date": null,
       "id": 1471,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 8351
@@ -39945,11 +30911,7 @@ export const MockGames = [
     "title": "Tabletopia",
     "steamid": 402560,
     "date_added": "2020-04-07 14:52:18.897",
-    "availablePlatforms": [{
-      "full_name": "Steam",
-      "short_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [{"id": 1}],
     "giantbomb_medium_url": "https://giantbomb1.cbsistatic.com/uploads/scale_medium/29/297658/2789069-9003043289-logo_.jpg",
     "giantbomb_id": 51198,
     "steam_cloud": false,
@@ -39969,11 +30931,7 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 1472,
-      "myPlatforms": [{
-        "full_name": "Steam",
-        "short_name": "Steam",
-        "id": 1
-      }],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 34469
@@ -39986,13 +30944,7 @@ export const MockGames = [
     "title": "Mario + Rabbids Kingdom Battle",
     "steamid": null,
     "date_added": "2020-04-14 11:21:42.119813",
-    "availablePlatforms": [{
-      "full_name": "Switch",
-      "igdb_platform_id": 130,
-      "short_name": "Switch",
-      "id": 3,
-      "igdb_name": "Nintendo Switch"
-    }],
+    "availablePlatforms": [{"id": 3}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -40012,13 +30964,7 @@ export const MockGames = [
       "rating": 91,
       "finished_date": null,
       "id": 1475,
-      "myPlatforms": [{
-        "full_name": "Switch",
-        "igdb_platform_id": 130,
-        "short_name": "Switch",
-        "id": 3,
-        "igdb_name": "Nintendo Switch"
-      }],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 28414
@@ -40031,13 +30977,7 @@ export const MockGames = [
     "title": "DiRT Rally 2.0",
     "steamid": null,
     "date_added": "2020-04-15 10:24:44.155018",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -40057,13 +30997,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 1476,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 110411
@@ -40076,13 +31010,7 @@ export const MockGames = [
     "title": "Call of Duty: Modern Warfare Remastered",
     "steamid": null,
     "date_added": "2020-04-15 10:42:44.459806",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -40102,13 +31030,7 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 1477,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 24920
@@ -40121,13 +31043,7 @@ export const MockGames = [
     "title": "MLB The Show 19",
     "steamid": null,
     "date_added": "2020-04-15 10:44:15.892608",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 70847,
     "steam_cloud": null,
@@ -40147,13 +31063,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 1478,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 111654
@@ -40166,13 +31076,7 @@ export const MockGames = [
     "title": "Sonic Mania",
     "steamid": null,
     "date_added": "2020-04-15 10:44:51.965314",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 54733,
     "steam_cloud": null,
@@ -40192,13 +31096,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1479,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 21062
@@ -40211,13 +31109,7 @@ export const MockGames = [
     "title": "Detroit: Become Human",
     "steamid": null,
     "date_added": "2020-04-15 10:45:17.842538",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -40237,13 +31129,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1480,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 14362
@@ -40256,13 +31142,7 @@ export const MockGames = [
     "title": "Horizon Chase Turbo",
     "steamid": null,
     "date_added": "2020-04-15 10:45:40.616213",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -40282,13 +31162,7 @@ export const MockGames = [
       "rating": 50,
       "finished_date": null,
       "id": 1481,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 96476
@@ -40301,13 +31175,7 @@ export const MockGames = [
     "title": "WipEout Omega Collection",
     "steamid": null,
     "date_added": "2020-04-15 10:46:12.104423",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -40327,13 +31195,7 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 1482,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 26195
@@ -40346,13 +31208,7 @@ export const MockGames = [
     "title": "The Last of Us Remastered",
     "steamid": null,
     "date_added": "2020-04-15 10:47:48.544898",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -40372,13 +31228,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 1485,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 6036
@@ -40391,13 +31241,7 @@ export const MockGames = [
     "title": "Nioh",
     "steamid": null,
     "date_added": "2020-04-15 10:48:09.994418",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 27578,
     "steam_cloud": null,
@@ -40417,13 +31261,7 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 1486,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 12571
@@ -40436,13 +31274,7 @@ export const MockGames = [
     "title": "Outlast 2",
     "steamid": null,
     "date_added": "2020-04-15 10:48:25.24654",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 48099,
     "steam_cloud": null,
@@ -40462,13 +31294,7 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 1487,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 14390
@@ -40481,13 +31307,7 @@ export const MockGames = [
     "title": "Titanfall 2",
     "steamid": null,
     "date_added": "2020-04-15 10:48:43.420174",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 49139,
     "steam_cloud": null,
@@ -40507,13 +31327,7 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 1488,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 17447
@@ -40526,13 +31340,7 @@ export const MockGames = [
     "title": "Uncharted The Nathan Drake Collection",
     "steamid": null,
     "date_added": "2020-04-15 10:49:37.483248",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -40552,13 +31360,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1490,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 10962
@@ -40571,13 +31373,7 @@ export const MockGames = [
     "title": "Firewall Zero Hour",
     "steamid": null,
     "date_added": "2020-04-15 10:50:17.277404",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 63127,
     "steam_cloud": null,
@@ -40597,13 +31393,7 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 1492,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 76966
@@ -40616,13 +31406,7 @@ export const MockGames = [
     "title": "BioShock: The Collection",
     "steamid": null,
     "date_added": "2020-04-15 10:50:31.008653",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -40642,13 +31426,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1493,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 19839
@@ -40661,13 +31439,7 @@ export const MockGames = [
     "title": "Shadow of the Colossus",
     "steamid": null,
     "date_added": "2020-04-15 10:50:56.262345",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -40687,13 +31459,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 1494,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 37094
@@ -40706,13 +31472,7 @@ export const MockGames = [
     "title": "Sonic Forces",
     "steamid": null,
     "date_added": "2020-04-15 10:51:10.666068",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 54734,
     "steam_cloud": null,
@@ -40732,13 +31492,7 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 1495,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 21063
@@ -40751,13 +31505,7 @@ export const MockGames = [
     "title": "Control",
     "steamid": null,
     "date_added": "2020-04-20 17:56:42.351756",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 68937,
     "steam_cloud": null,
@@ -40777,13 +31525,7 @@ export const MockGames = [
       "rating": 92,
       "finished_date": null,
       "id": 1496,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 103329
@@ -40796,13 +31538,7 @@ export const MockGames = [
     "title": "Dauntless",
     "steamid": null,
     "date_added": "2020-04-20 17:57:12.085088",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 57207,
     "steam_cloud": null,
@@ -40822,13 +31558,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1497,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 26166
@@ -40841,13 +31571,7 @@ export const MockGames = [
     "title": "Everything",
     "steamid": null,
     "date_added": "2020-04-20 17:57:31.071314",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -40867,13 +31591,7 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 1498,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 27910
@@ -40886,13 +31604,7 @@ export const MockGames = [
     "title": "A Short Hike",
     "steamid": null,
     "date_added": "2020-04-20 17:58:27.696088",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 73992,
     "steam_cloud": null,
@@ -40912,13 +31624,7 @@ export const MockGames = [
       "rating": 56,
       "finished_date": null,
       "id": 1499,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 116753
@@ -40931,13 +31637,7 @@ export const MockGames = [
     "title": "Anodyne 2: Return to Dust",
     "steamid": null,
     "date_added": "2020-04-20 17:58:54.151075",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -40957,13 +31657,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1500,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 104890
@@ -41009,13 +31703,7 @@ export const MockGames = [
     "title": "City of Brass",
     "steamid": null,
     "date_added": "2020-04-20 17:59:34.337534",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -41035,13 +31723,7 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 1502,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 44122
@@ -41054,13 +31736,7 @@ export const MockGames = [
     "title": "Close to the Sun",
     "steamid": null,
     "date_added": "2020-04-20 17:59:48.138883",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -41080,13 +31756,7 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 1503,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 55027
@@ -41099,13 +31769,7 @@ export const MockGames = [
     "title": "Costume Quest",
     "steamid": null,
     "date_added": "2020-04-20 18:00:13.393527",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 32304,
     "steam_cloud": null,
@@ -41125,13 +31789,7 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 1504,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 5637
@@ -41144,13 +31802,7 @@ export const MockGames = [
     "title": "Hello Neighbor",
     "steamid": null,
     "date_added": "2020-04-20 18:00:47.627692",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 55793,
     "steam_cloud": null,
@@ -41170,13 +31822,7 @@ export const MockGames = [
       "rating": 42,
       "finished_date": null,
       "id": 1505,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 18167
@@ -41189,13 +31835,7 @@ export const MockGames = [
     "title": "Hob",
     "steamid": null,
     "date_added": "2020-04-20 18:01:04.092832",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -41215,13 +31855,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 1506,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 14763
@@ -41234,13 +31868,7 @@ export const MockGames = [
     "title": "Hyper Light Drifter",
     "steamid": null,
     "date_added": "2020-04-20 18:01:20.62493",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 43940,
     "steam_cloud": null,
@@ -41260,13 +31888,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 1507,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 9806
@@ -41279,13 +31901,7 @@ export const MockGames = [
     "title": "Just Cause 4",
     "steamid": null,
     "date_added": "2020-04-20 18:01:37.786285",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 68871,
     "steam_cloud": null,
@@ -41305,13 +31921,7 @@ export const MockGames = [
       "rating": 50,
       "finished_date": null,
       "id": 1508,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 103261
@@ -41324,13 +31934,7 @@ export const MockGames = [
     "title": "Last Day of June",
     "steamid": null,
     "date_added": "2020-04-20 18:01:52.884458",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 59741,
     "steam_cloud": null,
@@ -41350,13 +31954,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 1509,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 36543
@@ -41402,13 +32000,7 @@ export const MockGames = [
     "title": "LEGO Batman 3: Beyond Gotham",
     "steamid": null,
     "date_added": "2020-04-20 18:02:50.424161",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -41428,13 +32020,7 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 1511,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 7685
@@ -41447,13 +32033,7 @@ export const MockGames = [
     "title": "Lego Batman: The Video Game",
     "steamid": null,
     "date_added": "2020-04-20 18:03:05.34883",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -41473,13 +32053,7 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 1512,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 2738
@@ -41492,13 +32066,7 @@ export const MockGames = [
     "title": "Ruiner",
     "steamid": null,
     "date_added": "2020-04-20 18:04:00.753765",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -41518,13 +32086,7 @@ export const MockGames = [
       "rating": 64,
       "finished_date": null,
       "id": 1513,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 18857
@@ -41537,13 +32099,7 @@ export const MockGames = [
     "title": "Sherlock Holmes: Crimes & Punishments",
     "steamid": null,
     "date_added": "2020-04-20 18:04:21.295646",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -41563,13 +32119,7 @@ export const MockGames = [
       "rating": 64,
       "finished_date": null,
       "id": 1514,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 5541
@@ -41582,13 +32132,7 @@ export const MockGames = [
     "title": "Steep",
     "steamid": null,
     "date_added": "2020-04-20 18:05:05.738854",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 54225,
     "steam_cloud": null,
@@ -41608,13 +32152,7 @@ export const MockGames = [
       "rating": 50,
       "finished_date": null,
       "id": 1517,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 19554
@@ -41627,13 +32165,7 @@ export const MockGames = [
     "title": "Stories Untold",
     "steamid": null,
     "date_added": "2020-04-20 18:05:17.374315",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 58633,
     "steam_cloud": null,
@@ -41653,13 +32185,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1518,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 27094
@@ -41672,13 +32198,7 @@ export const MockGames = [
     "title": "Surviving Mars",
     "steamid": null,
     "date_added": "2020-04-20 18:05:30.164745",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 64460,
     "steam_cloud": null,
@@ -41698,13 +32218,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1519,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 28574
@@ -41717,13 +32231,7 @@ export const MockGames = [
     "title": "The End Is Nigh",
     "steamid": null,
     "date_added": "2020-04-20 18:05:46.796673",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 59825,
     "steam_cloud": null,
@@ -41743,13 +32251,7 @@ export const MockGames = [
       "rating": 71,
       "finished_date": null,
       "id": 1520,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 36846
@@ -41762,13 +32264,7 @@ export const MockGames = [
     "title": "The Escapists",
     "steamid": null,
     "date_added": "2020-04-20 18:06:00.62469",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 46491,
     "steam_cloud": null,
@@ -41788,13 +32284,7 @@ export const MockGames = [
       "rating": 63,
       "finished_date": null,
       "id": 1521,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 9241
@@ -41807,13 +32297,7 @@ export const MockGames = [
     "title": "Totally Accurate Battle Simulator",
     "steamid": null,
     "date_added": "2020-04-20 18:06:49.961087",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 61156,
     "steam_cloud": null,
@@ -41833,13 +32317,7 @@ export const MockGames = [
       "rating": 45,
       "finished_date": null,
       "id": 1522,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 21642
@@ -41852,13 +32330,7 @@ export const MockGames = [
     "title": "Totally Reliable Delivery Service",
     "steamid": null,
     "date_added": "2020-04-20 18:07:05.174634",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 73044,
     "steam_cloud": null,
@@ -41878,13 +32350,7 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 1523,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 114058
@@ -41897,13 +32363,7 @@ export const MockGames = [
     "title": "Watch_Dogs",
     "steamid": null,
     "date_added": "2020-04-20 18:07:19.844664",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -41923,13 +32383,7 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 1524,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 1121
@@ -41942,13 +32396,7 @@ export const MockGames = [
     "title": "Wheels of Aurelia",
     "steamid": null,
     "date_added": "2020-04-20 18:07:37.628676",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 52083,
     "steam_cloud": null,
@@ -41968,13 +32416,7 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 1525,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 24463
@@ -42020,13 +32462,7 @@ export const MockGames = [
     "title": "Yooka-Laylee and the Impossible Lair",
     "steamid": null,
     "date_added": "2020-04-20 18:08:21.737364",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -42046,13 +32482,7 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 1527,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 119259
@@ -42065,13 +32495,7 @@ export const MockGames = [
     "title": "Mario Kart 8 Deluxe",
     "steamid": null,
     "date_added": "2020-04-20 18:21:46.328817",
-    "availablePlatforms": [{
-      "full_name": "Switch",
-      "igdb_platform_id": 130,
-      "short_name": "Switch",
-      "id": 3,
-      "igdb_name": "Nintendo Switch"
-    }],
+    "availablePlatforms": [{"id": 3}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -42091,13 +32515,7 @@ export const MockGames = [
       "rating": 93,
       "finished_date": null,
       "id": 1528,
-      "myPlatforms": [{
-        "full_name": "Switch",
-        "igdb_platform_id": 130,
-        "short_name": "Switch",
-        "id": 3,
-        "igdb_name": "Nintendo Switch"
-      }],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 26764
@@ -42110,13 +32528,7 @@ export const MockGames = [
     "title": "Fallout",
     "steamid": null,
     "date_added": "2020-04-20 18:29:09.312971",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -42136,13 +32548,7 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 1529,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 13
@@ -42155,13 +32561,7 @@ export const MockGames = [
     "title": "Fallout Tactics: Brotherhood Of Steel",
     "steamid": null,
     "date_added": "2020-04-20 18:29:17.017267",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -42181,13 +32581,7 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 1530,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 17
@@ -42233,13 +32627,7 @@ export const MockGames = [
     "title": "Dragonsphere",
     "steamid": null,
     "date_added": "2020-04-20 18:30:10.815492",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 15756,
     "steam_cloud": null,
@@ -42259,13 +32647,7 @@ export const MockGames = [
       "rating": 3,
       "finished_date": null,
       "id": 1532,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 2487
@@ -42278,13 +32660,7 @@ export const MockGames = [
     "title": "King's Quest IV: The Perils of Rosella",
     "steamid": null,
     "date_added": "2020-04-20 18:30:39.890916",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -42304,13 +32680,7 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 1533,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 744
@@ -42323,13 +32693,7 @@ export const MockGames = [
     "title": "King's Quest V: Absence Makes the Heart Go Yonder!",
     "steamid": null,
     "date_added": "2020-04-20 18:30:48.804462",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -42349,13 +32713,7 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 1534,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 2238
@@ -42368,13 +32726,7 @@ export const MockGames = [
     "title": "King's Quest VI: Heir Today, Gone Tomorrow",
     "steamid": null,
     "date_added": "2020-04-20 18:30:56.55971",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -42394,13 +32746,7 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 1535,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 7501
@@ -42413,13 +32759,7 @@ export const MockGames = [
     "title": "Lure of the Temptress",
     "steamid": null,
     "date_added": "2020-04-20 18:31:18.579293",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": "https://giantbomb1.cbsistatic.com/uploads/scale_medium/5/58746/1129886-lureofthetemptress.jpg",
     "giantbomb_id": 7947,
     "steam_cloud": null,
@@ -42439,13 +32779,7 @@ export const MockGames = [
       "rating": 59,
       "finished_date": null,
       "id": 1536,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 8482
@@ -42491,13 +32825,7 @@ export const MockGames = [
     "title": "Sid Meier's Alpha Centauri",
     "steamid": null,
     "date_added": "2020-04-20 18:32:10.908764",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -42517,13 +32845,7 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 1538,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 863
@@ -42536,13 +32858,7 @@ export const MockGames = [
     "title": "Sid Meier's Pirates!",
     "steamid": null,
     "date_added": "2020-04-20 18:32:49.07278",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -42562,13 +32878,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1539,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 9231
@@ -42647,13 +32957,7 @@ export const MockGames = [
     "title": "Assassin's Creed: Odyssey",
     "steamid": null,
     "date_added": "2020-04-20 18:42:54.324999",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -42673,13 +32977,7 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 1542,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 103054
@@ -42692,13 +32990,7 @@ export const MockGames = [
     "title": "Anthem",
     "steamid": null,
     "date_added": "2020-04-20 20:40:37.411834",
-    "availablePlatforms": [{
-      "full_name": "PS4",
-      "igdb_platform_id": 48,
-      "short_name": "PS4",
-      "id": 11,
-      "igdb_name": "PlayStation 4"
-    }],
+    "availablePlatforms": [{"id": 11}],
     "giantbomb_medium_url": null,
     "giantbomb_id": 46632,
     "steam_cloud": null,
@@ -42718,13 +33010,7 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 1543,
-      "myPlatforms": [{
-        "full_name": "PS4",
-        "igdb_platform_id": 48,
-        "short_name": "PS4",
-        "id": 11,
-        "igdb_name": "PlayStation 4"
-      }],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 36950
@@ -42770,13 +33056,7 @@ export const MockGames = [
     "title": "Doom: Eternal",
     "steamid": null,
     "date_added": "2020-04-22 14:50:02.960867",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,
@@ -42796,13 +33076,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1545,
-      "myPlatforms": [{
-        "full_name": "PC",
-        "igdb_platform_id": 6,
-        "short_name": "PC",
-        "id": 10,
-        "igdb_name": "PC (Microsoft Windows)"
-      }],
+      "myPlatforms": [{"id": 10}],
       "person_id": 1
     }],
     "igdb_id": 103298
@@ -42835,13 +33109,7 @@ export const MockGames = [
     "title": "Resident Evil 3",
     "steamid": null,
     "date_added": "2020-04-21 16:51:15.227767",
-    "availablePlatforms": [{
-      "full_name": "PC",
-      "igdb_platform_id": 6,
-      "short_name": "PC",
-      "id": 10,
-      "igdb_name": "PC (Microsoft Windows)"
-    }],
+    "availablePlatforms": [{"id": 10}],
     "giantbomb_medium_url": null,
     "giantbomb_id": null,
     "steam_cloud": null,

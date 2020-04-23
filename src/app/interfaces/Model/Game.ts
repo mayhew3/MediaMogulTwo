@@ -38,12 +38,9 @@ export class Game extends DataObject {
   private _personGame: PersonGame;
   private _availablePlatforms: GamePlatform[] = [];
 
-  private allPlatforms: GamePlatform[];
-
-  constructor(private platformService: PlatformService) {
+  constructor(private platformService: PlatformService,
+              private allPlatforms: GamePlatform[]) {
     super();
-    this.platformService.platforms.subscribe(platforms => this.allPlatforms = platforms);
-    this.platformService.maybeRefreshCache();
   }
 
   get personGame(): PersonGame {
@@ -122,7 +119,7 @@ export class Game extends DataObject {
     if (!this.allPlatforms) {
       throw new Error('Initialize called before platforms were available.');
     }
-    this._personGame = !!jsonObj.personGame ? new PersonGame(this.platformService).initializedFromJSON(jsonObj.personGame) : undefined;
+    this._personGame = !!jsonObj.personGame ? new PersonGame(this.platformService, this.allPlatforms).initializedFromJSON(jsonObj.personGame) : undefined;
     this.removeTemporaryPlatforms();
     _.forEach(jsonObj.availablePlatforms, availablePlatform => {
       const realPlatform = this.getOrCreateGamePlatform(availablePlatform, this.allPlatforms);

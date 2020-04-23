@@ -166,7 +166,7 @@ export class AddGameComponent implements OnInit {
 
   addGame(match: any, selectedPlatform: any): Promise<Game> {
     return new Promise<Game>(async next => {
-      const game = new Game(this.platformService);
+      const game = new Game(this.platformService, this.allPlatforms);
 
       game.title.value = match.name;
       game.igdb_id.value = match.id;
@@ -190,7 +190,7 @@ export class AddGameComponent implements OnInit {
         game.igdb_height.value = match.cover.height;
       }
 
-      game.personGame = new PersonGame(this.platformService);
+      game.personGame = new PersonGame(this.platformService, this.allPlatforms);
       game.personGame.person_id.value = this.me.id.value;
       game.personGame.game_id.value = game.id.value;
       game.personGame.rating.value = this.rating;
