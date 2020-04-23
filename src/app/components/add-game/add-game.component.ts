@@ -64,18 +64,19 @@ export class AddGameComponent implements OnInit {
 
   findExistingPlatformsNotListed(match: any): string[] {
     const existingGame = this.findMatchingGameForPlatform(match);
-    const existingPlatformIDs = existingGame.getPlatformIGDBIDs();
-    return _.filter(match.platforms, platform => !_.contains(existingPlatformIDs, platform.id));
+    const existingPlatformIDs = !existingGame ? [] : existingGame.getPlatformIGDBIDs();
+    const matchPlatformIDs = _.map(match.platforms, platform => platform.id);
+    return _.difference(existingPlatformIDs, matchPlatformIDs);
   }
 
   private gameExistsWithPlatform(match: any, platform: any): boolean {
     const existingGame = this.findMatchingGameForPlatform(match);
-    return existingGame.hasPlatformWithIGDBID(platform.id);
+    return !!existingGame && existingGame.hasPlatformWithIGDBID(platform.id);
   }
 
   private gameOwnedWithPlatform(match: any, platform: any): boolean {
     const existingGame = this.findMatchingGameForPlatform(match);
-    return existingGame.personGame.hasPlatformWithIGDBID(platform.id);
+    return !!existingGame && existingGame.personGame.hasPlatformWithIGDBID(platform.id);
   }
 
   private findMatchingGameForPlatform(match: any): Game {
