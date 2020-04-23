@@ -10,7 +10,6 @@ import {GamePlatform} from '../../interfaces/Model/GamePlatform';
 import {Person} from '../../interfaces/Model/Person';
 import {PersonService} from '../../services/person.service';
 import {PersonGame} from '../../interfaces/Model/PersonGame';
-import {flatMap} from 'rxjs/operators';
 
 @Component({
   selector: 'mm-add-game',
@@ -83,15 +82,16 @@ export class AddGameComponent implements OnInit {
     return this.gameService.findGames(match.id);
   }
 
-  private findAvailablePlatformsForMatch(match: any): string[] {
+  private gameExistsWithPlatform(match: any, platform: any): boolean {
     const existingGames = this.findAllExistingGameMatches(match);
-    return _.flatten(_.map(existingGames, game => game.getPlatformNames()));
+    const hasPlatformBooleans = _.map(existingGames, game => game.hasPlatformWithIGDBID(platform.id));
+    return _.contains(hasPlatformBooleans, true);
   }
 
-  private findMyPlatformsForMatch(match: any): string[] {
+  private gameOwnedWithPlatform(match: any, platform: any): boolean {
     const existingGames = this.findAllExistingGameMatches(match);
-    const personGames = _.map(_.filter(existingGames, game => !!game.personGame), game => game.personGame);
-    return _.flatten(_.map(personGames, personGame => personGame.getPlatformNames()));
+    const hasPlatformBooleans = _.map(existingGames, game => game.personGame.hasPlatformWithIGDBID(platform.id));
+    return _.contains(hasPlatformBooleans, true);
   }
 
   private findMatchingGameForPlatform(match: any, platform: any): Game {
@@ -109,12 +109,9 @@ export class AddGameComponent implements OnInit {
       const matches = await this.gameService.getIGDBMatches(this.searchTitle);
       this.arrayService.refreshArray(this.matches, matches);
       _.forEach(this.matches, match => {
-        const existingPlatforms = this.findAvailablePlatformsForMatch(match);
-        const myPlatforms = this.findMyPlatformsForMatch(match);
         _.forEach(match.platforms, platform => {
-          const platformName = this.translatePlatformName(platform);
-          platform.exists = _.contains(existingPlatforms, platformName);
-          platform.owned = _.contains(myPlatforms, platformName);
+          platform.exists = this.gameExistsWithPlatform(match, platform);
+          platform.owned = this.gameOwnedWithPlatform(match, platform);
         });
       });
     } catch (err) {

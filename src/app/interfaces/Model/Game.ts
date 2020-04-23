@@ -97,6 +97,11 @@ export class Game extends DataObject {
     return !!existing;
   }
 
+  hasPlatformWithIGDBID(igdbID: number): boolean {
+    const existing = _.find(this.availablePlatforms, platform => platform.igdb_platform_id.value === igdbID);
+    return !!existing;
+  }
+
   getPlatformNames(): string[] {
     return _.map(this.availablePlatforms, platform => platform.full_name.value);
   }
