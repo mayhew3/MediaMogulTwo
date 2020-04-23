@@ -38,7 +38,7 @@ export class PersonGame extends DataObject {
     this.removeTemporaryPlatforms();
     _.forEach(jsonObj.myPlatforms, myPlatform => {
       const realPlatform = this.getOrCreateGamePlatform(myPlatform, this.allPlatforms);
-      this.addToAvailablePlatforms(realPlatform);
+      this.addToMyPlatforms(realPlatform);
     });
     return this;
   }
@@ -86,7 +86,7 @@ export class PersonGame extends DataObject {
     }
   }
 
-  addToAvailablePlatforms(gamePlatform: GamePlatform) {
+  addToMyPlatforms(gamePlatform: GamePlatform) {
     if (gamePlatform.isTemporary()) {
       throw new Error('Cannot add platform without id using addToAvailablePlatforms!');
     }

@@ -61,6 +61,10 @@ export class Game extends DataObject {
     const base = super.makeChangesToInsertPayload(json);
     if (!!this._personGame) {
       base.personGame = this._personGame.getChangedFields();
+      base.personGame.myPlatforms = [];
+      _.forEach(this._personGame.myPlatforms, myPlatform => {
+        base.personGame.myPlatforms.push(myPlatform.getChangedFields());
+      });
     }
     base.availablePlatforms = [];
     _.forEach(this.availablePlatforms, availablePlatform => {

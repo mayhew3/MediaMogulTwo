@@ -122,10 +122,15 @@ export class InMemoryDataService implements InMemoryDbService{
       personGame.id = this.nextPersonGameID();
       personGame.game_id = game.id;
       personGame.date_added = new Date();
+      this.addNewPlatforms(personGame.myPlatforms);
     }
-    const newPlatforms = _.filter(game.availablePlatforms, platform => !platform.id);
-    _.forEach(newPlatforms, platform => this.addGamePlatform(platform));
+    this.addNewPlatforms(game.availablePlatforms);
     return this.packageUpResponse(game, requestInfo);
+  }
+
+  private addNewPlatforms(array: any[]) {
+    const newPlatforms = _.filter(array, platform => !platform.id);
+    _.forEach(newPlatforms, platform => this.addGamePlatform(platform));
   }
 
   private addGamePlatform(gamePlatform: any) {

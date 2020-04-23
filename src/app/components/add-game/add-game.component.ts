@@ -134,26 +134,41 @@ export class AddGameComponent implements OnInit {
     platform.owned = true;
   }
 
-  private getOrCreateExistingGamePlatform(platform: any, game: Game, allPlatforms: GamePlatform[]): void {
-    const existing = _.find(allPlatforms, existingPlatform => existingPlatform.igdb_platform_id.value === platform.id);
+  private getOrCreateExistingGamePlatform(platform: any, game: Game): void {
+    const existing = _.find(this.allPlatforms, existingPlatform => existingPlatform.igdb_platform_id.value === platform.id);
     if (!existing) {
-      const gamePlatform = new GamePlatform();
-      gamePlatform.full_name.value = platform.name;
-      gamePlatform.short_name.value = platform.name;
-      gamePlatform.igdb_name.value = platform.name;
-      gamePlatform.igdb_platform_id.value = platform.id;
+      const gamePlatform = this.createNewGamePlatform(platform);
       game.addTemporaryPlatform(gamePlatform);
     } else {
       game.addToAvailablePlatforms(existing);
     }
   }
 
-  addGame(match: any, platform: any): Promise<Game> {
+  private getOrCreateMyGamePlatform(platform: any, personGame: PersonGame): void {
+    const existing = _.find(this.allPlatforms, existingPlatform => existingPlatform.igdb_platform_id.value === platform.id);
+    if (!existing) {
+      const gamePlatform = this.createNewGamePlatform(platform);
+      personGame.addTemporaryPlatform(gamePlatform);
+    } else {
+      personGame.addToMyPlatforms(existing);
+    }
+  }
+
+  // noinspection JSMethodCanBeStatic
+  private createNewGamePlatform(platform: any) {
+    const gamePlatform = new GamePlatform();
+    gamePlatform.full_name.value = platform.name;
+    gamePlatform.short_name.value = platform.name;
+    gamePlatform.igdb_name.value = platform.name;
+    gamePlatform.igdb_platform_id.value = platform.id;
+    return gamePlatform;
+  }
+
+  addGame(match: any, selectedPlatform: any): Promise<Game> {
     return new Promise<Game>(async next => {
       const game = new Game(this.platformService);
 
       game.title.value = match.name;
-      game.platform.value = this.translatePlatformName(platform);
       game.igdb_id.value = match.id;
 
       game.igdb_rating.value = match.rating;
@@ -180,7 +195,11 @@ export class AddGameComponent implements OnInit {
       game.personGame.game_id.value = game.id.value;
       game.personGame.rating.value = this.rating;
 
-      _.forEach(match.platforms, platform => this.getOrCreateExistingGamePlatform(platform, game, this.allPlatforms));
+      _.forEach(match.platforms, platform => {
+        this.getOrCreateExistingGamePlatform(platform, game);
+      });
+
+      this.getOrCreateMyGamePlatform(selectedPlatform, game.personGame);
 
       const returnGame = await this.gameService.addGame(game);
 
