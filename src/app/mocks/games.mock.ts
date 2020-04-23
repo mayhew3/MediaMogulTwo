@@ -35,6 +35,13 @@ export const MockGames = [
       "rating": 84.1,
       "finished_date": null,
       "id": 588,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 78
@@ -73,6 +80,13 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 650,
+      "myPlatforms": [{
+        "full_name": "Wii U",
+        "igdb_platform_id": 41,
+        "short_name": "Wii U",
+        "id": 5,
+        "igdb_name": "Wii U"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2171
@@ -109,6 +123,11 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 101,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7388
@@ -145,6 +164,11 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 272,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 5614
@@ -183,6 +207,13 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 718,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 3068
@@ -221,6 +252,13 @@ export const MockGames = [
       "rating": 30,
       "finished_date": null,
       "id": 447,
+      "myPlatforms": [{
+        "full_name": "Wii U",
+        "igdb_platform_id": 41,
+        "short_name": "Wii U",
+        "id": 5,
+        "igdb_name": "Wii U"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2350
@@ -259,6 +297,13 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 584,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 80
@@ -304,6 +349,20 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 731,
+      "myPlatforms": [
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        },
+        {
+          "full_name": "Xbox 360",
+          "igdb_platform_id": 12,
+          "short_name": "Xbox 360",
+          "id": 7,
+          "igdb_name": "Xbox 360"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 127
@@ -342,6 +401,13 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 70,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7375
@@ -380,6 +446,13 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 444,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2207
@@ -418,6 +491,13 @@ export const MockGames = [
       "rating": 82.6,
       "finished_date": null,
       "id": 396,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 434
@@ -456,6 +536,13 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 370,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1183
@@ -494,6 +581,13 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 491,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1009
@@ -532,6 +626,13 @@ export const MockGames = [
       "rating": 10,
       "finished_date": null,
       "id": 250,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 832
@@ -568,6 +669,11 @@ export const MockGames = [
       "rating": 78.8,
       "finished_date": null,
       "id": 753,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 866
@@ -606,6 +712,13 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 653,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 15
@@ -644,6 +757,13 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 649,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7170
@@ -682,6 +802,13 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 318,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2853
@@ -718,6 +845,11 @@ export const MockGames = [
       "rating": 85.8,
       "finished_date": null,
       "id": 187,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 53626
@@ -754,6 +886,11 @@ export const MockGames = [
       "rating": 89.5,
       "finished_date": "2020-04-20 18:22:58.172",
       "id": 619,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3035
@@ -790,6 +927,11 @@ export const MockGames = [
       "rating": 90.4,
       "finished_date": null,
       "id": 283,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3022
@@ -828,6 +970,13 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 743,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7391
@@ -866,6 +1015,13 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 443,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1792
@@ -904,6 +1060,13 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 450,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1051
@@ -951,6 +1114,22 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 448,
+      "myPlatforms": [
+        {
+          "full_name": "PS3",
+          "igdb_platform_id": 9,
+          "short_name": "PS3",
+          "id": 6,
+          "igdb_name": "PlayStation 3"
+        },
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 19560
@@ -989,6 +1168,13 @@ export const MockGames = [
       "rating": 94,
       "finished_date": null,
       "id": 261,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 338
@@ -1025,6 +1211,11 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 499,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2129
@@ -1070,6 +1261,20 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 279,
+      "myPlatforms": [
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        },
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 1968
@@ -1108,6 +1313,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 286,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 8371
@@ -1144,6 +1356,11 @@ export const MockGames = [
       "rating": 69,
       "finished_date": null,
       "id": 365,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3251
@@ -1180,6 +1397,11 @@ export const MockGames = [
       "rating": 84.4,
       "finished_date": null,
       "id": 363,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19121
@@ -1218,6 +1440,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 744,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 523
@@ -1256,6 +1485,13 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 367,
+      "myPlatforms": [{
+        "full_name": "Wii",
+        "igdb_platform_id": 5,
+        "short_name": "Wii",
+        "id": 8,
+        "igdb_name": "Wii"
+      }],
       "person_id": 1
     }],
     "igdb_id": 974
@@ -1320,6 +1556,13 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 698,
+      "myPlatforms": [{
+        "full_name": "Wii",
+        "igdb_platform_id": 5,
+        "short_name": "Wii",
+        "id": 8,
+        "igdb_name": "Wii"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1036
@@ -1358,6 +1601,13 @@ export const MockGames = [
       "rating": 83.4,
       "finished_date": null,
       "id": 601,
+      "myPlatforms": [{
+        "full_name": "Wii",
+        "igdb_platform_id": 5,
+        "short_name": "Wii",
+        "id": 8,
+        "igdb_name": "Wii"
+      }],
       "person_id": 1
     }],
     "igdb_id": 534
@@ -1394,6 +1644,11 @@ export const MockGames = [
       "rating": 84.5,
       "finished_date": null,
       "id": 710,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 8507
@@ -1432,6 +1687,13 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 746,
+      "myPlatforms": [{
+        "full_name": "Wii",
+        "igdb_platform_id": 5,
+        "short_name": "Wii",
+        "id": 8,
+        "igdb_name": "Wii"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2178
@@ -1479,6 +1741,22 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 747,
+      "myPlatforms": [
+        {
+          "full_name": "PS3",
+          "igdb_platform_id": 9,
+          "short_name": "PS3",
+          "id": 6,
+          "igdb_name": "PlayStation 3"
+        },
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 493
@@ -1515,6 +1793,11 @@ export const MockGames = [
       "rating": 90,
       "finished_date": "2016-01-15 00:00:00.0",
       "id": 725,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1318
@@ -1553,6 +1836,13 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 680,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1278
@@ -1591,6 +1881,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 338,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 3968
@@ -1629,6 +1926,13 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 384,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 59
@@ -1667,6 +1971,13 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 636,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1602
@@ -1703,6 +2014,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 189,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1911
@@ -1739,6 +2055,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 733,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 21683
@@ -1775,6 +2096,11 @@ export const MockGames = [
       "rating": 91.6,
       "finished_date": "2014-05-18 00:00:00.0",
       "id": 547,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 10047
@@ -1811,6 +2137,11 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 313,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1156
@@ -1847,6 +2178,11 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 256,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2248
@@ -1883,6 +2219,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 281,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 5445
@@ -1919,6 +2260,11 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 477,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19961
@@ -1955,6 +2301,11 @@ export const MockGames = [
       "rating": 84.7,
       "finished_date": null,
       "id": 319,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 5060
@@ -1991,6 +2342,11 @@ export const MockGames = [
       "rating": 50,
       "finished_date": null,
       "id": 735,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 11812
@@ -2027,6 +2383,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 391,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1281
@@ -2063,6 +2424,11 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 347,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2354
@@ -2099,6 +2465,11 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 751,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 22
@@ -2135,6 +2506,11 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 345,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 5892
@@ -2171,6 +2547,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 421,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7832
@@ -2207,6 +2588,11 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 204,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 53763
@@ -2243,6 +2629,11 @@ export const MockGames = [
       "rating": 89,
       "finished_date": null,
       "id": 245,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3087
@@ -2279,6 +2670,11 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 340,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9924
@@ -2339,6 +2735,11 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 333,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 895
@@ -2375,6 +2776,11 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 709,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 524
@@ -2413,6 +2819,13 @@ export const MockGames = [
       "rating": 85.5,
       "finished_date": null,
       "id": 277,
+      "myPlatforms": [{
+        "full_name": "Wii",
+        "igdb_platform_id": 5,
+        "short_name": "Wii",
+        "id": 8,
+        "igdb_name": "Wii"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1077
@@ -2451,6 +2864,13 @@ export const MockGames = [
       "rating": 81.5,
       "finished_date": null,
       "id": 496,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 144
@@ -2489,6 +2909,13 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 581,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7373
@@ -2525,6 +2952,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 197,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2001
@@ -2561,6 +2993,11 @@ export const MockGames = [
       "rating": 84.5,
       "finished_date": null,
       "id": 91,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2130
@@ -2597,6 +3034,11 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 759,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3049
@@ -2635,6 +3077,13 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 374,
+      "myPlatforms": [{
+        "full_name": "Wii",
+        "igdb_platform_id": 5,
+        "short_name": "Wii",
+        "id": 8,
+        "igdb_name": "Wii"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1112
@@ -2671,6 +3120,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 67,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3092
@@ -2709,6 +3163,13 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 368,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 909
@@ -2747,6 +3208,13 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 651,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2691
@@ -2792,6 +3260,20 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 383,
+      "myPlatforms": [
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        },
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 2935
@@ -2830,6 +3312,13 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 401,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 112
@@ -2866,6 +3355,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 298,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2918
@@ -2904,6 +3398,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 294,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1254
@@ -2942,6 +3443,13 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 310,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 3047
@@ -2978,6 +3486,11 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 481,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 508
@@ -3016,6 +3529,13 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 689,
+      "myPlatforms": [{
+        "full_name": "NDS",
+        "igdb_platform_id": 20,
+        "short_name": "NDS",
+        "id": 9,
+        "igdb_name": "Nintendo DS"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2345
@@ -3054,6 +3574,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 114,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 86260
@@ -3090,6 +3617,11 @@ export const MockGames = [
       "rating": 78.9,
       "finished_date": null,
       "id": 358,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2989
@@ -3126,6 +3658,11 @@ export const MockGames = [
       "rating": 84.5,
       "finished_date": null,
       "id": 348,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1337
@@ -3162,6 +3699,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 342,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3082
@@ -3200,6 +3742,13 @@ export const MockGames = [
       "rating": 1,
       "finished_date": null,
       "id": 682,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1341
@@ -3238,6 +3787,13 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 410,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 457
@@ -3274,6 +3830,11 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 126,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7404
@@ -3319,6 +3880,20 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 622,
+      "myPlatforms": [
+        {
+          "full_name": "PS3",
+          "igdb_platform_id": 9,
+          "short_name": "PS3",
+          "id": 6,
+          "igdb_name": "PlayStation 3"
+        },
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 539
@@ -3355,6 +3930,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 321,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2132
@@ -3393,6 +3973,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 128,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1889
@@ -3431,6 +4018,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 452,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 98
@@ -3469,6 +4063,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 690,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2291
@@ -3507,6 +4108,13 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 765,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1384
@@ -3545,6 +4153,13 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 190,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 14
@@ -3583,6 +4198,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 325,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2896
@@ -3621,6 +4243,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 694,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 475
@@ -3657,6 +4286,11 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 191,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 8739
@@ -3695,6 +4329,13 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 663,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 105
@@ -3733,6 +4374,13 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 531,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 114
@@ -3769,6 +4417,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 482,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2438
@@ -3805,6 +4458,11 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 273,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2448
@@ -3841,6 +4499,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 379,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3098
@@ -3879,6 +4542,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 460,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 5592
@@ -3917,6 +4587,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 617,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 8190
@@ -3955,6 +4632,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 398,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 9132
@@ -3993,6 +4677,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 691,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 5329
@@ -4029,6 +4720,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 394,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 4969
@@ -4065,6 +4761,11 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 200,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2050
@@ -4101,6 +4802,11 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 416,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7887
@@ -4140,6 +4846,13 @@ export const MockGames = [
         "rating": 68,
         "finished_date": null,
         "id": 399,
+        "myPlatforms": [{
+          "full_name": "PC",
+          "igdb_platform_id": 6,
+          "short_name": "PC",
+          "id": 10,
+          "igdb_name": "PC (Microsoft Windows)"
+        }],
         "person_id": 1
       },
       {
@@ -4153,6 +4866,13 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 797,
+        "myPlatforms": [{
+          "full_name": "PC",
+          "igdb_platform_id": 6,
+          "short_name": "PC",
+          "id": 10,
+          "igdb_name": "PC (Microsoft Windows)"
+        }],
         "person_id": 4
       }
     ],
@@ -4192,6 +4912,13 @@ export const MockGames = [
       "rating": 45,
       "finished_date": null,
       "id": 529,
+      "myPlatforms": [{
+        "full_name": "Xbox",
+        "igdb_platform_id": 11,
+        "short_name": "Xbox",
+        "id": 2,
+        "igdb_name": "Xbox"
+      }],
       "person_id": 1
     }],
     "igdb_id": 18
@@ -4230,6 +4957,13 @@ export const MockGames = [
       "rating": 1,
       "finished_date": null,
       "id": 439,
+      "myPlatforms": [{
+        "full_name": "Xbox",
+        "igdb_platform_id": 11,
+        "short_name": "Xbox",
+        "id": 2,
+        "igdb_name": "Xbox"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1002
@@ -4294,6 +5028,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 767,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 947
@@ -4332,6 +5073,13 @@ export const MockGames = [
       "rating": 12,
       "finished_date": null,
       "id": 360,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 620
@@ -4370,6 +5118,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 610,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 530
@@ -4406,6 +5161,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 479,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 18293
@@ -4444,6 +5204,13 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 591,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 3072
@@ -4480,6 +5247,11 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 627,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 50867
@@ -4518,6 +5290,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 685,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 473
@@ -4556,6 +5335,13 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 404,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 13126
@@ -4592,6 +5378,11 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 323,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3160
@@ -4630,6 +5421,13 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 308,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 990
@@ -4668,6 +5466,13 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 337,
+      "myPlatforms": [{
+        "full_name": "Wii",
+        "igdb_platform_id": 5,
+        "short_name": "Wii",
+        "id": 8,
+        "igdb_name": "Wii"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2183
@@ -4706,6 +5511,13 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 740,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 568
@@ -4744,6 +5556,13 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 324,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 74
@@ -4782,6 +5601,13 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 354,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2540
@@ -4818,6 +5644,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 486,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 8758
@@ -4854,6 +5685,11 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 612,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3839
@@ -4890,6 +5726,11 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 98,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3019
@@ -4928,6 +5769,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 766,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1267
@@ -4966,6 +5814,13 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 400,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1876
@@ -5004,6 +5859,13 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 302,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2480
@@ -5040,6 +5902,11 @@ export const MockGames = [
       "rating": 71,
       "finished_date": null,
       "id": 253,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 43
@@ -5078,6 +5945,13 @@ export const MockGames = [
       "rating": 61,
       "finished_date": null,
       "id": 634,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 293
@@ -5116,6 +5990,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 582,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 496
@@ -5154,6 +6035,13 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 692,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 731
@@ -5192,6 +6080,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 687,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2732
@@ -5230,6 +6125,13 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 438,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1058
@@ -5266,6 +6168,11 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 201,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 66
@@ -5304,6 +6211,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 440,
+      "myPlatforms": [{
+        "full_name": "Xbox",
+        "igdb_platform_id": 11,
+        "short_name": "Xbox",
+        "id": 2,
+        "igdb_name": "Xbox"
+      }],
       "person_id": 1
     }],
     "igdb_id": 521
@@ -5340,6 +6254,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 309,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1880
@@ -5378,6 +6297,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 453,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 9139
@@ -5414,6 +6340,11 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 730,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2163
@@ -5452,6 +6383,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 628,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 8186
@@ -5490,6 +6428,13 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 388,
+      "myPlatforms": [{
+        "full_name": "NDS",
+        "igdb_platform_id": 20,
+        "short_name": "NDS",
+        "id": 9,
+        "igdb_name": "Nintendo DS"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1693
@@ -5528,6 +6473,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 768,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7588
@@ -5564,6 +6516,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 752,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3043
@@ -5602,6 +6559,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 526,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1268
@@ -5640,6 +6604,13 @@ export const MockGames = [
       "rating": 45,
       "finished_date": null,
       "id": 484,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1300
@@ -5678,6 +6649,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 769,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1891
@@ -5716,6 +6694,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 473,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2047
@@ -5754,6 +6739,13 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 248,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 576
@@ -5792,6 +6784,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 607,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1216
@@ -5830,6 +6829,13 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 631,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2672
@@ -5868,6 +6874,13 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 594,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2692
@@ -5904,6 +6917,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 745,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3026
@@ -5940,6 +6958,11 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 656,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3210
@@ -5978,6 +7001,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 605,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 20898
@@ -6016,6 +7046,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 423,
+      "myPlatforms": [{
+        "full_name": "Xbox",
+        "igdb_platform_id": 11,
+        "short_name": "Xbox",
+        "id": 2,
+        "igdb_name": "Xbox"
+      }],
       "person_id": 1
     }],
     "igdb_id": 5749
@@ -6054,6 +7091,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 684,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 21077
@@ -6092,6 +7136,13 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 748,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2152
@@ -6130,6 +7181,13 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 359,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 3069
@@ -6168,6 +7226,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 603,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 497
@@ -6206,6 +7271,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 681,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 975
@@ -6242,6 +7314,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 474,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 8388
@@ -6278,6 +7355,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 729,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 5523
@@ -6314,6 +7396,11 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 716,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2991
@@ -6352,6 +7439,13 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 455,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 308
@@ -6390,6 +7484,13 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 483,
+      "myPlatforms": [{
+        "full_name": "Xbox",
+        "igdb_platform_id": 11,
+        "short_name": "Xbox",
+        "id": 2,
+        "igdb_name": "Xbox"
+      }],
       "person_id": 1
     }],
     "igdb_id": 118
@@ -6428,6 +7529,13 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 349,
+      "myPlatforms": [{
+        "full_name": "NDS",
+        "igdb_platform_id": 20,
+        "short_name": "NDS",
+        "id": 9,
+        "igdb_name": "Nintendo DS"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1076
@@ -6466,6 +7574,13 @@ export const MockGames = [
       "rating": 45,
       "finished_date": null,
       "id": 515,
+      "myPlatforms": [{
+        "full_name": "Xbox",
+        "igdb_platform_id": 11,
+        "short_name": "Xbox",
+        "id": 2,
+        "igdb_name": "Xbox"
+      }],
       "person_id": 1
     }],
     "igdb_id": 730
@@ -6504,6 +7619,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 695,
+      "myPlatforms": [{
+        "full_name": "Xbox",
+        "igdb_platform_id": 11,
+        "short_name": "Xbox",
+        "id": 2,
+        "igdb_name": "Xbox"
+      }],
       "person_id": 1
     }],
     "igdb_id": 6500
@@ -6542,6 +7664,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 446,
+      "myPlatforms": [{
+        "full_name": "Xbox",
+        "igdb_platform_id": 11,
+        "short_name": "Xbox",
+        "id": 2,
+        "igdb_name": "Xbox"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2973
@@ -6580,6 +7709,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 504,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 16633
@@ -6618,6 +7754,13 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 652,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 3322
@@ -6656,6 +7799,13 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 407,
+      "myPlatforms": [{
+        "full_name": "Xbox",
+        "igdb_platform_id": 11,
+        "short_name": "Xbox",
+        "id": 2,
+        "igdb_name": "Xbox"
+      }],
       "person_id": 1
     }],
     "igdb_id": 142
@@ -6694,6 +7844,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 30,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 6913
@@ -6732,6 +7889,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 475,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 11495
@@ -6770,6 +7934,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 527,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 10762
@@ -6808,6 +7979,13 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 331,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2670
@@ -6844,6 +8022,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 734,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 5626
@@ -6882,6 +8065,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 763,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7056
@@ -6920,6 +8110,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 615,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 65910
@@ -6958,6 +8155,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 437,
+      "myPlatforms": [{
+        "full_name": "Xbox",
+        "igdb_platform_id": 11,
+        "short_name": "Xbox",
+        "id": 2,
+        "igdb_name": "Xbox"
+      }],
       "person_id": 1
     }],
     "igdb_id": 348
@@ -6996,6 +8200,13 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 316,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7370
@@ -7034,6 +8245,13 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 659,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7371
@@ -7072,6 +8290,13 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 697,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7029
@@ -7108,6 +8333,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 353,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7596
@@ -7146,6 +8376,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 469,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1921
@@ -7184,6 +8421,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 597,
+      "myPlatforms": [{
+        "full_name": "Xbox",
+        "igdb_platform_id": 11,
+        "short_name": "Xbox",
+        "id": 2,
+        "igdb_name": "Xbox"
+      }],
       "person_id": 1
     }],
     "igdb_id": 3063
@@ -7222,6 +8466,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 688,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2585
@@ -7260,6 +8511,13 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 406,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 3155
@@ -7298,6 +8556,13 @@ export const MockGames = [
       "rating": 54,
       "finished_date": null,
       "id": 375,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 987
@@ -7334,6 +8599,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 720,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1625
@@ -7372,6 +8642,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 762,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 4989
@@ -7415,6 +8692,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 604,
+      "myPlatforms": [
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        },
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 15773
@@ -7453,6 +8742,13 @@ export const MockGames = [
       "rating": 10,
       "finished_date": null,
       "id": 291,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 75
@@ -7489,6 +8785,11 @@ export const MockGames = [
       "rating": 1,
       "finished_date": "2012-11-28 00:00:00.0",
       "id": 87,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1871
@@ -7785,6 +9086,11 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 711,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 16
@@ -7821,6 +9127,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 478,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7634
@@ -7857,6 +9168,11 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 264,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 6250
@@ -7893,6 +9209,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 315,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 6328
@@ -7929,6 +9250,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 352,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2251
@@ -7965,6 +9291,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 330,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 8214
@@ -8001,6 +9332,11 @@ export const MockGames = [
       "rating": 30,
       "finished_date": null,
       "id": 371,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2990
@@ -8037,6 +9373,11 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 728,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 533
@@ -8073,6 +9414,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 758,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 10327
@@ -8109,6 +9455,11 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 433,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1334
@@ -8145,6 +9496,11 @@ export const MockGames = [
       "rating": 92,
       "finished_date": "2014-07-16 20:52:00.0",
       "id": 278,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2993
@@ -8181,6 +9537,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 322,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 5772
@@ -8217,6 +9578,11 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 265,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 361
@@ -8253,6 +9619,11 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 386,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 10870
@@ -8289,6 +9660,11 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 749,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1059
@@ -8325,6 +9701,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 307,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3075
@@ -8361,6 +9742,11 @@ export const MockGames = [
       "rating": 83.2,
       "finished_date": null,
       "id": 714,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9722
@@ -8397,6 +9783,11 @@ export const MockGames = [
       "rating": 94,
       "finished_date": "2020-04-20 18:12:23.178",
       "id": 468,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 77
@@ -8435,6 +9826,13 @@ export const MockGames = [
       "rating": 98,
       "finished_date": "2020-04-14 11:17:38.639",
       "id": 648,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1352
@@ -8471,6 +9869,11 @@ export const MockGames = [
       "rating": 90.5,
       "finished_date": "2014-01-15 00:00:00.0",
       "id": 445,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3015
@@ -8507,6 +9910,11 @@ export const MockGames = [
       "rating": 92.5,
       "finished_date": "2014-08-19 00:00:00.0",
       "id": 402,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1983
@@ -8543,6 +9951,11 @@ export const MockGames = [
       "rating": 94,
       "finished_date": "2020-04-20 18:12:27.065",
       "id": 314,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 27911
@@ -8579,6 +9992,11 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 420,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 16955
@@ -8639,6 +10057,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 304,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2602
@@ -8675,6 +10098,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": "2009-08-22 00:00:00.0",
       "id": 305,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 233
@@ -8711,6 +10139,11 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 237,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 307
@@ -8747,6 +10180,11 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 50,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9471
@@ -8783,6 +10221,11 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 339,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 10395
@@ -8819,6 +10262,11 @@ export const MockGames = [
       "rating": 81.5,
       "finished_date": null,
       "id": 332,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1339
@@ -8855,6 +10303,11 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 737,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 296
@@ -8891,6 +10344,11 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 618,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 836
@@ -8927,6 +10385,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 351,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 4220
@@ -8963,6 +10426,11 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 32,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 558
@@ -8999,6 +10467,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 382,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 65
@@ -9036,6 +10509,11 @@ export const MockGames = [
         "rating": 84,
         "finished_date": null,
         "id": 75,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 1
       },
       {
@@ -9049,6 +10527,11 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 788,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 4
       }
     ],
@@ -9086,6 +10569,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 258,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 8390
@@ -9122,6 +10610,11 @@ export const MockGames = [
       "rating": 87.5,
       "finished_date": null,
       "id": 356,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1879
@@ -9158,6 +10651,11 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 151,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 20740
@@ -9203,6 +10701,20 @@ export const MockGames = [
       "rating": 80.3,
       "finished_date": null,
       "id": 266,
+      "myPlatforms": [
+        {
+          "full_name": "PS3",
+          "igdb_platform_id": 9,
+          "short_name": "PS3",
+          "id": 6,
+          "igdb_name": "PlayStation 3"
+        },
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 37
@@ -9239,6 +10751,11 @@ export const MockGames = [
       "rating": 80.9,
       "finished_date": null,
       "id": 271,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 38
@@ -9275,6 +10792,11 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 335,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1331
@@ -9311,6 +10833,11 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 739,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1052
@@ -9347,6 +10874,11 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 373,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3240
@@ -9383,6 +10915,11 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 183,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 102111
@@ -9419,6 +10956,11 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 262,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 15071
@@ -9455,6 +10997,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 68,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 787
@@ -9491,6 +11038,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 341,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 8382
@@ -9527,6 +11079,11 @@ export const MockGames = [
       "rating": 81.5,
       "finished_date": null,
       "id": 703,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 6168
@@ -9563,6 +11120,11 @@ export const MockGames = [
       "rating": 93,
       "finished_date": "2013-01-10 23:13:00.0",
       "id": 620,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1377
@@ -9599,6 +11161,11 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 199,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 6836
@@ -9635,6 +11202,11 @@ export const MockGames = [
       "rating": 78.6,
       "finished_date": null,
       "id": 364,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9634
@@ -9671,6 +11243,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 520,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 8392
@@ -9707,6 +11284,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 378,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 6230
@@ -9743,6 +11325,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 334,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1054
@@ -9779,6 +11366,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 613,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 6611
@@ -9815,6 +11407,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 329,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 11640
@@ -9851,6 +11448,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 471,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3183
@@ -9887,6 +11489,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 355,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 8984
@@ -9923,6 +11530,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 328,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9718
@@ -9959,6 +11571,11 @@ export const MockGames = [
       "rating": 25,
       "finished_date": null,
       "id": 326,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 6246
@@ -9995,6 +11612,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 343,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9971
@@ -10031,6 +11653,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 346,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1062
@@ -10067,6 +11694,11 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 295,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 6327
@@ -10103,6 +11735,11 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 108,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 28008
@@ -10139,6 +11776,11 @@ export const MockGames = [
       "rating": 88,
       "finished_date": "2020-04-20 18:37:37.697",
       "id": 336,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1011
@@ -10175,6 +11817,11 @@ export const MockGames = [
       "rating": 66,
       "finished_date": null,
       "id": 510,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1270
@@ -10211,6 +11858,11 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 299,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1269
@@ -10247,6 +11899,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 36,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2175
@@ -10283,6 +11940,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 306,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2064
@@ -10319,6 +11981,11 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 145,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1908
@@ -10351,6 +12018,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 476,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 130190
@@ -10387,6 +12055,11 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 361,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 212
@@ -10419,6 +12092,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 44,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 74848
@@ -10455,6 +12129,11 @@ export const MockGames = [
       "rating": 93,
       "finished_date": "2013-11-22 00:00:00.0",
       "id": 38,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 538
@@ -10491,6 +12170,11 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 259,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1161
@@ -10527,6 +12211,11 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 614,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1162
@@ -10563,6 +12252,11 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 425,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1163
@@ -10608,6 +12302,20 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 83,
+      "myPlatforms": [
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        },
+        {
+          "full_name": "Xbox One",
+          "igdb_platform_id": 49,
+          "short_name": "Xbox One",
+          "id": 4,
+          "igdb_name": "Xbox One"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 1164
@@ -10644,6 +12352,11 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 47,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 912
@@ -10680,6 +12393,11 @@ export const MockGames = [
       "rating": 64,
       "finished_date": null,
       "id": 251,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1158
@@ -10716,6 +12434,11 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 69,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1160
@@ -10752,6 +12475,11 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 74,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1159
@@ -10788,6 +12516,11 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 320,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1157
@@ -10824,6 +12557,11 @@ export const MockGames = [
       "rating": 82.8,
       "finished_date": null,
       "id": 357,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2959
@@ -10860,6 +12598,11 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 180,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1973
@@ -10905,6 +12648,20 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 39,
+      "myPlatforms": [
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        },
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 1991
@@ -10941,6 +12698,11 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 260,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2138
@@ -10977,6 +12739,11 @@ export const MockGames = [
       "rating": 82.7,
       "finished_date": null,
       "id": 606,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1827
@@ -11013,6 +12780,11 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 263,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 53080
@@ -11049,6 +12821,11 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 377,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 11238
@@ -11085,6 +12862,11 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 202,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3029
@@ -11121,6 +12903,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": "2014-05-01 00:00:00.0",
       "id": 380,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1906
@@ -11157,6 +12944,11 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 18,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2003
@@ -11193,6 +12985,11 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 756,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 5613
@@ -11229,6 +13026,11 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 624,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 5506
@@ -11265,6 +13067,11 @@ export const MockGames = [
       "rating": 99,
       "finished_date": "2014-08-26 20:09:00.0",
       "id": 390,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3097
@@ -11301,6 +13108,11 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 393,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9448
@@ -11337,6 +13149,11 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 63,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 25393
@@ -11373,6 +13190,11 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 366,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 306
@@ -11409,6 +13231,11 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 196,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 529
@@ -11445,6 +13272,11 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 221,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7584
@@ -11481,6 +13313,11 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 254,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2137
@@ -11565,6 +13402,11 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 461,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 28723
@@ -11601,6 +13443,11 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 736,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2950
@@ -11637,6 +13484,11 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 8,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3025
@@ -11755,6 +13607,20 @@ export const MockGames = [
         "rating": 91.8,
         "finished_date": null,
         "id": 20,
+        "myPlatforms": [
+          {
+            "full_name": "Xbox 360",
+            "igdb_platform_id": 12,
+            "short_name": "Xbox 360",
+            "id": 7,
+            "igdb_name": "Xbox 360"
+          },
+          {
+            "full_name": "Steam",
+            "short_name": "Steam",
+            "id": 1
+          }
+        ],
         "person_id": 1
       },
       {
@@ -11768,6 +13634,11 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 789,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 4
       }
     ],
@@ -11853,6 +13724,11 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 616,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 6032
@@ -11889,6 +13765,11 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 760,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 15395
@@ -11925,6 +13806,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 41,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 489
@@ -12125,6 +14011,11 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 156,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 6038
@@ -12209,6 +14100,11 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 167,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 28080
@@ -12245,6 +14141,11 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 327,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7878
@@ -12281,6 +14182,11 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 249,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 495
@@ -12365,6 +14271,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 42,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9815
@@ -12473,6 +14384,11 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 133,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 10345
@@ -12509,6 +14425,11 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 726,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 5652
@@ -12545,6 +14466,11 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 161,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1981
@@ -12581,6 +14507,11 @@ export const MockGames = [
       "rating": 90.5,
       "finished_date": null,
       "id": 123,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9278
@@ -12626,6 +14557,20 @@ export const MockGames = [
       "rating": 95,
       "finished_date": "2015-10-25 00:00:00.0",
       "id": 241,
+      "myPlatforms": [
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        },
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 6707
@@ -12662,6 +14607,11 @@ export const MockGames = [
       "rating": 84.5,
       "finished_date": null,
       "id": 198,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7610
@@ -12699,6 +14649,11 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 791,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 4
       },
       {
@@ -12712,6 +14667,11 @@ export const MockGames = [
         "rating": 88,
         "finished_date": null,
         "id": 85,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 1
       }
     ],
@@ -12749,6 +14709,11 @@ export const MockGames = [
       "rating": 90.4,
       "finished_date": null,
       "id": 97,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 8864
@@ -12914,6 +14879,11 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 226,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7325
@@ -13166,6 +15136,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1445,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 28988
@@ -13226,6 +15201,11 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 274,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7658
@@ -13315,6 +15295,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 10,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 233
@@ -13351,6 +15332,11 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 188,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 47381
@@ -13387,6 +15373,11 @@ export const MockGames = [
       "rating": 85.2,
       "finished_date": null,
       "id": 109,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 6415
@@ -13528,6 +15519,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 432,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3019
@@ -13612,6 +15608,11 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 732,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 5597
@@ -13720,6 +15721,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 470,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 8773
@@ -13756,6 +15762,11 @@ export const MockGames = [
       "rating": 78.3,
       "finished_date": null,
       "id": 144,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 5319
@@ -13792,6 +15803,11 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 436,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7327
@@ -13828,6 +15844,11 @@ export const MockGames = [
       "rating": 83.9,
       "finished_date": null,
       "id": 289,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 8232
@@ -13873,6 +15894,20 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 611,
+      "myPlatforms": [
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        },
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 8682
@@ -13909,6 +15944,11 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 723,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 8774
@@ -13945,6 +15985,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 300,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2958
@@ -13981,6 +16026,11 @@ export const MockGames = [
       "rating": 10,
       "finished_date": null,
       "id": 369,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7344
@@ -14017,6 +16067,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 317,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2605
@@ -14054,6 +16109,11 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 808,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 5
       },
       {
@@ -14067,6 +16127,11 @@ export const MockGames = [
         "rating": 80,
         "finished_date": "2016-12-27 00:00:00.0",
         "id": 2,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 1
       }
     ],
@@ -14113,6 +16178,20 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 120,
+      "myPlatforms": [
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        },
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 5503
@@ -14293,6 +16372,11 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 193,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2955
@@ -14329,6 +16413,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1474,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 8923
@@ -14367,6 +16456,13 @@ export const MockGames = [
       "rating": 94,
       "finished_date": "2020-04-20 18:12:48.545",
       "id": 600,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 512
@@ -14499,6 +16595,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 292,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 11198
@@ -14618,6 +16719,22 @@ export const MockGames = [
       "rating": 71,
       "finished_date": null,
       "id": 677,
+      "myPlatforms": [
+        {
+          "full_name": "Xbox One",
+          "igdb_platform_id": 49,
+          "short_name": "Xbox One",
+          "id": 4,
+          "igdb_name": "Xbox One"
+        },
+        {
+          "full_name": "PS3",
+          "igdb_platform_id": 9,
+          "short_name": "PS3",
+          "id": 6,
+          "igdb_name": "PlayStation 3"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 7897
@@ -14656,6 +16773,13 @@ export const MockGames = [
       "rating": 70,
       "finished_date": "2016-01-22 00:00:00.0",
       "id": 596,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 15861
@@ -14694,6 +16818,13 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 646,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2131
@@ -14732,6 +16863,13 @@ export const MockGames = [
       "rating": 84.3,
       "finished_date": null,
       "id": 403,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 4756
@@ -14770,6 +16908,13 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 667,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 9478
@@ -14808,6 +16953,13 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 665,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 17952
@@ -14846,6 +16998,13 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 426,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2969
@@ -14884,6 +17043,13 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 508,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7402
@@ -14922,6 +17088,13 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 602,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 536
@@ -14960,6 +17133,13 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 246,
+      "myPlatforms": [{
+        "full_name": "Xbox 360",
+        "igdb_platform_id": 12,
+        "short_name": "Xbox 360",
+        "id": 7,
+        "igdb_name": "Xbox 360"
+      }],
       "person_id": 1
     }],
     "igdb_id": 11643
@@ -15020,6 +17200,11 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 738,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 999
@@ -15154,6 +17339,13 @@ export const MockGames = [
       "rating": 99,
       "finished_date": "2015-10-02 00:00:00.0",
       "id": 500,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1887
@@ -15192,6 +17384,13 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 564,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 8558
@@ -15254,6 +17453,13 @@ export const MockGames = [
       "rating": 33,
       "finished_date": null,
       "id": 567,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 16368
@@ -15292,6 +17498,13 @@ export const MockGames = [
       "rating": 62,
       "finished_date": null,
       "id": 673,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7683
@@ -15330,6 +17543,13 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 674,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 23584
@@ -15368,6 +17588,13 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 451,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1939
@@ -15406,6 +17633,13 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 397,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7326
@@ -15442,6 +17676,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 118,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 20048
@@ -15478,6 +17717,11 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 276,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9630
@@ -15514,6 +17758,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 702,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7706
@@ -15550,6 +17799,11 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 177,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 27862
@@ -15586,6 +17840,11 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 176,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 501
@@ -15622,6 +17881,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 15,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 21066
@@ -15682,6 +17946,11 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 724,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 6739
@@ -15718,6 +17987,11 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 162,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 11529
@@ -15754,6 +18028,11 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 186,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19081
@@ -15790,6 +18069,11 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 270,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9928
@@ -15826,6 +18110,11 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 71,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 14177
@@ -15862,6 +18151,11 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 623,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9066
@@ -15898,6 +18192,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 192,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 63020
@@ -15934,6 +18233,11 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 76,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 12517
@@ -15971,6 +18275,11 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 429,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 1
       },
       {
@@ -15984,6 +18293,11 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 802,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 5
       }
     ],
@@ -16017,6 +18331,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 57,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 15773
@@ -16062,6 +18377,20 @@ export const MockGames = [
       "rating": 89,
       "finished_date": null,
       "id": 140,
+      "myPlatforms": [
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        },
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 10919
@@ -16098,6 +18427,11 @@ export const MockGames = [
       "rating": 81.9,
       "finished_date": null,
       "id": 621,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 11204
@@ -16134,6 +18468,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 417,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 80185
@@ -16170,6 +18509,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 178,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 5618
@@ -16206,6 +18550,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 598,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1569
@@ -16244,6 +18593,13 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 742,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2212
@@ -16282,6 +18638,13 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 43,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2113
@@ -16320,6 +18683,13 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 668,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1940
@@ -16358,6 +18728,13 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 522,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1941
@@ -16396,6 +18773,13 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 103,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 8655
@@ -16434,6 +18818,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 376,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 11203
@@ -16472,6 +18863,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 686,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 5973
@@ -16510,6 +18908,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 608,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 10602
@@ -16548,6 +18953,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 519,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 14523
@@ -16586,6 +18998,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 609,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 12561
@@ -16670,6 +19089,11 @@ export const MockGames = [
       "rating": 90.7,
       "finished_date": null,
       "id": 290,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 16984
@@ -16708,6 +19132,13 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 506,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 3247
@@ -16740,6 +19171,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 121,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 105036
@@ -16779,6 +19211,13 @@ export const MockGames = [
         "rating": 99,
         "finished_date": "2018-11-02 00:00:00.0",
         "id": 654,
+        "myPlatforms": [{
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }],
         "person_id": 1
       },
       {
@@ -16792,6 +19231,13 @@ export const MockGames = [
         "rating": 99,
         "finished_date": null,
         "id": 772,
+        "myPlatforms": [{
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }],
         "person_id": 2
       }
     ],
@@ -16831,6 +19277,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 505,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 10184
@@ -16878,6 +19331,22 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 660,
+      "myPlatforms": [
+        {
+          "full_name": "Xbox One",
+          "igdb_platform_id": 49,
+          "short_name": "Xbox One",
+          "id": 4,
+          "igdb_name": "Xbox One"
+        },
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 4847
@@ -16916,6 +19385,13 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 635,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 5541
@@ -16954,6 +19430,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 498,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 6072
@@ -16992,6 +19475,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 514,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 9101
@@ -17030,6 +19520,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 699,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 34209
@@ -17068,6 +19565,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 516,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2638
@@ -17106,6 +19610,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 21,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 14380
@@ -17144,6 +19655,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 518,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 9178
@@ -17182,6 +19700,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 184,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7327
@@ -17220,6 +19745,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 761,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 20311
@@ -17258,6 +19790,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 125,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 18978
@@ -17296,6 +19835,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 550,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 35517
@@ -17343,6 +19889,22 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 415,
+      "myPlatforms": [
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        },
+        {
+          "full_name": "Xbox One",
+          "igdb_platform_id": 49,
+          "short_name": "Xbox One",
+          "id": 4,
+          "igdb_name": "Xbox One"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 11491
@@ -17381,6 +19943,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 534,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 21960
@@ -17419,6 +19988,13 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 525,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 23319
@@ -17457,6 +20033,13 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 662,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 17377
@@ -17495,6 +20078,13 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 462,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7293
@@ -17533,6 +20123,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 517,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 15695
@@ -17571,6 +20168,13 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 489,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 8260
@@ -17609,6 +20213,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 664,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 9807
@@ -17647,6 +20258,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 78,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 8992
@@ -17685,6 +20303,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 633,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7876
@@ -17723,6 +20348,13 @@ export const MockGames = [
       "rating": 69,
       "finished_date": null,
       "id": 427,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 4180
@@ -17761,6 +20393,13 @@ export const MockGames = [
       "rating": 56,
       "finished_date": null,
       "id": 632,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 6160
@@ -17799,6 +20438,13 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 639,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 19419
@@ -17837,6 +20483,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 552,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 20031
@@ -17875,6 +20528,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 13,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7641
@@ -17911,6 +20571,11 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 194,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 11582
@@ -17984,6 +20649,22 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 509,
+      "myPlatforms": [
+        {
+          "full_name": "Xbox One",
+          "igdb_platform_id": 49,
+          "short_name": "Xbox One",
+          "id": 4,
+          "igdb_name": "Xbox One"
+        },
+        {
+          "full_name": "PS3",
+          "igdb_platform_id": 9,
+          "short_name": "PS3",
+          "id": 6,
+          "igdb_name": "PlayStation 3"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 5638
@@ -18020,6 +20701,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 485,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 84927
@@ -18056,6 +20742,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 94,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 35842
@@ -18092,6 +20783,11 @@ export const MockGames = [
       "rating": 87.6,
       "finished_date": null,
       "id": 267,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 11346
@@ -18129,6 +20825,11 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 790,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 4
       },
       {
@@ -18142,6 +20843,11 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 803,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 5
       },
       {
@@ -18155,6 +20861,11 @@ export const MockGames = [
         "rating": 85,
         "finished_date": "2018-04-05 00:00:00.0",
         "id": 56,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 1
       }
     ],
@@ -18192,6 +20903,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 503,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 14702
@@ -18228,6 +20944,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 293,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 24618
@@ -18266,6 +20987,13 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 669,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 13232
@@ -18302,6 +21030,11 @@ export const MockGames = [
       "rating": 84.6,
       "finished_date": null,
       "id": 507,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 13212
@@ -18338,6 +21071,11 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 88,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1593
@@ -18374,6 +21112,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 511,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7406
@@ -18410,6 +21153,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 717,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3020
@@ -18446,6 +21194,11 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 586,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 4641
@@ -18482,6 +21235,11 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 707,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9902
@@ -18518,6 +21276,11 @@ export const MockGames = [
       "rating": 82.3,
       "finished_date": null,
       "id": 244,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 15444
@@ -18554,6 +21317,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 171,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19955
@@ -18590,6 +21358,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 102,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9016
@@ -18626,6 +21399,11 @@ export const MockGames = [
       "rating": 85.3,
       "finished_date": null,
       "id": 727,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1942
@@ -18662,6 +21440,11 @@ export const MockGames = [
       "rating": 85,
       "finished_date": "2016-07-26 00:00:00.0",
       "id": 185,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9730
@@ -18708,6 +21491,11 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 804,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 5
       },
       {
@@ -18721,6 +21509,20 @@ export const MockGames = [
         "rating": 84,
         "finished_date": null,
         "id": 92,
+        "myPlatforms": [
+          {
+            "full_name": "Steam",
+            "short_name": "Steam",
+            "id": 1
+          },
+          {
+            "full_name": "PS4",
+            "igdb_platform_id": 48,
+            "short_name": "PS4",
+            "id": 11,
+            "igdb_name": "PlayStation 4"
+          }
+        ],
         "person_id": 1
       }
     ],
@@ -18767,6 +21569,20 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 105,
+      "myPlatforms": [
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        },
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 7405
@@ -18803,6 +21619,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 715,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7386
@@ -18839,6 +21660,11 @@ export const MockGames = [
       "rating": 90.3,
       "finished_date": null,
       "id": 4,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19456
@@ -18876,6 +21702,11 @@ export const MockGames = [
         "rating": 91,
         "finished_date": "2016-08-02 00:00:00.0",
         "id": 172,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 1
       },
       {
@@ -18889,6 +21720,11 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 795,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 4
       }
     ],
@@ -18926,6 +21762,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 431,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 5165
@@ -18962,6 +21803,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 64,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9473
@@ -18998,6 +21844,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 127,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7858
@@ -19034,6 +21885,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 9,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 23695
@@ -19070,6 +21926,11 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 456,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 86807
@@ -19106,6 +21967,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 169,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 506
@@ -19142,6 +22008,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 301,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9474
@@ -19174,6 +22045,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 430,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 2174
@@ -19210,6 +22082,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 110,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2607
@@ -19246,6 +22123,11 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 174,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 11444
@@ -19282,6 +22164,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 113,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 11821
@@ -19318,6 +22205,11 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 24,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 5508
@@ -19354,6 +22246,11 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 497,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9723
@@ -19390,6 +22287,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 119,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7477
@@ -19427,6 +22329,11 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 1427,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 4
       },
       {
@@ -19440,6 +22347,11 @@ export const MockGames = [
         "rating": 80,
         "finished_date": null,
         "id": 77,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 1
       }
     ],
@@ -19486,6 +22398,20 @@ export const MockGames = [
       "rating": 0,
       "finished_date": "2013-09-12 00:00:00.0",
       "id": 122,
+      "myPlatforms": [
+        {
+          "full_name": "Xbox 360",
+          "igdb_platform_id": 12,
+          "short_name": "Xbox 360",
+          "id": 7,
+          "igdb_name": "Xbox 360"
+        },
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 20
@@ -19531,6 +22457,20 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 117,
+      "myPlatforms": [
+        {
+          "full_name": "Xbox 360",
+          "igdb_platform_id": 12,
+          "short_name": "Xbox 360",
+          "id": 7,
+          "igdb_name": "Xbox 360"
+        },
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 21
@@ -19567,6 +22507,11 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 268,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 17224
@@ -19603,6 +22548,11 @@ export const MockGames = [
       "rating": 49,
       "finished_date": null,
       "id": 232,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19012
@@ -19639,6 +22589,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 492,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 13222
@@ -19684,6 +22639,20 @@ export const MockGames = [
       "rating": 94,
       "finished_date": "2017-07-20 00:00:00.0",
       "id": 626,
+      "myPlatforms": [
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        },
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 7352
@@ -19716,6 +22685,7 @@ export const MockGames = [
       "rating": 89,
       "finished_date": null,
       "id": 130,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 115071
@@ -19778,6 +22748,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 528,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 21623
@@ -19816,6 +22793,13 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 502,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 14327
@@ -19854,6 +22838,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 95,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2063
@@ -19892,6 +22883,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 589,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 16431
@@ -19924,6 +22922,7 @@ export const MockGames = [
       "rating": 66,
       "finished_date": null,
       "id": 457,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 24
@@ -19961,6 +22960,11 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 796,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 4
       },
       {
@@ -19974,6 +22978,11 @@ export const MockGames = [
         "rating": 81,
         "finished_date": null,
         "id": 168,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 1
       }
     ],
@@ -20011,6 +23020,11 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 7,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 34293
@@ -20047,6 +23061,11 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 252,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 34294
@@ -20085,6 +23104,13 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 405,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 19539
@@ -20123,6 +23149,13 @@ export const MockGames = [
       "rating": 92.1,
       "finished_date": "2018-08-14 00:00:00.0",
       "id": 409,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 11593
@@ -20161,6 +23194,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 701,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7202
@@ -20199,6 +23239,13 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 512,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 20058
@@ -20237,6 +23284,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 658,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 16926
@@ -20275,6 +23329,13 @@ export const MockGames = [
       "rating": 50,
       "finished_date": null,
       "id": 530,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 8288
@@ -20322,6 +23383,22 @@ export const MockGames = [
       "rating": 71,
       "finished_date": null,
       "id": 719,
+      "myPlatforms": [
+        {
+          "full_name": "Xbox One",
+          "igdb_platform_id": 49,
+          "short_name": "Xbox One",
+          "id": 4,
+          "igdb_name": "Xbox One"
+        },
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 5335
@@ -20360,6 +23437,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 583,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 20042
@@ -20396,6 +23480,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 106,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7635
@@ -20432,6 +23521,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 111,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 8925
@@ -20468,6 +23562,11 @@ export const MockGames = [
       "rating": 89,
       "finished_date": null,
       "id": 154,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19130
@@ -20504,6 +23603,11 @@ export const MockGames = [
       "rating": 85.7,
       "finished_date": null,
       "id": 242,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1962
@@ -20540,6 +23644,11 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 115,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19082
@@ -20587,6 +23696,22 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 454,
+      "myPlatforms": [
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        },
+        {
+          "full_name": "PS3",
+          "igdb_platform_id": 9,
+          "short_name": "PS3",
+          "id": 6,
+          "igdb_name": "PlayStation 3"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 24362
@@ -20625,6 +23750,13 @@ export const MockGames = [
       "rating": 56,
       "finished_date": null,
       "id": 533,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 20955
@@ -20663,6 +23795,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 521,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 14740
@@ -20701,6 +23840,13 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 599,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 524
@@ -20737,6 +23883,11 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 6,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 15821
@@ -20773,6 +23924,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 296,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7323
@@ -20809,6 +23965,11 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 387,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 191
@@ -20854,6 +24015,20 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 96,
+      "myPlatforms": [
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        },
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 11719
@@ -20890,6 +24065,11 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 243,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 11221
@@ -20926,6 +24106,11 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 592,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 36253
@@ -20962,6 +24147,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 381,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 18997
@@ -20998,6 +24188,11 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 501,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7351
@@ -21034,6 +24229,11 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 625,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 17000
@@ -21070,6 +24270,11 @@ export const MockGames = [
       "rating": 56,
       "finished_date": null,
       "id": 55,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 25081
@@ -21106,6 +24311,11 @@ export const MockGames = [
       "rating": 81.1,
       "finished_date": null,
       "id": 585,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3099
@@ -21144,6 +24354,13 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 139,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 20228
@@ -21182,6 +24399,13 @@ export const MockGames = [
       "rating": 89,
       "finished_date": null,
       "id": 630,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 458
@@ -21218,6 +24442,11 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 284,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 12597
@@ -21254,6 +24483,11 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 46,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 17030
@@ -21290,6 +24524,11 @@ export const MockGames = [
       "rating": 97,
       "finished_date": "2017-07-26 21:00:00.0",
       "id": 713,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19000
@@ -21327,6 +24566,11 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 806,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 5
       },
       {
@@ -21340,6 +24584,11 @@ export const MockGames = [
         "rating": 96.3,
         "finished_date": "2020-04-20 18:11:07.765",
         "id": 107,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 1
       }
     ],
@@ -21377,6 +24626,11 @@ export const MockGames = [
       "rating": 88,
       "finished_date": null,
       "id": 89,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7342
@@ -21413,6 +24667,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 81,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 22017
@@ -21449,6 +24708,11 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 60,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 18859
@@ -21494,6 +24758,20 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 311,
+      "myPlatforms": [
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        },
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 12815
@@ -21530,6 +24808,11 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 205,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19083
@@ -21566,6 +24849,11 @@ export const MockGames = [
       "rating": 84.2,
       "finished_date": null,
       "id": 385,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7205
@@ -21598,6 +24886,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 14,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 62151
@@ -21630,6 +24919,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 3,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 62151
@@ -21662,6 +24952,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 54,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 62151
@@ -21694,6 +24985,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 73,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 62151
@@ -21726,6 +25018,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 428,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 62151
@@ -21758,6 +25051,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 212,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 62151
@@ -21790,6 +25084,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 93,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 62151
@@ -21822,6 +25117,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 62151
@@ -21854,6 +25150,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 12,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 62151
@@ -21890,6 +25187,11 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 287,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3102
@@ -21926,6 +25228,11 @@ export const MockGames = [
       "rating": 84.9,
       "finished_date": null,
       "id": 708,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 11260
@@ -21964,6 +25271,13 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 155,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 17026
@@ -22002,6 +25316,13 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 595,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 14410
@@ -22040,6 +25361,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 679,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 11175
@@ -22078,6 +25406,13 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 372,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 24869
@@ -22116,6 +25451,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 676,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7708
@@ -22154,6 +25496,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 513,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 19979
@@ -22192,6 +25541,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 700,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 9559
@@ -22230,6 +25586,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 280,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 18006
@@ -22268,6 +25631,13 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 546,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 19893
@@ -22306,6 +25676,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 463,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 6044
@@ -22344,6 +25721,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 754,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 20966
@@ -22382,6 +25766,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 750,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 19947
@@ -22420,6 +25811,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 467,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 21320
@@ -22456,6 +25854,11 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 704,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1907
@@ -22495,6 +25898,13 @@ export const MockGames = [
         "rating": 85,
         "finished_date": null,
         "id": 551,
+        "myPlatforms": [{
+          "full_name": "Xbox One",
+          "igdb_platform_id": 49,
+          "short_name": "Xbox One",
+          "id": 4,
+          "igdb_name": "Xbox One"
+        }],
         "person_id": 1
       },
       {
@@ -22508,6 +25918,13 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 800,
+        "myPlatforms": [{
+          "full_name": "Xbox One",
+          "igdb_platform_id": 49,
+          "short_name": "Xbox One",
+          "id": 4,
+          "igdb_name": "Xbox One"
+        }],
         "person_id": 4
       }
     ],
@@ -22547,6 +25964,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 472,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7330
@@ -22585,6 +26009,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 683,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 6045
@@ -22623,6 +26054,13 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 288,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 6781
@@ -22661,6 +26099,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 173,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 20082
@@ -22699,6 +26144,13 @@ export const MockGames = [
       "rating": 61,
       "finished_date": null,
       "id": 678,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 16654
@@ -22737,6 +26189,13 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 638,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 9976
@@ -22773,6 +26232,11 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 389,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 24051
@@ -22811,6 +26275,13 @@ export const MockGames = [
       "rating": 88,
       "finished_date": null,
       "id": 441,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 11156
@@ -22849,6 +26320,13 @@ export const MockGames = [
       "rating": 95.1,
       "finished_date": "2017-07-23 00:00:00.0",
       "id": 442,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7349
@@ -22896,6 +26374,22 @@ export const MockGames = [
       "rating": 50,
       "finished_date": null,
       "id": 408,
+      "myPlatforms": [
+        {
+          "full_name": "Wii U",
+          "igdb_platform_id": 41,
+          "short_name": "Wii U",
+          "id": 5,
+          "igdb_name": "Wii U"
+        },
+        {
+          "full_name": "Switch",
+          "igdb_platform_id": 130,
+          "short_name": "Switch",
+          "id": 3,
+          "igdb_name": "Nintendo Switch"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 7346
@@ -22932,6 +26426,11 @@ export const MockGames = [
       "rating": 50,
       "finished_date": "2017-06-15 00:00:00.0",
       "id": 82,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 22365
@@ -22968,6 +26467,11 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 34,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 26165
@@ -23004,6 +26508,11 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 104,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 27747
@@ -23042,6 +26551,13 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 672,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 22362
@@ -23089,6 +26605,22 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 45,
+      "myPlatforms": [
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        },
+        {
+          "full_name": "PS3",
+          "igdb_platform_id": 9,
+          "short_name": "PS3",
+          "id": 6,
+          "igdb_name": "PlayStation 3"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 16765
@@ -23127,6 +26659,13 @@ export const MockGames = [
       "rating": 43,
       "finished_date": null,
       "id": 593,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 8421
@@ -23165,6 +26704,13 @@ export const MockGames = [
       "rating": 54,
       "finished_date": null,
       "id": 35,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7134
@@ -23201,6 +26747,11 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 80,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 11550
@@ -23237,6 +26788,11 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 22,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19867
@@ -23273,6 +26829,11 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 182,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 18398
@@ -23309,6 +26870,11 @@ export const MockGames = [
       "rating": 91.7,
       "finished_date": "2017-08-08 00:00:00.0",
       "id": 211,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 11233
@@ -23345,6 +26911,11 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 238,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 31598
@@ -23381,6 +26952,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 29,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 17902
@@ -23417,6 +26993,11 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 257,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 34366
@@ -23453,6 +27034,11 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 424,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 27988
@@ -23489,6 +27075,11 @@ export const MockGames = [
       "rating": 88,
       "finished_date": "2020-04-20 18:38:16.357",
       "id": 297,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 34982
@@ -23525,6 +27116,11 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 247,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19519
@@ -23561,6 +27157,11 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 213,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 25185
@@ -23597,6 +27198,11 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 303,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 11813
@@ -23633,6 +27239,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 218,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19026
@@ -23669,6 +27280,11 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 84,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 14172
@@ -23705,6 +27321,11 @@ export const MockGames = [
       "rating": 90.2,
       "finished_date": "2017-07-07 00:00:00.0",
       "id": 490,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19563
@@ -23741,6 +27362,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 494,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 31599
@@ -23777,6 +27403,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 16,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 31395
@@ -23813,6 +27444,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 11,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 31241
@@ -23849,6 +27485,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 17,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 31140
@@ -23885,6 +27526,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 214,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 31116
@@ -23921,6 +27567,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 124,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 108776
@@ -23957,6 +27608,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 216,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 29358
@@ -23993,6 +27649,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 26,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 29365
@@ -24029,6 +27690,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 540,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 29057
@@ -24065,6 +27731,11 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 179,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 25632
@@ -24101,6 +27772,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": "2017-07-08 00:00:00.0",
       "id": 285,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 43066
@@ -24137,6 +27813,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": "2017-07-09 00:00:00.0",
       "id": 181,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 33308
@@ -24175,6 +27856,13 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 37,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7609
@@ -24211,6 +27899,11 @@ export const MockGames = [
       "rating": 88,
       "finished_date": null,
       "id": 240,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 8654
@@ -24247,6 +27940,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 61,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 18149
@@ -24292,6 +27990,20 @@ export const MockGames = [
       "rating": 50,
       "finished_date": null,
       "id": 1374,
+      "myPlatforms": [
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        },
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 8187
@@ -24339,6 +28051,22 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 164,
+      "myPlatforms": [
+        {
+          "full_name": "Xbox One",
+          "igdb_platform_id": 49,
+          "short_name": "Xbox One",
+          "id": 4,
+          "igdb_name": "Xbox One"
+        },
+        {
+          "full_name": "PC",
+          "igdb_platform_id": 6,
+          "short_name": "PC",
+          "id": 10,
+          "igdb_name": "PC (Microsoft Windows)"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 16287
@@ -24377,6 +28105,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 487,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 3775
@@ -24415,6 +28150,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 195,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 13677
@@ -24453,6 +28195,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 536,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 20078
@@ -24491,6 +28240,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 580,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 21881
@@ -24527,6 +28283,11 @@ export const MockGames = [
       "rating": 80,
       "finished_date": "2020-04-20 18:48:18.151",
       "id": 170,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 20459
@@ -24563,6 +28324,11 @@ export const MockGames = [
       "rating": 95,
       "finished_date": null,
       "id": 134,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3225
@@ -24608,6 +28374,20 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 135,
+      "myPlatforms": [
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        },
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 7621
@@ -24656,6 +28436,13 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 799,
+        "myPlatforms": [{
+          "full_name": "PC",
+          "igdb_platform_id": 6,
+          "short_name": "PC",
+          "id": 10,
+          "igdb_name": "PC (Microsoft Windows)"
+        }],
         "person_id": 4
       },
       {
@@ -24669,6 +28456,22 @@ export const MockGames = [
         "rating": 77,
         "finished_date": null,
         "id": 538,
+        "myPlatforms": [
+          {
+            "full_name": "PC",
+            "igdb_platform_id": 6,
+            "short_name": "PC",
+            "id": 10,
+            "igdb_name": "PC (Microsoft Windows)"
+          },
+          {
+            "full_name": "PS4",
+            "igdb_platform_id": 48,
+            "short_name": "PS4",
+            "id": 11,
+            "igdb_name": "PlayStation 4"
+          }
+        ],
         "person_id": 1
       }
     ],
@@ -24706,6 +28509,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 138,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9898
@@ -24742,6 +28550,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 136,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 23352
@@ -24778,6 +28591,11 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 137,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 18694
@@ -24814,6 +28632,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 159,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 29004
@@ -24852,6 +28675,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 637,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 22798
@@ -24890,6 +28720,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 539,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 20894
@@ -24928,6 +28765,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 537,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 8874
@@ -24966,6 +28810,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 116,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 16719
@@ -25004,6 +28855,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 418,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 34927
@@ -25040,6 +28898,11 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 1459,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19457
@@ -25077,6 +28940,11 @@ export const MockGames = [
         "rating": 93.9,
         "finished_date": "2018-03-02 21:10:28.030697",
         "id": 148,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 1
       },
       {
@@ -25090,6 +28958,11 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 807,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 5
       }
     ],
@@ -25136,6 +29009,20 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 210,
+      "myPlatforms": [
+        {
+          "full_name": "Xbox 360",
+          "igdb_platform_id": 12,
+          "short_name": "Xbox 360",
+          "id": 7,
+          "igdb_name": "Xbox 360"
+        },
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 2136
@@ -25173,6 +29060,11 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 793,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 4
       },
       {
@@ -25186,6 +29078,11 @@ export const MockGames = [
         "rating": 84,
         "finished_date": null,
         "id": 146,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 1
       }
     ],
@@ -25223,6 +29120,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 23,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2595
@@ -25261,6 +29163,13 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 559,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 36872
@@ -25297,6 +29206,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 542,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19169
@@ -25333,6 +29247,11 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 234,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 27421
@@ -25369,6 +29288,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 549,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 25741
@@ -25405,6 +29329,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 706,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2004
@@ -25441,6 +29370,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 166,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 31235
@@ -25477,6 +29411,11 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 566,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 20909
@@ -25513,6 +29452,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 545,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 36631
@@ -25551,6 +29495,13 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 655,
+      "myPlatforms": [{
+        "full_name": "Switch",
+        "igdb_platform_id": 130,
+        "short_name": "Switch",
+        "id": 3,
+        "igdb_name": "Nintendo Switch"
+      }],
       "person_id": 1
     }],
     "igdb_id": 26758
@@ -25589,6 +29540,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 555,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 14790
@@ -25627,6 +29585,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 560,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 14366
@@ -25665,6 +29630,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 557,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 8967
@@ -25703,6 +29675,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 642,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 32021
@@ -25739,6 +29718,11 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 215,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 28213
@@ -25775,6 +29759,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 554,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 23181
@@ -25811,6 +29800,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 558,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 11423
@@ -25847,6 +29841,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 207,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 21602
@@ -25883,6 +29882,11 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 435,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 43166
@@ -25919,6 +29923,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 5,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 52242
@@ -25955,6 +29964,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 53,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 17719
@@ -25991,6 +30005,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 165,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 27430
@@ -26027,6 +30046,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 59,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 68444
@@ -26063,6 +30087,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 149,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 37031
@@ -26099,6 +30128,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 755,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 4754
@@ -26135,6 +30169,11 @@ export const MockGames = [
       "rating": 80,
       "finished_date": "2018-08-07 17:00:00.0",
       "id": 225,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 76946
@@ -26173,6 +30212,13 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 563,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 26401
@@ -26210,6 +30256,11 @@ export const MockGames = [
         "rating": 80,
         "finished_date": "2020-04-20 18:47:20.958",
         "id": 157,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 1
       },
       {
@@ -26223,6 +30274,11 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 794,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 4
       }
     ],
@@ -26260,6 +30316,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 40,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 81245
@@ -26296,6 +30357,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 556,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 15548
@@ -26332,6 +30398,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 153,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9307
@@ -26368,6 +30439,11 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 158,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 26948
@@ -26404,6 +30480,11 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 150,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 20787
@@ -26441,6 +30522,11 @@ export const MockGames = [
         "rating": 96,
         "finished_date": null,
         "id": 771,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 2
       },
       {
@@ -26454,6 +30540,11 @@ export const MockGames = [
         "rating": 90,
         "finished_date": null,
         "id": 565,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 1
       }
     ],
@@ -26491,6 +30582,11 @@ export const MockGames = [
       "rating": 89,
       "finished_date": null,
       "id": 449,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 36775
@@ -26529,6 +30625,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 465,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 26231
@@ -26567,6 +30670,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 757,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 9498
@@ -26605,6 +30715,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 641,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 14746
@@ -26643,6 +30760,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 543,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 23849
@@ -26681,6 +30805,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 544,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 10140
@@ -26719,6 +30850,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 541,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 5615
@@ -26757,6 +30895,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 562,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 9112
@@ -26793,6 +30938,11 @@ export const MockGames = [
       "rating": 70,
       "finished_date": "2019-07-06 00:00:00.0",
       "id": 19,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 80854
@@ -26829,6 +30979,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 466,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 35775
@@ -26865,6 +31020,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 206,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 33615
@@ -26901,6 +31061,11 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 236,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 32617
@@ -26937,6 +31102,11 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 90,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 5601
@@ -26975,6 +31145,13 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 568,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2957
@@ -27013,6 +31190,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 570,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 19163
@@ -27051,6 +31235,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 488,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 45281
@@ -27089,6 +31280,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 223,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 11503
@@ -27127,6 +31325,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 227,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 6057
@@ -27165,6 +31370,13 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 643,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7334
@@ -27203,6 +31415,13 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 344,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 11065
@@ -27241,6 +31460,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 569,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 52145
@@ -27279,6 +31505,13 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 666,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 23508
@@ -27317,6 +31550,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 28,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 5327
@@ -27355,6 +31595,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 571,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 3219
@@ -27393,6 +31640,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 464,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2552
@@ -27431,6 +31685,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 572,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 11172
@@ -27469,6 +31730,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 229,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 26678
@@ -27507,6 +31775,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 419,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 20919
@@ -27545,6 +31820,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 573,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 17158
@@ -27583,6 +31865,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 233,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 27001
@@ -27620,6 +31909,11 @@ export const MockGames = [
         "rating": 86,
         "finished_date": null,
         "id": 553,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 1
       },
       {
@@ -27633,6 +31927,11 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 801,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 4
       }
     ],
@@ -27673,6 +31972,13 @@ export const MockGames = [
         "rating": 85,
         "finished_date": null,
         "id": 100,
+        "myPlatforms": [{
+          "full_name": "Switch",
+          "igdb_platform_id": 130,
+          "short_name": "Switch",
+          "id": 3,
+          "igdb_name": "Nintendo Switch"
+        }],
         "person_id": 1
       },
       {
@@ -27686,6 +31992,13 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 792,
+        "myPlatforms": [{
+          "full_name": "Switch",
+          "igdb_platform_id": 130,
+          "short_name": "Switch",
+          "id": 3,
+          "igdb_name": "Nintendo Switch"
+        }],
         "person_id": 4
       },
       {
@@ -27699,6 +32012,13 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 805,
+        "myPlatforms": [{
+          "full_name": "Switch",
+          "igdb_platform_id": 130,
+          "short_name": "Switch",
+          "id": 3,
+          "igdb_name": "Nintendo Switch"
+        }],
         "person_id": 5
       }
     ],
@@ -27738,6 +32058,13 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 235,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 10128
@@ -27776,6 +32103,13 @@ export const MockGames = [
       "rating": 85.1,
       "finished_date": null,
       "id": 203,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 11131
@@ -27812,6 +32146,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 705,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 10960
@@ -27848,6 +32187,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 209,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 14765
@@ -27884,6 +32228,11 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 208,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 27922
@@ -27920,6 +32269,11 @@ export const MockGames = [
       "rating": 93,
       "finished_date": null,
       "id": 220,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 37088
@@ -27967,6 +32321,22 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 239,
+      "myPlatforms": [
+        {
+          "full_name": "PC",
+          "igdb_platform_id": 6,
+          "short_name": "PC",
+          "id": 10,
+          "igdb_name": "PC (Microsoft Windows)"
+        },
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 25657
@@ -28005,6 +32375,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 645,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1342
@@ -28043,6 +32420,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 644,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 20079
@@ -28081,6 +32465,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 577,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 6142
@@ -28119,6 +32510,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 575,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 21167
@@ -28155,6 +32553,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 27,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 51525
@@ -28193,6 +32596,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 722,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1293
@@ -28231,6 +32641,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 411,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 3191
@@ -28269,6 +32686,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 721,
+      "myPlatforms": [{
+        "full_name": "PS3",
+        "igdb_platform_id": 9,
+        "short_name": "PS3",
+        "id": 6,
+        "igdb_name": "PlayStation 3"
+      }],
       "person_id": 1
     }],
     "igdb_id": 8649
@@ -28305,6 +32729,11 @@ export const MockGames = [
       "rating": 96,
       "finished_date": null,
       "id": 392,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 51524
@@ -28341,6 +32770,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 79,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 10031
@@ -28377,6 +32811,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 217,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 23236
@@ -28413,6 +32852,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 48,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 25702
@@ -28449,6 +32893,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 219,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 13554
@@ -28485,6 +32934,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 142,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19297
@@ -28521,6 +32975,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 282,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 84023
@@ -28557,6 +33016,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 72,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 75498
@@ -28593,6 +33057,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 493,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 36240
@@ -28629,6 +33098,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 86,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9174
@@ -28665,6 +33139,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 52,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 12596
@@ -28701,6 +33180,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 350,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19531
@@ -28737,6 +33221,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 224,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 28842
@@ -28773,6 +33262,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 712,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7603
@@ -28809,6 +33303,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 222,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 56868
@@ -28847,6 +33346,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 495,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 20026
@@ -28885,6 +33391,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 255,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 25547
@@ -28921,6 +33434,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 129,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 34269
@@ -28957,6 +33475,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 66,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 14206
@@ -28993,6 +33516,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 141,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 15894
@@ -29029,6 +33557,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 535,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19450
@@ -29065,6 +33598,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 131,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 15490
@@ -29110,6 +33648,20 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 58,
+      "myPlatforms": [
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        },
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 20392
@@ -29146,6 +33698,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 65,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 17083
@@ -29182,6 +33739,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 51,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 54506
@@ -29218,6 +33780,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 49,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 32614
@@ -29254,6 +33821,11 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 33,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 106107
@@ -29290,6 +33862,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 579,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 6705
@@ -29326,6 +33903,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 25,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 25653
@@ -29371,6 +33953,20 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 578,
+      "myPlatforms": [
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        },
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 16999
@@ -29407,6 +34003,11 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 1465,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1081
@@ -29445,6 +34046,13 @@ export const MockGames = [
       "rating": 91,
       "finished_date": null,
       "id": 657,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 75380
@@ -29481,6 +34089,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 228,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 22399
@@ -29517,6 +34130,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 230,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 14404
@@ -29553,6 +34171,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 31,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 13204
@@ -29598,6 +34221,20 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 99,
+      "myPlatforms": [
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        },
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 11590
@@ -29634,6 +34271,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 231,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 74528
@@ -29670,6 +34312,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 132,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 37294
@@ -29715,6 +34362,20 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 413,
+      "myPlatforms": [
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        },
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 18366
@@ -29751,6 +34412,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 62,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 18812
@@ -29787,6 +34453,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 152,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 27150
@@ -29824,6 +34495,11 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 1426,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 4
       },
       {
@@ -29837,6 +34513,11 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 414,
+        "myPlatforms": [{
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }],
         "person_id": 1
       }
     ],
@@ -29874,6 +34555,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 696,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 23689
@@ -29910,6 +34596,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 112,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 20329
@@ -29946,6 +34637,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 143,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 27353
@@ -29985,6 +34681,13 @@ export const MockGames = [
         "rating": 93,
         "finished_date": null,
         "id": 175,
+        "myPlatforms": [{
+          "full_name": "PC",
+          "igdb_platform_id": 6,
+          "short_name": "PC",
+          "id": 10,
+          "igdb_name": "PC (Microsoft Windows)"
+        }],
         "person_id": 1
       },
       {
@@ -29998,6 +34701,13 @@ export const MockGames = [
         "rating": 99,
         "finished_date": null,
         "id": 770,
+        "myPlatforms": [{
+          "full_name": "PC",
+          "igdb_platform_id": 6,
+          "short_name": "PC",
+          "id": 10,
+          "igdb_name": "PC (Microsoft Windows)"
+        }],
         "person_id": 2
       }
     ],
@@ -30035,6 +34745,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 773,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3078
@@ -30071,6 +34786,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 774,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 3077
@@ -30107,6 +34827,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 775,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 978
@@ -30143,6 +34868,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 776,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 5574
@@ -30179,6 +34909,11 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 777,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 14593
@@ -30215,6 +34950,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 778,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 18394
@@ -30251,6 +34991,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 779,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 11157
@@ -30287,6 +35032,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 780,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 13164
@@ -30323,6 +35073,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 781,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 532
@@ -30359,6 +35114,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 782,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 17994
@@ -30395,6 +35155,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 783,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9546
@@ -30431,6 +35196,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 784,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9667
@@ -30467,6 +35237,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 785,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 34951
@@ -30503,6 +35278,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 786,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 21604
@@ -30539,6 +35319,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 787,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 54486
@@ -30575,6 +35360,11 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 809,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 96213
@@ -30607,6 +35397,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 810,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 16999
@@ -30643,6 +35434,11 @@ export const MockGames = [
       "rating": 96,
       "finished_date": null,
       "id": 1354,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9254
@@ -30679,6 +35475,11 @@ export const MockGames = [
       "rating": 66,
       "finished_date": null,
       "id": 1355,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1985
@@ -30715,6 +35516,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1356,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 20871
@@ -30751,6 +35557,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1357,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 5328
@@ -30787,6 +35598,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1358,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 36766
@@ -30823,6 +35639,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1359,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19874
@@ -30859,6 +35680,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1360,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 26709
@@ -30895,6 +35721,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1361,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 23581
@@ -30931,6 +35762,11 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 1362,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7684
@@ -30967,6 +35803,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1363,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19935
@@ -31003,6 +35844,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1364,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 35283
@@ -31039,6 +35885,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1365,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 18908
@@ -31075,6 +35926,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1366,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19545
@@ -31111,6 +35967,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1367,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 54634
@@ -31147,6 +36008,11 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 1368,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 27117
@@ -31183,6 +36049,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1369,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 23188
@@ -31219,6 +36090,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1370,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 61884
@@ -31255,6 +36131,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1371,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 103327
@@ -31291,6 +36172,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1372,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 24428
@@ -31327,6 +36213,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1373,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 11397
@@ -31363,6 +36254,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1375,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 7211
@@ -31399,6 +36295,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1376,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 24426
@@ -31435,6 +36336,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1377,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 10232
@@ -31471,6 +36377,11 @@ export const MockGames = [
       "rating": 92,
       "finished_date": null,
       "id": 1378,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 9643
@@ -31509,6 +36420,13 @@ export const MockGames = [
       "rating": 94,
       "finished_date": null,
       "id": 1379,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 19565
@@ -31545,6 +36463,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1380,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 8366
@@ -31581,6 +36504,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1381,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 27927
@@ -31617,6 +36545,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1382,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 26725
@@ -31653,6 +36586,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1383,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 11002
@@ -31689,6 +36627,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1384,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 27343
@@ -31725,6 +36668,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1385,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 19407
@@ -31761,6 +36709,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1386,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 21994
@@ -31797,6 +36750,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1387,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 18637
@@ -31833,6 +36791,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1388,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 27717
@@ -31869,6 +36832,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1389,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 27762
@@ -31905,6 +36873,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1390,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 59573
@@ -31941,6 +36914,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1391,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 75096
@@ -31977,6 +36955,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1392,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 55189
@@ -32009,6 +36992,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1393,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 55189
@@ -32045,6 +37029,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1394,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 26878
@@ -32083,6 +37072,13 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 1395,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 9919
@@ -32121,6 +37117,13 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 1396,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 11148
@@ -32159,6 +37162,13 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 1397,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 25076
@@ -32197,6 +37207,13 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 1400,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 11157
@@ -32235,6 +37252,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1401,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 52018
@@ -32273,6 +37297,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1403,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 19554
@@ -32311,6 +37342,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1404,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 34705
@@ -32358,6 +37396,22 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 1406,
+      "myPlatforms": [
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        },
+        {
+          "full_name": "PC",
+          "igdb_platform_id": 6,
+          "short_name": "PC",
+          "id": 10,
+          "igdb_name": "PC (Microsoft Windows)"
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 9727
@@ -32396,6 +37450,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1407,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 75244
@@ -32434,6 +37495,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1408,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 12595
@@ -32472,6 +37540,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1409,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 494
@@ -32510,6 +37585,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1410,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 24501
@@ -32548,6 +37630,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1411,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 15852
@@ -32586,6 +37675,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1412,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 14389
@@ -32624,6 +37720,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1413,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 36912
@@ -32662,6 +37765,13 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 1414,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 13171
@@ -32700,6 +37810,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1415,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 20074
@@ -32738,6 +37855,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1416,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 8440
@@ -32776,6 +37900,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1417,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 19959
@@ -32814,6 +37945,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1418,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 5895
@@ -32852,6 +37990,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1419,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 20069
@@ -32890,6 +38035,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1421,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 106079
@@ -32928,6 +38080,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1422,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 19572
@@ -32966,6 +38125,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1423,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 70833
@@ -33004,6 +38170,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1424,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 11492
@@ -33042,6 +38215,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1425,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7208
@@ -33078,6 +38258,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1428,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 18918
@@ -33114,6 +38299,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1429,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 26808
@@ -33159,6 +38349,20 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1430,
+      "myPlatforms": [
+        {
+          "full_name": "PS4",
+          "igdb_platform_id": 48,
+          "short_name": "PS4",
+          "id": 11,
+          "igdb_name": "PlayStation 4"
+        },
+        {
+          "full_name": "Steam",
+          "short_name": "Steam",
+          "id": 1
+        }
+      ],
       "person_id": 1
     }],
     "igdb_id": 19333
@@ -33195,6 +38399,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1431,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 23851
@@ -33231,6 +38440,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1432,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 36044
@@ -33267,6 +38481,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1433,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 15911
@@ -33303,6 +38522,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1434,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 118746
@@ -33339,6 +38563,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1435,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 27435
@@ -33375,6 +38604,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1436,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 74881
@@ -33411,6 +38645,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1437,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 36718
@@ -33447,6 +38686,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1438,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 52014
@@ -33483,6 +38727,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1439,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 69483
@@ -33519,6 +38768,11 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 1440,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 89560
@@ -33555,6 +38809,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1441,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 105442
@@ -33591,6 +38850,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1442,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 16707
@@ -33627,6 +38891,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1443,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 20927
@@ -33663,6 +38932,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1444,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 95028
@@ -33699,6 +38973,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1446,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 96027
@@ -33735,6 +39014,11 @@ export const MockGames = [
       "rating": 56,
       "finished_date": null,
       "id": 1447,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 97690
@@ -33771,6 +39055,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1448,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 56867
@@ -33807,6 +39096,11 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 1449,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 8983
@@ -33843,6 +39137,11 @@ export const MockGames = [
       "rating": 92,
       "finished_date": null,
       "id": 1450,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 83731
@@ -33879,6 +39178,11 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 1451,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 37095
@@ -33915,6 +39219,11 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 1452,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 13226
@@ -33951,6 +39260,11 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 1453,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 23719
@@ -33987,6 +39301,11 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 1454,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 18279
@@ -34023,6 +39342,11 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 1455,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 26580
@@ -34059,6 +39383,11 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 1456,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 103331
@@ -34095,6 +39424,11 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 1457,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 33680
@@ -34131,6 +39465,11 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1458,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 15572
@@ -34167,6 +39506,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1460,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 33135
@@ -34203,6 +39547,11 @@ export const MockGames = [
       "rating": 89,
       "finished_date": "2020-04-20 18:45:59.414",
       "id": 1461,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 120607
@@ -34241,6 +39590,13 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1462,
+      "myPlatforms": [{
+        "full_name": "Xbox One",
+        "igdb_platform_id": 49,
+        "short_name": "Xbox One",
+        "id": 4,
+        "igdb_name": "Xbox One"
+      }],
       "person_id": 1
     }],
     "igdb_id": 11186
@@ -34279,6 +39635,13 @@ export const MockGames = [
       "rating": 99,
       "finished_date": "2019-07-31 21:00:00.0",
       "id": 1463,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 24917
@@ -34317,6 +39680,13 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1464,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 28380
@@ -34353,6 +39723,11 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1466,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 125021
@@ -34389,6 +39764,11 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 1467,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 126098
@@ -34425,6 +39805,11 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 1468,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 27136
@@ -34461,6 +39846,11 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 1469,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 28815
@@ -34497,6 +39887,11 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1473,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 103054
@@ -34533,6 +39928,11 @@ export const MockGames = [
       "rating": 92,
       "finished_date": null,
       "id": 1471,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 8351
@@ -34569,6 +39969,11 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 1472,
+      "myPlatforms": [{
+        "full_name": "Steam",
+        "short_name": "Steam",
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 34469
@@ -34607,6 +40012,13 @@ export const MockGames = [
       "rating": 91,
       "finished_date": null,
       "id": 1475,
+      "myPlatforms": [{
+        "full_name": "Switch",
+        "igdb_platform_id": 130,
+        "short_name": "Switch",
+        "id": 3,
+        "igdb_name": "Nintendo Switch"
+      }],
       "person_id": 1
     }],
     "igdb_id": 28414
@@ -34645,6 +40057,13 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 1476,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 110411
@@ -34683,6 +40102,13 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 1477,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 24920
@@ -34721,6 +40147,13 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 1478,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 111654
@@ -34759,6 +40192,13 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1479,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 21062
@@ -34797,6 +40237,13 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1480,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 14362
@@ -34835,6 +40282,13 @@ export const MockGames = [
       "rating": 50,
       "finished_date": null,
       "id": 1481,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 96476
@@ -34873,6 +40327,13 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 1482,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 26195
@@ -34911,6 +40372,13 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 1485,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 6036
@@ -34949,6 +40417,13 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 1486,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 12571
@@ -34987,6 +40462,13 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 1487,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 14390
@@ -35025,6 +40507,13 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 1488,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 17447
@@ -35063,6 +40552,13 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1490,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 10962
@@ -35101,6 +40597,13 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 1492,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 76966
@@ -35139,6 +40642,13 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1493,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 19839
@@ -35177,6 +40687,13 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 1494,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 37094
@@ -35215,6 +40732,13 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 1495,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 21063
@@ -35253,6 +40777,13 @@ export const MockGames = [
       "rating": 92,
       "finished_date": null,
       "id": 1496,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 103329
@@ -35291,6 +40822,13 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1497,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 26166
@@ -35329,6 +40867,13 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 1498,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 27910
@@ -35367,6 +40912,13 @@ export const MockGames = [
       "rating": 56,
       "finished_date": null,
       "id": 1499,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 116753
@@ -35405,6 +40957,13 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1500,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 104890
@@ -35437,6 +40996,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1501,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 122659
@@ -35475,6 +41035,13 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 1502,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 44122
@@ -35513,6 +41080,13 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 1503,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 55027
@@ -35551,6 +41125,13 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 1504,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 5637
@@ -35589,6 +41170,13 @@ export const MockGames = [
       "rating": 42,
       "finished_date": null,
       "id": 1505,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 18167
@@ -35627,6 +41215,13 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 1506,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 14763
@@ -35665,6 +41260,13 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 1507,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 9806
@@ -35703,6 +41305,13 @@ export const MockGames = [
       "rating": 50,
       "finished_date": null,
       "id": 1508,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 103261
@@ -35741,6 +41350,13 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 1509,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 36543
@@ -35773,6 +41389,7 @@ export const MockGames = [
       "rating": 45,
       "finished_date": null,
       "id": 1510,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 23177
@@ -35811,6 +41428,13 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 1511,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7685
@@ -35849,6 +41473,13 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 1512,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2738
@@ -35887,6 +41518,13 @@ export const MockGames = [
       "rating": 64,
       "finished_date": null,
       "id": 1513,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 18857
@@ -35925,6 +41563,13 @@ export const MockGames = [
       "rating": 64,
       "finished_date": null,
       "id": 1514,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 5541
@@ -35963,6 +41608,13 @@ export const MockGames = [
       "rating": 50,
       "finished_date": null,
       "id": 1517,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 19554
@@ -36001,6 +41653,13 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1518,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 27094
@@ -36039,6 +41698,13 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1519,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 28574
@@ -36077,6 +41743,13 @@ export const MockGames = [
       "rating": 71,
       "finished_date": null,
       "id": 1520,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 36846
@@ -36115,6 +41788,13 @@ export const MockGames = [
       "rating": 63,
       "finished_date": null,
       "id": 1521,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 9241
@@ -36153,6 +41833,13 @@ export const MockGames = [
       "rating": 45,
       "finished_date": null,
       "id": 1522,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 21642
@@ -36191,6 +41878,13 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 1523,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 114058
@@ -36229,6 +41923,13 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 1524,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 1121
@@ -36267,6 +41968,13 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 1525,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 24463
@@ -36299,6 +42007,7 @@ export const MockGames = [
       "rating": 48,
       "finished_date": null,
       "id": 1526,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 115272
@@ -36337,6 +42046,13 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 1527,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 119259
@@ -36375,6 +42091,13 @@ export const MockGames = [
       "rating": 93,
       "finished_date": null,
       "id": 1528,
+      "myPlatforms": [{
+        "full_name": "Switch",
+        "igdb_platform_id": 130,
+        "short_name": "Switch",
+        "id": 3,
+        "igdb_name": "Nintendo Switch"
+      }],
       "person_id": 1
     }],
     "igdb_id": 26764
@@ -36413,6 +42136,13 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 1529,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 13
@@ -36451,6 +42181,13 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 1530,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 17
@@ -36483,6 +42220,7 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 1531,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 50186
@@ -36521,6 +42259,13 @@ export const MockGames = [
       "rating": 3,
       "finished_date": null,
       "id": 1532,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2487
@@ -36559,6 +42304,13 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 1533,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 744
@@ -36597,6 +42349,13 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 1534,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 2238
@@ -36635,6 +42394,13 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 1535,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 7501
@@ -36673,6 +42439,13 @@ export const MockGames = [
       "rating": 59,
       "finished_date": null,
       "id": 1536,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 8482
@@ -36705,6 +42478,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 1537,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 50323
@@ -36743,6 +42517,13 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 1538,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 863
@@ -36781,6 +42562,13 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1539,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 9231
@@ -36813,6 +42601,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1540,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 35968
@@ -36845,6 +42634,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1541,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 35967
@@ -36883,6 +42673,13 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 1542,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 103054
@@ -36921,6 +42718,13 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 1543,
+      "myPlatforms": [{
+        "full_name": "PS4",
+        "igdb_platform_id": 48,
+        "short_name": "PS4",
+        "id": 11,
+        "igdb_name": "PlayStation 4"
+      }],
       "person_id": 1
     }],
     "igdb_id": 36950
@@ -36953,6 +42757,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": "2020-04-21 14:39:34.788",
       "id": 1544,
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 14177
@@ -36991,6 +42796,13 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1545,
+      "myPlatforms": [{
+        "full_name": "PC",
+        "igdb_platform_id": 6,
+        "short_name": "PC",
+        "id": 10,
+        "igdb_name": "PC (Microsoft Windows)"
+      }],
       "person_id": 1
     }],
     "igdb_id": 103298
