@@ -1,9 +1,11 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {GameService} from '../../services/game.service';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
-import {Platform} from '../../interfaces/Enum/Platform';
 import {PersonService} from '../../services/person.service';
 import {Game} from '../../interfaces/Model/Game';
+import {PlatformService} from '../../services/platform.service';
+import {GamePlatform} from '../../interfaces/Model/GamePlatform';
+import {ArrayUtil} from '../../utility/ArrayUtil';
 
 @Component({
   selector: 'mm-game-detail',
@@ -21,9 +23,15 @@ export class GameDetailComponent implements OnInit {
 
   titleEditMode = false;
 
+  allPlatforms: GamePlatform[] = [];
+
   constructor(private gameService: GameService,
               public activeModal: NgbActiveModal,
-              public personService: PersonService) { }
+              public personService: PersonService,
+              private platformService: PlatformService) {
+    this.platformService.platforms.subscribe(platforms => ArrayUtil.refreshArray(this.allPlatforms, platforms));
+    this.platformService.maybeRefreshCache();
+  }
 
   ngOnInit(): void {
     this.finished = !!this.game.personGame && !!this.game.personGame.finished_date.value;
@@ -46,19 +54,6 @@ export class GameDetailComponent implements OnInit {
   onFieldEdit() {
     this.changedGameFields = this.game.getChangedFields();
     this.changedPersonFields = this.game.personGame.getChangedFields();
-  }
-
-  getPlatformOptions(): string[] {
-    return Object.keys(Platform);
-  }
-
-  getDisplayValueOf(platformOption: string): string {
-    return Platform[platformOption];
-  }
-
-  updatePlatform(platform) {
-    this.game.platform.value = this.getDisplayValueOf(platform);
-    this.onFieldEdit();
   }
 
   hasPerson(): boolean {

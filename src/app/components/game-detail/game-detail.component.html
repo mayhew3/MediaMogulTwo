@@ -36,19 +36,6 @@
   <form>
     <div class="row">
 
-      <!--PLATFORM-->
-      <div class="col-4">
-        <label class="col-form-label" for="platform">Platform</label>
-        <select class="custom-select darkInput"
-                id="platform"
-                name="platform"
-                [(ngModel)]="game.platform.value">
-          <option *ngFor="let platform of getPlatformOptions()"
-                  [selected]="getDisplayValueOf(platform) === game.platform.value"
-                  (click)="updatePlatform(platform)">{{getDisplayValueOf(platform)}}</option>
-        </select>
-      </div>
-
       <!--METACRITIC HINT-->
       <div class="col-4">
         <label class="col-form-label" for="metacriticHint">Metacritic Hint</label>

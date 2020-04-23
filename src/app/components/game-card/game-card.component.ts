@@ -4,7 +4,6 @@ import {ModalDismissReasons, NgbModal, NgbModalRef} from '@ng-bootstrap/ng-boots
 import {PlaytimePopupComponent} from '../playtime-popup/playtime-popup.component';
 import {GameDetailComponent} from '../game-detail/game-detail.component';
 import {GameListComponent} from '../game-list/game-list.component';
-import {Platform} from '../../interfaces/Enum/Platform';
 import {GameService} from '../../services/game.service';
 
 @Component({
@@ -75,7 +74,7 @@ export class GameCardComponent implements OnInit {
   }
 
   isSteamGame(): boolean {
-    return this.game.hasPlatform(Platform.Steam);
+    return this.game.hasPlatform('Steam');
   }
 
   async addToMyGames(): Promise<any> {

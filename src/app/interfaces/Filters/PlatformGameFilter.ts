@@ -2,7 +2,6 @@ import {GameFilterOption} from './GameFilterOption';
 import {GameFilterWithOptions} from './GameFilterWithOptions';
 import {Game} from '../Model/Game';
 import * as _ from 'underscore';
-import {Platform} from '../Enum/Platform';
 import {PlatformService} from '../../services/platform.service';
 import {GamePlatform} from '../Model/GamePlatform';
 import {ArrayUtil} from '../../utility/ArrayUtil';
