@@ -192,6 +192,7 @@ export class AddGameComponent implements OnInit {
       game.personGame.game_id.value = game.id.value;
       game.personGame.rating.value = this.rating;
 
+      // todo: add ALL game platforms for game
       _.forEach(match.platforms, platform => {
         this.getOrCreateExistingGamePlatform(platform, game);
       });
