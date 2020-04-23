@@ -10,11 +10,12 @@ import {BehaviorSubject, Subject} from 'rxjs';
 import {PlatformService} from './platform.service';
 import {GamePlatform} from '../interfaces/Model/GamePlatform';
 import {Person} from '../interfaces/Model/Person';
+import {first} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
-export class GameService implements OnInit, OnDestroy {
+export class GameService implements OnDestroy {
   private _gamesUrl = 'api/games';
   private _games$ = new BehaviorSubject<Game[]>([]);
   private _dataStore: {games: Game[]} = {games: []};
@@ -24,17 +25,21 @@ export class GameService implements OnInit, OnDestroy {
 
   private me: Person;
   private allPlatforms: GamePlatform[];
+  private gameRefreshCount = 0;
 
   constructor(private http: HttpClient,
               private arrayService: ArrayService,
               private personService: PersonService,
               private platformService: PlatformService) {
+    this.platformService.platforms.subscribe(platforms => {
+      this.allPlatforms = platforms;
+      if (!platforms) {
+        console.log(`GameService updated with undefined platforms array.`);
+      } else {
+        console.log(`GameService updated with ${platforms.length} platforms.`);
+      }
+    });
     this.platformService.maybeRefreshCache();
-  }
-
-
-  ngOnInit(): void {
-
   }
 
   // public observable for all changes to game list
@@ -112,11 +117,12 @@ export class GameService implements OnInit, OnDestroy {
   // PRIVATE CACHE MANAGEMENT METHODS
 
   private refreshCache() {
-    this.platformService.platforms.subscribe(platforms => {
-      this.personService.me$.subscribe(person => {
-        this.me = person;
-        if (!!platforms && platforms.length > 0) {
-          this.allPlatforms = platforms;
+    this.personService.me$.subscribe(person => {
+      this.me = person;
+      this.platformService.platforms
+        // only refresh the games the FIRST time platforms returns a valid array
+        .pipe(first(platforms => !!platforms && platforms.length > 0))
+        .subscribe(platforms => {
           const personID = person.id.value;
           const payload = {
             person_id: personID.toString()
@@ -129,11 +135,12 @@ export class GameService implements OnInit, OnDestroy {
             // .pipe(takeUntil(this._destroy$))
             .subscribe(gameObjs => {
               this._dataStore.games = this.convertObjectsToGames(gameObjs, platforms);
+              this.gameRefreshCount++;
+              console.log(`Refreshing games for the ${this.gameRefreshCount} time.`);
               this.pushGameListChange();
               this._fetching = false;
             });
-        }
-      });
+        });
     });
   }
 
