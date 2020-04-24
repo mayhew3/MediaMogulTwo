@@ -1,1 +1,49 @@
-<p>duplicate-detail works!</p>
+<div class="modal-header">
+  <h1>Duplicates</h1>
+  <button type="button"
+          class="btn btn-warning close"
+          aria-label="Close"
+          (click)="dismiss()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="modal-body">
+
+  <div class="row">
+    <div class="col">
+      ID
+    </div>
+    <div class="col"
+         *ngFor="let game of gameGroup.games">
+      {{game.id.value}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      Title
+    </div>
+    <div class="col"
+         *ngFor="let game of gameGroup.games">
+      {{game.title.value}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      Platform
+    </div>
+    <div class="col"
+         *ngFor="let game of gameGroup.games">
+      {{game.platform.value}}
+    </div>
+  </div>
+
+</div>
+
+<div class="modal-footer">
+  <button type="button"
+          class="btn btn-primary"
+          (click)="submitAndClose()">Submit and Close</button>
+</div>

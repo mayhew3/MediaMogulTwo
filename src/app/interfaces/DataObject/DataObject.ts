@@ -8,6 +8,8 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Subject} from 'rxjs';
 import {OnDestroy} from '@angular/core';
 import {takeUntil} from 'rxjs/operators';
+import {ArrayUtil} from '../../utility/ArrayUtil';
+import * as _ from 'underscore';
 
 enum EditMode {INSERT, UPDATE}
 
@@ -36,6 +38,14 @@ export abstract class DataObject implements OnDestroy {
       }
     }
     return this;
+  }
+
+  get fieldValues(): FieldValue<any>[] {
+    return ArrayUtil.cloneArray(this.allFieldValues);
+  }
+
+  getFieldWithName(fieldName: string): FieldValue<any> {
+    return _.find(this.allFieldValues, fieldValue => fieldValue.getFieldName() === fieldName);
   }
 
   ngOnDestroy(): void {

@@ -4,6 +4,8 @@ import {Game} from '../../interfaces/Model/Game';
 import * as _ from 'underscore';
 import {NgbModal, NgbModalRef} from '@ng-bootstrap/ng-bootstrap';
 import {DuplicateDetailComponent} from '../duplicate-detail/duplicate-detail.component';
+import {FieldValue} from '../../interfaces/DataObject/FieldValue';
+import {ArrayUtil} from '../../utility/ArrayUtil';
 
 @Component({
   selector: 'mm-duplicate-resolution',
@@ -45,8 +47,9 @@ export class DuplicateResolutionComponent implements OnInit {
     });
   }
 
-  async openDetailPopup() {
+  async openDetailPopup(gameGroup: GameGroup) {
     const modalRef = this.modalService.open(DuplicateDetailComponent, {size: 'lg'});
+    modalRef.componentInstance.gameGroup = gameGroup;
     await this.handlePopupResult(modalRef);
   }
 
@@ -64,23 +67,48 @@ export class DuplicateResolutionComponent implements OnInit {
 export class GameGroup {
   igdb_id: number;
 
-  constructor(private games: Game[]) {
-    this.igdb_id = games[0].igdb_id.value;
+  constructor(private _games: Game[]) {
+    this.igdb_id = _games[0].igdb_id.value;
+  }
+
+  get games(): Game[] {
+    return ArrayUtil.cloneArray(this._games);
   }
 
   getTitles(): string[] {
-    const titles = _.map(this.games, game => game.title.value);
+    const titles = _.map(this._games, game => game.title.value);
     return _.uniq(titles);
   }
 
   getPlatforms(): string[] {
-    return _.map(this.games, game => game.platform.value);
+    return _.map(this._games, game => game.platform.value);
   }
 
   getFirstPoster(): string[] {
-    const posters = _.map(this.games, game => 'https://images.igdb.com/igdb/image/upload/t_720p/' + game.igdb_poster.value +  '.jpg');
+    const posters = _.map(this._games, game => 'https://images.igdb.com/igdb/image/upload/t_720p/' + game.igdb_poster.value +  '.jpg');
     const compacted = _.compact(posters);
     return compacted.length > 0 ? compacted[0] : null;
   }
 
+
+
+  getFieldsWithDifferences(): string[] {
+    const fieldsWithDiffs: string[] = [];
+    _.forEach(this._games[0].fieldValues, fieldValue => {
+      const fieldName = fieldValue.getFieldName();
+      const fieldsToExclude = ['title', 'platform', 'id', 'date_added'];
+      if (!_.contains(fieldsToExclude, fieldName)) {
+        const allValuesForField = _.map(this._games, game => game.getFieldWithName(fieldName).value);
+        const uniqued = _.uniq(allValuesForField);
+        if (uniqued.length > 1) {
+          fieldsWithDiffs.push(fieldName);
+        }
+      }
+    });
+    return fieldsWithDiffs;
+  }
+
+  getFieldsWithName(fieldName: string): FieldValue<any>[] {
+    return _.map(this._games, game => game.getFieldWithName(fieldName));
+  }
 }
