@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {GameService} from '../../services/game.service';
 import {Game} from '../../interfaces/Model/Game';
 import * as _ from 'underscore';
+import {NgbModal, NgbModalRef} from '@ng-bootstrap/ng-bootstrap';
+import {DuplicateDetailComponent} from '../duplicate-detail/duplicate-detail.component';
 
 @Component({
   selector: 'mm-duplicate-resolution',
@@ -13,7 +15,10 @@ export class DuplicateResolutionComponent implements OnInit {
   games: Game[];
   gameGroups: GameGroup[];
 
-  constructor(private gameService: GameService) {
+  closeResult = '';
+
+  constructor(private gameService: GameService,
+              private modalService: NgbModal) {
     this.gameService.games.subscribe(incomingGames => {
       this.games = incomingGames;
       this.splitGamesIntoGroups();
@@ -39,9 +44,24 @@ export class DuplicateResolutionComponent implements OnInit {
       }
     });
   }
+
+  async openDetailPopup() {
+    const modalRef = this.modalService.open(DuplicateDetailComponent, {size: 'lg'});
+    await this.handlePopupResult(modalRef);
+  }
+
+  async handlePopupResult(modalRef: NgbModalRef) {
+    try {
+      const result = await modalRef.result;
+      this.closeResult = `Closed with: ${result}`;
+    } catch (err) {
+      this.closeResult = `Dismissed`;
+    }
+  }
+
 }
 
-class GameGroup {
+export class GameGroup {
   igdb_id: number;
 
   constructor(private games: Game[]) {

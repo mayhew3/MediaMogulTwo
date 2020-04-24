@@ -19,6 +19,7 @@ import {AppRoutingModule} from './app-routing.module';
 import { ProfileComponent } from './components/profile/profile.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DuplicateResolutionComponent } from './components/duplicate-resolution/duplicate-resolution.component';
+import { DuplicateDetailComponent } from './components/duplicate-detail/duplicate-detail.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { DuplicateResolutionComponent } from './components/duplicate-resolution/
     BrowseGamesComponent,
     ProfileComponent,
     DashboardComponent,
-    DuplicateResolutionComponent
+    DuplicateResolutionComponent,
+    DuplicateDetailComponent
   ],
   imports: [
     BrowserModule,
