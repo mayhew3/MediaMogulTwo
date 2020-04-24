@@ -86,7 +86,8 @@ export class DuplicateDetailComponent implements OnInit {
     }
   }
 
-  submitAndClose() {
+  async submitAndClose() {
+    await this.gameGroup.resolve();
     this.activeModal.close('Submit click');
   }
 

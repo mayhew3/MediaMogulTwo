@@ -50,6 +50,21 @@ input[type=number] {
   border-radius: 5px;
 }
 
+.unresolvedCard {
+  background-color: $gray-800;
+}
+
+.resolvedCard {
+  background-color: $black;
+}
+
+.resolutionCard {
+  padding: 7px;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
 .gameImage {
   object-fit: contain;
   max-width: 100%;

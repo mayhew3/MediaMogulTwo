@@ -30,6 +30,14 @@ export class DuplicateResolutionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  cardClass(gameGroup: GameGroup): string {
+    if (!gameGroup.resolved) {
+      return 'unresolvedCard';
+    } else {
+      return 'resolvedCard';
+    }
+  }
+
   splitGamesIntoGroups(): void {
     this.gameGroups = [];
 
@@ -68,6 +76,7 @@ export class GameGroup {
   igdb_id: number;
   gameToKeep: Game;
   fieldOverrides: any[] = [];
+  resolved = false;
 
   constructor(private _games: Game[]) {
     this.igdb_id = _games[0].igdb_id.value;
@@ -157,4 +166,7 @@ export class GameGroup {
     return fieldsWithDiffs;
   }
 
+  async resolve() {
+    this.resolved = true;
+  }
 }

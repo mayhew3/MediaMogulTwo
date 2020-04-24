@@ -3,7 +3,8 @@
     <div class="col-4 gameCard"
          *ngFor="let gameGroup of gameGroups">
 
-      <div class="gameCardInside"
+      <div class="resolutionCard"
+           [ngClass]="cardClass(gameGroup)"
            (click)="openDetailPopup(gameGroup)">
 
         <div class="row">
