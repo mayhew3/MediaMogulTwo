@@ -91,6 +91,12 @@ export class GameService implements OnDestroy {
     this.pushGameListChange();
   }
 
+  async addPersonGame(game: Game, personGame: PersonGame): Promise<PersonGame> {
+    game.personGame = await personGame.commit(this.http);
+    this.pushGameListChange();
+    return game.personGame;
+  }
+
   async updateGame(game: Game): Promise<any> {
     await game.commit(this.http);
     this.pushGameListChange();

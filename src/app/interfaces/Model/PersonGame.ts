@@ -40,6 +40,19 @@ export class PersonGame extends DataObject {
     return this;
   }
 
+  protected makeChangesToInsertPayload(json: any): any {
+    const base = super.makeChangesToInsertPayload(json);
+    base.myPlatforms = [];
+    _.forEach(this.myPlatforms, myPlatform => {
+      if (!myPlatform.id) {
+        base.myPlatforms.push(myPlatform.getChangedFields());
+      } else {
+        base.myPlatforms.push({id: myPlatform.id.value});
+      }
+    });
+    return base;
+  }
+
   getLastPlayedFormat(): string {
     const thisYear = (new Date()).getFullYear();
 

@@ -104,11 +104,20 @@ export class AddGameComponent implements OnInit {
   async handleAddClick(match: any, platform: any) {
     let game: Game = this.findMatchingGameForPlatform(match);
     if (!game) {
-      game = await this.addGame(match, platform);
+      await this.addGame(match, platform);
+    } else {
+      await this.addToMyGames(game, platform);
     }
-
-    await this.gameService.addToMyGames(game, this.rating);
     platform.owned = true;
+  }
+
+  async addToMyGames(game: Game, platform: any) {
+    const personGame = new PersonGame(this.platformService, this.allPlatforms);
+    personGame.person_id.value = this.me.id.value;
+    personGame.game_id.value = game.id.value;
+    personGame.rating.value = this.rating;
+    this.getOrCreateMyGamePlatform(platform, personGame);
+    await this.gameService.addPersonGame(game, personGame);
   }
 
   private getOrCreateExistingGamePlatform(platform: any, game: Game): void {

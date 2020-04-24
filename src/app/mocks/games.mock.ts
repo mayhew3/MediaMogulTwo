@@ -20385,23 +20385,7 @@ export const MockGames = [
     "igdb_poster": "co1p98",
     "howlong_extras": 65,
     "id": 671,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2017-03-28 21:05:00.931",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 60,
-      "last_played": null,
-      "rating": 50,
-      "finished_date": null,
-      "id": 408,
-      "myPlatforms": [
-        {"id": 5},
-        {"id": 3}
-      ],
-      "person_id": 1
-    }],
+    "person_games": [],
     "igdb_id": 7346
   },
   {
