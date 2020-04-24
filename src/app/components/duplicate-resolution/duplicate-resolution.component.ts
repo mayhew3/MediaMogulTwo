@@ -108,7 +108,28 @@ export class GameGroup {
     return fieldsWithDiffs;
   }
 
-  getFieldsWithName(fieldName: string): FieldValue<any>[] {
-    return _.map(this._games, game => game.getFieldWithName(fieldName));
+  getPersonFieldsWithDifferences(): string[] {
+    const fieldsWithDiffs: string[] = [];
+    const gamesWithPerson = _.filter(this.games, game => !!game.personGame);
+    if (gamesWithPerson.length == 0) {
+      return [];
+    } else {
+      _.forEach(gamesWithPerson[0].personGame.fieldValues, fieldValue => {
+        const fieldName = fieldValue.getFieldName();
+        const fieldsToExclude = ['id', 'date_added'];
+        if (!_.contains(fieldsToExclude, fieldName)) {
+          const allValuesForField = _.map(gamesWithPerson, game => game.personGame.getFieldWithName(fieldName).value);
+          const uniqued = _.uniq(allValuesForField);
+          if (uniqued.length > 1) {
+            fieldsWithDiffs.push(fieldName);
+          }
+        }
+      });
+    }
+    return fieldsWithDiffs;
+  }
+
+  getPersonFieldsWithName(fieldName: string): FieldValue<any>[] {
+    return _.map(this._games, game => !game.person ? 'n/a' : game.person.getFieldWithName(fieldName));
   }
 }
