@@ -131,6 +131,16 @@ export class AddGameComponent implements OnInit {
     platform.owned = true;
   }
 
+  async addExistingWithMyPlatform(match: any, platform: GamePlatform) {
+    const game: Game = this.findMatchingGameForPlatform(match);
+    const personGame = new PersonGame(this.platformService, this.allPlatforms);
+    personGame.person_id.value = this.me.id.value;
+    personGame.game_id.value = game.id.value;
+    personGame.rating.value = this.rating;
+    personGame.addToMyPlatforms(platform);
+    await this.gameService.addPersonGame(game, personGame);
+  }
+
   async addToMyGames(game: Game, platform: any) {
     const personGame = new PersonGame(this.platformService, this.allPlatforms);
     personGame.person_id.value = this.me.id.value;
