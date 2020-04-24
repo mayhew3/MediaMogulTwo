@@ -40,6 +40,17 @@
     </div>
   </div>
 
+  <div class="row"
+       *ngFor="let fieldName of gameGroup.getFieldsWithDifferences()">
+    <div class="col">
+      {{fieldName}}
+    </div>
+    <div class="col"
+         *ngFor="let game of gameGroup.games">
+      {{game.getFieldWithName(fieldName).value}}
+    </div>
+  </div>
+
 </div>
 
 <div class="modal-footer">
