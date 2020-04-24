@@ -153,10 +153,41 @@ async function addAvailablePlatform(platform, game) {
   await model.AvailableGamePlatform.create(payload);
 }
 
+async function addMyPlatform(available_platform, personID) {
+  const payload = {
+    available_game_platform_id: available_platform.id,
+    person_id: personID
+  }
+  await model.MyGamePlatform.create(payload);
+}
+
 exports.addPersonGame = async function(request, response) {
   const personGameObj = request.body;
+  const myPlatforms = personGameObj.myPlatforms;
+  delete personGameObj.myPlatforms;
+
   const personGame = await model.PersonGame.create(personGameObj);
-  response.json(personGame);
+
+  const returnObj = personGame.dataValues;
+
+  const availablePlatforms = await model.AvailableGamePlatform.findAll({
+    where: {
+      game_id: personGameObj.game_id
+    }
+  });
+
+  _.forEach(myPlatforms, async myPlatform => {
+    const availableGamePlatform = _.findWhere(availablePlatforms, availablePlatform => availablePlatform.game_platform_id === myPlatform.id);
+    const payload = {
+      available_game_platform_id: availableGamePlatform.id,
+      person_id: personGame.person_id
+    }
+    await model.MyGamePlatform.create(payload);
+  });
+
+  returnObj.myPlatforms = myPlatforms;
+
+  response.json(returnObj);
 };
 
 exports.updateGame = async function(request, response) {
