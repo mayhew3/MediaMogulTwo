@@ -66,13 +66,43 @@ export class DuplicateResolutionComponent implements OnInit {
 
 export class GameGroup {
   igdb_id: number;
+  gameToKeep: Game;
+  fieldOverrides: any[] = [];
 
   constructor(private _games: Game[]) {
     this.igdb_id = _games[0].igdb_id.value;
   }
 
   get games(): Game[] {
-    return ArrayUtil.cloneArray(this._games);
+    return this._games;
+  }
+
+  isGameToKeep(game: Game): boolean {
+    return !!this.gameToKeep && game.id.value === this.gameToKeep.id.value;
+  }
+
+  overrideField(fieldName: string, fieldValue: any) {
+    const payload = {
+      name: fieldName,
+      value: fieldValue,
+    }
+    this.fieldOverrides.push(payload);
+  }
+
+  getOverride(fieldName: string): any {
+    const override = _.findWhere(this.fieldOverrides, {name: fieldName});
+    return !override ? null : override.value;
+  }
+
+  isFieldToKeep(game: Game, fieldValue: FieldValue<any>): boolean {
+    const gameUniversals = ['platform', 'metacritic', 'metacritic_page', 'metacritic_matched'];
+    const override = this.getOverride(fieldValue.getFieldName());
+    if (!!override) {
+      return fieldValue.value === override;
+    } else {
+      return _.contains(gameUniversals, fieldValue.getFieldName()) ||
+      this.isGameToKeep(game);
+    }
   }
 
   getTitles(): string[] {
@@ -90,26 +120,24 @@ export class GameGroup {
     return compacted.length > 0 ? compacted[0] : null;
   }
 
-
-
-  getFieldsWithDifferences(): string[] {
-    const fieldsWithDiffs: string[] = [];
+  getFieldsWithDifferences(): FieldValue<any>[] {
+    const fieldsWithDiffs: FieldValue<any>[] = [];
     _.forEach(this._games[0].fieldValues, fieldValue => {
       const fieldName = fieldValue.getFieldName();
-      const fieldsToExclude = ['title', 'platform', 'id', 'date_added'];
+      const fieldsToExclude = ['title', 'id', 'date_added'];
       if (!_.contains(fieldsToExclude, fieldName)) {
         const allValuesForField = _.map(this._games, game => game.getFieldWithName(fieldName).value);
         const uniqued = _.uniq(allValuesForField);
         if (uniqued.length > 1) {
-          fieldsWithDiffs.push(fieldName);
+          fieldsWithDiffs.push(fieldValue);
         }
       }
     });
     return fieldsWithDiffs;
   }
 
-  getPersonFieldsWithDifferences(): string[] {
-    const fieldsWithDiffs: string[] = [];
+  getPersonFieldsWithDifferences(): FieldValue<any>[] {
+    const fieldsWithDiffs: FieldValue<any>[] = [];
     const gamesWithPerson = _.filter(this.games, game => !!game.personGame);
     if (gamesWithPerson.length == 0) {
       return [];
@@ -121,7 +149,7 @@ export class GameGroup {
           const allValuesForField = _.map(gamesWithPerson, game => game.personGame.getFieldWithName(fieldName).value);
           const uniqued = _.uniq(allValuesForField);
           if (uniqued.length > 1) {
-            fieldsWithDiffs.push(fieldName);
+            fieldsWithDiffs.push(fieldValue);
           }
         }
       });
@@ -129,7 +157,4 @@ export class GameGroup {
     return fieldsWithDiffs;
   }
 
-  getPersonFieldsWithName(fieldName: string): FieldValue<any>[] {
-    return _.map(this._games, game => !game.person ? 'n/a' : game.person.getFieldWithName(fieldName));
-  }
 }

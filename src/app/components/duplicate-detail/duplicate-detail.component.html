@@ -11,56 +11,50 @@
 <div class="modal-body">
 
   <div class="row">
-    <div class="col">
+    <div class="col fieldCol m-1">
       ID
     </div>
-    <div class="col"
-         *ngFor="let game of gameGroup.games">
+    <div class="col fieldCol m-1"
+         *ngFor="let game of gameGroup.games"
+         [ngClass]="colClass(game)">
       {{game.id.value}}
     </div>
   </div>
 
   <div class="row">
-    <div class="col">
+    <div class="col fieldCol m-1">
       Title
     </div>
-    <div class="col"
-         *ngFor="let game of gameGroup.games">
+    <div class="col fieldCol m-1"
+         *ngFor="let game of gameGroup.games"
+         [ngClass]="titleClass(game)">
       {{game.title.value}}
     </div>
   </div>
 
-  <div class="row">
-    <div class="col">
-      Platform
-    </div>
-    <div class="col"
-         *ngFor="let game of gameGroup.games">
-      {{game.platform.value}}
-    </div>
-  </div>
-
   <div class="row"
-       *ngFor="let fieldName of gameGroup.getFieldsWithDifferences()">
-    <div class="col">
-      {{fieldName}}
+       *ngFor="let field of gameGroup.getFieldsWithDifferences()">
+    <div class="col fieldCol m-1">
+      {{field.getFieldName()}}
     </div>
-    <div class="col"
-         *ngFor="let game of gameGroup.games">
-      {{game.getFieldWithName(fieldName).value}}
+    <div class="col fieldCol m-1"
+         *ngFor="let game of gameGroup.games"
+         [ngClass]="colClassForField(game, field.getFieldName())">
+      {{game.getFieldWithName(field.getFieldName()).value}}
     </div>
   </div>
 
   Person Fields:
 
   <div class="row"
-       *ngFor="let fieldName of gameGroup.getPersonFieldsWithDifferences()">
-    <div class="col">
-      {{fieldName}}
+       *ngFor="let field of gameGroup.getPersonFieldsWithDifferences()">
+    <div class="col fieldCol m-1">
+      {{field.getFieldName()}}
     </div>
-    <div class="col"
-         *ngFor="let game of gameGroup.games">
-      {{!game.personGame ? 'n/a' : game.personGame.getFieldWithName(fieldName).value}}
+    <div class="col fieldCol m-1"
+         *ngFor="let game of gameGroup.games"
+         [ngClass]="colClassForPersonField(game, field)">
+      {{!game.personGame ? 'n/a' : game.personGame.getFieldWithName(field.getFieldName()).value}}
     </div>
   </div>
 
