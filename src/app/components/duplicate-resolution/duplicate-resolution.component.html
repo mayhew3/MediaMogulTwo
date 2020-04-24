@@ -16,9 +16,18 @@
 
 
               <div class="col-12 m-1">
-                Titles:
-                <span *ngFor="let title of gameGroup.getTitles()">{{title}}<br></span>
+                <ul>
+                  <li *ngFor="let title of gameGroup.getTitles()">{{title}}<br></li>
+                </ul>
               </div>
+
+              Platforms:
+              <div class="col-12 m-1">
+                <ul>
+                  <li *ngFor="let platform of gameGroup.getPlatforms()">{{platform}}<br></li>
+                </ul>
+              </div>
+
 
             </div>
           </div>

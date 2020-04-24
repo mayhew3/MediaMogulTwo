@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {GameService} from '../../services/game.service';
 import {Game} from '../../interfaces/Model/Game';
 import * as _ from 'underscore';
@@ -29,7 +29,7 @@ export class DuplicateResolutionComponent implements OnInit {
     _.forEach(this.games, game => {
       const alreadyInGameGroup = _.findWhere(this.gameGroups, {igdb_id: game.igdb_id.value});
 
-      if (!alreadyInGameGroup) {
+      if (!alreadyInGameGroup && !!game.igdb_id.value) {
         const matching = _.filter(this.games, otherGame => otherGame.igdb_id.value === game.igdb_id.value && otherGame.id.value !== game.id.value);
         if (matching.length > 0) {
           matching.push(game);
@@ -51,6 +51,10 @@ class GameGroup {
   getTitles(): string[] {
     const titles = _.map(this.games, game => game.title.value);
     return _.uniq(titles);
+  }
+
+  getPlatforms(): string[] {
+    return _.map(this.games, game => game.platform.value);
   }
 
   getFirstPoster(): string[] {
