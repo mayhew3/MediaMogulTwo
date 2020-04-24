@@ -41,13 +41,14 @@ exports.getGames = async function (request, response) {
 
     const personGame = _.findWhere(personGames, {game_id: game.id});
     if (!!personGame) {
+      const returnPersonObj = personGame.dataValues;
       const availableIDs = _.pluck(resultObj.availablePlatforms, 'id');
       const myPlatformsForGame = _.filter(myPlatforms, platform => _.contains(availableIDs, platform.available_game_platform_id));
-      personGame.myPlatforms = _.map(myPlatformsForGame, platform => {
+      returnPersonObj.myPlatforms = _.map(myPlatformsForGame, platform => {
         const availableGamePlatform = _.findWhere(availablePlatforms, {id: platform.available_game_platform_id});
         return {id: availableGamePlatform.game_platform_id};
       });
-      resultObj.personGame = personGame;
+      resultObj.personGame = returnPersonObj;
     }
 
     const poster = _.findWhere(defaultPosters, {game_id: game.id});

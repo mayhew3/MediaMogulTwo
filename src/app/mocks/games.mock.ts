@@ -20375,7 +20375,8 @@ export const MockGames = [
     "date_added": "2017-03-28 21:05:00.931",
     "availablePlatforms": [
       {"id": 5},
-      {"id": 3}
+      {"id": 3},
+      {"id": 1}
     ],
     "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2920687-the%20legend%20of%20zelda%20-%20breath%20of%20the%20wild%20v7.jpg",
     "giantbomb_id": 41355,
@@ -20385,7 +20386,24 @@ export const MockGames = [
     "igdb_poster": "co1p98",
     "howlong_extras": 65,
     "id": 671,
-    "person_games": [],
+    "person_games": [{
+      "replay_score": null,
+      "final_score": null,
+      "date_added": "2017-03-28 21:05:00.931",
+      "tier": 2,
+      "replay_reason": null,
+      "minutes_played": 60,
+      "last_played": null,
+      "rating": 50,
+      "finished_date": null,
+      "id": 408,
+      "myPlatforms": [
+        {"id": 5},
+        {"id": 3},
+        {"id": 1}
+      ],
+      "person_id": 1
+    }],
     "igdb_id": 7346
   },
   {

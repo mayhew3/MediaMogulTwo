@@ -64,9 +64,13 @@ export class AddGameComponent implements OnInit {
 
   findExistingPlatformsNotListed(match: any): GamePlatform[] {
     const existingGame = this.findMatchingGameForPlatform(match);
-    const existingPlatformIDs = !existingGame ? [] : existingGame.getPlatformIGDBIDs();
+    if (!existingGame) {
+      return [];
+    }
+    const existingPlatformIDs = existingGame.getPlatformIGDBIDs();
+    const ownedPlatformIDs = !existingGame.personGame ? [] : existingGame.personGame.getPlatformIGDBIDs();
     const matchPlatformIDs = _.map(match.platforms, platform => platform.id);
-    const diffIDs = _.difference(existingPlatformIDs, matchPlatformIDs);
+    const diffIDs = _.difference(_.difference(existingPlatformIDs, ownedPlatformIDs), matchPlatformIDs);
     return _.map(diffIDs, this.findPlatformWithIGDBID.bind(this));
   }
 
@@ -75,9 +79,9 @@ export class AddGameComponent implements OnInit {
     if (!existingGame || !existingGame.personGame) {
       return [];
     }
-    const existingPlatformIDs = existingGame.personGame.getPlatformIGDBIDs();
+    const ownedPlatformIDs = existingGame.personGame.getPlatformIGDBIDs();
     const matchPlatformIDs = _.map(match.platforms, platform => platform.id);
-    const diffIDs = _.difference(existingPlatformIDs, matchPlatformIDs);
+    const diffIDs = _.difference(ownedPlatformIDs, matchPlatformIDs);
     return _.map(diffIDs, this.findPlatformWithIGDBID.bind(this));
   }
 
