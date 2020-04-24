@@ -18,6 +18,7 @@ import { BrowseGamesComponent } from './components/browse-games/browse-games.com
 import {AppRoutingModule} from './app-routing.module';
 import { ProfileComponent } from './components/profile/profile.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { DuplicateResolutionComponent } from './components/duplicate-resolution/duplicate-resolution.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     HomeComponent,
     BrowseGamesComponent,
     ProfileComponent,
-    DashboardComponent
+    DashboardComponent,
+    DuplicateResolutionComponent
   ],
   imports: [
     BrowserModule,

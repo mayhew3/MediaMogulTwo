@@ -31,6 +31,30 @@ input[type=number] {
   border-color: $gray-700;
 }
 
+.gameCard {
+  height: 250px;
+  padding: 3px;
+}
+
+
+.gameRow {
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+
+.gameCardInside {
+  background-color: $gray-800;
+  padding: 7px;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.gameImage {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
 
 .gameImageContainer {
   height: 100%;

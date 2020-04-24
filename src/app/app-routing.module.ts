@@ -8,6 +8,7 @@ import {DashboardComponent} from './components/dashboard/dashboard.component';
 import {HTTP_INTERCEPTORS} from '@angular/common/http';
 import {InterceptorService} from './services/interceptor.service';
 import {AddGameComponent} from './components/add-game/add-game.component';
+import {DuplicateResolutionComponent} from './components/duplicate-resolution/duplicate-resolution.component';
 
 export const routes: Routes = [
   {
@@ -32,6 +33,11 @@ export const routes: Routes = [
   {
     path: 'addGame',
     component: AddGameComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'duplicates',
+    component: DuplicateResolutionComponent,
     canActivate: [AuthGuard]
   },
 ];
