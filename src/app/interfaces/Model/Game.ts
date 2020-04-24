@@ -8,23 +8,38 @@ import {ArrayUtil} from '../../utility/ArrayUtil';
 
 export class Game extends DataObject {
   title = this.registerStringField('title', true);
-  igdb_poster = this.registerStringField('igdb_poster', false);
-  logo = this.registerStringField('logo', false);
-  giantbomb_medium_url = this.registerStringField('giantbomb_medium_url', false);
-  steamid = this.registerIntegerField('steamid', false);
-  howlong_extras = this.registerDecimalField('howlong_extras', false);
-  timetotal = this.registerDecimalField('timetotal', false);
-  metacritic = this.registerIntegerField('metacritic', false);
-  metacritic_hint = this.registerStringField('metacritic_hint', false);
   platform = this.registerStringField('platform', true);
   natural_end = this.registerBooleanField('natural_end', false);
-  howlong_id = this.registerIntegerField('howlong_id', false);
-  giantbomb_id = this.registerIntegerField('giantbomb_id', false);
+  timetotal = this.registerDecimalField('timetotal', false);
+
+  // metacritic
+  metacritic = this.registerIntegerField('metacritic', false);
+  metacritic_page = this.registerBooleanField('metacritic_page', false);
+  metacritic_matched = this.registerDateField('metacritic_matched', false);
+  metacritic_hint = this.registerStringField('metacritic_hint', false);
+
+  // steam
+  steamid = this.registerIntegerField('steamid', false);
   steam_cloud = this.registerBooleanField('steam_cloud', false);
+  steam_page_gone = this.registerDateField('steam_page_gone', false);
+  steam_title = this.registerStringField('steam_title', false);
+  logo = this.registerStringField('logo', false);
+
+  // howlong
+  howlong_id = this.registerIntegerField('howlong_id', false);
+  howlong_title = this.registerStringField('howlong_title', false);
+  howlong_extras = this.registerDecimalField('howlong_extras', false);
+
+  // giant bomb
+  giantbomb_medium_url = this.registerStringField('giantbomb_medium_url', false);
+  giantbomb_id = this.registerIntegerField('giantbomb_id', false);
+  giantbomb_name = this.registerStringField('giantbomb_name', false);
+
+  // IGDB
   igdb_id = this.registerIntegerField('igdb_id', false);
+  igdb_poster = this.registerStringField('igdb_poster', false);
   igdb_width = this.registerIntegerField('igdb_width', false);
   igdb_height = this.registerIntegerField('igdb_height', false);
-
   igdb_rating = this.registerDecimalField('igdb_rating', false);
   igdb_rating_count = this.registerIntegerField('igdb_rating_count', false);
   igdb_release_date = this.registerDateField('igdb_release_date', false);
