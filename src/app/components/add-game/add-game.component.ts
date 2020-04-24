@@ -62,11 +62,23 @@ export class AddGameComponent implements OnInit {
     }
   }
 
-  findExistingPlatformsNotListed(match: any): string[] {
+  findExistingPlatformsNotListed(match: any): GamePlatform[] {
     const existingGame = this.findMatchingGameForPlatform(match);
     const existingPlatformIDs = !existingGame ? [] : existingGame.getPlatformIGDBIDs();
     const matchPlatformIDs = _.map(match.platforms, platform => platform.id);
-    return _.difference(existingPlatformIDs, matchPlatformIDs);
+    const diffIDs = _.difference(existingPlatformIDs, matchPlatformIDs);
+    return _.map(diffIDs, this.findPlatformWithIGDBID.bind(this));
+  }
+
+  findOwnedPlatformsNotListed(match: any): GamePlatform[] {
+    const existingGame = this.findMatchingGameForPlatform(match);
+    if (!existingGame || !existingGame.personGame) {
+      return [];
+    }
+    const existingPlatformIDs = existingGame.personGame.getPlatformIGDBIDs();
+    const matchPlatformIDs = _.map(match.platforms, platform => platform.id);
+    const diffIDs = _.difference(existingPlatformIDs, matchPlatformIDs);
+    return _.map(diffIDs, this.findPlatformWithIGDBID.bind(this));
   }
 
   private gameExistsWithPlatform(match: any, platform: any): boolean {
@@ -81,6 +93,10 @@ export class AddGameComponent implements OnInit {
 
   private findMatchingGameForPlatform(match: any): Game {
     return this.gameService.findGame(match.id);
+  }
+
+  private findPlatformWithIGDBID(igdbID: number): GamePlatform {
+    return _.find(this.allPlatforms, platform => platform.igdb_platform_id.value === igdbID);
   }
 
   async getMatches() {

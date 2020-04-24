@@ -120,6 +120,10 @@ export class PersonGame extends DataObject {
     return _.map(this.myPlatforms, platform => platform.full_name.value);
   }
 
+  getPlatformIGDBIDs(): number[] {
+    return _.map(this.myPlatforms, platform => platform.igdb_platform_id.value);
+  }
+
   private removeTemporaryPlatforms() {
     const temporaryPlatforms = _.filter(this._myPlatforms, platform => platform.isTemporary());
     _.forEach(temporaryPlatforms, platform => ArrayUtil.removeFromArray(this._myPlatforms, platform));
