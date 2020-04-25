@@ -60,7 +60,9 @@ export class AuthService {
   // https://auth0.github.io/auth0-spa-js/classes/auth0client.html#getuser
   getUser$(options?): Observable<any> {
     return this.auth0Client$.pipe(
-      concatMap((client: Auth0Client) => from(client.getUser(options))),
+      concatMap((client: Auth0Client) => {
+        return from(client.getUser(options))
+      }),
       tap(user => this.userProfileSubject$.next(user))
     );
   }
