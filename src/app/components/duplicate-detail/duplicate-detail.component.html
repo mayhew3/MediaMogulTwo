@@ -63,5 +63,6 @@
 <div class="modal-footer">
   <button type="button"
           class="btn btn-primary"
+          [disabled]="!gameGroup.canResolve()"
           (click)="submitAndClose()">Submit and Close</button>
 </div>

@@ -6,6 +6,8 @@ import {NgbModal, NgbModalRef} from '@ng-bootstrap/ng-bootstrap';
 import {DuplicateDetailComponent} from '../duplicate-detail/duplicate-detail.component';
 import {FieldValue} from '../../interfaces/DataObject/FieldValue';
 import {ArrayUtil} from '../../utility/ArrayUtil';
+import {HttpClient} from '@angular/common/http';
+import {first} from 'rxjs/operators';
 
 @Component({
   selector: 'mm-duplicate-resolution',
@@ -21,7 +23,7 @@ export class DuplicateResolutionComponent implements OnInit {
 
   constructor(private gameService: GameService,
               private modalService: NgbModal) {
-    this.gameService.games.subscribe(incomingGames => {
+    this.gameService.games.pipe(first(games => games.length > 0)).subscribe(incomingGames => {
       this.games = incomingGames;
       this.splitGamesIntoGroups();
     });
@@ -48,7 +50,7 @@ export class DuplicateResolutionComponent implements OnInit {
         const matching = _.filter(this.games, otherGame => otherGame.igdb_id.value === game.igdb_id.value && otherGame.id.value !== game.id.value);
         if (matching.length > 0) {
           matching.push(game);
-          const gameGroup = new GameGroup(matching);
+          const gameGroup = new GameGroup(matching, this.gameService);
           this.gameGroups.push(gameGroup);
         }
       }
@@ -78,7 +80,8 @@ export class GameGroup {
   fieldOverrides: any[] = [];
   resolved = false;
 
-  constructor(private _games: Game[]) {
+  constructor(private _games: Game[],
+              private gameService: GameService) {
     this.igdb_id = _games[0].igdb_id.value;
   }
 
@@ -166,7 +169,20 @@ export class GameGroup {
     return fieldsWithDiffs;
   }
 
+  canResolve(): boolean {
+    return !!this.gameToKeep;
+  }
+
   async resolve() {
-    this.resolved = true;
+    if (!!this.gameToKeep) {
+      _.forEach(this.fieldOverrides, override => {
+        const fieldWithName = this.gameToKeep.getFieldWithName(override.name);
+        fieldWithName.value = override.value;
+      });
+      await this.gameService.updateGame(this.gameToKeep);
+      const gamesToRetire = _.without(this.games, this.gameToKeep);
+      _.forEach(gamesToRetire, async game => await this.gameService.retireGame(game));
+      this.resolved = true;
+    }
   }
 }

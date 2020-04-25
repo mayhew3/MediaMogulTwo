@@ -1,6 +1,6 @@
 import {Injectable, OnDestroy} from '@angular/core';
 import {Game} from '../interfaces/Model/Game';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {ArrayService} from './array.service';
 import * as _ from 'underscore';
 import {PersonGame} from '../interfaces/Model/PersonGame';
@@ -11,6 +11,11 @@ import {PlatformService} from './platform.service';
 import {GamePlatform} from '../interfaces/Model/GamePlatform';
 import {Person} from '../interfaces/Model/Person';
 import {first, takeUntil} from 'rxjs/operators';
+import {ArrayUtil} from '../utility/ArrayUtil';
+
+const httpOptions = {
+  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+};
 
 @Injectable({
   providedIn: 'root'
@@ -123,6 +128,20 @@ export class GameService implements OnDestroy {
     return returnObj;
   }
 
+  async retireGame(game: Game): Promise<any> {
+    const gameID = game.id.value;
+    const payload = {
+      id: gameID.toString()
+    };
+    const options = {
+      params: payload
+    };
+    this.http.delete<Game>(this._gamesUrl + '/' + gameID).subscribe(() => {
+      const existing = _.find(this._dataStore.games, game => game.id.value === gameID);
+      ArrayUtil.removeFromArray(this._dataStore.games, existing);
+      this.pushGameListChange();
+    });
+  }
 
   // PRIVATE CACHE MANAGEMENT METHODS
 
