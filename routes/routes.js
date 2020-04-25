@@ -30,6 +30,7 @@ module.exports = function(app) {
   privateGet('/games', games.getGames);
   privatePut('/games', games.updateGame);
   privatePost('/games', games.addGame);
+  privateDelete('/games/:id', games.retireGame);
 
   privatePut('/personGames', games.updatePersonGame);
   privatePost('/personGames', games.addPersonGame);
@@ -58,6 +59,10 @@ module.exports = function(app) {
 
   function privatePut(endpoint, callback) {
     router.put(endpoint, authCheck, callback);
+  }
+
+  function privateDelete(endpoint, callback) {
+    router.delete(endpoint, authCheck, callback);
   }
 
   // error handlers

@@ -138,6 +138,26 @@ exports.addGame = async function(request, response) {
   response.json(returnObj);
 };
 
+exports.retireGame = async function(request, response) {
+  const game_id = request.params.id;
+
+  const changedFields = {
+    retired: game_id,
+    retired_date: new Date()
+  }
+
+  await model.PersonGame.update(changedFields, {
+    where: {
+      game_id: game_id
+    }
+  });
+
+  const game = await model.Game.findByPk(game_id);
+  await game.update(changedFields);
+
+  response.json({msg: 'Success'});
+};
+
 async function tryToAddGame(gameObj) {
   try {
     return await model.Game.create(gameObj);
