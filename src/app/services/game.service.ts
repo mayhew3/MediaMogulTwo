@@ -130,7 +130,7 @@ export class GameService implements OnDestroy {
 
   async combinePlatforms(gameToKeep: Game, otherGames: Game[]): Promise<any> {
     const payload = {
-      game_id: gameToKeep.id.value,
+      id: gameToKeep.id.value,
       other_game_ids: _.map(otherGames, game => game.id.value),
       person_id: this.me.id.value,
     }

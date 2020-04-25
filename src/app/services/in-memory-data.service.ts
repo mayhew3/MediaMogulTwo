@@ -38,6 +38,7 @@ export class InMemoryDataService implements InMemoryDbService{
       persons: this.persons,
       igdbMatches: [],
       gamePlatforms: this.gamePlatforms,
+      resolve: [],
     };
   }
 
@@ -77,6 +78,8 @@ export class InMemoryDataService implements InMemoryDbService{
       this.updateGame(requestInfo);
     } else if (collectionName === 'personGames') {
       this.updatePersonGame(requestInfo);
+    } else if (collectionName === 'resolve') {
+      this.packageUpResponse(this.getBody(requestInfo), requestInfo);
     }
     return null;
   }

@@ -141,7 +141,7 @@ exports.addGame = async function(request, response) {
 };
 
 exports.combineGames = async function(request, response) {
-  const gameID = request.body.game_id;
+  const gameID = request.body.id;
   const otherGameIDs = request.body.other_game_ids;
   const me = request.body.person_id;
 
