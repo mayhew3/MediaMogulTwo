@@ -175,6 +175,8 @@ export class GameGroup {
 
   async resolve() {
     if (!!this.gameToKeep) {
+      const otherGames = _.without(this.games, this.gameToKeep);
+      await this.gameService.combinePlatforms(this.gameToKeep, otherGames);
       _.forEach(this.fieldOverrides, override => {
         const fieldWithName = this.gameToKeep.getFieldWithName(override.name);
         fieldWithName.value = override.value;

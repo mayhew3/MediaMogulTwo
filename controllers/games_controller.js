@@ -2,6 +2,8 @@ const model = require('./model');
 const _ = require('underscore');
 const moment = require('moment');
 const arrayService = require('./array_util');
+const sequelize = require('sequelize');
+const Op = sequelize.Op;
 
 exports.getGames = async function (request, response) {
   const person_id = request.query.person_id;
@@ -137,6 +139,108 @@ exports.addGame = async function(request, response) {
 
   response.json(returnObj);
 };
+
+exports.combineGames = async function(request, response) {
+  const gameID = request.body.game_id;
+  const otherGameIDs = request.body.other_game_ids;
+  const me = request.body.person_id;
+
+  const allPlatforms = await model.GamePlatform.findAll();
+
+  const gameToKeep = await model.Game.findByPk(gameID);
+  const otherGames = await model.Game.findAll({
+    where: {
+      id: {
+        [Op.in]: otherGameIDs
+      }
+    }
+  });
+
+  const allGames = arrayService.cloneArray(otherGames);
+  allGames.push(gameToKeep);
+
+  const availableGamePlatforms = [];
+  for (const game of allGames) {
+    const matchingPlatform = _.findWhere(allPlatforms, {full_name: game.platform});
+    if (!matchingPlatform) {
+      throw new Error(`No platform found with name ${game.platform}`);
+    }
+    const payload = {
+      game_id: gameID,
+      game_platform_id: matchingPlatform.id,
+      platform_name: matchingPlatform.full_name,
+      metacritic: game.metacritic,
+      metacritic_page: game.metacritic_page,
+      metacritic_matched: game.metacritic_matched
+    };
+    const availableGamePlatform = await model.AvailableGamePlatform.create(payload);
+    availableGamePlatforms.push(availableGamePlatform);
+  }
+
+  const allGameIDs = _.pluck(allGames, 'id');
+  const allPersonGames = await model.PersonGame.findAll({
+    where: {
+      game_id: {
+        [Op.in]: allGameIDs
+      }
+    }
+  });
+
+  const personIds = _.compact(_.pluck(allPersonGames, 'person_id'));
+  const myPlatformIDs = [];
+  let myPersonGame;
+
+  for (const person_id of personIds) {
+    const personGames = _.where(allPersonGames, {person_id: person_id});
+    const personGameToKeep = await getOrCreatePersonGameToKeep(gameToKeep, person_id, personGames);
+    if (me === person_id) {
+      myPersonGame = personGameToKeep;
+    }
+    for (const personGame of personGames) {
+      const game = _.findWhere(allGames, {id: personGame.game_id});
+      const matchingPlatform = _.findWhere(allPlatforms, {full_name: game.platform});
+      const availablePlatform = _.findWhere(availableGamePlatforms, {game_platform_id: matchingPlatform.id});
+      if (!matchingPlatform || !availablePlatform) {
+        throw new Error(`No matching platform found for ${game.platform}`);
+      }
+      const payload = {
+        person_id: person_id,
+        available_game_platform_id: availablePlatform.id,
+        platform_name: matchingPlatform.full_name,
+        rating: personGame.rating,
+        tier: personGame.tier,
+        last_played: personGame.last_played,
+        minutes_played: personGame.minutes_played,
+        finished_date: personGame.finished_date,
+        final_score: personGame.final_score,
+        replay_score: personGame.replay_score,
+        replay_reason: personGame.replay_reason,
+      }
+      await model.MyGamePlatform.create(payload);
+      if (me === person_id) {
+        myPlatformIDs.push(matchingPlatform.id);
+      }
+    }
+  }
+
+  // todo: return game with everything attached.
+  response.json({msg: 'Success'});
+};
+
+async function getOrCreatePersonGameToKeep(gameToKeep, person_id, personGames) {
+  const existing = _.findWhere(personGames, {game_id: gameToKeep.id});
+  if (!!existing) {
+    return existing;
+  } else {
+    const payload = {
+      game_id: gameToKeep.id,
+      person_id: person_id,
+      tier: 2,
+      minutes_played: 0,
+    }
+    return model.PersonGame.create(payload);
+  }
+}
 
 exports.retireGame = async function(request, response) {
   const game_id = request.params.id;
