@@ -30,7 +30,6 @@ module.exports = function(app) {
   privateGet('/games', games.getGames);
   privatePut('/games', games.updateGame);
   privatePost('/games', games.addGame);
-  privateDelete('/games/:id', games.retireGame);
 
   privatePut('/personGames', games.updatePersonGame);
   privatePost('/personGames', games.addPersonGame);

@@ -175,15 +175,16 @@ export class GameGroup {
 
   async resolve() {
     if (!!this.gameToKeep) {
-      const otherGames = _.without(this.games, this.gameToKeep);
-      await this.gameService.combinePlatforms(this.gameToKeep, otherGames);
+
       _.forEach(this.fieldOverrides, override => {
         const fieldWithName = this.gameToKeep.getFieldWithName(override.name);
         fieldWithName.value = override.value;
       });
       await this.gameService.updateGame(this.gameToKeep);
-      const gamesToRetire = _.without(this.games, this.gameToKeep);
-      _.forEach(gamesToRetire, async game => await this.gameService.retireGame(game));
+
+      const otherGames = _.without(this.games, this.gameToKeep);
+      await this.gameService.combinePlatforms(this.gameToKeep, otherGames);
+
       this.resolved = true;
     }
   }

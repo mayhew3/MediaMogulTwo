@@ -128,21 +128,6 @@ export class GameService implements OnDestroy {
     return returnObj;
   }
 
-  async retireGame(game: Game): Promise<any> {
-    const gameID = game.id.value;
-    const payload = {
-      id: gameID.toString()
-    };
-    const options = {
-      params: payload
-    };
-    this.http.delete<Game>(this._gamesUrl + '/' + gameID).subscribe(() => {
-      const existing = _.find(this._dataStore.games, game => game.id.value === gameID);
-      ArrayUtil.removeFromArray(this._dataStore.games, existing);
-      this.pushGameListChange();
-    });
-  }
-
   async combinePlatforms(gameToKeep: Game, otherGames: Game[]): Promise<any> {
     const payload = {
       game_id: gameToKeep.id.value,
@@ -150,6 +135,7 @@ export class GameService implements OnDestroy {
       person_id: this.me.id.value,
     }
     await this.http.put<any>('/api/resolve', payload, httpOptions).toPromise();
+    _.forEach(otherGames, game => ArrayUtil.removeFromArray(this._dataStore.games, game));
     this.pushGameListChange();
   }
 

@@ -223,7 +223,14 @@ exports.combineGames = async function(request, response) {
     }
   }
 
-  // todo: return game with everything attached.
+  // todo: move game_logs, gameplay_sessions, steam_attributes
+
+  // todo: delete igdb_poster, possible_game_match
+
+  for (const game of otherGames) {
+    await retireGame(game.id);
+  }
+
   response.json({msg: 'Success'});
 };
 
@@ -242,9 +249,7 @@ async function getOrCreatePersonGameToKeep(gameToKeep, person_id, personGames) {
   }
 }
 
-exports.retireGame = async function(request, response) {
-  const game_id = request.params.id;
-
+async function retireGame(game_id) {
   const changedFields = {
     retired: game_id,
     retired_date: new Date()
@@ -258,9 +263,7 @@ exports.retireGame = async function(request, response) {
 
   const game = await model.Game.findByPk(game_id);
   await game.update(changedFields);
-
-  response.json({msg: 'Success'});
-};
+}
 
 async function tryToAddGame(gameObj) {
   try {
