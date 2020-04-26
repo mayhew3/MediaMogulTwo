@@ -34,6 +34,15 @@ export class DuplicateDetailComponent implements OnInit {
     });
   }
 
+  changeSelectedGame(game: Game) {
+    this.gameGroup.changeGameToKeep(game);
+  }
+
+  changeSelectedField(game: Game, fieldName: string) {
+    const value = game.getFieldWithName(fieldName).value;
+    this.gameGroup.overrideField(fieldName, value);
+  }
+
   titleClass(game: Game): string {
     const keptTitle = !this.gameGroup.gameToKeep ? null : this.gameGroup.gameToKeep.title.value;
     if (keptTitle === game.title.value) {

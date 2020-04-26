@@ -156,8 +156,9 @@ exports.combineGames = async function(request, response) {
     }
   });
 
-  const allGames = arrayService.cloneArray(otherGames);
+  const allGames = [];
   allGames.push(gameToKeep);
+  arrayService.addToArray(allGames, otherGames);
 
   const availableGamePlatforms = [];
   for (const game of allGames) {
@@ -165,16 +166,22 @@ exports.combineGames = async function(request, response) {
     if (!matchingPlatform) {
       throw new Error(`No platform found with name ${game.platform}`);
     }
-    const payload = {
-      game_id: gameID,
-      game_platform_id: matchingPlatform.id,
-      platform_name: matchingPlatform.full_name,
-      metacritic: game.metacritic,
-      metacritic_page: game.metacritic_page,
-      metacritic_matched: game.metacritic_matched
-    };
-    const availableGamePlatform = await model.AvailableGamePlatform.create(payload);
-    availableGamePlatforms.push(availableGamePlatform);
+    const existing = _.findWhere(availableGamePlatforms, {game_platform_id: matchingPlatform.id});
+    if (!existing) {
+      console.log('Adding available platform ' + matchingPlatform.full_name);
+      const payload = {
+        game_id: gameID,
+        game_platform_id: matchingPlatform.id,
+        platform_name: matchingPlatform.full_name,
+        metacritic: game.metacritic,
+        metacritic_page: game.metacritic_page,
+        metacritic_matched: game.metacritic_matched
+      };
+      const availableGamePlatform = await model.AvailableGamePlatform.create(payload);
+      availableGamePlatforms.push(availableGamePlatform);
+    } else {
+      console.log('Skipping available platform ' + matchingPlatform.full_name);
+    }
   }
 
   const allGameIDs = _.pluck(allGames, 'id');
@@ -186,16 +193,20 @@ exports.combineGames = async function(request, response) {
     }
   });
 
-  const personIds = _.compact(_.pluck(allPersonGames, 'person_id'));
+  const personIds = _.uniq(_.pluck(allPersonGames, 'person_id'));
   const myPlatformIDs = [];
   let myPersonGame;
 
   for (const person_id of personIds) {
-    const personGames = _.where(allPersonGames, {person_id: person_id});
+    // make sure we process the game to keep first so those fields are preserved.
+    const personGames = _.sortBy(
+      _.where(allPersonGames, {person_id: person_id}),
+        personGame => personGame.game_id === gameID ? 0 : 1);
     const personGameToKeep = await getOrCreatePersonGameToKeep(gameToKeep, person_id, personGames);
     if (me === person_id) {
       myPersonGame = personGameToKeep;
     }
+    const personPlatforms = [];
     for (const personGame of personGames) {
       const game = _.findWhere(allGames, {id: personGame.game_id});
       const matchingPlatform = _.findWhere(allPlatforms, {full_name: game.platform});
@@ -203,22 +214,30 @@ exports.combineGames = async function(request, response) {
       if (!matchingPlatform || !availablePlatform) {
         throw new Error(`No matching platform found for ${game.platform}`);
       }
-      const payload = {
-        person_id: person_id,
-        available_game_platform_id: availablePlatform.id,
-        platform_name: matchingPlatform.full_name,
-        rating: personGame.rating,
-        tier: personGame.tier,
-        last_played: personGame.last_played,
-        minutes_played: personGame.minutes_played,
-        finished_date: personGame.finished_date,
-        final_score: personGame.final_score,
-        replay_score: personGame.replay_score,
-        replay_reason: personGame.replay_reason,
-      }
-      await model.MyGamePlatform.create(payload);
-      if (me === person_id) {
-        myPlatformIDs.push(matchingPlatform.id);
+
+      const existing = _.findWhere(personPlatforms, {available_game_platform_id: availablePlatform.id});
+      if (!existing) {
+        console.log(`Adding myPlatform ${matchingPlatform.full_name}, person ID ${person_id}`);
+        const payload = {
+          person_id: person_id,
+          available_game_platform_id: availablePlatform.id,
+          platform_name: matchingPlatform.full_name,
+          rating: personGame.rating,
+          tier: personGame.tier,
+          last_played: personGame.last_played,
+          minutes_played: personGame.minutes_played,
+          finished_date: personGame.finished_date,
+          final_score: personGame.final_score,
+          replay_score: personGame.replay_score,
+          replay_reason: personGame.replay_reason,
+        }
+        const myPlatform = await model.MyGamePlatform.create(payload);
+        personPlatforms.push(myPlatform);
+        if (me === person_id) {
+          myPlatformIDs.push(matchingPlatform.id);
+        }
+      } else {
+        console.log(`Skipping duplicate myPlatform ${matchingPlatform.full_name}, person ID ${person_id}`);
       }
     }
   }

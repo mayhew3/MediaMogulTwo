@@ -79,6 +79,7 @@ export class GameGroup {
   gameToKeep: Game;
   fieldOverrides: any[] = [];
   resolved = false;
+  private gameUniversals = ['platform', 'metacritic', 'metacritic_page', 'metacritic_matched'];
 
   constructor(private _games: Game[],
               private gameService: GameService) {
@@ -93,12 +94,18 @@ export class GameGroup {
     return !!this.gameToKeep && game.id.value === this.gameToKeep.id.value;
   }
 
+  changeGameToKeep(game: Game) {
+    this.gameToKeep = game;
+  }
+
   overrideField(fieldName: string, fieldValue: any) {
-    const payload = {
-      name: fieldName,
-      value: fieldValue,
+    if (!_.contains(this.gameUniversals, fieldName)) {
+      const payload = {
+        name: fieldName,
+        value: fieldValue,
+      }
+      this.fieldOverrides.push(payload);
     }
-    this.fieldOverrides.push(payload);
   }
 
   getOverride(fieldName: string): any {
@@ -107,12 +114,11 @@ export class GameGroup {
   }
 
   isFieldToKeep(game: Game, fieldValue: FieldValue<any>): boolean {
-    const gameUniversals = ['platform', 'metacritic', 'metacritic_page', 'metacritic_matched'];
     const override = this.getOverride(fieldValue.getFieldName());
     if (!!override) {
       return fieldValue.value === override;
     } else {
-      return _.contains(gameUniversals, fieldValue.getFieldName()) ||
+      return _.contains(this.gameUniversals, fieldValue.getFieldName()) ||
       this.isGameToKeep(game);
     }
   }

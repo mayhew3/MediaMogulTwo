@@ -16,7 +16,8 @@
     </div>
     <div class="col fieldCol m-1"
          *ngFor="let game of gameGroup.games"
-         [ngClass]="colClass(game)">
+         [ngClass]="colClass(game)"
+         (click)="changeSelectedGame(game)">
       {{game.id.value}}
     </div>
   </div>
@@ -39,7 +40,8 @@
     </div>
     <div class="col fieldCol m-1"
          *ngFor="let game of gameGroup.games"
-         [ngClass]="colClassForField(game, field.getFieldName())">
+         [ngClass]="colClassForField(game, field.getFieldName())"
+         (click)="changeSelectedField(game, field.getFieldName())">
       {{game.getFieldWithName(field.getFieldName()).value}}
     </div>
   </div>
