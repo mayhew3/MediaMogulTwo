@@ -5,8 +5,6 @@ import * as _ from 'underscore';
 import {NgbModal, NgbModalRef} from '@ng-bootstrap/ng-bootstrap';
 import {DuplicateDetailComponent} from '../duplicate-detail/duplicate-detail.component';
 import {FieldValue} from '../../interfaces/DataObject/FieldValue';
-import {ArrayUtil} from '../../utility/ArrayUtil';
-import {HttpClient} from '@angular/common/http';
 import {first} from 'rxjs/operators';
 
 @Component({

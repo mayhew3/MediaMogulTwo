@@ -32,6 +32,7 @@ exports.Game = sequelize.sequelize.define("game", {
   igdb_summary: Sequelize.TEXT,
   igdb_updated: Sequelize.DATE,
   igdb_success: Sequelize.DATE,
+  igdb_ignored: Sequelize.DATE,
   igdb_next_update: Sequelize.DATE,
   retired: Sequelize.INTEGER,
   retired_date: Sequelize.DATE,
@@ -83,6 +84,34 @@ exports.GameplaySession = sequelize.sequelize.define("gameplay_session", {
   createdAt: false,
   updatedAt: false
 });
+
+exports.GameLog = sequelize.sequelize.define("game_log", {
+  id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
+  date_added: Sequelize.DATE,
+}, {
+  freezeTableName: true,
+  createdAt: false,
+  updatedAt: false
+});
+
+exports.SteamAttribute = sequelize.sequelize.define("steam_attribute", {
+  id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
+  date_added: Sequelize.DATE,
+}, {
+  freezeTableName: true,
+  createdAt: false,
+  updatedAt: false
+});
+
+exports.PossibleGameMatch = sequelize.sequelize.define("possible_game_match", {
+  id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
+  date_added: Sequelize.DATE,
+}, {
+  freezeTableName: true,
+  createdAt: false,
+  updatedAt: false
+});
+
 
 exports.IGDBPoster = sequelize.sequelize.define("igdb_poster", {
   id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },

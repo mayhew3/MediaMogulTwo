@@ -11,7 +11,8 @@ exports.getGames = async function (request, response) {
   // noinspection JSCheckFunctionSignatures
   const games = await model.Game.findAll({
     where: {
-      retired: 0
+      retired: 0,
+      igdb_ignored: null
     }
   });
   const personGames = await model.PersonGame.findAll({
@@ -242,9 +243,30 @@ exports.combineGames = async function(request, response) {
     }
   }
 
-  // todo: move game_logs, gameplay_sessions, steam_attributes
+  const changedFields = {
+    game_id: gameID
+  }
+  const tablesToMove = [model.GameLog, model.GameplaySession, model.SteamAttribute];
+  for (const table of tablesToMove) {
+    await table.update(changedFields, {
+      where: {
+        game_id: {
+          [Op.in]: otherGameIDs
+        }
+      }
+    });
+  }
 
-  // todo: delete igdb_poster, possible_game_match
+  const tablesToDelete = [model.IGDBPoster, model.PossibleGameMatch];
+  for (const table of tablesToDelete) {
+    await table.destroy({
+      where: {
+        game_id: {
+          [Op.in]: otherGameIDs
+        }
+      }
+    })
+  }
 
   for (const game of otherGames) {
     await retireGame(game.id);
@@ -252,6 +274,26 @@ exports.combineGames = async function(request, response) {
 
   response.json({msg: 'Success'});
 };
+
+async function moveGameLogs(changedFields, otherGameIDs) {
+  await model.GameLog.update(changedFields, {
+    where: {
+      game_id: {
+        [Op.in]: otherGameIDs
+      }
+    }
+  });
+}
+
+async function moveGameplaySessions(changedFields, otherGameIDs) {
+  await model.GameplaySession.update(changedFields, {
+    where: {
+      game_id: {
+        [Op.in]: otherGameIDs
+      }
+    }
+  });
+}
 
 async function getOrCreatePersonGameToKeep(gameToKeep, person_id, personGames) {
   const existing = _.findWhere(personGames, {game_id: gameToKeep.id});
