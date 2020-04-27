@@ -36,7 +36,7 @@ export class PersonGame extends DataObject {
     return ArrayUtil.cloneArray(this._platforms);
   }
 
-  get myPlatforms(): GamePlatform[] {
+  get myPlatforms(): MyGamePlatform[] {
     return ArrayUtil.cloneArray(this._myPlatforms);
   }
 

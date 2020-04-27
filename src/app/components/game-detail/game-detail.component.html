@@ -32,6 +32,24 @@
     </div>
   </div>
 
+  <h4>Available Platforms:</h4>
+
+  <div class="row">
+    <div class="col font-weight-bold">
+      Platform
+    </div>
+    <div class="col font-weight-bold">
+      Metacritic
+    </div>
+    <div class="col font-weight-bold">
+      Matched
+    </div>
+    <div class="col font-weight-bold">
+      Page
+    </div>
+
+  </div>
+
   <div class="row"
        *ngFor="let availablePlatform of game.availablePlatforms">
     <div class="col">
@@ -40,11 +58,74 @@
     <div class="col">
       {{availablePlatform.metacritic.value}}
     </div>
+
     <div class="col">
-      {{getOwnedString(availablePlatform.platform)}}
+      {{availablePlatform.metacritic_matched.value | date: 'yyyy-MM-dd'}}
     </div>
     <div class="col">
-      {{!!getMyPlatform(availablePlatform) ? getMyPlatform(availablePlatform).rating.value : null}}
+      {{availablePlatform.metacritic_page.value}}
+    </div>
+
+  </div>
+
+  <h4>My Platforms:</h4>
+
+  <div class="row">
+    <div class="col font-weight-bold">
+      Platform
+    </div>
+    <div class="col font-weight-bold">
+      Rating
+    </div>
+    <div class="col font-weight-bold">
+      Last Played
+    </div>
+    <div class="col font-weight-bold">
+      Minutes
+    </div>
+    <div class="col font-weight-bold" *ngIf="anyPlatformsAreFinished()">
+      Finished
+    </div>
+    <div class="col font-weight-bold" *ngIf="anyPlatformsAreFinished()">
+      Final
+    </div>
+    <div class="col font-weight-bold" *ngIf="anyPlatformsAreFinished()">
+      Replay
+    </div>
+    <div class="col font-weight-bold" *ngIf="anyPlatformsAreFinished()">
+      Reason
+    </div>
+
+  </div>
+
+
+  <div *ngIf="!!game.personGame">
+    <div class="row"
+         *ngFor="let myPlatform of game.personGame.myPlatforms">
+      <div class="col">
+        {{myPlatform.platform_name.value}}
+      </div>
+      <div class="col">
+        {{myPlatform.rating.value}}
+      </div>
+      <div class="col">
+        {{myPlatform.last_played.value | date: 'yyyy-MM-dd'}}
+      </div>
+      <div class="col">
+        {{myPlatform.minutes_played.value}}
+      </div>
+      <div class="col" *ngIf="anyPlatformsAreFinished()">
+        {{myPlatform.finished_date.value | date: 'yyyy-MM-dd'}}
+      </div>
+      <div class="col" *ngIf="anyPlatformsAreFinished()">
+        {{myPlatform.final_score.value}}
+      </div>
+      <div class="col" *ngIf="anyPlatformsAreFinished()">
+        {{myPlatform.replay_score.value}}
+      </div>
+      <div class="col" *ngIf="anyPlatformsAreFinished()">
+        {{myPlatform.replay_reason.value}}
+      </div>
     </div>
 
   </div>

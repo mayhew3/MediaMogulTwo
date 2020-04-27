@@ -63,6 +63,15 @@ export class GameDetailComponent implements OnInit {
     return this.game.personGame.hasPlatformWithIGDBID(platform.igdb_platform_id.value);
   }
 
+  anyPlatformsAreFinished(): boolean {
+    const finishedPlatform = _.find(this.game.personGame.myPlatforms, myPlatform => this.isFinished(myPlatform));
+    return !!finishedPlatform;
+  }
+
+  isFinished(myPlatform: MyGamePlatform): boolean {
+    return !!myPlatform.finished_date.value;
+  }
+
   getMyPlatform(availableGamePlatform: AvailableGamePlatform): MyGamePlatform {
     return !this.game.personGame ? null : _.find(this.game.personGame.myPlatforms, myPlatform => myPlatform.platform.id.value === availableGamePlatform.platform.id.value);
   }
