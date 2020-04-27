@@ -39,7 +39,14 @@ exports.getGames = async function (request, response) {
 
     const availableForGame = _.where(availablePlatforms, {game_id: game.id});
     resultObj.availablePlatforms = _.map(availableForGame, platform => {
-      return {id: platform.game_platform_id};
+      return {
+        id: platform.id,
+        game_platform_id: platform.game_platform_id,
+        platform_name: platform.platform_name,
+        metacritic: platform.metacritic,
+        metacritic_page: platform.metacritic_page,
+        metacritic_matched: platform.metacritic_matched,
+      };
     });
 
     const personGame = _.findWhere(personGames, {game_id: game.id});
@@ -49,7 +56,19 @@ exports.getGames = async function (request, response) {
       const myPlatformsForGame = _.filter(myPlatforms, platform => _.contains(availableIDs, platform.available_game_platform_id));
       returnPersonObj.myPlatforms = _.map(myPlatformsForGame, platform => {
         const availableGamePlatform = _.findWhere(availablePlatforms, {id: platform.available_game_platform_id});
-        return {id: availableGamePlatform.game_platform_id};
+        return {
+          game_platform_id: availableGamePlatform.game_platform_id,
+          available_game_platform_id: availableGamePlatform.id,
+          platform_name: platform.platform_name,
+          rating: platform.rating,
+          tier: platform.tier,
+          final_score: platform.final_score,
+          minutes_played: platform.minutes_played,
+          replay_score: platform.replay_score,
+          last_played: platform.last_played,
+          finished_date: platform.finished_date,
+          replay_reason: platform.replay_reason,
+        };
       });
       resultObj.personGame = returnPersonObj;
     }

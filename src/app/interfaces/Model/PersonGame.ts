@@ -88,7 +88,7 @@ export class PersonGame extends DataObject {
   // platform methods
 
   getOrCreateGamePlatform(platformObj: any, allPlatforms: GamePlatform[]): GamePlatform {
-    const foundPlatform = _.find(allPlatforms, platform => platform.id.value === platformObj.id);
+    const foundPlatform = _.find(allPlatforms, platform => platform.id.value === platformObj.game_platform_id);
     if (!foundPlatform) {
       const newPlatform = new GamePlatform().initializedFromJSON(platformObj);
       this.platformService.addToPlatformsIfDoesntExist(newPlatform);

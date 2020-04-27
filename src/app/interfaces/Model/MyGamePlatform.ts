@@ -8,6 +8,8 @@ export class MyGamePlatform extends DataObject {
 
   person: Person;
 
+  available_game_platform_id = this.registerIntegerField('available_game_platform_id', true);
+  game_platform_id = this.registerIntegerField('game_platform_id', true);
   platform_name = this.registerStringField("platform_name", true);
   rating = this.registerStringField("rating", true);
   tier = this.registerStringField("tier", true);
