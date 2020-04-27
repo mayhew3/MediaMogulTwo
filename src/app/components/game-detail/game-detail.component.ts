@@ -7,6 +7,8 @@ import {PlatformService} from '../../services/platform.service';
 import {GamePlatform} from '../../interfaces/Model/GamePlatform';
 import {ArrayUtil} from '../../utility/ArrayUtil';
 import * as _ from 'underscore';
+import {AvailableGamePlatform} from '../../interfaces/Model/AvailableGamePlatform';
+import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
 
 @Component({
   selector: 'mm-game-detail',
@@ -59,6 +61,10 @@ export class GameDetailComponent implements OnInit {
 
   isOwned(platform: GamePlatform): boolean {
     return this.game.personGame.hasPlatformWithIGDBID(platform.igdb_platform_id.value);
+  }
+
+  getMyPlatform(availableGamePlatform: AvailableGamePlatform): MyGamePlatform {
+    return !this.game.personGame ? null : _.find(this.game.personGame.myPlatforms, myPlatform => myPlatform.platform.id.value === availableGamePlatform.platform.id.value);
   }
 
   getOwnedString(platform: GamePlatform): string {

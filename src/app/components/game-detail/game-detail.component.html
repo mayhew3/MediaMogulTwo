@@ -43,6 +43,10 @@
     <div class="col">
       {{getOwnedString(availablePlatform.platform)}}
     </div>
+    <div class="col">
+      {{!!getMyPlatform(availablePlatform) ? getMyPlatform(availablePlatform).rating.value : null}}
+    </div>
+
   </div>
 
 
