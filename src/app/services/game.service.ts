@@ -96,6 +96,7 @@ export class GameService implements OnDestroy {
   }
 
   async addPersonGame(game: Game, personGame: PersonGame): Promise<PersonGame> {
+    // todo: make sure in-memory and server are returning valid myGamePlatforms
     game.personGame = await personGame.commit(this.http);
     this.pushGameListChange();
     return game.personGame;

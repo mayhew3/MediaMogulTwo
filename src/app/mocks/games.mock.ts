@@ -41395,6 +41395,18 @@ export const MockGames = [
         "id": 1008
       },
       {
+        "metacritic_page": false,
+        "game_platform_id": 3,
+        "platform_name": "Steam",
+        "id": 7890
+      },
+      {
+        "metacritic_page": false,
+        "game_platform_id": 2,
+        "platform_name": "NDS",
+        "id": 7891
+      },
+      {
         "metacritic_page": true,
         "metacritic_matched": "2017-03-29 05:09:29.307",
         "game_platform_id": 11,
@@ -41446,6 +41458,13 @@ export const MockGames = [
           "rating": 50,
           "last_played": null,
           "finished_date": null,
+          "id": 954
+        },
+        {
+          "tier": 2,
+          "game_platform_id": 2,
+          "available_game_platform_id": 7891,
+          "platform_name": "NDS",
           "id": 954
         }
       ],
