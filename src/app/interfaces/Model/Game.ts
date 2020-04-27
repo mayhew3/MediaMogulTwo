@@ -5,6 +5,7 @@ import {GamePlatform} from './GamePlatform';
 import * as _ from 'underscore';
 import {PlatformService} from '../../services/platform.service';
 import {ArrayUtil} from '../../utility/ArrayUtil';
+import {AvailableGamePlatform} from './AvailableGamePlatform';
 
 export class Game extends DataObject {
   title = this.registerStringField('title', true);
@@ -52,6 +53,7 @@ export class Game extends DataObject {
 
   private _personGame: PersonGame;
   private _platforms: GamePlatform[] = [];
+  private _availablePlatforms: AvailableGamePlatform[] = [];
 
   constructor(private platformService: PlatformService,
               private allPlatforms: GamePlatform[]) {
@@ -103,9 +105,14 @@ export class Game extends DataObject {
     }
   }
 
-  addToAvailablePlatforms(gamePlatform: GamePlatform) {
+  addToAvailablePlatforms(platformObj: any, realPlatform: GamePlatform) {
+    const realAvailablePlatform = new AvailableGamePlatform(realPlatform).initializedFromJSON(platformObj);
+    this._availablePlatforms.push(realAvailablePlatform);
+  }
+
+  addToPlatforms(gamePlatform: GamePlatform) {
     if (gamePlatform.isTemporary()) {
-      throw new Error('Cannot add platform without id using addToAvailablePlatforms!');
+      throw new Error('Cannot add platform without id using addToPlatforms!');
     }
     const existing = _.find(this._platforms, platform => platform.id.value === gamePlatform.id.value);
     if (!existing) {
@@ -126,6 +133,10 @@ export class Game extends DataObject {
   hasPlatformWithIGDBID(igdbID: number): boolean {
     const existing = _.find(this.platforms, platform => platform.igdb_platform_id.value === igdbID);
     return !!existing;
+  }
+
+  getAvailablePlatform(platform: GamePlatform): AvailableGamePlatform {
+    return _.find(this._availablePlatforms, availablePlatform => availablePlatform.platform.id.value === platform.id.value);
   }
 
   getPlatformNames(): string[] {
@@ -154,12 +165,13 @@ export class Game extends DataObject {
     if (!this.allPlatforms) {
       throw new Error('Initialize called before platforms were available.');
     }
-    this._personGame = !!jsonObj.personGame ? new PersonGame(this.platformService, this.allPlatforms).initializedFromJSON(jsonObj.personGame) : undefined;
     this.removeTemporaryPlatforms();
     _.forEach(jsonObj.availablePlatforms, availablePlatform => {
       const realPlatform = this.getOrCreateGamePlatform(availablePlatform, this.allPlatforms);
-      this.addToAvailablePlatforms(realPlatform);
+      this.addToAvailablePlatforms(availablePlatform, realPlatform);
+      this.addToPlatforms(realPlatform);
     });
+    this._personGame = !!jsonObj.personGame ? new PersonGame(this.platformService, this.allPlatforms, this).initializedFromJSON(jsonObj.personGame) : undefined;
     return this;
   }
 

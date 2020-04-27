@@ -7,7 +7,6 @@ import {GamePlatform} from './GamePlatform';
 export class MyGamePlatform extends DataObject {
 
   person: Person;
-  availableGamePlatform: AvailableGamePlatform;
 
   platform_name = this.registerStringField("platform_name", true);
   rating = this.registerStringField("rating", true);
@@ -19,8 +18,12 @@ export class MyGamePlatform extends DataObject {
   finished_date = this.registerStringField("finished_date", true);
   replay_reason = this.registerStringField("replay_reason", true);
 
+  constructor(private availableGamePlatform: AvailableGamePlatform) {
+    super();
+  }
+
   get platform(): GamePlatform {
-    return this.availableGamePlatform.gamePlatform;
+    return this.availableGamePlatform.platform;
   }
 
   getApiMethod(): string {

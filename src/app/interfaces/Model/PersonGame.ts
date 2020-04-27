@@ -5,6 +5,8 @@ import {PlatformService} from '../../services/platform.service';
 import {ArrayUtil} from '../../utility/ArrayUtil';
 import * as _ from 'underscore';
 import {MyGamePlatform} from './MyGamePlatform';
+import {AvailableGamePlatform} from './AvailableGamePlatform';
+import {Game} from './Game';
 
 export class PersonGame extends DataObject {
   last_played = this.registerDateField('last_played', false);
@@ -22,10 +24,12 @@ export class PersonGame extends DataObject {
   private _myPlatforms: MyGamePlatform[] = [];
 
   constructor(private platformService: PlatformService,
-              private allPlatforms: GamePlatform[]) {
+              private allPlatforms: GamePlatform[],
+              private game: Game) {
     super();
     this.minutes_played.value = 0;
     this.tier.value = 2;
+    this.game_id.value = game.id.value;
   }
 
   get platforms(): GamePlatform[] {
@@ -37,7 +41,9 @@ export class PersonGame extends DataObject {
     this.removeTemporaryPlatforms();
     _.forEach(jsonObj.myPlatforms, myPlatform => {
       const realPlatform = this.getOrCreateGamePlatform(myPlatform, this.allPlatforms);
-      this.addToMyPlatforms(realPlatform);
+      this.addToPlatforms(realPlatform);
+      const availableGamePlatform = this.game.getAvailablePlatform(realPlatform);
+      this.addToMyPlatforms(myPlatform, availableGamePlatform);
     });
     return this;
   }
@@ -98,9 +104,14 @@ export class PersonGame extends DataObject {
     }
   }
 
-  addToMyPlatforms(gamePlatform: GamePlatform) {
+  addToMyPlatforms(myPlatformObj: any, availableGamePlatform: AvailableGamePlatform) {
+    const myPlatform = new MyGamePlatform(availableGamePlatform).initializedFromJSON(myPlatformObj);
+    this._myPlatforms.push(myPlatform);
+  }
+
+  addToPlatforms(gamePlatform: GamePlatform) {
     if (gamePlatform.isTemporary()) {
-      throw new Error('Cannot add platform without id using addToAvailablePlatforms!');
+      throw new Error('Cannot add platform without id using addToPlatforms!');
     }
     const existing = _.find(this._platforms, platform => platform.id.value === gamePlatform.id.value);
     if (!existing) {

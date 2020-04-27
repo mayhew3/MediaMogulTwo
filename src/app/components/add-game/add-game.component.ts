@@ -133,16 +133,15 @@ export class AddGameComponent implements OnInit {
 
   async addExistingWithMyPlatform(match: any, platform: GamePlatform) {
     const game: Game = this.findMatchingGameForPlatform(match);
-    const personGame = new PersonGame(this.platformService, this.allPlatforms);
+    const personGame = new PersonGame(this.platformService, this.allPlatforms, game);
     personGame.person_id.value = this.me.id.value;
-    personGame.game_id.value = game.id.value;
     personGame.rating.value = this.rating;
-    personGame.addToMyPlatforms(platform);
+    personGame.addToPlatforms(platform);
     await this.gameService.addPersonGame(game, personGame);
   }
 
   async addToMyGames(game: Game, platform: any) {
-    const personGame = new PersonGame(this.platformService, this.allPlatforms);
+    const personGame = new PersonGame(this.platformService, this.allPlatforms, game);
     personGame.person_id.value = this.me.id.value;
     personGame.game_id.value = game.id.value;
     personGame.rating.value = this.rating;
@@ -156,7 +155,7 @@ export class AddGameComponent implements OnInit {
       const gamePlatform = this.createNewGamePlatform(platform);
       game.addTemporaryPlatform(gamePlatform);
     } else {
-      game.addToAvailablePlatforms(existing);
+      game.addToPlatforms(existing);
     }
   }
 
@@ -166,7 +165,7 @@ export class AddGameComponent implements OnInit {
       const gamePlatform = this.createNewGamePlatform(platform);
       personGame.addTemporaryPlatform(gamePlatform);
     } else {
-      personGame.addToMyPlatforms(existing);
+      personGame.addToPlatforms(existing);
     }
   }
 
@@ -206,9 +205,8 @@ export class AddGameComponent implements OnInit {
         game.igdb_height.value = match.cover.height;
       }
 
-      game.personGame = new PersonGame(this.platformService, this.allPlatforms);
+      game.personGame = new PersonGame(this.platformService, this.allPlatforms, game);
       game.personGame.person_id.value = this.me.id.value;
-      game.personGame.game_id.value = game.id.value;
       game.personGame.rating.value = this.rating;
 
       // todo: add ALL game platforms for game
