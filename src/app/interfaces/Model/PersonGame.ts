@@ -17,7 +17,7 @@ export class PersonGame extends DataObject {
   person_id = this.registerIntegerField('person_id', true);
   game_id = this.registerIntegerField('game_id', true);
 
-  private _myPlatforms: GamePlatform[] = [];
+  private _platforms: GamePlatform[] = [];
 
   constructor(private platformService: PlatformService,
               private allPlatforms: GamePlatform[]) {
@@ -26,8 +26,8 @@ export class PersonGame extends DataObject {
     this.tier.value = 2;
   }
 
-  get myPlatforms(): GamePlatform[] {
-    return ArrayUtil.cloneArray(this._myPlatforms);
+  get platforms(): GamePlatform[] {
+    return ArrayUtil.cloneArray(this._platforms);
   }
 
   initializedFromJSON(jsonObj: any): this {
@@ -43,7 +43,7 @@ export class PersonGame extends DataObject {
   protected makeChangesToInsertPayload(json: any): any {
     const base = super.makeChangesToInsertPayload(json);
     base.myPlatforms = [];
-    _.forEach(this.myPlatforms, myPlatform => {
+    _.forEach(this.platforms, myPlatform => {
       if (!myPlatform.id) {
         base.myPlatforms.push(myPlatform.getChangedFields());
       } else {
@@ -90,9 +90,9 @@ export class PersonGame extends DataObject {
     if (!gamePlatform.isTemporary()) {
       throw new Error('Cannot add platform with id using addTemporaryPlatform!');
     }
-    const existing = _.find(this._myPlatforms, platform => platform.full_name.value === gamePlatform.full_name.value);
+    const existing = _.find(this._platforms, platform => platform.full_name.value === gamePlatform.full_name.value);
     if (!existing) {
-      this._myPlatforms.push(gamePlatform);
+      this._platforms.push(gamePlatform);
     }
   }
 
@@ -100,33 +100,33 @@ export class PersonGame extends DataObject {
     if (gamePlatform.isTemporary()) {
       throw new Error('Cannot add platform without id using addToAvailablePlatforms!');
     }
-    const existing = _.find(this._myPlatforms, platform => platform.id.value === gamePlatform.id.value);
+    const existing = _.find(this._platforms, platform => platform.id.value === gamePlatform.id.value);
     if (!existing) {
-      this._myPlatforms.push(gamePlatform);
+      this._platforms.push(gamePlatform);
     }
   }
 
   hasPlatform(platformName: string): boolean {
-    const existing = _.find(this.myPlatforms, platform => platform.full_name.value === platformName);
+    const existing = _.find(this.platforms, platform => platform.full_name.value === platformName);
     return !!existing;
   }
 
   hasPlatformWithIGDBID(igdbID: number): boolean {
-    const existing = _.find(this.myPlatforms, platform => platform.igdb_platform_id.value === igdbID);
+    const existing = _.find(this.platforms, platform => platform.igdb_platform_id.value === igdbID);
     return !!existing;
   }
 
   getPlatformNames(): string[] {
-    return _.map(this.myPlatforms, platform => platform.full_name.value);
+    return _.map(this.platforms, platform => platform.full_name.value);
   }
 
   getPlatformIGDBIDs(): number[] {
-    return _.map(this.myPlatforms, platform => platform.igdb_platform_id.value);
+    return _.map(this.platforms, platform => platform.igdb_platform_id.value);
   }
 
   private removeTemporaryPlatforms() {
-    const temporaryPlatforms = _.filter(this._myPlatforms, platform => platform.isTemporary());
-    _.forEach(temporaryPlatforms, platform => ArrayUtil.removeFromArray(this._myPlatforms, platform));
+    const temporaryPlatforms = _.filter(this._platforms, platform => platform.isTemporary());
+    _.forEach(temporaryPlatforms, platform => ArrayUtil.removeFromArray(this._platforms, platform));
   }
 
 }

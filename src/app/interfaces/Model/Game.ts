@@ -74,7 +74,7 @@ export class Game extends DataObject {
     if (!!this._personGame) {
       base.personGame = this._personGame.getChangedFields();
       base.personGame.myPlatforms = [];
-      _.forEach(this._personGame.myPlatforms, myPlatform => {
+      _.forEach(this._personGame.platforms, myPlatform => {
         if (!myPlatform.id) {
           base.personGame.myPlatforms.push(myPlatform.getChangedFields());
         } else {

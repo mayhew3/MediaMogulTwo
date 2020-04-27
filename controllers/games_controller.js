@@ -125,7 +125,7 @@ exports.addGame = async function(request, response) {
       throw new Error(err);
     }
 
-    const myPlatforms = personGameObj.myPlatforms;
+    const myPlatforms = personGameObj.platforms;
     delete personGameObj.myPlatforms;
     const newPlatforms = _.filter(myPlatforms, platform => !platform.id);
     returnObj.personGame.myPlatforms = [];

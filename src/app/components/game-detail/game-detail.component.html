@@ -32,6 +32,16 @@
     </div>
   </div>
 
+  <div class="row"
+       *ngFor="let platform of game.availablePlatforms">
+    <div class="col">
+      {{platform.full_name.value}}
+    </div>
+    <div class="col">
+      {{getOwnedString(platform)}}
+    </div>
+  </div>
+
 
   <form>
     <div class="row">

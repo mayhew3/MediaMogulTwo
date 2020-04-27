@@ -6,6 +6,7 @@ import {Game} from '../../interfaces/Model/Game';
 import {PlatformService} from '../../services/platform.service';
 import {GamePlatform} from '../../interfaces/Model/GamePlatform';
 import {ArrayUtil} from '../../utility/ArrayUtil';
+import * as _ from 'underscore';
 
 @Component({
   selector: 'mm-game-detail',
@@ -54,6 +55,14 @@ export class GameDetailComponent implements OnInit {
   onFieldEdit() {
     this.changedGameFields = this.game.getChangedFields();
     this.changedPersonFields = this.game.personGame.getChangedFields();
+  }
+
+  isOwned(platform: GamePlatform): boolean {
+    return this.game.personGame.hasPlatformWithIGDBID(platform.igdb_platform_id.value);
+  }
+
+  getOwnedString(platform: GamePlatform): string {
+    return this.isOwned(platform) ? 'Owned' : 'Unowned';
   }
 
   hasPerson(): boolean {

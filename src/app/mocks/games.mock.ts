@@ -42,7 +42,18 @@ export const MockGames = [
       "rating": 84.1,
       "finished_date": null,
       "id": 588,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1320,
+        "platform_name": "PC",
+        "rating": 84.1,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 78
@@ -88,7 +99,18 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 650,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 300,
+        "platform_name": "Wii U",
+        "rating": 77,
+        "last_played": "2020-02-20 00:00:00.0",
+        "finished_date": null,
+        "id": 11
+      }],
       "person_id": 1
     }],
     "igdb_id": 2171
@@ -134,7 +156,18 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 101,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 81,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7388
@@ -180,7 +213,18 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 272,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 85,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 5614
@@ -226,7 +270,18 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 718,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 360,
+        "platform_name": "Xbox 360",
+        "rating": 70,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 3068
@@ -272,7 +327,18 @@ export const MockGames = [
       "rating": 30,
       "finished_date": null,
       "id": 447,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 240,
+        "platform_name": "Wii U",
+        "rating": 30,
+        "last_played": null,
+        "finished_date": null,
+        "id": 11
+      }],
       "person_id": 1
     }],
     "igdb_id": 2350
@@ -318,7 +384,18 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 584,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 120,
+        "platform_name": "PC",
+        "rating": 67,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 80
@@ -374,8 +451,30 @@ export const MockGames = [
       "finished_date": null,
       "id": 731,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 9}
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 60,
+          "platform_name": "Steam",
+          "rating": 79,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Xbox 360",
+          "rating": 71,
+          "last_played": null,
+          "finished_date": null,
+          "id": 9
+        }
       ],
       "person_id": 1
     }],
@@ -422,7 +521,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 70,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 360,
+        "platform_name": "PS3",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 7375
@@ -467,7 +577,18 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 444,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": 70,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 2207
@@ -513,7 +634,18 @@ export const MockGames = [
       "rating": 82.6,
       "finished_date": null,
       "id": 396,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 60,
+        "platform_name": "Xbox 360",
+        "rating": 82.6,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 434
@@ -559,7 +691,18 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 370,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 420,
+        "platform_name": "PC",
+        "rating": 83,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 1183
@@ -605,7 +748,18 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 491,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 240,
+        "platform_name": "PS3",
+        "rating": 40,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 1009
@@ -651,7 +805,18 @@ export const MockGames = [
       "rating": 10,
       "finished_date": null,
       "id": 250,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 60,
+        "platform_name": "PC",
+        "rating": 10,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 832
@@ -697,7 +862,18 @@ export const MockGames = [
       "rating": 78.8,
       "finished_date": null,
       "id": 753,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 9703,
+        "platform_name": "Steam",
+        "rating": 78.8,
+        "last_played": "2016-08-06 03:49:06.154",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 866
@@ -743,7 +919,18 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 653,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 2400,
+        "platform_name": "Xbox 360",
+        "rating": 83,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 15
@@ -788,7 +975,18 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 649,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": 70,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 7170
@@ -834,7 +1032,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 318,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 30,
+        "platform_name": "Xbox 360",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 2853
@@ -880,7 +1089,18 @@ export const MockGames = [
       "rating": 85.8,
       "finished_date": null,
       "id": 187,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 238,
+        "platform_name": "Steam",
+        "rating": 85.8,
+        "last_played": "2014-10-15 03:45:06.958",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 53626
@@ -926,7 +1146,18 @@ export const MockGames = [
       "rating": 89.5,
       "finished_date": "2020-04-20 18:22:58.172",
       "id": 619,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": 66,
+        "final_score": 84,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 124,
+        "platform_name": "Steam",
+        "rating": 89.5,
+        "last_played": null,
+        "finished_date": "2020-04-20 18:22:58.172",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3035
@@ -972,7 +1203,18 @@ export const MockGames = [
       "rating": 90.4,
       "finished_date": null,
       "id": 283,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 20,
+        "platform_name": "Steam",
+        "rating": 90.4,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3022
@@ -1018,7 +1260,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 743,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 60,
+        "platform_name": "PS3",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 7391
@@ -1063,7 +1316,18 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 443,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": 78,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 1792
@@ -1109,7 +1373,18 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 450,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": 86,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 1051
@@ -1155,7 +1430,18 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 448,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 54,
+        "platform_name": "PS3",
+        "rating": 84,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 549
@@ -1200,7 +1486,18 @@ export const MockGames = [
       "rating": 94,
       "finished_date": null,
       "id": 261,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 15,
+        "platform_name": "Xbox 360",
+        "rating": 94,
+        "last_played": "2020-04-13 00:00:00.0",
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 338
@@ -1246,7 +1543,18 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 499,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 18,
+        "platform_name": "Steam",
+        "rating": 60,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2129
@@ -1302,8 +1610,30 @@ export const MockGames = [
       "finished_date": null,
       "id": 279,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 5}
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 1,
+          "platform_name": "Steam",
+          "rating": 78,
+          "last_played": "2018-03-27 19:11:30.237",
+          "finished_date": null,
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "PS4",
+          "rating": 73,
+          "last_played": null,
+          "finished_date": null,
+          "id": 5
+        }
       ],
       "person_id": 1
     }],
@@ -1350,7 +1680,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 286,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 8371
@@ -1396,7 +1737,18 @@ export const MockGames = [
       "rating": 69,
       "finished_date": null,
       "id": 365,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 17,
+        "platform_name": "Steam",
+        "rating": 69,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3251
@@ -1442,7 +1794,18 @@ export const MockGames = [
       "rating": 84.4,
       "finished_date": null,
       "id": 363,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 84.4,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19121
@@ -1488,7 +1851,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 744,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 523
@@ -1534,7 +1908,18 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 367,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Wii",
+        "rating": 82,
+        "last_played": null,
+        "finished_date": null,
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 974
@@ -1613,7 +1998,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 698,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Wii",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1036
@@ -1659,7 +2055,18 @@ export const MockGames = [
       "rating": 83.4,
       "finished_date": null,
       "id": 601,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 120,
+        "platform_name": "Wii",
+        "rating": 83.4,
+        "last_played": null,
+        "finished_date": null,
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 534
@@ -1705,7 +2112,18 @@ export const MockGames = [
       "rating": 84.5,
       "finished_date": null,
       "id": 710,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 29,
+        "platform_name": "Steam",
+        "rating": 84.5,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 8507
@@ -1751,7 +2169,18 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 746,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 180,
+        "platform_name": "Wii",
+        "rating": 79,
+        "last_played": null,
+        "finished_date": null,
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2178
@@ -1837,7 +2266,18 @@ export const MockGames = [
       "rating": 90,
       "finished_date": "2016-01-15 00:00:00.0",
       "id": 725,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": 90,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 2231,
+        "platform_name": "Steam",
+        "rating": 90,
+        "last_played": "2016-01-25 03:45:54.228",
+        "finished_date": "2016-01-15 00:00:00.0",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1318
@@ -1883,7 +2323,18 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 680,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": 84,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 1278
@@ -1929,7 +2380,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 338,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 18,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 3968
@@ -1975,7 +2437,18 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 384,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": 84,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 59
@@ -2021,7 +2494,18 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 636,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": 82,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 1602
@@ -2067,7 +2551,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 189,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 67,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1911
@@ -2112,7 +2607,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 733,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 21683
@@ -2157,7 +2663,18 @@ export const MockGames = [
       "rating": 91.6,
       "finished_date": "2014-05-18 00:00:00.0",
       "id": 547,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": 75,
+        "final_score": 90,
+        "tier": 2,
+        "replay_reason": "Achievements, use different plasmids, strategies",
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 91.6,
+        "last_played": null,
+        "finished_date": "2014-05-18 00:00:00.0",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 10047
@@ -2201,7 +2718,18 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 313,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 70,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1156
@@ -2247,7 +2775,18 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 256,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 2,
+        "platform_name": "Steam",
+        "rating": 77,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2248
@@ -2293,7 +2832,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 281,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 5445
@@ -2337,7 +2887,18 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 477,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 78,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19961
@@ -2383,7 +2944,18 @@ export const MockGames = [
       "rating": 84.7,
       "finished_date": null,
       "id": 319,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1,
+        "platform_name": "Steam",
+        "rating": 84.7,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 5060
@@ -2429,7 +3001,18 @@ export const MockGames = [
       "rating": 50,
       "finished_date": null,
       "id": 735,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 58,
+        "platform_name": "Steam",
+        "rating": 50,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 11812
@@ -2475,7 +3058,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 391,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1281
@@ -2521,7 +3115,18 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 347,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 78,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2354
@@ -2567,7 +3172,18 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 751,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 68,
+        "platform_name": "Steam",
+        "rating": 79,
+        "last_played": "2016-05-12 03:45:57.499",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 22
@@ -2613,7 +3229,18 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 345,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 82,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 5892
@@ -2659,7 +3286,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 421,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 6,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7832
@@ -2703,7 +3341,18 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 204,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 84,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 53763
@@ -2749,7 +3398,18 @@ export const MockGames = [
       "rating": 89,
       "finished_date": null,
       "id": 245,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 89,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3087
@@ -2795,7 +3455,18 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 340,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 83,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9924
@@ -2872,7 +3543,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 333,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 140,
+        "platform_name": "Steam",
+        "rating": 80,
+        "last_played": "2016-06-14 03:45:50.311",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 895
@@ -2958,7 +3640,18 @@ export const MockGames = [
       "rating": 85.5,
       "finished_date": null,
       "id": 277,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 120,
+        "platform_name": "Wii",
+        "rating": 85.5,
+        "last_played": null,
+        "finished_date": null,
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1077
@@ -3004,7 +3697,18 @@ export const MockGames = [
       "rating": 81.5,
       "finished_date": null,
       "id": 496,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 180,
+        "platform_name": "PC",
+        "rating": 81.5,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 144
@@ -3050,7 +3754,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 581,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 7373
@@ -3096,7 +3811,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 197,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 6,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2001
@@ -3142,7 +3868,18 @@ export const MockGames = [
       "rating": 84.5,
       "finished_date": null,
       "id": 91,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 84.5,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2130
@@ -3188,7 +3925,18 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 759,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 79,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3049
@@ -3234,7 +3982,18 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 374,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Wii",
+        "rating": 40,
+        "last_played": null,
+        "finished_date": null,
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 1112
@@ -3279,7 +4038,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 67,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3092
@@ -3324,7 +4094,18 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 368,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": 70,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 909
@@ -3370,7 +4151,18 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 651,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 300,
+        "platform_name": "Xbox 360",
+        "rating": 85,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 2691
@@ -3424,8 +4216,30 @@ export const MockGames = [
       "finished_date": null,
       "id": 383,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 5}
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "PS4",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 5
+        }
       ],
       "person_id": 1
     }],
@@ -3472,7 +4286,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 401,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 112
@@ -3518,7 +4343,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 298,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 4,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2918
@@ -3564,7 +4400,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 294,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 1254
@@ -3610,7 +4457,18 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 310,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": 72,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 3047
@@ -3656,7 +4514,18 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 481,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 36,
+        "platform_name": "Steam",
+        "rating": 85,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 508
@@ -3702,7 +4571,18 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 689,
-      "myPlatforms": [{"id": 2}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "NDS",
+        "rating": 40,
+        "last_played": null,
+        "finished_date": null,
+        "id": 2
+      }],
       "person_id": 1
     }],
     "igdb_id": 2345
@@ -3747,7 +4627,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 114,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 86260
@@ -3793,7 +4684,18 @@ export const MockGames = [
       "rating": 78.9,
       "finished_date": null,
       "id": 358,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 19,
+        "platform_name": "Steam",
+        "rating": 78.9,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2989
@@ -3839,7 +4741,18 @@ export const MockGames = [
       "rating": 84.5,
       "finished_date": null,
       "id": 348,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 372,
+        "platform_name": "Steam",
+        "rating": 84.5,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1337
@@ -3885,7 +4798,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 342,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3082
@@ -3930,7 +4854,18 @@ export const MockGames = [
       "rating": 1,
       "finished_date": null,
       "id": 682,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": 1,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 1341
@@ -3976,7 +4911,18 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 410,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 480,
+        "platform_name": "PC",
+        "rating": 77,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 457
@@ -4022,7 +4968,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 126,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 173,
+        "platform_name": "Steam",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7404
@@ -4078,8 +5035,30 @@ export const MockGames = [
       "finished_date": null,
       "id": 622,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 6}
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 1,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 24,
+          "platform_name": "PS3",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 6
+        }
       ],
       "person_id": 1
     }],
@@ -4126,7 +5105,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 321,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2132
@@ -4171,7 +5161,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 128,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 1889
@@ -4217,7 +5218,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 452,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 98
@@ -4263,7 +5275,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 690,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 2291
@@ -4309,7 +5332,18 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 765,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": 76,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 1384
@@ -4355,7 +5389,18 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 190,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 77,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 14
@@ -4401,7 +5446,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 325,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 120,
+        "platform_name": "Xbox 360",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 2896
@@ -4447,7 +5503,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 694,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 475
@@ -4493,7 +5560,18 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 191,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 175,
+        "platform_name": "Steam",
+        "rating": 72,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 8739
@@ -4539,7 +5617,18 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 663,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": 83,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 105
@@ -4585,7 +5674,18 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 531,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 600,
+        "platform_name": "PC",
+        "rating": 81,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 114
@@ -4631,7 +5731,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 482,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2438
@@ -4677,7 +5788,18 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 273,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 30,
+        "platform_name": "Steam",
+        "rating": 82,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2448
@@ -4723,7 +5845,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 379,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 77,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3098
@@ -4769,7 +5902,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 460,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 5592
@@ -4815,7 +5959,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 617,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 8190
@@ -4861,7 +6016,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 398,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 9132
@@ -4907,7 +6073,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 691,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 5329
@@ -4953,7 +6130,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 394,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 4969
@@ -4999,7 +6187,18 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 200,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 82,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2050
@@ -5045,7 +6244,18 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 416,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 74,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7887
@@ -5092,7 +6302,18 @@ export const MockGames = [
         "rating": 68,
         "finished_date": null,
         "id": 399,
-        "myPlatforms": [{"id": 10}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 180,
+          "platform_name": "PC",
+          "rating": 68,
+          "last_played": null,
+          "finished_date": null,
+          "id": 10
+        }],
         "person_id": 1
       },
       {
@@ -5106,7 +6327,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 797,
-        "myPlatforms": [{"id": 10}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "PC",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 10
+        }],
         "person_id": 4
       }
     ],
@@ -5153,7 +6385,18 @@ export const MockGames = [
       "rating": 45,
       "finished_date": null,
       "id": 529,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox",
+        "rating": 45,
+        "last_played": null,
+        "finished_date": null,
+        "id": 7
+      }],
       "person_id": 1
     }],
     "igdb_id": 18
@@ -5199,7 +6442,18 @@ export const MockGames = [
       "rating": 1,
       "finished_date": null,
       "id": 439,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox",
+        "rating": 1,
+        "last_played": null,
+        "finished_date": null,
+        "id": 7
+      }],
       "person_id": 1
     }],
     "igdb_id": 1002
@@ -5277,7 +6531,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 767,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 947
@@ -5323,7 +6588,18 @@ export const MockGames = [
       "rating": 12,
       "finished_date": null,
       "id": 360,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": 12,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 620
@@ -5369,7 +6645,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 610,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 530
@@ -5415,7 +6702,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 479,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 18293
@@ -5461,7 +6759,18 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 591,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": 67,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 3072
@@ -5507,7 +6816,18 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 627,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 72,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 50867
@@ -5553,7 +6873,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 685,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 473
@@ -5599,7 +6930,18 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 404,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 300,
+        "platform_name": "PC",
+        "rating": 65,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 13126
@@ -5645,7 +6987,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 323,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 47,
+        "platform_name": "Steam",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3160
@@ -5691,7 +7044,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 308,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 990
@@ -5737,7 +7101,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 337,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 300,
+        "platform_name": "Wii",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 1
+      }],
       "person_id": 1
     }],
     "igdb_id": 2183
@@ -5783,7 +7158,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 740,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 240,
+        "platform_name": "Xbox 360",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 568
@@ -5829,7 +7215,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 324,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 2400,
+        "platform_name": "Xbox 360",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 74
@@ -5875,7 +7272,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 354,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1800,
+        "platform_name": "Xbox 360",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 2540
@@ -5921,7 +7329,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 486,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 8758
@@ -5967,7 +7386,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 612,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3839
@@ -6053,7 +7483,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 766,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 1267
@@ -6099,7 +7540,18 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 400,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 60,
+        "platform_name": "PC",
+        "rating": 76,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 1876
@@ -6145,7 +7597,18 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 302,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 300,
+        "platform_name": "PC",
+        "rating": 70,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 2480
@@ -6191,7 +7654,18 @@ export const MockGames = [
       "rating": 71,
       "finished_date": null,
       "id": 253,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 64,
+        "platform_name": "Steam",
+        "rating": 71,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 43
@@ -6237,7 +7711,18 @@ export const MockGames = [
       "rating": 61,
       "finished_date": null,
       "id": 634,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 3000,
+        "platform_name": "PC",
+        "rating": 61,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 293
@@ -6283,7 +7768,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 582,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 496
@@ -6329,7 +7825,18 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 692,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 60,
+        "platform_name": "PS3",
+        "rating": 79,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 731
@@ -6375,7 +7882,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 687,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 2732
@@ -6421,7 +7939,18 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 438,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 60,
+        "platform_name": "PS3",
+        "rating": 79,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 1058
@@ -6466,7 +7995,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 201,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 66
@@ -6512,7 +8052,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 440,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 7
+      }],
       "person_id": 1
     }],
     "igdb_id": 521
@@ -6558,7 +8109,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 309,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 325,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1880
@@ -6604,7 +8166,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 453,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 9139
@@ -6650,7 +8223,18 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 730,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 25,
+        "platform_name": "Steam",
+        "rating": 78,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2163
@@ -6696,7 +8280,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 628,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 8186
@@ -6742,7 +8337,18 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 388,
-      "myPlatforms": [{"id": 2}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 150,
+        "platform_name": "NDS",
+        "rating": 77,
+        "last_played": null,
+        "finished_date": null,
+        "id": 2
+      }],
       "person_id": 1
     }],
     "igdb_id": 1693
@@ -6788,7 +8394,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 768,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 7588
@@ -6834,7 +8451,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 752,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3043
@@ -6880,7 +8508,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 526,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 1268
@@ -6926,7 +8565,18 @@ export const MockGames = [
       "rating": 45,
       "finished_date": null,
       "id": 484,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": 45,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 1300
@@ -6972,7 +8622,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 769,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 1891
@@ -7017,7 +8678,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 473,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 2047
@@ -7063,7 +8735,18 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 248,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": 76,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 576
@@ -7109,7 +8792,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 607,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 1216
@@ -7155,7 +8849,18 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 631,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 540,
+        "platform_name": "Xbox 360",
+        "rating": 76,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 2672
@@ -7201,7 +8906,18 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 594,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1200,
+        "platform_name": "Xbox 360",
+        "rating": 76,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 2692
@@ -7247,7 +8963,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 745,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3026
@@ -7293,7 +9020,18 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 656,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 76,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3210
@@ -7339,7 +9077,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 605,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 20898
@@ -7385,7 +9134,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 423,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 7
+      }],
       "person_id": 1
     }],
     "igdb_id": 5749
@@ -7431,7 +9191,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 684,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 21077
@@ -7477,7 +9248,18 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 748,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": 75,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 2152
@@ -7523,7 +9305,18 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 359,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 300,
+        "platform_name": "Xbox 360",
+        "rating": 75,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 3069
@@ -7568,7 +9361,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 603,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 497
@@ -7613,7 +9417,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 681,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 975
@@ -7658,7 +9473,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 474,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 8388
@@ -7704,7 +9530,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 729,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 5523
@@ -7750,7 +9587,18 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 716,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 25,
+        "platform_name": "Steam",
+        "rating": 68,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2991
@@ -7795,7 +9643,18 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 455,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 67,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 308
@@ -7841,7 +9700,18 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 483,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox",
+        "rating": 74,
+        "last_played": null,
+        "finished_date": null,
+        "id": 7
+      }],
       "person_id": 1
     }],
     "igdb_id": 118
@@ -7887,7 +9757,18 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 349,
-      "myPlatforms": [{"id": 2}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "NDS",
+        "rating": 74,
+        "last_played": null,
+        "finished_date": null,
+        "id": 2
+      }],
       "person_id": 1
     }],
     "igdb_id": 1076
@@ -7932,7 +9813,18 @@ export const MockGames = [
       "rating": 45,
       "finished_date": null,
       "id": 515,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox",
+        "rating": 45,
+        "last_played": null,
+        "finished_date": null,
+        "id": 7
+      }],
       "person_id": 1
     }],
     "igdb_id": 730
@@ -7978,7 +9870,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 695,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 7
+      }],
       "person_id": 1
     }],
     "igdb_id": 6500
@@ -8024,7 +9927,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 446,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 7
+      }],
       "person_id": 1
     }],
     "igdb_id": 2973
@@ -8070,7 +9984,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 504,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 16633
@@ -8116,7 +10041,18 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 652,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1200,
+        "platform_name": "Xbox 360",
+        "rating": 73,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 3322
@@ -8162,7 +10098,18 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 407,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox",
+        "rating": 72,
+        "last_played": null,
+        "finished_date": null,
+        "id": 7
+      }],
       "person_id": 1
     }],
     "igdb_id": 142
@@ -8208,7 +10155,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 30,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 6913
@@ -8254,7 +10212,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 475,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 11495
@@ -8300,7 +10269,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 527,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 10762
@@ -8346,7 +10326,18 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 331,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 180,
+        "platform_name": "Xbox 360",
+        "rating": 72,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 2670
@@ -8392,7 +10383,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 734,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 5626
@@ -8438,7 +10440,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 763,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 7056
@@ -8484,7 +10497,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 615,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 65910
@@ -8530,7 +10554,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 437,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 7
+      }],
       "person_id": 1
     }],
     "igdb_id": 348
@@ -8576,7 +10611,18 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 316,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": 70,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 7370
@@ -8622,7 +10668,18 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 659,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": 70,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 7371
@@ -8668,7 +10725,18 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 697,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": 68,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 7029
@@ -8714,7 +10782,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 353,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 5,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7596
@@ -8759,7 +10838,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 469,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 1921
@@ -8805,7 +10895,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 597,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 7
+      }],
       "person_id": 1
     }],
     "igdb_id": 3063
@@ -8851,7 +10952,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 688,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 2585
@@ -8897,7 +11009,18 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 406,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 600,
+        "platform_name": "PC",
+        "rating": 60,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 3155
@@ -8943,7 +11066,18 @@ export const MockGames = [
       "rating": 54,
       "finished_date": null,
       "id": 375,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 540,
+        "platform_name": "Xbox 360",
+        "rating": 54,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 987
@@ -8989,7 +11123,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 720,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1625
@@ -9035,7 +11180,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 762,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 4989
@@ -9121,7 +11277,18 @@ export const MockGames = [
       "rating": 10,
       "finished_date": null,
       "id": 291,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1800,
+        "platform_name": "Xbox 360",
+        "rating": 10,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 75
@@ -9167,7 +11334,18 @@ export const MockGames = [
       "rating": 1,
       "finished_date": "2012-11-28 00:00:00.0",
       "id": 87,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": 92,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 892,
+        "platform_name": "Steam",
+        "rating": 1,
+        "last_played": "2018-09-03 20:59:34.422",
+        "finished_date": "2012-11-28 00:00:00.0",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1871
@@ -9540,7 +11718,18 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 711,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 37,
+        "platform_name": "Steam",
+        "rating": 81,
+        "last_played": "2019-02-04 17:19:53.704",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 16
@@ -9586,7 +11775,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 478,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7634
@@ -9632,7 +11832,18 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 264,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 65,
+        "platform_name": "Steam",
+        "rating": 79,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 6250
@@ -9678,7 +11889,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 315,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 6328
@@ -9724,7 +11946,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 352,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2251
@@ -9769,7 +12002,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 330,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 8214
@@ -9815,7 +12059,18 @@ export const MockGames = [
       "rating": 30,
       "finished_date": null,
       "id": 371,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 29,
+        "platform_name": "Steam",
+        "rating": 30,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2990
@@ -9861,7 +12116,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 728,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1,
+        "platform_name": "Steam",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 533
@@ -9907,7 +12173,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 758,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 8,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 10327
@@ -9953,7 +12230,18 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 433,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1,
+        "platform_name": "Steam",
+        "rating": 84,
+        "last_played": "2018-03-27 19:11:29.893",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1334
@@ -9999,7 +12287,18 @@ export const MockGames = [
       "rating": 92,
       "finished_date": "2014-07-16 20:52:00.0",
       "id": 278,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": 92,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 517,
+        "platform_name": "Steam",
+        "rating": 92,
+        "last_played": "2014-10-20 03:45:05.042",
+        "finished_date": "2014-07-16 20:52:00.0",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2993
@@ -10045,7 +12344,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 322,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 5772
@@ -10091,7 +12401,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 265,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 361
@@ -10136,7 +12457,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 386,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 6,
+        "platform_name": "Steam",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 10870
@@ -10182,7 +12514,18 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 749,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 147,
+        "platform_name": "Steam",
+        "rating": 84,
+        "last_played": "2015-09-23 01:23:15.761",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1059
@@ -10228,7 +12571,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 307,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3075
@@ -10274,7 +12628,18 @@ export const MockGames = [
       "rating": 83.2,
       "finished_date": null,
       "id": 714,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 83.2,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9722
@@ -10319,7 +12684,18 @@ export const MockGames = [
       "rating": 94,
       "finished_date": "2020-04-20 18:12:23.178",
       "id": 468,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": 50,
+        "final_score": 82,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 94,
+        "last_played": null,
+        "finished_date": "2020-04-20 18:12:23.178",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 77
@@ -10365,7 +12741,18 @@ export const MockGames = [
       "rating": 98,
       "finished_date": "2020-04-14 11:17:38.639",
       "id": 648,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": 40,
+        "final_score": 94,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 180,
+        "platform_name": "PS3",
+        "rating": 98,
+        "last_played": null,
+        "finished_date": "2020-04-14 11:17:38.639",
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 1352
@@ -10411,7 +12798,18 @@ export const MockGames = [
       "rating": 90.5,
       "finished_date": "2014-01-15 00:00:00.0",
       "id": 445,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": 85,
+        "final_score": 89,
+        "tier": 2,
+        "replay_reason": "Different choices",
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 90.5,
+        "last_played": null,
+        "finished_date": "2014-01-15 00:00:00.0",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3015
@@ -10457,7 +12855,18 @@ export const MockGames = [
       "rating": 92.5,
       "finished_date": "2014-08-19 00:00:00.0",
       "id": 402,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": 70,
+        "final_score": 87,
+        "tier": 2,
+        "replay_reason": "Plus Mode, with all my upgrades. Might be fun to play through with uber weapons",
+        "minutes_played": 578,
+        "platform_name": "Steam",
+        "rating": 92.5,
+        "last_played": null,
+        "finished_date": "2014-08-19 00:00:00.0",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1983
@@ -10502,7 +12911,18 @@ export const MockGames = [
       "rating": 94,
       "finished_date": "2020-04-20 18:12:27.065",
       "id": 314,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": 68,
+        "final_score": 89,
+        "tier": 2,
+        "replay_reason": "Different origins, builds, romances",
+        "minutes_played": 5550,
+        "platform_name": "Steam",
+        "rating": 94,
+        "last_played": "2014-11-19 03:45:45.418",
+        "finished_date": "2020-04-20 18:12:27.065",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 27911
@@ -10548,7 +12968,18 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 420,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 415,
+        "platform_name": "Steam",
+        "rating": 85,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 16955
@@ -10625,7 +13056,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 304,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2602
@@ -10711,7 +13153,18 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 237,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 77,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 307
@@ -10755,7 +13208,18 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 50,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 65,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9471
@@ -10799,7 +13263,18 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 339,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 67,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 10395
@@ -10845,7 +13320,18 @@ export const MockGames = [
       "rating": 81.5,
       "finished_date": null,
       "id": 332,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 18,
+        "platform_name": "Steam",
+        "rating": 81.5,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1339
@@ -10891,7 +13377,18 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 737,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 31,
+        "platform_name": "Steam",
+        "rating": 65,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 296
@@ -10937,7 +13434,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 618,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 836
@@ -10983,7 +13491,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 351,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 4220
@@ -11029,7 +13548,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 32,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 2,
+        "platform_name": "Steam",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 558
@@ -11075,7 +13605,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 382,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 65
@@ -11122,7 +13663,18 @@ export const MockGames = [
         "rating": 84,
         "finished_date": null,
         "id": 75,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": 84,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 1
       },
       {
@@ -11136,7 +13688,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 788,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 4
       }
     ],
@@ -11183,7 +13746,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 258,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 8390
@@ -11229,7 +13803,18 @@ export const MockGames = [
       "rating": 87.5,
       "finished_date": null,
       "id": 356,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 424,
+        "platform_name": "Steam",
+        "rating": 87.5,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1879
@@ -11275,7 +13860,18 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 151,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 466,
+        "platform_name": "Steam",
+        "rating": 82,
+        "last_played": "2017-07-07 04:45:06.0",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 20740
@@ -11331,8 +13927,30 @@ export const MockGames = [
       "finished_date": null,
       "id": 266,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 6}
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": 80.3,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "PS3",
+          "rating": 56,
+          "last_played": null,
+          "finished_date": null,
+          "id": 6
+        }
       ],
       "person_id": 1
     }],
@@ -11379,7 +13997,18 @@ export const MockGames = [
       "rating": 80.9,
       "finished_date": null,
       "id": 271,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 80.9,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 38
@@ -11425,7 +14054,18 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 335,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 16,
+        "platform_name": "Steam",
+        "rating": 85,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1331
@@ -11471,7 +14111,18 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 739,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 373,
+        "platform_name": "Steam",
+        "rating": 79,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1052
@@ -11516,7 +14167,18 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 373,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 11,
+        "platform_name": "Steam",
+        "rating": 75,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3240
@@ -11561,7 +14223,18 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 183,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1026,
+        "platform_name": "Steam",
+        "rating": 77,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 102111
@@ -11607,7 +14280,18 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 262,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 70,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 15071
@@ -11652,7 +14336,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 68,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 787
@@ -11698,7 +14393,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 341,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 8382
@@ -11744,7 +14450,18 @@ export const MockGames = [
       "rating": 81.5,
       "finished_date": null,
       "id": 703,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 27,
+        "platform_name": "Steam",
+        "rating": 81.5,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 6168
@@ -11790,7 +14507,18 @@ export const MockGames = [
       "rating": 93,
       "finished_date": "2013-01-10 23:13:00.0",
       "id": 620,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": 10,
+        "final_score": 90,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 497,
+        "platform_name": "Steam",
+        "rating": 93,
+        "last_played": null,
+        "finished_date": "2013-01-10 23:13:00.0",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1377
@@ -11836,7 +14564,18 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 199,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 73,
+        "platform_name": "Steam",
+        "rating": 82,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 6836
@@ -11882,7 +14621,18 @@ export const MockGames = [
       "rating": 78.6,
       "finished_date": null,
       "id": 364,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 107,
+        "platform_name": "Steam",
+        "rating": 78.6,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9634
@@ -11928,7 +14678,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 520,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 8392
@@ -11974,7 +14735,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 378,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 6230
@@ -12020,7 +14792,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 334,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1054
@@ -12066,7 +14849,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 613,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 6611
@@ -12112,7 +14906,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 329,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 11640
@@ -12157,7 +14962,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 471,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3183
@@ -12203,7 +15019,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 355,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 8984
@@ -12249,7 +15076,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 328,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9718
@@ -12294,7 +15132,18 @@ export const MockGames = [
       "rating": 25,
       "finished_date": null,
       "id": 326,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 4,
+        "platform_name": "Steam",
+        "rating": 25,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 6246
@@ -12340,7 +15189,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 343,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9971
@@ -12386,7 +15246,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 346,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1062
@@ -12432,7 +15303,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 295,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 6327
@@ -12478,7 +15360,18 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 108,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 204,
+        "platform_name": "Steam",
+        "rating": 79,
+        "last_played": "2016-06-16 03:45:53.714",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 28008
@@ -12524,7 +15417,18 @@ export const MockGames = [
       "rating": 88,
       "finished_date": "2020-04-20 18:37:37.697",
       "id": 336,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": 89,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 7723,
+        "platform_name": "Steam",
+        "rating": 88,
+        "last_played": "2019-06-20 20:44:04.817",
+        "finished_date": "2020-04-20 18:37:37.697",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1011
@@ -12570,7 +15474,18 @@ export const MockGames = [
       "rating": 66,
       "finished_date": null,
       "id": 510,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 16,
+        "platform_name": "Steam",
+        "rating": 66,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1270
@@ -12616,7 +15531,18 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 299,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 67,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1269
@@ -12662,7 +15588,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 36,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2175
@@ -12708,7 +15645,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 306,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2064
@@ -12754,7 +15702,18 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 145,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 106,
+        "platform_name": "Steam",
+        "rating": 78,
+        "last_played": "2014-10-08 03:45:06.675",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1908
@@ -12799,7 +15758,18 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 361,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 17,
+        "platform_name": "Steam",
+        "rating": 76,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 212
@@ -12845,7 +15815,18 @@ export const MockGames = [
       "rating": 93,
       "finished_date": "2013-11-22 00:00:00.0",
       "id": 38,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": 30,
+        "final_score": 95,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1721,
+        "platform_name": "Steam",
+        "rating": 93,
+        "last_played": null,
+        "finished_date": "2013-11-22 00:00:00.0",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 538
@@ -12891,7 +15872,18 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 259,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 75,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1161
@@ -12937,7 +15929,18 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 614,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 84,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1162
@@ -12983,7 +15986,18 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 425,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 74,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1163
@@ -13039,8 +16053,30 @@ export const MockGames = [
       "finished_date": null,
       "id": 83,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 8}
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 31,
+          "platform_name": "Steam",
+          "rating": 82,
+          "last_played": "2016-11-18 03:45:52.189",
+          "finished_date": null,
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 30,
+          "platform_name": "Xbox One",
+          "rating": 83.1,
+          "last_played": null,
+          "finished_date": null,
+          "id": 8
+        }
       ],
       "person_id": 1
     }],
@@ -13085,7 +16121,18 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 47,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 8,
+        "platform_name": "Steam",
+        "rating": 60,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 912
@@ -13129,7 +16176,18 @@ export const MockGames = [
       "rating": 64,
       "finished_date": null,
       "id": 251,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 64,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1158
@@ -13175,7 +16233,18 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 69,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 73,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1160
@@ -13221,7 +16290,18 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 74,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 65,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1159
@@ -13265,7 +16345,18 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 320,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 72,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1157
@@ -13311,7 +16402,18 @@ export const MockGames = [
       "rating": 82.8,
       "finished_date": null,
       "id": 357,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 118,
+        "platform_name": "Steam",
+        "rating": 82.8,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2959
@@ -13357,7 +16459,18 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 180,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 167,
+        "platform_name": "Steam",
+        "rating": 83,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1973
@@ -13413,8 +16526,30 @@ export const MockGames = [
       "finished_date": null,
       "id": 39,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 5}
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 66,
+          "platform_name": "Steam",
+          "rating": 86,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "PS4",
+          "rating": 50,
+          "last_played": null,
+          "finished_date": null,
+          "id": 5
+        }
       ],
       "person_id": 1
     }],
@@ -13461,7 +16596,18 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 260,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 60,
+        "platform_name": "Steam",
+        "rating": 73,
+        "last_played": "2015-02-18 17:00:02.305",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2138
@@ -13507,7 +16653,18 @@ export const MockGames = [
       "rating": 82.7,
       "finished_date": null,
       "id": 606,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 30,
+        "platform_name": "Steam",
+        "rating": 82.7,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1827
@@ -13553,7 +16710,18 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 263,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 79,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 53080
@@ -13597,7 +16765,18 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 377,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 82,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 11238
@@ -13643,7 +16822,18 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 202,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 21,
+        "platform_name": "Steam",
+        "rating": 83,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3029
@@ -13689,7 +16879,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": "2014-05-01 00:00:00.0",
       "id": 380,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": 10,
+        "final_score": 93.5,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 177,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": "2014-05-01 00:00:00.0",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1906
@@ -13735,7 +16936,18 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 18,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 30,
+        "platform_name": "Steam",
+        "rating": 74,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2003
@@ -13781,7 +16993,18 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 756,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 18,
+        "platform_name": "Steam",
+        "rating": 83,
+        "last_played": "2017-03-23 04:45:16.968",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 5613
@@ -13827,7 +17050,18 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 624,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 78,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 5506
@@ -13873,7 +17107,18 @@ export const MockGames = [
       "rating": 99,
       "finished_date": "2014-08-26 20:09:00.0",
       "id": 390,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": 96,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 532,
+        "platform_name": "Steam",
+        "rating": 99,
+        "last_played": "2018-09-03 20:59:44.805",
+        "finished_date": "2014-08-26 20:09:00.0",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3097
@@ -13919,7 +17164,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 393,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1,
+        "platform_name": "Steam",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9448
@@ -13965,7 +17221,18 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 63,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1,
+        "platform_name": "Steam",
+        "rating": 79,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 25393
@@ -14011,7 +17278,18 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 366,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 68,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 306
@@ -14057,7 +17335,18 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 196,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 85,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 529
@@ -14103,7 +17392,18 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 221,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1868,
+        "platform_name": "Steam",
+        "rating": 73,
+        "last_played": "2018-04-17 19:32:11.132",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7584
@@ -14149,7 +17449,18 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 254,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 282,
+        "platform_name": "Steam",
+        "rating": 81,
+        "last_played": "2015-02-19 23:00:10.21",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2137
@@ -14259,7 +17570,18 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 461,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 81,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 28723
@@ -14305,7 +17627,18 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 736,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 75,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2950
@@ -14351,7 +17684,18 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 8,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 801,
+        "platform_name": "Steam",
+        "rating": 83,
+        "last_played": "2017-03-23 04:45:19.544",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3025
@@ -14503,8 +17847,30 @@ export const MockGames = [
         "finished_date": null,
         "id": 20,
         "myPlatforms": [
-          {"id": 3},
-          {"id": 9}
+          {
+            "replay_score": null,
+            "final_score": null,
+            "tier": 2,
+            "replay_reason": null,
+            "minutes_played": 24,
+            "platform_name": "Steam",
+            "rating": 91.8,
+            "last_played": "2019-08-02 13:58:05.327",
+            "finished_date": null,
+            "id": 3
+          },
+          {
+            "replay_score": null,
+            "final_score": null,
+            "tier": 2,
+            "replay_reason": null,
+            "minutes_played": 0,
+            "platform_name": "Xbox 360",
+            "rating": 80,
+            "last_played": null,
+            "finished_date": null,
+            "id": 9
+          }
         ],
         "person_id": 1
       },
@@ -14519,7 +17885,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 789,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 4
       }
     ],
@@ -14630,7 +18007,18 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 616,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 143,
+        "platform_name": "Steam",
+        "rating": 79,
+        "last_played": "2015-04-30 23:00:14.637",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 6032
@@ -14676,7 +18064,18 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 760,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 78,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 15395
@@ -14722,7 +18121,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 41,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 95,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 489
@@ -14960,7 +18370,18 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 156,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 167,
+        "platform_name": "Steam",
+        "rating": 82,
+        "last_played": "2016-08-06 03:49:26.918",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 6038
@@ -15072,7 +18493,18 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 167,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 7,
+        "platform_name": "Steam",
+        "rating": 68,
+        "last_played": "2014-11-04 11:43:59.643",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 28080
@@ -15116,7 +18548,18 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 327,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 2,
+        "platform_name": "Steam",
+        "rating": 40,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7878
@@ -15162,7 +18605,18 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 249,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 73,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 495
@@ -15270,7 +18724,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 42,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9815
@@ -15411,7 +18876,18 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 133,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 206,
+        "platform_name": "Steam",
+        "rating": 87,
+        "last_played": "2015-06-11 04:00:14.356",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 10345
@@ -15457,7 +18933,18 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 726,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 82,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 5652
@@ -15503,7 +18990,18 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 161,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 183,
+        "platform_name": "Steam",
+        "rating": 83,
+        "last_played": "2014-12-23 03:45:45.725",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1981
@@ -15549,7 +19047,18 @@ export const MockGames = [
       "rating": 90.5,
       "finished_date": null,
       "id": 123,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 4516,
+        "platform_name": "Steam",
+        "rating": 90.5,
+        "last_played": "2018-02-20 20:30:04.422",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9278
@@ -15605,8 +19114,30 @@ export const MockGames = [
       "finished_date": "2015-10-25 00:00:00.0",
       "id": 241,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 5}
+        {
+          "replay_score": 89,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 638,
+          "platform_name": "Steam",
+          "rating": 95,
+          "last_played": "2015-10-21 03:46:06.788",
+          "finished_date": "2015-10-25 00:00:00.0",
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "PS4",
+          "rating": 56,
+          "last_played": null,
+          "finished_date": null,
+          "id": 5
+        }
       ],
       "person_id": 1
     }],
@@ -15653,7 +19184,18 @@ export const MockGames = [
       "rating": 84.5,
       "finished_date": null,
       "id": 198,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 385,
+        "platform_name": "Steam",
+        "rating": 84.5,
+        "last_played": "2018-07-19 11:45:43.436",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7610
@@ -15700,7 +19242,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 791,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 4
       },
       {
@@ -15714,7 +19267,18 @@ export const MockGames = [
         "rating": 88,
         "finished_date": null,
         "id": 85,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": 88,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 1
       }
     ],
@@ -15761,7 +19325,18 @@ export const MockGames = [
       "rating": 90.4,
       "finished_date": null,
       "id": 97,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 966,
+        "platform_name": "Steam",
+        "rating": 90.4,
+        "last_played": "2016-09-04 03:45:59.472",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 8864
@@ -15975,7 +19550,18 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 226,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 143,
+        "platform_name": "Steam",
+        "rating": 70,
+        "last_played": "2020-03-29 23:09:24.215",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7325
@@ -16312,7 +19898,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1445,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 28988
@@ -16387,7 +19984,18 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 274,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 2,
+        "platform_name": "Steam",
+        "rating": 85,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7658
@@ -16507,7 +20115,18 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 188,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 76,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 47381
@@ -16553,7 +20172,18 @@ export const MockGames = [
       "rating": 85.2,
       "finished_date": null,
       "id": 109,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 61,
+        "platform_name": "Steam",
+        "rating": 85.2,
+        "last_played": "2015-04-03 00:00:03.485",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 6415
@@ -16844,7 +20474,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 732,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 20,
+        "platform_name": "Steam",
+        "rating": 80,
+        "last_played": "2015-06-12 22:00:01.128",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 5597
@@ -16977,7 +20618,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 470,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 8773
@@ -17023,7 +20675,18 @@ export const MockGames = [
       "rating": 78.3,
       "finished_date": null,
       "id": 144,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 566,
+        "platform_name": "Steam",
+        "rating": 78.3,
+        "last_played": "2017-07-12 04:45:27.654",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 5319
@@ -17109,7 +20772,18 @@ export const MockGames = [
       "rating": 83.9,
       "finished_date": null,
       "id": 289,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 71,
+        "platform_name": "Steam",
+        "rating": 83.9,
+        "last_played": "2016-03-02 21:31:55.041",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 8232
@@ -17165,8 +20839,30 @@ export const MockGames = [
       "finished_date": null,
       "id": 611,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 5}
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": 85,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "PS4",
+          "rating": 86,
+          "last_played": null,
+          "finished_date": null,
+          "id": 5
+        }
       ],
       "person_id": 1
     }],
@@ -17213,7 +20909,18 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 723,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 85,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 8774
@@ -17259,7 +20966,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 300,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2958
@@ -17305,7 +21023,18 @@ export const MockGames = [
       "rating": 10,
       "finished_date": null,
       "id": 369,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 10,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7344
@@ -17351,7 +21080,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 317,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2605
@@ -17398,7 +21138,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 808,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 5
       },
       {
@@ -17412,7 +21163,18 @@ export const MockGames = [
         "rating": 80,
         "finished_date": "2016-12-27 00:00:00.0",
         "id": 2,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": 78,
+          "final_score": 88,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 678,
+          "platform_name": "Steam",
+          "rating": 80,
+          "last_played": "2016-12-28 04:45:24.839",
+          "finished_date": "2016-12-27 00:00:00.0",
+          "id": 3
+        }],
         "person_id": 1
       }
     ],
@@ -17469,8 +21231,30 @@ export const MockGames = [
       "finished_date": null,
       "id": 120,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 5}
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 303,
+          "platform_name": "Steam",
+          "rating": 83,
+          "last_played": "2016-12-03 03:46:02.526",
+          "finished_date": null,
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "PS4",
+          "rating": 80,
+          "last_played": null,
+          "finished_date": null,
+          "id": 5
+        }
       ],
       "person_id": 1
     }],
@@ -17715,7 +21499,18 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 193,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 258,
+        "platform_name": "Steam",
+        "rating": 75,
+        "last_played": "2017-07-12 04:45:27.045",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2955
@@ -17761,7 +21556,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1474,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 1,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 8923
@@ -17807,7 +21613,18 @@ export const MockGames = [
       "rating": 94,
       "finished_date": "2020-04-20 18:12:48.545",
       "id": 600,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": 15,
+        "final_score": 93,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 900,
+        "platform_name": "PS3",
+        "rating": 94,
+        "last_played": null,
+        "finished_date": "2020-04-20 18:12:48.545",
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 512
@@ -17979,7 +21796,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 292,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 11198
@@ -18158,7 +21986,18 @@ export const MockGames = [
       "rating": 70,
       "finished_date": "2016-01-22 00:00:00.0",
       "id": 596,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": 56,
+        "final_score": 91,
+        "tier": 2,
+        "replay_reason": "Beat three times, including Hard ICON mode.",
+        "minutes_played": 5940,
+        "platform_name": "Xbox One",
+        "rating": 70,
+        "last_played": null,
+        "finished_date": "2016-01-22 00:00:00.0",
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 15861
@@ -18204,7 +22043,18 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 646,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 660,
+        "platform_name": "Xbox One",
+        "rating": 79,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 2131
@@ -18250,7 +22100,18 @@ export const MockGames = [
       "rating": 84.3,
       "finished_date": null,
       "id": 403,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 120,
+        "platform_name": "Xbox One",
+        "rating": 84.3,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 4756
@@ -18296,7 +22157,18 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 667,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox One",
+        "rating": 77,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 9478
@@ -18342,7 +22214,18 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 665,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox One",
+        "rating": 65,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 17952
@@ -18388,7 +22271,18 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 426,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": 78,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 2969
@@ -18434,7 +22328,18 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 508,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": 78,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 7402
@@ -18480,7 +22385,18 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 602,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": 78,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 536
@@ -18526,7 +22442,18 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 246,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox 360",
+        "rating": 78,
+        "last_played": null,
+        "finished_date": null,
+        "id": 9
+      }],
       "person_id": 1
     }],
     "igdb_id": 11643
@@ -18601,7 +22528,18 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 738,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 77,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 999
@@ -18779,7 +22717,18 @@ export const MockGames = [
       "rating": 99,
       "finished_date": "2015-10-02 00:00:00.0",
       "id": 500,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 9600,
+        "platform_name": "PC",
+        "rating": 99,
+        "last_played": null,
+        "finished_date": "2015-10-02 00:00:00.0",
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 1887
@@ -18825,7 +22774,18 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 564,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 240,
+        "platform_name": "Xbox One",
+        "rating": 84,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 8558
@@ -18902,7 +22862,18 @@ export const MockGames = [
       "rating": 33,
       "finished_date": null,
       "id": 567,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": 33,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 16368
@@ -18986,7 +22957,18 @@ export const MockGames = [
       "rating": 62,
       "finished_date": null,
       "id": 673,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": 62,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 7683
@@ -19030,7 +23012,18 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 674,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": 65,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 23584
@@ -19076,7 +23069,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 451,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 120,
+        "platform_name": "Xbox One",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 1939
@@ -19122,7 +23126,18 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 397,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 180,
+        "platform_name": "Xbox One",
+        "rating": 79,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 7326
@@ -19166,7 +23181,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 118,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 20048
@@ -19212,7 +23238,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 276,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 4193,
+        "platform_name": "Steam",
+        "rating": 80,
+        "last_played": "2017-08-10 20:45:28.384",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9630
@@ -19258,7 +23295,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 702,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7706
@@ -19302,7 +23350,18 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 177,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 81,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 27862
@@ -19346,7 +23405,18 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 176,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 275,
+        "platform_name": "Steam",
+        "rating": 81,
+        "last_played": "2019-03-15 20:35:39.32",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 501
@@ -19390,7 +23460,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 15,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 21066
@@ -19501,7 +23582,18 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 162,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 291,
+        "platform_name": "Steam",
+        "rating": 60,
+        "last_played": "2016-09-05 03:46:03.46",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 11529
@@ -19545,7 +23637,18 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 186,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 226,
+        "platform_name": "Steam",
+        "rating": 60,
+        "last_played": "2016-09-05 03:46:06.46",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19081
@@ -19591,7 +23694,18 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 270,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 251,
+        "platform_name": "Steam",
+        "rating": 81,
+        "last_played": "2016-01-04 03:46:04.051",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9928
@@ -19677,7 +23791,18 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 623,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 75,
+        "platform_name": "Steam",
+        "rating": 77,
+        "last_played": "2017-05-17 04:45:24.358",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9066
@@ -19723,7 +23848,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 192,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 63020
@@ -19769,7 +23905,18 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 76,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 90,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 12517
@@ -19814,7 +23961,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 429,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 1
       },
       {
@@ -19828,7 +23986,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 802,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 5
       }
     ],
@@ -19925,8 +24094,30 @@ export const MockGames = [
       "finished_date": null,
       "id": 140,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 5}
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 11592,
+          "platform_name": "Steam",
+          "rating": 89,
+          "last_played": "2020-02-06 21:12:29.142",
+          "finished_date": null,
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "PS4",
+          "rating": 50,
+          "last_played": null,
+          "finished_date": null,
+          "id": 5
+        }
       ],
       "person_id": 1
     }],
@@ -19973,7 +24164,18 @@ export const MockGames = [
       "rating": 81.9,
       "finished_date": null,
       "id": 621,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 81.9,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 11204
@@ -20017,7 +24219,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 417,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 80185
@@ -20061,7 +24274,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 178,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 5618
@@ -20105,7 +24329,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 598,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1569
@@ -20151,7 +24386,18 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 742,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 900,
+        "platform_name": "PS4",
+        "rating": 82,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 2212
@@ -20197,7 +24443,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 43,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 120,
+        "platform_name": "PS4",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 2113
@@ -20243,7 +24500,18 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 668,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 81,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 1940
@@ -20289,7 +24557,18 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 522,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 82,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 1941
@@ -20333,7 +24612,18 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 103,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 300,
+        "platform_name": "PS4",
+        "rating": 70,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 8655
@@ -20379,7 +24669,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 376,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 11203
@@ -20425,7 +24726,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 686,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 5973
@@ -20471,7 +24783,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 608,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 10602
@@ -20517,7 +24840,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 519,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 14523
@@ -20563,7 +24897,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 609,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 12561
@@ -20667,7 +25012,18 @@ export const MockGames = [
       "rating": 90.7,
       "finished_date": null,
       "id": 290,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 90.7,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 16984
@@ -20713,7 +25069,18 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 506,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox One",
+        "rating": 81,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 3247
@@ -20760,7 +25127,18 @@ export const MockGames = [
         "rating": 99,
         "finished_date": "2018-11-02 00:00:00.0",
         "id": 654,
-        "myPlatforms": [{"id": 5}],
+        "myPlatforms": [{
+          "replay_score": 50,
+          "final_score": 89,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 1056,
+          "platform_name": "PS4",
+          "rating": 99,
+          "last_played": "2018-11-02 00:00:00.0",
+          "finished_date": "2018-11-02 00:00:00.0",
+          "id": 5
+        }],
         "person_id": 1
       },
       {
@@ -20774,7 +25152,18 @@ export const MockGames = [
         "rating": 99,
         "finished_date": null,
         "id": 772,
-        "myPlatforms": [{"id": 5}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 180,
+          "platform_name": "PS4",
+          "rating": 99,
+          "last_played": "2018-10-25 00:00:00.0",
+          "finished_date": null,
+          "id": 5
+        }],
         "person_id": 2
       }
     ],
@@ -20821,7 +25210,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 505,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox One",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 10184
@@ -20947,7 +25347,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 498,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox One",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 6072
@@ -20993,7 +25404,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 514,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox One",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 9101
@@ -21039,7 +25461,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 699,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox One",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 34209
@@ -21085,7 +25518,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 516,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox One",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 2638
@@ -21131,7 +25575,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 21,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox One",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 14380
@@ -21177,7 +25632,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 518,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox One",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 9178
@@ -21263,7 +25729,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 761,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox One",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 20311
@@ -21309,7 +25786,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 125,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 18978
@@ -21355,7 +25843,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 550,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 35517
@@ -21441,7 +25940,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 534,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 21960
@@ -21485,7 +25995,18 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 525,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 74,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 23319
@@ -21529,7 +26050,18 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 662,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 68,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 17377
@@ -21575,7 +26107,18 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 462,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 73,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 7293
@@ -21621,7 +26164,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 517,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 15695
@@ -21667,7 +26221,18 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 489,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 84,
+        "platform_name": "PS4",
+        "rating": 77,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 8260
@@ -21713,7 +26278,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 664,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 9807
@@ -21759,7 +26335,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 78,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 8992
@@ -21805,7 +26392,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 633,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 7876
@@ -21849,7 +26447,18 @@ export const MockGames = [
       "rating": 69,
       "finished_date": null,
       "id": 427,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 69,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 4180
@@ -21893,7 +26502,18 @@ export const MockGames = [
       "rating": 56,
       "finished_date": null,
       "id": 632,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 56,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 6160
@@ -21937,7 +26557,18 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 639,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 67,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 19419
@@ -21981,7 +26612,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 552,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 20031
@@ -22027,7 +26669,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 13,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 7641
@@ -22073,7 +26726,18 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 194,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 140,
+        "platform_name": "Steam",
+        "rating": 82,
+        "last_played": "2017-05-19 04:45:19.932",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 11582
@@ -22192,7 +26856,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 485,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 84927
@@ -22238,7 +26913,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 94,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 35842
@@ -22284,7 +26970,18 @@ export const MockGames = [
       "rating": 87.6,
       "finished_date": null,
       "id": 267,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 87.6,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 11346
@@ -22331,7 +27028,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 790,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 4
       },
       {
@@ -22345,7 +27053,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 803,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 5
       },
       {
@@ -22359,7 +27078,18 @@ export const MockGames = [
         "rating": 85,
         "finished_date": "2018-04-05 00:00:00.0",
         "id": 56,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": 83,
+          "final_score": 80,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 171,
+          "platform_name": "Steam",
+          "rating": 85,
+          "last_played": "2018-04-06 15:29:50.698",
+          "finished_date": "2018-04-05 00:00:00.0",
+          "id": 3
+        }],
         "person_id": 1
       }
     ],
@@ -22406,7 +27136,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 503,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 14702
@@ -22452,7 +27193,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 293,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 24618
@@ -22498,7 +27250,18 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 669,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 60,
+        "platform_name": "PC",
+        "rating": 85,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 13232
@@ -22544,7 +27307,18 @@ export const MockGames = [
       "rating": 84.6,
       "finished_date": null,
       "id": 507,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 84.6,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 13212
@@ -22590,7 +27364,18 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 88,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 172,
+        "platform_name": "Steam",
+        "rating": 84,
+        "last_played": "2016-07-06 03:46:03.055",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1593
@@ -22636,7 +27421,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 511,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7406
@@ -22682,7 +27478,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 717,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 4,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3020
@@ -22728,7 +27535,18 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 586,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 26,
+        "platform_name": "Steam",
+        "rating": 83,
+        "last_played": "2016-06-25 03:45:58.252",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 4641
@@ -22774,7 +27592,18 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 707,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 79,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9902
@@ -22820,7 +27649,18 @@ export const MockGames = [
       "rating": 82.3,
       "finished_date": null,
       "id": 244,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 82.3,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 15444
@@ -22866,7 +27706,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 171,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19955
@@ -22912,7 +27763,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 102,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9016
@@ -22958,7 +27820,18 @@ export const MockGames = [
       "rating": 85.3,
       "finished_date": null,
       "id": 727,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 296,
+        "platform_name": "Steam",
+        "rating": 85.3,
+        "last_played": "2020-01-01 14:51:37.204",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1942
@@ -23004,7 +27877,18 @@ export const MockGames = [
       "rating": 85,
       "finished_date": "2016-07-26 00:00:00.0",
       "id": 185,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": 89,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 268,
+        "platform_name": "Steam",
+        "rating": 85,
+        "last_played": "2016-07-27 03:46:06.409",
+        "finished_date": "2016-07-26 00:00:00.0",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9730
@@ -23060,7 +27944,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 804,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 5
       },
       {
@@ -23075,8 +27970,30 @@ export const MockGames = [
         "finished_date": null,
         "id": 92,
         "myPlatforms": [
-          {"id": 3},
-          {"id": 5}
+          {
+            "replay_score": null,
+            "final_score": null,
+            "tier": 2,
+            "replay_reason": null,
+            "minutes_played": 4,
+            "platform_name": "Steam",
+            "rating": 84,
+            "last_played": "2019-02-04 17:21:06.063",
+            "finished_date": null,
+            "id": 3
+          },
+          {
+            "replay_score": null,
+            "final_score": null,
+            "tier": 2,
+            "replay_reason": null,
+            "minutes_played": 0,
+            "platform_name": "PS4",
+            "rating": 82,
+            "last_played": null,
+            "finished_date": null,
+            "id": 5
+          }
         ],
         "person_id": 1
       }
@@ -23134,8 +28051,30 @@ export const MockGames = [
       "finished_date": null,
       "id": 105,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 5}
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 66,
+          "platform_name": "Steam",
+          "rating": 85,
+          "last_played": "2019-02-04 17:21:12.543",
+          "finished_date": null,
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "PS4",
+          "rating": 50,
+          "last_played": null,
+          "finished_date": null,
+          "id": 5
+        }
       ],
       "person_id": 1
     }],
@@ -23182,7 +28121,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 715,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7386
@@ -23228,7 +28178,18 @@ export const MockGames = [
       "rating": 90.3,
       "finished_date": null,
       "id": 4,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 90.3,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19456
@@ -23275,7 +28236,18 @@ export const MockGames = [
         "rating": 91,
         "finished_date": "2016-08-02 00:00:00.0",
         "id": 172,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": 88,
+          "final_score": 89,
+          "tier": 2,
+          "replay_reason": "Choices",
+          "minutes_played": 294,
+          "platform_name": "Steam",
+          "rating": 91,
+          "last_played": "2016-08-03 03:46:06.681",
+          "finished_date": "2016-08-02 00:00:00.0",
+          "id": 3
+        }],
         "person_id": 1
       },
       {
@@ -23289,7 +28261,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 795,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 4
       }
     ],
@@ -23334,7 +28317,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 431,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 5165
@@ -23378,7 +28372,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 64,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9473
@@ -23422,7 +28427,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 127,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7858
@@ -23466,7 +28482,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 9,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 23695
@@ -23510,7 +28537,18 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 456,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 3,
+        "platform_name": "Steam",
+        "rating": 55,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 86807
@@ -23556,7 +28594,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 169,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 506
@@ -23602,7 +28651,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 301,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9474
@@ -23648,7 +28708,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 110,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2607
@@ -23692,7 +28763,18 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 174,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 84,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 11444
@@ -23738,7 +28820,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 113,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 11821
@@ -23784,7 +28877,18 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 24,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 28,
+        "platform_name": "Steam",
+        "rating": 82,
+        "last_played": "2016-08-05 03:45:57.598",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 5508
@@ -23828,7 +28932,18 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 497,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 79,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9723
@@ -23874,7 +28989,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 119,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7477
@@ -23919,7 +29045,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 1427,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 4
       },
       {
@@ -23933,7 +29070,18 @@ export const MockGames = [
         "rating": 80,
         "finished_date": null,
         "id": 77,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": 80,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 1
       }
     ],
@@ -23990,8 +29138,30 @@ export const MockGames = [
       "finished_date": "2013-09-12 00:00:00.0",
       "id": 122,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 9}
+        {
+          "replay_score": null,
+          "final_score": 90,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": 0,
+          "last_played": null,
+          "finished_date": "2013-09-12 00:00:00.0",
+          "id": 3
+        },
+        {
+          "replay_score": 25,
+          "final_score": 90,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Xbox 360",
+          "rating": 91.5,
+          "last_played": null,
+          "finished_date": "2013-09-12 00:00:00.0",
+          "id": 9
+        }
       ],
       "person_id": 1
     }],
@@ -24048,8 +29218,30 @@ export const MockGames = [
       "finished_date": null,
       "id": 117,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 9}
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": 85,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 12,
+          "platform_name": "Xbox 360",
+          "rating": 44,
+          "last_played": null,
+          "finished_date": null,
+          "id": 9
+        }
       ],
       "person_id": 1
     }],
@@ -24096,7 +29288,18 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 268,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 6,
+        "platform_name": "Steam",
+        "rating": 86,
+        "last_played": "2016-09-04 03:45:58.675",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 17224
@@ -24140,7 +29343,18 @@ export const MockGames = [
       "rating": 49,
       "finished_date": null,
       "id": 232,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 49,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19012
@@ -24186,7 +29400,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 492,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 13222
@@ -24240,8 +29465,30 @@ export const MockGames = [
       "finished_date": "2017-07-20 00:00:00.0",
       "id": 626,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 5}
+        {
+          "replay_score": 83,
+          "final_score": 93,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 131,
+          "platform_name": "Steam",
+          "rating": 94,
+          "last_played": "2017-07-20 04:45:31.59",
+          "finished_date": "2017-07-20 00:00:00.0",
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": 93,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "PS4",
+          "rating": 50,
+          "last_played": null,
+          "finished_date": "2017-07-20 00:00:00.0",
+          "id": 5
+        }
       ],
       "person_id": 1
     }],
@@ -24298,8 +29545,30 @@ export const MockGames = [
       "finished_date": null,
       "id": 130,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 5}
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 115,
+          "platform_name": "Steam",
+          "rating": 89,
+          "last_played": "2017-08-01 20:45:37.099",
+          "finished_date": null,
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "PS4",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 5
+        }
       ],
       "person_id": 1
     }],
@@ -24379,7 +29648,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 528,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 21623
@@ -24423,7 +29703,18 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 502,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 67,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 14327
@@ -24469,7 +29760,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 95,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 2063
@@ -24515,7 +29817,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 589,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 16431
@@ -24602,7 +29915,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 796,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 4
       },
       {
@@ -24616,7 +29940,18 @@ export const MockGames = [
         "rating": 81,
         "finished_date": null,
         "id": 168,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 66,
+          "platform_name": "Steam",
+          "rating": 81,
+          "last_played": "2018-03-27 19:11:45.428",
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 1
       }
     ],
@@ -24663,7 +29998,18 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 7,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 16,
+        "platform_name": "Steam",
+        "rating": 84,
+        "last_played": "2016-11-03 03:45:43.216",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 34293
@@ -24707,7 +30053,18 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 252,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 20,
+        "platform_name": "Steam",
+        "rating": 86,
+        "last_played": "2019-02-04 17:20:56.508",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 34294
@@ -24753,7 +30110,18 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 405,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 2760,
+        "platform_name": "PC",
+        "rating": 85,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 19539
@@ -24799,7 +30167,18 @@ export const MockGames = [
       "rating": 92.1,
       "finished_date": "2018-08-14 00:00:00.0",
       "id": 409,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": 78,
+        "final_score": 90,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 62520,
+        "platform_name": "PC",
+        "rating": 92.1,
+        "last_played": "2018-08-13 00:00:00.0",
+        "finished_date": "2018-08-14 00:00:00.0",
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 11593
@@ -24845,7 +30224,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 701,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox One",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 7202
@@ -24891,7 +30281,18 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 512,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox One",
+        "rating": 40,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 20058
@@ -24937,7 +30338,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 658,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox One",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 16926
@@ -24983,7 +30395,18 @@ export const MockGames = [
       "rating": 50,
       "finished_date": null,
       "id": 530,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox One",
+        "rating": 50,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 8288
@@ -25069,7 +30492,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 583,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 20042
@@ -25115,7 +30549,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 106,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7635
@@ -25161,7 +30606,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 111,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 8925
@@ -25207,7 +30663,18 @@ export const MockGames = [
       "rating": 89,
       "finished_date": null,
       "id": 154,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 11743,
+        "platform_name": "Steam",
+        "rating": 89,
+        "last_played": "2019-03-06 21:29:44.265",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19130
@@ -25253,7 +30720,18 @@ export const MockGames = [
       "rating": 85.7,
       "finished_date": null,
       "id": 242,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 85.7,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1962
@@ -25297,7 +30775,18 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 115,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 91,
+        "platform_name": "Steam",
+        "rating": 60,
+        "last_played": "2020-03-17 22:36:05.781",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19082
@@ -25381,7 +30870,18 @@ export const MockGames = [
       "rating": 56,
       "finished_date": null,
       "id": 533,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 56,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 20955
@@ -25427,7 +30927,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 521,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 14740
@@ -25593,7 +31104,18 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 6,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1,
+        "platform_name": "Steam",
+        "rating": 85,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 15821
@@ -25639,7 +31161,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 296,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7323
@@ -25683,7 +31216,18 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 387,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 68,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 191
@@ -25739,8 +31283,30 @@ export const MockGames = [
       "finished_date": null,
       "id": 96,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 5}
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": 81,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "PS4",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 5
+        }
       ],
       "person_id": 1
     }],
@@ -25787,7 +31353,18 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 243,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 38,
+        "platform_name": "Steam",
+        "rating": 83,
+        "last_played": "2017-07-09 04:45:24.074",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 11221
@@ -25831,7 +31408,18 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 592,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 73,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 36253
@@ -25877,7 +31465,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 381,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 18997
@@ -25963,7 +31562,18 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 625,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 136,
+        "platform_name": "Steam",
+        "rating": 86,
+        "last_played": "2019-08-13 22:10:31.175",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 17000
@@ -26007,7 +31617,18 @@ export const MockGames = [
       "rating": 56,
       "finished_date": null,
       "id": 55,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 56,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 25081
@@ -26053,7 +31674,18 @@ export const MockGames = [
       "rating": 81.1,
       "finished_date": null,
       "id": 585,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 81.1,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3099
@@ -26099,7 +31731,18 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 139,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox One",
+        "rating": 74,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 20228
@@ -26145,7 +31788,18 @@ export const MockGames = [
       "rating": 89,
       "finished_date": null,
       "id": 630,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 66,
+        "platform_name": "PC",
+        "rating": 89,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 458
@@ -26191,7 +31845,18 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 284,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 29,
+        "platform_name": "Steam",
+        "rating": 86,
+        "last_played": "2017-08-02 20:45:35.045",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 12597
@@ -26237,7 +31902,18 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 46,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 82,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 17030
@@ -26283,7 +31959,18 @@ export const MockGames = [
       "rating": 97,
       "finished_date": "2017-07-26 21:00:00.0",
       "id": 713,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": 42,
+        "final_score": 87,
+        "tier": 2,
+        "replay_reason": "Not as curious about the other branches.",
+        "minutes_played": 425,
+        "platform_name": "Steam",
+        "rating": 97,
+        "last_played": "2017-07-26 20:45:32.665",
+        "finished_date": "2017-07-26 21:00:00.0",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19000
@@ -26330,7 +32017,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 806,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 5
       },
       {
@@ -26344,7 +32042,18 @@ export const MockGames = [
         "rating": 96.3,
         "finished_date": "2020-04-20 18:11:07.765",
         "id": 107,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": 50,
+          "final_score": 97,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 25572,
+          "platform_name": "Steam",
+          "rating": 96.3,
+          "last_played": "2020-04-05 20:50:52.813",
+          "finished_date": "2020-04-20 18:11:07.765",
+          "id": 3
+        }],
         "person_id": 1
       }
     ],
@@ -26391,7 +32100,18 @@ export const MockGames = [
       "rating": 88,
       "finished_date": null,
       "id": 89,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 88,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7342
@@ -26437,7 +32157,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 81,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 22017
@@ -26481,7 +32212,18 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 60,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 70,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 18859
@@ -26537,8 +32279,30 @@ export const MockGames = [
       "finished_date": null,
       "id": 311,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 5}
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 30,
+          "platform_name": "PS4",
+          "rating": 75,
+          "last_played": null,
+          "finished_date": null,
+          "id": 5
+        }
       ],
       "person_id": 1
     }],
@@ -26583,7 +32347,18 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 205,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 61,
+        "platform_name": "Steam",
+        "rating": 60,
+        "last_played": "2019-03-31 15:06:02.389",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19083
@@ -26629,7 +32404,18 @@ export const MockGames = [
       "rating": 84.2,
       "finished_date": null,
       "id": 385,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 84.2,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7205
@@ -26675,7 +32461,18 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 287,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 84,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3102
@@ -26721,7 +32518,18 @@ export const MockGames = [
       "rating": 84.9,
       "finished_date": null,
       "id": 708,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 84.9,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 11260
@@ -26767,7 +32575,18 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 155,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 83,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 17026
@@ -26811,7 +32630,18 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 595,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 75,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 14410
@@ -26857,7 +32687,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 679,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 11175
@@ -26901,7 +32742,18 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 372,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 78,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 24869
@@ -26987,7 +32839,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 676,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 7708
@@ -27033,7 +32896,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 513,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 19979
@@ -27079,7 +32953,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 700,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 9559
@@ -27125,7 +33010,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 280,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 18006
@@ -27169,7 +33065,18 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 546,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 65,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 19893
@@ -27215,7 +33122,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 463,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 6044
@@ -27261,7 +33179,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 754,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 20966
@@ -27307,7 +33236,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 750,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 19947
@@ -27353,7 +33293,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 467,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 21320
@@ -27399,7 +33350,18 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 704,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 18,
+        "platform_name": "Steam",
+        "rating": 78,
+        "last_played": "2017-05-17 04:45:17.708",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1907
@@ -27446,7 +33408,18 @@ export const MockGames = [
         "rating": 85,
         "finished_date": null,
         "id": 551,
-        "myPlatforms": [{"id": 8}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Xbox One",
+          "rating": 85,
+          "last_played": null,
+          "finished_date": null,
+          "id": 8
+        }],
         "person_id": 1
       },
       {
@@ -27460,7 +33433,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 800,
-        "myPlatforms": [{"id": 8}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Xbox One",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 8
+        }],
         "person_id": 4
       }
     ],
@@ -27507,7 +33491,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 472,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 7330
@@ -27553,7 +33548,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 683,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 6045
@@ -27599,7 +33605,18 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 288,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 120,
+        "platform_name": "PS4",
+        "rating": 68,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 6781
@@ -27645,7 +33662,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 173,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 20082
@@ -27689,7 +33717,18 @@ export const MockGames = [
       "rating": 61,
       "finished_date": null,
       "id": 678,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 61,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 16654
@@ -27733,7 +33772,18 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 638,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": 72,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 9976
@@ -27777,7 +33827,18 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 389,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 86,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 24051
@@ -27823,7 +33884,18 @@ export const MockGames = [
       "rating": 88,
       "finished_date": null,
       "id": 441,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 90,
+        "platform_name": "PS4",
+        "rating": 88,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 11156
@@ -27869,7 +33941,18 @@ export const MockGames = [
       "rating": 95.1,
       "finished_date": "2017-07-23 00:00:00.0",
       "id": 442,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": 92,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 6000,
+        "platform_name": "PC",
+        "rating": 95.1,
+        "last_played": null,
+        "finished_date": "2017-07-23 00:00:00.0",
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 7349
@@ -27953,7 +34036,18 @@ export const MockGames = [
       "rating": 50,
       "finished_date": "2017-06-15 00:00:00.0",
       "id": 82,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": 70,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1,
+        "platform_name": "Steam",
+        "rating": 50,
+        "last_played": null,
+        "finished_date": "2017-06-15 00:00:00.0",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 22365
@@ -27999,7 +34093,18 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 34,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 11,
+        "platform_name": "Steam",
+        "rating": 84,
+        "last_played": "2017-05-14 04:45:29.865",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 26165
@@ -28043,7 +34148,18 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 104,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 84,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 27747
@@ -28087,7 +34203,18 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 672,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 75,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 22362
@@ -28171,7 +34298,18 @@ export const MockGames = [
       "rating": 43,
       "finished_date": null,
       "id": 593,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": 43,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 8421
@@ -28215,7 +34353,18 @@ export const MockGames = [
       "rating": 54,
       "finished_date": null,
       "id": 35,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": 54,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 7134
@@ -28301,7 +34450,18 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 80,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1398,
+        "platform_name": "Steam",
+        "rating": 86,
+        "last_played": "2018-02-26 10:23:00.088",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 11550
@@ -28345,7 +34505,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 22,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19867
@@ -28391,7 +34562,18 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 182,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 87,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 18398
@@ -28437,7 +34619,18 @@ export const MockGames = [
       "rating": 91.7,
       "finished_date": "2017-08-08 00:00:00.0",
       "id": 211,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": 82,
+        "final_score": 94,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 5,
+        "platform_name": "Steam",
+        "rating": 91.7,
+        "last_played": "2017-08-10 04:45:39.273",
+        "finished_date": "2017-08-08 00:00:00.0",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 11233
@@ -28483,7 +34676,18 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 238,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 18,
+        "platform_name": "Steam",
+        "rating": 79,
+        "last_played": "2017-07-12 04:45:34.118",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 31598
@@ -28529,7 +34733,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 29,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 17902
@@ -28573,7 +34788,18 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 257,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 84,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 34366
@@ -28619,7 +34845,18 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 424,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 85,
+        "platform_name": "Steam",
+        "rating": 87,
+        "last_played": "2017-07-04 04:45:31.116",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 27988
@@ -28663,7 +34900,18 @@ export const MockGames = [
       "rating": 88,
       "finished_date": "2020-04-20 18:38:16.357",
       "id": 297,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": 80,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 53,
+        "platform_name": "Steam",
+        "rating": 88,
+        "last_played": "2019-07-05 21:31:04.007",
+        "finished_date": "2020-04-20 18:38:16.357",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 34982
@@ -28709,7 +34957,18 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 247,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 322,
+        "platform_name": "Steam",
+        "rating": 84,
+        "last_played": "2019-08-25 14:29:48.657",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19519
@@ -28753,7 +35012,18 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 213,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 67,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 25185
@@ -28799,7 +35069,18 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 303,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 76,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 11813
@@ -28843,7 +35124,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 218,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19026
@@ -28889,7 +35181,18 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 84,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 39,
+        "platform_name": "Steam",
+        "rating": 76,
+        "last_played": "2017-07-08 04:45:28.485",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 14172
@@ -28933,7 +35236,18 @@ export const MockGames = [
       "rating": 90.2,
       "finished_date": "2017-07-07 00:00:00.0",
       "id": 490,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": 87,
+        "final_score": 93,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 74,
+        "platform_name": "Steam",
+        "rating": 90.2,
+        "last_played": "2017-07-08 04:45:33.324",
+        "finished_date": "2017-07-07 00:00:00.0",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19563
@@ -28977,7 +35291,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 494,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 31599
@@ -29021,7 +35346,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 16,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 31395
@@ -29065,7 +35401,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 11,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 31241
@@ -29109,7 +35456,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 17,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 31140
@@ -29153,7 +35511,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 214,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 31116
@@ -29197,7 +35566,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 124,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 108776
@@ -29241,7 +35621,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 216,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 29358
@@ -29285,7 +35676,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 26,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 29365
@@ -29329,7 +35731,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 540,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 29057
@@ -29375,7 +35788,18 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 179,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 20,
+        "platform_name": "Steam",
+        "rating": 86,
+        "last_played": "2019-07-30 21:27:19.488",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 25632
@@ -29419,7 +35843,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": "2017-07-08 00:00:00.0",
       "id": 285,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": 45,
+        "final_score": 62,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 10,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": "2017-07-11 04:45:37.421",
+        "finished_date": "2017-07-08 00:00:00.0",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 43066
@@ -29463,7 +35898,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": "2017-07-09 00:00:00.0",
       "id": 181,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": 80,
+        "final_score": 88,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 150,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": "2019-07-29 14:56:05.438",
+        "finished_date": "2017-07-09 00:00:00.0",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 33308
@@ -29509,7 +35955,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 37,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 7609
@@ -29555,7 +36012,18 @@ export const MockGames = [
       "rating": 88,
       "finished_date": null,
       "id": 240,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 88,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 8654
@@ -29601,7 +36069,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 61,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 18149
@@ -29657,8 +36136,30 @@ export const MockGames = [
       "finished_date": null,
       "id": 1374,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 5}
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 39,
+          "platform_name": "Steam",
+          "rating": 50,
+          "last_played": "2019-02-04 17:21:52.609",
+          "finished_date": null,
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "PS4",
+          "rating": 71,
+          "last_played": null,
+          "finished_date": null,
+          "id": 5
+        }
       ],
       "person_id": 1
     }],
@@ -29745,7 +36246,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 487,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 3775
@@ -29791,7 +36303,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 195,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 13677
@@ -29837,7 +36360,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 536,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 20078
@@ -29883,7 +36417,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 580,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 21881
@@ -29929,7 +36474,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": "2020-04-20 18:48:18.151",
       "id": 170,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": 78,
+        "final_score": 80,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 127,
+        "platform_name": "Steam",
+        "rating": 80,
+        "last_played": "2017-08-11 20:02:45.218",
+        "finished_date": "2020-04-20 18:48:18.151",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 20459
@@ -29975,7 +36531,18 @@ export const MockGames = [
       "rating": 95,
       "finished_date": null,
       "id": 134,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 2407,
+        "platform_name": "Steam",
+        "rating": 95,
+        "last_played": "2020-01-15 17:41:27.382",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3225
@@ -30031,8 +36598,30 @@ export const MockGames = [
       "finished_date": null,
       "id": 135,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 5}
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "PS4",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 5
+        }
       ],
       "person_id": 1
     }],
@@ -30135,7 +36724,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 138,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9898
@@ -30179,7 +36779,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 136,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 23352
@@ -30223,7 +36834,18 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 137,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 22,
+        "platform_name": "Steam",
+        "rating": 78,
+        "last_played": "2018-01-14 15:13:22.72",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 18694
@@ -30269,7 +36891,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 159,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 29004
@@ -30315,7 +36948,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 637,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 22798
@@ -30361,7 +37005,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 539,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 20894
@@ -30407,7 +37062,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 537,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 8874
@@ -30451,7 +37117,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 116,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 16719
@@ -30495,7 +37172,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 418,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 34927
@@ -30541,7 +37229,18 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 1459,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 225,
+        "platform_name": "Steam",
+        "rating": 90,
+        "last_played": "2020-04-14 22:04:46.864",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19457
@@ -30588,7 +37287,18 @@ export const MockGames = [
         "rating": 93.9,
         "finished_date": "2018-03-02 21:10:28.030697",
         "id": 148,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": 40,
+          "final_score": 90,
+          "tier": 2,
+          "replay_reason": "Linear story",
+          "minutes_played": 201,
+          "platform_name": "Steam",
+          "rating": 93.9,
+          "last_played": "2018-02-27 20:31:27.396",
+          "finished_date": "2018-03-02 21:10:28.030697",
+          "id": 3
+        }],
         "person_id": 1
       },
       {
@@ -30602,7 +37312,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 807,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 5
       }
     ],
@@ -30659,8 +37380,30 @@ export const MockGames = [
       "finished_date": null,
       "id": 210,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 9}
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": 86,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Xbox 360",
+          "rating": 80.4,
+          "last_played": null,
+          "finished_date": null,
+          "id": 9
+        }
       ],
       "person_id": 1
     }],
@@ -30708,7 +37451,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 793,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 4
       },
       {
@@ -30722,7 +37476,18 @@ export const MockGames = [
         "rating": 84,
         "finished_date": null,
         "id": 146,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 41,
+          "platform_name": "Steam",
+          "rating": 84,
+          "last_played": "2018-04-15 17:03:38.827",
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 1
       }
     ],
@@ -30769,7 +37534,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 23,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2595
@@ -30815,7 +37591,18 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 559,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 600,
+        "platform_name": "PC",
+        "rating": 90,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 36872
@@ -30861,7 +37648,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 542,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19169
@@ -30907,7 +37705,18 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 234,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 50,
+        "platform_name": "Steam",
+        "rating": 82,
+        "last_played": "2017-10-12 20:25:51.076",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 27421
@@ -30953,7 +37762,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 549,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 25741
@@ -30999,7 +37819,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 706,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 2004
@@ -31043,7 +37874,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 166,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 31235
@@ -31087,7 +37929,18 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 566,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 26,
+        "platform_name": "Steam",
+        "rating": 76,
+        "last_played": "2019-02-04 17:21:37.379",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 20909
@@ -31131,7 +37984,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 545,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 36631
@@ -31175,7 +38039,18 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 655,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 360,
+        "platform_name": "Switch",
+        "rating": 86,
+        "last_played": null,
+        "finished_date": null,
+        "id": 4
+      }],
       "person_id": 1
     }],
     "igdb_id": 26758
@@ -31221,7 +38096,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 555,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 14790
@@ -31267,7 +38153,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 560,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 14366
@@ -31313,7 +38210,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 557,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 8967
@@ -31357,7 +38265,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 642,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 32021
@@ -31401,7 +38320,18 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 215,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 237,
+        "platform_name": "Steam",
+        "rating": 77,
+        "last_played": "2020-03-27 22:06:43.133",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 28213
@@ -31447,7 +38377,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 554,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 23181
@@ -31493,7 +38434,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 558,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 11423
@@ -31537,7 +38489,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 207,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 21602
@@ -31581,7 +38544,18 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 435,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 36,
+        "platform_name": "Steam",
+        "rating": 90,
+        "last_played": "2019-07-05 22:31:12.74",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 43166
@@ -31625,7 +38599,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 5,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 52242
@@ -31669,7 +38654,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 53,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 17719
@@ -31713,7 +38709,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 165,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 27430
@@ -31757,7 +38764,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 59,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 68444
@@ -31803,7 +38821,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 149,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 37031
@@ -31849,7 +38878,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 755,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 4754
@@ -31893,7 +38933,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": "2018-08-07 17:00:00.0",
       "id": 225,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": 78,
+        "final_score": 77,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 21,
+        "platform_name": "Steam",
+        "rating": 80,
+        "last_played": "2018-08-08 20:04:10.635",
+        "finished_date": "2018-08-07 17:00:00.0",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 76946
@@ -31939,7 +38990,18 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 563,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 420,
+        "platform_name": "PC",
+        "rating": 84,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 26401
@@ -31984,7 +39046,18 @@ export const MockGames = [
         "rating": 80,
         "finished_date": "2020-04-20 18:47:20.958",
         "id": 157,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": 80,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 37,
+          "platform_name": "Steam",
+          "rating": 80,
+          "last_played": "2018-08-08 20:04:03.449",
+          "finished_date": "2020-04-20 18:47:20.958",
+          "id": 3
+        }],
         "person_id": 1
       },
       {
@@ -31998,7 +39071,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 794,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 4
       }
     ],
@@ -32043,7 +39127,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 40,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 81245
@@ -32087,7 +39182,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 556,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 15548
@@ -32131,7 +39237,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 153,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9307
@@ -32177,7 +39294,18 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 158,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 20,
+        "platform_name": "Steam",
+        "rating": 78,
+        "last_played": "2018-02-14 23:09:50.901",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 26948
@@ -32223,7 +39351,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 150,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 2,
+        "platform_name": "Steam",
+        "rating": 80,
+        "last_played": "2019-07-06 11:36:19.753",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 20787
@@ -32270,7 +39409,18 @@ export const MockGames = [
         "rating": 96,
         "finished_date": null,
         "id": 771,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": 96,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 2
       },
       {
@@ -32284,7 +39434,18 @@ export const MockGames = [
         "rating": 90,
         "finished_date": null,
         "id": 565,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 98,
+          "platform_name": "Steam",
+          "rating": 90,
+          "last_played": "2020-01-13 18:26:18.039",
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 1
       }
     ],
@@ -32329,7 +39490,18 @@ export const MockGames = [
       "rating": 89,
       "finished_date": null,
       "id": 449,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 89,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 36775
@@ -32375,7 +39547,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 465,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 26231
@@ -32421,7 +39604,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 757,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 9498
@@ -32467,7 +39661,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 543,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 23849
@@ -32513,7 +39718,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 544,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 10140
@@ -32559,7 +39775,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 541,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 5615
@@ -32603,7 +39830,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 562,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 9112
@@ -32687,7 +39925,18 @@ export const MockGames = [
       "rating": 70,
       "finished_date": "2019-07-06 00:00:00.0",
       "id": 19,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": 30,
+        "final_score": 70,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 8,
+        "platform_name": "Steam",
+        "rating": 70,
+        "last_played": "2019-07-06 18:44:40.848",
+        "finished_date": "2019-07-06 00:00:00.0",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 80854
@@ -32731,7 +39980,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 466,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 35775
@@ -32775,7 +40035,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 206,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 33615
@@ -32819,7 +40090,18 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 236,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 31,
+        "platform_name": "Steam",
+        "rating": 55,
+        "last_played": "2018-01-14 16:15:22.007",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 32617
@@ -32865,7 +40147,18 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 90,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 81,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 5601
@@ -32911,7 +40204,18 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 568,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 84,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 2957
@@ -32957,7 +40261,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 570,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 19163
@@ -33003,7 +40318,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 488,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 45281
@@ -33049,7 +40375,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 223,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 11503
@@ -33095,7 +40432,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 227,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox One",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 6057
@@ -33181,7 +40529,18 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 643,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 84,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 7334
@@ -33227,7 +40586,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 344,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 11065
@@ -33271,7 +40641,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 569,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 52145
@@ -33315,7 +40696,18 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 666,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 67,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 23508
@@ -33361,7 +40753,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 28,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 5327
@@ -33405,7 +40808,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 571,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 3219
@@ -33451,7 +40865,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 464,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 2552
@@ -33497,7 +40922,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 572,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 11172
@@ -33543,7 +40979,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 229,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 26678
@@ -33589,7 +41036,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 419,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 20919
@@ -33635,7 +41093,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 573,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 17158
@@ -33681,7 +41150,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 233,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 27001
@@ -33728,7 +41208,18 @@ export const MockGames = [
         "rating": 86,
         "finished_date": null,
         "id": 553,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": 86,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 1
       },
       {
@@ -33742,7 +41233,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 801,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 4
       }
     ],
@@ -33788,7 +41290,18 @@ export const MockGames = [
         "rating": 85,
         "finished_date": null,
         "id": 100,
-        "myPlatforms": [{"id": 4}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 120,
+          "platform_name": "Switch",
+          "rating": 85,
+          "last_played": null,
+          "finished_date": null,
+          "id": 4
+        }],
         "person_id": 1
       },
       {
@@ -33802,7 +41315,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 792,
-        "myPlatforms": [{"id": 4}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Switch",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 4
+        }],
         "person_id": 4
       },
       {
@@ -33816,7 +41340,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 805,
-        "myPlatforms": [{"id": 4}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Switch",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 4
+        }],
         "person_id": 5
       }
     ],
@@ -33863,7 +41398,18 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 235,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 300,
+        "platform_name": "Xbox One",
+        "rating": 87,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 10128
@@ -33909,7 +41455,18 @@ export const MockGames = [
       "rating": 85.1,
       "finished_date": null,
       "id": 203,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox One",
+        "rating": 85.1,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 11131
@@ -33955,7 +41512,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 705,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 10960
@@ -34001,7 +41569,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 209,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 14765
@@ -34047,7 +41626,18 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 208,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 23,
+        "platform_name": "Steam",
+        "rating": 78,
+        "last_played": "2018-04-20 16:10:58.217",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 27922
@@ -34093,7 +41683,18 @@ export const MockGames = [
       "rating": 93,
       "finished_date": null,
       "id": 220,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1213,
+        "platform_name": "Steam",
+        "rating": 93,
+        "last_played": "2020-03-16 14:33:55.615",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 37088
@@ -34179,7 +41780,18 @@ export const MockGames = [
       "rating": 89,
       "finished_date": null,
       "id": 434,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 48,
+        "platform_name": "PS4",
+        "rating": 89,
+        "last_played": "2020-03-02 00:00:00.0",
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 19560
@@ -34225,7 +41837,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 645,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 1342
@@ -34271,7 +41894,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 644,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 20079
@@ -34317,7 +41951,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 577,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 6142
@@ -34363,7 +42008,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 575,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 21167
@@ -34407,7 +42063,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 27,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 51525
@@ -34453,7 +42120,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 722,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 1293
@@ -34499,7 +42177,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 411,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 3191
@@ -34545,7 +42234,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 721,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS3",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 6
+      }],
       "person_id": 1
     }],
     "igdb_id": 8649
@@ -34589,7 +42289,18 @@ export const MockGames = [
       "rating": 96,
       "finished_date": null,
       "id": 392,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 148,
+        "platform_name": "Steam",
+        "rating": 96,
+        "last_played": "2020-01-15 23:46:50.866",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 51524
@@ -34635,7 +42346,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 79,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 10031
@@ -34681,7 +42403,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 217,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 23236
@@ -34725,7 +42458,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 48,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 25702
@@ -34771,7 +42515,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 219,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 13554
@@ -34817,7 +42572,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 142,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19297
@@ -34861,7 +42627,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 282,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 84023
@@ -34905,7 +42682,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 72,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 75498
@@ -34951,7 +42739,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 493,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 36240
@@ -34997,7 +42796,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 86,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9174
@@ -35043,7 +42853,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 52,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 12596
@@ -35089,7 +42910,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 350,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19531
@@ -35135,7 +42967,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 224,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 28842
@@ -35181,7 +43024,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 712,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7603
@@ -35225,7 +43079,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 222,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 56868
@@ -35311,7 +43176,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 495,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 20026
@@ -35355,7 +43231,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 255,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 25547
@@ -35401,7 +43288,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 129,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 34269
@@ -35445,7 +43343,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 66,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 14206
@@ -35491,7 +43400,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 141,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 15894
@@ -35537,7 +43457,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 535,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19450
@@ -35583,7 +43514,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 131,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 15490
@@ -35639,8 +43581,30 @@ export const MockGames = [
       "finished_date": null,
       "id": 58,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 5}
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "PS4",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 5
+        }
       ],
       "person_id": 1
     }],
@@ -35685,7 +43649,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 65,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 17083
@@ -35729,7 +43704,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 51,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 54506
@@ -35773,7 +43759,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 49,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 32614
@@ -35819,7 +43816,18 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 33,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 31,
+        "platform_name": "Steam",
+        "rating": 86,
+        "last_played": "2018-08-10 18:47:50.104",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 106107
@@ -35865,7 +43873,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 579,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 6705
@@ -35911,7 +43930,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 25,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 25653
@@ -35997,7 +44027,18 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 1465,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 405,
+        "platform_name": "Steam",
+        "rating": 77,
+        "last_played": "2019-11-15 17:54:52.109",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1081
@@ -36043,7 +44084,18 @@ export const MockGames = [
       "rating": 91,
       "finished_date": null,
       "id": 657,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 14880,
+        "platform_name": "PC",
+        "rating": 91,
+        "last_played": "2018-12-31 00:00:00.0",
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 75380
@@ -36089,7 +44141,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 228,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 22399
@@ -36135,7 +44198,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 230,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 14404
@@ -36181,7 +44255,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 31,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 13204
@@ -36237,8 +44322,30 @@ export const MockGames = [
       "finished_date": null,
       "id": 99,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 5}
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "PS4",
+          "rating": 55,
+          "last_played": null,
+          "finished_date": null,
+          "id": 5
+        }
       ],
       "person_id": 1
     }],
@@ -36283,7 +44390,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 231,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 74528
@@ -36327,7 +44445,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 132,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 37294
@@ -36383,8 +44512,30 @@ export const MockGames = [
       "finished_date": null,
       "id": 413,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 5}
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "PS4",
+          "rating": 30,
+          "last_played": null,
+          "finished_date": null,
+          "id": 5
+        }
       ],
       "person_id": 1
     }],
@@ -36431,7 +44582,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 62,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 18812
@@ -36475,7 +44637,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 152,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 27150
@@ -36522,7 +44695,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 1426,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 4
       },
       {
@@ -36536,7 +44720,18 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 414,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        }],
         "person_id": 1
       }
     ],
@@ -36583,7 +44778,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 696,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 23689
@@ -36629,7 +44835,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 112,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 20329
@@ -36675,7 +44892,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 143,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 27353
@@ -36722,7 +44950,18 @@ export const MockGames = [
         "rating": 93,
         "finished_date": null,
         "id": 175,
-        "myPlatforms": [{"id": 10}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 780,
+          "platform_name": "PC",
+          "rating": 93,
+          "last_played": "2019-06-05 00:00:00.0",
+          "finished_date": null,
+          "id": 10
+        }],
         "person_id": 1
       },
       {
@@ -36736,7 +44975,18 @@ export const MockGames = [
         "rating": 99,
         "finished_date": null,
         "id": 770,
-        "myPlatforms": [{"id": 10}],
+        "myPlatforms": [{
+          "replay_score": null,
+          "final_score": null,
+          "tier": 1,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "PC",
+          "rating": 99,
+          "last_played": null,
+          "finished_date": null,
+          "id": 10
+        }],
         "person_id": 2
       }
     ],
@@ -36783,7 +45033,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 773,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3078
@@ -36829,7 +45090,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 774,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 3077
@@ -36873,7 +45145,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 775,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 978
@@ -36917,7 +45200,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 776,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 5574
@@ -36963,7 +45257,18 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 777,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 77,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 14593
@@ -37009,7 +45314,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 778,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 18394
@@ -37095,7 +45411,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 780,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 13164
@@ -37141,7 +45468,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 781,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 532
@@ -37187,7 +45525,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 782,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 17994
@@ -37233,7 +45582,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 783,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9546
@@ -37279,7 +45639,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 784,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9667
@@ -37323,7 +45694,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 785,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 34951
@@ -37369,7 +45751,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 786,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 21604
@@ -37415,7 +45808,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 787,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 54486
@@ -37459,7 +45863,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 809,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 144,
+        "platform_name": "Steam",
+        "rating": 80,
+        "last_played": "2018-11-22 15:18:44.503",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 96213
@@ -37505,7 +45920,18 @@ export const MockGames = [
       "rating": 96,
       "finished_date": null,
       "id": 1354,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 2586,
+        "platform_name": "Steam",
+        "rating": 96,
+        "last_played": "2020-04-14 23:04:47.977",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9254
@@ -37551,7 +45977,18 @@ export const MockGames = [
       "rating": 66,
       "finished_date": null,
       "id": 1355,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 66,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 1985
@@ -37597,7 +46034,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1356,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 20871
@@ -37643,7 +46091,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1357,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 5328
@@ -37689,7 +46148,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1358,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 36766
@@ -37735,7 +46205,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1359,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19874
@@ -37781,7 +46262,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1360,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 26709
@@ -37825,7 +46317,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1361,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 23581
@@ -37871,7 +46374,18 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 1362,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 4,
+        "platform_name": "Steam",
+        "rating": 82,
+        "last_played": "2019-02-04 17:21:12.116",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7684
@@ -37917,7 +46431,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1363,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19935
@@ -37963,7 +46488,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1364,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 35283
@@ -38009,7 +46545,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1365,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 18908
@@ -38055,7 +46602,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1366,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19545
@@ -38101,7 +46659,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1367,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 54634
@@ -38147,7 +46716,18 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 1368,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1,
+        "platform_name": "Steam",
+        "rating": 90,
+        "last_played": "2019-03-04 14:09:17.843",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 27117
@@ -38193,7 +46773,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1369,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 23188
@@ -38237,7 +46828,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1370,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 61884
@@ -38281,7 +46883,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1371,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 103327
@@ -38327,7 +46940,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1372,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 24428
@@ -38373,7 +46997,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1373,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 11397
@@ -38419,7 +47054,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1375,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 7211
@@ -38465,7 +47111,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1376,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 24426
@@ -38511,7 +47168,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1377,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 10232
@@ -38557,7 +47225,18 @@ export const MockGames = [
       "rating": 92,
       "finished_date": null,
       "id": 1378,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 92,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 9643
@@ -38603,7 +47282,18 @@ export const MockGames = [
       "rating": 94,
       "finished_date": null,
       "id": 1379,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1020,
+        "platform_name": "PS4",
+        "rating": 94,
+        "last_played": "2019-02-25 00:00:00.0",
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 19565
@@ -38649,7 +47339,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1380,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 8366
@@ -38693,7 +47394,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1381,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 27927
@@ -38739,7 +47451,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1382,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 26725
@@ -38783,7 +47506,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1383,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 11002
@@ -38829,7 +47563,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1384,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 27343
@@ -38873,7 +47618,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1385,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 19407
@@ -38917,7 +47673,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1386,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 21994
@@ -38961,7 +47728,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1387,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 18637
@@ -39007,7 +47785,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1388,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 27717
@@ -39053,7 +47842,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1389,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 27762
@@ -39097,7 +47897,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1390,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 59573
@@ -39141,7 +47952,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1391,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 75096
@@ -39227,7 +48049,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1394,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 26878
@@ -39273,7 +48106,18 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 1395,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox One",
+        "rating": 78,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 9919
@@ -39319,7 +48163,18 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 1396,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Xbox One",
+        "rating": 77,
+        "last_played": null,
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 11148
@@ -39365,7 +48220,18 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 1397,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 84,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 25076
@@ -39489,7 +48355,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1401,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 52018
@@ -39575,7 +48452,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1404,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 34705
@@ -39661,7 +48549,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1407,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 75244
@@ -39707,7 +48606,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1408,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 12595
@@ -39751,7 +48661,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1409,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 494
@@ -39795,7 +48716,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1410,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 24501
@@ -39839,7 +48771,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1411,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 15852
@@ -39885,7 +48828,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1412,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 14389
@@ -39931,7 +48885,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1413,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 36912
@@ -39977,7 +48942,18 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 1414,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 76,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 13171
@@ -40023,7 +48999,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1415,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 20074
@@ -40067,7 +49054,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1416,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 8440
@@ -40113,7 +49111,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1417,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 19959
@@ -40159,7 +49168,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1418,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 5895
@@ -40205,7 +49225,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1419,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 20069
@@ -40289,7 +49320,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1421,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 106079
@@ -40335,7 +49377,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1422,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 19572
@@ -40381,7 +49434,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1423,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 70833
@@ -40427,7 +49491,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1424,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 11492
@@ -40473,7 +49548,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1425,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 7208
@@ -40519,7 +49605,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1428,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 18918
@@ -40565,7 +49662,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1429,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 26808
@@ -40621,8 +49729,30 @@ export const MockGames = [
       "finished_date": null,
       "id": 1430,
       "myPlatforms": [
-        {"id": 3},
-        {"id": 5}
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 3
+        },
+        {
+          "replay_score": null,
+          "final_score": null,
+          "tier": 2,
+          "replay_reason": null,
+          "minutes_played": 0,
+          "platform_name": "PS4",
+          "rating": null,
+          "last_played": null,
+          "finished_date": null,
+          "id": 5
+        }
       ],
       "person_id": 1
     }],
@@ -40669,7 +49799,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1431,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 23851
@@ -40715,7 +49856,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1432,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 36044
@@ -40761,7 +49913,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1433,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 15911
@@ -40807,7 +49970,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1434,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 118746
@@ -40853,7 +50027,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1435,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 27435
@@ -40899,7 +50084,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1436,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 74881
@@ -40945,7 +50141,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1437,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 36718
@@ -40989,7 +50196,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1438,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 52014
@@ -41035,7 +50253,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1439,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 69483
@@ -41081,7 +50310,18 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 1440,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 49,
+        "platform_name": "Steam",
+        "rating": 87,
+        "last_played": "2019-08-16 20:17:44.893",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 89560
@@ -41125,7 +50365,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1441,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 105442
@@ -41171,7 +50422,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1442,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 16707
@@ -41217,7 +50479,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1443,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 20927
@@ -41261,7 +50534,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1444,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 95028
@@ -41307,7 +50591,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1446,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 96027
@@ -41351,7 +50646,18 @@ export const MockGames = [
       "rating": 56,
       "finished_date": null,
       "id": 1447,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 56,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 97690
@@ -41395,7 +50701,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1448,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 56867
@@ -41441,7 +50758,18 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 1449,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 6,
+        "platform_name": "Steam",
+        "rating": 85,
+        "last_played": "2019-07-29 14:56:04.741",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 8983
@@ -41487,7 +50815,18 @@ export const MockGames = [
       "rating": 92,
       "finished_date": null,
       "id": 1450,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 3584,
+        "platform_name": "Steam",
+        "rating": 92,
+        "last_played": "2020-04-20 20:19:12.932",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 83731
@@ -41533,7 +50872,18 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 1451,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 60,
+        "platform_name": "Steam",
+        "rating": 84,
+        "last_played": "2019-08-02 17:58:35.589",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 37095
@@ -41579,7 +50929,18 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 1452,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 81,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 13226
@@ -41623,7 +50984,18 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 1453,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 83,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 23719
@@ -41669,7 +51041,18 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 1454,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 85,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 18279
@@ -41713,7 +51096,18 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 1455,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 85,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 26580
@@ -41759,7 +51153,18 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 1456,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 62,
+        "platform_name": "Steam",
+        "rating": 83,
+        "last_played": "2019-07-30 22:27:24.713",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 103331
@@ -41803,7 +51208,18 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 1457,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 75,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 33680
@@ -41847,7 +51263,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1458,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 1,
+        "platform_name": "Steam",
+        "rating": 80,
+        "last_played": "2020-02-18 18:00:31.324",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 15572
@@ -41891,7 +51318,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1460,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 33135
@@ -41935,7 +51373,18 @@ export const MockGames = [
       "rating": 89,
       "finished_date": "2020-04-20 18:45:59.414",
       "id": 1461,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": 80,
+        "final_score": 89,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 9,
+        "platform_name": "Steam",
+        "rating": 89,
+        "last_played": "2019-07-30 21:27:19.567",
+        "finished_date": "2020-04-20 18:45:59.414",
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 120607
@@ -41981,7 +51430,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1462,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 30,
+        "platform_name": "Xbox One",
+        "rating": 80,
+        "last_played": "2019-08-01 00:00:00.0",
+        "finished_date": null,
+        "id": 8
+      }],
       "person_id": 1
     }],
     "igdb_id": 11186
@@ -42027,7 +51487,18 @@ export const MockGames = [
       "rating": 99,
       "finished_date": "2019-07-31 21:00:00.0",
       "id": 1463,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": 90,
+        "final_score": 99,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 240,
+        "platform_name": "PC",
+        "rating": 99,
+        "last_played": "2019-08-01 00:00:00.0",
+        "finished_date": "2019-07-31 21:00:00.0",
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 24917
@@ -42073,7 +51544,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1464,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 28380
@@ -42119,7 +51601,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1466,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 72,
+        "platform_name": "Steam",
+        "rating": 80,
+        "last_played": "2019-11-28 15:38:20.105",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 125021
@@ -42165,7 +51658,18 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 1467,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 181,
+        "platform_name": "Steam",
+        "rating": 87,
+        "last_played": "2020-03-30 15:09:46.307",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 126098
@@ -42209,7 +51713,18 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 1468,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 16,
+        "platform_name": "Steam",
+        "rating": 55,
+        "last_played": "2020-01-15 18:41:32.143",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 27136
@@ -42253,7 +51768,18 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 1469,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "Steam",
+        "rating": 85,
+        "last_played": null,
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 28815
@@ -42337,7 +51863,18 @@ export const MockGames = [
       "rating": 92,
       "finished_date": null,
       "id": 1471,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 235,
+        "platform_name": "Steam",
+        "rating": 92,
+        "last_played": "2020-04-05 12:50:20.854",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 8351
@@ -42381,7 +51918,18 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 1472,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 13,
+        "platform_name": "Steam",
+        "rating": 90,
+        "last_played": "2020-04-07 15:52:24.577",
+        "finished_date": null,
+        "id": 3
+      }],
       "person_id": 1
     }],
     "igdb_id": 34469
@@ -42425,7 +51973,18 @@ export const MockGames = [
       "rating": 91,
       "finished_date": null,
       "id": 1475,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 1,
+        "replay_reason": null,
+        "minutes_played": 600,
+        "platform_name": "Switch",
+        "rating": 91,
+        "last_played": "2020-02-21 00:00:00.0",
+        "finished_date": null,
+        "id": 4
+      }],
       "person_id": 1
     }],
     "igdb_id": 28414
@@ -42471,7 +52030,18 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 1476,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 1,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 83,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 110411
@@ -42517,7 +52087,18 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 1477,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 1,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 40,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 24920
@@ -42563,7 +52144,18 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 1478,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 1,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 83,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 111654
@@ -42609,7 +52201,18 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1479,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 1,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 70,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 21062
@@ -42655,7 +52258,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1480,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 1,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 14362
@@ -42701,7 +52315,18 @@ export const MockGames = [
       "rating": 50,
       "finished_date": null,
       "id": 1481,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 1,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 50,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 96476
@@ -42747,7 +52372,18 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 1482,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 1,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 74,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 26195
@@ -42793,7 +52429,18 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 1485,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 1,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 85,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 6036
@@ -42839,7 +52486,18 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 1486,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 1,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 60,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 12571
@@ -42885,7 +52543,18 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 1487,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 1,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 40,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 14390
@@ -42931,7 +52600,18 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 1488,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 1,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 73,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 17447
@@ -43017,7 +52697,18 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1490,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 1,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 70,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 10962
@@ -43103,7 +52794,18 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 1492,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 1,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 60,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 76966
@@ -43149,7 +52851,18 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1493,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 1,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 80,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 19839
@@ -43195,7 +52908,18 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 1494,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 1,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 81,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 37094
@@ -43241,7 +52965,18 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 1495,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 1,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 55,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 21063
@@ -43287,7 +53022,18 @@ export const MockGames = [
       "rating": 92,
       "finished_date": null,
       "id": 1496,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 92,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 103329
@@ -43331,7 +53077,18 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1497,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 70,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 26166
@@ -43375,7 +53132,18 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 1498,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 73,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 27910
@@ -43421,7 +53189,18 @@ export const MockGames = [
       "rating": 56,
       "finished_date": null,
       "id": 1499,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 56,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 116753
@@ -43465,7 +53244,18 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1500,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 70,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 104890
@@ -43549,7 +53339,18 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 1502,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 40,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 44122
@@ -43593,7 +53394,18 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 1503,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 65,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 55027
@@ -43637,7 +53449,18 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 1504,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 65,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 5637
@@ -43683,7 +53506,18 @@ export const MockGames = [
       "rating": 42,
       "finished_date": null,
       "id": 1505,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 42,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 18167
@@ -43727,7 +53561,18 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 1506,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 76,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 14763
@@ -43773,7 +53618,18 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 1507,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 76,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 9806
@@ -43819,7 +53675,18 @@ export const MockGames = [
       "rating": 50,
       "finished_date": null,
       "id": 1508,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 50,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 103261
@@ -43865,7 +53732,18 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 1509,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 77,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 36543
@@ -43949,7 +53827,18 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 1511,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 68,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 7685
@@ -43993,7 +53882,18 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 1512,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 68,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 2738
@@ -44037,7 +53937,18 @@ export const MockGames = [
       "rating": 64,
       "finished_date": null,
       "id": 1513,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 64,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 18857
@@ -44243,7 +54154,18 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1518,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 70,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 27094
@@ -44289,7 +54211,18 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1519,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 70,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 28574
@@ -44333,7 +54266,18 @@ export const MockGames = [
       "rating": 71,
       "finished_date": null,
       "id": 1520,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 71,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 36846
@@ -44379,7 +54323,18 @@ export const MockGames = [
       "rating": 63,
       "finished_date": null,
       "id": 1521,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 63,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 9241
@@ -44423,7 +54378,18 @@ export const MockGames = [
       "rating": 45,
       "finished_date": null,
       "id": 1522,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 45,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 21642
@@ -44469,7 +54435,18 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 1523,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 55,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 114058
@@ -44513,7 +54490,18 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 1524,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 67,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 1121
@@ -44557,7 +54545,18 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 1525,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 55,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 24463
@@ -44641,7 +54640,18 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 1527,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 72,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 119259
@@ -44685,7 +54695,18 @@ export const MockGames = [
       "rating": 93,
       "finished_date": null,
       "id": 1528,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 45,
+        "platform_name": "Switch",
+        "rating": 93,
+        "last_played": "2020-04-21 00:00:00.0",
+        "finished_date": null,
+        "id": 4
+      }],
       "person_id": 1
     }],
     "igdb_id": 26764
@@ -44731,7 +54752,18 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 1529,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 68,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 13
@@ -44775,7 +54807,18 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 1530,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 68,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 17
@@ -44859,7 +54902,18 @@ export const MockGames = [
       "rating": 3,
       "finished_date": null,
       "id": 1532,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 3,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 2487
@@ -44903,7 +54957,18 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 1533,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 60,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 744
@@ -44947,7 +55012,18 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 1534,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 60,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 2238
@@ -44991,7 +55067,18 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 1535,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 60,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 7501
@@ -45035,7 +55122,18 @@ export const MockGames = [
       "rating": 59,
       "finished_date": null,
       "id": 1536,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 59,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 8482
@@ -45119,7 +55217,18 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 1538,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 74,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 863
@@ -45163,7 +55272,18 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1539,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": 70,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 9231
@@ -45329,7 +55449,18 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 1543,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PS4",
+        "rating": 55,
+        "last_played": null,
+        "finished_date": null,
+        "id": 5
+      }],
       "person_id": 1
     }],
     "igdb_id": 36950
@@ -45413,7 +55544,18 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1545,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [{
+        "replay_score": null,
+        "final_score": null,
+        "tier": 2,
+        "replay_reason": null,
+        "minutes_played": 0,
+        "platform_name": "PC",
+        "rating": null,
+        "last_played": null,
+        "finished_date": null,
+        "id": 10
+      }],
       "person_id": 1
     }],
     "igdb_id": 103298
