@@ -36,6 +36,10 @@ export class PersonGame extends DataObject {
     return ArrayUtil.cloneArray(this._platforms);
   }
 
+  get myPlatforms(): GamePlatform[] {
+    return ArrayUtil.cloneArray(this._myPlatforms);
+  }
+
   initializedFromJSON(jsonObj: any): this {
     super.initializedFromJSON(jsonObj);
     this.removeTemporaryPlatforms();

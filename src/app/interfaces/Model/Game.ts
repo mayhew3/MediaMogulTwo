@@ -160,6 +160,10 @@ export class Game extends DataObject {
     return Game.cloneArray(this._platforms);
   }
 
+  get availablePlatforms(): AvailableGamePlatform[] {
+    return Game.cloneArray(this._availablePlatforms);
+  }
+
   initializedFromJSON(jsonObj: any): this {
     super.initializedFromJSON(jsonObj);
     if (!this.allPlatforms) {

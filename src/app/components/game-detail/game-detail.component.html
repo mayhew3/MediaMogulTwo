@@ -33,12 +33,15 @@
   </div>
 
   <div class="row"
-       *ngFor="let platform of game.platforms">
+       *ngFor="let availablePlatform of game.availablePlatforms">
     <div class="col">
-      {{platform.full_name.value}}
+      {{availablePlatform.platformName.value}}
     </div>
     <div class="col">
-      {{getOwnedString(platform)}}
+      {{availablePlatform.metacritic.value}}
+    </div>
+    <div class="col">
+      {{getOwnedString(availablePlatform.platform)}}
     </div>
   </div>
 
