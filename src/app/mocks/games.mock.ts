@@ -71,7 +71,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-05 03:47:13.229",
       "platform_name": "Wii U",
       "metacritic": 84,
-      "id": 5
+      "id": 11
     }],
     "giantbomb_id": 35574,
     "giantbomb_name": "New Super Mario Bros. U",
@@ -88,7 +88,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 650,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 2171
@@ -117,7 +117,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:39:42.084",
       "platform_name": "Steam",
       "metacritic": 70,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 35512,
     "giantbomb_name": "Papo & Yo",
@@ -134,50 +134,10 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 101,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7388
-  },
-  {
-    "timetotal": 15,
-    "metacritic": 95,
-    "title": "Portal 2",
-    "platform": "Xbox 360",
-    "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1828915-box_portal2.png",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 7231,
-    "howlong_extras": 12.5,
-    "id": 4,
-    "metacritic_matched": "2015-08-28 00:13:39.554",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Portal 2",
-    "steamid": null,
-    "date_added": null,
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 21662,
-    "giantbomb_name": "Portal 2",
-    "igdb_poster": "co1oby",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": null,
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": 80,
-      "finished_date": null,
-      "id": 587,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 72
   },
   {
     "timetotal": null,
@@ -203,7 +163,7 @@ export const MockGames = [
       "metacritic_matched": "2020-04-19 15:00:35.334",
       "platform_name": "Steam",
       "metacritic": 86,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 41082,
     "giantbomb_name": "Kentucky Route Zero",
@@ -220,7 +180,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 272,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 5614
@@ -249,7 +209,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:13:40.555",
       "platform_name": "Xbox 360",
       "metacritic": 91,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 33400,
     "giantbomb_name": "Forza Motorsport 4",
@@ -266,7 +226,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 718,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 3068
@@ -295,7 +255,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:39:21.847",
       "platform_name": "Wii U",
       "metacritic": 88,
-      "id": 5
+      "id": 11
     }],
     "giantbomb_id": 42929,
     "giantbomb_name": "Mario Kart 8",
@@ -312,7 +272,7 @@ export const MockGames = [
       "rating": 30,
       "finished_date": null,
       "id": 447,
-      "myPlatforms": [{"id": 5}],
+      "myPlatforms": [{"id": 11}],
       "person_id": 1
     }],
     "igdb_id": 2350
@@ -382,7 +342,22 @@ export const MockGames = [
     "steamid": 33230,
     "date_added": "2014-06-26 00:00:00.0",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2015-08-28 00:18:52.65",
+        "platform_name": "Steam",
+        "metacritic": 86,
+        "id": 3
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2015-08-28 00:13:12.922",
+        "platform_name": "Xbox 360",
+        "metacritic": 90,
+        "id": 9
+      }
+    ],
     "giantbomb_id": 22928,
     "giantbomb_name": "Assassin's Creed II",
     "igdb_poster": "co1rcf",
@@ -398,7 +373,10 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 731,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 9}
+      ],
       "person_id": 1
     }],
     "igdb_id": 127
@@ -518,7 +496,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:13:47.121",
       "platform_name": "Xbox 360",
       "metacritic": 95,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 25249,
     "giantbomb_name": "Red Dead Redemption",
@@ -535,7 +513,7 @@ export const MockGames = [
       "rating": 82.6,
       "finished_date": null,
       "id": 396,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 434
@@ -702,7 +680,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:14:17.203",
       "platform_name": "Steam",
       "metacritic": 90,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 30057,
     "giantbomb_name": "Sid Meier's Civilization V",
@@ -719,7 +697,7 @@ export const MockGames = [
       "rating": 78.8,
       "finished_date": null,
       "id": 753,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 866
@@ -748,7 +726,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:13:50.442",
       "platform_name": "Xbox 360",
       "metacritic": 93,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 20504,
     "giantbomb_name": "Fallout 3",
@@ -765,7 +743,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 653,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 15
@@ -839,7 +817,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:13:52.473",
       "platform_name": "Xbox 360",
       "metacritic": 93,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 20716,
     "giantbomb_name": "Braid",
@@ -856,7 +834,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 318,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 2853
@@ -885,7 +863,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-30 03:47:38.582",
       "platform_name": "Steam",
       "metacritic": 79,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 38173,
     "giantbomb_name": "Sonic & All-Stars Racing Transformed",
@@ -902,7 +880,7 @@ export const MockGames = [
       "rating": 85.8,
       "finished_date": null,
       "id": 187,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 53626
@@ -931,7 +909,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:45.046",
       "platform_name": "Steam",
       "metacritic": 88,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 43344,
     "giantbomb_name": "The Stanley Parable",
@@ -948,7 +926,7 @@ export const MockGames = [
       "rating": 89.5,
       "finished_date": "2020-04-20 18:22:58.172",
       "id": 619,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3035
@@ -977,7 +955,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:14:38.101",
       "platform_name": "Steam",
       "metacritic": 83,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 42012,
     "giantbomb_name": "Transistor",
@@ -994,7 +972,7 @@ export const MockGames = [
       "rating": 90.4,
       "finished_date": null,
       "id": 283,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3022
@@ -1155,10 +1133,16 @@ export const MockGames = [
     "steamid": null,
     "date_added": null,
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [{
+      "metacritic_page": true,
+      "metacritic_matched": "2015-09-30 03:47:45.356",
+      "platform_name": "PS3",
+      "metacritic": 91,
+      "id": 6
+    }],
     "giantbomb_id": 6959,
     "giantbomb_name": "God of War",
-    "igdb_poster": "co1r6u",
+    "igdb_poster": "co1hud",
     "steam_page_gone": null,
     "person_games": [{
       "replay_score": null,
@@ -1171,10 +1155,10 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 448,
-      "myPlatforms": [],
+      "myPlatforms": [{"id": 6}],
       "person_id": 1
     }],
-    "igdb_id": 19560
+    "igdb_id": 549
   },
   {
     "timetotal": 4,
@@ -1199,7 +1183,7 @@ export const MockGames = [
       "metacritic_page": false,
       "platform_name": "Xbox 360",
       "metacritic": 87,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 14328,
     "giantbomb_name": "Half-Life 2: Episode One",
@@ -1216,7 +1200,7 @@ export const MockGames = [
       "rating": 94,
       "finished_date": null,
       "id": 261,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 338
@@ -1245,7 +1229,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:14:20.723",
       "platform_name": "Steam",
       "metacritic": 91,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 37615,
     "giantbomb_name": "Mark of the Ninja",
@@ -1262,7 +1246,7 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 499,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2129
@@ -1286,7 +1270,22 @@ export const MockGames = [
     "steamid": 242550,
     "date_added": "2014-06-24 00:00:00.0",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2015-08-28 00:14:36.125",
+        "platform_name": "Steam",
+        "metacritic": 89,
+        "id": 3
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2018-05-15 03:27:32.252",
+        "platform_name": "PS4",
+        "metacritic": 90,
+        "id": 5
+      }
+    ],
     "giantbomb_id": 38141,
     "giantbomb_name": "Rayman Legends",
     "igdb_poster": "co1rck",
@@ -1302,7 +1301,10 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 279,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 5}
+      ],
       "person_id": 1
     }],
     "igdb_id": 1968
@@ -1331,7 +1333,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:14:08.652",
       "platform_name": "Xbox 360",
       "metacritic": 84,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 32552,
     "giantbomb_name": "Outland",
@@ -1348,7 +1350,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 286,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 8371
@@ -1377,7 +1379,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:14:22.147",
       "platform_name": "Steam",
       "metacritic": 88,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 39686,
     "giantbomb_name": "Super Hexagon",
@@ -1394,7 +1396,7 @@ export const MockGames = [
       "rating": 69,
       "finished_date": null,
       "id": 365,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3251
@@ -1423,7 +1425,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:43.942",
       "platform_name": "Steam",
       "metacritic": 88,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 50541,
     "giantbomb_name": "Guacamelee! Gold Edition",
@@ -1440,7 +1442,7 @@ export const MockGames = [
       "rating": 84.4,
       "finished_date": null,
       "id": 363,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19121
@@ -1515,7 +1517,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-30 03:47:49.792",
       "platform_name": "Wii",
       "metacritic": 91,
-      "id": 8
+      "id": 1
     }],
     "giantbomb_id": 1578,
     "giantbomb_name": "Resident Evil 4",
@@ -1532,7 +1534,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 367,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 974
@@ -1561,7 +1563,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:11:28.77",
       "platform_name": "Xbox 360",
       "metacritic": 88,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Shadow Complex",
@@ -1594,7 +1596,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:26.157",
       "platform_name": "Wii",
       "metacritic": 95,
-      "id": 8
+      "id": 1
     }],
     "giantbomb_id": 19467,
     "giantbomb_name": "The Legend of Zelda: Twilight Princess",
@@ -1611,7 +1613,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 698,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1036
@@ -1640,7 +1642,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:28:12.586",
       "platform_name": "Wii",
       "metacritic": 93,
-      "id": 8
+      "id": 1
     }],
     "giantbomb_id": 26934,
     "giantbomb_name": "The Legend of Zelda: Skyward Sword",
@@ -1657,7 +1659,7 @@ export const MockGames = [
       "rating": 83.4,
       "finished_date": null,
       "id": 601,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 534
@@ -1686,7 +1688,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:15:04.451",
       "platform_name": "Steam",
       "metacritic": 66,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 36090,
     "giantbomb_name": "Strike Suit Zero",
@@ -1703,7 +1705,7 @@ export const MockGames = [
       "rating": 84.5,
       "finished_date": null,
       "id": 710,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 8507
@@ -1732,7 +1734,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-05 03:47:07.868",
       "platform_name": "Wii",
       "metacritic": 87,
-      "id": 8
+      "id": 1
     }],
     "giantbomb_id": 26841,
     "giantbomb_name": "New Super Mario Bros. Wii",
@@ -1749,7 +1751,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 746,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2178
@@ -1818,7 +1820,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:32.321",
       "platform_name": "Steam",
       "metacritic": 89,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 37152,
     "giantbomb_name": "XCOM: Enemy Unknown",
@@ -1835,50 +1837,10 @@ export const MockGames = [
       "rating": 90,
       "finished_date": "2016-01-15 00:00:00.0",
       "id": 725,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1318
-  },
-  {
-    "timetotal": 11.5,
-    "metacritic": 80,
-    "title": "Metro: Last Light",
-    "platform": "PS3",
-    "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2213657-metroart.jpg",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 5947,
-    "howlong_extras": 12.6667,
-    "id": 42,
-    "metacritic_matched": "2015-08-28 00:14:12.95",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Metro: Last Light",
-    "steamid": null,
-    "date_added": null,
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 35485,
-    "giantbomb_name": "Metro: Last Light",
-    "igdb_poster": "mnxai3ur3pzzkhdc36on",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": null,
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 24,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 269,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 539
   },
   {
     "timetotal": 12,
@@ -1996,7 +1958,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:28:30.702",
       "platform_name": "Xbox 360",
       "metacritic": 94,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 20238,
     "giantbomb_name": "The Elder Scrolls IV: Oblivion",
@@ -2013,7 +1975,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 384,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 59
@@ -2088,7 +2050,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:14:22.989",
       "platform_name": "Steam",
       "metacritic": 86,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 32562,
     "giantbomb_name": "Path of Exile",
@@ -2105,7 +2067,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 189,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1911
@@ -2133,7 +2095,7 @@ export const MockGames = [
       "metacritic_page": false,
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 37794,
     "giantbomb_name": "Lone Survivor",
@@ -2150,7 +2112,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 733,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 21683
@@ -2178,7 +2140,7 @@ export const MockGames = [
       "metacritic_page": false,
       "platform_name": "Steam",
       "metacritic": 76,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -2195,7 +2157,7 @@ export const MockGames = [
       "rating": 91.6,
       "finished_date": "2014-05-18 00:00:00.0",
       "id": 547,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 10047
@@ -2222,7 +2184,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 337,
     "giantbomb_name": "Tomb Raider II",
@@ -2239,7 +2201,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 313,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1156
@@ -2268,7 +2230,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:58.634",
       "platform_name": "Steam",
       "metacritic": 85,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 26505,
     "giantbomb_name": "Frozen Synapse",
@@ -2285,7 +2247,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 256,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2248
@@ -2314,7 +2276,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:14:19.226",
       "platform_name": "Steam",
       "metacritic": 69,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 36268,
     "giantbomb_name": "Q.U.B.E.",
@@ -2331,7 +2293,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 281,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 5445
@@ -2358,7 +2320,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 42875,
     "giantbomb_name": "Q.U.B.E. Director's Cut",
@@ -2375,7 +2337,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 477,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19961
@@ -2404,7 +2366,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:11.667",
       "platform_name": "Steam",
       "metacritic": 74,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 36334,
     "giantbomb_name": "Deponia",
@@ -2421,7 +2383,7 @@ export const MockGames = [
       "rating": 84.7,
       "finished_date": null,
       "id": 319,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 5060
@@ -2450,7 +2412,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:15:12.876",
       "platform_name": "Steam",
       "metacritic": 83,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 34987,
     "giantbomb_name": "Universe Sandbox",
@@ -2467,7 +2429,7 @@ export const MockGames = [
       "rating": 50,
       "finished_date": null,
       "id": 735,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 11812
@@ -2496,7 +2458,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:15:14.354",
       "platform_name": "Steam",
       "metacritic": 78,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 35377,
     "giantbomb_name": "Awesomenauts",
@@ -2513,7 +2475,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 391,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1281
@@ -2542,7 +2504,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:15:16.893",
       "platform_name": "Steam",
       "metacritic": 78,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 37262,
     "giantbomb_name": "Deadlight",
@@ -2559,7 +2521,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 347,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2354
@@ -2588,7 +2550,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:33.609",
       "platform_name": "Steam",
       "metacritic": 92,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 8870,
     "giantbomb_name": "System Shock 2",
@@ -2605,7 +2567,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 751,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 22
@@ -2634,7 +2596,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:15:18.201",
       "platform_name": "Steam",
       "metacritic": 87,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 32940,
     "giantbomb_name": "The Swapper",
@@ -2651,7 +2613,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 345,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 5892
@@ -2680,7 +2642,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:42.475",
       "platform_name": "Steam",
       "metacritic": 69,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 42713,
     "giantbomb_name": "Shelter",
@@ -2697,7 +2659,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 421,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7832
@@ -2724,7 +2686,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 47208,
     "giantbomb_name": "The Mysterious Cities of Gold: Secret Paths",
@@ -2741,7 +2703,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 204,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 53763
@@ -2770,7 +2732,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:12:24.891",
       "platform_name": "Steam",
       "metacritic": 76,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 37448,
     "giantbomb_name": "Broken Age",
@@ -2787,7 +2749,7 @@ export const MockGames = [
       "rating": 89,
       "finished_date": null,
       "id": 245,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3087
@@ -2816,7 +2778,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-10 03:47:20.811",
       "platform_name": "Steam",
       "metacritic": 82,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 34294,
     "giantbomb_name": "Sins of a Solar Empire: Rebellion",
@@ -2833,7 +2795,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 340,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9924
@@ -2860,7 +2822,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -2893,7 +2855,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:47.66",
       "platform_name": "Steam",
       "metacritic": 91,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 8759,
     "giantbomb_name": "The Longest Journey",
@@ -2910,7 +2872,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 333,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 895
@@ -2934,13 +2896,7 @@ export const MockGames = [
     "steamid": 44320,
     "date_added": null,
     "metacritic_page": true,
-    "availablePlatforms": [{
-      "metacritic_page": true,
-      "metacritic_matched": "2015-08-28 00:16:38.869",
-      "platform_name": "Steam",
-      "metacritic": 86,
-      "id": 1
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": 30383,
     "giantbomb_name": "DiRT 3",
     "igdb_poster": "pun7d9tjhw7dj0lclqoo",
@@ -2956,7 +2912,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 709,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 524
@@ -2985,7 +2941,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:13:14.426",
       "platform_name": "Wii",
       "metacritic": 97,
-      "id": 8
+      "id": 1
     }],
     "giantbomb_id": 16094,
     "giantbomb_name": "Super Mario Galaxy",
@@ -3002,7 +2958,7 @@ export const MockGames = [
       "rating": 85.5,
       "finished_date": null,
       "id": 277,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1077
@@ -3123,7 +3079,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:44:54.263",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 42241,
     "giantbomb_name": "Far Cry 3: Blood Dragon",
@@ -3140,7 +3096,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 197,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2001
@@ -3169,7 +3125,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:30:06.246",
       "platform_name": "Steam",
       "metacritic": 85,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 27691,
     "giantbomb_name": "Dust: An Elysian Tail",
@@ -3186,7 +3142,7 @@ export const MockGames = [
       "rating": 84.5,
       "finished_date": null,
       "id": 91,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2130
@@ -3215,7 +3171,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:38.993",
       "platform_name": "Steam",
       "metacritic": 79,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 34088,
     "giantbomb_name": "State of Decay",
@@ -3232,7 +3188,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 759,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3049
@@ -3261,7 +3217,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:14:39.523",
       "platform_name": "Wii",
       "metacritic": 91,
-      "id": 8
+      "id": 1
     }],
     "giantbomb_id": 26559,
     "giantbomb_name": "Metroid Prime Trilogy",
@@ -3278,7 +3234,7 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 374,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 1112
@@ -3306,7 +3262,7 @@ export const MockGames = [
       "metacritic_page": false,
       "platform_name": "Steam",
       "metacritic": 85,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 12376,
     "giantbomb_name": "The Lord of the Rings Online: Shadows of Angmar",
@@ -3323,50 +3279,10 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 67,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3092
-  },
-  {
-    "timetotal": 13,
-    "metacritic": 88,
-    "title": "BioShock 2",
-    "platform": "Xbox 360",
-    "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2584143-bioshock2.jpg",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 1066,
-    "howlong_extras": 14,
-    "id": 75,
-    "metacritic_matched": "2015-08-28 00:39:37.342",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "BioShock 2",
-    "steamid": null,
-    "date_added": null,
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 20827,
-    "giantbomb_name": "BioShock 2",
-    "igdb_poster": "co1klg",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": null,
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 12,
-      "last_played": null,
-      "rating": 44,
-      "finished_date": null,
-      "id": 629,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 21
   },
   {
     "timetotal": null,
@@ -3391,7 +3307,7 @@ export const MockGames = [
       "metacritic_page": false,
       "platform_name": "Xbox 360",
       "metacritic": 88,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 3550,
     "giantbomb_name": "Tom Clancy's Rainbow Six: Vegas",
@@ -3408,7 +3324,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 368,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 909
@@ -3437,7 +3353,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:14:46.572",
       "platform_name": "Xbox 360",
       "metacritic": 93,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 27919,
     "giantbomb_name": "Rock Band 3",
@@ -3454,7 +3370,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 651,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 2691
@@ -3478,7 +3394,20 @@ export const MockGames = [
     "steamid": 239030,
     "date_added": "2013-11-28 00:00:00.0",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2015-09-29 21:30:07.804",
+        "platform_name": "Steam",
+        "metacritic": 85,
+        "id": 3
+      },
+      {
+        "metacritic_page": true,
+        "platform_name": "PS4",
+        "id": 5
+      }
+    ],
     "giantbomb_id": 41931,
     "giantbomb_name": "Papers, Please",
     "igdb_poster": "co1qkp",
@@ -3494,7 +3423,10 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 383,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 5}
+      ],
       "person_id": 1
     }],
     "igdb_id": 2935
@@ -3523,7 +3455,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:14:47.811",
       "platform_name": "Xbox 360",
       "metacritic": 84,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 6681,
     "giantbomb_name": "Devil May Cry 4",
@@ -3540,7 +3472,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 401,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 112
@@ -3569,7 +3501,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:42.046",
       "platform_name": "Steam",
       "metacritic": 82,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 32622,
     "giantbomb_name": "Crusader Kings II",
@@ -3586,7 +3518,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 298,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2918
@@ -3661,7 +3593,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:14:51.687",
       "platform_name": "Xbox 360",
       "metacritic": 85,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 37648,
     "giantbomb_name": "Forza Horizon",
@@ -3678,50 +3610,10 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 310,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 3047
-  },
-  {
-    "timetotal": 24,
-    "metacritic": 82,
-    "title": "Saints Row: The Third",
-    "platform": "PS3",
-    "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2058139-box_srow3.png",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 8076,
-    "howlong_extras": 25,
-    "id": 85,
-    "metacritic_matched": "2015-08-28 00:14:53.656",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Saints Row: The Third",
-    "steamid": null,
-    "date_added": null,
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 25725,
-    "giantbomb_name": "Saints Row: The Third",
-    "igdb_poster": "co1pl2",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": null,
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 60,
-      "last_played": null,
-      "rating": 85,
-      "finished_date": null,
-      "id": 480,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 873
   },
   {
     "timetotal": null,
@@ -3747,7 +3639,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-30 03:47:14.207",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 28194,
     "giantbomb_name": "TrackMania² Canyon",
@@ -3764,7 +3656,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 481,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 508
@@ -3793,7 +3685,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:14:54.779",
       "platform_name": "NDS",
       "metacritic": 91,
-      "id": 9
+      "id": 2
     }],
     "giantbomb_id": 6539,
     "giantbomb_name": "Mario Kart DS",
@@ -3810,7 +3702,7 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 689,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{"id": 2}],
       "person_id": 1
     }],
     "igdb_id": 2345
@@ -3884,7 +3776,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:04.417",
       "platform_name": "Steam",
       "metacritic": 74,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 35942,
     "giantbomb_name": "Space Pirates and Zombies",
@@ -3901,7 +3793,7 @@ export const MockGames = [
       "rating": 78.9,
       "finished_date": null,
       "id": 358,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2989
@@ -3930,7 +3822,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:25.198",
       "platform_name": "Steam",
       "metacritic": 88,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 32255,
     "giantbomb_name": "Torchlight II",
@@ -3947,7 +3839,7 @@ export const MockGames = [
       "rating": 84.5,
       "finished_date": null,
       "id": 348,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1337
@@ -3976,7 +3868,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:12:33.101",
       "platform_name": "Steam",
       "metacritic": 75,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 33629,
     "giantbomb_name": "Dear Esther",
@@ -3993,7 +3885,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 342,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3082
@@ -4021,7 +3913,7 @@ export const MockGames = [
       "metacritic_page": false,
       "platform_name": "Xbox 360",
       "metacritic": 85,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 15835,
     "giantbomb_name": "Beyond Good & Evil",
@@ -4038,7 +3930,7 @@ export const MockGames = [
       "rating": 1,
       "finished_date": null,
       "id": 682,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 1341
@@ -4113,7 +4005,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:18.045",
       "platform_name": "Steam",
       "metacritic": 70,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 29407,
     "giantbomb_name": "Beat Hazard",
@@ -4130,7 +4022,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 126,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7404
@@ -4154,7 +4046,22 @@ export const MockGames = [
     "steamid": 43160,
     "date_added": "2014-06-24 00:00:00.0",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2015-08-28 00:14:12.95",
+        "platform_name": "PS3",
+        "metacritic": 80,
+        "id": 6
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2015-09-29 21:29:43.71",
+        "platform_name": "Steam",
+        "metacritic": 82,
+        "id": 3
+      }
+    ],
     "giantbomb_id": 35485,
     "giantbomb_name": "Metro: Last Light",
     "igdb_poster": "mnxai3ur3pzzkhdc36on",
@@ -4170,7 +4077,10 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 622,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 6}
+      ],
       "person_id": 1
     }],
     "igdb_id": 539
@@ -4199,7 +4109,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:40.258",
       "platform_name": "Steam",
       "metacritic": 84,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 35899,
     "giantbomb_name": "The Binding of Isaac",
@@ -4216,7 +4126,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 321,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2132
@@ -4244,7 +4154,7 @@ export const MockGames = [
       "metacritic_page": false,
       "platform_name": "Xbox 360",
       "metacritic": 84,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 26436,
     "giantbomb_name": "Might & Magic: Clash of Heroes",
@@ -4261,7 +4171,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 128,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 1889
@@ -4290,7 +4200,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:15:08.047",
       "platform_name": "Xbox 360",
       "metacritic": 83,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 38497,
     "giantbomb_name": "Need for Speed: Most Wanted",
@@ -4307,7 +4217,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 452,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 98
@@ -4406,46 +4316,6 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": 90,
-    "title": "Assassin's Creed II",
-    "platform": "Xbox 360",
-    "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/2167089-box_ac2.png",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 651,
-    "howlong_extras": 26.55,
-    "id": 101,
-    "metacritic_matched": "2015-08-28 00:13:12.922",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Assassin's Creed II",
-    "steamid": null,
-    "date_added": null,
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 22928,
-    "giantbomb_name": "Assassin's Creed II",
-    "igdb_poster": "co1rcf",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": null,
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": 71,
-      "finished_date": null,
-      "id": 312,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 127
-  },
-  {
-    "timetotal": null,
     "metacritic": 86,
     "title": "Fallout 2",
     "platform": "PC",
@@ -4514,7 +4384,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:15:02.69",
       "platform_name": "Xbox 360",
       "metacritic": 83,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 4065,
     "giantbomb_name": "Crackdown",
@@ -4531,7 +4401,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 325,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 2896
@@ -4560,7 +4430,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:28:59.77",
       "platform_name": "Xbox 360",
       "metacritic": 73,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 20626,
     "giantbomb_name": "Star Wars: The Force Unleashed",
@@ -4577,7 +4447,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 694,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 475
@@ -4606,7 +4476,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:26.1",
       "platform_name": "Steam",
       "metacritic": 83,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 28726,
     "giantbomb_name": "Monaco",
@@ -4623,7 +4493,7 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 191,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 8739
@@ -4744,7 +4614,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:50.384",
       "platform_name": "Steam",
       "metacritic": 82,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 20961,
     "giantbomb_name": "Prince of Persia",
@@ -4761,7 +4631,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 482,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2438
@@ -4790,7 +4660,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:15:11.819",
       "platform_name": "Steam",
       "metacritic": 77,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 36234,
     "giantbomb_name": "Quantum Conundrum",
@@ -4807,7 +4677,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 273,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2448
@@ -4836,7 +4706,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:55.568",
       "platform_name": "Steam",
       "metacritic": 77,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 39484,
     "giantbomb_name": "Giana Sisters: Twisted Dreams",
@@ -4853,7 +4723,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 379,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3098
@@ -4928,7 +4798,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:28:10.637",
       "platform_name": "Xbox 360",
       "metacritic": 82,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 23311,
     "giantbomb_name": "Defense Grid: The Awakening",
@@ -4945,7 +4815,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 617,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 8190
@@ -5066,7 +4936,7 @@ export const MockGames = [
       "metacritic_matched": "2015-12-08 03:47:09.127",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 38282,
     "giantbomb_name": "LEGO The Lord of the Rings",
@@ -5083,7 +4953,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 394,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 4969
@@ -5112,7 +4982,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:00.732",
       "platform_name": "Steam",
       "metacritic": 78,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 41090,
     "giantbomb_name": "LEGO Marvel Super Heroes",
@@ -5129,7 +4999,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 200,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2050
@@ -5158,7 +5028,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:15:23.176",
       "platform_name": "Steam",
       "metacritic": 76,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 32055,
     "giantbomb_name": "Vindictus",
@@ -5175,7 +5045,7 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 416,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7887
@@ -5266,7 +5136,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:15:24.45",
       "platform_name": "Xbox",
       "metacritic": 89,
-      "id": 2
+      "id": 7
     }],
     "giantbomb_id": 2414,
     "giantbomb_name": "Max Payne",
@@ -5283,7 +5153,7 @@ export const MockGames = [
       "rating": 45,
       "finished_date": null,
       "id": 529,
-      "myPlatforms": [{"id": 2}],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 18
@@ -5312,7 +5182,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:10.61",
       "platform_name": "Xbox",
       "metacritic": 88,
-      "id": 2
+      "id": 7
     }],
     "giantbomb_id": 21431,
     "giantbomb_name": "Oddworld: Stranger's Wrath",
@@ -5329,7 +5199,7 @@ export const MockGames = [
       "rating": 1,
       "finished_date": null,
       "id": 439,
-      "myPlatforms": [{"id": 2}],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 1002
@@ -5358,7 +5228,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:13:42.706",
       "platform_name": "Xbox 360",
       "metacritic": 86,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Trials HD",
@@ -5390,7 +5260,7 @@ export const MockGames = [
       "metacritic_page": false,
       "platform_name": "Xbox 360",
       "metacritic": 84,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 10097,
     "giantbomb_name": "Worms 2",
@@ -5407,7 +5277,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 767,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 947
@@ -5528,7 +5398,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:15:29.432",
       "platform_name": "Steam",
       "metacritic": 83,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 18547,
     "giantbomb_name": "EverQuest II",
@@ -5545,7 +5415,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 479,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 18293
@@ -5574,7 +5444,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:48.505",
       "platform_name": "Xbox 360",
       "metacritic": 90,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 5881,
     "giantbomb_name": "Forza Motorsport 2",
@@ -5591,7 +5461,7 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 591,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 3072
@@ -5620,7 +5490,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:50.291",
       "platform_name": "Steam",
       "metacritic": 58,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 24894,
     "giantbomb_name": "Marvel Heroes",
@@ -5637,7 +5507,7 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 627,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 50867
@@ -5666,7 +5536,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:15:30.559",
       "platform_name": "Xbox 360",
       "metacritic": 83,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 20655,
     "giantbomb_name": "Battlefield: Bad Company",
@@ -5683,7 +5553,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 685,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 473
@@ -5758,7 +5628,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:01.569",
       "platform_name": "Steam",
       "metacritic": 76,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 31722,
     "giantbomb_name": "From Dust",
@@ -5775,7 +5645,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 323,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3160
@@ -5804,7 +5674,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:15:32.31",
       "platform_name": "Xbox 360",
       "metacritic": 91,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 26786,
     "giantbomb_name": "Halo: Reach",
@@ -5821,7 +5691,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 308,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 990
@@ -5850,7 +5720,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:15:33.36",
       "platform_name": "Wii",
       "metacritic": 82,
-      "id": 8
+      "id": 1
     }],
     "giantbomb_id": 20645,
     "giantbomb_name": "Mario Kart Wii",
@@ -5867,7 +5737,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 337,
-      "myPlatforms": [{"id": 8}],
+      "myPlatforms": [{"id": 1}],
       "person_id": 1
     }],
     "igdb_id": 2183
@@ -5896,7 +5766,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-05 03:46:27.802",
       "platform_name": "Xbox 360",
       "metacritic": 73,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 21559,
     "giantbomb_name": "Marvel Ultimate Alliance 2",
@@ -5913,7 +5783,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 740,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 568
@@ -5942,7 +5812,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:52.275",
       "platform_name": "Xbox 360",
       "metacritic": 96,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 21590,
     "giantbomb_name": "Mass Effect 2",
@@ -5959,7 +5829,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 324,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 74
@@ -5988,7 +5858,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-05 03:47:11.32",
       "platform_name": "Xbox 360",
       "metacritic": 85,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 5607,
     "giantbomb_name": "Project Gotham Racing 4",
@@ -6005,7 +5875,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 354,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 2540
@@ -6034,7 +5904,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:13.016",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 33329,
     "giantbomb_name": "Anomaly: Warzone Earth",
@@ -6051,7 +5921,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 486,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 8758
@@ -6080,7 +5950,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:38.164",
       "platform_name": "Steam",
       "metacritic": 62,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 37669,
     "giantbomb_name": "Contrast",
@@ -6097,7 +5967,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 612,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3839
@@ -6121,13 +5991,7 @@ export const MockGames = [
     "steamid": 211820,
     "date_added": null,
     "metacritic_page": true,
-    "availablePlatforms": [{
-      "metacritic_page": true,
-      "metacritic_matched": "2016-08-02 03:48:04.234",
-      "platform_name": "Steam",
-      "metacritic": 85,
-      "id": 1
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": 37839,
     "giantbomb_name": "Starbound",
     "igdb_poster": "co1mph",
@@ -6143,7 +6007,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 98,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 3019
@@ -6172,7 +6036,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:39:49.589",
       "platform_name": "Xbox 360",
       "metacritic": 80,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 29441,
     "giantbomb_name": "Sleeping Dogs",
@@ -6189,7 +6053,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 766,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 1267
@@ -6310,7 +6174,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:57.951",
       "platform_name": "Steam",
       "metacritic": 90,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 21358,
     "giantbomb_name": "Deus Ex: Human Revolution",
@@ -6327,7 +6191,7 @@ export const MockGames = [
       "rating": 71,
       "finished_date": null,
       "id": 253,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 43
@@ -6402,7 +6266,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:15:42.551",
       "platform_name": "Xbox 360",
       "metacritic": 79,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 25187,
     "giantbomb_name": "Dead Rising 2",
@@ -6419,7 +6283,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 582,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 496
@@ -6494,7 +6358,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:15:44.4",
       "platform_name": "Xbox 360",
       "metacritic": 79,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 18287,
     "giantbomb_name": "Hexic",
@@ -6511,7 +6375,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 687,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 2732
@@ -6585,7 +6449,7 @@ export const MockGames = [
       "metacritic_page": false,
       "platform_name": "Steam",
       "metacritic": 87,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 10528,
     "giantbomb_name": "Monkey Island 2:  LeChuck's Revenge",
@@ -6602,50 +6466,10 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 201,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 66
-  },
-  {
-    "timetotal": null,
-    "metacritic": 88,
-    "title": "Dead Space",
-    "platform": "PS3",
-    "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2529747-deadspaceclean.jpg",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 2333,
-    "howlong_extras": 12.6333,
-    "id": 149,
-    "metacritic_matched": "2015-08-28 00:13:34.762",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Dead Space",
-    "steamid": null,
-    "date_added": null,
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 20800,
-    "giantbomb_name": "Dead Space",
-    "igdb_poster": "exlxirelwzpoqftj8phf",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": null,
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": 56,
-      "finished_date": null,
-      "id": 670,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 37
   },
   {
     "timetotal": null,
@@ -6671,7 +6495,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:15:45.637",
       "platform_name": "Xbox",
       "metacritic": 85,
-      "id": 2
+      "id": 7
     }],
     "giantbomb_id": 2092,
     "giantbomb_name": "Fable: The Lost Chapters",
@@ -6688,7 +6512,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 440,
-      "myPlatforms": [{"id": 2}],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 521
@@ -6717,7 +6541,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:50.408",
       "platform_name": "Steam",
       "metacritic": 78,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 52,
     "giantbomb_name": "Baldur's Gate",
@@ -6734,7 +6558,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 309,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1880
@@ -6809,7 +6633,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:59.406",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 37608,
     "giantbomb_name": "Proteus",
@@ -6826,7 +6650,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 730,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2163
@@ -6901,7 +6725,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:07.999",
       "platform_name": "NDS",
       "metacritic": 90,
-      "id": 9
+      "id": 2
     }],
     "giantbomb_id": 11939,
     "giantbomb_name": "Advance Wars: Dual Strike",
@@ -6918,7 +6742,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 388,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{"id": 2}],
       "person_id": 1
     }],
     "igdb_id": 1693
@@ -6947,7 +6771,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-08 03:46:59.338",
       "platform_name": "Xbox 360",
       "metacritic": 77,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 34073,
     "giantbomb_name": "The Gunstringer",
@@ -6964,7 +6788,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 768,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 7588
@@ -6993,7 +6817,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:57.714",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 32474,
     "giantbomb_name": "Dungeon Defenders",
@@ -7010,7 +6834,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 752,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3043
@@ -7085,7 +6909,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:30:08.526",
       "platform_name": "Xbox 360",
       "metacritic": 90,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 2397,
     "giantbomb_name": "Tom Clancy's Ghost Recon: Advanced Warfighter",
@@ -7102,7 +6926,7 @@ export const MockGames = [
       "rating": 45,
       "finished_date": null,
       "id": 484,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 1300
@@ -7131,7 +6955,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:24.251",
       "platform_name": "Xbox 360",
       "metacritic": 80,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 37907,
     "giantbomb_name": "Magic: The Gathering - Duels of the Planeswalkers 2013",
@@ -7148,7 +6972,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 769,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 1891
@@ -7314,7 +7138,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:15:52.395",
       "platform_name": "Xbox 360",
       "metacritic": 85,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 24711,
     "giantbomb_name": "Guitar Hero 5",
@@ -7331,7 +7155,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 631,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 2672
@@ -7360,7 +7184,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:15:53.517",
       "platform_name": "Xbox 360",
       "metacritic": 92,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 20714,
     "giantbomb_name": "Rock Band 2",
@@ -7377,7 +7201,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 594,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 2692
@@ -7406,7 +7230,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:12:27.728",
       "platform_name": "Steam",
       "metacritic": 75,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 38899,
     "giantbomb_name": "Nihilumbra",
@@ -7423,7 +7247,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 745,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3026
@@ -7452,7 +7276,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:55.66",
       "platform_name": "Steam",
       "metacritic": 75,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 41335,
     "giantbomb_name": "Star Conflict",
@@ -7469,7 +7293,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 656,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3210
@@ -7498,7 +7322,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:43.448",
       "platform_name": "Xbox 360",
       "metacritic": 76,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 19512,
     "giantbomb_name": "Undertow",
@@ -7515,7 +7339,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 605,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 20898
@@ -7544,7 +7368,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:44.582",
       "platform_name": "Xbox",
       "metacritic": 77,
-      "id": 2
+      "id": 7
     }],
     "giantbomb_id": 8369,
     "giantbomb_name": "Black",
@@ -7561,7 +7385,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 423,
-      "myPlatforms": [{"id": 2}],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 5749
@@ -7590,7 +7414,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:46.025",
       "platform_name": "Xbox 360",
       "metacritic": 77,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 31348,
     "giantbomb_name": "A World of Keflings",
@@ -7607,7 +7431,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 684,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 21077
@@ -7636,7 +7460,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-08 03:46:57.1",
       "platform_name": "Xbox 360",
       "metacritic": 84,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 20580,
     "giantbomb_name": "Sid Meier's Civilization Revolution",
@@ -7653,7 +7477,7 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 748,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 2152
@@ -7682,7 +7506,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:47.456",
       "platform_name": "Xbox 360",
       "metacritic": 92,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 24995,
     "giantbomb_name": "Forza Motorsport 3",
@@ -7699,7 +7523,7 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 359,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 3069
@@ -7817,7 +7641,7 @@ export const MockGames = [
       "metacritic_page": false,
       "platform_name": "Steam",
       "metacritic": 75,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 34104,
     "giantbomb_name": "Atom Zombie Smasher",
@@ -7834,7 +7658,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 474,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 8388
@@ -7863,7 +7687,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:34.764",
       "platform_name": "Steam",
       "metacritic": 75,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 42645,
     "giantbomb_name": "Reus",
@@ -7880,7 +7704,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 729,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 5523
@@ -7909,7 +7733,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-30 03:47:53.333",
       "platform_name": "Steam",
       "metacritic": 83,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 33139,
     "giantbomb_name": "Superbrothers: Sword & Sworcery EP",
@@ -7926,7 +7750,7 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 716,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2991
@@ -8000,7 +7824,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-30 03:48:10.188",
       "platform_name": "Xbox",
       "metacritic": 86,
-      "id": 2
+      "id": 7
     }],
     "giantbomb_id": 8852,
     "giantbomb_name": "Star Wars: Knights of the Old Republic II - The Sith Lords",
@@ -8017,7 +7841,7 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 483,
-      "myPlatforms": [{"id": 2}],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 118
@@ -8046,7 +7870,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-05 03:46:50.602",
       "platform_name": "NDS",
       "metacritic": 89,
-      "id": 9
+      "id": 2
     }],
     "giantbomb_id": 8224,
     "giantbomb_name": "New Super Mario Bros.",
@@ -8063,7 +7887,7 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 349,
-      "myPlatforms": [{"id": 9}],
+      "myPlatforms": [{"id": 2}],
       "person_id": 1
     }],
     "igdb_id": 1076
@@ -8091,7 +7915,7 @@ export const MockGames = [
       "metacritic_page": false,
       "platform_name": "Xbox",
       "metacritic": 93,
-      "id": 2
+      "id": 7
     }],
     "giantbomb_id": 3724,
     "giantbomb_name": "Grand Theft Auto III",
@@ -8108,7 +7932,7 @@ export const MockGames = [
       "rating": 45,
       "finished_date": null,
       "id": 515,
-      "myPlatforms": [{"id": 2}],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 730
@@ -8137,7 +7961,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:03.47",
       "platform_name": "Xbox",
       "metacritic": 75,
-      "id": 2
+      "id": 7
     }],
     "giantbomb_id": 2959,
     "giantbomb_name": "The Lord of the Rings: The Third Age",
@@ -8154,7 +7978,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 695,
-      "myPlatforms": [{"id": 2}],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 6500
@@ -8183,7 +8007,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:30.097",
       "platform_name": "Xbox",
       "metacritic": 84,
-      "id": 2
+      "id": 7
     }],
     "giantbomb_id": 17686,
     "giantbomb_name": "The Lord of the Rings: The Return of the King",
@@ -8200,7 +8024,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 446,
-      "myPlatforms": [{"id": 2}],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 2973
@@ -8275,7 +8099,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-05 03:47:03.711",
       "platform_name": "Xbox 360",
       "metacritic": 88,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 19809,
     "giantbomb_name": "Project Gotham Racing 3",
@@ -8292,7 +8116,7 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 652,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 3322
@@ -8321,7 +8145,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:30:05.181",
       "platform_name": "Xbox",
       "metacritic": 83,
-      "id": 2
+      "id": 7
     }],
     "giantbomb_id": 7094,
     "giantbomb_name": "Star Wars: Battlefront II",
@@ -8338,7 +8162,7 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 407,
-      "myPlatforms": [{"id": 2}],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 142
@@ -8505,7 +8329,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:02.944",
       "platform_name": "Xbox 360",
       "metacritic": 92,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 14916,
     "giantbomb_name": "Guitar Hero II",
@@ -8522,7 +8346,7 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 331,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 2670
@@ -8551,7 +8375,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:36.636",
       "platform_name": "Steam",
       "metacritic": 72,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 41938,
     "giantbomb_name": "Forced",
@@ -8568,7 +8392,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 734,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 5626
@@ -8597,7 +8421,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:13.496",
       "platform_name": "Xbox 360",
       "metacritic": 55,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 20965,
     "giantbomb_name": "The Lord of the Rings: Conquest",
@@ -8614,7 +8438,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 763,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 7056
@@ -8643,7 +8467,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:04.622",
       "platform_name": "Xbox 360",
       "metacritic": 71,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 35537,
     "giantbomb_name": "Fruit Ninja Kinect",
@@ -8660,7 +8484,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 615,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 65910
@@ -8689,7 +8513,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:28:58.337",
       "platform_name": "Xbox",
       "metacritic": 80,
-      "id": 2
+      "id": 7
     }],
     "giantbomb_id": 21646,
     "giantbomb_name": "Battlefield 2: Modern Combat",
@@ -8706,7 +8530,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 437,
-      "myPlatforms": [{"id": 2}],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 348
@@ -8827,7 +8651,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:25.428",
       "platform_name": "Xbox 360",
       "metacritic": 79,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 19228,
     "giantbomb_name": "Kameo: Elements of Power",
@@ -8844,7 +8668,7 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 697,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 7029
@@ -8873,7 +8697,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:23.975",
       "platform_name": "Steam",
       "metacritic": 63,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 25339,
     "giantbomb_name": "Eufloria",
@@ -8890,7 +8714,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 353,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7596
@@ -8964,7 +8788,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:10.209",
       "platform_name": "Xbox",
       "metacritic": 65,
-      "id": 2
+      "id": 7
     }],
     "giantbomb_id": 34,
     "giantbomb_name": "Batman Begins",
@@ -8981,7 +8805,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 597,
-      "myPlatforms": [{"id": 2}],
+      "myPlatforms": [{"id": 7}],
       "person_id": 1
     }],
     "igdb_id": 3063
@@ -9102,7 +8926,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:11.405",
       "platform_name": "Xbox 360",
       "metacritic": 94,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 9993,
     "giantbomb_name": "Halo 3",
@@ -9119,7 +8943,7 @@ export const MockGames = [
       "rating": 54,
       "finished_date": null,
       "id": 375,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 987
@@ -9148,7 +8972,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:22.93",
       "platform_name": "Steam",
       "metacritic": 54,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 32969,
     "giantbomb_name": "A Valley Without Wind",
@@ -9165,7 +8989,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 720,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1625
@@ -9194,7 +9018,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-08 03:46:41.105",
       "platform_name": "Xbox 360",
       "metacritic": 70,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 20876,
     "giantbomb_name": "Major League Baseball 2K8",
@@ -9211,7 +9035,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 762,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 4989
@@ -9280,7 +9104,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:15.157",
       "platform_name": "Xbox 360",
       "metacritic": 93,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 29935,
     "giantbomb_name": "Mass Effect 3",
@@ -9297,7 +9121,7 @@ export const MockGames = [
       "rating": 10,
       "finished_date": null,
       "id": 291,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 75
@@ -9326,7 +9150,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:40.121",
       "platform_name": "Steam",
       "metacritic": 38,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 34205,
     "giantbomb_name": "The Walking Dead",
@@ -9343,7 +9167,7 @@ export const MockGames = [
       "rating": 1,
       "finished_date": "2012-11-28 00:00:00.0",
       "id": 87,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1871
@@ -9371,7 +9195,7 @@ export const MockGames = [
       "metacritic_page": false,
       "platform_name": "NDS",
       "metacritic": 89,
-      "id": 9
+      "id": 2
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Castlevania",
@@ -9404,7 +9228,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:14:25.65",
       "platform_name": "Xbox",
       "metacritic": 84,
-      "id": 2
+      "id": 7
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Indigo Prophecy",
@@ -9437,7 +9261,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:14:26.651",
       "platform_name": "Xbox",
       "metacritic": 89,
-      "id": 2
+      "id": 7
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Jade Empire",
@@ -9470,7 +9294,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:14:27.633",
       "platform_name": "NDS",
       "metacritic": 86,
-      "id": 9
+      "id": 2
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -9502,7 +9326,7 @@ export const MockGames = [
       "metacritic_page": false,
       "platform_name": "NDS",
       "metacritic": 86,
-      "id": 9
+      "id": 2
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -9568,7 +9392,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:13:36.329",
       "platform_name": "Xbox",
       "metacritic": 94,
-      "id": 2
+      "id": 7
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Ninja Gaiden Black",
@@ -9600,7 +9424,7 @@ export const MockGames = [
       "metacritic_page": false,
       "platform_name": "Xbox",
       "metacritic": 94,
-      "id": 2
+      "id": 7
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -9633,7 +9457,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:13:37.64",
       "platform_name": "Xbox",
       "metacritic": 81,
-      "id": 2
+      "id": 7
     }],
     "giantbomb_id": null,
     "giantbomb_name": "SSX on Tour",
@@ -9699,7 +9523,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:39.942",
       "platform_name": "Steam",
       "metacritic": 84,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 25933,
     "giantbomb_name": "Fallout: New Vegas",
@@ -9716,7 +9540,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 711,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 16
@@ -9745,7 +9569,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:55.991",
       "platform_name": "Steam",
       "metacritic": 73,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 33376,
     "giantbomb_name": "RUSH",
@@ -9762,7 +9586,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 478,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7634
@@ -9791,7 +9615,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:05.736",
       "platform_name": "Steam",
       "metacritic": 84,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 31661,
     "giantbomb_name": "Trine 2",
@@ -9808,7 +9632,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 264,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 6250
@@ -9837,7 +9661,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:16.873",
       "platform_name": "Steam",
       "metacritic": 82,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 36231,
     "giantbomb_name": "Legend of Grimrock",
@@ -9854,7 +9678,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 315,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 6328
@@ -9883,7 +9707,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:17.861",
       "platform_name": "Steam",
       "metacritic": 63,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 35449,
     "giantbomb_name": "The Baconing",
@@ -9900,7 +9724,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 352,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2251
@@ -9928,7 +9752,7 @@ export const MockGames = [
       "metacritic_page": false,
       "platform_name": "Steam",
       "metacritic": 83,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 20124,
     "giantbomb_name": "Cave Story",
@@ -9945,7 +9769,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 330,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 8214
@@ -9974,7 +9798,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:16.821",
       "platform_name": "Steam",
       "metacritic": 85,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 23648,
     "giantbomb_name": "Machinarium",
@@ -9991,7 +9815,7 @@ export const MockGames = [
       "rating": 30,
       "finished_date": null,
       "id": 371,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2990
@@ -10020,7 +9844,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:23.46",
       "platform_name": "Steam",
       "metacritic": 91,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 35850,
     "giantbomb_name": "Dishonored",
@@ -10037,7 +9861,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 728,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 533
@@ -10066,7 +9890,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:25.355",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 40464,
     "giantbomb_name": "Fly'N",
@@ -10083,7 +9907,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 758,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 10327
@@ -10112,7 +9936,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:44:58.708",
       "platform_name": "Steam",
       "metacritic": 90,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 39854,
     "giantbomb_name": "Brothers: A Tale of Two Sons",
@@ -10129,7 +9953,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 433,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1334
@@ -10158,7 +9982,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:46.847",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 34213,
     "giantbomb_name": "The Wolf Among Us",
@@ -10175,7 +9999,7 @@ export const MockGames = [
       "rating": 92,
       "finished_date": "2014-07-16 20:52:00.0",
       "id": 278,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2993
@@ -10204,7 +10028,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:27.105",
       "platform_name": "Steam",
       "metacritic": 76,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 43416,
     "giantbomb_name": "SteamWorld Dig",
@@ -10221,7 +10045,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 322,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 5772
@@ -10250,7 +10074,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:28.292",
       "platform_name": "Steam",
       "metacritic": 85,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 20665,
     "giantbomb_name": "Far Cry 2",
@@ -10267,7 +10091,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 265,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 361
@@ -10295,7 +10119,7 @@ export const MockGames = [
       "metacritic_page": true,
       "platform_name": "Steam",
       "metacritic": 87,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 9115,
     "giantbomb_name": "Sins of a Solar Empire",
@@ -10312,7 +10136,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 386,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 10870
@@ -10341,7 +10165,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:45:00.288",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 30330,
     "giantbomb_name": "Kingdoms of Amalur: Reckoning",
@@ -10358,7 +10182,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 749,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1059
@@ -10387,7 +10211,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:44:47.719",
       "platform_name": "Steam",
       "metacritic": 84,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 37770,
     "giantbomb_name": "FTL: Faster Than Light",
@@ -10404,7 +10228,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 307,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3075
@@ -10433,7 +10257,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:12:28.826",
       "platform_name": "Steam",
       "metacritic": 67,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 40310,
     "giantbomb_name": "Long Live the Queen",
@@ -10450,7 +10274,7 @@ export const MockGames = [
       "rating": 83.2,
       "finished_date": null,
       "id": 714,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9722
@@ -10478,7 +10302,7 @@ export const MockGames = [
       "metacritic_page": false,
       "platform_name": "Steam",
       "metacritic": 82,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 29675,
     "giantbomb_name": "Dragon Age: Origins - Awakening",
@@ -10495,7 +10319,7 @@ export const MockGames = [
       "rating": 94,
       "finished_date": "2020-04-20 18:12:23.178",
       "id": 468,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 77
@@ -10548,46 +10372,6 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": 96,
-    "title": "BioShock",
-    "platform": "Xbox 360",
-    "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2584146-bioshock.jpg",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 1065,
-    "howlong_extras": 15,
-    "id": 239,
-    "metacritic_matched": "2015-08-28 00:17:33.355",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "BioShock",
-    "steamid": null,
-    "date_added": null,
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 17280,
-    "giantbomb_name": "BioShock",
-    "igdb_poster": "jrpib8t74zhaapqq2idi",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": 25,
-      "final_score": 90,
-      "date_added": null,
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": 91.5,
-      "finished_date": "2013-09-12 00:00:00.0",
-      "id": 647,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 20
-  },
-  {
-    "timetotal": null,
     "metacritic": 78,
     "title": "The Walking Dead: 400 Days",
     "platform": "Steam",
@@ -10610,7 +10394,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:28:47.375",
       "platform_name": "Steam",
       "metacritic": 78,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -10627,50 +10411,10 @@ export const MockGames = [
       "rating": 90.5,
       "finished_date": "2014-01-15 00:00:00.0",
       "id": 445,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3015
-  },
-  {
-    "timetotal": 210,
-    "metacritic": 92,
-    "title": "The Elder Scrolls V: Skyrim",
-    "platform": "PS3",
-    "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/0/3661/1895988-skyrim.png",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 9859,
-    "howlong_extras": 97.5,
-    "id": 241,
-    "metacritic_matched": "2015-09-29 21:29:21.497",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "The Elder Scrolls V: Skyrim",
-    "steamid": null,
-    "date_added": null,
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 33394,
-    "giantbomb_name": "The Elder Scrolls V: Skyrim",
-    "igdb_poster": "co1rh2",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": 75,
-      "final_score": 91,
-      "date_added": null,
-      "tier": 2,
-      "replay_reason": "More exploration, maybe try out stealth and other play styles. But I feel like I've seen all the dungeons and Draugr I want to.",
-      "minutes_played": 12300,
-      "last_played": null,
-      "rating": 91.5,
-      "finished_date": "2014-08-19 00:00:00.0",
-      "id": 395,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 472
   },
   {
     "timetotal": 8.5,
@@ -10696,7 +10440,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:08.693",
       "platform_name": "Steam",
       "metacritic": 86,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 32085,
     "giantbomb_name": "Bastion",
@@ -10713,7 +10457,7 @@ export const MockGames = [
       "rating": 92.5,
       "finished_date": "2014-08-19 00:00:00.0",
       "id": 402,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1983
@@ -10741,7 +10485,7 @@ export const MockGames = [
       "metacritic_page": true,
       "platform_name": "Steam",
       "metacritic": 91,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 20738,
     "giantbomb_name": "Dragon Age: Origins",
@@ -10758,7 +10502,7 @@ export const MockGames = [
       "rating": 94,
       "finished_date": "2020-04-20 18:12:27.065",
       "id": 314,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 27911
@@ -10787,7 +10531,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:38.677",
       "platform_name": "Steam",
       "metacritic": 89,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 45337,
     "giantbomb_name": "Out of the Park Baseball 15",
@@ -10804,7 +10548,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 420,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 16955
@@ -10831,7 +10575,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Orion: Prelude",
@@ -10864,7 +10608,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:32.319",
       "platform_name": "Steam",
       "metacritic": 73,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 35157,
     "giantbomb_name": "Alan Wake's American Nightmare",
@@ -10881,7 +10625,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 304,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2602
@@ -10905,13 +10649,7 @@ export const MockGames = [
     "steamid": 220,
     "date_added": "2014-08-25 22:57:38.922",
     "metacritic_page": true,
-    "availablePlatforms": [{
-      "metacritic_page": true,
-      "metacritic_matched": "2015-08-28 00:12:30.779",
-      "platform_name": "Steam",
-      "metacritic": 96,
-      "id": 1
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": 1539,
     "giantbomb_name": "Half-Life 2",
     "igdb_poster": "co1nmw",
@@ -10927,7 +10665,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": "2009-08-22 00:00:00.0",
       "id": 305,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 233
@@ -10956,7 +10694,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-10 03:47:28.09",
       "platform_name": "Steam",
       "metacritic": 88,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 11339,
     "giantbomb_name": "Counter-Strike: Source",
@@ -10973,7 +10711,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 237,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 307
@@ -11000,7 +10738,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 14714,
     "giantbomb_name": "Half-Life 2: Deathmatch",
@@ -11017,7 +10755,7 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 50,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9471
@@ -11044,7 +10782,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 3015,
     "giantbomb_name": "Half-Life 2: Lost Coast",
@@ -11061,7 +10799,7 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 339,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 10395
@@ -11090,7 +10828,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:15:08.583",
       "platform_name": "Steam",
       "metacritic": 87,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 2906,
     "giantbomb_name": "Psychonauts",
@@ -11107,7 +10845,7 @@ export const MockGames = [
       "rating": 81.5,
       "finished_date": null,
       "id": 332,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1339
@@ -11136,7 +10874,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:49.073",
       "platform_name": "Steam",
       "metacritic": 91,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 11757,
     "giantbomb_name": "Crysis",
@@ -11153,7 +10891,7 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 737,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 296
@@ -11182,7 +10920,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:53.44",
       "platform_name": "Steam",
       "metacritic": 89,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 5235,
     "giantbomb_name": "Prince of Persia: The Sands of Time",
@@ -11199,7 +10937,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 618,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 836
@@ -11228,7 +10966,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:51.428",
       "platform_name": "Steam",
       "metacritic": 57,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 20703,
     "giantbomb_name": "Dark Void",
@@ -11245,7 +10983,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 351,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 4220
@@ -11274,7 +11012,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:34.597",
       "platform_name": "Steam",
       "metacritic": 84,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 20742,
     "giantbomb_name": "Just Cause 2",
@@ -11291,7 +11029,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 32,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 558
@@ -11320,7 +11058,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:30:00.251",
       "platform_name": "Steam",
       "metacritic": 86,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 3019,
     "giantbomb_name": "The Secret of Monkey Island",
@@ -11337,7 +11075,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 382,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 65
@@ -11366,7 +11104,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:54.766",
       "platform_name": "Steam",
       "metacritic": 87,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 25114,
     "giantbomb_name": "Super Meat Boy",
@@ -11384,7 +11122,7 @@ export const MockGames = [
         "rating": 84,
         "finished_date": null,
         "id": 75,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 1
       },
       {
@@ -11398,7 +11136,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 788,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 4
       }
     ],
@@ -11428,7 +11166,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:36.056",
       "platform_name": "Steam",
       "metacritic": 84,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 34342,
     "giantbomb_name": "SpaceChem",
@@ -11445,7 +11183,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 258,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 8390
@@ -11474,7 +11212,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:37.679",
       "platform_name": "Steam",
       "metacritic": 83,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 34940,
     "giantbomb_name": "Terraria",
@@ -11491,7 +11229,7 @@ export const MockGames = [
       "rating": 87.5,
       "finished_date": null,
       "id": 356,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1879
@@ -11520,7 +11258,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-10 03:47:39.052",
       "platform_name": "Steam",
       "metacritic": 88,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 28178,
     "giantbomb_name": "The Witcher 2: Assassins of Kings",
@@ -11537,7 +11275,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 151,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 20740
@@ -11561,7 +11299,22 @@ export const MockGames = [
     "steamid": 17470,
     "date_added": "2013-12-28 00:00:00.0",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2015-08-28 00:13:34.762",
+        "platform_name": "PS3",
+        "metacritic": 88,
+        "id": 6
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2015-08-28 00:18:59.902",
+        "platform_name": "Steam",
+        "metacritic": 86,
+        "id": 3
+      }
+    ],
     "giantbomb_id": 20800,
     "giantbomb_name": "Dead Space",
     "igdb_poster": "exlxirelwzpoqftj8phf",
@@ -11577,7 +11330,10 @@ export const MockGames = [
       "rating": 80.3,
       "finished_date": null,
       "id": 266,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 6}
+      ],
       "person_id": 1
     }],
     "igdb_id": 37
@@ -11606,7 +11362,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:40.68",
       "platform_name": "Steam",
       "metacritic": 87,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 25444,
     "giantbomb_name": "Dead Space 2",
@@ -11623,7 +11379,7 @@ export const MockGames = [
       "rating": 80.9,
       "finished_date": null,
       "id": 271,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 38
@@ -11652,7 +11408,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:03.398",
       "platform_name": "Steam",
       "metacritic": 88,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 30380,
     "giantbomb_name": "Limbo",
@@ -11669,7 +11425,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 335,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1331
@@ -11698,7 +11454,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:07.123",
       "platform_name": "Steam",
       "metacritic": 66,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 30425,
     "giantbomb_name": "The Lord of the Rings: War in the North",
@@ -11715,7 +11471,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 739,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1052
@@ -11743,7 +11499,7 @@ export const MockGames = [
       "metacritic_page": true,
       "platform_name": "Steam",
       "metacritic": 77,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 36987,
     "giantbomb_name": "AaaaaAAaaaAAAaaAAAAaAAAAA!!! for the Awesome",
@@ -11760,7 +11516,7 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 373,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3240
@@ -11788,7 +11544,7 @@ export const MockGames = [
       "metacritic_page": true,
       "platform_name": "Steam",
       "metacritic": 86,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 5861,
     "giantbomb_name": "Galactic Civilizations II",
@@ -11805,7 +11561,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 183,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 102111
@@ -11834,7 +11590,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:12:30.041",
       "platform_name": "Steam",
       "metacritic": 70,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 32102,
     "giantbomb_name": "Evochron Mercenary",
@@ -11851,7 +11607,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 262,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 15071
@@ -11879,7 +11635,7 @@ export const MockGames = [
       "metacritic_page": false,
       "platform_name": "Steam",
       "metacritic": 74,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 5036,
     "giantbomb_name": "Serious Sam II",
@@ -11896,7 +11652,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 68,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 787
@@ -11925,7 +11681,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:44.575",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 32070,
     "giantbomb_name": "Vessel",
@@ -11942,7 +11698,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 341,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 8382
@@ -11971,7 +11727,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:06.978",
       "platform_name": "Steam",
       "metacritic": 76,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 27375,
     "giantbomb_name": "Insanely Twisted Shadow Planet",
@@ -11988,7 +11744,7 @@ export const MockGames = [
       "rating": 81.5,
       "finished_date": null,
       "id": 703,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 6168
@@ -12017,7 +11773,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:02.246",
       "platform_name": "Steam",
       "metacritic": 76,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 29445,
     "giantbomb_name": "Spec Ops: The Line",
@@ -12034,7 +11790,7 @@ export const MockGames = [
       "rating": 93,
       "finished_date": "2013-01-10 23:13:00.0",
       "id": 620,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1377
@@ -12063,7 +11819,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-30 03:48:09.112",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 36898,
     "giantbomb_name": "LEGO Batman 2: DC Super Heroes",
@@ -12080,7 +11836,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 199,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 6836
@@ -12109,7 +11865,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:09.495",
       "platform_name": "Steam",
       "metacritic": 77,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 38217,
     "giantbomb_name": "Endless Space",
@@ -12126,7 +11882,7 @@ export const MockGames = [
       "rating": 78.6,
       "finished_date": null,
       "id": 364,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9634
@@ -12155,7 +11911,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:47.81",
       "platform_name": "Steam",
       "metacritic": 74,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 30847,
     "giantbomb_name": "EDGE",
@@ -12172,7 +11928,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 520,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 8392
@@ -12201,7 +11957,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:47.326",
       "platform_name": "Steam",
       "metacritic": 61,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 29717,
     "giantbomb_name": "E.Y.E: Divine Cybermancy",
@@ -12218,7 +11974,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 378,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 6230
@@ -12247,7 +12003,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:14.264",
       "platform_name": "Steam",
       "metacritic": 67,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 37334,
     "giantbomb_name": "Oil Rush",
@@ -12264,7 +12020,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 334,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1054
@@ -12293,7 +12049,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:49.175",
       "platform_name": "Steam",
       "metacritic": 82,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 35011,
     "giantbomb_name": "Botanicula",
@@ -12310,7 +12066,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 613,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 6611
@@ -12339,7 +12095,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:29.236",
       "platform_name": "Steam",
       "metacritic": 70,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 38661,
     "giantbomb_name": "Splice",
@@ -12356,7 +12112,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 329,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 11640
@@ -12384,7 +12140,7 @@ export const MockGames = [
       "metacritic_page": true,
       "platform_name": "Steam",
       "metacritic": 70,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 34811,
     "giantbomb_name": "Sanctum",
@@ -12401,7 +12157,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 471,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3183
@@ -12430,7 +12186,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:21.79",
       "platform_name": "Steam",
       "metacritic": 72,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 35429,
     "giantbomb_name": "Blocks That Matter",
@@ -12447,7 +12203,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 355,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 8984
@@ -12476,7 +12232,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:30.507",
       "platform_name": "Steam",
       "metacritic": 68,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 40983,
     "giantbomb_name": "A Valley Without Wind 2",
@@ -12493,7 +12249,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 328,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9718
@@ -12521,7 +12277,7 @@ export const MockGames = [
       "metacritic_page": true,
       "platform_name": "Steam",
       "metacritic": 70,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 29550,
     "giantbomb_name": "Bit.Trip RUNNER",
@@ -12538,7 +12294,7 @@ export const MockGames = [
       "rating": 25,
       "finished_date": null,
       "id": 326,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 6246
@@ -12567,7 +12323,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:19.75",
       "platform_name": "Steam",
       "metacritic": 58,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 36297,
     "giantbomb_name": "All Zombies Must Die!",
@@ -12584,7 +12340,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 343,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9971
@@ -12613,7 +12369,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:50.799",
       "platform_name": "Steam",
       "metacritic": 83,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 20982,
     "giantbomb_name": "Alan Wake",
@@ -12630,7 +12386,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 346,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1062
@@ -12659,7 +12415,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:20.789",
       "platform_name": "Steam",
       "metacritic": 76,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 37223,
     "giantbomb_name": "Resonance",
@@ -12676,7 +12432,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 295,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 6327
@@ -12705,7 +12461,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:33.855",
       "platform_name": "Steam",
       "metacritic": 74,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 21369,
     "giantbomb_name": "The Secret World",
@@ -12722,7 +12478,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 108,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 28008
@@ -12751,7 +12507,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:22.649",
       "platform_name": "Steam",
       "metacritic": 89,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 36055,
     "giantbomb_name": "Borderlands 2",
@@ -12768,7 +12524,7 @@ export const MockGames = [
       "rating": 88,
       "finished_date": "2020-04-20 18:37:37.697",
       "id": 336,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1011
@@ -12797,7 +12553,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:51.828",
       "platform_name": "Steam",
       "metacritic": 83,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 20991,
     "giantbomb_name": "Darksiders",
@@ -12814,7 +12570,7 @@ export const MockGames = [
       "rating": 66,
       "finished_date": null,
       "id": 510,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1270
@@ -12843,7 +12599,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:35.903",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 29941,
     "giantbomb_name": "Darksiders II",
@@ -12860,7 +12616,7 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 299,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1269
@@ -12889,7 +12645,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:27.187",
       "platform_name": "Steam",
       "metacritic": 68,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 38390,
     "giantbomb_name": "The Cave",
@@ -12906,7 +12662,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 36,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2175
@@ -12935,7 +12691,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:53.459",
       "platform_name": "Steam",
       "metacritic": 82,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 32844,
     "giantbomb_name": "Antichamber",
@@ -12952,7 +12708,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 306,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2064
@@ -12981,7 +12737,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:37.737",
       "platform_name": "Steam",
       "metacritic": 74,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 32417,
     "giantbomb_name": "Neverwinter",
@@ -12998,50 +12754,10 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 145,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1908
-  },
-  {
-    "timetotal": null,
-    "metacritic": null,
-    "title": "Free to Play",
-    "platform": "Steam",
-    "giantbomb_medium_url": null,
-    "steam_cloud": null,
-    "logo": "98defd2daedb3910583439bffb12e0baeb20ff6c",
-    "howlong_id": 20240,
-    "howlong_extras": null,
-    "id": 293,
-    "metacritic_matched": null,
-    "steam_title": "Free to Play",
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Free to Play",
-    "steamid": 245550,
-    "date_added": "2014-08-25 22:57:38.925",
-    "metacritic_page": false,
-    "availablePlatforms": [],
-    "giantbomb_id": null,
-    "giantbomb_name": null,
-    "igdb_poster": null,
-    "steam_page_gone": "2015-09-07 11:17:35.833",
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2014-08-25 22:57:38.925",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 26,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 476,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 130190
   },
   {
     "timetotal": null,
@@ -13066,7 +12782,7 @@ export const MockGames = [
       "metacritic_page": true,
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 20700,
     "giantbomb_name": "Brütal Legend",
@@ -13083,50 +12799,10 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 361,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 212
-  },
-  {
-    "timetotal": null,
-    "metacritic": null,
-    "title": "DisplayFusion",
-    "platform": "Steam",
-    "giantbomb_medium_url": null,
-    "steam_cloud": false,
-    "logo": "bf3469268ad02e6be697f1101a1b33d24675b776",
-    "howlong_id": 27319,
-    "howlong_extras": null,
-    "id": 295,
-    "metacritic_matched": null,
-    "steam_title": "DisplayFusion",
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "DisplayFusion",
-    "steamid": 227260,
-    "date_added": "2014-08-25 22:57:38.926",
-    "metacritic_page": false,
-    "availablePlatforms": [],
-    "giantbomb_id": null,
-    "giantbomb_name": null,
-    "igdb_poster": null,
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2014-08-25 22:57:38.926",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 10,
-      "last_played": "2017-04-27 04:45:12.421",
-      "rating": null,
-      "finished_date": null,
-      "id": 44,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 74848
   },
   {
     "timetotal": null,
@@ -13152,7 +12828,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:45.831",
       "platform_name": "Steam",
       "metacritic": 94,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 32317,
     "giantbomb_name": "BioShock Infinite",
@@ -13169,7 +12845,7 @@ export const MockGames = [
       "rating": 93,
       "finished_date": "2013-11-22 00:00:00.0",
       "id": 38,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 538
@@ -13198,7 +12874,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-10 03:46:55.117",
       "platform_name": "Steam",
       "metacritic": 82,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 8554,
     "giantbomb_name": "Lara Croft Tomb Raider: Legend",
@@ -13215,7 +12891,7 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 259,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1161
@@ -13244,7 +12920,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-10 03:47:37.651",
       "platform_name": "Steam",
       "metacritic": 83,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 8201,
     "giantbomb_name": "Lara Croft Tomb Raider: Anniversary",
@@ -13261,7 +12937,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 614,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1162
@@ -13290,7 +12966,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-10 03:47:40.861",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 20694,
     "giantbomb_name": "Tomb Raider: Underworld",
@@ -13307,7 +12983,7 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 425,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1163
@@ -13331,7 +13007,22 @@ export const MockGames = [
     "steamid": 203160,
     "date_added": null,
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2015-08-28 00:19:30.43",
+        "platform_name": "Steam",
+        "metacritic": 86,
+        "id": 3
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2016-12-25 04:49:13.194",
+        "platform_name": "Xbox One",
+        "metacritic": 86,
+        "id": 8
+      }
+    ],
     "giantbomb_id": 27312,
     "giantbomb_name": "Tomb Raider",
     "igdb_poster": "co1rbu",
@@ -13347,7 +13038,10 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 83,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 8}
+      ],
       "person_id": 1
     }],
     "igdb_id": 1164
@@ -13374,7 +13068,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 3023,
     "giantbomb_name": "Tomb Raider",
@@ -13391,7 +13085,7 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 47,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 912
@@ -13418,7 +13112,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 10570,
     "giantbomb_name": "Tomb Raider: The Last Revelation",
@@ -13435,7 +13129,7 @@ export const MockGames = [
       "rating": 64,
       "finished_date": null,
       "id": 251,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1158
@@ -13464,7 +13158,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-10 03:47:26.101",
       "platform_name": "Steam",
       "metacritic": 57,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 10135,
     "giantbomb_name": "Tomb Raider: Chronicles",
@@ -13481,7 +13175,7 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 69,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1160
@@ -13510,7 +13204,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-10 03:47:45.653",
       "platform_name": "Steam",
       "metacritic": 49,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 6742,
     "giantbomb_name": "Lara Croft Tomb Raider: The Angel of Darkness",
@@ -13527,7 +13221,7 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 74,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1159
@@ -13554,7 +13248,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 19596,
     "giantbomb_name": "Tomb Raider III: Adventures of Lara Croft",
@@ -13571,7 +13265,7 @@ export const MockGames = [
       "rating": 72,
       "finished_date": null,
       "id": 320,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1157
@@ -13600,7 +13294,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:31.876",
       "platform_name": "Steam",
       "metacritic": 83,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 34703,
     "giantbomb_name": "Anno 2070",
@@ -13617,7 +13311,7 @@ export const MockGames = [
       "rating": 82.8,
       "finished_date": null,
       "id": 357,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2959
@@ -13646,7 +13340,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:00.376",
       "platform_name": "Steam",
       "metacritic": 64,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 35523,
     "giantbomb_name": "Defiance",
@@ -13663,7 +13357,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 180,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1973
@@ -13687,7 +13381,22 @@ export const MockGames = [
     "steamid": 224760,
     "date_added": "2013-11-28 00:00:00.0",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2015-08-28 00:19:32.656",
+        "platform_name": "Steam",
+        "metacritic": 91,
+        "id": 3
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2017-01-05 04:56:50.0",
+        "platform_name": "PS4",
+        "metacritic": 90,
+        "id": 5
+      }
+    ],
     "giantbomb_id": 24768,
     "giantbomb_name": "Fez",
     "igdb_poster": "co1rd9",
@@ -13703,7 +13412,10 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 39,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 5}
+      ],
       "person_id": 1
     }],
     "igdb_id": 1991
@@ -13732,7 +13444,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:08.058",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 33118,
     "giantbomb_name": "GRID 2",
@@ -13749,7 +13461,7 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 260,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2138
@@ -13778,7 +13490,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:01.593",
       "platform_name": "Steam",
       "metacritic": 65,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 36172,
     "giantbomb_name": "Remember Me",
@@ -13795,7 +13507,7 @@ export const MockGames = [
       "rating": 82.7,
       "finished_date": null,
       "id": 606,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1827
@@ -13824,7 +13536,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-10 03:47:21.94",
       "platform_name": "Steam",
       "metacritic": 84,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 44033,
     "giantbomb_name": "Giana Sisters: Twisted Dreams - Rise of the Owlverlord",
@@ -13841,7 +13553,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 263,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 53080
@@ -13868,7 +13580,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 40093,
     "giantbomb_name": "Cook, Serve, Delicious!",
@@ -13885,7 +13597,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 377,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 11238
@@ -13914,7 +13626,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:11.074",
       "platform_name": "Steam",
       "metacritic": 90,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 24999,
     "giantbomb_name": "Spelunky",
@@ -13931,7 +13643,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 202,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3029
@@ -13960,7 +13672,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:27.599",
       "platform_name": "Steam",
       "metacritic": 86,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 38327,
     "giantbomb_name": "Gone Home",
@@ -13977,7 +13689,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": "2014-05-01 00:00:00.0",
       "id": 380,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1906
@@ -14006,7 +13718,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:44:52.703",
       "platform_name": "Steam",
       "metacritic": 74,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 42245,
     "giantbomb_name": "Batman: Arkham Origins",
@@ -14023,7 +13735,7 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 18,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2003
@@ -14052,7 +13764,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:34.808",
       "platform_name": "Steam",
       "metacritic": 78,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 6795,
     "giantbomb_name": "Baldur's Gate II: Throne of Bhaal",
@@ -14069,7 +13781,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 756,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 5613
@@ -14098,7 +13810,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:39.49",
       "platform_name": "Steam",
       "metacritic": 70,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 44236,
     "giantbomb_name": "Democracy 3",
@@ -14115,7 +13827,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 624,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 5506
@@ -14144,7 +13856,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-10 03:46:45.143",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 39042,
     "giantbomb_name": "The Walking Dead: Season Two",
@@ -14161,7 +13873,7 @@ export const MockGames = [
       "rating": 99,
       "finished_date": "2014-08-26 20:09:00.0",
       "id": 390,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3097
@@ -14190,7 +13902,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-10 03:46:49.314",
       "platform_name": "Steam",
       "metacritic": 77,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 40347,
     "giantbomb_name": "TrackMania² Stadium",
@@ -14207,7 +13919,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 393,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9448
@@ -14236,7 +13948,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-10 03:47:43.562",
       "platform_name": "Steam",
       "metacritic": 79,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 40348,
     "giantbomb_name": "TrackMania² Valley",
@@ -14253,7 +13965,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 63,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 25393
@@ -14282,7 +13994,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:25.991",
       "platform_name": "Steam",
       "metacritic": 89,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 14782,
     "giantbomb_name": "Far Cry",
@@ -14299,7 +14011,7 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 366,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 306
@@ -14328,7 +14040,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:44:57.226",
       "platform_name": "Steam",
       "metacritic": 88,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 32933,
     "giantbomb_name": "Far Cry 3",
@@ -14345,7 +14057,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 196,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 529
@@ -14374,7 +14086,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:40.101",
       "platform_name": "Steam",
       "metacritic": 66,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 21810,
     "giantbomb_name": "Star Trek Online",
@@ -14391,7 +14103,7 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 221,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7584
@@ -14420,7 +14132,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:41.062",
       "platform_name": "Steam",
       "metacritic": 71,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 42914,
     "giantbomb_name": "The Crew",
@@ -14437,7 +14149,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 254,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2137
@@ -14466,7 +14178,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:14:03.518",
       "platform_name": "Steam",
       "metacritic": 62,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Contagion",
@@ -14497,7 +14209,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -14530,7 +14242,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-10 03:46:34.236",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 8546,
     "giantbomb_name": "Age of Empires III",
@@ -14547,7 +14259,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 461,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 28723
@@ -14576,7 +14288,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-10 03:47:35.701",
       "platform_name": "Steam",
       "metacritic": 68,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 14590,
     "giantbomb_name": "Age of Empires II: The Conquerors",
@@ -14593,7 +14305,7 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 736,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2950
@@ -14622,7 +14334,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:39:53.045",
       "platform_name": "Steam",
       "metacritic": 84,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 44484,
     "giantbomb_name": "Middle-earth: Shadow of Mordor",
@@ -14639,7 +14351,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 8,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3025
@@ -14668,7 +14380,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:01.359",
       "platform_name": "Steam",
       "metacritic": 69,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Ironclad Tactics",
@@ -14699,7 +14411,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -14730,7 +14442,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -14758,7 +14470,22 @@ export const MockGames = [
     "steamid": 620,
     "date_added": "2014-09-29 03:48:16.504",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2015-08-28 00:13:39.554",
+        "platform_name": "Xbox 360",
+        "metacritic": 95,
+        "id": 9
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2015-08-28 00:15:55.674",
+        "platform_name": "Steam",
+        "metacritic": 95,
+        "id": 3
+      }
+    ],
     "giantbomb_id": 21662,
     "giantbomb_name": "Portal 2",
     "igdb_poster": "co1oby",
@@ -14775,7 +14502,10 @@ export const MockGames = [
         "rating": 91.8,
         "finished_date": null,
         "id": 20,
-        "myPlatforms": [],
+        "myPlatforms": [
+          {"id": 3},
+          {"id": 9}
+        ],
         "person_id": 1
       },
       {
@@ -14789,7 +14519,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 789,
-        "myPlatforms": [],
+        "myPlatforms": [{"id": 3}],
         "person_id": 4
       }
     ],
@@ -14819,7 +14549,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:40:14.652",
       "platform_name": "Steam",
       "metacritic": 67,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Rise of the Triad",
@@ -14850,7 +14580,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Space Engineers",
@@ -14883,7 +14613,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-10 03:47:42.428",
       "platform_name": "Steam",
       "metacritic": 75,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 45955,
     "giantbomb_name": "Borderlands: The Pre-Sequel!",
@@ -14900,7 +14630,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 616,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 6032
@@ -14929,7 +14659,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-10 03:46:52.675",
       "platform_name": "Steam",
       "metacritic": 63,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 25339,
     "giantbomb_name": "Eufloria",
@@ -14946,7 +14676,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 760,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 15395
@@ -14975,7 +14705,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:12:36.198",
       "platform_name": "Steam",
       "metacritic": 84,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 26770,
     "giantbomb_name": "Rift",
@@ -14992,7 +14722,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 41,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 489
@@ -15021,7 +14751,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:05.501",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Trine",
@@ -15054,7 +14784,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:59.156",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 38224,
     "giantbomb_name": "Company of Heroes 2",
@@ -15082,43 +14812,10 @@ export const MockGames = [
     "steamid": 1250,
     "date_added": "2014-10-18 03:45:07.478",
     "metacritic_page": true,
-    "availablePlatforms": [{
-      "metacritic_page": true,
-      "metacritic_matched": "2015-08-28 00:18:08.015",
-      "platform_name": "Steam",
-      "metacritic": 72,
-      "id": 1
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": null,
     "giantbomb_name": "Killing Floor",
     "igdb_poster": "co1nn1",
-    "steam_page_gone": null,
-    "person_games": [],
-    "igdb_id": 2949
-  },
-  {
-    "timetotal": null,
-    "metacritic": null,
-    "title": "Killing Floor Mod: Defence Alliance 2",
-    "platform": "Steam",
-    "giantbomb_medium_url": null,
-    "steam_cloud": false,
-    "logo": "45178d4b1999cf466fdf1ee4551f29b7e02b2bdf",
-    "howlong_id": null,
-    "howlong_extras": null,
-    "id": 342,
-    "metacritic_matched": null,
-    "steam_title": "Killing Floor Mod: Defence Alliance 2",
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": null,
-    "steamid": 35420,
-    "date_added": "2014-10-18 03:45:07.48",
-    "metacritic_page": false,
-    "availablePlatforms": [],
-    "giantbomb_id": null,
-    "giantbomb_name": null,
-    "igdb_poster": null,
     "steam_page_gone": null,
     "person_games": [],
     "igdb_id": 2949
@@ -15147,7 +14844,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:09.423",
       "platform_name": "Steam",
       "metacritic": 79,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Payday 2",
@@ -15180,7 +14877,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:11.236",
       "platform_name": "Steam",
       "metacritic": 72,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Blade Symphony",
@@ -15213,7 +14910,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:12.273",
       "platform_name": "Steam",
       "metacritic": 79,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Don't Starve",
@@ -15246,7 +14943,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-10 03:47:50.186",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 45979,
     "giantbomb_name": "Sid Meier's Civilization: Beyond Earth",
@@ -15263,7 +14960,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 156,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 6038
@@ -15292,7 +14989,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:14.031",
       "platform_name": "Steam",
       "metacritic": 74,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -15325,7 +15022,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:15.046",
       "platform_name": "Steam",
       "metacritic": 87,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "NBA 2K15",
@@ -15358,7 +15055,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:15:57.283",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 35003,
     "giantbomb_name": "Marvel Heroes 2015",
@@ -15375,7 +15072,7 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 167,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 28080
@@ -15402,7 +15099,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 46963,
     "giantbomb_name": "Unturned",
@@ -15419,7 +15116,7 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 327,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7878
@@ -15448,7 +15145,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:15:58.306",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 20964,
     "giantbomb_name": "Metro 2033",
@@ -15465,7 +15162,7 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 249,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 495
@@ -15492,7 +15189,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Darkfall Unholy Wars",
@@ -15523,7 +15220,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -15556,7 +15253,7 @@ export const MockGames = [
       "metacritic_matched": "2016-10-10 03:49:23.298",
       "platform_name": "Steam",
       "metacritic": 78,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 48152,
     "giantbomb_name": "Fractured Space",
@@ -15573,7 +15270,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 42,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9815
@@ -15602,7 +15299,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:28:36.287",
       "platform_name": "Steam",
       "metacritic": 79,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Chivalry: Medieval Warfare",
@@ -15633,7 +15330,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Pool Nation",
@@ -15664,7 +15361,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -15697,7 +15394,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:19:45.555",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 45986,
     "giantbomb_name": "Galactic Civilizations III",
@@ -15714,7 +15411,7 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 133,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 10345
@@ -15743,7 +15440,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:14.251",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 41503,
     "giantbomb_name": "Age of Wonders III",
@@ -15760,7 +15457,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 726,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 5652
@@ -15789,7 +15486,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:15.236",
       "platform_name": "Steam",
       "metacritic": 86,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 36884,
     "giantbomb_name": "Saints Row IV",
@@ -15806,7 +15503,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 161,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1981
@@ -15835,7 +15532,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:16.115",
       "platform_name": "Steam",
       "metacritic": 82,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 43720,
     "giantbomb_name": "Endless Legend",
@@ -15852,7 +15549,7 @@ export const MockGames = [
       "rating": 90.5,
       "finished_date": null,
       "id": 123,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9278
@@ -15876,7 +15573,22 @@ export const MockGames = [
     "steamid": 330830,
     "date_added": "2014-12-23 03:45:45.975",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2015-08-28 00:16:18.741",
+        "platform_name": "Steam",
+        "metacritic": 84,
+        "id": 3
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2017-05-07 04:51:14.613",
+        "platform_name": "PS4",
+        "metacritic": 80,
+        "id": 5
+      }
+    ],
     "giantbomb_id": 44653,
     "giantbomb_name": "Tales from the Borderlands",
     "igdb_poster": "co1o4u",
@@ -15892,7 +15604,10 @@ export const MockGames = [
       "rating": 95,
       "finished_date": "2015-10-25 00:00:00.0",
       "id": 241,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 5}
+      ],
       "person_id": 1
     }],
     "igdb_id": 6707
@@ -15921,7 +15636,7 @@ export const MockGames = [
       "metacritic_matched": "2015-11-18 03:46:34.168",
       "platform_name": "Steam",
       "metacritic": 76,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 44655,
     "giantbomb_name": "Game of Thrones: A Telltale Game Series",
@@ -15938,7 +15653,7 @@ export const MockGames = [
       "rating": 84.5,
       "finished_date": null,
       "id": 198,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7610
@@ -15967,7 +15682,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:19.846",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 36242,
     "giantbomb_name": "To the Moon",
@@ -15985,7 +15700,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 791,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 4
       },
       {
@@ -15999,7 +15714,7 @@ export const MockGames = [
         "rating": 88,
         "finished_date": null,
         "id": 85,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 1
       }
     ],
@@ -16029,7 +15744,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-10 03:46:47.688",
       "platform_name": "Steam",
       "metacritic": 87,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 47411,
     "giantbomb_name": "Shadowrun: Dragonfall - Director's Cut",
@@ -16046,7 +15761,7 @@ export const MockGames = [
       "rating": 90.4,
       "finished_date": null,
       "id": 97,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 8864
@@ -16075,7 +15790,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:36.297",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Fallen Enchantress: Legendary Heroes",
@@ -16103,11 +15818,7 @@ export const MockGames = [
     "steamid": 203190,
     "date_added": "2015-01-15 03:45:41.334",
     "metacritic_page": true,
-    "availablePlatforms": [{
-      "metacritic_page": true,
-      "platform_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": null,
     "giantbomb_name": null,
     "igdb_poster": "gdoxymdyk0uxblcihvcv",
@@ -16134,7 +15845,22 @@ export const MockGames = [
     "steamid": 55230,
     "date_added": "2015-01-18 00:42:05.09",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2015-08-28 00:14:53.656",
+        "platform_name": "PS3",
+        "metacritic": 82,
+        "id": 6
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2015-09-29 21:28:15.518",
+        "platform_name": "Steam",
+        "metacritic": 84,
+        "id": 3
+      }
+    ],
     "giantbomb_id": null,
     "giantbomb_name": "Saints Row: The Third",
     "igdb_poster": "co1pl2",
@@ -16166,7 +15892,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:16.249",
       "platform_name": "Steam",
       "metacritic": 72,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Saints Row 2",
@@ -16199,7 +15925,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:17.938",
       "platform_name": "Steam",
       "metacritic": 53,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Dino D-Day",
@@ -16232,7 +15958,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:20.703",
       "platform_name": "Steam",
       "metacritic": 73,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 46556,
     "giantbomb_name": "Lara Croft and the Temple of Osiris",
@@ -16249,7 +15975,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 226,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7325
@@ -16276,7 +16002,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Interstellar Marines",
@@ -16309,7 +16035,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:17:57.455",
       "platform_name": "Steam",
       "metacritic": 87,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Europa Universalis IV",
@@ -16342,7 +16068,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:13:33.979",
       "platform_name": "Steam",
       "metacritic": 33,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "X Rebirth",
@@ -16375,7 +16101,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:27.776",
       "platform_name": "Steam",
       "metacritic": 67,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "X: Beyond the Frontier",
@@ -16406,7 +16132,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "X-Tension",
@@ -16439,7 +16165,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:38.032",
       "platform_name": "Steam",
       "metacritic": 72,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "X2: The Threat",
@@ -16472,7 +16198,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:28:26.388",
       "platform_name": "Steam",
       "metacritic": 71,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -16505,7 +16231,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:41.018",
       "platform_name": "Steam",
       "metacritic": 73,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "X3: Terran Conflict",
@@ -16538,7 +16264,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:28:41.822",
       "platform_name": "Steam",
       "metacritic": 75,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "X3: Albion Prelude",
@@ -16569,7 +16295,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -16586,7 +16312,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1445,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 28988
@@ -16613,7 +16339,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -16644,7 +16370,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 42844,
     "giantbomb_name": "Fable Anniversary",
@@ -16661,7 +16387,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 274,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7658
@@ -16685,7 +16411,22 @@ export const MockGames = [
     "steamid": 245620,
     "date_added": "2015-03-19 22:00:01.382",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2015-08-28 00:13:55.352",
+        "platform_name": "Steam",
+        "metacritic": 75,
+        "id": 3
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2016-05-09 18:51:14.788",
+        "platform_name": "PS4",
+        "metacritic": 76,
+        "id": 5
+      }
+    ],
     "giantbomb_id": null,
     "giantbomb_name": "Tropico 5",
     "igdb_poster": "i4vvzipewvjvyd7yspub",
@@ -16717,7 +16458,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:28:25.458",
       "platform_name": "Steam",
       "metacritic": 68,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -16725,46 +16466,6 @@ export const MockGames = [
     "steam_page_gone": null,
     "person_games": [],
     "igdb_id": 5572
-  },
-  {
-    "timetotal": null,
-    "metacritic": null,
-    "title": "Half-Life 2: Update",
-    "platform": "Steam",
-    "giantbomb_medium_url": null,
-    "steam_cloud": true,
-    "logo": "93359ebb13d2b8608605de11edd222707bc44b94",
-    "howlong_id": 25074,
-    "howlong_extras": 14.5,
-    "id": 386,
-    "metacritic_matched": null,
-    "steam_title": "Half-Life 2: Update",
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Half-Life 2: Update",
-    "steamid": 290930,
-    "date_added": "2015-03-29 21:00:06.193",
-    "metacritic_page": false,
-    "availablePlatforms": [],
-    "giantbomb_id": null,
-    "giantbomb_name": null,
-    "igdb_poster": "co1vqw",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2015-03-29 21:00:06.193",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 10,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 233
   },
   {
     "timetotal": 20.5,
@@ -16789,7 +16490,7 @@ export const MockGames = [
       "metacritic_page": true,
       "platform_name": "Steam",
       "metacritic": 86,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 30383,
     "giantbomb_name": "DiRT 3",
@@ -16806,7 +16507,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 188,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 47381
@@ -16835,7 +16536,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:39:57.9",
       "platform_name": "Steam",
       "metacritic": 78,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 46078,
     "giantbomb_name": "GRID Autosport",
@@ -16852,7 +16553,7 @@ export const MockGames = [
       "rating": 85.2,
       "finished_date": null,
       "id": 109,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 6415
@@ -16881,7 +16582,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:28:21.327",
       "platform_name": "Steam",
       "metacritic": 51,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -16914,7 +16615,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:12:05.18",
       "platform_name": "Steam",
       "metacritic": 79,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Dungeon of the Endless",
@@ -16942,7 +16643,22 @@ export const MockGames = [
     "steamid": 72850,
     "date_added": "2015-04-23 11:00:03.434",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2015-09-29 21:29:21.497",
+        "platform_name": "PS3",
+        "metacritic": 92,
+        "id": 6
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2015-09-29 21:28:32.102",
+        "platform_name": "Steam",
+        "metacritic": 94,
+        "id": 3
+      }
+    ],
     "giantbomb_id": null,
     "giantbomb_name": "The Elder Scrolls V: Skyrim",
     "igdb_poster": "co1rh2",
@@ -16972,7 +16688,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Grimoire: Manastorm",
@@ -17000,11 +16716,7 @@ export const MockGames = [
     "steamid": 367540,
     "date_added": "2015-04-28 05:00:06.307",
     "metacritic_page": false,
-    "availablePlatforms": [{
-      "metacritic_page": false,
-      "platform_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": null,
     "giantbomb_name": null,
     "igdb_poster": "co1mph",
@@ -17020,7 +16732,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 432,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 3019
@@ -17049,7 +16761,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:13:56.331",
       "platform_name": "Steam",
       "metacritic": 72,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -17082,7 +16794,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:13:58.118",
       "platform_name": "Steam",
       "metacritic": 82,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Ultra Street Fighter IV",
@@ -17115,7 +16827,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:24.77",
       "platform_name": "Steam",
       "metacritic": 85,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 43281,
     "giantbomb_name": "Assetto Corsa",
@@ -17132,7 +16844,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 732,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 5597
@@ -17156,11 +16868,7 @@ export const MockGames = [
     "steamid": 208610,
     "date_added": "2015-06-02 17:00:01.868",
     "metacritic_page": true,
-    "availablePlatforms": [{
-      "metacritic_page": true,
-      "platform_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": null,
     "giantbomb_name": null,
     "igdb_poster": "jhbpzglhnpscfepn8eix",
@@ -17187,13 +16895,7 @@ export const MockGames = [
     "steamid": 245170,
     "date_added": "2015-06-02 17:00:01.915",
     "metacritic_page": true,
-    "availablePlatforms": [{
-      "metacritic_page": true,
-      "metacritic_matched": "2015-08-28 00:13:58.697",
-      "platform_name": "Steam",
-      "metacritic": 83,
-      "id": 1
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": null,
     "giantbomb_name": "Skullgirls",
     "igdb_poster": "jhbpzglhnpscfepn8eix",
@@ -17225,7 +16927,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:13:59.274",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Football Manager 2015",
@@ -17258,7 +16960,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:25.998",
       "platform_name": "Steam",
       "metacritic": 86,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 48984,
     "giantbomb_name": "Homeworld Remastered Collection",
@@ -17275,7 +16977,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 470,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 8773
@@ -17304,7 +17006,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:26.874",
       "platform_name": "Steam",
       "metacritic": 83,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 36993,
     "giantbomb_name": "Project CARS",
@@ -17321,7 +17023,7 @@ export const MockGames = [
       "rating": 78.3,
       "finished_date": null,
       "id": 144,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 5319
@@ -17345,13 +17047,7 @@ export const MockGames = [
     "steamid": 260230,
     "date_added": "2015-06-12 16:00:01.725",
     "metacritic_page": true,
-    "availablePlatforms": [{
-      "metacritic_page": true,
-      "metacritic_matched": "2015-09-10 03:46:51.122",
-      "platform_name": "Steam",
-      "metacritic": 79,
-      "id": 1
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": 43885,
     "giantbomb_name": "Valiant Hearts: The Great War",
     "igdb_poster": "co1iu4",
@@ -17367,7 +17063,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 436,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 7327
@@ -17396,7 +17092,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:16:33.951",
       "platform_name": "Steam",
       "metacritic": 77,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 45727,
     "giantbomb_name": "Grey Goo",
@@ -17413,7 +17109,7 @@ export const MockGames = [
       "rating": 83.9,
       "finished_date": null,
       "id": 289,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 8232
@@ -17437,7 +17133,22 @@ export const MockGames = [
     "steamid": 316790,
     "date_added": "2015-06-15 01:00:02.728",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2015-08-28 00:18:42.186",
+        "platform_name": "Steam",
+        "metacritic": 84,
+        "id": 3
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2016-04-08 03:50:00.666",
+        "platform_name": "PS4",
+        "metacritic": 80,
+        "id": 5
+      }
+    ],
     "giantbomb_id": 13230,
     "giantbomb_name": "Grim Fandango",
     "igdb_poster": "xfdt9435wacmowbxho4o",
@@ -17453,7 +17164,10 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 611,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 5}
+      ],
       "person_id": 1
     }],
     "igdb_id": 8682
@@ -17482,7 +17196,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:43.503",
       "platform_name": "Steam",
       "metacritic": 75,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 48631,
     "giantbomb_name": "Grow Home",
@@ -17499,7 +17213,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 723,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 8774
@@ -17528,7 +17242,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:44.296",
       "platform_name": "Steam",
       "metacritic": 62,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 39698,
     "giantbomb_name": "Planetary Annihilation",
@@ -17545,7 +17259,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 300,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2958
@@ -17574,7 +17288,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:45.289",
       "platform_name": "Steam",
       "metacritic": 88,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 46548,
     "giantbomb_name": "Ori and the Blind Forest",
@@ -17591,7 +17305,7 @@ export const MockGames = [
       "rating": 10,
       "finished_date": null,
       "id": 369,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7344
@@ -17620,7 +17334,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:18:46.519",
       "platform_name": "Steam",
       "metacritic": 85,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 27817,
     "giantbomb_name": "BattleBlock Theater",
@@ -17637,7 +17351,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 317,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2605
@@ -17666,7 +17380,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-10 03:47:03.741",
       "platform_name": "Steam",
       "metacritic": 77,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 47342,
     "giantbomb_name": "Life Is Strange",
@@ -17684,7 +17398,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 808,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 5
       },
       {
@@ -17698,7 +17412,7 @@ export const MockGames = [
         "rating": 80,
         "finished_date": "2016-12-27 00:00:00.0",
         "id": 2,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 1
       }
     ],
@@ -17723,7 +17437,22 @@ export const MockGames = [
     "steamid": 208650,
     "date_added": "2015-06-23 16:00:00.921",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2015-09-29 21:42:53.793",
+        "platform_name": "Steam",
+        "metacritic": 70,
+        "id": 3
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2020-04-17 17:37:04.829",
+        "platform_name": "PS4",
+        "metacritic": 87,
+        "id": 5
+      }
+    ],
     "giantbomb_id": 45577,
     "giantbomb_name": "Batman: Arkham Knight",
     "igdb_poster": "co1nh1",
@@ -17739,7 +17468,10 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 120,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 5}
+      ],
       "person_id": 1
     }],
     "igdb_id": 5503
@@ -17768,7 +17500,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:28:22.857",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Total War: Attila",
@@ -17801,7 +17533,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:28:52.78",
       "platform_name": "Steam",
       "metacritic": 90,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Total War: Shogun 2",
@@ -17834,7 +17566,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:48.01",
       "platform_name": "Steam",
       "metacritic": 90,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Empire: Total War",
@@ -17867,7 +17599,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:29:48.642",
       "platform_name": "Steam",
       "metacritic": 88,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Medieval II: Total War",
@@ -17900,7 +17632,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:28:27.183",
       "platform_name": "Steam",
       "metacritic": 92,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Rome: Total War",
@@ -17933,7 +17665,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:14:00.378",
       "platform_name": "Steam",
       "metacritic": 65,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Depth",
@@ -17966,7 +17698,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-10 03:47:14.561",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 40419,
     "giantbomb_name": "Elite: Dangerous",
@@ -17983,7 +17715,7 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 193,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2955
@@ -18012,7 +17744,7 @@ export const MockGames = [
       "metacritic_matched": "2015-08-28 00:14:02.462",
       "platform_name": "Steam",
       "metacritic": 62,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": "Etherium",
@@ -18029,7 +17761,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1474,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 8923
@@ -18102,7 +17834,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 43032,
     "giantbomb_name": "H-Hour: World's Elite",
@@ -18135,7 +17867,7 @@ export const MockGames = [
       "metacritic_matched": "2017-09-03 03:44:26.024",
       "platform_name": "Steam",
       "metacritic": 69,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 49642,
     "giantbomb_name": "ARK: Survival Evolved",
@@ -18166,7 +17898,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 18930,
     "giantbomb_name": "Company of Heroes",
@@ -18197,7 +17929,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 25622,
     "giantbomb_name": "Mount & Blade: Warband",
@@ -18230,7 +17962,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-06 00:37:54.72",
       "platform_name": "Steam",
       "metacritic": 84,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 34407,
     "giantbomb_name": "Rocket League",
@@ -18247,7 +17979,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 292,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 11198
@@ -18276,7 +18008,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-06 00:37:55.342",
       "platform_name": "Steam",
       "metacritic": 69,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 45583,
     "giantbomb_name": "Abyss Odyssey",
@@ -18309,7 +18041,7 @@ export const MockGames = [
       "metacritic_matched": "2016-11-24 03:50:32.305",
       "platform_name": "Steam",
       "metacritic": 79,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 46434,
     "giantbomb_name": "Killing Floor 2",
@@ -18337,13 +18069,7 @@ export const MockGames = [
     "steamid": 273350,
     "date_added": "2015-09-06 00:37:37.337",
     "metacritic_page": true,
-    "availablePlatforms": [{
-      "metacritic_page": true,
-      "metacritic_matched": "2015-09-06 00:37:56.37",
-      "platform_name": "Steam",
-      "metacritic": 77,
-      "id": 1
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": 41357,
     "giantbomb_name": "Evolve",
     "igdb_poster": "gdoxymdyk0uxblcihvcv",
@@ -18415,7 +18141,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-09 01:03:48.184",
       "platform_name": "Xbox One",
       "metacritic": 72,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 42775,
     "giantbomb_name": "Massive Chalice",
@@ -18432,7 +18158,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": "2016-01-22 00:00:00.0",
       "id": 596,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 15861
@@ -18461,7 +18187,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-09 01:03:49.38",
       "platform_name": "Xbox One",
       "metacritic": 79,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 42693,
     "giantbomb_name": "Forza Motorsport 5",
@@ -18478,7 +18204,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 646,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 2131
@@ -18507,7 +18233,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-09 01:03:50.351",
       "platform_name": "Xbox One",
       "metacritic": 82,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 43612,
     "giantbomb_name": "Child of Light",
@@ -18524,7 +18250,7 @@ export const MockGames = [
       "rating": 84.3,
       "finished_date": null,
       "id": 403,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 4756
@@ -18553,7 +18279,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-09 01:03:51.174",
       "platform_name": "Xbox One",
       "metacritic": 82,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 46997,
     "giantbomb_name": "So Many Me",
@@ -18570,7 +18296,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 667,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 9478
@@ -18599,7 +18325,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-11 03:47:02.294",
       "platform_name": "Xbox One",
       "metacritic": 64,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 47049,
     "giantbomb_name": "The Deer God",
@@ -18616,7 +18342,7 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 665,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 17952
@@ -18737,7 +18463,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-09 00:58:10.511",
       "platform_name": "Xbox 360",
       "metacritic": 71,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 21534,
     "giantbomb_name": "Dead Island",
@@ -18754,7 +18480,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 602,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 536
@@ -18783,7 +18509,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-09 00:58:12.209",
       "platform_name": "Xbox 360",
       "metacritic": 67,
-      "id": 7
+      "id": 9
     }],
     "giantbomb_id": 32898,
     "giantbomb_name": "Shoot Many Robots",
@@ -18800,7 +18526,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 246,
-      "myPlatforms": [{"id": 7}],
+      "myPlatforms": [{"id": 9}],
       "person_id": 1
     }],
     "igdb_id": 11643
@@ -18827,7 +18553,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -18858,7 +18584,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 5269,
     "giantbomb_name": "Oddworld: Abe's Oddysee",
@@ -18875,7 +18601,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 738,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 999
@@ -18904,7 +18630,7 @@ export const MockGames = [
       "metacritic_matched": "2019-06-06 04:16:05.903",
       "platform_name": "Steam",
       "metacritic": 87,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -18937,7 +18663,7 @@ export const MockGames = [
       "metacritic_matched": "2019-10-28 23:35:33.066",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -18970,7 +18696,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-29 21:45:01.907",
       "platform_name": "Steam",
       "metacritic": 85,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -19003,7 +18729,7 @@ export const MockGames = [
       "metacritic_matched": "2015-09-30 03:48:11.346",
       "platform_name": "Steam",
       "metacritic": 77,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 37420,
     "giantbomb_name": "Sanctum 2",
@@ -19082,7 +18808,7 @@ export const MockGames = [
       "metacritic_matched": "2015-10-02 03:48:05.314",
       "platform_name": "Xbox One",
       "metacritic": 87,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 48568,
     "giantbomb_name": "Forza Motorsport 6",
@@ -19099,7 +18825,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 564,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 8558
@@ -19128,7 +18854,7 @@ export const MockGames = [
       "metacritic_matched": "2016-04-29 03:48:22.761",
       "platform_name": "Steam",
       "metacritic": 90,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -19333,7 +19059,7 @@ export const MockGames = [
       "metacritic_matched": "2015-11-05 03:47:56.901",
       "platform_name": "Xbox One",
       "metacritic": 75,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 36067,
     "giantbomb_name": "Destiny",
@@ -19350,7 +19076,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 451,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 1939
@@ -19379,7 +19105,7 @@ export const MockGames = [
       "metacritic_matched": "2015-11-05 03:47:58.458",
       "platform_name": "Xbox One",
       "metacritic": 86,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 46474,
     "giantbomb_name": "Forza Horizon 2",
@@ -19396,50 +19122,10 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 397,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 7326
-  },
-  {
-    "timetotal": null,
-    "metacritic": 86,
-    "title": "Tomb Raider",
-    "platform": "Xbox One",
-    "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2351232-tomb_raider.jpg",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 10468,
-    "howlong_extras": 17,
-    "id": 461,
-    "metacritic_matched": "2016-12-25 04:49:13.194",
-    "steam_title": null,
-    "metacritic_hint": "tomb-raider-definitive-edition",
-    "natural_end": true,
-    "howlong_title": "Tomb Raider",
-    "steamid": null,
-    "date_added": "2015-11-05 03:26:01.72",
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 27312,
-    "giantbomb_name": "Tomb Raider",
-    "igdb_poster": "co1rbu",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2015-11-05 03:26:01.72",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 30,
-      "last_played": null,
-      "rating": 83.1,
-      "finished_date": null,
-      "id": 422,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 1164
   },
   {
     "timetotal": null,
@@ -19463,7 +19149,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 29941,
     "giantbomb_name": "Darksiders II",
@@ -19480,7 +19166,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 118,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 20048
@@ -19509,7 +19195,7 @@ export const MockGames = [
       "metacritic_matched": "2015-11-10 03:47:58.407",
       "platform_name": "Steam",
       "metacritic": 89,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 49833,
     "giantbomb_name": "Fallout 4",
@@ -19526,7 +19212,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 276,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9630
@@ -19555,7 +19241,7 @@ export const MockGames = [
       "metacritic_matched": "2015-11-26 03:47:53.246",
       "platform_name": "Steam",
       "metacritic": 83,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 45657,
     "giantbomb_name": "This War of Mine",
@@ -19572,7 +19258,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 702,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7706
@@ -19599,7 +19285,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 23245,
     "giantbomb_name": "Batman: Arkham Asylum",
@@ -19616,7 +19302,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 177,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 27862
@@ -19643,7 +19329,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 29443,
     "giantbomb_name": "Batman: Arkham City",
@@ -19660,7 +19346,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 176,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 501
@@ -19687,7 +19373,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -19704,7 +19390,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 15,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 21066
@@ -19728,11 +19414,7 @@ export const MockGames = [
     "steamid": 346680,
     "date_added": "2015-12-02 03:46:10.99",
     "metacritic_page": false,
-    "availablePlatforms": [{
-      "metacritic_page": false,
-      "platform_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": null,
     "giantbomb_name": null,
     "igdb_poster": "co1mzp",
@@ -19759,13 +19441,7 @@ export const MockGames = [
     "steamid": 362890,
     "date_added": "2015-12-02 03:46:11.162",
     "metacritic_page": true,
-    "availablePlatforms": [{
-      "metacritic_page": true,
-      "metacritic_matched": "2015-12-02 03:48:49.381",
-      "platform_name": "Steam",
-      "metacritic": 86,
-      "id": 1
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": 39814,
     "giantbomb_name": "Black Mesa",
     "igdb_poster": "co1mzp",
@@ -19781,7 +19457,7 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 724,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 6739
@@ -19808,7 +19484,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 48241,
     "giantbomb_name": "The Jackbox Party Pack",
@@ -19825,7 +19501,7 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 162,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 11529
@@ -19852,7 +19528,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 51103,
     "giantbomb_name": "The Jackbox Party Pack 2",
@@ -19869,7 +19545,7 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 186,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19081
@@ -19898,7 +19574,7 @@ export const MockGames = [
       "metacritic_matched": "2015-12-26 03:48:20.333",
       "platform_name": "Steam",
       "metacritic": 86,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 49556,
     "giantbomb_name": "DiRT Rally",
@@ -19915,7 +19591,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 270,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9928
@@ -19939,13 +19615,7 @@ export const MockGames = [
     "steamid": 373420,
     "date_added": "2015-12-26 03:46:11.998",
     "metacritic_page": true,
-    "availablePlatforms": [{
-      "metacritic_page": true,
-      "metacritic_matched": "2015-12-26 03:48:23.038",
-      "platform_name": "Steam",
-      "metacritic": 93,
-      "id": 1
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": 38446,
     "giantbomb_name": "Divinity: Original Sin",
     "igdb_poster": "httfajkblpda5zglq0jf",
@@ -19961,7 +19631,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 71,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 14177
@@ -19990,7 +19660,7 @@ export const MockGames = [
       "metacritic_matched": "2016-01-01 03:48:23.717",
       "platform_name": "Steam",
       "metacritic": 86,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 47402,
     "giantbomb_name": "Cities: Skylines",
@@ -20007,7 +19677,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 623,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9066
@@ -20036,7 +19706,7 @@ export const MockGames = [
       "metacritic_matched": "2016-01-01 03:48:22.444",
       "platform_name": "Steam",
       "metacritic": 59,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 43514,
     "giantbomb_name": "Dream",
@@ -20053,7 +19723,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 192,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 63020
@@ -20082,7 +19752,7 @@ export const MockGames = [
       "metacritic_matched": "2016-01-01 03:48:23.057",
       "platform_name": "Steam",
       "metacritic": 93,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 50897,
     "giantbomb_name": "Undertale",
@@ -20099,7 +19769,7 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 76,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 12517
@@ -20126,7 +19796,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -20144,7 +19814,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 429,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 1
       },
       {
@@ -20158,7 +19828,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 802,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 5
       }
     ],
@@ -20223,7 +19893,22 @@ export const MockGames = [
     "steamid": 268500,
     "date_added": "2016-03-02 21:31:55.856",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2016-03-02 21:33:47.994",
+        "platform_name": "Steam",
+        "metacritic": 88,
+        "id": 3
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2018-06-07 03:24:50.656",
+        "platform_name": "PS4",
+        "metacritic": 87,
+        "id": 5
+      }
+    ],
     "giantbomb_id": 49817,
     "giantbomb_name": "XCOM 2",
     "igdb_poster": "co1mvj",
@@ -20239,7 +19924,10 @@ export const MockGames = [
       "rating": 89,
       "finished_date": null,
       "id": 140,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 5}
+      ],
       "person_id": 1
     }],
     "igdb_id": 10919
@@ -20268,7 +19956,7 @@ export const MockGames = [
       "metacritic_matched": "2016-05-04 03:48:20.109",
       "platform_name": "Steam",
       "metacritic": 72,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 50180,
     "giantbomb_name": "The Walking Dead: Michonne",
@@ -20285,7 +19973,7 @@ export const MockGames = [
       "rating": 81.9,
       "finished_date": null,
       "id": 621,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 11204
@@ -20312,7 +20000,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 58967,
     "giantbomb_name": "SEGA Mega Drive & Genesis Classics",
@@ -20329,7 +20017,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 417,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 80185
@@ -20356,7 +20044,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -20373,7 +20061,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 178,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 5618
@@ -20400,7 +20088,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -20417,7 +20105,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 598,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1569
@@ -20446,7 +20134,7 @@ export const MockGames = [
       "metacritic_matched": "2016-04-08 03:49:37.292",
       "platform_name": "PS4",
       "metacritic": 85,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 51758,
     "giantbomb_name": "MLB The Show 16",
@@ -20463,7 +20151,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 742,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 2212
@@ -20492,7 +20180,7 @@ export const MockGames = [
       "metacritic_matched": "2016-04-08 03:49:42.629",
       "platform_name": "PS4",
       "metacritic": 73,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 42912,
     "giantbomb_name": "Star Wars Battlefront",
@@ -20509,7 +20197,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 43,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 2113
@@ -20538,7 +20226,7 @@ export const MockGames = [
       "metacritic_matched": "2016-04-08 03:49:47.061",
       "platform_name": "PS4",
       "metacritic": 71,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 41693,
     "giantbomb_name": "Driveclub",
@@ -20555,7 +20243,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 668,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 1940
@@ -20584,7 +20272,7 @@ export const MockGames = [
       "metacritic_matched": "2016-04-08 03:49:48.411",
       "platform_name": "PS4",
       "metacritic": 80,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 41695,
     "giantbomb_name": "inFamous: Second Son",
@@ -20601,7 +20289,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 522,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 1941
@@ -20628,7 +20316,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 48328,
     "giantbomb_name": "MLB 15: The Show",
@@ -20645,7 +20333,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 103,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 8655
@@ -20674,7 +20362,7 @@ export const MockGames = [
       "metacritic_matched": "2016-04-08 03:49:41.595",
       "platform_name": "PS4",
       "metacritic": 82,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 42925,
     "giantbomb_name": "Galak-Z: The Dimensional",
@@ -20691,7 +20379,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 376,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 11203
@@ -20720,7 +20408,7 @@ export const MockGames = [
       "metacritic_matched": "2016-04-08 03:49:50.765",
       "platform_name": "PS4",
       "metacritic": 68,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 43346,
     "giantbomb_name": "Broforce",
@@ -20737,7 +20425,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 686,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 5973
@@ -20766,7 +20454,7 @@ export const MockGames = [
       "metacritic_matched": "2016-04-08 03:49:55.031",
       "platform_name": "PS4",
       "metacritic": 70,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 40371,
     "giantbomb_name": "Nom Nom Galaxy",
@@ -20783,7 +20471,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 608,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 10602
@@ -20812,7 +20500,7 @@ export const MockGames = [
       "metacritic_matched": "2016-04-08 03:49:56.667",
       "platform_name": "PS4",
       "metacritic": 81,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 43613,
     "giantbomb_name": "Helldivers",
@@ -20829,7 +20517,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 519,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 14523
@@ -20858,7 +20546,7 @@ export const MockGames = [
       "metacritic_matched": "2016-04-08 03:49:58.698",
       "platform_name": "PS4",
       "metacritic": 73,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 45643,
     "giantbomb_name": "Nova-111",
@@ -20875,66 +20563,10 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 609,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 12561
-  },
-  {
-    "timetotal": null,
-    "metacritic": 80,
-    "title": "Grim Fandango Remastered",
-    "platform": "PS4",
-    "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2660822-gffinal%20candidate.jpg",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 23473,
-    "howlong_extras": 9.4,
-    "id": 494,
-    "metacritic_matched": "2016-04-08 03:50:00.666",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Grim Fandango Remastered",
-    "steamid": null,
-    "date_added": "2016-04-08 06:24:40.488",
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 13230,
-    "giantbomb_name": "Grim Fandango",
-    "igdb_poster": "xfdt9435wacmowbxho4o",
-    "steam_page_gone": null,
-    "person_games": [
-      {
-        "replay_score": null,
-        "final_score": null,
-        "date_added": "2016-04-08 06:24:40.488",
-        "tier": 2,
-        "replay_reason": null,
-        "minutes_played": 0,
-        "last_played": null,
-        "rating": 86,
-        "finished_date": null,
-        "id": 524,
-        "myPlatforms": [],
-        "person_id": 1
-      },
-      {
-        "replay_score": null,
-        "final_score": null,
-        "date_added": "2018-11-11 00:49:43.60652",
-        "tier": 1,
-        "replay_reason": null,
-        "minutes_played": 0,
-        "last_played": null,
-        "rating": null,
-        "finished_date": null,
-        "id": 798,
-        "myPlatforms": [],
-        "person_id": 4
-      }
-    ],
-    "igdb_id": 8682
   },
   {
     "timetotal": null,
@@ -20955,11 +20587,7 @@ export const MockGames = [
     "steamid": 350470,
     "date_added": "2016-04-15 03:46:02.672",
     "metacritic_page": false,
-    "availablePlatforms": [{
-      "metacritic_page": false,
-      "platform_name": "Steam",
-      "id": 1
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": null,
     "giantbomb_name": null,
     "igdb_poster": "co1nc7",
@@ -20991,7 +20619,7 @@ export const MockGames = [
       "metacritic_matched": "2016-04-15 03:48:27.174",
       "platform_name": "Steam",
       "metacritic": 79,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -21022,7 +20650,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 56613,
     "giantbomb_name": "The Average Everyday Adventures of Samantha Browne",
@@ -21039,7 +20667,7 @@ export const MockGames = [
       "rating": 90.7,
       "finished_date": null,
       "id": 290,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 16984
@@ -21068,7 +20696,7 @@ export const MockGames = [
       "metacritic_matched": "2016-05-08 03:47:57.825",
       "platform_name": "Xbox One",
       "metacritic": 81,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 42898,
     "giantbomb_name": "Sunset Overdrive",
@@ -21085,50 +20713,10 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 506,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 3247
-  },
-  {
-    "timetotal": null,
-    "metacritic": null,
-    "title": "Free To Play (Streaming)",
-    "platform": "Steam",
-    "giantbomb_medium_url": null,
-    "steam_cloud": null,
-    "logo": "",
-    "howlong_id": null,
-    "howlong_extras": null,
-    "id": 499,
-    "metacritic_matched": null,
-    "steam_title": "Free To Play (Streaming)",
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": null,
-    "steamid": 343450,
-    "date_added": "2016-05-09 03:45:51.647",
-    "metacritic_page": false,
-    "availablePlatforms": [],
-    "giantbomb_id": null,
-    "giantbomb_name": null,
-    "igdb_poster": null,
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2016-05-09 03:45:51.647",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 121,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 105036
   },
   {
     "timetotal": null,
@@ -21154,7 +20742,7 @@ export const MockGames = [
       "metacritic_matched": "2016-05-09 18:50:50.973",
       "platform_name": "PS4",
       "metacritic": 94,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 44507,
     "giantbomb_name": "Uncharted 4: A Thief's End",
@@ -21172,7 +20760,7 @@ export const MockGames = [
         "rating": 99,
         "finished_date": "2018-11-02 00:00:00.0",
         "id": 654,
-        "myPlatforms": [{"id": 11}],
+        "myPlatforms": [{"id": 5}],
         "person_id": 1
       },
       {
@@ -21186,7 +20774,7 @@ export const MockGames = [
         "rating": 99,
         "finished_date": null,
         "id": 772,
-        "myPlatforms": [{"id": 11}],
+        "myPlatforms": [{"id": 5}],
         "person_id": 2
       }
     ],
@@ -21216,7 +20804,7 @@ export const MockGames = [
       "metacritic_matched": "2016-05-09 18:50:53.321",
       "platform_name": "Xbox One",
       "metacritic": 78,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 39001,
     "giantbomb_name": "Defense Grid 2",
@@ -21233,7 +20821,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 505,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 10184
@@ -21297,11 +20885,7 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2016-05-10 01:21:31.326",
     "metacritic_page": false,
-    "availablePlatforms": [{
-      "metacritic_page": false,
-      "platform_name": "Xbox One",
-      "id": 4
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": 46253,
     "giantbomb_name": "Sherlock Holmes: Crimes and Punishments",
     "igdb_poster": "xxnsainekjnydjriumvp",
@@ -21317,7 +20901,7 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 635,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 5541
@@ -21346,7 +20930,7 @@ export const MockGames = [
       "metacritic_matched": "2016-05-09 18:51:00.084",
       "platform_name": "Xbox One",
       "metacritic": 69,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 45430,
     "giantbomb_name": "Styx: Master of Shadows",
@@ -21363,7 +20947,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 498,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 6072
@@ -21392,7 +20976,7 @@ export const MockGames = [
       "metacritic_matched": "2016-05-09 18:51:01.568",
       "platform_name": "Xbox One",
       "metacritic": 80,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 43290,
     "giantbomb_name": "Hand of Fate",
@@ -21409,7 +20993,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 514,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 9101
@@ -21438,7 +21022,7 @@ export const MockGames = [
       "metacritic_matched": "2016-05-09 18:51:02.884",
       "platform_name": "Xbox One",
       "metacritic": 57,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 48505,
     "giantbomb_name": "Zheros",
@@ -21455,7 +21039,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 699,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 34209
@@ -21484,7 +21068,7 @@ export const MockGames = [
       "metacritic_matched": "2016-05-09 18:51:04.893",
       "platform_name": "Xbox One",
       "metacritic": 59,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 38294,
     "giantbomb_name": "The Incredible Adventures of Van Helsing",
@@ -21501,7 +21085,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 516,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 2638
@@ -21530,7 +21114,7 @@ export const MockGames = [
       "metacritic_matched": "2016-05-09 18:51:07.404",
       "platform_name": "Xbox One",
       "metacritic": 71,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 46058,
     "giantbomb_name": "Knight Squad",
@@ -21547,7 +21131,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 21,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 14380
@@ -21576,7 +21160,7 @@ export const MockGames = [
       "metacritic_matched": "2016-05-09 18:51:09.227",
       "platform_name": "Xbox One",
       "metacritic": 63,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 47310,
     "giantbomb_name": "Pneuma: Breath of Life",
@@ -21593,7 +21177,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 518,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 9178
@@ -21617,13 +21201,7 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2016-05-10 01:24:14.161",
     "metacritic_page": true,
-    "availablePlatforms": [{
-      "metacritic_page": true,
-      "metacritic_matched": "2016-05-09 18:51:10.684",
-      "platform_name": "Xbox One",
-      "metacritic": 81,
-      "id": 4
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": 43885,
     "giantbomb_name": "Valiant Hearts: The Great War",
     "igdb_poster": "co1iu4",
@@ -21639,7 +21217,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 184,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 7327
@@ -21668,7 +21246,7 @@ export const MockGames = [
       "metacritic_matched": "2016-05-09 18:51:12.032",
       "platform_name": "Xbox One",
       "metacritic": 71,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 43405,
     "giantbomb_name": "How to Survive",
@@ -21685,7 +21263,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 761,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 20311
@@ -21714,7 +21292,7 @@ export const MockGames = [
       "metacritic_matched": "2016-05-09 18:51:12.875",
       "platform_name": "PS4",
       "metacritic": 57,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 53599,
     "giantbomb_name": "Table Top Racing: World Tour",
@@ -21731,7 +21309,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 125,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 18978
@@ -21760,7 +21338,7 @@ export const MockGames = [
       "metacritic_matched": "2016-05-09 18:51:13.722",
       "platform_name": "PS4",
       "metacritic": 70,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 43675,
     "giantbomb_name": "Switch Galaxy Ultra",
@@ -21777,50 +21355,10 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 550,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 35517
-  },
-  {
-    "timetotal": null,
-    "metacritic": 76,
-    "title": "Tropico 5",
-    "platform": "PS4",
-    "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/82063/2635549-t5.jpg",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 18854,
-    "howlong_extras": null,
-    "id": 514,
-    "metacritic_matched": "2016-05-09 18:51:14.788",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Tropico 5",
-    "steamid": null,
-    "date_added": "2016-05-10 01:33:59.569",
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 43535,
-    "giantbomb_name": "Tropico 5",
-    "igdb_poster": "i4vvzipewvjvyd7yspub",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2016-05-10 01:33:59.569",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 661,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 3211
   },
   {
     "timetotal": null,
@@ -21886,7 +21424,7 @@ export const MockGames = [
       "metacritic_matched": "2016-05-09 18:51:17.075",
       "platform_name": "PS4",
       "metacritic": 72,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 51112,
     "giantbomb_name": "Dead Star",
@@ -21903,7 +21441,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 534,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 21960
@@ -21930,7 +21468,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 45194,
     "giantbomb_name": "Shutshimi",
@@ -21947,7 +21485,7 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 525,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 23319
@@ -21974,7 +21512,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 44066,
     "giantbomb_name": "Dragon Fin Soup",
@@ -21991,7 +21529,7 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 662,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 17377
@@ -22020,7 +21558,7 @@ export const MockGames = [
       "metacritic_matched": "2016-05-09 19:36:45.068",
       "platform_name": "PS4",
       "metacritic": 71,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 45705,
     "giantbomb_name": "Gauntlet",
@@ -22037,7 +21575,7 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 462,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 7293
@@ -22066,7 +21604,7 @@ export const MockGames = [
       "metacritic_matched": "2016-05-09 18:51:22.542",
       "platform_name": "PS4",
       "metacritic": 56,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 52204,
     "giantbomb_name": "Hardware: Rivals",
@@ -22083,7 +21621,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 517,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 15695
@@ -22112,7 +21650,7 @@ export const MockGames = [
       "metacritic_matched": "2016-05-09 19:36:49.799",
       "platform_name": "PS4",
       "metacritic": 77,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 47353,
     "giantbomb_name": "King's Quest",
@@ -22129,7 +21667,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 489,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 8260
@@ -22158,7 +21696,7 @@ export const MockGames = [
       "metacritic_matched": "2016-05-09 18:51:26.599",
       "platform_name": "PS4",
       "metacritic": 72,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 46571,
     "giantbomb_name": "Magicka 2",
@@ -22175,7 +21713,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 664,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 9807
@@ -22204,7 +21742,7 @@ export const MockGames = [
       "metacritic_matched": "2016-05-09 18:51:27.968",
       "platform_name": "PS4",
       "metacritic": 72,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 44117,
     "giantbomb_name": "MouseCraft",
@@ -22221,7 +21759,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 78,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 8992
@@ -22250,7 +21788,7 @@ export const MockGames = [
       "metacritic_matched": "2016-05-09 18:51:30.262",
       "platform_name": "PS4",
       "metacritic": 76,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 42239,
     "giantbomb_name": "Race the Sun",
@@ -22267,7 +21805,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 633,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 7876
@@ -22294,7 +21832,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 17571,
     "giantbomb_name": "Star Wars: Bounty Hunter",
@@ -22311,7 +21849,7 @@ export const MockGames = [
       "rating": 69,
       "finished_date": null,
       "id": 427,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 4180
@@ -22338,7 +21876,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 4017,
     "giantbomb_name": "Star Wars: Jedi Starfighter",
@@ -22355,7 +21893,7 @@ export const MockGames = [
       "rating": 56,
       "finished_date": null,
       "id": 632,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 6160
@@ -22382,7 +21920,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 7746,
     "giantbomb_name": "Star Wars: Racer Revenge",
@@ -22399,7 +21937,7 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 639,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 19419
@@ -22426,7 +21964,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 14450,
     "giantbomb_name": "Super Star Wars",
@@ -22443,7 +21981,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 552,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 20031
@@ -22472,7 +22010,7 @@ export const MockGames = [
       "metacritic_matched": "2016-05-09 18:51:36.829",
       "platform_name": "PS4",
       "metacritic": 78,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 41238,
     "giantbomb_name": "Teslagrad",
@@ -22489,7 +22027,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 13,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 7641
@@ -22518,7 +22056,7 @@ export const MockGames = [
       "metacritic_matched": "2016-05-12 03:47:50.454",
       "platform_name": "Steam",
       "metacritic": 78,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 50618,
     "giantbomb_name": "Stellaris",
@@ -22535,7 +22073,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 194,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 11582
@@ -22637,7 +22175,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-02 03:49:21.008",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 50551,
     "giantbomb_name": "Read Only Memories",
@@ -22654,7 +22192,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 485,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 84927
@@ -22683,7 +22221,7 @@ export const MockGames = [
       "metacritic_matched": "2017-01-07 05:11:19.694",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 48586,
     "giantbomb_name": "Shadowrun: Hong Kong",
@@ -22700,7 +22238,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 94,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 35842
@@ -22729,7 +22267,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-02 03:49:16.007",
       "platform_name": "Steam",
       "metacritic": 86,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 49898,
     "giantbomb_name": "Her Story",
@@ -22746,7 +22284,7 @@ export const MockGames = [
       "rating": 87.6,
       "finished_date": null,
       "id": 267,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 11346
@@ -22775,7 +22313,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-02 03:49:14.107",
       "platform_name": "Steam",
       "metacritic": 58,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 47793,
     "giantbomb_name": "80 Days",
@@ -22793,7 +22331,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 790,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 4
       },
       {
@@ -22807,7 +22345,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 803,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 5
       },
       {
@@ -22821,7 +22359,7 @@ export const MockGames = [
         "rating": 85,
         "finished_date": "2018-04-05 00:00:00.0",
         "id": 56,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 1
       }
     ],
@@ -22851,7 +22389,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-02 03:49:12.57",
       "platform_name": "Steam",
       "metacritic": 71,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 50722,
     "giantbomb_name": "Cibele",
@@ -22868,7 +22406,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 503,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 14702
@@ -22897,7 +22435,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-02 03:49:14.923",
       "platform_name": "Steam",
       "metacritic": 69,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 47802,
     "giantbomb_name": "Sorcery!",
@@ -22914,7 +22452,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 293,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 24618
@@ -22989,7 +22527,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-19 03:49:58.045",
       "platform_name": "Steam",
       "metacritic": 76,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 51033,
     "giantbomb_name": "The Beginner's Guide",
@@ -23006,7 +22544,7 @@ export const MockGames = [
       "rating": 84.6,
       "finished_date": null,
       "id": 507,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 13212
@@ -23035,7 +22573,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-21 03:47:56.429",
       "platform_name": "Steam",
       "metacritic": 89,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 39775,
     "giantbomb_name": "Pillars of Eternity",
@@ -23052,7 +22590,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 88,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1593
@@ -23081,7 +22619,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-24 03:50:14.729",
       "platform_name": "Steam",
       "metacritic": 82,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 6630,
     "giantbomb_name": "Aquaria",
@@ -23098,7 +22636,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 511,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7406
@@ -23127,7 +22665,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-24 03:50:15.947",
       "platform_name": "Steam",
       "metacritic": 76,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 37894,
     "giantbomb_name": "Shadowrun Returns",
@@ -23144,7 +22682,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 717,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3020
@@ -23173,7 +22711,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-24 03:50:23.414",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 21194,
     "giantbomb_name": "The Age of Decadence",
@@ -23190,7 +22728,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 586,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 4641
@@ -23219,7 +22757,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-24 03:50:17.756",
       "platform_name": "Steam",
       "metacritic": 66,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 13076,
     "giantbomb_name": "Age of Mythology",
@@ -23236,7 +22774,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 707,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9902
@@ -23265,7 +22803,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-24 03:50:24.392",
       "platform_name": "Steam",
       "metacritic": 79,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 42153,
     "giantbomb_name": "Homeworld: Deserts of Kharak",
@@ -23282,7 +22820,7 @@ export const MockGames = [
       "rating": 82.3,
       "finished_date": null,
       "id": 244,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 15444
@@ -23311,7 +22849,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-24 03:50:16.835",
       "platform_name": "Steam",
       "metacritic": 71,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 45389,
     "giantbomb_name": "You Must Build A Boat",
@@ -23328,7 +22866,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 171,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19955
@@ -23357,7 +22895,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-24 03:50:19.097",
       "platform_name": "Steam",
       "metacritic": 78,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 37707,
     "giantbomb_name": "Apotheon",
@@ -23374,7 +22912,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 102,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9016
@@ -23403,7 +22941,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-24 03:50:25.045",
       "platform_name": "Steam",
       "metacritic": 93,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 41484,
     "giantbomb_name": "The Witcher 3: Wild Hunt",
@@ -23420,7 +22958,7 @@ export const MockGames = [
       "rating": 85.3,
       "finished_date": null,
       "id": 727,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1942
@@ -23449,7 +22987,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-24 03:50:20.262",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 45658,
     "giantbomb_name": "Firewatch",
@@ -23466,7 +23004,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": "2016-07-26 00:00:00.0",
       "id": 185,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9730
@@ -23490,7 +23028,22 @@ export const MockGames = [
     "steamid": 388210,
     "date_added": "2016-06-24 03:46:04.001",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2016-06-24 03:50:21.123",
+        "platform_name": "Steam",
+        "metacritic": 86,
+        "id": 3
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2017-01-05 04:56:15.448",
+        "platform_name": "PS4",
+        "metacritic": 84,
+        "id": 5
+      }
+    ],
     "giantbomb_id": 4372,
     "giantbomb_name": "Maniac Mansion: Day of the Tentacle",
     "igdb_poster": "hlpoenohjabxmn12b74o",
@@ -23507,7 +23060,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 804,
-        "myPlatforms": [],
+        "myPlatforms": [{"id": 3}],
         "person_id": 5
       },
       {
@@ -23521,7 +23074,10 @@ export const MockGames = [
         "rating": 84,
         "finished_date": null,
         "id": 92,
-        "myPlatforms": [],
+        "myPlatforms": [
+          {"id": 3},
+          {"id": 5}
+        ],
         "person_id": 1
       }
     ],
@@ -23546,7 +23102,22 @@ export const MockGames = [
     "steamid": 417880,
     "date_added": "2016-06-24 03:46:04.794",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2016-06-24 03:50:22.19",
+        "platform_name": "Steam",
+        "metacritic": 73,
+        "id": 3
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2016-11-10 04:02:21.09",
+        "platform_name": "PS4",
+        "metacritic": 78,
+        "id": 5
+      }
+    ],
     "giantbomb_id": 37690,
     "giantbomb_name": "Everybody's Gone to the Rapture",
     "igdb_poster": "co1ktd",
@@ -23562,7 +23133,10 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 105,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 5}
+      ],
       "person_id": 1
     }],
     "igdb_id": 7405
@@ -23591,7 +23165,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-25 03:48:18.432",
       "platform_name": "Steam",
       "metacritic": 85,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 46572,
     "giantbomb_name": "The Talos Principle",
@@ -23608,7 +23182,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 715,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7386
@@ -23637,7 +23211,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-29 03:51:01.926",
       "platform_name": "Steam",
       "metacritic": 87,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 46548,
     "giantbomb_name": "Ori and the Blind Forest",
@@ -23654,7 +23228,7 @@ export const MockGames = [
       "rating": 90.3,
       "finished_date": null,
       "id": 4,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19456
@@ -23683,7 +23257,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-29 03:51:00.975",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 52278,
     "giantbomb_name": "Oxenfree",
@@ -23701,7 +23275,7 @@ export const MockGames = [
         "rating": 91,
         "finished_date": "2016-08-02 00:00:00.0",
         "id": 172,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 1
       },
       {
@@ -23715,7 +23289,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 795,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 4
       }
     ],
@@ -23743,7 +23317,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -23760,7 +23334,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 431,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 5165
@@ -23787,7 +23361,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -23804,7 +23378,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 64,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9473
@@ -23831,7 +23405,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -23848,7 +23422,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 127,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7858
@@ -23875,7 +23449,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -23892,7 +23466,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 9,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 23695
@@ -23919,7 +23493,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 14433,
     "giantbomb_name": "Sonic CD",
@@ -23936,7 +23510,7 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 456,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 86807
@@ -23965,7 +23539,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-29 03:51:03.753",
       "platform_name": "Steam",
       "metacritic": 77,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 34833,
     "giantbomb_name": "Sonic Generations",
@@ -23982,7 +23556,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 169,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 506
@@ -24011,7 +23585,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-29 03:50:55.785",
       "platform_name": "Steam",
       "metacritic": 54,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -24028,50 +23602,10 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 301,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9474
-  },
-  {
-    "timetotal": null,
-    "metacritic": null,
-    "title": "Sonic and All-Stars Racing Transformed Metal Sonic DLC Pack",
-    "platform": "Steam",
-    "giantbomb_medium_url": null,
-    "steam_cloud": true,
-    "logo": "",
-    "howlong_id": null,
-    "howlong_extras": null,
-    "id": 564,
-    "metacritic_matched": null,
-    "steam_title": "Sonic and All-Stars Racing Transformed Metal Sonic DLC Pack",
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": null,
-    "steamid": 229660,
-    "date_added": "2016-06-29 03:46:06.823",
-    "metacritic_page": false,
-    "availablePlatforms": [],
-    "giantbomb_id": null,
-    "giantbomb_name": null,
-    "igdb_poster": null,
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2016-06-29 03:46:06.823",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 430,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 2174
   },
   {
     "timetotal": null,
@@ -24097,7 +23631,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-29 03:50:57.226",
       "platform_name": "Steam",
       "metacritic": 57,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 42655,
     "giantbomb_name": "Sonic Lost World",
@@ -24114,7 +23648,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 110,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2607
@@ -24141,7 +23675,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 41907,
     "giantbomb_name": "The Silent Age",
@@ -24158,7 +23692,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 174,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 11444
@@ -24187,7 +23721,7 @@ export const MockGames = [
       "metacritic_matched": "2016-06-30 03:48:53.743",
       "platform_name": "Steam",
       "metacritic": 70,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 48519,
     "giantbomb_name": "Fran Bow",
@@ -24204,7 +23738,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 113,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 11821
@@ -24233,7 +23767,7 @@ export const MockGames = [
       "metacritic_matched": "2016-07-02 03:56:27.7",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 37629,
     "giantbomb_name": "The Banner Saga",
@@ -24250,7 +23784,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 24,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 5508
@@ -24277,7 +23811,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 39641,
     "giantbomb_name": "Cinders",
@@ -24294,7 +23828,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 497,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9723
@@ -24323,7 +23857,7 @@ export const MockGames = [
       "metacritic_matched": "2016-07-02 03:56:26.427",
       "platform_name": "Steam",
       "metacritic": 85,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 20971,
     "giantbomb_name": "Valkyria Chronicles",
@@ -24340,7 +23874,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 119,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7477
@@ -24367,7 +23901,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 46277,
     "giantbomb_name": "Never Alone",
@@ -24385,7 +23919,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 1427,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 4
       },
       {
@@ -24399,7 +23933,7 @@ export const MockGames = [
         "rating": 80,
         "finished_date": null,
         "id": 77,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 1
       }
     ],
@@ -24424,7 +23958,22 @@ export const MockGames = [
     "steamid": 7670,
     "date_added": "2016-07-03 03:45:42.483",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2015-08-28 00:17:33.355",
+        "platform_name": "Xbox 360",
+        "metacritic": 96,
+        "id": 9
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2016-07-03 03:49:04.964",
+        "platform_name": "Steam",
+        "metacritic": 96,
+        "id": 3
+      }
+    ],
     "giantbomb_id": 17280,
     "giantbomb_name": "BioShock",
     "igdb_poster": "jrpib8t74zhaapqq2idi",
@@ -24440,7 +23989,10 @@ export const MockGames = [
       "rating": 0,
       "finished_date": "2013-09-12 00:00:00.0",
       "id": 122,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 9}
+      ],
       "person_id": 1
     }],
     "igdb_id": 20
@@ -24464,7 +24016,22 @@ export const MockGames = [
     "steamid": 8850,
     "date_added": "2016-07-03 03:46:02.436",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2015-08-28 00:39:37.342",
+        "platform_name": "Xbox 360",
+        "metacritic": 88,
+        "id": 9
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2016-07-03 03:49:03.915",
+        "platform_name": "Steam",
+        "metacritic": 88,
+        "id": 3
+      }
+    ],
     "giantbomb_id": 20827,
     "giantbomb_name": "BioShock 2",
     "igdb_poster": "co1klg",
@@ -24480,7 +24047,10 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 117,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 9}
+      ],
       "person_id": 1
     }],
     "igdb_id": 21
@@ -24509,7 +24079,7 @@ export const MockGames = [
       "metacritic_matched": "2018-06-24 03:22:23.153",
       "platform_name": "Steam",
       "metacritic": 74,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 52682,
     "giantbomb_name": "Deponia: The Complete Journey",
@@ -24526,7 +24096,7 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 268,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 17224
@@ -24553,7 +24123,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 54082,
     "giantbomb_name": "Riders of Icarus",
@@ -24570,7 +24140,7 @@ export const MockGames = [
       "rating": 49,
       "finished_date": null,
       "id": 232,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19012
@@ -24599,7 +24169,7 @@ export const MockGames = [
       "metacritic_matched": "2016-07-27 03:48:40.038",
       "platform_name": "Steam",
       "metacritic": 85,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 41763,
     "giantbomb_name": "Chaos Reborn",
@@ -24616,7 +24186,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 492,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 13222
@@ -24640,7 +24210,20 @@ export const MockGames = [
     "steamid": 384190,
     "date_added": "2016-08-03 03:46:06.238",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2016-08-03 03:57:24.89",
+        "platform_name": "Steam",
+        "metacritic": 88,
+        "id": 3
+      },
+      {
+        "metacritic_page": false,
+        "platform_name": "PS4",
+        "id": 5
+      }
+    ],
     "giantbomb_id": 46573,
     "giantbomb_name": "Abzû",
     "igdb_poster": "mvplc0engxcuxnbi5zef",
@@ -24656,7 +24239,10 @@ export const MockGames = [
       "rating": 94,
       "finished_date": "2017-07-20 00:00:00.0",
       "id": 626,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 5}
+      ],
       "person_id": 1
     }],
     "igdb_id": 7352
@@ -24664,7 +24250,7 @@ export const MockGames = [
   {
     "timetotal": null,
     "metacritic": 64,
-    "title": "Batman - The Telltale Series",
+    "title": "Batman: The Telltale Series",
     "platform": "Steam",
     "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2802809-4053170348-BATMA.jpg",
     "steam_cloud": false,
@@ -24680,10 +24266,25 @@ export const MockGames = [
     "steamid": 498240,
     "date_added": "2016-08-06 03:49:32.81",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2016-12-20 04:49:18.046",
+        "platform_name": "Steam",
+        "metacritic": 64,
+        "id": 3
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2018-01-06 03:51:49.081",
+        "platform_name": "PS4",
+        "metacritic": 68,
+        "id": 5
+      }
+    ],
     "giantbomb_id": 51726,
     "giantbomb_name": "Batman: The Telltale Series",
-    "igdb_poster": null,
+    "igdb_poster": "tokrvdhnw1kjbmdkjbmz",
     "steam_page_gone": null,
     "person_games": [{
       "replay_score": null,
@@ -24696,10 +24297,13 @@ export const MockGames = [
       "rating": 89,
       "finished_date": null,
       "id": 130,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 5}
+      ],
       "person_id": 1
     }],
-    "igdb_id": 115071
+    "igdb_id": 14746
   },
   {
     "timetotal": null,
@@ -24725,7 +24329,7 @@ export const MockGames = [
       "metacritic_matched": "2016-08-20 03:47:19.398",
       "platform_name": "Steam",
       "metacritic": 69,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -24758,7 +24362,7 @@ export const MockGames = [
       "metacritic_matched": "2016-08-24 03:47:18.057",
       "platform_name": "PS4",
       "metacritic": 71,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 51691,
     "giantbomb_name": "Tricky Towers",
@@ -24775,50 +24379,10 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 528,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 21623
-  },
-  {
-    "timetotal": null,
-    "metacritic": 64,
-    "title": "Rebel Galaxy",
-    "platform": "PS4",
-    "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2788861-untitled.png",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 30944,
-    "howlong_extras": 30.65,
-    "id": 581,
-    "metacritic_matched": "2016-08-24 03:47:19.496",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Rebel Galaxy",
-    "steamid": null,
-    "date_added": "2016-08-24 03:05:08.747",
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 48057,
-    "giantbomb_name": "Rebel Galaxy",
-    "igdb_poster": "co1m67",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2016-08-24 03:05:08.747",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 671,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 11719
   },
   {
     "timetotal": null,
@@ -24842,7 +24406,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 26331,
     "giantbomb_name": "Ultratron",
@@ -24859,7 +24423,7 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 502,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 14327
@@ -25020,7 +24584,7 @@ export const MockGames = [
       "metacritic_matched": "2016-09-13 03:47:20.771",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 53284,
     "giantbomb_name": "Overcooked!",
@@ -25038,7 +24602,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 796,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 4
       },
       {
@@ -25052,7 +24616,7 @@ export const MockGames = [
         "rating": 81,
         "finished_date": null,
         "id": 168,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 1
       }
     ],
@@ -25082,7 +24646,7 @@ export const MockGames = [
       "metacritic_matched": "2017-07-05 04:47:32.203",
       "platform_name": "Steam",
       "metacritic": 96,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 17280,
     "giantbomb_name": "BioShock",
@@ -25099,7 +24663,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 7,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 34293
@@ -25126,7 +24690,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 20827,
     "giantbomb_name": "BioShock 2",
@@ -25143,7 +24707,7 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 252,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 34294
@@ -25264,7 +24828,7 @@ export const MockGames = [
       "metacritic_matched": "2016-10-01 03:49:53.728",
       "platform_name": "Xbox One",
       "metacritic": 67,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 42628,
     "giantbomb_name": "Earthlock: Festival Of Magic",
@@ -25281,7 +24845,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 701,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 7202
@@ -25310,7 +24874,7 @@ export const MockGames = [
       "metacritic_matched": "2016-10-01 03:49:59.89",
       "platform_name": "Xbox One",
       "metacritic": 73,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -25327,7 +24891,7 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 512,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 20058
@@ -25356,7 +24920,7 @@ export const MockGames = [
       "metacritic_matched": "2016-10-01 03:50:00.412",
       "platform_name": "Xbox One",
       "metacritic": 71,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 45457,
     "giantbomb_name": "Tumblestone",
@@ -25373,7 +24937,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 658,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 16926
@@ -25402,7 +24966,7 @@ export const MockGames = [
       "metacritic_matched": "2016-10-01 03:50:04.963",
       "platform_name": "Xbox One",
       "metacritic": 84,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 48326,
     "giantbomb_name": "The Banner Saga 2",
@@ -25419,7 +24983,7 @@ export const MockGames = [
       "rating": 50,
       "finished_date": null,
       "id": 530,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 8288
@@ -25488,7 +25052,7 @@ export const MockGames = [
       "metacritic_matched": "2016-10-01 03:50:09.914",
       "platform_name": "PS4",
       "metacritic": 76,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 42361,
     "giantbomb_name": "Badland",
@@ -25505,7 +25069,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 583,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 20042
@@ -25534,7 +25098,7 @@ export const MockGames = [
       "metacritic_matched": "2016-10-05 04:02:02.997",
       "platform_name": "Steam",
       "metacritic": 72,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 39355,
     "giantbomb_name": "Primordia",
@@ -25551,7 +25115,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 106,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7635
@@ -25580,7 +25144,7 @@ export const MockGames = [
       "metacritic_matched": "2016-10-14 03:48:52.287",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 46325,
     "giantbomb_name": "Sunless Sea",
@@ -25597,7 +25161,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 111,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 8925
@@ -25626,7 +25190,7 @@ export const MockGames = [
       "metacritic_matched": "2016-10-21 04:00:26.269",
       "platform_name": "Steam",
       "metacritic": 94,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 53696,
     "giantbomb_name": "Sid Meier's Civilization VI",
@@ -25643,7 +25207,7 @@ export const MockGames = [
       "rating": 89,
       "finished_date": null,
       "id": 154,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19130
@@ -25672,7 +25236,7 @@ export const MockGames = [
       "metacritic_matched": "2016-10-29 03:46:43.207",
       "platform_name": "Steam",
       "metacritic": 70,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 24081,
     "giantbomb_name": "Dreamfall Chapters",
@@ -25689,7 +25253,7 @@ export const MockGames = [
       "rating": 85.7,
       "finished_date": null,
       "id": 242,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1962
@@ -25716,7 +25280,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 54322,
     "giantbomb_name": "The Jackbox Party Pack 3",
@@ -25733,50 +25297,10 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 115,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19082
-  },
-  {
-    "timetotal": null,
-    "metacritic": 78,
-    "title": "Everybody's Gone to the Rapture",
-    "platform": "PS4",
-    "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2774607-0070203710-21296.jpg",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 24711,
-    "howlong_extras": 6.35,
-    "id": 602,
-    "metacritic_matched": "2016-11-10 04:02:21.09",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Everybody's Gone to the Rapture",
-    "steamid": null,
-    "date_added": "2016-11-09 20:34:35.251",
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 37690,
-    "giantbomb_name": "Everybody's Gone to the Rapture",
-    "igdb_poster": "co1ktd",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2016-11-09 20:34:35.251",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": 50,
-      "finished_date": null,
-      "id": 532,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 7405
   },
   {
     "timetotal": null,
@@ -25840,7 +25364,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 50807,
     "giantbomb_name": "Pumped BMX+",
@@ -25857,7 +25381,7 @@ export const MockGames = [
       "rating": 56,
       "finished_date": null,
       "id": 533,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 20955
@@ -25886,7 +25410,7 @@ export const MockGames = [
       "metacritic_matched": "2016-11-10 04:02:26.865",
       "platform_name": "PS4",
       "metacritic": 72,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 52371,
     "giantbomb_name": "The Deadly Tower of Monsters",
@@ -25903,7 +25427,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 521,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 14740
@@ -25967,13 +25491,7 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2016-11-09 20:36:16.442",
     "metacritic_page": true,
-    "availablePlatforms": [{
-      "metacritic_page": true,
-      "metacritic_matched": "2016-11-10 04:02:30.176",
-      "platform_name": "PS3",
-      "metacritic": 87,
-      "id": 6
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": 30383,
     "giantbomb_name": "DiRT 3",
     "igdb_poster": "pun7d9tjhw7dj0lclqoo",
@@ -25989,7 +25507,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 599,
-      "myPlatforms": [{"id": 6}],
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 524
@@ -26058,7 +25576,7 @@ export const MockGames = [
       "metacritic_matched": "2016-11-20 03:49:08.359",
       "platform_name": "Steam",
       "metacritic": 75,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 55011,
     "giantbomb_name": "Seasons After Fall",
@@ -26075,7 +25593,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 6,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 15821
@@ -26104,7 +25622,7 @@ export const MockGames = [
       "metacritic_matched": "2016-11-20 03:49:09.26",
       "platform_name": "Steam",
       "metacritic": 86,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 46549,
     "giantbomb_name": "Rise of the Tomb Raider",
@@ -26121,7 +25639,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 296,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7323
@@ -26148,7 +25666,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 10927,
     "giantbomb_name": "Loom",
@@ -26165,7 +25683,7 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 387,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 191
@@ -26189,7 +25707,22 @@ export const MockGames = [
     "steamid": 290300,
     "date_added": "2016-11-24 03:45:59.547",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2016-08-24 03:47:19.496",
+        "platform_name": "PS4",
+        "metacritic": 64,
+        "id": 5
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2016-11-24 03:51:13.269",
+        "platform_name": "Steam",
+        "metacritic": 75,
+        "id": 3
+      }
+    ],
     "giantbomb_id": 48057,
     "giantbomb_name": "Rebel Galaxy",
     "igdb_poster": "co1m67",
@@ -26205,7 +25738,10 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 96,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 5}
+      ],
       "person_id": 1
     }],
     "igdb_id": 11719
@@ -26234,7 +25770,7 @@ export const MockGames = [
       "metacritic_matched": "2016-11-24 03:51:12.221",
       "platform_name": "Steam",
       "metacritic": 68,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 50016,
     "giantbomb_name": "The Solus Project",
@@ -26251,7 +25787,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 243,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 11221
@@ -26278,7 +25814,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 52723,
     "giantbomb_name": "Solstice",
@@ -26295,7 +25831,7 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 592,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 36253
@@ -26324,7 +25860,7 @@ export const MockGames = [
       "metacritic_matched": "2016-11-24 03:51:09.835",
       "platform_name": "Steam",
       "metacritic": 77,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 50555,
     "giantbomb_name": "Kathy Rain",
@@ -26341,7 +25877,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 381,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 18997
@@ -26365,13 +25901,7 @@ export const MockGames = [
     "steamid": 379720,
     "date_added": "2016-11-24 03:46:07.366",
     "metacritic_page": true,
-    "availablePlatforms": [{
-      "metacritic_page": true,
-      "metacritic_matched": "2016-11-24 03:49:44.345",
-      "platform_name": "Steam",
-      "metacritic": 85,
-      "id": 1
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": 20654,
     "giantbomb_name": "Doom",
     "igdb_poster": "co1nc7",
@@ -26387,7 +25917,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 501,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 7351
@@ -26416,7 +25946,7 @@ export const MockGames = [
       "metacritic_matched": "2016-11-25 03:50:15.909",
       "platform_name": "Steam",
       "metacritic": 88,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 50899,
     "giantbomb_name": "Stardew Valley",
@@ -26433,7 +25963,7 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 625,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 17000
@@ -26460,7 +25990,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 20991,
     "giantbomb_name": "Darksiders",
@@ -26477,7 +26007,7 @@ export const MockGames = [
       "rating": 56,
       "finished_date": null,
       "id": 55,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 25081
@@ -26506,7 +26036,7 @@ export const MockGames = [
       "metacritic_matched": "2016-12-02 03:50:12.597",
       "platform_name": "Steam",
       "metacritic": 83,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 42792,
     "giantbomb_name": "Door Kickers",
@@ -26523,7 +26053,7 @@ export const MockGames = [
       "rating": 81.1,
       "finished_date": null,
       "id": 585,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3099
@@ -26552,7 +26082,7 @@ export const MockGames = [
       "metacritic_matched": "2016-12-05 03:50:38.187",
       "platform_name": "Xbox One",
       "metacritic": 75,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 29441,
     "giantbomb_name": "Sleeping Dogs",
@@ -26569,7 +26099,7 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 139,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 20228
@@ -26644,7 +26174,7 @@ export const MockGames = [
       "metacritic_matched": "2016-12-16 04:50:23.381",
       "platform_name": "Steam",
       "metacritic": 89,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 23714,
     "giantbomb_name": "Owlboy",
@@ -26661,7 +26191,7 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 284,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 12597
@@ -26690,7 +26220,7 @@ export const MockGames = [
       "metacritic_matched": "2016-12-17 04:49:51.984",
       "platform_name": "Steam",
       "metacritic": 72,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 52537,
     "giantbomb_name": "LEGO Star Wars: The Force Awakens",
@@ -26707,7 +26237,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 46,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 17030
@@ -26736,7 +26266,7 @@ export const MockGames = [
       "metacritic_matched": "2016-12-25 04:49:22.587",
       "platform_name": "Steam",
       "metacritic": 86,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 47195,
     "giantbomb_name": "The Walking Dead: The Telltale Series - A New Frontier",
@@ -26753,7 +26283,7 @@ export const MockGames = [
       "rating": 97,
       "finished_date": "2017-07-26 21:00:00.0",
       "id": 713,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19000
@@ -26782,7 +26312,7 @@ export const MockGames = [
       "metacritic_matched": "2017-10-18 03:44:28.475",
       "platform_name": "Steam",
       "metacritic": 93,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 50803,
     "giantbomb_name": "Divinity: Original Sin II",
@@ -26800,7 +26330,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 806,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 5
       },
       {
@@ -26814,7 +26344,7 @@ export const MockGames = [
         "rating": 96.3,
         "finished_date": "2020-04-20 18:11:07.765",
         "id": 107,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 1
       }
     ],
@@ -26844,7 +26374,7 @@ export const MockGames = [
       "metacritic_matched": "2016-12-27 04:49:06.596",
       "platform_name": "Steam",
       "metacritic": 87,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 46558,
     "giantbomb_name": "Inside",
@@ -26861,7 +26391,7 @@ export const MockGames = [
       "rating": 88,
       "finished_date": null,
       "id": 89,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7342
@@ -26890,7 +26420,7 @@ export const MockGames = [
       "metacritic_matched": "2016-12-27 04:50:39.598",
       "platform_name": "Steam",
       "metacritic": 66,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 42090,
     "giantbomb_name": "Metrico",
@@ -26907,7 +26437,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 81,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 22017
@@ -26934,7 +26464,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 53567,
     "giantbomb_name": "Valley",
@@ -26951,7 +26481,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 60,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 18859
@@ -26975,7 +26505,22 @@ export const MockGames = [
     "steamid": 439190,
     "date_added": "2016-12-27 04:45:26.128",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2016-12-27 04:50:37.847",
+        "platform_name": "Steam",
+        "metacritic": 74,
+        "id": 3
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2017-01-05 04:56:07.107",
+        "platform_name": "PS4",
+        "metacritic": 73,
+        "id": 5
+      }
+    ],
     "giantbomb_id": 50996,
     "giantbomb_name": "Stories: The Path of Destinies",
     "igdb_poster": "nwj6cexubxtor4cfxwpy",
@@ -26991,7 +26536,10 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 311,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 5}
+      ],
       "person_id": 1
     }],
     "igdb_id": 12815
@@ -27018,7 +26566,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 54286,
     "giantbomb_name": "Drawful 2",
@@ -27035,7 +26583,7 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 205,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19083
@@ -27064,7 +26612,7 @@ export const MockGames = [
       "metacritic_matched": "2016-12-28 04:52:25.012",
       "platform_name": "Steam",
       "metacritic": 82,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 43663,
     "giantbomb_name": "Superhot",
@@ -27081,370 +26629,10 @@ export const MockGames = [
       "rating": 84.2,
       "finished_date": null,
       "id": 385,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7205
-  },
-  {
-    "timetotal": null,
-    "metacritic": null,
-    "title": "Life Is Strange™ - Directors' Commentary - 1.Two directors",
-    "platform": "Steam",
-    "giantbomb_medium_url": null,
-    "steam_cloud": true,
-    "logo": "",
-    "howlong_id": null,
-    "howlong_extras": null,
-    "id": 632,
-    "metacritic_matched": null,
-    "steam_title": "Life Is Strange™ - Directors' Commentary - 1.Two directors",
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": null,
-    "steamid": 440430,
-    "date_added": "2016-12-28 04:45:29.49",
-    "metacritic_page": false,
-    "availablePlatforms": [],
-    "giantbomb_id": null,
-    "giantbomb_name": null,
-    "igdb_poster": null,
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2016-12-28 04:45:29.49",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 14,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 62151
-  },
-  {
-    "timetotal": null,
-    "metacritic": null,
-    "title": "Life Is Strange™ - Directors' Commentary - 2. Let's play Life is Strange",
-    "platform": "Steam",
-    "giantbomb_medium_url": null,
-    "steam_cloud": true,
-    "logo": "",
-    "howlong_id": null,
-    "howlong_extras": null,
-    "id": 633,
-    "metacritic_matched": null,
-    "steam_title": "Life Is Strange™ - Directors' Commentary - 2. Let's play Life is Strange",
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": null,
-    "steamid": 440431,
-    "date_added": "2016-12-28 04:45:29.677",
-    "metacritic_page": false,
-    "availablePlatforms": [],
-    "giantbomb_id": null,
-    "giantbomb_name": null,
-    "igdb_poster": null,
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2016-12-28 04:45:29.677",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 3,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 62151
-  },
-  {
-    "timetotal": null,
-    "metacritic": null,
-    "title": "Life Is Strange™ - Directors' Commentary - 3. Intentions",
-    "platform": "Steam",
-    "giantbomb_medium_url": null,
-    "steam_cloud": true,
-    "logo": "",
-    "howlong_id": null,
-    "howlong_extras": null,
-    "id": 634,
-    "metacritic_matched": null,
-    "steam_title": "Life Is Strange™ - Directors' Commentary - 3. Intentions",
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": null,
-    "steamid": 440432,
-    "date_added": "2016-12-28 04:45:29.881",
-    "metacritic_page": false,
-    "availablePlatforms": [],
-    "giantbomb_id": null,
-    "giantbomb_name": null,
-    "igdb_poster": null,
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2016-12-28 04:45:29.881",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 54,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 62151
-  },
-  {
-    "timetotal": null,
-    "metacritic": null,
-    "title": "Life Is Strange™ - Directors' Commentary - 4. A matter of choice",
-    "platform": "Steam",
-    "giantbomb_medium_url": null,
-    "steam_cloud": true,
-    "logo": "",
-    "howlong_id": null,
-    "howlong_extras": null,
-    "id": 635,
-    "metacritic_matched": null,
-    "steam_title": "Life Is Strange™ - Directors' Commentary - 4. A matter of choice",
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": null,
-    "steamid": 440433,
-    "date_added": "2016-12-28 04:45:30.069",
-    "metacritic_page": false,
-    "availablePlatforms": [],
-    "giantbomb_id": null,
-    "giantbomb_name": null,
-    "igdb_poster": null,
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2016-12-28 04:45:30.069",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 73,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 62151
-  },
-  {
-    "timetotal": null,
-    "metacritic": null,
-    "title": "Life Is Strange™ - Directors' Commentary - 5. A lively world",
-    "platform": "Steam",
-    "giantbomb_medium_url": null,
-    "steam_cloud": true,
-    "logo": "",
-    "howlong_id": null,
-    "howlong_extras": null,
-    "id": 636,
-    "metacritic_matched": null,
-    "steam_title": "Life Is Strange™ - Directors' Commentary - 5. A lively world",
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": null,
-    "steamid": 440434,
-    "date_added": "2016-12-28 04:45:30.272",
-    "metacritic_page": false,
-    "availablePlatforms": [],
-    "giantbomb_id": null,
-    "giantbomb_name": null,
-    "igdb_poster": null,
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2016-12-28 04:45:30.272",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 428,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 62151
-  },
-  {
-    "timetotal": null,
-    "metacritic": null,
-    "title": "Life Is Strange™ - Directors' Commentary - 6. Capturing the moment",
-    "platform": "Steam",
-    "giantbomb_medium_url": null,
-    "steam_cloud": true,
-    "logo": "",
-    "howlong_id": null,
-    "howlong_extras": null,
-    "id": 637,
-    "metacritic_matched": null,
-    "steam_title": "Life Is Strange™ - Directors' Commentary - 6. Capturing the moment",
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": null,
-    "steamid": 440435,
-    "date_added": "2016-12-28 04:45:30.46",
-    "metacritic_page": false,
-    "availablePlatforms": [],
-    "giantbomb_id": null,
-    "giantbomb_name": null,
-    "igdb_poster": null,
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2016-12-28 04:45:30.46",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 212,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 62151
-  },
-  {
-    "timetotal": null,
-    "metacritic": null,
-    "title": "Life Is Strange™ - Directors' Commentary - 7. Social issues",
-    "platform": "Steam",
-    "giantbomb_medium_url": null,
-    "steam_cloud": true,
-    "logo": "",
-    "howlong_id": null,
-    "howlong_extras": null,
-    "id": 638,
-    "metacritic_matched": null,
-    "steam_title": "Life Is Strange™ - Directors' Commentary - 7. Social issues",
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": null,
-    "steamid": 440436,
-    "date_added": "2016-12-28 04:45:30.663",
-    "metacritic_page": false,
-    "availablePlatforms": [],
-    "giantbomb_id": null,
-    "giantbomb_name": null,
-    "igdb_poster": null,
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2016-12-28 04:45:30.663",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 93,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 62151
-  },
-  {
-    "timetotal": null,
-    "metacritic": null,
-    "title": "Life Is Strange™ - Directors' Commentary - 8. Getting things right",
-    "platform": "Steam",
-    "giantbomb_medium_url": null,
-    "steam_cloud": true,
-    "logo": "",
-    "howlong_id": null,
-    "howlong_extras": null,
-    "id": 639,
-    "metacritic_matched": null,
-    "steam_title": "Life Is Strange™ - Directors' Commentary - 8. Getting things right",
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": null,
-    "steamid": 440437,
-    "date_added": "2016-12-28 04:45:30.851",
-    "metacritic_page": false,
-    "availablePlatforms": [],
-    "giantbomb_id": null,
-    "giantbomb_name": null,
-    "igdb_poster": null,
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2016-12-28 04:45:30.851",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 1,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 62151
-  },
-  {
-    "timetotal": null,
-    "metacritic": null,
-    "title": "Life Is Strange™ - Directors' Commentary - 9. Voices of Arcadia Bay",
-    "platform": "Steam",
-    "giantbomb_medium_url": null,
-    "steam_cloud": true,
-    "logo": "",
-    "howlong_id": null,
-    "howlong_extras": null,
-    "id": 640,
-    "metacritic_matched": null,
-    "steam_title": "Life Is Strange™ - Directors' Commentary - 9. Voices of Arcadia Bay",
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": null,
-    "steamid": 440438,
-    "date_added": "2016-12-28 04:45:31.054",
-    "metacritic_page": false,
-    "availablePlatforms": [],
-    "giantbomb_id": null,
-    "giantbomb_name": null,
-    "igdb_poster": null,
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2016-12-28 04:45:31.054",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 12,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 62151
   },
   {
     "timetotal": null,
@@ -27470,7 +26658,7 @@ export const MockGames = [
       "metacritic_matched": "2017-01-01 04:50:15.995",
       "platform_name": "Steam",
       "metacritic": 88,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 36494,
     "giantbomb_name": "Kerbal Space Program",
@@ -27487,7 +26675,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 287,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3102
@@ -27516,7 +26704,7 @@ export const MockGames = [
       "metacritic_matched": "2017-01-01 04:50:27.229",
       "platform_name": "Steam",
       "metacritic": 75,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 39813,
     "giantbomb_name": "Armello",
@@ -27533,7 +26721,7 @@ export const MockGames = [
       "rating": 84.9,
       "finished_date": null,
       "id": 708,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 11260
@@ -27562,7 +26750,7 @@ export const MockGames = [
       "metacritic_matched": "2017-01-05 04:57:53.856",
       "platform_name": "PS4",
       "metacritic": 77,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 52304,
     "giantbomb_name": "Furi",
@@ -27579,7 +26767,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 155,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 17026
@@ -27606,7 +26794,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 51414,
     "giantbomb_name": "Paragon",
@@ -27623,7 +26811,7 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 595,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 14410
@@ -27652,7 +26840,7 @@ export const MockGames = [
       "metacritic_matched": "2017-01-05 04:57:57.36",
       "platform_name": "PS4",
       "metacritic": 77,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 49939,
     "giantbomb_name": "Transformers: Devastation",
@@ -27669,7 +26857,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 679,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 11175
@@ -27696,7 +26884,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 27715,
     "giantbomb_name": "Resident Evil",
@@ -27713,7 +26901,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 372,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 24869
@@ -27782,7 +26970,7 @@ export const MockGames = [
       "metacritic_matched": "2017-01-05 04:56:05.108",
       "platform_name": "PS4",
       "metacritic": 64,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 47679,
     "giantbomb_name": "Saints Row: Gat Out of Hell",
@@ -27799,50 +26987,10 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 676,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 7708
-  },
-  {
-    "timetotal": null,
-    "metacritic": 73,
-    "title": "Stories: The Path of Destinies",
-    "platform": "PS4",
-    "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2825959-storiesthepathofdestinies_fullgame_masterart.png",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 35878,
-    "howlong_extras": 7.1333,
-    "id": 649,
-    "metacritic_matched": "2017-01-05 04:56:07.107",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Stories: The Path Of Destinies",
-    "steamid": null,
-    "date_added": "2017-01-04 18:56:56.801",
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 50996,
-    "giantbomb_name": "Stories: The Path of Destinies",
-    "igdb_poster": "nwj6cexubxtor4cfxwpy",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2017-01-04 18:56:56.801",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 30,
-      "last_played": null,
-      "rating": 75,
-      "finished_date": null,
-      "id": 741,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 12815
   },
   {
     "timetotal": null,
@@ -27868,7 +27016,7 @@ export const MockGames = [
       "metacritic_matched": "2017-01-05 04:56:10.089",
       "platform_name": "PS4",
       "metacritic": 78,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 45657,
     "giantbomb_name": "This War of Mine",
@@ -27885,50 +27033,10 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 513,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 19979
-  },
-  {
-    "timetotal": null,
-    "metacritic": 84,
-    "title": "Day of the Tentacle Remastered",
-    "platform": "PS4",
-    "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/609071-day_of_the_tentacle_box_front_6534x8205.jpg",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 35880,
-    "howlong_extras": 5.6,
-    "id": 651,
-    "metacritic_matched": "2017-01-05 04:56:15.448",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Day of the Tentacle: Remastered",
-    "steamid": null,
-    "date_added": "2017-01-04 18:58:17.167",
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 4372,
-    "giantbomb_name": "Maniac Mansion: Day of the Tentacle",
-    "igdb_poster": "hlpoenohjabxmn12b74o",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2017-01-04 18:58:17.167",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": 82,
-      "finished_date": null,
-      "id": 764,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 15862
   },
   {
     "timetotal": null,
@@ -27954,7 +27062,7 @@ export const MockGames = [
       "metacritic_matched": "2017-01-05 04:57:40.256",
       "platform_name": "PS4",
       "metacritic": 73,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 46622,
     "giantbomb_name": "Titan Souls",
@@ -27971,7 +27079,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 700,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 9559
@@ -28000,7 +27108,7 @@ export const MockGames = [
       "metacritic_matched": "2017-01-05 04:56:24.273",
       "platform_name": "PS4",
       "metacritic": 73,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 35940,
     "giantbomb_name": "The Swindle",
@@ -28017,7 +27125,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 280,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 18006
@@ -28044,7 +27152,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 57569,
     "giantbomb_name": "Azkend 2: The World Beneath",
@@ -28061,7 +27169,7 @@ export const MockGames = [
       "rating": 65,
       "finished_date": null,
       "id": 546,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 19893
@@ -28090,7 +27198,7 @@ export const MockGames = [
       "metacritic_matched": "2017-01-05 04:58:02.237",
       "platform_name": "PS4",
       "metacritic": 82,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 43107,
     "giantbomb_name": "Invisible, Inc.",
@@ -28107,7 +27215,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 463,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 6044
@@ -28136,7 +27244,7 @@ export const MockGames = [
       "metacritic_matched": "2017-01-05 04:56:33.032",
       "platform_name": "PS4",
       "metacritic": 70,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 43902,
     "giantbomb_name": "Hyper Void",
@@ -28153,7 +27261,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 754,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 20966
@@ -28182,7 +27290,7 @@ export const MockGames = [
       "metacritic_matched": "2017-01-05 04:58:03.361",
       "platform_name": "PS4",
       "metacritic": 62,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 48352,
     "giantbomb_name": "Color Guardians",
@@ -28199,7 +27307,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 750,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 19947
@@ -28228,7 +27336,7 @@ export const MockGames = [
       "metacritic_matched": "2017-01-05 04:56:43.549",
       "platform_name": "PS4",
       "metacritic": 65,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 45646,
     "giantbomb_name": "Tiny Troopers: Joint Ops",
@@ -28245,50 +27353,10 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 467,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 21320
-  },
-  {
-    "timetotal": null,
-    "metacritic": 90,
-    "title": "FEZ",
-    "platform": "PS4",
-    "giantbomb_medium_url": "http://www.giantbomb.com/api/image/scale_medium/2166793-box_fez.png",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 3435,
-    "howlong_extras": 8,
-    "id": 659,
-    "metacritic_matched": "2017-01-05 04:56:50.0",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Fez",
-    "steamid": null,
-    "date_added": "2017-01-04 19:15:54.928",
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 24768,
-    "giantbomb_name": "Fez",
-    "igdb_poster": "co1rd9",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2017-01-04 19:15:54.928",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": 50,
-      "finished_date": null,
-      "id": 561,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 1991
   },
   {
     "timetotal": null,
@@ -28314,7 +27382,7 @@ export const MockGames = [
       "metacritic_matched": "2017-01-15 05:09:04.512",
       "platform_name": "Steam",
       "metacritic": 83,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 29823,
     "giantbomb_name": "Grim Dawn",
@@ -28331,7 +27399,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 704,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1907
@@ -28360,7 +27428,7 @@ export const MockGames = [
       "metacritic_matched": "2017-02-08 05:11:17.153",
       "platform_name": "Xbox One",
       "metacritic": 82,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 41122,
     "giantbomb_name": "Lovers in a Dangerous Spacetime",
@@ -28378,7 +27446,7 @@ export const MockGames = [
         "rating": 85,
         "finished_date": null,
         "id": 551,
-        "myPlatforms": [{"id": 4}],
+        "myPlatforms": [{"id": 8}],
         "person_id": 1
       },
       {
@@ -28392,7 +27460,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 800,
-        "myPlatforms": [{"id": 4}],
+        "myPlatforms": [{"id": 8}],
         "person_id": 4
       }
     ],
@@ -28422,7 +27490,7 @@ export const MockGames = [
       "metacritic_matched": "2017-03-30 04:47:50.229",
       "platform_name": "PS4",
       "metacritic": 79,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 46567,
     "giantbomb_name": "LittleBigPlanet 3",
@@ -28439,7 +27507,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 472,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 7330
@@ -28468,7 +27536,7 @@ export const MockGames = [
       "metacritic_matched": "2017-02-13 04:49:22.783",
       "platform_name": "PS4",
       "metacritic": 74,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 45802,
     "giantbomb_name": "Not a Hero",
@@ -28485,7 +27553,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 683,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 6045
@@ -28514,7 +27582,7 @@ export const MockGames = [
       "metacritic_matched": "2017-02-13 04:49:25.675",
       "platform_name": "PS4",
       "metacritic": 78,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 44806,
     "giantbomb_name": "Starwhal",
@@ -28531,7 +27599,7 @@ export const MockGames = [
       "rating": 68,
       "finished_date": null,
       "id": 288,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 6781
@@ -28560,7 +27628,7 @@ export const MockGames = [
       "metacritic_matched": "2017-02-13 04:49:28.758",
       "platform_name": "PS4",
       "metacritic": 64,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -28577,7 +27645,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 173,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 20082
@@ -28604,7 +27672,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 48621,
     "giantbomb_name": "TorqueL",
@@ -28621,7 +27689,7 @@ export const MockGames = [
       "rating": 61,
       "finished_date": null,
       "id": 678,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 16654
@@ -28692,7 +27760,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 33629,
     "giantbomb_name": "Dear Esther",
@@ -28709,7 +27777,7 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 389,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 24051
@@ -28738,7 +27806,7 @@ export const MockGames = [
       "metacritic_matched": "2017-03-06 04:49:47.696",
       "platform_name": "PS4",
       "metacritic": 88,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 49973,
     "giantbomb_name": "Horizon: Zero Dawn",
@@ -28755,7 +27823,7 @@ export const MockGames = [
       "rating": 88,
       "finished_date": null,
       "id": 441,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 11156
@@ -28868,7 +27936,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 54927,
     "giantbomb_name": "Moirai",
@@ -28885,7 +27953,7 @@ export const MockGames = [
       "rating": 50,
       "finished_date": "2017-06-15 00:00:00.0",
       "id": 82,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 22365
@@ -28914,7 +27982,7 @@ export const MockGames = [
       "metacritic_matched": "2017-07-05 04:49:12.221",
       "platform_name": "Steam",
       "metacritic": 69,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 57203,
     "giantbomb_name": "Guardians of the Galaxy: The Telltale Series",
@@ -28931,7 +27999,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 34,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 26165
@@ -28958,7 +28026,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -28975,90 +28043,10 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 104,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 27747
-  },
-  {
-    "timetotal": null,
-    "metacritic": 80,
-    "title": "Tales from the Borderlands",
-    "platform": "PS4",
-    "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2706659-box_tftb.png",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 22804,
-    "howlong_extras": 11,
-    "id": 675,
-    "metacritic_matched": "2017-05-07 04:51:14.613",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Tales from the Borderlands",
-    "steamid": null,
-    "date_added": "2017-05-07 00:32:54.284",
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 44653,
-    "giantbomb_name": "Tales from the Borderlands",
-    "igdb_poster": "co1o4u",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2017-05-07 00:32:54.284",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": 56,
-      "finished_date": null,
-      "id": 147,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 6707
-  },
-  {
-    "timetotal": null,
-    "metacritic": null,
-    "title": "ABZÛ",
-    "platform": "PS4",
-    "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2916889-3887675092-C3sz6.jpg",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 20076,
-    "howlong_extras": 2.5,
-    "id": 676,
-    "metacritic_matched": null,
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "ABZÛ",
-    "steamid": null,
-    "date_added": "2017-05-07 00:33:15.769",
-    "metacritic_page": false,
-    "availablePlatforms": [],
-    "giantbomb_id": 46573,
-    "giantbomb_name": "Abzû",
-    "igdb_poster": "mvplc0engxcuxnbi5zef",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": 93,
-      "date_added": "2017-05-07 00:33:15.769",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": 50,
-      "finished_date": "2017-07-20 00:00:00.0",
-      "id": 458,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 7352
   },
   {
     "timetotal": null,
@@ -29082,7 +28070,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 59315,
     "giantbomb_name": "Laser Disco Defenders",
@@ -29099,7 +28087,7 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 672,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 22362
@@ -29296,7 +28284,7 @@ export const MockGames = [
       "metacritic_matched": "2017-06-01 05:41:54.831",
       "platform_name": "Steam",
       "metacritic": 82,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 52924,
     "giantbomb_name": "Endless Space 2",
@@ -29313,7 +28301,7 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 80,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 11550
@@ -29340,7 +28328,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 42240,
     "giantbomb_name": "Eon Altar",
@@ -29357,7 +28345,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 22,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19867
@@ -29386,7 +28374,7 @@ export const MockGames = [
       "metacritic_matched": "2017-06-14 04:54:02.329",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 53069,
     "giantbomb_name": "Tyranny",
@@ -29403,7 +28391,7 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 182,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 18398
@@ -29432,7 +28420,7 @@ export const MockGames = [
       "metacritic_matched": "2017-06-28 04:49:53.46",
       "platform_name": "Steam",
       "metacritic": 90,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 48329,
     "giantbomb_name": "What Remains of Edith Finch",
@@ -29449,7 +28437,7 @@ export const MockGames = [
       "rating": 91.7,
       "finished_date": "2017-08-08 00:00:00.0",
       "id": 211,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 11233
@@ -29478,7 +28466,7 @@ export const MockGames = [
       "metacritic_matched": "2017-07-05 04:49:25.005",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 55096,
     "giantbomb_name": "Redout",
@@ -29495,7 +28483,7 @@ export const MockGames = [
       "rating": 79,
       "finished_date": null,
       "id": 238,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 31598
@@ -29524,7 +28512,7 @@ export const MockGames = [
       "metacritic_matched": "2017-07-04 04:49:40.164",
       "platform_name": "Steam",
       "metacritic": 61,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 49663,
     "giantbomb_name": "Windward",
@@ -29541,7 +28529,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 29,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 17902
@@ -29568,7 +28556,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 55752,
     "giantbomb_name": "The Uncertain: Episode 1 - The Last Quiet Day",
@@ -29585,7 +28573,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 257,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 34366
@@ -29614,7 +28602,7 @@ export const MockGames = [
       "metacritic_matched": "2017-08-09 07:58:21.554",
       "platform_name": "Steam",
       "metacritic": 85,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 2235,
     "giantbomb_name": "Planescape: Torment",
@@ -29631,7 +28619,7 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 424,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 27988
@@ -29658,7 +28646,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -29675,7 +28663,7 @@ export const MockGames = [
       "rating": 88,
       "finished_date": "2020-04-20 18:38:16.357",
       "id": 297,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 34982
@@ -29704,7 +28692,7 @@ export const MockGames = [
       "metacritic_matched": "2017-07-07 04:50:14.373",
       "platform_name": "Steam",
       "metacritic": 77,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 54194,
     "giantbomb_name": "Star Trek: Bridge Crew",
@@ -29721,7 +28709,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 247,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19519
@@ -29748,7 +28736,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 57050,
     "giantbomb_name": "Sports Bar VR",
@@ -29765,7 +28753,7 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 213,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 25185
@@ -29794,7 +28782,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-27 21:03:07.146",
       "platform_name": "Steam",
       "metacritic": 83,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 47450,
     "giantbomb_name": "Universe Sandbox²",
@@ -29811,7 +28799,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 303,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 11813
@@ -29838,7 +28826,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -29855,7 +28843,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 218,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19026
@@ -29884,7 +28872,7 @@ export const MockGames = [
       "metacritic_matched": "2017-07-08 05:05:13.375",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 52950,
     "giantbomb_name": "Everspace",
@@ -29901,7 +28889,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 84,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 14172
@@ -29928,7 +28916,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 54242,
     "giantbomb_name": "Batman: Arkham VR",
@@ -29945,7 +28933,7 @@ export const MockGames = [
       "rating": 90.2,
       "finished_date": "2017-07-07 00:00:00.0",
       "id": 490,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19563
@@ -29972,7 +28960,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 55351,
     "giantbomb_name": "Caketomino",
@@ -29989,7 +28977,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 494,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 31599
@@ -30016,7 +29004,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -30033,7 +29021,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 16,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 31395
@@ -30060,7 +29048,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -30077,7 +29065,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 11,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 31241
@@ -30104,7 +29092,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -30121,7 +29109,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 17,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 31140
@@ -30148,7 +29136,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 58426,
     "giantbomb_name": "Marlene Betwixt",
@@ -30165,7 +29153,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 214,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 31116
@@ -30192,7 +29180,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -30209,7 +29197,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 124,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 108776
@@ -30236,7 +29224,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 58788,
     "giantbomb_name": "Warpaint",
@@ -30253,7 +29241,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 216,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 29358
@@ -30280,7 +29268,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -30297,7 +29285,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 26,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 29365
@@ -30324,7 +29312,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -30341,7 +29329,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 540,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 29057
@@ -30370,7 +29358,7 @@ export const MockGames = [
       "metacritic_matched": "2017-07-08 05:05:26.413",
       "platform_name": "Steam",
       "metacritic": 83,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 54217,
     "giantbomb_name": "Superhot VR",
@@ -30387,7 +29375,7 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 179,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 25632
@@ -30414,7 +29402,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 66784,
     "giantbomb_name": "Spider-Man: Homecoming - Virtual Reality Experience",
@@ -30431,7 +29419,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": "2017-07-08 00:00:00.0",
       "id": 285,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 43066
@@ -30458,7 +29446,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 53080,
     "giantbomb_name": "The Lab",
@@ -30475,7 +29463,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": "2017-07-09 00:00:00.0",
       "id": 181,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 33308
@@ -30504,7 +29492,7 @@ export const MockGames = [
       "metacritic_matched": "2017-07-12 04:49:56.749",
       "platform_name": "PS4",
       "metacritic": 79,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 39358,
     "giantbomb_name": "Until Dawn",
@@ -30521,7 +29509,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 37,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 7609
@@ -30550,7 +29538,7 @@ export const MockGames = [
       "metacritic_matched": "2017-07-14 04:48:50.431",
       "platform_name": "Steam",
       "metacritic": 64,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 45403,
     "giantbomb_name": "Adr1ft",
@@ -30567,7 +29555,7 @@ export const MockGames = [
       "rating": 88,
       "finished_date": null,
       "id": 240,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 8654
@@ -30596,7 +29584,7 @@ export const MockGames = [
       "metacritic_matched": "2017-07-19 17:20:39.495",
       "platform_name": "Steam",
       "metacritic": 79,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 48488,
     "giantbomb_name": "Jotun",
@@ -30613,7 +29601,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 61,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 18149
@@ -30637,7 +29625,22 @@ export const MockGames = [
     "steamid": 225540,
     "date_added": "2017-07-26 04:45:33.892",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2017-07-26 04:48:17.352",
+        "platform_name": "Steam",
+        "metacritic": 74,
+        "id": 3
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2017-08-03 04:57:23.961",
+        "platform_name": "PS4",
+        "metacritic": 73,
+        "id": 5
+      }
+    ],
     "giantbomb_id": 48207,
     "giantbomb_name": "Just Cause 3",
     "igdb_poster": "cnxdzlqwpv5dtvoxq90n",
@@ -30653,7 +29656,10 @@ export const MockGames = [
       "rating": 50,
       "finished_date": null,
       "id": 1374,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 5}
+      ],
       "person_id": 1
     }],
     "igdb_id": 8187
@@ -30700,86 +29706,6 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": 90,
-    "title": "Bayonetta",
-    "platform": "Xbox 360",
-    "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/1124551-gb.png",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 966,
-    "howlong_extras": 14.8833,
-    "id": 714,
-    "metacritic_matched": "2017-08-02 04:55:37.989",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Bayonetta",
-    "steamid": null,
-    "date_added": "2017-08-02 00:59:49.508",
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 20710,
-    "giantbomb_name": "Bayonetta",
-    "igdb_poster": "co1p92",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2017-08-02 00:59:49.508",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": 80.4,
-      "finished_date": null,
-      "id": 163,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 2136
-  },
-  {
-    "timetotal": null,
-    "metacritic": 73,
-    "title": "Just Cause 3",
-    "platform": "PS4",
-    "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2744923-just%20cause%203%20cover%20v1.jpg",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 26404,
-    "howlong_extras": 31,
-    "id": 715,
-    "metacritic_matched": "2017-08-03 04:57:23.961",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Just Cause 3",
-    "steamid": null,
-    "date_added": "2017-08-02 13:55:54.459",
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 48207,
-    "giantbomb_name": "Just Cause 3",
-    "igdb_poster": "cnxdzlqwpv5dtvoxq90n",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2017-08-02 13:55:54.459",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": 71,
-      "finished_date": null,
-      "id": 640,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 8187
-  },
-  {
-    "timetotal": null,
     "metacritic": 71,
     "title": "Assassin's Creed Freedom Cry",
     "platform": "PS4",
@@ -30802,7 +29728,7 @@ export const MockGames = [
       "metacritic_matched": "2018-04-27 03:35:58.829",
       "platform_name": "PS4",
       "metacritic": 71,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 45343,
     "giantbomb_name": "Assassin's Creed: Freedom Cry",
@@ -30819,7 +29745,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 487,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 3775
@@ -30848,7 +29774,7 @@ export const MockGames = [
       "metacritic_matched": "2017-08-03 04:57:25.506",
       "platform_name": "PS4",
       "metacritic": 80,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 48935,
     "giantbomb_name": "Downwell",
@@ -30865,7 +29791,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 195,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 13677
@@ -30894,7 +29820,7 @@ export const MockGames = [
       "metacritic_matched": "2017-08-03 04:57:27.16",
       "platform_name": "PS4",
       "metacritic": 65,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 41717,
     "giantbomb_name": "Super Motherload",
@@ -30911,7 +29837,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 536,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 20078
@@ -30986,7 +29912,7 @@ export const MockGames = [
       "metacritic_matched": "2018-04-25 03:33:24.074",
       "platform_name": "Steam",
       "metacritic": 75,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 54668,
     "giantbomb_name": "Rick and Morty: Virtual Rick-ality",
@@ -31003,7 +29929,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": "2020-04-20 18:48:18.151",
       "id": 170,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 20459
@@ -31032,7 +29958,7 @@ export const MockGames = [
       "metacritic_matched": "2017-08-12 04:51:00.143",
       "platform_name": "Steam",
       "metacritic": 61,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 44656,
     "giantbomb_name": "No Man's Sky",
@@ -31049,7 +29975,7 @@ export const MockGames = [
       "rating": 95,
       "finished_date": null,
       "id": 134,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3225
@@ -31073,7 +29999,22 @@ export const MockGames = [
     "steamid": 493200,
     "date_added": "2017-08-17 04:45:31.367",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2017-08-17 05:09:54.982",
+        "platform_name": "Steam",
+        "metacritic": 78,
+        "id": 3
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2018-02-09 03:49:47.046",
+        "platform_name": "PS4",
+        "metacritic": 80,
+        "id": 5
+      }
+    ],
     "giantbomb_id": 43611,
     "giantbomb_name": "RiME",
     "igdb_poster": "co1rcl",
@@ -31089,7 +30030,10 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 135,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 5}
+      ],
       "person_id": 1
     }],
     "igdb_id": 7621
@@ -31174,7 +30118,7 @@ export const MockGames = [
       "metacritic_matched": "2017-08-21 01:37:29.93",
       "platform_name": "Steam",
       "metacritic": 86,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 49524,
     "giantbomb_name": "Total War: Warhammer",
@@ -31191,7 +30135,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 138,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9898
@@ -31218,7 +30162,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 55247,
     "giantbomb_name": "Pan-Pan",
@@ -31235,7 +30179,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 136,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 23352
@@ -31262,7 +30206,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 55561,
     "giantbomb_name": "Vanishing Realms",
@@ -31279,7 +30223,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 137,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 18694
@@ -31308,7 +30252,7 @@ export const MockGames = [
       "metacritic_matched": "2017-12-25 03:49:37.32",
       "platform_name": "Steam",
       "metacritic": 79,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 59903,
     "giantbomb_name": "Life Is Strange: Before the Storm",
@@ -31325,7 +30269,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 159,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 29004
@@ -31354,7 +30298,7 @@ export const MockGames = [
       "metacritic_matched": "2017-09-07 03:46:00.741",
       "platform_name": "PS4",
       "metacritic": 75,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 45277,
     "giantbomb_name": "Strike Vector",
@@ -31371,7 +30315,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 637,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 22798
@@ -31400,7 +30344,7 @@ export const MockGames = [
       "metacritic_matched": "2017-09-07 03:46:01.833",
       "platform_name": "PS4",
       "metacritic": 61,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 45908,
     "giantbomb_name": "We Are Doomed",
@@ -31417,7 +30361,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 539,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 20894
@@ -31446,7 +30390,7 @@ export const MockGames = [
       "metacritic_matched": "2017-09-07 03:46:03.011",
       "platform_name": "PS4",
       "metacritic": 72,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 37243,
     "giantbomb_name": "Hatoful Boyfriend",
@@ -31463,7 +30407,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 537,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 8874
@@ -31580,7 +30524,7 @@ export const MockGames = [
       "metacritic_matched": "2017-09-08 03:46:19.596",
       "platform_name": "Steam",
       "metacritic": 74,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -31597,7 +30541,7 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 1459,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19457
@@ -31626,7 +30570,7 @@ export const MockGames = [
       "metacritic_matched": "2017-09-20 03:46:32.241",
       "platform_name": "Steam",
       "metacritic": 77,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 48325,
     "giantbomb_name": "Tacoma",
@@ -31644,7 +30588,7 @@ export const MockGames = [
         "rating": 93.9,
         "finished_date": "2018-03-02 21:10:28.030697",
         "id": 148,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 1
       },
       {
@@ -31658,7 +30602,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 807,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 5
       }
     ],
@@ -31683,7 +30627,22 @@ export const MockGames = [
     "steamid": 460790,
     "date_added": "2017-09-20 13:58:02.756",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2017-08-02 04:55:37.989",
+        "platform_name": "Xbox 360",
+        "metacritic": 90,
+        "id": 9
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2017-09-23 03:44:53.794",
+        "platform_name": "Steam",
+        "metacritic": 90,
+        "id": 3
+      }
+    ],
     "giantbomb_id": 20710,
     "giantbomb_name": "Bayonetta",
     "igdb_poster": "co1p92",
@@ -31699,7 +30658,10 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 210,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 9}
+      ],
       "person_id": 1
     }],
     "igdb_id": 2136
@@ -31728,7 +30690,7 @@ export const MockGames = [
       "metacritic_matched": "2017-09-29 03:53:32.535",
       "platform_name": "Steam",
       "metacritic": 84,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 53436,
     "giantbomb_name": "Pyre",
@@ -31746,7 +30708,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 793,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 4
       },
       {
@@ -31760,7 +30722,7 @@ export const MockGames = [
         "rating": 84,
         "finished_date": null,
         "id": 146,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 1
       }
     ],
@@ -31790,7 +30752,7 @@ export const MockGames = [
       "metacritic_matched": "2017-10-01 03:44:24.768",
       "platform_name": "Steam",
       "metacritic": 78,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 32326,
     "giantbomb_name": "Tropico 4",
@@ -31807,7 +30769,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 23,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2595
@@ -31882,7 +30844,7 @@ export const MockGames = [
       "metacritic_matched": "2017-10-12 03:45:18.654",
       "platform_name": "Steam",
       "metacritic": 86,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 54614,
     "giantbomb_name": "Raw Data",
@@ -31899,7 +30861,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 542,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19169
@@ -31928,7 +30890,7 @@ export const MockGames = [
       "metacritic_matched": "2017-10-09 03:46:00.974",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 58573,
     "giantbomb_name": "Middle-earth: Shadow of War",
@@ -31945,7 +30907,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 234,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 27421
@@ -31974,7 +30936,7 @@ export const MockGames = [
       "metacritic_matched": "2017-10-17 03:49:58.303",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 49088,
     "giantbomb_name": "Ashes of the Singularity",
@@ -31991,7 +30953,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 549,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 25741
@@ -32020,7 +30982,7 @@ export const MockGames = [
       "metacritic_matched": "2017-11-01 03:46:37.263",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 41792,
     "giantbomb_name": "Torment: Tides Of Numenera",
@@ -32037,7 +30999,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 706,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 2004
@@ -32064,7 +31026,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 57420,
     "giantbomb_name": "Please, Don't Touch Anything 3D",
@@ -32081,7 +31043,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 166,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 31235
@@ -32108,7 +31070,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 60812,
     "giantbomb_name": "The First Tree",
@@ -32125,7 +31087,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 566,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 20909
@@ -32152,7 +31114,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 65666,
     "giantbomb_name": "Sentience: The Android's Tale",
@@ -32169,7 +31131,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 545,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 36631
@@ -32196,7 +31158,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Switch",
-      "id": 3
+      "id": 4
     }],
     "giantbomb_id": 56733,
     "giantbomb_name": "Super Mario Odyssey",
@@ -32213,7 +31175,7 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 655,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 26758
@@ -32242,7 +31204,7 @@ export const MockGames = [
       "metacritic_matched": "2017-11-13 03:52:08.47",
       "platform_name": "PS4",
       "metacritic": 71,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 51735,
     "giantbomb_name": "Bound",
@@ -32259,7 +31221,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 555,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 14790
@@ -32288,7 +31250,7 @@ export const MockGames = [
       "metacritic_matched": "2017-11-13 03:52:10.128",
       "platform_name": "PS4",
       "metacritic": 72,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 51355,
     "giantbomb_name": "Until Dawn: Rush of Blood",
@@ -32305,7 +31267,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 560,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 14366
@@ -32334,7 +31296,7 @@ export const MockGames = [
       "metacritic_matched": "2017-11-13 03:52:11.512",
       "platform_name": "PS4",
       "metacritic": 62,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 45386,
     "giantbomb_name": "Worms Battlegrounds",
@@ -32351,7 +31313,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 557,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 8967
@@ -32378,7 +31340,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 53724,
     "giantbomb_name": "Dungeon Punks",
@@ -32395,7 +31357,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 642,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 32021
@@ -32422,7 +31384,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 60771,
     "giantbomb_name": "The Jackbox Party Pack 4",
@@ -32439,7 +31401,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 215,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 28213
@@ -32468,7 +31430,7 @@ export const MockGames = [
       "metacritic_matched": "2017-11-24 03:44:18.143",
       "platform_name": "Steam",
       "metacritic": 84,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 53659,
     "giantbomb_name": "OneShot",
@@ -32485,7 +31447,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 554,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 23181
@@ -32514,7 +31476,7 @@ export const MockGames = [
       "metacritic_matched": "2017-11-24 03:44:19.668",
       "platform_name": "Steam",
       "metacritic": 66,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 53376,
     "giantbomb_name": "This Is the Police",
@@ -32531,7 +31493,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 558,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 11423
@@ -32558,7 +31520,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 55619,
     "giantbomb_name": "VR Ping Pong",
@@ -32575,7 +31537,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 207,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 21602
@@ -32602,7 +31564,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 48372,
     "giantbomb_name": "Luna",
@@ -32619,7 +31581,7 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 435,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 43166
@@ -32646,7 +31608,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 44063,
     "giantbomb_name": "Jazzpunk",
@@ -32663,7 +31625,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 5,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 52242
@@ -32690,7 +31652,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 37963,
     "giantbomb_name": "Republique",
@@ -32707,7 +31669,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 53,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 17719
@@ -32734,7 +31696,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 59951,
     "giantbomb_name": "Sparc",
@@ -32751,7 +31713,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 165,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 27430
@@ -32778,7 +31740,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 43609,
     "giantbomb_name": "EVE: Valkyrie",
@@ -32795,7 +31757,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 59,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 68444
@@ -32824,7 +31786,7 @@ export const MockGames = [
       "metacritic_matched": "2017-12-06 03:43:58.88",
       "platform_name": "Steam",
       "metacritic": 79,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 59905,
     "giantbomb_name": "Doom VFR",
@@ -32841,7 +31803,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 149,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 37031
@@ -32870,7 +31832,7 @@ export const MockGames = [
       "metacritic_matched": "2017-12-07 05:23:54.993",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 44296,
     "giantbomb_name": "Alien: Isolation",
@@ -32887,7 +31849,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 755,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 4754
@@ -32914,7 +31876,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 66485,
     "giantbomb_name": "Star Wars: Droid Repair Bay",
@@ -32931,7 +31893,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": "2018-08-07 17:00:00.0",
       "id": 225,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 76946
@@ -33004,7 +31966,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 60716,
     "giantbomb_name": "theBlu",
@@ -33022,7 +31984,7 @@ export const MockGames = [
         "rating": 80,
         "finished_date": "2020-04-20 18:47:20.958",
         "id": 157,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 1
       },
       {
@@ -33036,7 +31998,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 794,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 4
       }
     ],
@@ -33064,7 +32026,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 66159,
     "giantbomb_name": "Violet Cycle",
@@ -33081,7 +32043,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 40,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 81245
@@ -33108,7 +32070,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 48999,
     "giantbomb_name": "Velocibox",
@@ -33125,7 +32087,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 556,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 15548
@@ -33152,7 +32114,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 52471,
     "giantbomb_name": "Zombie Kill of the Week - Reborn",
@@ -33169,7 +32131,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 153,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9307
@@ -33198,7 +32160,7 @@ export const MockGames = [
       "metacritic_matched": "2017-12-26 03:49:03.479",
       "platform_name": "Steam",
       "metacritic": 78,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 57911,
     "giantbomb_name": "DiRT 4",
@@ -33215,7 +32177,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 158,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 26948
@@ -33244,7 +32206,7 @@ export const MockGames = [
       "metacritic_matched": "2018-01-04 03:49:20.232",
       "platform_name": "Steam",
       "metacritic": 55,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 46608,
     "giantbomb_name": "The Assembly",
@@ -33261,7 +32223,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 150,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 20787
@@ -33290,7 +32252,7 @@ export const MockGames = [
       "metacritic_matched": "2018-01-04 03:49:25.078",
       "platform_name": "Steam",
       "metacritic": 88,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 44986,
     "giantbomb_name": "Night in the Woods",
@@ -33308,7 +32270,7 @@ export const MockGames = [
         "rating": 96,
         "finished_date": null,
         "id": 771,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 2
       },
       {
@@ -33322,7 +32284,7 @@ export const MockGames = [
         "rating": 90,
         "finished_date": null,
         "id": 565,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 1
       }
     ],
@@ -33350,7 +32312,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 46572,
     "giantbomb_name": "The Talos Principle",
@@ -33367,7 +32329,7 @@ export const MockGames = [
       "rating": 89,
       "finished_date": null,
       "id": 449,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 36775
@@ -33396,7 +32358,7 @@ export const MockGames = [
       "metacritic_matched": "2018-01-06 03:51:42.533",
       "platform_name": "PS4",
       "metacritic": 68,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 57215,
     "giantbomb_name": "Starblood Arena",
@@ -33413,7 +32375,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 465,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 26231
@@ -33442,7 +32404,7 @@ export const MockGames = [
       "metacritic_matched": "2018-01-06 03:51:47.457",
       "platform_name": "PS4",
       "metacritic": 84,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 49379,
     "giantbomb_name": "Deus Ex: Mankind Divided",
@@ -33459,56 +32421,10 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 757,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 9498
-  },
-  {
-    "timetotal": null,
-    "metacritic": 68,
-    "title": "Batman: The Telltale Series",
-    "platform": "PS4",
-    "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2948216-box_batmantts.png",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 38801,
-    "howlong_extras": 9,
-    "id": 774,
-    "metacritic_matched": "2018-01-06 03:51:49.081",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Batman: The Telltale Series",
-    "steamid": null,
-    "date_added": "2018-01-05 22:29:36.219",
-    "metacritic_page": true,
-    "availablePlatforms": [{
-      "metacritic_page": true,
-      "metacritic_matched": "2018-01-06 03:51:49.081",
-      "platform_name": "PS4",
-      "metacritic": 68,
-      "id": 11
-    }],
-    "giantbomb_id": 51726,
-    "giantbomb_name": "Batman: The Telltale Series",
-    "igdb_poster": "tokrvdhnw1kjbmdkjbmz",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2018-01-05 22:29:36.219",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 641,
-      "myPlatforms": [{"id": 11}],
-      "person_id": 1
-    }],
-    "igdb_id": 14746
   },
   {
     "timetotal": null,
@@ -33534,7 +32450,7 @@ export const MockGames = [
       "metacritic_matched": "2018-01-06 03:51:50.721",
       "platform_name": "PS4",
       "metacritic": 72,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 46461,
     "giantbomb_name": "Psycho-Pass: Mandatory Happiness",
@@ -33551,7 +32467,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 543,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 23849
@@ -33580,7 +32496,7 @@ export const MockGames = [
       "metacritic_matched": "2018-01-06 03:51:53.481",
       "platform_name": "PS4",
       "metacritic": 52,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 49546,
     "giantbomb_name": "Uncanny Valley",
@@ -33597,7 +32513,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 544,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 10140
@@ -33754,7 +32670,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 64692,
     "giantbomb_name": "Blade Runner 9732",
@@ -33771,7 +32687,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": "2019-07-06 00:00:00.0",
       "id": 19,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 80854
@@ -33798,7 +32714,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -33815,7 +32731,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 466,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 35775
@@ -33842,7 +32758,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 61444,
     "giantbomb_name": "VRChat",
@@ -33859,7 +32775,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 206,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 33615
@@ -33886,7 +32802,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 54721,
     "giantbomb_name": "Rec Room",
@@ -33903,7 +32819,7 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 236,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 32617
@@ -33932,7 +32848,7 @@ export const MockGames = [
       "metacritic_matched": "2018-01-26 03:47:36.863",
       "platform_name": "Steam",
       "metacritic": 87,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 27668,
     "giantbomb_name": "The Witness",
@@ -33949,7 +32865,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 90,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 5601
@@ -33978,7 +32894,7 @@ export const MockGames = [
       "metacritic_matched": "2018-02-09 03:49:45.402",
       "platform_name": "PS4",
       "metacritic": 54,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 41687,
     "giantbomb_name": "Knack",
@@ -33995,50 +32911,10 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 568,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 2957
-  },
-  {
-    "timetotal": null,
-    "metacritic": 80,
-    "title": "RiME",
-    "platform": "PS4",
-    "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2940457-rime%20v3.jpg",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 20064,
-    "howlong_extras": 6.5,
-    "id": 786,
-    "metacritic_matched": "2018-02-09 03:49:47.046",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Rime",
-    "steamid": null,
-    "date_added": "2018-02-08 05:32:20.017",
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 43611,
-    "giantbomb_name": "RiME",
-    "igdb_poster": "co1rcl",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2018-02-08 05:32:20.017",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 574,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 7621
   },
   {
     "timetotal": null,
@@ -34064,7 +32940,7 @@ export const MockGames = [
       "metacritic_matched": "2018-02-09 03:49:47.868",
       "platform_name": "PS4",
       "metacritic": 78,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 49888,
     "giantbomb_name": "Grand Kingdom",
@@ -34081,7 +32957,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 570,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 19163
@@ -34202,7 +33078,7 @@ export const MockGames = [
       "metacritic_matched": "2018-02-09 03:49:52.935",
       "platform_name": "Xbox One",
       "metacritic": 74,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 42610,
     "giantbomb_name": "Shadow Warrior",
@@ -34219,7 +33095,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 227,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 6057
@@ -34288,7 +33164,7 @@ export const MockGames = [
       "metacritic_matched": "2018-03-13 03:33:13.476",
       "platform_name": "PS4",
       "metacritic": 92,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 46569,
     "giantbomb_name": "Bloodborne",
@@ -34305,7 +33181,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 643,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 7334
@@ -34334,7 +33210,7 @@ export const MockGames = [
       "metacritic_matched": "2018-03-23 03:33:55.326",
       "platform_name": "PS4",
       "metacritic": 85,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 48727,
     "giantbomb_name": "Ratchet & Clank",
@@ -34351,7 +33227,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 344,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 11065
@@ -34378,7 +33254,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 50692,
     "giantbomb_name": "Bombing Busters",
@@ -34395,7 +33271,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 569,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 52145
@@ -34422,7 +33298,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 44112,
     "giantbomb_name": "Claire",
@@ -34439,7 +33315,7 @@ export const MockGames = [
       "rating": 67,
       "finished_date": null,
       "id": 666,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 23508
@@ -34468,7 +33344,7 @@ export const MockGames = [
       "metacritic_matched": "2018-03-13 03:33:18.84",
       "platform_name": "PS4",
       "metacritic": 52,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 43790,
     "giantbomb_name": "Mighty No. 9",
@@ -34485,7 +33361,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 28,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 5327
@@ -34558,7 +33434,7 @@ export const MockGames = [
       "metacritic_matched": "2018-04-09 03:37:20.422",
       "platform_name": "PS4",
       "metacritic": 69,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 42927,
     "giantbomb_name": "Mad Max",
@@ -34575,7 +33451,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 464,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 2552
@@ -34604,7 +33480,7 @@ export const MockGames = [
       "metacritic_matched": "2018-04-09 03:37:21.851",
       "platform_name": "PS4",
       "metacritic": 81,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 49971,
     "giantbomb_name": "Trackmania Turbo",
@@ -34621,7 +33497,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 572,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 11172
@@ -34650,7 +33526,7 @@ export const MockGames = [
       "metacritic_matched": "2018-04-09 03:37:22.999",
       "platform_name": "PS4",
       "metacritic": 61,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 60870,
     "giantbomb_name": "99Vidas",
@@ -34667,7 +33543,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 229,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 26678
@@ -34696,7 +33572,7 @@ export const MockGames = [
       "metacritic_matched": "2018-04-09 03:37:24.157",
       "platform_name": "PS4",
       "metacritic": 54,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 47394,
     "giantbomb_name": "In Space We Brawl",
@@ -34713,7 +33589,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 419,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 20919
@@ -34742,7 +33618,7 @@ export const MockGames = [
       "metacritic_matched": "2018-04-27 03:36:55.651",
       "platform_name": "PS4",
       "metacritic": 44,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 46990,
     "giantbomb_name": "Q*bert: Rebooted",
@@ -34759,7 +33635,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 573,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 17158
@@ -34834,7 +33710,7 @@ export const MockGames = [
       "metacritic_matched": "2018-04-16 03:37:11.15",
       "platform_name": "Steam",
       "metacritic": 84,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 41173,
     "giantbomb_name": "Gorogoa",
@@ -34852,7 +33728,7 @@ export const MockGames = [
         "rating": 86,
         "finished_date": null,
         "id": 553,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 1
       },
       {
@@ -34866,7 +33742,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 801,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 4
       }
     ],
@@ -34894,7 +33770,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Switch",
-      "id": 3
+      "id": 4
     }],
     "giantbomb_id": 57698,
     "giantbomb_name": "Snipperclips: Cut It Out, Together!",
@@ -34912,7 +33788,7 @@ export const MockGames = [
         "rating": 85,
         "finished_date": null,
         "id": 100,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{"id": 4}],
         "person_id": 1
       },
       {
@@ -34926,7 +33802,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 792,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{"id": 4}],
         "person_id": 4
       },
       {
@@ -34940,7 +33816,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 805,
-        "myPlatforms": [{"id": 3}],
+        "myPlatforms": [{"id": 4}],
         "person_id": 5
       }
     ],
@@ -34970,7 +33846,7 @@ export const MockGames = [
       "metacritic_matched": "2018-04-20 03:41:43.457",
       "platform_name": "Xbox One",
       "metacritic": 79,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 49077,
     "giantbomb_name": "Rock Band 4",
@@ -34987,7 +33863,7 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 235,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 10128
@@ -35016,7 +33892,7 @@ export const MockGames = [
       "metacritic_matched": "2018-04-20 03:41:45.918",
       "platform_name": "Xbox One",
       "metacritic": 63,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 49962,
     "giantbomb_name": "ReCore",
@@ -35033,7 +33909,7 @@ export const MockGames = [
       "rating": 85.1,
       "finished_date": null,
       "id": 203,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 11131
@@ -35062,7 +33938,7 @@ export const MockGames = [
       "metacritic_matched": "2018-04-20 03:41:47.243",
       "platform_name": "Steam",
       "metacritic": 85,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 44425,
     "giantbomb_name": "Thumper",
@@ -35079,7 +33955,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 705,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 10960
@@ -35108,7 +33984,7 @@ export const MockGames = [
       "metacritic_matched": "2018-04-20 03:41:48.636",
       "platform_name": "Steam",
       "metacritic": 74,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 51750,
     "giantbomb_name": "Eagle Flight",
@@ -35125,7 +34001,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 209,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 14765
@@ -35154,7 +34030,7 @@ export const MockGames = [
       "metacritic_matched": "2018-04-20 03:41:50.537",
       "platform_name": "Steam",
       "metacritic": 78,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 49833,
     "giantbomb_name": "Fallout 4",
@@ -35171,7 +34047,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 208,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 27922
@@ -35200,7 +34076,7 @@ export const MockGames = [
       "metacritic_matched": "2018-04-21 03:41:32.683",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 33394,
     "giantbomb_name": "The Elder Scrolls V: Skyrim",
@@ -35217,7 +34093,7 @@ export const MockGames = [
       "rating": 93,
       "finished_date": null,
       "id": 220,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 37088
@@ -35281,7 +34157,13 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2018-05-07 18:18:07.161",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [{
+      "metacritic_page": true,
+      "metacritic_matched": "2018-05-08 03:34:58.1",
+      "platform_name": "PS4",
+      "metacritic": 94,
+      "id": 5
+    }],
     "giantbomb_id": 54229,
     "giantbomb_name": "God of War",
     "igdb_poster": "co1r6u",
@@ -35297,7 +34179,7 @@ export const MockGames = [
       "rating": 89,
       "finished_date": null,
       "id": 434,
-      "myPlatforms": [],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 19560
@@ -35326,7 +34208,7 @@ export const MockGames = [
       "metacritic_matched": "2018-05-15 03:27:30.097",
       "platform_name": "PS4",
       "metacritic": 72,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 38541,
     "giantbomb_name": "Beyond: Two Souls",
@@ -35343,50 +34225,10 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 645,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 1342
-  },
-  {
-    "timetotal": null,
-    "metacritic": 90,
-    "title": "Rayman Legends",
-    "platform": "PS4",
-    "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2539437-raymanlegendsclean.jpg",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 12655,
-    "howlong_extras": 14,
-    "id": 815,
-    "metacritic_matched": "2018-05-15 03:27:32.252",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Rayman Legends",
-    "steamid": null,
-    "date_added": "2018-05-15 00:14:19.974",
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 38141,
-    "giantbomb_name": "Rayman Legends",
-    "igdb_poster": "co1rck",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2018-05-15 00:14:19.974",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": 73,
-      "finished_date": null,
-      "id": 576,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 1968
   },
   {
     "timetotal": null,
@@ -35412,7 +34254,7 @@ export const MockGames = [
       "metacritic_matched": "2018-05-15 03:27:33.63",
       "platform_name": "PS4",
       "metacritic": 64,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 44976,
     "giantbomb_name": "King Oddball",
@@ -35429,7 +34271,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 644,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 20079
@@ -35548,7 +34390,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 60398,
     "giantbomb_name": "Batman: The Enemy Within - The Telltale Series",
@@ -35565,7 +34407,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 27,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 51525
@@ -35640,7 +34482,7 @@ export const MockGames = [
       "metacritic_matched": "2018-06-07 03:24:49.114",
       "platform_name": "PS4",
       "metacritic": 79,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 42915,
     "giantbomb_name": "Trials Fusion",
@@ -35657,7 +34499,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 411,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 3191
@@ -35710,46 +34552,6 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": 87,
-    "title": "XCOM 2",
-    "platform": "PS4",
-    "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2821995-xcom2box.jpg",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 28279,
-    "howlong_extras": 40.1,
-    "id": 823,
-    "metacritic_matched": "2018-06-07 03:24:50.656",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "XCOM 2",
-    "steamid": null,
-    "date_added": "2018-06-05 16:46:48.393",
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 49817,
-    "giantbomb_name": "XCOM 2",
-    "igdb_poster": "co1mvj",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2018-06-05 16:46:48.393",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": 50,
-      "finished_date": null,
-      "id": 412,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 10919
-  },
-  {
-    "timetotal": null,
     "metacritic": null,
     "title": "The Walking Dead: The Final Season",
     "platform": "Steam",
@@ -35770,7 +34572,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 60396,
     "giantbomb_name": "The Walking Dead - The Final Season",
@@ -35787,7 +34589,7 @@ export const MockGames = [
       "rating": 96,
       "finished_date": null,
       "id": 392,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 51524
@@ -35816,7 +34618,7 @@ export const MockGames = [
       "metacritic_matched": "2018-07-04 03:21:52.862",
       "platform_name": "Steam",
       "metacritic": 73,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 49158,
     "giantbomb_name": "Yooka-Laylee",
@@ -35833,7 +34635,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 79,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 10031
@@ -35862,7 +34664,7 @@ export const MockGames = [
       "metacritic_matched": "2018-06-23 03:21:41.89",
       "platform_name": "Steam",
       "metacritic": 62,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 50254,
     "giantbomb_name": "Cook, Serve, Delicious! 2!!",
@@ -35879,7 +34681,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 217,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 23236
@@ -35906,7 +34708,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 37241,
     "giantbomb_name": "Acceleration Of SUGURI 2",
@@ -35923,7 +34725,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 48,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 25702
@@ -35952,7 +34754,7 @@ export const MockGames = [
       "metacritic_matched": "2018-06-23 03:21:44.595",
       "platform_name": "Steam",
       "metacritic": 72,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 54181,
     "giantbomb_name": "Styx: Shards of Darkness",
@@ -35969,7 +34771,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 219,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 13554
@@ -35998,7 +34800,7 @@ export const MockGames = [
       "metacritic_matched": "2018-06-23 03:21:46.134",
       "platform_name": "Steam",
       "metacritic": 78,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 60874,
     "giantbomb_name": "Ken Follett's The Pillars of the Earth",
@@ -36015,7 +34817,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 142,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19297
@@ -36042,7 +34844,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 54995,
     "giantbomb_name": "Bear With Me",
@@ -36059,7 +34861,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 282,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 84023
@@ -36086,7 +34888,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 62924,
     "giantbomb_name": "Operation Apex",
@@ -36103,7 +34905,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 72,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 75498
@@ -36132,7 +34934,7 @@ export const MockGames = [
       "metacritic_matched": "2018-06-23 03:24:50.396",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 5242,
     "giantbomb_name": "Icewind Dale",
@@ -36149,7 +34951,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 493,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 36240
@@ -36178,7 +34980,7 @@ export const MockGames = [
       "metacritic_matched": "2018-06-23 03:24:52.008",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 55211,
     "giantbomb_name": "Little Nightmares",
@@ -36195,7 +34997,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 86,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9174
@@ -36224,7 +35026,7 @@ export const MockGames = [
       "metacritic_matched": "2018-06-23 03:24:53.274",
       "platform_name": "Steam",
       "metacritic": 68,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 51766,
     "giantbomb_name": "Job Simulator: The 2050 Archives",
@@ -36241,7 +35043,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 52,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 12596
@@ -36270,7 +35072,7 @@ export const MockGames = [
       "metacritic_matched": "2018-06-28 03:24:14.273",
       "platform_name": "Steam",
       "metacritic": 82,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 54211,
     "giantbomb_name": "Prey",
@@ -36287,7 +35089,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 350,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19531
@@ -36316,7 +35118,7 @@ export const MockGames = [
       "metacritic_matched": "2018-06-23 03:24:56.074",
       "platform_name": "Steam",
       "metacritic": 77,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 60623,
     "giantbomb_name": "Battlestar Galactica Deadlock",
@@ -36333,7 +35135,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 224,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 28842
@@ -36362,7 +35164,7 @@ export const MockGames = [
       "metacritic_matched": "2018-06-24 03:25:22.924",
       "platform_name": "Steam",
       "metacritic": 83,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 47363,
     "giantbomb_name": "Hellblade: Senua's Sacrifice",
@@ -36379,7 +35181,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 712,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7603
@@ -36406,7 +35208,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 61456,
     "giantbomb_name": "Catan VR",
@@ -36423,7 +35225,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 222,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 56868
@@ -36492,7 +35294,7 @@ export const MockGames = [
       "metacritic_matched": "2018-07-17 03:22:59.079",
       "platform_name": "PS4",
       "metacritic": 74,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 47457,
     "giantbomb_name": "Extreme Exorcism",
@@ -36509,50 +35311,10 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 495,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 20026
-  },
-  {
-    "timetotal": null,
-    "metacritic": 69,
-    "title": "Absolver",
-    "platform": "PS4",
-    "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2858277-5905205749-heade.jpg",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 38126,
-    "howlong_extras": 5.5,
-    "id": 873,
-    "metacritic_matched": "2018-07-17 03:23:01.153",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Absolver",
-    "steamid": null,
-    "date_added": "2018-07-16 20:04:57.507",
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 54110,
-    "giantbomb_name": "Absolver",
-    "igdb_poster": "co1mtm",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2018-07-16 20:04:57.507",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 160,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 19333
   },
   {
     "timetotal": null,
@@ -36576,7 +35338,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 69843,
     "giantbomb_name": "Space Overlords",
@@ -36593,7 +35355,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 255,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 25547
@@ -36622,7 +35384,7 @@ export const MockGames = [
       "metacritic_matched": "2018-07-20 03:22:43.404",
       "platform_name": "Steam",
       "metacritic": 74,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -36639,7 +35401,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 129,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 34269
@@ -36666,7 +35428,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 50431,
     "giantbomb_name": "Blackwake",
@@ -36683,7 +35445,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 66,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 14206
@@ -36712,7 +35474,7 @@ export const MockGames = [
       "metacritic_matched": "2018-07-21 03:23:00.583",
       "platform_name": "Steam",
       "metacritic": 83,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 45214,
     "giantbomb_name": "Hearts of Iron IV",
@@ -36729,7 +35491,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 141,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 15894
@@ -36758,7 +35520,7 @@ export const MockGames = [
       "metacritic_matched": "2018-07-20 03:22:47.398",
       "platform_name": "Steam",
       "metacritic": 64,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 55577,
     "giantbomb_name": "Serial Cleaner",
@@ -36775,7 +35537,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 535,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19450
@@ -36804,7 +35566,7 @@ export const MockGames = [
       "metacritic_matched": "2018-07-28 03:23:00.629",
       "platform_name": "Steam",
       "metacritic": 68,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 46499,
     "giantbomb_name": "Shiness: The Lightning Kingdom",
@@ -36821,7 +35583,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 131,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 15490
@@ -36845,7 +35607,22 @@ export const MockGames = [
     "steamid": 374040,
     "date_added": "2018-07-19 11:45:58.139",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2018-07-20 03:22:50.533",
+        "platform_name": "Steam",
+        "metacritic": 72,
+        "id": 3
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2019-04-04 20:57:02.0",
+        "platform_name": "PS4",
+        "metacritic": 71,
+        "id": 5
+      }
+    ],
     "giantbomb_id": 52974,
     "giantbomb_name": "Portal Knights",
     "igdb_poster": "c3gamebmgvlzdqcghvzp",
@@ -36861,7 +35638,10 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 58,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 5}
+      ],
       "person_id": 1
     }],
     "igdb_id": 20392
@@ -36888,7 +35668,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 46036,
     "giantbomb_name": "Interplanetary",
@@ -36905,7 +35685,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 65,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 17083
@@ -36932,7 +35712,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -36949,7 +35729,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 51,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 54506
@@ -36976,7 +35756,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -36993,7 +35773,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 49,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 32614
@@ -37022,7 +35802,7 @@ export const MockGames = [
       "metacritic_matched": "2018-08-21 03:24:07.571",
       "platform_name": "Steam",
       "metacritic": 88,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -37039,7 +35819,7 @@ export const MockGames = [
       "rating": 86,
       "finished_date": null,
       "id": 33,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 106107
@@ -37068,7 +35848,7 @@ export const MockGames = [
       "metacritic_matched": "2018-07-29 03:23:58.139",
       "platform_name": "Steam",
       "metacritic": 79,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 42389,
     "giantbomb_name": "A Hat in Time",
@@ -37085,7 +35865,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 579,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 6705
@@ -37114,7 +35894,7 @@ export const MockGames = [
       "metacritic_matched": "2018-07-30 03:34:31.651",
       "platform_name": "Steam",
       "metacritic": 75,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 58597,
     "giantbomb_name": "The Escapists 2",
@@ -37131,7 +35911,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 25,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 25653
@@ -37200,7 +35980,7 @@ export const MockGames = [
       "metacritic_matched": "2018-08-13 03:24:11.91",
       "platform_name": "Steam",
       "metacritic": 71,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 38206,
     "giantbomb_name": "The Elder Scrolls Online",
@@ -37217,7 +35997,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 1465,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1081
@@ -37292,7 +36072,7 @@ export const MockGames = [
       "metacritic_matched": "2018-08-28 03:25:22.73",
       "platform_name": "Steam",
       "metacritic": 70,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 56587,
     "giantbomb_name": "Sudden Strike 4",
@@ -37309,7 +36089,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 228,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 22399
@@ -37338,7 +36118,7 @@ export const MockGames = [
       "metacritic_matched": "2018-08-29 03:23:37.046",
       "platform_name": "Steam",
       "metacritic": 73,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 50438,
     "giantbomb_name": "Kona",
@@ -37355,7 +36135,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 230,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 14404
@@ -37384,7 +36164,7 @@ export const MockGames = [
       "metacritic_matched": "2018-08-28 03:25:27.799",
       "platform_name": "Steam",
       "metacritic": 76,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -37401,7 +36181,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 31,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 13204
@@ -37425,7 +36205,22 @@ export const MockGames = [
     "steamid": 378540,
     "date_added": "2018-08-28 01:58:28.54",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2018-08-29 03:23:32.112",
+        "platform_name": "Steam",
+        "metacritic": 72,
+        "id": 3
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2019-04-04 20:53:34.211",
+        "platform_name": "PS4",
+        "metacritic": 73,
+        "id": 5
+      }
+    ],
     "giantbomb_id": 50421,
     "giantbomb_name": "The Surge",
     "igdb_poster": "co1odu",
@@ -37441,7 +36236,10 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 99,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 5}
+      ],
       "person_id": 1
     }],
     "igdb_id": 11590
@@ -37468,7 +36266,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 62533,
     "giantbomb_name": "Forged Battalion",
@@ -37485,7 +36283,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 231,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 74528
@@ -37512,7 +36310,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 52220,
     "giantbomb_name": "Staxel",
@@ -37529,7 +36327,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 132,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 37294
@@ -37553,7 +36351,22 @@ export const MockGames = [
     "steamid": 312660,
     "date_added": "2018-09-06 09:51:34.01",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2018-09-26 03:24:57.743",
+        "platform_name": "Steam",
+        "metacritic": 78,
+        "id": 3
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2020-04-17 17:36:58.955",
+        "platform_name": "PS4",
+        "metacritic": 77,
+        "id": 5
+      }
+    ],
     "giantbomb_id": 52953,
     "giantbomb_name": "Sniper Elite 4",
     "igdb_poster": "co1ohp",
@@ -37569,7 +36382,10 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 413,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 5}
+      ],
       "person_id": 1
     }],
     "igdb_id": 18366
@@ -37598,7 +36414,7 @@ export const MockGames = [
       "metacritic_matched": "2018-09-26 03:23:22.53",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 49874,
     "giantbomb_name": "Tales of Berseria",
@@ -37615,7 +36431,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 62,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 18812
@@ -37642,7 +36458,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 57014,
     "giantbomb_name": "Minion Masters",
@@ -37659,7 +36475,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 152,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 27150
@@ -37688,7 +36504,7 @@ export const MockGames = [
       "metacritic_matched": "2018-10-05 03:26:02.884",
       "platform_name": "Steam",
       "metacritic": 78,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 53269,
     "giantbomb_name": "Hidden Folks",
@@ -37706,7 +36522,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 1426,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 4
       },
       {
@@ -37720,7 +36536,7 @@ export const MockGames = [
         "rating": null,
         "finished_date": null,
         "id": 414,
-        "myPlatforms": [{"id": 1}],
+        "myPlatforms": [{"id": 3}],
         "person_id": 1
       }
     ],
@@ -37750,7 +36566,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-08 07:43:21.123",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 46378,
     "giantbomb_name": "Battle Chef Brigade",
@@ -37767,7 +36583,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 696,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 23689
@@ -37796,7 +36612,7 @@ export const MockGames = [
       "metacritic_matched": "2018-10-11 03:25:45.764",
       "platform_name": "Steam",
       "metacritic": 77,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -37813,7 +36629,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 112,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 20329
@@ -37842,7 +36658,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:47:25.683",
       "platform_name": "Steam",
       "metacritic": 75,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 61324,
     "giantbomb_name": "Dungeons 3",
@@ -37859,7 +36675,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 143,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 27353
@@ -37950,7 +36766,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-08 07:43:10.258",
       "platform_name": "Steam",
       "metacritic": 66,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 34715,
     "giantbomb_name": "Sniper Elite V2",
@@ -37967,7 +36783,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 773,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3078
@@ -37996,7 +36812,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:43:04.823",
       "platform_name": "Steam",
       "metacritic": 76,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 17853,
     "giantbomb_name": "Sniper Elite",
@@ -38013,7 +36829,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 774,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 3077
@@ -38040,7 +36856,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -38057,7 +36873,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 775,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 978
@@ -38084,7 +36900,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 43583,
     "giantbomb_name": "7 Days to Die",
@@ -38101,7 +36917,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 776,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 5574
@@ -38130,7 +36946,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:43:17.982",
       "platform_name": "Steam",
       "metacritic": 87,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 48412,
     "giantbomb_name": "Hollow Knight",
@@ -38147,7 +36963,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 777,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 14593
@@ -38176,7 +36992,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:43:20.098",
       "platform_name": "Steam",
       "metacritic": 75,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 51300,
     "giantbomb_name": "Gremlins, Inc.",
@@ -38193,7 +37009,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 778,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 18394
@@ -38217,13 +37033,7 @@ export const MockGames = [
     "steamid": 236870,
     "date_added": "2018-11-08 17:10:23.702",
     "metacritic_page": true,
-    "availablePlatforms": [{
-      "metacritic_page": true,
-      "metacritic_matched": "2019-04-07 07:01:33.014",
-      "platform_name": "Steam",
-      "metacritic": 83,
-      "id": 1
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": null,
     "giantbomb_name": null,
     "igdb_poster": "co1nq3",
@@ -38239,7 +37049,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 779,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 11157
@@ -38268,7 +37078,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:42:53.666",
       "platform_name": "Steam",
       "metacritic": 61,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 50417,
     "giantbomb_name": "The Dwarves",
@@ -38285,7 +37095,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 780,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 13164
@@ -38314,7 +37124,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-07 07:01:29.999",
       "platform_name": "Steam",
       "metacritic": 73,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 35888,
     "giantbomb_name": "Hard Reset",
@@ -38331,7 +37141,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 781,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 532
@@ -38360,7 +37170,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:43:00.928",
       "platform_name": "Steam",
       "metacritic": 73,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -38377,7 +37187,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 782,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 17994
@@ -38406,7 +37216,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:44:25.123",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 53597,
     "giantbomb_name": "Zombie Night Terror",
@@ -38423,7 +37233,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 783,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9546
@@ -38452,7 +37262,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:42:46.189",
       "platform_name": "Steam",
       "metacritic": 76,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 48805,
     "giantbomb_name": "American Truck Simulator",
@@ -38469,7 +37279,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 784,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9667
@@ -38496,7 +37306,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -38513,7 +37323,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 785,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 34951
@@ -38542,7 +37352,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:44:07.755",
       "platform_name": "Steam",
       "metacritic": 76,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 54665,
     "giantbomb_name": "Old Man's Journey",
@@ -38559,7 +37369,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 786,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 21604
@@ -38588,7 +37398,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:44:30.868",
       "platform_name": "Steam",
       "metacritic": 69,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 65264,
     "giantbomb_name": "We Were Here Too",
@@ -38605,7 +37415,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 787,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 54486
@@ -38632,7 +37442,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 69447,
     "giantbomb_name": "The Jackbox Party Pack 5",
@@ -38649,50 +37459,10 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 809,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 96213
-  },
-  {
-    "timetotal": null,
-    "metacritic": null,
-    "title": "Conan Exiles - Testlive Client",
-    "platform": "Steam",
-    "giantbomb_medium_url": null,
-    "steam_cloud": null,
-    "logo": "d27cbd7391566bcd59dfd4e6af6e49db12180789",
-    "howlong_id": null,
-    "howlong_extras": null,
-    "id": 920,
-    "metacritic_matched": null,
-    "steam_title": "Conan Exiles - Testlive Client",
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": null,
-    "steamid": 931180,
-    "date_added": "2018-11-21 18:42:06.991",
-    "metacritic_page": false,
-    "availablePlatforms": [],
-    "giantbomb_id": null,
-    "giantbomb_name": null,
-    "igdb_poster": null,
-    "steam_page_gone": "2018-11-22 03:48:27.968",
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2018-11-21 18:42:07.073",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 810,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 16999
   },
   {
     "timetotal": null,
@@ -38718,7 +37488,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:43:42.186",
       "platform_name": "Steam",
       "metacritic": 87,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 46006,
     "giantbomb_name": "Subnautica",
@@ -38735,7 +37505,7 @@ export const MockGames = [
       "rating": 96,
       "finished_date": null,
       "id": 1354,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9254
@@ -38764,7 +37534,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-08 07:43:17.42",
       "platform_name": "Steam",
       "metacritic": 91,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 40796,
     "giantbomb_name": "Metal Gear Solid V: The Phantom Pain",
@@ -38781,7 +37551,7 @@ export const MockGames = [
       "rating": 66,
       "finished_date": null,
       "id": 1355,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 1985
@@ -38810,7 +37580,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:45:18.54",
       "platform_name": "Steam",
       "metacritic": 72,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 48522,
     "giantbomb_name": "Zombie Army Trilogy",
@@ -38827,7 +37597,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1356,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 20871
@@ -38856,7 +37626,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-07 07:02:00.49",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 39575,
     "giantbomb_name": "Metal Gear Solid V: Ground Zeroes",
@@ -38873,7 +37643,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1357,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 5328
@@ -38902,7 +37672,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:43:55.836",
       "platform_name": "Steam",
       "metacritic": 76,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 47395,
     "giantbomb_name": "Q.U.B.E. 2",
@@ -38919,7 +37689,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1358,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 36766
@@ -38948,7 +37718,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:45:50.91",
       "platform_name": "Steam",
       "metacritic": 85,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 49878,
     "giantbomb_name": "Mega Man Legacy Collection",
@@ -38965,7 +37735,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1359,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19874
@@ -38994,7 +37764,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:45:25.287",
       "platform_name": "Steam",
       "metacritic": 84,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 50138,
     "giantbomb_name": "Project CARS 2",
@@ -39011,7 +37781,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1360,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 26709
@@ -39038,7 +37808,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 53244,
     "giantbomb_name": "NeuroVoider",
@@ -39055,7 +37825,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1361,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 23581
@@ -39084,7 +37854,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:44:40.243",
       "platform_name": "Steam",
       "metacritic": 75,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 42460,
     "giantbomb_name": "Ghost of a Tale",
@@ -39101,7 +37871,7 @@ export const MockGames = [
       "rating": 82,
       "finished_date": null,
       "id": 1362,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7684
@@ -39130,7 +37900,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:45:32.314",
       "platform_name": "Steam",
       "metacritic": 79,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 54673,
     "giantbomb_name": "Wizard of Legend",
@@ -39147,7 +37917,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1363,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19935
@@ -39176,7 +37946,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:45:53.404",
       "platform_name": "Steam",
       "metacritic": 75,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 60561,
     "giantbomb_name": "The Darkside Detective",
@@ -39193,7 +37963,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1364,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 35283
@@ -39222,7 +37992,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:43:53.99",
       "platform_name": "Steam",
       "metacritic": 68,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 50641,
     "giantbomb_name": "Seven: The Days Long Gone",
@@ -39239,7 +38009,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1365,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 18908
@@ -39268,7 +38038,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:44:37.799",
       "platform_name": "Steam",
       "metacritic": 78,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 54218,
     "giantbomb_name": "Observer",
@@ -39285,7 +38055,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1366,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19545
@@ -39314,7 +38084,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:43:57.943",
       "platform_name": "Steam",
       "metacritic": 72,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 60412,
     "giantbomb_name": "Purrfect Date",
@@ -39331,7 +38101,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1367,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 54634
@@ -39360,7 +38130,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:43:24.488",
       "platform_name": "Steam",
       "metacritic": 90,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 58234,
     "giantbomb_name": "Into the Breach",
@@ -39377,7 +38147,7 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 1368,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 27117
@@ -39406,7 +38176,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:43:38.272",
       "platform_name": "Steam",
       "metacritic": 70,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 57796,
     "giantbomb_name": "Immortal Redneck",
@@ -39423,7 +38193,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1369,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 23188
@@ -39450,7 +38220,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 61272,
     "giantbomb_name": "Regions of Ruin",
@@ -39467,7 +38237,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1370,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 61884
@@ -39494,7 +38264,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 68932,
     "giantbomb_name": "Rapture Rejects",
@@ -39511,7 +38281,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1371,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 103327
@@ -39540,7 +38310,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-07 07:01:57.106",
       "platform_name": "Steam",
       "metacritic": 74,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 57732,
     "giantbomb_name": "Sundered",
@@ -39557,7 +38327,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1372,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 24428
@@ -39586,7 +38356,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:44:28.305",
       "platform_name": "Steam",
       "metacritic": 86,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 47551,
     "giantbomb_name": "Yakuza 0",
@@ -39603,7 +38373,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1373,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 11397
@@ -39632,7 +38402,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:44:33.838",
       "platform_name": "Steam",
       "metacritic": 73,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 39637,
     "giantbomb_name": "A Story About My Uncle",
@@ -39649,7 +38419,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1375,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 7211
@@ -39678,7 +38448,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:44:13.765",
       "platform_name": "Steam",
       "metacritic": 76,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 55713,
     "giantbomb_name": "Forgotton Anne",
@@ -39695,7 +38465,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1376,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 24426
@@ -39724,7 +38494,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:44:59.466",
       "platform_name": "Steam",
       "metacritic": 84,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 50511,
     "giantbomb_name": "Thimbleweed Park",
@@ -39741,7 +38511,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1377,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 10232
@@ -39770,7 +38540,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:45:08.511",
       "platform_name": "Steam",
       "metacritic": 89,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 46427,
     "giantbomb_name": "Return of the Obra Dinn",
@@ -39787,7 +38557,7 @@ export const MockGames = [
       "rating": 92,
       "finished_date": null,
       "id": 1378,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 9643
@@ -39816,7 +38586,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:45:54.018",
       "platform_name": "PS4",
       "metacritic": 87,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 54233,
     "giantbomb_name": "Marvel's Spider-Man",
@@ -39833,7 +38603,7 @@ export const MockGames = [
       "rating": 94,
       "finished_date": null,
       "id": 1379,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 19565
@@ -39862,7 +38632,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-09 08:27:01.404",
       "platform_name": "Steam",
       "metacritic": 71,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -39879,7 +38649,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1380,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 8366
@@ -39906,7 +38676,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 53354,
     "giantbomb_name": "Tower Unite",
@@ -39923,7 +38693,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1381,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 27927
@@ -39952,7 +38722,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:42:02.822",
       "platform_name": "Steam",
       "metacritic": 83,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 55090,
     "giantbomb_name": "Bleed 2",
@@ -39969,7 +38739,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1382,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 26725
@@ -39996,7 +38766,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -40013,7 +38783,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1383,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 11002
@@ -40042,7 +38812,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:42:07.359",
       "platform_name": "Steam",
       "metacritic": 85,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 65434,
     "giantbomb_name": "Full Metal Furies",
@@ -40059,7 +38829,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1384,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 27343
@@ -40086,7 +38856,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -40103,7 +38873,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1385,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 19407
@@ -40130,7 +38900,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 53257,
     "giantbomb_name": "Super Daryl Deluxe",
@@ -40147,7 +38917,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1386,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 21994
@@ -40174,7 +38944,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 57250,
     "giantbomb_name": "Aaero",
@@ -40191,7 +38961,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1387,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 18637
@@ -40220,7 +38990,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:45:38.126",
       "platform_name": "Steam",
       "metacritic": 79,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 58185,
     "giantbomb_name": "Late Shift",
@@ -40237,7 +39007,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1388,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 27717
@@ -40266,7 +39036,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:42:10.723",
       "platform_name": "Steam",
       "metacritic": 85,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -40283,7 +39053,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1389,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 27762
@@ -40310,7 +39080,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 61613,
     "giantbomb_name": "Fight'N Rage",
@@ -40327,7 +39097,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1390,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 59573
@@ -40354,7 +39124,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -40371,7 +39141,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1391,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 75096
@@ -40395,13 +39165,7 @@ export const MockGames = [
     "steamid": 552500,
     "date_added": "2019-03-18 14:57:14.028",
     "metacritic_page": true,
-    "availablePlatforms": [{
-      "metacritic_page": true,
-      "metacritic_matched": "2019-04-05 05:45:59.47",
-      "platform_name": "Steam",
-      "metacritic": 82,
-      "id": 1
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": 61138,
     "giantbomb_name": "Warhammer: Vermintide 2",
     "igdb_poster": "pocat2ipqrkhiguuev1f",
@@ -40417,46 +39181,6 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1392,
-      "myPlatforms": [{"id": 1}],
-      "person_id": 1
-    }],
-    "igdb_id": 55189
-  },
-  {
-    "timetotal": null,
-    "metacritic": null,
-    "title": "Warhammer: Vermintide 2 Closed Test",
-    "platform": "Steam",
-    "giantbomb_medium_url": null,
-    "steam_cloud": null,
-    "logo": "",
-    "howlong_id": null,
-    "howlong_extras": null,
-    "id": 959,
-    "metacritic_matched": null,
-    "steam_title": "Warhammer: Vermintide 2 Closed Test",
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": null,
-    "steamid": 737010,
-    "date_added": "2019-03-18 14:57:14.431",
-    "metacritic_page": false,
-    "availablePlatforms": [],
-    "giantbomb_id": null,
-    "giantbomb_name": null,
-    "igdb_poster": null,
-    "steam_page_gone": "2019-03-21 04:53:53.896",
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2019-03-18 14:57:14.595",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 1393,
       "myPlatforms": [],
       "person_id": 1
     }],
@@ -40486,7 +39210,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:42:16.677",
       "platform_name": "Steam",
       "metacritic": 71,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 67907,
     "giantbomb_name": "Cultist Simulator",
@@ -40503,7 +39227,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1394,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 26878
@@ -40532,7 +39256,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:42:27.47",
       "platform_name": "Xbox One",
       "metacritic": 68,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -40549,7 +39273,7 @@ export const MockGames = [
       "rating": 78,
       "finished_date": null,
       "id": 1395,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 9919
@@ -40578,7 +39302,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-10 09:07:06.139",
       "platform_name": "Xbox One",
       "metacritic": 80,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -40595,7 +39319,7 @@ export const MockGames = [
       "rating": 77,
       "finished_date": null,
       "id": 1396,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 11148
@@ -40624,7 +39348,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-04 20:04:59.266",
       "platform_name": "PS4",
       "metacritic": 97,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -40641,7 +39365,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 1397,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 25076
@@ -40688,46 +39412,6 @@ export const MockGames = [
   },
   {
     "timetotal": null,
-    "metacritic": 73,
-    "title": "The Surge",
-    "platform": "PS4",
-    "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2926503-surge.png",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 44914,
-    "howlong_extras": 27,
-    "id": 965,
-    "metacritic_matched": "2019-04-04 20:53:34.211",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "The Surge",
-    "steamid": null,
-    "date_added": "2019-04-04 20:52:21.66712",
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 50421,
-    "giantbomb_name": "The Surge",
-    "igdb_poster": "co1odu",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2019-04-04 20:52:21.719587",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": 55,
-      "finished_date": null,
-      "id": 1399,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 11590
-  },
-  {
-    "timetotal": null,
     "metacritic": 84,
     "title": "Hitman",
     "platform": "PS4",
@@ -40745,13 +39429,7 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2019-04-04 20:54:37.370055",
     "metacritic_page": true,
-    "availablePlatforms": [{
-      "metacritic_page": true,
-      "metacritic_matched": "2019-04-04 20:55:50.252",
-      "platform_name": "PS4",
-      "metacritic": 84,
-      "id": 11
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": 45150,
     "giantbomb_name": "Hitman",
     "igdb_poster": "co1nq3",
@@ -40767,7 +39445,7 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 1400,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 11157
@@ -40794,7 +39472,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -40811,50 +39489,10 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1401,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 52018
-  },
-  {
-    "timetotal": null,
-    "metacritic": 71,
-    "title": "Portal Knights",
-    "platform": "PS4",
-    "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2939734-image.png",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 35313,
-    "howlong_extras": 30,
-    "id": 968,
-    "metacritic_matched": "2019-04-04 20:57:02.0",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Portal Knights",
-    "steamid": null,
-    "date_added": "2019-04-04 20:55:55.537573",
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 52974,
-    "giantbomb_name": "Portal Knights",
-    "igdb_poster": "c3gamebmgvlzdqcghvzp",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2019-04-04 20:55:55.546799",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 1402,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 20392
   },
   {
     "timetotal": null,
@@ -40875,13 +39513,7 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2019-04-04 20:56:03.263593",
     "metacritic_page": true,
-    "availablePlatforms": [{
-      "metacritic_page": true,
-      "metacritic_matched": "2019-04-07 07:07:20.314",
-      "platform_name": "PS4",
-      "metacritic": 71,
-      "id": 11
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": 54225,
     "giantbomb_name": "Steep",
     "igdb_poster": "hwan8wag6ype4xpiu1gv",
@@ -40897,7 +39529,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1403,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 19554
@@ -40926,7 +39558,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-04 21:00:59.46",
       "platform_name": "PS4",
       "metacritic": 83,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 38695,
     "giantbomb_name": "Iconoclasts",
@@ -40943,50 +39575,10 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1404,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 34705
-  },
-  {
-    "timetotal": null,
-    "metacritic": null,
-    "title": "Papers, Please",
-    "platform": "PS4",
-    "giantbomb_medium_url": "https://www.giantbomb.com/api/image/scale_medium/2478680-box_pp.png",
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 6916,
-    "howlong_extras": 7.4,
-    "id": 971,
-    "metacritic_matched": null,
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Papers, Please",
-    "steamid": null,
-    "date_added": "2019-04-04 21:00:14.122827",
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 41931,
-    "giantbomb_name": "Papers, Please",
-    "igdb_poster": "co1qkp",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2019-04-04 21:00:14.131987",
-      "tier": 2,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": null,
-      "finished_date": null,
-      "id": 1405,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 2935
   },
   {
     "timetotal": null,
@@ -41052,7 +39644,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-09 08:32:19.213",
       "platform_name": "PS4",
       "metacritic": 75,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 62394,
     "giantbomb_name": "Onrush",
@@ -41069,7 +39661,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1407,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 75244
@@ -41098,7 +39690,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-06 06:28:36.87",
       "platform_name": "PS4",
       "metacritic": 80,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 50873,
     "giantbomb_name": "Yakuza Kiwami",
@@ -41115,7 +39707,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1408,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 12595
@@ -41142,7 +39734,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 30088,
     "giantbomb_name": "Bulletstorm",
@@ -41159,7 +39751,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1409,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 494
@@ -41186,7 +39778,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 50565,
     "giantbomb_name": "Burly Men at Sea",
@@ -41203,7 +39795,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1410,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 24501
@@ -41230,7 +39822,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 44258,
     "giantbomb_name": "Roundabout",
@@ -41247,7 +39839,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1411,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 15852
@@ -41276,7 +39868,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-06 06:28:48.064",
       "platform_name": "PS4",
       "metacritic": 61,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 48132,
     "giantbomb_name": "Friday the 13th: The Game",
@@ -41293,7 +39885,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1412,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 14389
@@ -41322,7 +39914,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-04 21:05:31.57",
       "platform_name": "PS4",
       "metacritic": 82,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 59869,
     "giantbomb_name": "Laser League",
@@ -41339,7 +39931,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1413,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 36912
@@ -41368,7 +39960,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-06 06:28:26.836",
       "platform_name": "PS4",
       "metacritic": 76,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 50551,
     "giantbomb_name": "2064: Read Only Memories",
@@ -41385,7 +39977,7 @@ export const MockGames = [
       "rating": 76,
       "finished_date": null,
       "id": 1414,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 13171
@@ -41414,7 +40006,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-04 21:05:57.713",
       "platform_name": "PS4",
       "metacritic": 67,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 41720,
     "giantbomb_name": "Rocketbirds 2: Evolution",
@@ -41431,7 +40023,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1415,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 20074
@@ -41458,7 +40050,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 39011,
     "giantbomb_name": "The Bridge",
@@ -41475,7 +40067,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1416,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 8440
@@ -41504,7 +40096,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-05 05:51:32.836",
       "platform_name": "PS4",
       "metacritic": 81,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -41521,7 +40113,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1417,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 19959
@@ -41550,7 +40142,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-07 07:07:44.086",
       "platform_name": "PS4",
       "metacritic": 66,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 39282,
     "giantbomb_name": "Foul Play",
@@ -41567,7 +40159,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1418,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 5895
@@ -41596,7 +40188,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-04 21:07:00.369",
       "platform_name": "PS4",
       "metacritic": 66,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 46289,
     "giantbomb_name": "Sparkle 2",
@@ -41613,7 +40205,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1419,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 20069
@@ -41680,7 +40272,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "PS4",
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -41697,7 +40289,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1421,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 106079
@@ -41726,7 +40318,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-04 21:09:03.874",
       "platform_name": "PS4",
       "metacritic": 62,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 54244,
     "giantbomb_name": "Here They Lie",
@@ -41743,7 +40335,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1422,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 19572
@@ -41772,7 +40364,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-04 21:08:37.601",
       "platform_name": "PS4",
       "metacritic": 71,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 60906,
     "giantbomb_name": "Knowledge is Power",
@@ -41789,7 +40381,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1423,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 70833
@@ -41818,7 +40410,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-07 07:07:26.435",
       "platform_name": "PS4",
       "metacritic": 68,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 50449,
     "giantbomb_name": "Mafia III",
@@ -41835,7 +40427,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1424,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 11492
@@ -41864,7 +40456,7 @@ export const MockGames = [
       "metacritic_matched": "2019-04-08 07:47:42.911",
       "platform_name": "PS4",
       "metacritic": 53,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 41791,
     "giantbomb_name": "Bound By Flame",
@@ -41881,7 +40473,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1425,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 7208
@@ -41910,7 +40502,7 @@ export const MockGames = [
       "metacritic_matched": "2019-05-31 11:19:10.724",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 58396,
     "giantbomb_name": "Northgard",
@@ -41927,7 +40519,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1428,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 18918
@@ -41956,7 +40548,7 @@ export const MockGames = [
       "metacritic_matched": "2019-05-31 11:20:08.346",
       "platform_name": "Steam",
       "metacritic": 82,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 53913,
     "giantbomb_name": "She Remembered Caterpillars",
@@ -41973,7 +40565,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1429,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 26808
@@ -41997,7 +40589,22 @@ export const MockGames = [
     "steamid": 473690,
     "date_added": "2019-05-31 11:12:33.356",
     "metacritic_page": true,
-    "availablePlatforms": [],
+    "availablePlatforms": [
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2018-07-17 03:23:01.153",
+        "platform_name": "PS4",
+        "metacritic": 69,
+        "id": 5
+      },
+      {
+        "metacritic_page": true,
+        "metacritic_matched": "2019-06-01 03:43:53.504",
+        "platform_name": "Steam",
+        "metacritic": 75,
+        "id": 3
+      }
+    ],
     "giantbomb_id": 54110,
     "giantbomb_name": "Absolver",
     "igdb_poster": "co1mtm",
@@ -42013,7 +40620,10 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1430,
-      "myPlatforms": [],
+      "myPlatforms": [
+        {"id": 3},
+        {"id": 5}
+      ],
       "person_id": 1
     }],
     "igdb_id": 19333
@@ -42042,7 +40652,7 @@ export const MockGames = [
       "metacritic_matched": "2019-05-31 11:21:44.693",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 55099,
     "giantbomb_name": "Wandersong",
@@ -42059,7 +40669,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1431,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 23851
@@ -42088,7 +40698,7 @@ export const MockGames = [
       "metacritic_matched": "2019-05-31 11:22:01.154",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 56951,
     "giantbomb_name": "Finding Paradise",
@@ -42105,7 +40715,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1432,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 36044
@@ -42134,7 +40744,7 @@ export const MockGames = [
       "metacritic_matched": "2019-05-31 11:22:22.997",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 58600,
     "giantbomb_name": "The Journey Down: Chapter Three",
@@ -42151,7 +40761,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1433,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 15911
@@ -42180,7 +40790,7 @@ export const MockGames = [
       "metacritic_matched": "2019-05-31 11:22:56.354",
       "platform_name": "Steam",
       "metacritic": 79,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 58197,
     "giantbomb_name": "Minit",
@@ -42197,7 +40807,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1434,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 118746
@@ -42226,7 +40836,7 @@ export const MockGames = [
       "metacritic_matched": "2019-05-31 11:23:21.01",
       "platform_name": "Steam",
       "metacritic": 70,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 58595,
     "giantbomb_name": "Dandara",
@@ -42243,7 +40853,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1435,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 27435
@@ -42272,7 +40882,7 @@ export const MockGames = [
       "metacritic_matched": "2019-05-31 11:23:37.725",
       "platform_name": "Steam",
       "metacritic": 68,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 62405,
     "giantbomb_name": "Steel Rats",
@@ -42289,7 +40899,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1436,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 74881
@@ -42318,7 +40928,7 @@ export const MockGames = [
       "metacritic_matched": "2019-05-31 11:23:48.542",
       "platform_name": "Steam",
       "metacritic": 69,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 62658,
     "giantbomb_name": "Tannenberg",
@@ -42335,7 +40945,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1437,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 36718
@@ -42362,7 +40972,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 70292,
     "giantbomb_name": "Do Not Feed the Monkeys",
@@ -42379,7 +40989,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1438,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 52014
@@ -42408,7 +41018,7 @@ export const MockGames = [
       "metacritic_matched": "2019-05-31 11:24:07.213",
       "platform_name": "Steam",
       "metacritic": 73,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 60794,
     "giantbomb_name": "Monster Prom",
@@ -42425,7 +41035,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1439,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 69483
@@ -42454,7 +41064,7 @@ export const MockGames = [
       "metacritic_matched": "2019-06-01 03:45:32.05",
       "platform_name": "Steam",
       "metacritic": 78,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 66712,
     "giantbomb_name": "Mutant Year Zero: Road to Eden",
@@ -42471,7 +41081,7 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 1440,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 89560
@@ -42498,7 +41108,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -42515,7 +41125,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1441,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 105442
@@ -42544,7 +41154,7 @@ export const MockGames = [
       "metacritic_matched": "2019-06-08 10:45:23.885",
       "platform_name": "Steam",
       "metacritic": 83,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 50650,
     "giantbomb_name": "Duskers",
@@ -42561,7 +41171,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1442,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 16707
@@ -42590,7 +41200,7 @@ export const MockGames = [
       "metacritic_matched": "2019-06-08 10:46:04.209",
       "platform_name": "Steam",
       "metacritic": 68,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 55574,
     "giantbomb_name": "911 Operator",
@@ -42607,7 +41217,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1443,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 20927
@@ -42634,7 +41244,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 68878,
     "giantbomb_name": "Pool Panic",
@@ -42651,7 +41261,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1444,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 95028
@@ -42680,7 +41290,7 @@ export const MockGames = [
       "metacritic_matched": "2019-06-09 04:33:28.785",
       "platform_name": "Steam",
       "metacritic": 67,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -42697,7 +41307,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1446,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 96027
@@ -42724,7 +41334,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 67277,
     "giantbomb_name": "Paratopic",
@@ -42741,7 +41351,7 @@ export const MockGames = [
       "rating": 56,
       "finished_date": null,
       "id": 1447,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 97690
@@ -42768,7 +41378,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -42785,7 +41395,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1448,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 56867
@@ -42814,7 +41424,7 @@ export const MockGames = [
       "metacritic_matched": "2019-07-05 18:32:32.581",
       "platform_name": "Steam",
       "metacritic": 76,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 44273,
     "giantbomb_name": "Obduction",
@@ -42831,7 +41441,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 1449,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 8983
@@ -42860,7 +41470,7 @@ export const MockGames = [
       "metacritic_matched": "2019-07-05 18:33:39.111",
       "platform_name": "Steam",
       "metacritic": 93,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 65652,
     "giantbomb_name": "Beat Saber",
@@ -42877,7 +41487,7 @@ export const MockGames = [
       "rating": 92,
       "finished_date": null,
       "id": 1450,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 83731
@@ -42906,7 +41516,7 @@ export const MockGames = [
       "metacritic_matched": "2019-07-06 08:04:50.335",
       "platform_name": "Steam",
       "metacritic": 81,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 59927,
     "giantbomb_name": "Moss",
@@ -42923,7 +41533,7 @@ export const MockGames = [
       "rating": 84,
       "finished_date": null,
       "id": 1451,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 37095
@@ -42952,7 +41562,7 @@ export const MockGames = [
       "metacritic_matched": "2019-07-07 12:52:59.043",
       "platform_name": "Steam",
       "metacritic": 71,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 47445,
     "giantbomb_name": "Keep Talking and Nobody Explodes",
@@ -42969,7 +41579,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 1452,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 13226
@@ -42996,7 +41606,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -43013,7 +41623,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 1453,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 23719
@@ -43042,7 +41652,7 @@ export const MockGames = [
       "metacritic_matched": "2019-07-08 08:22:11.216",
       "platform_name": "Steam",
       "metacritic": 78,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 50915,
     "giantbomb_name": "BattleTech",
@@ -43059,7 +41669,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 1454,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 18279
@@ -43086,7 +41696,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 56623,
     "giantbomb_name": "Sally Face",
@@ -43103,7 +41713,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 1455,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 26580
@@ -43132,7 +41742,7 @@ export const MockGames = [
       "metacritic_matched": "2019-07-09 12:05:36.578",
       "platform_name": "Steam",
       "metacritic": 79,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 68939,
     "giantbomb_name": "Trover Saves the Universe",
@@ -43149,7 +41759,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 1456,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 103331
@@ -43176,7 +41786,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 63017,
     "giantbomb_name": "Waltz of the Wizard",
@@ -43193,7 +41803,7 @@ export const MockGames = [
       "rating": 75,
       "finished_date": null,
       "id": 1457,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 33680
@@ -43220,7 +41830,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 51751,
     "giantbomb_name": "Psychonauts in the Rhombus of Ruin",
@@ -43237,7 +41847,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1458,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 15572
@@ -43264,7 +41874,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -43281,7 +41891,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1460,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 33135
@@ -43308,7 +41918,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -43325,7 +41935,7 @@ export const MockGames = [
       "rating": 89,
       "finished_date": "2020-04-20 18:45:59.414",
       "id": 1461,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 120607
@@ -43354,7 +41964,7 @@ export const MockGames = [
       "metacritic_matched": "2019-08-01 10:36:57.68",
       "platform_name": "Xbox One",
       "metacritic": 84,
-      "id": 4
+      "id": 8
     }],
     "giantbomb_id": 45269,
     "giantbomb_name": "Gears of War 4",
@@ -43371,7 +41981,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1462,
-      "myPlatforms": [{"id": 4}],
+      "myPlatforms": [{"id": 8}],
       "person_id": 1
     }],
     "igdb_id": 11186
@@ -43446,7 +42056,7 @@ export const MockGames = [
       "metacritic_matched": "2019-09-05 11:17:45.668",
       "platform_name": "PS4",
       "metacritic": 64,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 59346,
     "giantbomb_name": "Darksiders III",
@@ -43463,7 +42073,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1464,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 28380
@@ -43492,7 +42102,7 @@ export const MockGames = [
       "metacritic_matched": "2020-04-17 17:37:54.288",
       "platform_name": "Steam",
       "metacritic": 80,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 72712,
     "giantbomb_name": "The Jackbox Party Pack 6",
@@ -43509,7 +42119,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1466,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 125021
@@ -43538,7 +42148,7 @@ export const MockGames = [
       "metacritic_matched": "2020-04-17 17:36:55.413",
       "platform_name": "Steam",
       "metacritic": 93,
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 76068,
     "giantbomb_name": "Half-Life: Alyx",
@@ -43555,7 +42165,7 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 1467,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 126098
@@ -43582,7 +42192,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 48453,
     "giantbomb_name": "Blocks",
@@ -43599,7 +42209,7 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 1468,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 27136
@@ -43626,7 +42236,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -43643,7 +42253,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 1469,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 28815
@@ -43667,13 +42277,7 @@ export const MockGames = [
     "steamid": 812140,
     "date_added": "2020-03-19 13:38:11.681",
     "metacritic_page": true,
-    "availablePlatforms": [{
-      "metacritic_page": true,
-      "metacritic_matched": "2020-04-17 17:38:34.002",
-      "platform_name": "Steam",
-      "metacritic": 86,
-      "id": 1
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": null,
     "giantbomb_name": null,
     "igdb_poster": "co1izc",
@@ -43689,7 +42293,7 @@ export const MockGames = [
       "rating": null,
       "finished_date": null,
       "id": 1473,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 103054
@@ -43716,7 +42320,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 46105,
     "giantbomb_name": "Tabletop Simulator",
@@ -43733,7 +42337,7 @@ export const MockGames = [
       "rating": 92,
       "finished_date": null,
       "id": 1471,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 8351
@@ -43760,7 +42364,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": true,
       "platform_name": "Steam",
-      "id": 1
+      "id": 3
     }],
     "giantbomb_id": 51198,
     "giantbomb_name": "Tabletopia",
@@ -43777,7 +42381,7 @@ export const MockGames = [
       "rating": 90,
       "finished_date": null,
       "id": 1472,
-      "myPlatforms": [{"id": 1}],
+      "myPlatforms": [{"id": 3}],
       "person_id": 1
     }],
     "igdb_id": 34469
@@ -43804,7 +42408,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Switch",
-      "id": 3
+      "id": 4
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -43821,7 +42425,7 @@ export const MockGames = [
       "rating": 91,
       "finished_date": null,
       "id": 1475,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 28414
@@ -43850,7 +42454,7 @@ export const MockGames = [
       "metacritic_matched": "2020-04-17 17:36:25.951",
       "platform_name": "PS4",
       "metacritic": 84,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -43867,7 +42471,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 1476,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 110411
@@ -43896,7 +42500,7 @@ export const MockGames = [
       "metacritic_matched": "2020-04-17 17:36:33.173",
       "platform_name": "PS4",
       "metacritic": 83,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -43913,7 +42517,7 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 1477,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 24920
@@ -43942,7 +42546,7 @@ export const MockGames = [
       "metacritic_matched": "2020-04-17 17:36:37.97",
       "platform_name": "PS4",
       "metacritic": 86,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 70847,
     "giantbomb_name": "MLB The Show 19",
@@ -43959,7 +42563,7 @@ export const MockGames = [
       "rating": 83,
       "finished_date": null,
       "id": 1478,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 111654
@@ -43988,7 +42592,7 @@ export const MockGames = [
       "metacritic_matched": "2020-04-17 17:36:42.242",
       "platform_name": "PS4",
       "metacritic": 86,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 54733,
     "giantbomb_name": "Sonic Mania",
@@ -44005,7 +42609,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1479,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 21062
@@ -44034,7 +42638,7 @@ export const MockGames = [
       "metacritic_matched": "2020-04-17 17:36:44.285",
       "platform_name": "PS4",
       "metacritic": 78,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -44051,7 +42655,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1480,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 14362
@@ -44080,7 +42684,7 @@ export const MockGames = [
       "metacritic_matched": "2020-04-17 17:36:51.663",
       "platform_name": "PS4",
       "metacritic": 78,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -44097,7 +42701,7 @@ export const MockGames = [
       "rating": 50,
       "finished_date": null,
       "id": 1481,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 96476
@@ -44126,7 +42730,7 @@ export const MockGames = [
       "metacritic_matched": "2020-04-17 17:36:54.115",
       "platform_name": "PS4",
       "metacritic": 85,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -44143,90 +42747,10 @@ export const MockGames = [
       "rating": 74,
       "finished_date": null,
       "id": 1482,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 26195
-  },
-  {
-    "timetotal": null,
-    "metacritic": 77,
-    "title": "Sniper Elite 4",
-    "platform": "PS4",
-    "giantbomb_medium_url": null,
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": 40715,
-    "howlong_extras": 15,
-    "id": 1042,
-    "metacritic_matched": "2020-04-17 17:36:58.955",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": "Sniper Elite 4",
-    "steamid": null,
-    "date_added": "2020-04-15 10:46:33.805087",
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": 52953,
-    "giantbomb_name": "Sniper Elite 4",
-    "igdb_poster": "co1ohp",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2020-04-15 10:46:33.920079",
-      "tier": 1,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": 30,
-      "finished_date": null,
-      "id": 1483,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 18366
-  },
-  {
-    "timetotal": null,
-    "metacritic": 87,
-    "title": "Batman™: Arkham Knight",
-    "platform": "PS4",
-    "giantbomb_medium_url": null,
-    "steam_cloud": null,
-    "logo": null,
-    "howlong_id": null,
-    "howlong_extras": null,
-    "id": 1043,
-    "metacritic_matched": "2020-04-17 17:37:04.829",
-    "steam_title": null,
-    "metacritic_hint": null,
-    "natural_end": true,
-    "howlong_title": null,
-    "steamid": null,
-    "date_added": "2020-04-15 10:47:03.99851",
-    "metacritic_page": true,
-    "availablePlatforms": [],
-    "giantbomb_id": null,
-    "giantbomb_name": null,
-    "igdb_poster": "co1nh1",
-    "steam_page_gone": null,
-    "person_games": [{
-      "replay_score": null,
-      "final_score": null,
-      "date_added": "2020-04-15 10:47:04.230008",
-      "tier": 1,
-      "replay_reason": null,
-      "minutes_played": 0,
-      "last_played": null,
-      "rating": 80,
-      "finished_date": null,
-      "id": 1484,
-      "myPlatforms": [],
-      "person_id": 1
-    }],
-    "igdb_id": 5503
   },
   {
     "timetotal": null,
@@ -44252,7 +42776,7 @@ export const MockGames = [
       "metacritic_matched": "2020-04-17 17:37:07.068",
       "platform_name": "PS4",
       "metacritic": 95,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -44269,7 +42793,7 @@ export const MockGames = [
       "rating": 85,
       "finished_date": null,
       "id": 1485,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 6036
@@ -44298,7 +42822,7 @@ export const MockGames = [
       "metacritic_matched": "2020-04-17 17:37:10.558",
       "platform_name": "PS4",
       "metacritic": 88,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 27578,
     "giantbomb_name": "Nioh",
@@ -44315,7 +42839,7 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 1486,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 12571
@@ -44344,7 +42868,7 @@ export const MockGames = [
       "metacritic_matched": "2020-04-17 17:37:15.314",
       "platform_name": "PS4",
       "metacritic": 68,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 48099,
     "giantbomb_name": "Outlast 2",
@@ -44361,7 +42885,7 @@ export const MockGames = [
       "rating": 40,
       "finished_date": null,
       "id": 1487,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 14390
@@ -44390,7 +42914,7 @@ export const MockGames = [
       "metacritic_matched": "2020-04-17 17:37:19.217",
       "platform_name": "PS4",
       "metacritic": 89,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 49139,
     "giantbomb_name": "Titanfall 2",
@@ -44407,7 +42931,7 @@ export const MockGames = [
       "rating": 73,
       "finished_date": null,
       "id": 1488,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 17447
@@ -44476,7 +43000,7 @@ export const MockGames = [
       "metacritic_matched": "2020-04-17 17:37:28.07",
       "platform_name": "PS4",
       "metacritic": 86,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -44493,7 +43017,7 @@ export const MockGames = [
       "rating": 70,
       "finished_date": null,
       "id": 1490,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 10962
@@ -44562,7 +43086,7 @@ export const MockGames = [
       "metacritic_matched": "2020-04-17 17:37:33.495",
       "platform_name": "PS4",
       "metacritic": 79,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 63127,
     "giantbomb_name": "Firewall Zero Hour",
@@ -44579,7 +43103,7 @@ export const MockGames = [
       "rating": 60,
       "finished_date": null,
       "id": 1492,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 76966
@@ -44608,7 +43132,7 @@ export const MockGames = [
       "metacritic_matched": "2020-04-17 17:37:43.54",
       "platform_name": "PS4",
       "metacritic": 84,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -44625,7 +43149,7 @@ export const MockGames = [
       "rating": 80,
       "finished_date": null,
       "id": 1493,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 19839
@@ -44654,7 +43178,7 @@ export const MockGames = [
       "metacritic_matched": "2020-04-17 17:37:47.878",
       "platform_name": "PS4",
       "metacritic": 91,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -44671,7 +43195,7 @@ export const MockGames = [
       "rating": 81,
       "finished_date": null,
       "id": 1494,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 37094
@@ -44700,7 +43224,7 @@ export const MockGames = [
       "metacritic_matched": "2020-04-17 17:37:50.969",
       "platform_name": "PS4",
       "metacritic": 57,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 54734,
     "giantbomb_name": "Sonic Forces",
@@ -44717,7 +43241,7 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 1495,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 21063
@@ -45537,11 +44061,7 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2020-04-20 18:04:21.295646",
     "metacritic_page": false,
-    "availablePlatforms": [{
-      "metacritic_page": false,
-      "platform_name": "PC",
-      "id": 10
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": null,
     "giantbomb_name": null,
     "igdb_poster": "co1sqz",
@@ -45557,7 +44077,7 @@ export const MockGames = [
       "rating": 64,
       "finished_date": null,
       "id": 1514,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 5541
@@ -45661,13 +44181,7 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2020-04-20 18:05:05.738854",
     "metacritic_page": true,
-    "availablePlatforms": [{
-      "metacritic_page": true,
-      "metacritic_matched": "2020-04-20 18:12:29.537",
-      "platform_name": "PC",
-      "metacritic": 72,
-      "id": 10
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": 54225,
     "giantbomb_name": "Steep",
     "igdb_poster": "hwan8wag6ype4xpiu1gv",
@@ -45683,7 +44197,7 @@ export const MockGames = [
       "rating": 50,
       "finished_date": null,
       "id": 1517,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 19554
@@ -46154,7 +44668,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "metacritic_page": false,
       "platform_name": "Switch",
-      "id": 3
+      "id": 4
     }],
     "giantbomb_id": null,
     "giantbomb_name": null,
@@ -46171,7 +44685,7 @@ export const MockGames = [
       "rating": 93,
       "finished_date": null,
       "id": 1528,
-      "myPlatforms": [{"id": 3}],
+      "myPlatforms": [{"id": 4}],
       "person_id": 1
     }],
     "igdb_id": 26764
@@ -46753,11 +45267,7 @@ export const MockGames = [
     "steamid": null,
     "date_added": "2020-04-20 18:42:54.324999",
     "metacritic_page": false,
-    "availablePlatforms": [{
-      "metacritic_page": false,
-      "platform_name": "PC",
-      "id": 10
-    }],
+    "availablePlatforms": [],
     "giantbomb_id": null,
     "giantbomb_name": null,
     "igdb_poster": "co1r85",
@@ -46773,7 +45283,7 @@ export const MockGames = [
       "rating": 87,
       "finished_date": null,
       "id": 1542,
-      "myPlatforms": [{"id": 10}],
+      "myPlatforms": [],
       "person_id": 1
     }],
     "igdb_id": 103054
@@ -46802,7 +45312,7 @@ export const MockGames = [
       "metacritic_matched": "2020-04-20 20:44:27.678",
       "platform_name": "PS4",
       "metacritic": 54,
-      "id": 11
+      "id": 5
     }],
     "giantbomb_id": 46632,
     "giantbomb_name": "Anthem",
@@ -46819,7 +45329,7 @@ export const MockGames = [
       "rating": 55,
       "finished_date": null,
       "id": 1543,
-      "myPlatforms": [{"id": 11}],
+      "myPlatforms": [{"id": 5}],
       "person_id": 1
     }],
     "igdb_id": 36950
