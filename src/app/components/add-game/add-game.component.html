@@ -85,7 +85,7 @@
               <div class="row"
                    *ngFor="let availableGamePlatform of findExistingPlatformsNotListed(match)">
                 <div class="col-9">
-                  {{availableGamePlatform.platformName.value}}
+                  {{availableGamePlatform.platform_name.value}}
                 </div>
                 <div class="col-3" *ngIf="!getMyPlatform(match, availableGamePlatform)">
                   <button class="btn btn-sm platformAddButton p-0 btn-success"

@@ -76,7 +76,7 @@ export class AddGameComponent implements OnInit {
 
   getMyPlatform(match: any, availablePlatform: AvailableGamePlatform): MyGamePlatform {
     if (!!match.existingGame && !!match.existingGame.personGame) {
-      return _.find(match.existingGame.personGame.myPlatforms, myPlatform => myPlatform.platform_name.value === availablePlatform.platformName.value);
+      return _.find(match.existingGame.personGame.myPlatforms, myPlatform => myPlatform.platform_name.value === availablePlatform.platform_name.value);
     }
   }
 

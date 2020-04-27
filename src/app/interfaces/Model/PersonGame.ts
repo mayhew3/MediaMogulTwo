@@ -20,7 +20,6 @@ export class PersonGame extends DataObject {
   person_id = this.registerIntegerField('person_id', true);
   game_id = this.registerIntegerField('game_id', true);
 
-  private _platforms: GamePlatform[] = [];
   private _myPlatforms: MyGamePlatform[] = [];
 
   constructor(private platformService: PlatformService,
@@ -97,7 +96,7 @@ export class PersonGame extends DataObject {
     if (!availableGamePlatform.platform.isTemporary()) {
       throw new Error('Cannot add platform with id using addTemporaryPlatform!');
     }
-    const existing = _.find(this._myPlatforms, myPlatform => myPlatform.platform_name.value === availableGamePlatform.platformName.value);
+    const existing = _.find(this._myPlatforms, myPlatform => myPlatform.platform_name.value === availableGamePlatform.platform_name.value);
     if (!existing) {
       const myPlatform = new MyGamePlatform(availableGamePlatform);
       this._myPlatforms.push(myPlatform);

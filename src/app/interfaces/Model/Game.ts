@@ -52,7 +52,6 @@ export class Game extends DataObject {
   brokenImage = false;
 
   private _personGame: PersonGame;
-  private _platforms: GamePlatform[] = [];
   private _availablePlatforms: AvailableGamePlatform[] = [];
 
   constructor(private platformService: PlatformService,

@@ -66,6 +66,8 @@ export class InMemoryDataService implements InMemoryDbService{
     const collectionName = requestInfo.collectionName;
     if (collectionName === 'games') {
       this.addGame(requestInfo);
+    } else if (collectionName === 'personGames') {
+      this.addPersonGame(requestInfo);
     }
     return null;
   }
@@ -129,6 +131,14 @@ export class InMemoryDataService implements InMemoryDbService{
     }
     this.updatePlatforms(game.availablePlatforms);
     return this.packageUpResponse(game, requestInfo);
+  }
+
+  private addPersonGame(requestInfo: RequestInfo) {
+    const personGame = this.getBody(requestInfo);
+    personGame.id = this.nextPersonGameID();
+    personGame.date_added = new Date();
+    this.updatePlatforms(personGame.myPlatforms);
+    return this.packageUpResponse(personGame, requestInfo);
   }
 
   private updatePlatforms(array: any[]) {
