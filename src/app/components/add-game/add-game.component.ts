@@ -229,7 +229,7 @@ export class AddGameComponent implements OnInit {
       const availablePlatforms = returnGame.availablePlatforms;
       _.forEach(availablePlatforms, availablePlatform => {
         this.platformService.addToPlatformsIfDoesntExist(availablePlatform.platform);
-        const matchPlatform = _.findWhere(match.platforms, platform => platform.id === availablePlatform.platform.igdb_platform_id.value);
+        const matchPlatform = _.find(match.platforms, platform => platform.id === availablePlatform.platform.igdb_platform_id.value);
         if (!!matchPlatform) {
           matchPlatform.availableGamePlatform = availablePlatform;
         }
