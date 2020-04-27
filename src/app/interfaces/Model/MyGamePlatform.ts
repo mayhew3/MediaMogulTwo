@@ -29,6 +29,10 @@ export class MyGamePlatform extends DataObject {
     return this.availableGamePlatform.platform;
   }
 
+  isTemporary(): boolean {
+    return !this.id.value || this.platform.isTemporary();
+  }
+
   getApiMethod(): string {
     return 'myPlatforms';
   }

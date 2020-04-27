@@ -153,7 +153,7 @@ export class PersonGame extends DataObject {
   }
 
   private removeTemporaryPlatforms() {
-    const temporaryPlatforms = _.filter(this._myPlatforms, myPlatform => myPlatform.platform.isTemporary());
+    const temporaryPlatforms = _.filter(this._myPlatforms, myPlatform => myPlatform.isTemporary());
     _.forEach(temporaryPlatforms, myPlatform => ArrayUtil.removeFromArray(this._myPlatforms, myPlatform));
   }
 

@@ -157,7 +157,7 @@ export class Game extends DataObject {
   }
 
   private removeTemporaryPlatforms() {
-    const temporaryPlatforms = _.filter(this._availablePlatforms, availablePlatform => availablePlatform.platform.isTemporary());
+    const temporaryPlatforms = _.filter(this._availablePlatforms, availablePlatform => availablePlatform.isTemporary());
     _.forEach(temporaryPlatforms, availablePlatform => ArrayUtil.removeFromArray(this._availablePlatforms, availablePlatform));
   }
 

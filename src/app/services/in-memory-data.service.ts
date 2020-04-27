@@ -127,9 +127,9 @@ export class InMemoryDataService implements InMemoryDbService{
       personGame.id = this.nextPersonGameID();
       personGame.game_id = game.id;
       personGame.date_added = new Date();
-      this.updatePlatforms(personGame.myPlatforms);
+      this.updatePlatforms(personGame.myPlatforms, this.getMyPlatforms());
     }
-    this.updatePlatforms(game.availablePlatforms);
+    this.updatePlatforms(game.availablePlatforms, this.getAvailablePlatforms());
     return this.packageUpResponse(game, requestInfo);
   }
 
@@ -137,14 +137,15 @@ export class InMemoryDataService implements InMemoryDbService{
     const personGame = this.getBody(requestInfo);
     personGame.id = this.nextPersonGameID();
     personGame.date_added = new Date();
-    this.updatePlatforms(personGame.myPlatforms);
+    this.updatePlatforms(personGame.myPlatforms, this.getMyPlatforms());
     return this.packageUpResponse(personGame, requestInfo);
   }
 
-  private updatePlatforms(array: any[]) {
+  private updatePlatforms(array: any[], masterList: any[]) {
     const newPlatforms = _.filter(array, platform => !platform.game_platform_id);
     _.forEach(newPlatforms, platform => {
       platform.game_platform_id = this.addGamePlatform(platform);
+      platform.id = this.nextID(masterList);
     });
   }
 
@@ -168,7 +169,16 @@ export class InMemoryDataService implements InMemoryDbService{
   }
 
   private getPersonGames(): any[] {
-    return _.map(_.filter(this.games, game => !!game.personGame), game => game.personGame);
+    const ownedGames = _.filter(this.games, game => !!game.person_games);
+    return _.flatten(_.map(ownedGames, game => game.person_games));
+  }
+
+  private getAvailablePlatforms(): any[] {
+    return _.flatten(_.map(this.games, game => game.availablePlatforms));
+  }
+
+  private getMyPlatforms(): any[] {
+    return _.flatten(_.map(this.getPersonGames(), personGame => personGame.myPlatforms));
   }
 
   private findPersonGame(personGameID: number): any {
@@ -188,6 +198,11 @@ export class InMemoryDataService implements InMemoryDbService{
   private nextPersonGameID(): number {
     const personGames = this.getPersonGames();
     return this.nextID(personGames);
+  }
+
+  private nextAvailablePlatformID(): number {
+    const availablePlatforms = this.getAvailablePlatforms();
+    return this.nextID(availablePlatforms);
   }
 
   private nextGamePlatformID(): number {

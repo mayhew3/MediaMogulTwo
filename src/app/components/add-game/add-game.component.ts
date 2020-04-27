@@ -217,7 +217,12 @@ export class AddGameComponent implements OnInit {
         }
       });
 
-      this.getOrCreateMyGamePlatform(selectedPlatform, game.personGame);
+      if (!!selectedAvailablePlatform) {
+        // noinspection JSUnusedAssignment
+        this.getOrCreateMyGamePlatform(selectedAvailablePlatform, game.personGame);
+      } else {
+        throw new Error(`No available platform found for platform name '${selectedPlatform.name}'`);
+      }
 
       const returnGame = await this.gameService.addGame(game);
 
