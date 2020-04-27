@@ -76,63 +76,75 @@ export class Game extends DataObject {
     if (!!this._personGame) {
       base.personGame = this._personGame.getChangedFields();
       base.personGame.myPlatforms = [];
-      _.forEach(this._personGame.platforms, myPlatform => {
-        if (!myPlatform.id) {
+      _.forEach(this._personGame.myPlatforms, myPlatform => {
+        if (!myPlatform.platform.id) {
           base.personGame.myPlatforms.push(myPlatform.getChangedFields());
         } else {
-          base.personGame.myPlatforms.push({id: myPlatform.id.value});
+          base.personGame.myPlatforms.push({id: myPlatform.platform.id.value});
         }
       });
     }
     base.availablePlatforms = [];
-    _.forEach(this.platforms, availablePlatform => {
-      if (!availablePlatform.id) {
+    _.forEach(this.availablePlatforms, availablePlatform => {
+      if (!availablePlatform.platform.id) {
         base.availablePlatforms.push(availablePlatform.getChangedFields());
       } else {
-        base.availablePlatforms.push({id: availablePlatform.id.value});
+        base.availablePlatforms.push({id: availablePlatform.platform.id.value});
       }
     });
     return base;
   }
 
-  addTemporaryPlatform(gamePlatform: GamePlatform) {
+  addTemporaryPlatform(gamePlatform: GamePlatform): AvailableGamePlatform {
     if (!gamePlatform.isTemporary()) {
       throw new Error('Cannot add platform with id using addTemporaryPlatform!');
     }
-    const existing = _.find(this._platforms, platform => platform.full_name.value === gamePlatform.full_name.value);
+    const existing = _.find(this._availablePlatforms, availablePlatform => availablePlatform.platform.full_name.value === gamePlatform.full_name.value);
     if (!existing) {
-      this._platforms.push(gamePlatform);
+      const availableGamePlatform = new AvailableGamePlatform(gamePlatform);
+      this._availablePlatforms.push(availableGamePlatform);
+      return availableGamePlatform;
+    } else {
+      return existing;
     }
   }
 
-  addToAvailablePlatforms(platformObj: any, realPlatform: GamePlatform) {
-    const realAvailablePlatform = new AvailableGamePlatform(realPlatform).initializedFromJSON(platformObj);
+  addToAvailablePlatforms(platformObj: any, gamePlatform: GamePlatform) {
+    const realAvailablePlatform = new AvailableGamePlatform(gamePlatform).initializedFromJSON(platformObj);
     this._availablePlatforms.push(realAvailablePlatform);
   }
 
-  addToPlatforms(gamePlatform: GamePlatform) {
+  addToPlatforms(gamePlatform: GamePlatform): AvailableGamePlatform {
     if (gamePlatform.isTemporary()) {
       throw new Error('Cannot add platform without id using addToPlatforms!');
     }
-    const existing = _.find(this._platforms, platform => platform.id.value === gamePlatform.id.value);
+    const existing = _.find(this._availablePlatforms, availablePlatform => availablePlatform.platform.id.value === gamePlatform.id.value);
     if (!existing) {
-      this._platforms.push(gamePlatform);
+      const availablePlatform = new AvailableGamePlatform(gamePlatform);
+      this._availablePlatforms.push(availablePlatform);
+      return availablePlatform;
+    } else {
+      return existing;
     }
   }
 
   hasPlatform(platformName: string): boolean {
-    const existing = _.find(this.platforms, platform => platform.full_name.value === platformName);
+    const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform_name.value === platformName);
     return !!existing;
   }
 
   hasPlatformWithID(platformID: number): boolean {
-    const existing = _.find(this.platforms, platform => platform.id.value === platformID);
+    const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform.id.value === platformID);
     return !!existing;
   }
 
   hasPlatformWithIGDBID(igdbID: number): boolean {
-    const existing = _.find(this.platforms, platform => platform.igdb_platform_id.value === igdbID);
+    const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform.igdb_platform_id.value === igdbID);
     return !!existing;
+  }
+
+  findPlatformWithIGDBID(igdbID: number): AvailableGamePlatform {
+    return _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform.igdb_platform_id.value === igdbID);
   }
 
   getAvailablePlatform(platform: GamePlatform): AvailableGamePlatform {
@@ -140,24 +152,20 @@ export class Game extends DataObject {
   }
 
   getPlatformNames(): string[] {
-    return _.map(this.platforms, platform => platform.full_name.value);
+    return _.map(this.availablePlatforms, availablePlatform => availablePlatform.platform_name.value);
   }
 
   getPlatformIGDBIDs(): number[] {
-    return _.map(this.platforms, platform => platform.igdb_platform_id.value);
+    return _.map(this.availablePlatforms, availablePlatform => availablePlatform.platform.igdb_platform_id.value);
   }
 
   private removeTemporaryPlatforms() {
-    const temporaryPlatforms = _.filter(this._platforms, platform => platform.isTemporary());
-    _.forEach(temporaryPlatforms, platform => ArrayUtil.removeFromArray(this._platforms, platform));
+    const temporaryPlatforms = _.filter(this._availablePlatforms, availablePlatform => availablePlatform.platform.isTemporary());
+    _.forEach(temporaryPlatforms, availablePlatform => ArrayUtil.removeFromArray(this._availablePlatforms, availablePlatform));
   }
 
   private static cloneArray(originalArray): any[] {
     return originalArray.slice();
-  }
-
-  get platforms(): GamePlatform[] {
-    return Game.cloneArray(this._platforms);
   }
 
   get availablePlatforms(): AvailableGamePlatform[] {
@@ -173,7 +181,6 @@ export class Game extends DataObject {
     _.forEach(jsonObj.availablePlatforms, availablePlatform => {
       const realPlatform = this.getOrCreateGamePlatform(availablePlatform, this.allPlatforms);
       this.addToAvailablePlatforms(availablePlatform, realPlatform);
-      this.addToPlatforms(realPlatform);
     });
     this._personGame = !!jsonObj.personGame ? new PersonGame(this.platformService, this.allPlatforms, this).initializedFromJSON(jsonObj.personGame) : undefined;
     return this;

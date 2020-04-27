@@ -9,6 +9,8 @@ import {GamePlatform} from '../../interfaces/Model/GamePlatform';
 import {Person} from '../../interfaces/Model/Person';
 import {PersonService} from '../../services/person.service';
 import {PersonGame} from '../../interfaces/Model/PersonGame';
+import {AvailableGamePlatform} from '../../interfaces/Model/AvailableGamePlatform';
+import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
 
 @Component({
   selector: 'mm-add-game',
@@ -55,48 +57,45 @@ export class AddGameComponent implements OnInit {
   }
 
   getButtonClass(platform): string {
-    if (!!platform.exists) {
+    if (!!platform.availableGamePlatform) {
       return 'btn-success';
     } else {
       return 'btn-primary';
     }
   }
 
-  findExistingPlatformsNotListed(match: any): GamePlatform[] {
-    const existingGame = this.findMatchingGameForPlatform(match);
+  findExistingPlatformsNotListed(match: any): AvailableGamePlatform[] {
+    const existingGame: Game = match.existingGame;
     if (!existingGame) {
       return [];
     }
-    const existingPlatformIDs = existingGame.getPlatformIGDBIDs();
-    const ownedPlatformIDs = !existingGame.personGame ? [] : existingGame.personGame.getPlatformIGDBIDs();
+    const availablePlatforms = existingGame.availablePlatforms;
     const matchPlatformIDs = _.map(match.platforms, platform => platform.id);
-    const diffIDs = _.difference(_.difference(existingPlatformIDs, ownedPlatformIDs), matchPlatformIDs);
-    return _.map(diffIDs, this.findPlatformWithIGDBID.bind(this));
+    return _.filter(availablePlatforms, availablePlatform => !_.contains(matchPlatformIDs, availablePlatform.platform.igdb_platform_id.value));
   }
 
-  findOwnedPlatformsNotListed(match: any): GamePlatform[] {
-    const existingGame = this.findMatchingGameForPlatform(match);
-    if (!existingGame || !existingGame.personGame) {
-      return [];
+  getMyPlatform(match: any, availablePlatform: AvailableGamePlatform): MyGamePlatform {
+    if (!!match.existingGame && !!match.existingGame.personGame) {
+      return _.find(match.existingGame.personGame.myPlatforms, myPlatform => myPlatform.platform_name.value === availablePlatform.platformName.value);
     }
-    const ownedPlatformIDs = existingGame.personGame.getPlatformIGDBIDs();
-    const matchPlatformIDs = _.map(match.platforms, platform => platform.id);
-    const diffIDs = _.difference(ownedPlatformIDs, matchPlatformIDs);
-    return _.map(diffIDs, this.findPlatformWithIGDBID.bind(this));
   }
 
-  private gameExistsWithPlatform(match: any, platform: any): boolean {
-    const existingGame = this.findMatchingGameForPlatform(match);
-    return !!existingGame && existingGame.hasPlatformWithIGDBID(platform.id);
-  }
-
-  private gameOwnedWithPlatform(match: any, platform: any): boolean {
-    const existingGame = this.findMatchingGameForPlatform(match);
-    return !!existingGame && !!existingGame.personGame && existingGame.personGame.hasPlatformWithIGDBID(platform.id);
-  }
-
-  private findMatchingGameForPlatform(match: any): Game {
+  private findMatchingGame(match: any): Game {
     return this.gameService.findGame(match.id);
+  }
+
+  // noinspection JSMethodCanBeStatic
+  private findExistingPlatformForGame(match: any, platform: any): AvailableGamePlatform {
+    if (!!match.existingGame) {
+      return match.existingGame.findPlatformWithIGDBID(platform.id);
+    }
+  }
+
+  // noinspection JSMethodCanBeStatic
+  private findOwnedPlatformForGame(match: any, platform: any): AvailableGamePlatform {
+    if (!!match.existingGame && !!match.existingGame.personGame) {
+      return match.existingGame.personGame.findPlatformWithIGDBID(platform.id);
+    }
   }
 
   private findPlatformWithIGDBID(igdbID: number): GamePlatform {
@@ -109,9 +108,10 @@ export class AddGameComponent implements OnInit {
       const matches = await this.gameService.getIGDBMatches(this.searchTitle);
       this.arrayService.refreshArray(this.matches, matches);
       _.forEach(this.matches, match => {
+        match.existingGame = this.findMatchingGame(match);
         _.forEach(match.platforms, platform => {
-          platform.exists = this.gameExistsWithPlatform(match, platform);
-          platform.owned = this.gameOwnedWithPlatform(match, platform);
+          platform.availableGamePlatform = this.findExistingPlatformForGame(match, platform);
+          platform.myGamePlatform = this.findOwnedPlatformForGame(match, platform);
         });
       });
     } catch (err) {
@@ -122,17 +122,16 @@ export class AddGameComponent implements OnInit {
   }
 
   async handleAddClick(match: any, platform: any) {
-    let game: Game = this.findMatchingGameForPlatform(match);
+    let game: Game = this.findMatchingGame(match);
     if (!game) {
       await this.addGame(match, platform);
     } else {
       await this.addToMyGames(game, platform);
     }
-    platform.owned = true;
   }
 
-  async addExistingWithMyPlatform(match: any, platform: GamePlatform) {
-    const game: Game = this.findMatchingGameForPlatform(match);
+  async addExistingWithMyPlatform(match: any, platform: AvailableGamePlatform) {
+    const game: Game = match.existingGame;
     const personGame = new PersonGame(this.platformService, this.allPlatforms, game);
     personGame.person_id.value = this.me.id.value;
     personGame.rating.value = this.rating;
@@ -145,27 +144,27 @@ export class AddGameComponent implements OnInit {
     personGame.person_id.value = this.me.id.value;
     personGame.game_id.value = game.id.value;
     personGame.rating.value = this.rating;
-    this.getOrCreateMyGamePlatform(platform, personGame);
+    const myGamePlatform = this.getOrCreateMyGamePlatform(platform, personGame);
     await this.gameService.addPersonGame(game, personGame);
+    platform.myGamePlatform = myGamePlatform;
   }
 
-  private getOrCreateExistingGamePlatform(platform: any, game: Game): void {
+  private getOrCreateExistingGamePlatform(platform: any, game: Game): AvailableGamePlatform {
     const existing = _.find(this.allPlatforms, existingPlatform => existingPlatform.igdb_platform_id.value === platform.id);
     if (!existing) {
       const gamePlatform = this.createNewGamePlatform(platform);
-      game.addTemporaryPlatform(gamePlatform);
+      return game.addTemporaryPlatform(gamePlatform);
     } else {
-      game.addToPlatforms(existing);
+      return game.addToPlatforms(existing);
     }
   }
 
-  private getOrCreateMyGamePlatform(platform: any, personGame: PersonGame): void {
-    const existing = _.find(this.allPlatforms, existingPlatform => existingPlatform.igdb_platform_id.value === platform.id);
-    if (!existing) {
-      const gamePlatform = this.createNewGamePlatform(platform);
-      personGame.addTemporaryPlatform(gamePlatform);
+  // noinspection JSMethodCanBeStatic
+  private getOrCreateMyGamePlatform(availableGamePlatform: AvailableGamePlatform, personGame: PersonGame): MyGamePlatform {
+    if (availableGamePlatform.platform.isTemporary()) {
+      return personGame.addTemporaryPlatform(availableGamePlatform);
     } else {
-      personGame.addToPlatforms(existing);
+      return personGame.addToPlatforms(availableGamePlatform);
     }
   }
 
@@ -209,19 +208,31 @@ export class AddGameComponent implements OnInit {
       game.personGame.person_id.value = this.me.id.value;
       game.personGame.rating.value = this.rating;
 
-      // todo: add ALL game platforms for game
+      let selectedAvailablePlatform;
+
       _.forEach(match.platforms, platform => {
-        this.getOrCreateExistingGamePlatform(platform, game);
+        const availablePlatform = this.getOrCreateExistingGamePlatform(platform, game);
+        if (selectedPlatform.id === availablePlatform.platform.igdb_platform_id.value) {
+          selectedAvailablePlatform = availablePlatform;
+        }
       });
 
       this.getOrCreateMyGamePlatform(selectedPlatform, game.personGame);
 
       const returnGame = await this.gameService.addGame(game);
 
-      const availablePlatforms = returnGame.platforms;
-      _.forEach(availablePlatforms, availablePlatform => this.platformService.addToPlatformsIfDoesntExist(availablePlatform));
-      _.forEach(match.platforms, matchPlatform => matchPlatform.exists = true);
-      selectedPlatform.owned = true;
+      const availablePlatforms = returnGame.availablePlatforms;
+      _.forEach(availablePlatforms, availablePlatform => {
+        this.platformService.addToPlatformsIfDoesntExist(availablePlatform.platform);
+        const matchPlatform = _.findWhere(match.platforms, platform => platform.id === availablePlatform.platform.igdb_platform_id.value);
+        if (!!matchPlatform) {
+          matchPlatform.availableGamePlatform = availablePlatform;
+        }
+      });
+
+      if (!!returnGame.personGame) {
+        selectedPlatform.myGamePlatform = returnGame.personGame.findPlatformWithIGDBID(selectedPlatform.id);
+      }
 
       next(returnGame);
 

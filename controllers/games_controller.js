@@ -57,6 +57,7 @@ exports.getGames = async function (request, response) {
       returnPersonObj.myPlatforms = _.map(myPlatformsForGame, platform => {
         const availableGamePlatform = _.findWhere(availablePlatforms, {id: platform.available_game_platform_id});
         return {
+          id: platform.id,
           game_platform_id: availableGamePlatform.game_platform_id,
           available_game_platform_id: availableGamePlatform.id,
           platform_name: platform.platform_name,
