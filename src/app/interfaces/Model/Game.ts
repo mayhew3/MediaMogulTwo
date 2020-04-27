@@ -74,24 +74,22 @@ export class Game extends DataObject {
     const base = super.makeChangesToInsertPayload(json);
     if (!!this._personGame) {
       base.personGame = this._personGame.getChangedFields();
-      base.personGame.myPlatforms = [];
-      _.forEach(this._personGame.myPlatforms, myPlatform => {
-        if (!myPlatform.platform.id) {
-          base.personGame.myPlatforms.push(myPlatform.getChangedFields());
-        } else {
-          base.personGame.myPlatforms.push({id: myPlatform.platform.id.value});
-        }
-      });
+      base.personGame.myPlatforms = this._personGame.getPlatformsPayload();
     }
-    base.availablePlatforms = [];
+    base.availablePlatforms = this.getPlatformsPayload();
+    return base;
+  }
+
+  private getPlatformsPayload(): any[] {
+    const availablePlatforms = [];
     _.forEach(this.availablePlatforms, availablePlatform => {
       if (!availablePlatform.platform.id) {
-        base.availablePlatforms.push(availablePlatform.getChangedFields());
+        availablePlatforms.push(availablePlatform.platform.getChangedFields());
       } else {
-        base.availablePlatforms.push({id: availablePlatform.platform.id.value});
+        availablePlatforms.push({game_platform_id: availablePlatform.platform.id.value});
       }
     });
-    return base;
+    return availablePlatforms;
   }
 
   addTemporaryPlatform(gamePlatform: GamePlatform): AvailableGamePlatform {

@@ -22,6 +22,7 @@ export class MyGamePlatform extends DataObject {
 
   constructor(private availableGamePlatform: AvailableGamePlatform) {
     super();
+    this.platform_name.initializeValue(availableGamePlatform.platform_name.value);
   }
 
   get platform(): GamePlatform {

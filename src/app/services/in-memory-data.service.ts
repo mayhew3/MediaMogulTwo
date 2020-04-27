@@ -142,9 +142,9 @@ export class InMemoryDataService implements InMemoryDbService{
   }
 
   private updatePlatforms(array: any[]) {
-    const newPlatforms = _.filter(array, platform => !platform.id);
+    const newPlatforms = _.filter(array, platform => !platform.game_platform_id);
     _.forEach(newPlatforms, platform => {
-      platform.id = this.addGamePlatform(platform);
+      platform.game_platform_id = this.addGamePlatform(platform);
     });
   }
 

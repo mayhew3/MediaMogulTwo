@@ -48,15 +48,20 @@ export class PersonGame extends DataObject {
 
   protected makeChangesToInsertPayload(json: any): any {
     const base = super.makeChangesToInsertPayload(json);
-    base.myPlatforms = [];
+    base.myPlatforms = this.getPlatformsPayload();
+    return base;
+  }
+
+  getPlatformsPayload(): any {
+    const myPlatforms = [];
     _.forEach(this.myPlatforms, myPlatform => {
-      if (!myPlatform.platform.id) {
-        base.myPlatforms.push(myPlatform.getChangedFields());
+      if (!myPlatform.platform.id.value) {
+        myPlatforms.push(myPlatform.platform.getChangedFields());
       } else {
-        base.myPlatforms.push({id: myPlatform.id.value});
+        myPlatforms.push({game_platform_id: myPlatform.platform.id.value});
       }
     });
-    return base;
+    return myPlatforms;
   }
 
   getLastPlayedFormat(): string {
