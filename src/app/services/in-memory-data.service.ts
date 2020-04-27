@@ -122,6 +122,7 @@ export class InMemoryDataService implements InMemoryDbService{
     const game = this.getBody(requestInfo);
     game.id = this.nextGameID();
     game.date_added = new Date();
+    this.updatePlatforms(game.availablePlatforms, this.getAvailablePlatforms());
     const personGame = game.personGame;
     if (!!personGame) {
       personGame.id = this.nextPersonGameID();
@@ -129,7 +130,6 @@ export class InMemoryDataService implements InMemoryDbService{
       personGame.date_added = new Date();
       this.updatePlatforms(personGame.myPlatforms, this.getMyPlatforms());
     }
-    this.updatePlatforms(game.availablePlatforms, this.getAvailablePlatforms());
     return this.packageUpResponse(game, requestInfo);
   }
 
@@ -144,15 +144,31 @@ export class InMemoryDataService implements InMemoryDbService{
   private updatePlatforms(array: any[], masterList: any[]) {
     const newPlatforms = _.filter(array, platform => !platform.game_platform_id);
     _.forEach(newPlatforms, platform => {
-      platform.game_platform_id = this.addGamePlatform(platform);
+      platform.gamePlatform = this.getOrCreateGamePlatform(platform);
+      platform.game_platform_id = platform.gamePlatform.id;
+    });
+
+    const newPlatformWrappers = _.filter(array, platform => !platform.id);
+    _.forEach(newPlatformWrappers, platform => {
       platform.id = this.nextID(masterList);
     });
   }
 
-  private addGamePlatform(gamePlatform: any): number {
-    gamePlatform.id = this.nextGamePlatformID();
-    this.gamePlatforms.push(gamePlatform);
-    return gamePlatform.id;
+  private getOrCreateGamePlatform(platformWrapper: any): any {
+    const existing = _.findWhere(this.gamePlatforms, {full_name: platformWrapper.full_name});
+    if (!existing) {
+      const gamePlatform = {
+        id: this.nextGamePlatformID(),
+        full_name: platformWrapper.full_name,
+        short_name: platformWrapper.short_name,
+        igdb_platform_id: platformWrapper.igdb_platform_id,
+        igdb_name: platformWrapper.igdb_name
+      }
+      this.gamePlatforms.push(gamePlatform);
+      return gamePlatform;
+    } else {
+      return existing;
+    }
   }
 
   private updatePersonGame(requestInfo: RequestInfo) {

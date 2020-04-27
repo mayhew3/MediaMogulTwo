@@ -72,18 +72,18 @@ export class Game extends DataObject {
 
   protected makeChangesToInsertPayload(json: any): any {
     const base = super.makeChangesToInsertPayload(json);
+    base.availablePlatforms = this.getPlatformsPayload();
     if (!!this._personGame) {
       base.personGame = this._personGame.getChangedFields();
       base.personGame.myPlatforms = this._personGame.getPlatformsPayload();
     }
-    base.availablePlatforms = this.getPlatformsPayload();
     return base;
   }
 
   private getPlatformsPayload(): any[] {
     const availablePlatforms = [];
     _.forEach(this.availablePlatforms, availablePlatform => {
-      if (!availablePlatform.platform.id) {
+      if (!availablePlatform.platform.id.value) {
         availablePlatforms.push(availablePlatform.platform.getChangedFields());
       } else {
         availablePlatforms.push({game_platform_id: availablePlatform.platform.id.value});
@@ -186,7 +186,7 @@ export class Game extends DataObject {
   getOrCreateGamePlatform(platformObj: any, allPlatforms: GamePlatform[]): GamePlatform {
     const foundPlatform = _.find(allPlatforms, platform => platform.id.value === platformObj.game_platform_id);
     if (!foundPlatform) {
-      const newPlatform = new GamePlatform().initializedFromJSON(platformObj);
+      const newPlatform = new GamePlatform().initializedFromJSON(platformObj.gamePlatform);
       this.platformService.addToPlatformsIfDoesntExist(newPlatform);
       return newPlatform;
     } else {
