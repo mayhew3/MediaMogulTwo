@@ -29,6 +29,14 @@ export class MyGamePlatform extends DataObject {
     return this.availableGamePlatform.platform;
   }
 
+  initializedFromJSON(jsonObj: any): this {
+    super.initializedFromJSON(jsonObj);
+    if (!this.platform_name.value) {
+      this.platform_name.initializeValue(this.availableGamePlatform.platform_name.value);
+    }
+    return this;
+  }
+
   isTemporary(): boolean {
     return !this.id.value || this.platform.isTemporary();
   }
