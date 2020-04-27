@@ -2,6 +2,7 @@
 import {DataObject} from '../DataObject/DataObject';
 import {AvailableGamePlatform} from './AvailableGamePlatform';
 import {Person} from './Person';
+import {GamePlatform} from './GamePlatform';
 
 export class MyGamePlatform extends DataObject {
 
@@ -17,6 +18,10 @@ export class MyGamePlatform extends DataObject {
   last_played = this.registerStringField("last_played", true);
   finished_date = this.registerStringField("finished_date", true);
   replay_reason = this.registerStringField("replay_reason", true);
+
+  get platform(): GamePlatform {
+    return this.availableGamePlatform.gamePlatform;
+  }
 
   getApiMethod(): string {
     return 'myPlatforms';

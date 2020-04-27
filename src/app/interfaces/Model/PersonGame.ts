@@ -4,6 +4,7 @@ import {GamePlatform} from './GamePlatform';
 import {PlatformService} from '../../services/platform.service';
 import {ArrayUtil} from '../../utility/ArrayUtil';
 import * as _ from 'underscore';
+import {MyGamePlatform} from './MyGamePlatform';
 
 export class PersonGame extends DataObject {
   last_played = this.registerDateField('last_played', false);
@@ -18,6 +19,7 @@ export class PersonGame extends DataObject {
   game_id = this.registerIntegerField('game_id', true);
 
   private _platforms: GamePlatform[] = [];
+  private _myPlatforms: MyGamePlatform[] = [];
 
   constructor(private platformService: PlatformService,
               private allPlatforms: GamePlatform[]) {

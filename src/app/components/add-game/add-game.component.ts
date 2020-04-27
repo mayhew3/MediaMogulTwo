@@ -220,7 +220,7 @@ export class AddGameComponent implements OnInit {
 
       const returnGame = await this.gameService.addGame(game);
 
-      const availablePlatforms = returnGame.availablePlatforms;
+      const availablePlatforms = returnGame.platforms;
       _.forEach(availablePlatforms, availablePlatform => this.platformService.addToPlatformsIfDoesntExist(availablePlatform));
       _.forEach(match.platforms, matchPlatform => matchPlatform.exists = true);
       selectedPlatform.owned = true;
