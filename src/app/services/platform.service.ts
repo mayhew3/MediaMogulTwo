@@ -69,7 +69,8 @@ export class PlatformService implements OnDestroy {
     const existing = _.find(this._platforms, platform => platform.id.value === gamePlatform.id.value);
     if (!existing) {
       this._platforms.push(gamePlatform);
+      this.pushPlatformListChange();
     }
-    this.pushPlatformListChange();
+
   }
 }

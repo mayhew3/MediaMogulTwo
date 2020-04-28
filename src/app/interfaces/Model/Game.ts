@@ -188,6 +188,7 @@ export class Game extends DataObject {
     if (!foundPlatform) {
       const newPlatform = new GamePlatform().initializedFromJSON(platformObj.gamePlatform);
       this.platformService.addToPlatformsIfDoesntExist(newPlatform);
+      this.allPlatforms.push(newPlatform);
       return newPlatform;
     } else {
       return foundPlatform;
