@@ -148,6 +148,10 @@ export class Game extends DataObject {
     return _.find(this._availablePlatforms, availablePlatform => availablePlatform.platform.id.value === platform.id.value);
   }
 
+  getAvailablePlatformWithID(availableGamePlatformID: number): AvailableGamePlatform {
+    return _.find(this._availablePlatforms, apg => apg.id.value === availableGamePlatformID);
+  }
+
   getPlatformNames(): string[] {
     return _.map(this.availablePlatforms, availablePlatform => availablePlatform.platform_name.value);
   }

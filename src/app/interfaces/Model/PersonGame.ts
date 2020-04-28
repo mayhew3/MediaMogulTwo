@@ -38,10 +38,9 @@ export class PersonGame extends DataObject {
   initializedFromJSON(jsonObj: any): this {
     super.initializedFromJSON(jsonObj);
     this.removeTemporaryPlatforms();
-    _.forEach(jsonObj.myPlatforms, myPlatform => {
-      const realPlatform = this.getOrCreateGamePlatform(myPlatform, this.allPlatforms);
-      const availableGamePlatform = this.game.getAvailablePlatform(realPlatform);
-      this.addToMyPlatforms(myPlatform, availableGamePlatform);
+    _.forEach(jsonObj.myPlatforms, myPlatformObj => {
+      const availableGamePlatform = this.game.getAvailablePlatformWithID(myPlatformObj.available_game_platform_id);
+      this.addToMyPlatforms(myPlatformObj, availableGamePlatform);
     });
     return this;
   }
