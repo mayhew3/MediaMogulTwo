@@ -469,6 +469,20 @@ exports.updatePersonGame = async function(request, response) {
   }
 };
 
+exports.updateMyGamePlatform = async function(request, response) {
+  const myPlatformID = request.body.id;
+  const changedFields = request.body.changedFields;
+
+  try {
+    const myGamePlatform = await model.MyGamePlatform.findByPk(myPlatformID);
+    await myGamePlatform.update(changedFields);
+    response.json({});
+  } catch (err) {
+    console.error(err);
+    response.send({msg: 'Error updating myGamePlatform: ' + JSON.stringify(changedFields)});
+  }
+}
+
 exports.addGameplaySession = async function(request, response) {
   const gameplaySession = request.body;
 
