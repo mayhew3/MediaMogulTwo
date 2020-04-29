@@ -5,6 +5,7 @@ const jwks = require("jwks-rsa");
 module.exports = function(app) {
   let games = require('../controllers/games_controller');
   let persons = require('../controllers/persons_controller');
+  let platforms = require('../controllers/platforms_controller');
   let addGame = require('../controllers/add_game_controller');
 
   const authConfig = {
@@ -37,7 +38,11 @@ module.exports = function(app) {
 
   privateGet('/persons', persons.getPersons);
 
+  privateGet('/gamePlatforms', platforms.getPlatforms);
+
   privateGet('/igdbMatches', addGame.getIGDBMatches);
+
+  privatePut('/resolve', games.combineGames);
 
   app.use('/api', router);
 
@@ -55,6 +60,10 @@ module.exports = function(app) {
 
   function privatePut(endpoint, callback) {
     router.put(endpoint, authCheck, callback);
+  }
+
+  function privateDelete(endpoint, callback) {
+    router.delete(endpoint, authCheck, callback);
   }
 
   // error handlers

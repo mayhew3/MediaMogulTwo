@@ -1,21 +1,26 @@
 import {Injectable, OnDestroy} from '@angular/core';
 import {Game} from '../interfaces/Model/Game';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {ArrayService} from './array.service';
 import * as _ from 'underscore';
 import {PersonGame} from '../interfaces/Model/PersonGame';
 import {GameplaySession} from '../interfaces/Model/GameplaySession';
 import {PersonService} from './person.service';
 import {BehaviorSubject, Subject} from 'rxjs';
+import {PlatformService} from './platform.service';
+import {GamePlatform} from '../interfaces/Model/GamePlatform';
 import {Person} from '../interfaces/Model/Person';
-import {takeUntil} from 'rxjs/operators';
+import {first, takeUntil} from 'rxjs/operators';
+import {ArrayUtil} from '../utility/ArrayUtil';
+
+const httpOptions = {
+  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+};
 
 @Injectable({
   providedIn: 'root'
 })
 export class GameService implements OnDestroy {
-  private _me: Person;
-
   private _gamesUrl = 'api/games';
   private _games$ = new BehaviorSubject<Game[]>([]);
   private _dataStore: {games: Game[]} = {games: []};
@@ -23,11 +28,23 @@ export class GameService implements OnDestroy {
 
   private _destroy$ = new Subject();
 
+  private me: Person;
+  private allPlatforms: GamePlatform[];
+  private gameRefreshCount = 0;
 
   constructor(private http: HttpClient,
               private arrayService: ArrayService,
-              private personService: PersonService) {
-    this.personService.me$.subscribe(person => this._me = person);
+              private personService: PersonService,
+              private platformService: PlatformService) {
+    this.platformService.platforms.subscribe(platforms => {
+      this.allPlatforms = platforms;
+      if (!platforms) {
+        console.log(`GameService updated with undefined platforms array.`);
+      } else {
+        console.log(`GameService updated with ${platforms.length} platforms.`);
+      }
+    });
+    this.platformService.maybeRefreshCache();
   }
 
   // public observable for all changes to game list
@@ -48,41 +65,41 @@ export class GameService implements OnDestroy {
     this._destroy$.complete();
   }
 
-  findGame(igdb_id: number, platform: string): Game {
-    return _.find(this._dataStore.games, game => game.igdb_id.value === igdb_id && game.platform.value === platform);
-  }
-
-  findGames(igdb_id: number): Game[] {
-    return _.filter(this._dataStore.games, game => game.igdb_id.value === igdb_id);
+  // todo: prune data so igdb_id is unique
+  findGame(igdb_id: number): Game {
+    const matching = _.filter(this._dataStore.games, game => game.igdb_id.value === igdb_id);
+    if (matching.length > 1) {
+      throw new Error(`Found multiple games with IGDB_ID ${igdb_id}`);
+    } else if (matching.length === 0) {
+      return null;
+    } else {
+      return matching[0];
+    }
   }
 
   // PUBLIC CHANGE APIs. Make sure to call pushGameListChange() at the end of each operation.
 
   async addGame(game: Game): Promise<Game> {
-    const personGame = game.personGame;
-    if (!!personGame) {
-      delete game.personGame;
-    }
     const resultGame = await game.commit(this.http);
-    if (!!personGame) {
-      personGame.game_id.value = resultGame.id.value;
-      resultGame.personGame = await personGame.commit(this.http);
-    }
     this._dataStore.games.push(resultGame);
     this.pushGameListChange();
     return resultGame;
   }
 
   async addToMyGames(game: Game, rating: number): Promise<any> {
-    this.personService.me$.subscribe(async person => {
-      const personGame = new PersonGame();
-      personGame.person_id.value = person.id.value;
-      personGame.game_id.value = game.id.value;
-      personGame.rating.value = rating;
+    const personGame = new PersonGame(this.platformService, this.allPlatforms, game);
+    personGame.person_id.value = this.me.id.value;
+    personGame.rating.value = rating;
 
-      game.personGame = await personGame.commit(this.http);
-      this.pushGameListChange();
-    });
+    game.personGame = await personGame.commit(this.http);
+    this.pushGameListChange();
+  }
+
+  async addPersonGame(game: Game, personGame: PersonGame): Promise<PersonGame> {
+    // todo: make sure in-memory and server are returning valid myGamePlatforms
+    game.personGame = await personGame.commit(this.http);
+    this.pushGameListChange();
+    return game.personGame;
   }
 
   async updateGame(game: Game): Promise<any> {
@@ -111,26 +128,44 @@ export class GameService implements OnDestroy {
     return returnObj;
   }
 
+  async combinePlatforms(gameToKeep: Game, otherGames: Game[]): Promise<any> {
+    const payload = {
+      id: gameToKeep.id.value,
+      other_game_ids: _.map(otherGames, game => game.id.value),
+      person_id: this.me.id.value,
+    }
+    await this.http.put<any>('/api/resolve', payload, httpOptions).toPromise();
+    _.forEach(otherGames, game => ArrayUtil.removeFromArray(this._dataStore.games, game));
+    this.pushGameListChange();
+  }
 
   // PRIVATE CACHE MANAGEMENT METHODS
 
   private refreshCache() {
     this.personService.me$.subscribe(person => {
-      const personID = person.id.value;
-      const payload = {
-        person_id: personID.toString()
-      };
-      const options = {
-        params: payload
-      };
-      this.http
-        .get<any[]>(this._gamesUrl, options)
-        .pipe(takeUntil(this._destroy$))
-        .subscribe(gameObjs => {
-          this._dataStore.games = this.convertObjectsToGames(gameObjs);
-          this.pushGameListChange();
-          this._fetching = false;
-        })
+      this.me = person;
+      this.platformService.platforms
+        // only refresh the games the FIRST time platforms returns a valid array
+        .pipe(first(platforms => !!platforms && platforms.length > 0))
+        .subscribe(platforms => {
+          const personID = person.id.value;
+          const payload = {
+            person_id: personID.toString()
+          };
+          const options = {
+            params: payload
+          };
+          this.http
+            .get<any[]>(this._gamesUrl, options)
+            .pipe(takeUntil(this._destroy$))
+            .subscribe(gameObjs => {
+              this._dataStore.games = this.convertObjectsToGames(gameObjs, platforms);
+              this.gameRefreshCount++;
+              console.log(`Refreshing games for the ${this.gameRefreshCount} time: ${this._dataStore.games.length} games fetched.`);
+              this.pushGameListChange();
+              this._fetching = false;
+            });
+        });
     });
   }
 
@@ -139,8 +174,9 @@ export class GameService implements OnDestroy {
     this._games$.next(this.arrayService.cloneArray(this._dataStore.games));
   }
 
-  private convertObjectsToGames(gameObjs: any[]): Game[] {
-    return _.map(gameObjs, gameObj => new Game().initializedFromJSON(gameObj));
+  private convertObjectsToGames(gameObjs: any[], platforms: GamePlatform[]): Game[] {
+    return _.map(gameObjs, gameObj => new Game(this.platformService, platforms).initializedFromJSON(gameObj));
   }
+
 
 }

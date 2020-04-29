@@ -32,22 +32,228 @@
     </div>
   </div>
 
+  <h4>Available Platforms:</h4>
+
+  <div class="row">
+    <div class="col font-weight-bold">
+      Platform
+    </div>
+    <div class="col font-weight-bold">
+      Metacritic
+    </div>
+    <div class="col font-weight-bold">
+      Matched
+    </div>
+    <div class="col font-weight-bold">
+      Page
+    </div>
+
+  </div>
+
+  <div class="row"
+       *ngFor="let availablePlatform of game.availablePlatforms">
+    <div class="col">
+      {{availablePlatform.platform_name.value}}
+    </div>
+    <div class="col">
+      {{availablePlatform.metacritic.value}}
+    </div>
+
+    <div class="col">
+      {{availablePlatform.metacritic_matched.value | date: 'yyyy-MM-dd'}}
+    </div>
+    <div class="col">
+      {{availablePlatform.metacritic_page.value}}
+    </div>
+
+  </div>
+
+  <h4>My Platforms:</h4>
+
+  <div class="row">
+    <div class="col font-weight-bold">
+      Platform
+    </div>
+    <div class="col font-weight-bold">
+      Rating
+    </div>
+    <div class="col font-weight-bold">
+      Last Played
+    </div>
+    <div class="col font-weight-bold">
+      Minutes
+    </div>
+    <div class="col font-weight-bold" *ngIf="anyPlatformsAreFinished()">
+      Finished
+    </div>
+    <div class="col font-weight-bold" *ngIf="anyPlatformsAreFinished()">
+      Final
+    </div>
+    <div class="col font-weight-bold" *ngIf="anyPlatformsAreFinished()">
+      Replay
+    </div>
+    <div class="col font-weight-bold" *ngIf="anyPlatformsAreFinished()">
+      Reason
+    </div>
+
+  </div>
+
+
+  <div *ngIf="!!game.personGame">
+    <div class="row"
+         *ngFor="let myPlatform of game.personGame.myPlatforms">
+      <div class="col">
+        {{myPlatform.platform_name.value}}
+      </div>
+      <div class="col">
+        {{myPlatform.rating.value}}
+      </div>
+      <div class="col">
+        {{myPlatform.last_played.value | date: 'yyyy-MM-dd'}}
+      </div>
+      <div class="col">
+        {{myPlatform.minutes_played.value}}
+      </div>
+      <div class="col" *ngIf="anyPlatformsAreFinished()">
+        {{myPlatform.finished_date.value | date: 'yyyy-MM-dd'}}
+      </div>
+      <div class="col" *ngIf="anyPlatformsAreFinished()">
+        {{myPlatform.final_score.value}}
+      </div>
+      <div class="col" *ngIf="anyPlatformsAreFinished()">
+        {{myPlatform.replay_score.value}}
+      </div>
+      <div class="col" *ngIf="anyPlatformsAreFinished()">
+        {{myPlatform.replay_reason.value}}
+      </div>
+    </div>
+
+  </div>
+
+  <h4>Other Fields:</h4>
+
+  <div class="row">
+    <div class="col font-weight-bold">
+      TimeTotal
+    </div>
+    <div class="col font-weight-bold">
+      SteamID
+    </div>
+    <div class="col font-weight-bold">
+      Steam Cloud
+    </div>
+    <div class="col font-weight-bold">
+      Steam Page Gone
+    </div>
+    <div class="col font-weight-bold">
+      Steam Title
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      {{game.timetotal.value}}
+    </div>
+    <div class="col">
+      {{game.steamid.value}}
+    </div>
+    <div class="col">
+      {{game.steam_cloud.value}}
+    </div>
+    <div class="col">
+      {{game.steam_page_gone.value}}
+    </div>
+    <div class="col">
+      {{game.steam_title.value}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col font-weight-bold">
+      HowLong Title
+    </div>
+    <div class="col font-weight-bold">
+      HowLong Extras
+    </div>
+    <div class="col font-weight-bold">
+      GiantBomb Name
+    </div>
+    <div class="col font-weight-bold">
+      IGDB_W
+    </div>
+    <div class="col font-weight-bold">
+      IGDB_H
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      {{game.howlong_title.value}}
+    </div>
+    <div class="col">
+      {{game.howlong_extras.value}}
+    </div>
+    <div class="col">
+      {{game.giantbomb_name.value}}
+    </div>
+    <div class="col">
+      {{game.igdb_width.value}}
+    </div>
+    <div class="col">
+      {{game.igdb_height.value}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col font-weight-bold">
+      IGDB Rating
+    </div>
+    <div class="col font-weight-bold">
+      IGDB RCount
+    </div>
+    <div class="col font-weight-bold">
+      Release Date
+    </div>
+    <div class="col font-weight-bold">
+      Popularity
+    </div>
+    <div class="col font-weight-bold">
+      IGDB Slug
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      {{game.igdb_rating.value}}
+    </div>
+    <div class="col">
+      {{game.igdb_rating_count.value}}
+    </div>
+    <div class="col">
+      {{game.igdb_release_date.value | date: 'yyyy-MM-dd'}}
+    </div>
+    <div class="col">
+      {{game.igdb_popularity.value}}
+    </div>
+    <div class="col">
+      {{game.igdb_slug.value}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col font-weight-bold">
+      IGDB Updated
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      {{game.igdb_updated.value | date: 'yyyy-MM-dd'}}
+    </div>
+  </div>
 
   <form>
     <div class="row">
-
-      <!--PLATFORM-->
-      <div class="col-4">
-        <label class="col-form-label" for="platform">Platform</label>
-        <select class="custom-select darkInput"
-                id="platform"
-                name="platform"
-                [(ngModel)]="game.platform.value">
-          <option *ngFor="let platform of getPlatformOptions()"
-                  [selected]="getDisplayValueOf(platform) === game.platform.value"
-                  (click)="updatePlatform(platform)">{{getDisplayValueOf(platform)}}</option>
-        </select>
-      </div>
 
       <!--METACRITIC HINT-->
       <div class="col-4">

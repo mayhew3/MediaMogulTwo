@@ -7,6 +7,7 @@ import {OrderingDirection} from '../game-list/OrderingDirection';
 import {CloudGameFilter} from '../../interfaces/Filters/CloudGameFilter';
 import {PlatformGameFilter} from '../../interfaces/Filters/PlatformGameFilter';
 import {GameFilterWithOptions} from '../../interfaces/Filters/GameFilterWithOptions';
+import {PlatformService} from '../../services/platform.service';
 
 @Component({
   selector: 'mm-browse-games',
@@ -15,7 +16,7 @@ import {GameFilterWithOptions} from '../../interfaces/Filters/GameFilterWithOpti
 })
 export class BrowseGamesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private platformService: PlatformService) { }
 
   ngOnInit(): void {
   }
@@ -26,7 +27,7 @@ export class BrowseGamesComponent implements OnInit {
 
   getChangeableFilters(): GameFilterWithOptions[] {
     return [new CloudGameFilter(),
-      new PlatformGameFilter()];
+      new PlatformGameFilter(this.platformService)];
   }
 
   getOrderings(): GameOrdering[] {

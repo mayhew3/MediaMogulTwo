@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {getStatusText, InMemoryDbService, RequestInfo, ResponseOptions, STATUS} from 'angular-in-memory-web-api';
 import {MockGames} from '../mocks/games.mock';
 import {Observable} from 'rxjs';
@@ -7,6 +7,7 @@ import {GameplaySession} from '../interfaces/Model/GameplaySession';
 import * as lodash from 'lodash';
 import {MockPersons} from '../mocks/persons.mock';
 import {MockIGDBMatches} from '../mocks/igdb.matches.mock';
+import {MockGamePlatforms} from '../mocks/gamePlatforms.mock';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +16,7 @@ export class InMemoryDataService implements InMemoryDbService{
 
   games = MockGames;
   persons = MockPersons;
+  gamePlatforms = MockGamePlatforms;
 
   // STATIC HELPERS
 
@@ -35,6 +37,8 @@ export class InMemoryDataService implements InMemoryDbService{
       gameplaySessions: [] as GameplaySession[],
       persons: this.persons,
       igdbMatches: [],
+      gamePlatforms: this.gamePlatforms,
+      resolve: [],
     };
   }
 
@@ -60,7 +64,9 @@ export class InMemoryDataService implements InMemoryDbService{
   post(requestInfo: RequestInfo): Observable<Response> {
     console.log('HTTP override: POST');
     const collectionName = requestInfo.collectionName;
-    if (collectionName === 'personGames') {
+    if (collectionName === 'games') {
+      this.addGame(requestInfo);
+    } else if (collectionName === 'personGames') {
       this.addPersonGame(requestInfo);
     }
     return null;
@@ -74,6 +80,8 @@ export class InMemoryDataService implements InMemoryDbService{
       this.updateGame(requestInfo);
     } else if (collectionName === 'personGames') {
       this.updatePersonGame(requestInfo);
+    } else if (collectionName === 'resolve') {
+      this.packageUpResponse(this.getBody(requestInfo), requestInfo);
     }
     return null;
   }
@@ -110,14 +118,56 @@ export class InMemoryDataService implements InMemoryDbService{
     }
   }
 
+  private addGame(requestInfo: RequestInfo) {
+    const game = this.getBody(requestInfo);
+    game.id = this.nextGameID();
+    game.date_added = new Date();
+    this.updatePlatforms(game.availablePlatforms, this.getAvailablePlatforms());
+    const personGame = game.personGame;
+    if (!!personGame) {
+      personGame.id = this.nextPersonGameID();
+      personGame.game_id = game.id;
+      personGame.date_added = new Date();
+      this.updatePlatforms(personGame.myPlatforms, this.getMyPlatforms());
+    }
+    return this.packageUpResponse(game, requestInfo);
+  }
+
   private addPersonGame(requestInfo: RequestInfo) {
-    const body = this.getBody(requestInfo);
-    body.id = this.nextPersonGameID();
-    body.date_added = new Date();
-    const game = this.findGame(body.game_id);
-    if (!!game) {
-      game.personGame = body;
-      return this.packageUpResponse(body, requestInfo);
+    const personGame = this.getBody(requestInfo);
+    personGame.id = this.nextPersonGameID();
+    personGame.date_added = new Date();
+    this.updatePlatforms(personGame.myPlatforms, this.getMyPlatforms());
+    return this.packageUpResponse(personGame, requestInfo);
+  }
+
+  private updatePlatforms(array: any[], masterList: any[]) {
+    const newPlatforms = _.filter(array, platform => !platform.game_platform_id);
+    _.forEach(newPlatforms, platform => {
+      platform.gamePlatform = this.getOrCreateGamePlatform(platform);
+      platform.game_platform_id = platform.gamePlatform.id;
+    });
+
+    const newPlatformWrappers = _.filter(array, platform => !platform.id);
+    _.forEach(newPlatformWrappers, platform => {
+      platform.id = this.nextID(masterList);
+    });
+  }
+
+  private getOrCreateGamePlatform(platformWrapper: any): any {
+    const existing = _.findWhere(this.gamePlatforms, {full_name: platformWrapper.full_name});
+    if (!existing) {
+      const gamePlatform = {
+        id: this.nextGamePlatformID(),
+        full_name: platformWrapper.full_name,
+        short_name: platformWrapper.short_name,
+        igdb_platform_id: platformWrapper.igdb_platform_id,
+        igdb_name: platformWrapper.igdb_name
+      }
+      this.gamePlatforms.push(gamePlatform);
+      return gamePlatform;
+    } else {
+      return existing;
     }
   }
 
@@ -135,7 +185,16 @@ export class InMemoryDataService implements InMemoryDbService{
   }
 
   private getPersonGames(): any[] {
-    return _.map(_.filter(this.games, game => !!game.personGame), game => game.personGame);
+    const ownedGames = _.filter(this.games, game => !!game.person_games);
+    return _.flatten(_.map(ownedGames, game => game.person_games));
+  }
+
+  private getAvailablePlatforms(): any[] {
+    return _.flatten(_.map(this.games, game => game.availablePlatforms));
+  }
+
+  private getMyPlatforms(): any[] {
+    return _.flatten(_.map(this.getPersonGames(), personGame => personGame.myPlatforms));
   }
 
   private findPersonGame(personGameID: number): any {
@@ -143,14 +202,28 @@ export class InMemoryDataService implements InMemoryDbService{
     return _.findWhere(personGames, {id: personGameID});
   }
 
-  private nextPersonGameID(): number {
-    const personGames = this.getPersonGames();
-    // tslint:disable-next-line:radix
-    const ids = _.map(personGames, personGame => parseInt(personGame.id));
-    const maximum = _.max(ids);
-    return maximum + 1;
+  private nextID(array: any[]): number {
+    const ids = _.map(array, item => parseInt(item.id));
+    return ids.length > 0 ? _.max(ids) + 1 : 1;
   }
 
+  private nextGameID(): number {
+    return this.nextID(this.games);
+  }
+
+  private nextPersonGameID(): number {
+    const personGames = this.getPersonGames();
+    return this.nextID(personGames);
+  }
+
+  private nextAvailablePlatformID(): number {
+    const availablePlatforms = this.getAvailablePlatforms();
+    return this.nextID(availablePlatforms);
+  }
+
+  private nextGamePlatformID(): number {
+    return this.nextID(this.gamePlatforms);
+  }
 
 
   // DOMAIN-INDEPENDENT HELPERS

@@ -2,25 +2,28 @@ import {GameFilterOption} from './GameFilterOption';
 import {GameFilterWithOptions} from './GameFilterWithOptions';
 import {Game} from '../Model/Game';
 import * as _ from 'underscore';
-import {Platform} from '../Enum/Platform';
+import {PlatformService} from '../../services/platform.service';
+import {GamePlatform} from '../Model/GamePlatform';
+import {ArrayUtil} from '../../utility/ArrayUtil';
 
 export class PlatformGameFilter extends GameFilterWithOptions {
 
-  private static initializeOptions(): GameFilterOption[] {
-    return _.map(Object.keys(Platform), key => {
-      return new GameFilterOption(Platform[key], Platform[key], true, false);
-    });
+  constructor(private platformService: PlatformService) {
+    super([]);
+    platformService.platforms.subscribe(platforms => this.updateOptions(platforms));
   }
 
-  constructor() {
-    super(PlatformGameFilter.initializeOptions());
+  updateOptions(platforms: GamePlatform[]) {
+    const options = _.map(platforms, platform => new GameFilterOption(platform.full_name.value, platform.id.value, true, false));
+    ArrayUtil.refreshArray(this.options, options);
     this.addAllAndNone();
   }
 
   apply(game: Game): boolean {
     const gameFilterOptions = this.options;
     const selectedOptionKeys = _.map(_.where(gameFilterOptions, {isActive: true, special: false}), option => option.value);
-    return _.contains(selectedOptionKeys, game.platform.value);
+    const filtered = _.filter(selectedOptionKeys, key => game.hasPlatformWithID(key));
+    return filtered.length > 0;
   }
 
   getLabel(): string {

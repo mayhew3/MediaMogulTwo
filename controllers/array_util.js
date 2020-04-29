@@ -31,3 +31,7 @@ exports.shallowCopy = function(sourceObj, destinationObj) {
 function shouldCopy(propertyValue) {
   return !_.isArray(propertyValue);
 }
+
+exports.cloneArray = function(originalArray) {
+  return originalArray.slice();
+};

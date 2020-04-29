@@ -10,6 +10,8 @@ import {CloudGameFilter} from '../../interfaces/Filters/CloudGameFilter';
 import {PlatformGameFilter} from '../../interfaces/Filters/PlatformGameFilter';
 import {GameFilter} from '../../interfaces/Filters/GameFilter';
 import {OwnedGameFilter} from '../../interfaces/Filters/OwnedGameFilter';
+import {PlatformService} from '../../services/platform.service';
+import {MultiplePlatformsGameFilter} from '../../interfaces/Filters/MultiplePlatformsGameFilter';
 
 @Component({
   selector: 'mm-dashboard',
@@ -18,18 +20,18 @@ import {OwnedGameFilter} from '../../interfaces/Filters/OwnedGameFilter';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private platformService: PlatformService) { }
 
   ngOnInit(): void {
   }
 
   getBaseFilter(): GameFilter {
-    return new OwnedGameFilter();
+    return new MultiplePlatformsGameFilter();
   }
 
   getChangeableFilters(): GameFilterWithOptions[] {
     return [new CloudGameFilter(),
-      new PlatformGameFilter(),
+      new PlatformGameFilter(this.platformService),
       new FinishedGameFilter(),
     ];
   }

@@ -1,0 +1,43 @@
+<div class="card-body">
+  <div class="row gameRow">
+    <div class="col-4 gameCard"
+         *ngFor="let gameGroup of gameGroups">
+
+      <div class="resolutionCard"
+           [ngClass]="cardClass(gameGroup)"
+           (click)="openDetailPopup(gameGroup)">
+
+        <div class="row">
+
+          <div class="col-6 gameImageContainer">
+            <img class="rounded gameImage"
+                 *ngIf="!!gameGroup.getFirstPoster()"
+                 src="{{gameGroup.getFirstPoster()}}"/>
+          </div>
+
+          <div class="col-6">
+            <div class="row">
+
+
+              <div class="col-12 m-1">
+                <ul>
+                  <li *ngFor="let title of gameGroup.getTitles()">{{title}}<br></li>
+                </ul>
+              </div>
+
+              Platforms:
+              <div class="col-12 m-1">
+                <ul>
+                  <li *ngFor="let platform of gameGroup.getPlatforms()">{{platform}}<br></li>
+                </ul>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

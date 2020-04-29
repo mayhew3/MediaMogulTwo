@@ -1,9 +1,14 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {GameService} from '../../services/game.service';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
-import {Platform} from '../../interfaces/Enum/Platform';
 import {PersonService} from '../../services/person.service';
 import {Game} from '../../interfaces/Model/Game';
+import {PlatformService} from '../../services/platform.service';
+import {GamePlatform} from '../../interfaces/Model/GamePlatform';
+import {ArrayUtil} from '../../utility/ArrayUtil';
+import * as _ from 'underscore';
+import {AvailableGamePlatform} from '../../interfaces/Model/AvailableGamePlatform';
+import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
 
 @Component({
   selector: 'mm-game-detail',
@@ -21,9 +26,15 @@ export class GameDetailComponent implements OnInit {
 
   titleEditMode = false;
 
+  allPlatforms: GamePlatform[] = [];
+
   constructor(private gameService: GameService,
               public activeModal: NgbActiveModal,
-              public personService: PersonService) { }
+              public personService: PersonService,
+              private platformService: PlatformService) {
+    this.platformService.platforms.subscribe(platforms => ArrayUtil.refreshArray(this.allPlatforms, platforms));
+    this.platformService.maybeRefreshCache();
+  }
 
   ngOnInit(): void {
     this.finished = !!this.game.personGame && !!this.game.personGame.finished_date.value;
@@ -48,17 +59,25 @@ export class GameDetailComponent implements OnInit {
     this.changedPersonFields = this.game.personGame.getChangedFields();
   }
 
-  getPlatformOptions(): string[] {
-    return Object.keys(Platform);
+  isOwned(platform: GamePlatform): boolean {
+    return this.game.personGame.hasPlatformWithIGDBID(platform.igdb_platform_id.value);
   }
 
-  getDisplayValueOf(platformOption: string): string {
-    return Platform[platformOption];
+  anyPlatformsAreFinished(): boolean {
+    const finishedPlatform = _.find(this.game.personGame.myPlatforms, myPlatform => this.isFinished(myPlatform));
+    return !!finishedPlatform;
   }
 
-  updatePlatform(platform) {
-    this.game.platform.value = this.getDisplayValueOf(platform);
-    this.onFieldEdit();
+  isFinished(myPlatform: MyGamePlatform): boolean {
+    return !!myPlatform.finished_date.value;
+  }
+
+  getMyPlatform(availableGamePlatform: AvailableGamePlatform): MyGamePlatform {
+    return !this.game.personGame ? null : _.find(this.game.personGame.myPlatforms, myPlatform => myPlatform.platform.id.value === availableGamePlatform.platform.id.value);
+  }
+
+  getOwnedString(platform: GamePlatform): string {
+    return this.isOwned(platform) ? 'Owned' : 'Unowned';
   }
 
   hasPerson(): boolean {
