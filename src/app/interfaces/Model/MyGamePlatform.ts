@@ -18,6 +18,7 @@ export class MyGamePlatform extends DataObject {
   replay_score = this.registerDecimalField("replay_score", true);
   last_played = this.registerDateField("last_played", true);
   finished_date = this.registerDateField("finished_date", true);
+  collection_add = this.registerDateField("collection_add", true);
   replay_reason = this.registerStringField("replay_reason", true);
 
   constructor(private availableGamePlatform: AvailableGamePlatform) {

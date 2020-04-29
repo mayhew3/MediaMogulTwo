@@ -214,6 +214,12 @@ export class Game extends DataObject {
     return max > 0 ? max : null;
   }
 
+  getOwnershipDateAdded(): Date {
+    const allDateAdded = _.map(this.myPlatforms, myPlatform => myPlatform.collection_add.originalValue);
+    const max = _.max(allDateAdded);
+    return max > 0 ? max : null;
+  }
+
   getApiMethod(): string {
     return 'games';
   }
