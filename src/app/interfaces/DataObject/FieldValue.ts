@@ -91,13 +91,13 @@ export abstract class FieldValue<T> {
     if (!this.isSame(this._originalValue, this.value)) {
       return this.value;
     } else {
-      return null;
+      return undefined;
     }
   }
 
   update() {
     const changed = this.getChangedValue();
-    if (!!changed) {
+    if (changed !== undefined) {
       this._value = changed;
       this._originalValue = this._value;
     }
