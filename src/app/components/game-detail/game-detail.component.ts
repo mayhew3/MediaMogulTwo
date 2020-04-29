@@ -67,7 +67,7 @@ export class GameDetailComponent implements OnInit {
 
   onFinishedFieldEdit(event) {
     this.finished = event;
-    this.selectedPlatform.finished_date.value = !!this.finished ? new Date() : undefined;
+    this.selectedPlatform.finished_date.value = !!this.finished ? new Date() : null;
     this.onFieldEdit();
   }
 
