@@ -19,9 +19,9 @@
           {{game.title.originalValue}}
         </div>
 
-        <div class="col-12 m-1" *ngIf="game.isOwned() && !!game.personGame.last_played.originalValue">
+        <div class="col-12 m-1" *ngIf="game.isOwned() && !!game.getLastPlayed()">
           <span>
-            {{game.personGame.last_played.originalValue | date: game.personGame.getLastPlayedFormat():'America/Los_Angeles'}}
+            {{game.getLastPlayed() | date: 'yyyy.M.d':'America/Los_Angeles'}}
           </span>
         </div>
 

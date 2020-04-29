@@ -208,6 +208,12 @@ export class Game extends DataObject {
     return _.some(this.availablePlatforms, availablePlatform => availablePlatform.isOwned());
   }
 
+  getLastPlayed(): Date {
+    const allLastPlayed = _.map(this.myPlatforms, myPlatform => myPlatform.last_played.originalValue);
+    const max = _.max(allLastPlayed);
+    return max > 0 ? max : null;
+  }
+
   getApiMethod(): string {
     return 'games';
   }
