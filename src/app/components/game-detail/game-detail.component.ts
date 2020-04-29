@@ -25,6 +25,8 @@ export class GameDetailComponent implements OnInit {
 
   titleEditMode = false;
 
+  selectedPlatform: MyGamePlatform;
+
   allPlatforms: GamePlatform[] = [];
 
   constructor(private gameService: GameService,
@@ -36,7 +38,8 @@ export class GameDetailComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.finished = !!this.game.personGame && !!this.game.personGame.finished_date.value;
+    this.selectedPlatform = this.game.myPreferredPlatform;
+    this.finished = !!this.selectedPlatform && !!this.selectedPlatform.finished_date.value;
     this.editedTitle = this.game.title.value;
   }
 
@@ -49,13 +52,13 @@ export class GameDetailComponent implements OnInit {
   }
 
   onFinishedFieldEdit() {
-    this.game.personGame.finished_date.value = !!this.finished ? new Date() : undefined;
+    this.selectedPlatform.finished_date.value = !!this.finished ? new Date() : undefined;
     this.onFieldEdit();
   }
 
   onFieldEdit() {
     this.changedGameFields = this.game.getChangedFields();
-    this.changedPersonFields = this.game.personGame.getChangedFields();
+    this.changedPersonFields = this.selectedPlatform.getChangedFields();
   }
 
   anyPlatformsAreFinished(): boolean {
@@ -68,7 +71,7 @@ export class GameDetailComponent implements OnInit {
   }
 
   hasPerson(): boolean {
-    return !!this.game.personGame;
+    return !!this.selectedPlatform;
   }
 
   async changeValues() {
@@ -92,7 +95,7 @@ export class GameDetailComponent implements OnInit {
   }
 
   async doPersonUpdate() {
-    await this.gameService.updatePersonGame(this.game.personGame);
+    await this.gameService.updateMyPlatform(this.selectedPlatform);
   }
 
   async doGameUpdate() {

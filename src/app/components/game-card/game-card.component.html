@@ -19,6 +19,10 @@
           {{game.title.originalValue}}
         </div>
 
+        <div class="col-12 m-1" *ngIf="game.myPreferredPlatform">
+          {{game.myPreferredPlatform.platform_name.originalValue}}
+        </div>
+
         <div class="col-12 m-1" *ngIf="game.isOwned() && !!game.getLastPlayed()">
           <span>
             {{game.getLastPlayed() | date: 'yyyy-MM-dd':'America/Los_Angeles'}}

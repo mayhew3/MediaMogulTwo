@@ -12,6 +12,7 @@ import {GamePlatform} from '../interfaces/Model/GamePlatform';
 import {Person} from '../interfaces/Model/Person';
 import {first, takeUntil} from 'rxjs/operators';
 import {ArrayUtil} from '../utility/ArrayUtil';
+import {MyGamePlatform} from '../interfaces/Model/MyGamePlatform';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -119,6 +120,11 @@ export class GameService implements OnDestroy {
 
   async updatePersonGame(personGame: PersonGame): Promise<any> {
     await personGame.commit(this.http);
+    this.pushGameListChange();
+  }
+
+  async updateMyPlatform(myGamePlatform: MyGamePlatform): Promise<any> {
+    await myGamePlatform.commit(this.http);
     this.pushGameListChange();
   }
 
