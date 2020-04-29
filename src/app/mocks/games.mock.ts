@@ -51,6 +51,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 307,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -124,6 +125,7 @@ export const MockGames = [
         "platform_name": "Wii U",
         "last_played": "2020-02-20 00:00:00.0",
         "id": 142,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -197,6 +199,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 199,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -270,6 +273,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 716,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -343,6 +347,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 77,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -416,6 +421,7 @@ export const MockGames = [
         "platform_name": "Wii U",
         "last_played": null,
         "id": 684,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -489,6 +495,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 810,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -563,6 +570,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 139,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -589,6 +597,7 @@ export const MockGames = [
           "platform_name": "Xbox 360",
           "last_played": null,
           "id": 140,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -663,6 +672,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 773,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -735,6 +745,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 916,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -808,6 +819,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 920,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -881,6 +893,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 814,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -954,6 +967,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 131,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -1027,6 +1041,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 378,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -1100,6 +1115,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2016-08-06 03:49:06.154",
         "id": 760,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -1173,6 +1189,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 741,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -1245,6 +1262,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 549,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -1318,6 +1336,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 507,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -1391,6 +1410,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2014-10-15 03:45:06.958",
         "id": 68,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -1464,6 +1484,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 147,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -1537,6 +1558,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 915,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -1610,6 +1632,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 881,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -1682,6 +1705,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 206,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -1755,6 +1779,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 659,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -1829,6 +1854,7 @@ export const MockGames = [
           "platform_name": "PS3",
           "last_played": null,
           "id": 1,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -1910,6 +1936,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": "2020-04-13 00:00:00.0",
         "id": 361,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -1983,6 +2010,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 257,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -2057,6 +2085,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": "2018-03-27 19:11:30.237",
           "id": 626,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -2083,6 +2112,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 627,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -2157,6 +2187,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 459,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -2230,6 +2261,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 153,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -2303,6 +2335,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 183,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -2376,6 +2409,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 531,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -2449,6 +2483,7 @@ export const MockGames = [
         "platform_name": "Wii",
         "last_played": null,
         "id": 270,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -2567,6 +2602,7 @@ export const MockGames = [
         "platform_name": "Wii",
         "last_played": null,
         "id": 235,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -2640,6 +2676,7 @@ export const MockGames = [
         "platform_name": "Wii",
         "last_played": null,
         "id": 112,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -2713,6 +2750,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 212,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -2786,6 +2824,7 @@ export const MockGames = [
         "platform_name": "Wii",
         "last_played": null,
         "id": 132,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -2860,6 +2899,7 @@ export const MockGames = [
           "platform_name": "PS3",
           "last_played": null,
           "id": 938,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -2886,6 +2926,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 939,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -2960,6 +3001,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2016-01-25 03:45:54.228",
         "id": 894,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -3033,6 +3075,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 86,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -3106,6 +3149,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 217,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -3179,6 +3223,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 138,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -3252,6 +3297,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 83,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -3325,6 +3371,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 252,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -3397,6 +3444,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 546,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -3469,6 +3517,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 555,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -3540,6 +3589,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 330,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -3613,6 +3663,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 777,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -3686,6 +3737,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 250,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -3757,6 +3809,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 841,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -3830,6 +3883,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 304,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -3903,6 +3957,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 802,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -3976,6 +4031,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 262,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -4049,6 +4105,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 313,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -4122,6 +4179,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2016-05-12 03:45:57.499",
         "id": 29,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -4195,6 +4253,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 766,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -4268,6 +4327,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 209,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -4339,6 +4399,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 442,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -4412,6 +4473,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 695,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -4485,6 +4547,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 203,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -4601,6 +4664,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2016-06-14 03:45:50.311",
         "id": 647,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -4675,6 +4739,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": "2015-02-20 00:00:05.155",
           "id": 966,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -4701,6 +4766,7 @@ export const MockGames = [
           "platform_name": "PS3",
           "last_played": null,
           "id": 967,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -4775,6 +4841,7 @@ export const MockGames = [
         "platform_name": "Wii",
         "last_played": null,
         "id": 259,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -4848,6 +4915,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 654,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -4921,6 +4989,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 31,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -4994,6 +5063,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 567,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -5067,6 +5137,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 177,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -5140,6 +5211,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 752,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -5213,6 +5285,7 @@ export const MockGames = [
         "platform_name": "Wii",
         "last_played": null,
         "id": 582,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -5285,6 +5358,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 346,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -5357,6 +5431,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 104,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -5430,6 +5505,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 226,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -5504,6 +5580,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 382,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -5528,6 +5605,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 383,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -5602,6 +5680,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 825,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -5675,6 +5754,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 411,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -5748,6 +5828,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 668,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -5821,6 +5902,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 126,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -5894,6 +5976,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 56,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -5967,6 +6050,7 @@ export const MockGames = [
         "platform_name": "NDS",
         "last_played": null,
         "id": 156,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -6039,6 +6123,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 502,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -6112,6 +6197,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 631,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -6185,6 +6271,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 182,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -6258,6 +6345,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 341,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -6330,6 +6418,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 801,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -6403,6 +6492,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 615,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -6476,6 +6566,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 380,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -6550,6 +6641,7 @@ export const MockGames = [
           "platform_name": "PS3",
           "last_played": null,
           "id": 9,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -6576,6 +6668,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 10,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -6650,6 +6743,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 389,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -6722,6 +6816,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 581,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -6795,6 +6890,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 353,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -6868,6 +6964,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 497,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -6941,6 +7038,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 602,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -7014,6 +7112,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 770,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -7087,6 +7186,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 573,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -7160,6 +7260,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 466,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -7233,6 +7334,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 293,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -7306,6 +7408,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 756,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -7379,6 +7482,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 344,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -7452,6 +7556,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 454,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -7525,6 +7630,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 282,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -7598,6 +7704,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 95,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -7671,6 +7778,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 143,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -7744,6 +7852,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 261,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -7817,6 +7926,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 391,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -7890,6 +8000,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 269,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -7963,6 +8074,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 685,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -8036,6 +8148,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 404,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -8109,6 +8222,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 501,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -8183,6 +8297,7 @@ export const MockGames = [
           "platform_name": "PC",
           "last_played": null,
           "id": 686,
+          "preferred": true,
           "person_id": 1
         },
         {
@@ -8200,6 +8315,7 @@ export const MockGames = [
           "platform_name": "PC",
           "last_played": null,
           "id": 687,
+          "preferred": true,
           "person_id": 4
         }
       ]
@@ -8289,6 +8405,7 @@ export const MockGames = [
         "platform_name": "Xbox",
         "last_played": null,
         "id": 123,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -8362,6 +8479,7 @@ export const MockGames = [
         "platform_name": "Xbox",
         "last_played": null,
         "id": 809,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -8479,6 +8597,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 174,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -8552,6 +8671,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 640,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -8625,6 +8745,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 923,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -8698,6 +8819,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 397,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -8771,6 +8893,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 538,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -8843,6 +8966,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 91,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -8915,6 +9039,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 593,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -8988,6 +9113,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 641,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -9061,6 +9187,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 229,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -9134,6 +9261,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 838,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -9207,6 +9335,7 @@ export const MockGames = [
         "platform_name": "Wii",
         "last_played": null,
         "id": 101,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -9280,6 +9409,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 896,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -9353,6 +9483,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 171,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -9426,6 +9557,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 151,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -9499,6 +9631,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 296,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -9572,6 +9705,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 905,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -9645,6 +9779,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 943,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -9718,6 +9853,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 639,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -9791,6 +9927,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 874,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -9864,6 +10001,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 688,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -9937,6 +10075,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 478,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -10010,6 +10149,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 208,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -10083,6 +10223,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 128,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -10156,6 +10297,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 699,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -10229,6 +10371,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 795,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -10302,6 +10445,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 519,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -10374,6 +10518,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 524,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -10447,6 +10592,7 @@ export const MockGames = [
         "platform_name": "Xbox",
         "last_played": null,
         "id": 157,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -10520,6 +10666,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 90,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -10593,6 +10740,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 240,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -10666,6 +10814,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 421,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -10739,6 +10888,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 700,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -10812,6 +10962,7 @@ export const MockGames = [
         "platform_name": "NDS",
         "last_played": null,
         "id": 328,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -10885,6 +11036,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 558,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -10958,6 +11110,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 665,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -11031,6 +11184,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 38,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -11104,6 +11258,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 447,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -11177,6 +11332,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 714,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -11249,6 +11405,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 762,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -11322,6 +11479,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 17,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -11395,6 +11553,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 113,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -11468,6 +11627,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 535,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -11541,6 +11701,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 422,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -11614,6 +11775,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 325,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -11687,6 +11849,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 205,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -11760,6 +11923,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 201,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -11833,6 +11997,7 @@ export const MockGames = [
         "platform_name": "Xbox",
         "last_played": null,
         "id": 917,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -11906,6 +12071,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 926,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -11979,6 +12145,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 42,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -12052,6 +12219,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 232,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -12124,6 +12292,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 284,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -12196,6 +12365,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 405,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -12268,6 +12438,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 658,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -12341,6 +12512,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 351,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -12414,6 +12586,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 496,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -12486,6 +12659,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 426,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -12559,6 +12733,7 @@ export const MockGames = [
         "platform_name": "Xbox",
         "last_played": null,
         "id": 191,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -12632,6 +12807,7 @@ export const MockGames = [
         "platform_name": "NDS",
         "last_played": null,
         "id": 886,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -12704,6 +12880,7 @@ export const MockGames = [
         "platform_name": "Xbox",
         "last_played": null,
         "id": 560,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -12777,6 +12954,7 @@ export const MockGames = [
         "platform_name": "Xbox",
         "last_played": null,
         "id": 111,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -12850,6 +13028,7 @@ export const MockGames = [
         "platform_name": "Xbox",
         "last_played": null,
         "id": 757,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -12923,6 +13102,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 218,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -12996,6 +13176,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 216,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -13069,6 +13250,7 @@ export const MockGames = [
         "platform_name": "Xbox",
         "last_played": null,
         "id": 539,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -13142,6 +13324,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 255,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -13215,6 +13398,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 680,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -13288,6 +13472,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 23,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -13361,6 +13546,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 648,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -13434,6 +13620,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 60,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -13507,6 +13694,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 839,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -13580,6 +13768,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 867,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -13653,6 +13842,7 @@ export const MockGames = [
         "platform_name": "Xbox",
         "last_played": null,
         "id": 823,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -13726,6 +13916,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 565,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -13799,6 +13990,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 266,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -13872,6 +14064,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 921,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -13945,6 +14138,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 847,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -14017,6 +14211,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 782,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -14090,6 +14285,7 @@ export const MockGames = [
         "platform_name": "Xbox",
         "last_played": null,
         "id": 290,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -14163,6 +14359,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 834,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -14236,6 +14433,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 644,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -14309,6 +14507,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 309,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -14382,6 +14581,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 436,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -14455,6 +14655,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 528,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -14528,6 +14729,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 98,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -14601,6 +14803,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2018-09-03 20:59:34.422",
         "id": 286,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -15121,6 +15324,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-02-04 17:19:53.704",
         "id": 887,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -15194,6 +15398,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 737,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -15267,6 +15472,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 219,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -15340,6 +15546,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 331,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -15413,6 +15620,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 880,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -15485,6 +15693,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 831,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -15558,6 +15767,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 53,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -15631,6 +15841,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 410,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -15704,6 +15915,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 725,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -15777,6 +15989,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2018-03-27 19:11:29.893",
         "id": 162,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -15850,6 +16063,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2014-10-20 03:45:05.042",
         "id": 491,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -15923,6 +16137,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 30,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -15996,6 +16211,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 268,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -16068,6 +16284,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 82,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -16141,6 +16358,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2015-09-23 01:23:15.761",
         "id": 594,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -16214,6 +16432,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 776,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -16287,6 +16506,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 928,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -16359,6 +16579,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 371,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -16432,6 +16653,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 666,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -16505,6 +16727,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 701,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -16578,6 +16801,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 712,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -16650,6 +16874,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2014-11-19 03:45:45.418",
         "id": 102,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -16723,6 +16948,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 446,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -16839,6 +17065,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 310,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -16912,6 +17139,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 275,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -16985,6 +17213,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 64,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -17056,6 +17285,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 494,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -17127,6 +17357,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 674,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -17200,6 +17431,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 705,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -17273,6 +17505,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 170,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -17346,6 +17579,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 231,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -17419,6 +17653,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 681,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -17492,6 +17727,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 655,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -17565,6 +17801,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 352,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -17639,6 +17876,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 703,
+          "preferred": true,
           "person_id": 1
         },
         {
@@ -17656,6 +17894,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 704,
+          "preferred": true,
           "person_id": 4
         }
       ]
@@ -17745,6 +17984,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 245,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -17818,6 +18058,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 899,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -17891,6 +18132,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2017-07-07 04:45:06.0",
         "id": 116,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -17965,6 +18207,7 @@ export const MockGames = [
           "platform_name": "PS3",
           "last_played": null,
           "id": 375,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -17991,6 +18234,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 376,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -18065,6 +18309,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 554,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -18138,6 +18383,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 25,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -18211,6 +18457,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 350,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -18283,6 +18530,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 717,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -18355,6 +18603,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 333,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -18428,6 +18677,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 267,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -18500,6 +18750,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 118,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -18573,6 +18824,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 720,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -18646,6 +18898,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 738,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -18719,6 +18972,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 649,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -18792,6 +19046,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 868,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -18865,6 +19120,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 335,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -18938,6 +19194,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 26,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -19011,6 +19268,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 439,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -19084,6 +19342,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 544,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -19157,6 +19416,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 136,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -19230,6 +19490,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 314,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -19302,6 +19563,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 861,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -19375,6 +19637,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 636,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -19448,6 +19711,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 783,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -19520,6 +19784,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 321,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -19593,6 +19858,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 811,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -19666,6 +19932,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 137,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -19739,6 +20006,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 283,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -19812,6 +20080,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2016-06-16 03:45:53.714",
         "id": 159,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -19885,6 +20154,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-06-20 20:44:04.817",
         "id": 791,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -19958,6 +20228,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 750,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -20031,6 +20302,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 5,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -20104,6 +20376,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 316,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -20177,6 +20450,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 408,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -20250,6 +20524,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2014-10-08 03:45:06.675",
         "id": 485,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -20322,6 +20597,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 848,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -20395,6 +20671,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 536,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -20468,6 +20745,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 251,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -20541,6 +20819,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 63,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -20614,6 +20893,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 515,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -20688,6 +20968,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": "2016-11-18 03:45:52.189",
           "id": 386,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -20714,6 +20995,7 @@ export const MockGames = [
           "platform_name": "Xbox One",
           "last_played": null,
           "id": 387,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -20786,6 +21068,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 441,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -20857,6 +21140,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 444,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -20930,6 +21214,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 597,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -21003,6 +21288,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 369,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -21074,6 +21360,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 706,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -21147,6 +21434,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 693,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -21220,6 +21508,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 815,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -21294,6 +21583,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 578,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -21320,6 +21610,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 579,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -21394,6 +21685,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2015-02-18 17:00:02.305",
         "id": 357,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -21467,6 +21759,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 230,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -21540,6 +21833,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 488,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -21611,6 +21905,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 396,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -21684,6 +21979,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 278,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -21757,6 +22053,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 842,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -21830,6 +22127,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 818,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -21903,6 +22201,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2017-03-23 04:45:16.968",
         "id": 332,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -21976,6 +22275,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 583,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -22049,6 +22349,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2018-09-03 20:59:44.805",
         "id": 50,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -22122,6 +22423,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 363,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -22195,6 +22497,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 590,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -22268,6 +22571,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 359,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -22341,6 +22645,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 37,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -22414,6 +22719,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2018-04-17 19:32:11.132",
         "id": 172,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -22487,6 +22793,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2015-02-19 23:00:10.21",
         "id": 670,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -22646,6 +22953,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 433,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -22719,6 +23027,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 287,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -22792,6 +23101,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2017-03-23 04:45:19.544",
         "id": 356,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -22997,6 +23307,7 @@ export const MockGames = [
           "platform_name": "Xbox 360",
           "last_played": null,
           "id": 366,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -23024,6 +23335,7 @@ export const MockGames = [
             "platform_name": "Steam",
             "last_played": "2019-08-02 13:58:05.327",
             "id": 367,
+            "preferred": false,
             "person_id": 1
           },
           {
@@ -23041,6 +23353,7 @@ export const MockGames = [
             "platform_name": "Steam",
             "last_played": null,
             "id": 368,
+            "preferred": true,
             "person_id": 4
           }
         ]
@@ -23219,6 +23532,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2015-04-30 23:00:14.637",
         "id": 264,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -23292,6 +23606,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 67,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -23365,6 +23680,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 854,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -23708,6 +24024,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2016-08-06 03:49:26.918",
         "id": 521,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -23871,6 +24188,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2014-11-04 11:43:59.643",
         "id": 452,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -23942,6 +24260,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 178,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -24015,6 +24334,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 210,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -24174,6 +24494,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 675,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -24376,6 +24697,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2015-06-11 04:00:14.356",
         "id": 721,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -24449,6 +24771,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 513,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -24522,6 +24845,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2014-12-23 03:45:45.725",
         "id": 845,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -24595,6 +24919,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2018-02-20 20:30:04.422",
         "id": 467,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -24669,6 +24994,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": "2015-10-21 03:46:06.788",
           "id": 748,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -24695,6 +25021,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 749,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -24769,6 +25096,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2018-07-19 11:45:43.436",
         "id": 525,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -24843,6 +25171,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 739,
+          "preferred": true,
           "person_id": 1
         },
         {
@@ -24860,6 +25189,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 740,
+          "preferred": true,
           "person_id": 4
         }
       ]
@@ -24949,6 +25279,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2016-09-04 03:45:59.472",
         "id": 431,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -25068,6 +25399,7 @@ export const MockGames = [
           "platform_name": "PS3",
           "last_played": null,
           "id": 530,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -25242,6 +25574,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2020-03-29 23:09:24.215",
         "id": 152,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -25714,6 +26047,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 134,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -25826,6 +26160,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 243,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -25910,6 +26245,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 46,
+          "preferred": true,
           "person_id": 1
         }]
       }
@@ -26028,6 +26364,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 458,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -26101,6 +26438,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2015-04-03 00:00:03.485",
         "id": 144,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -26265,6 +26603,7 @@ export const MockGames = [
           "platform_name": "PS3",
           "last_played": null,
           "id": 272,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -26482,6 +26821,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2015-06-12 22:00:01.128",
         "id": 568,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -26645,6 +26985,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 294,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -26718,6 +27059,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2017-07-12 04:45:27.654",
         "id": 184,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -26792,6 +27134,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 964,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -26818,6 +27161,7 @@ export const MockGames = [
           "platform_name": "Xbox One",
           "last_played": null,
           "id": 965,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -26892,6 +27236,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2016-03-02 21:31:55.041",
         "id": 343,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -26966,6 +27311,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 469,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -26993,6 +27339,7 @@ export const MockGames = [
             "platform_name": "PS4",
             "last_played": null,
             "id": 470,
+            "preferred": false,
             "person_id": 1
           },
           {
@@ -27010,6 +27357,7 @@ export const MockGames = [
             "platform_name": "PS4",
             "last_played": null,
             "id": 471,
+            "preferred": true,
             "person_id": 4
           }
         ]
@@ -27100,6 +27448,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 746,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -27173,6 +27522,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 370,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -27246,6 +27596,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 774,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -27319,6 +27670,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 158,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -27393,6 +27745,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": "2016-12-28 04:45:24.839",
           "id": 480,
+          "preferred": true,
           "person_id": 1
         },
         {
@@ -27410,6 +27763,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 481,
+          "preferred": true,
           "person_id": 5
         }
       ]
@@ -27500,6 +27854,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": "2016-12-03 03:46:02.526",
           "id": 291,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -27526,6 +27881,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 292,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -27870,6 +28226,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2017-07-12 04:45:27.045",
         "id": 673,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -27943,6 +28300,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 743,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -28016,6 +28374,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 526,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -28263,6 +28622,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 564,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -28472,6 +28832,7 @@ export const MockGames = [
           "platform_name": "Xbox One",
           "last_played": null,
           "id": 941,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -28496,6 +28857,7 @@ export const MockGames = [
           "platform_name": "PS3",
           "last_played": null,
           "id": 942,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -28570,6 +28932,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 198,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -28643,6 +29006,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 595,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -28716,6 +29080,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 14,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -28789,6 +29154,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 591,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -28862,6 +29228,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 125,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -28935,6 +29302,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 213,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -29008,6 +29376,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 48,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -29081,6 +29450,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 925,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -29154,6 +29524,7 @@ export const MockGames = [
         "platform_name": "Xbox 360",
         "last_played": null,
         "id": 13,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -29266,6 +29637,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 723,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -29519,6 +29891,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 200,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -29592,6 +29965,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 864,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -29708,6 +30082,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 36,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -29779,6 +30154,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 662,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -29850,6 +30226,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 851,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -29923,6 +30300,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 902,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -29996,6 +30374,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 238,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -30067,6 +30446,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 620,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -30140,6 +30520,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2017-08-10 20:45:28.384",
         "id": 850,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -30213,6 +30594,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 829,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -30284,6 +30666,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 781,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -30355,6 +30738,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-03-15 20:35:39.32",
         "id": 120,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -30426,6 +30810,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 117,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -30499,6 +30884,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-09-10 21:06:02.481",
         "id": 940,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -30570,6 +30956,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2016-09-05 03:46:03.46",
         "id": 186,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -30641,6 +31028,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2016-09-05 03:46:06.46",
         "id": 461,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -30714,6 +31102,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2016-01-04 03:46:04.051",
         "id": 542,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -30788,6 +31177,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": "2019-10-31 19:37:02.828",
           "id": 934,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -30814,6 +31204,7 @@ export const MockGames = [
           "platform_name": "Xbox One",
           "last_played": null,
           "id": 935,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -30888,6 +31279,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2017-05-17 04:45:24.358",
         "id": 145,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -30960,6 +31352,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 523,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -31032,6 +31425,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 509,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -31104,6 +31498,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 322,
+          "preferred": true,
           "person_id": 1
         },
         {
@@ -31121,6 +31516,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 323,
+          "preferred": true,
           "person_id": 5
         }
       ]
@@ -31208,6 +31604,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 950,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -31282,6 +31679,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": "2020-02-06 21:12:29.142",
           "id": 862,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -31308,6 +31706,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 863,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -31382,6 +31781,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 747,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -31453,6 +31853,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 778,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -31524,6 +31925,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 187,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -31595,6 +31997,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 189,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -31668,6 +32071,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 833,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -31741,6 +32145,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 827,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -31814,6 +32219,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 74,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -31887,6 +32293,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 364,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -31958,6 +32365,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 828,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -32031,6 +32439,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 256,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -32104,6 +32513,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 883,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -32177,6 +32587,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 518,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -32250,6 +32661,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 372,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -32323,6 +32735,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 661,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -32439,6 +32852,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 650,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -32512,6 +32926,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 572,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -32586,6 +33001,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": "2018-11-02 00:00:00.0",
           "id": 918,
+          "preferred": true,
           "person_id": 1
         },
         {
@@ -32603,6 +33019,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": "2018-10-25 00:00:00.0",
           "id": 919,
+          "preferred": true,
           "person_id": 2
         }
       ]
@@ -32692,6 +33109,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 324,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -32766,6 +33184,7 @@ export const MockGames = [
           "platform_name": "Xbox One",
           "last_played": null,
           "id": 944,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -32792,6 +33211,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 945,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -32865,6 +33285,7 @@ export const MockGames = [
           "platform_name": "Xbox One",
           "last_played": null,
           "id": 958,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -32889,6 +33310,7 @@ export const MockGames = [
           "platform_name": "PC",
           "last_played": null,
           "id": 959,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -32963,6 +33385,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 730,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -33036,6 +33459,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 767,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -33109,6 +33533,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 22,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -33182,6 +33607,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 789,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -33255,6 +33681,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 141,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -33328,6 +33755,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 450,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -33401,6 +33829,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 517,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -33474,6 +33903,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 428,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -33547,6 +33977,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 124,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -33621,6 +34052,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 962,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -33647,6 +34079,7 @@ export const MockGames = [
           "platform_name": "Xbox One",
           "last_played": null,
           "id": 963,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -33721,6 +34154,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 559,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -33792,6 +34226,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 830,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -33863,6 +34298,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 185,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -33936,6 +34372,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 906,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -34009,6 +34446,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 489,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -34082,6 +34520,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 715,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -34155,6 +34594,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 348,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -34228,6 +34668,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 96,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -34301,6 +34742,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 751,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -34372,6 +34814,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 804,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -34443,6 +34886,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 373,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -34514,6 +34958,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 869,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -34585,6 +35030,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 858,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -34658,6 +35104,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 619,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -34731,6 +35178,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2017-05-19 04:45:19.932",
         "id": 301,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -34850,6 +35298,7 @@ export const MockGames = [
           "platform_name": "Xbox One",
           "last_played": null,
           "id": 960,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -34874,6 +35323,7 @@ export const MockGames = [
           "platform_name": "PS3",
           "last_played": null,
           "id": 961,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -34948,6 +35398,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 274,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -35021,6 +35472,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 390,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -35094,6 +35546,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 718,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -35168,6 +35621,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": "2018-04-06 15:29:50.698",
           "id": 179,
+          "preferred": true,
           "person_id": 1
         },
         {
@@ -35185,6 +35639,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 180,
+          "preferred": true,
           "person_id": 4
         },
         {
@@ -35202,6 +35657,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 181,
+          "preferred": true,
           "person_id": 5
         }
       ]
@@ -35304,6 +35760,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 566,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -35377,6 +35834,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 33,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -35450,6 +35908,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 72,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -35523,6 +35982,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 857,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -35596,6 +36056,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2016-07-06 03:46:03.055",
         "id": 630,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -35669,6 +36130,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 876,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -35742,6 +36204,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 32,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -35815,6 +36278,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2016-06-25 03:45:58.252",
         "id": 890,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -35888,6 +36352,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 545,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -35961,6 +36426,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 758,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -36034,6 +36500,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 904,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -36107,6 +36574,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 399,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -36180,6 +36648,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2020-01-01 14:51:37.204",
         "id": 100,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -36253,6 +36722,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2016-07-27 03:46:06.409",
         "id": 605,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -36328,6 +36798,7 @@ export const MockGames = [
             "platform_name": "Steam",
             "last_played": "2019-02-04 17:21:06.063",
             "id": 550,
+            "preferred": true,
             "person_id": 1
           },
           {
@@ -36345,6 +36816,7 @@ export const MockGames = [
             "platform_name": "Steam",
             "last_played": null,
             "id": 552,
+            "preferred": true,
             "person_id": 5
           }
         ]
@@ -36372,6 +36844,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 551,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -36462,6 +36935,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": "2019-02-04 17:21:12.543",
           "id": 852,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -36488,6 +36962,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 853,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -36562,6 +37037,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 66,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -36635,6 +37111,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 337,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -36709,6 +37186,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": "2016-08-03 03:46:06.681",
           "id": 105,
+          "preferred": true,
           "person_id": 1
         },
         {
@@ -36726,6 +37204,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 106,
+          "preferred": true,
           "person_id": 4
         }
       ]
@@ -36813,6 +37292,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 713,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -36884,6 +37364,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 115,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -36955,6 +37436,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 463,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -37026,6 +37508,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 193,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -37097,6 +37580,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 241,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -37170,6 +37654,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 493,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -37243,6 +37728,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 775,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -37316,6 +37802,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 711,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -37387,6 +37874,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 15,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -37460,6 +37948,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 702,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -37533,6 +38022,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2016-08-05 03:45:57.598",
         "id": 19,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -37604,6 +38094,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 707,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -37677,6 +38168,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 415,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -37749,6 +38241,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 476,
+          "preferred": true,
           "person_id": 1
         },
         {
@@ -37766,6 +38259,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 477,
+          "preferred": true,
           "person_id": 4
         }
       ]
@@ -37856,6 +38350,7 @@ export const MockGames = [
           "platform_name": "Xbox 360",
           "last_played": null,
           "id": 798,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -37882,6 +38377,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 799,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -37957,6 +38453,7 @@ export const MockGames = [
           "platform_name": "Xbox 360",
           "last_played": null,
           "id": 623,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -37983,6 +38480,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 624,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -38057,6 +38555,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2016-09-04 03:45:58.675",
         "id": 820,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -38128,6 +38627,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 300,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -38201,6 +38701,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 903,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -38275,6 +38776,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": "2017-07-20 04:45:31.59",
           "id": 652,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -38299,6 +38801,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 653,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -38374,6 +38877,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": "2017-08-01 20:45:37.099",
           "id": 2,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -38400,6 +38904,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 3,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -38575,6 +39080,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 816,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -38646,6 +39152,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 826,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -38719,6 +39226,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 78,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -38792,6 +39300,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 303,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -38862,6 +39371,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 984,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -38935,6 +39445,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": "2018-03-27 19:11:45.428",
           "id": 456,
+          "preferred": true,
           "person_id": 1
         },
         {
@@ -38952,6 +39463,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 457,
+          "preferred": true,
           "person_id": 4
         }
       ]
@@ -39041,6 +39553,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2016-11-03 03:45:43.216",
         "id": 468,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -39112,6 +39625,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-02-04 17:20:56.508",
         "id": 800,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -39185,6 +39699,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 160,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -39258,6 +39773,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": "2018-08-13 00:00:00.0",
         "id": 860,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -39331,6 +39847,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 24,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -39404,6 +39921,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 437,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -39477,6 +39995,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 462,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -39550,6 +40069,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 875,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -39624,6 +40144,7 @@ export const MockGames = [
           "platform_name": "Xbox One",
           "last_played": null,
           "id": 946,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -39650,6 +40171,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 947,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -39724,6 +40246,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 548,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -39797,6 +40320,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 888,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -39870,6 +40394,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 691,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -39943,6 +40468,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-03-06 21:29:44.265",
         "id": 807,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -40016,6 +40542,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 379,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -40087,6 +40614,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2020-03-17 22:36:05.781",
         "id": 289,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -40161,6 +40689,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 936,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -40185,6 +40714,7 @@ export const MockGames = [
           "platform_name": "PS3",
           "last_played": null,
           "id": 937,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -40257,6 +40787,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 11,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -40330,6 +40861,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 161,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -40403,6 +40935,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 215,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -40476,6 +41009,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 511,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -40547,6 +41081,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 430,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -40621,6 +41156,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 7,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -40647,6 +41183,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 8,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -40721,6 +41258,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2017-07-09 04:45:24.074",
         "id": 73,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -40792,6 +41330,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 194,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -40865,6 +41404,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 80,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -40938,6 +41478,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-06-05 13:25:42.972",
         "id": 974,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -41011,6 +41552,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-08-13 22:10:31.175",
         "id": 438,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -41082,6 +41624,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 735,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -41155,6 +41698,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 173,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -41228,6 +41772,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 449,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -41301,6 +41846,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 533,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -41374,6 +41920,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2017-08-02 20:45:35.045",
         "id": 418,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -41447,6 +41994,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 732,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -41520,6 +42068,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2017-07-26 20:45:32.665",
         "id": 167,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -41594,6 +42143,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": "2020-04-05 20:50:52.813",
           "id": 587,
+          "preferred": true,
           "person_id": 1
         },
         {
@@ -41611,6 +42161,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 588,
+          "preferred": true,
           "person_id": 5
         }
       ]
@@ -41700,6 +42251,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 420,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -41773,6 +42325,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 855,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -41844,6 +42397,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 409,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -41918,6 +42472,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 682,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -41944,6 +42499,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 683,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -42016,6 +42572,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-03-31 15:06:02.389",
         "id": 708,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -42089,6 +42646,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 671,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -42162,6 +42720,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 803,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -42235,6 +42794,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 755,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -42308,6 +42868,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 484,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -42379,6 +42940,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 678,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -42452,6 +43014,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 722,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -42523,6 +43086,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 308,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -42596,6 +43160,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 412,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -42669,6 +43234,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 49,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -42742,6 +43308,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 195,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -42815,6 +43382,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 122,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -42886,6 +43454,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 329,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -42959,6 +43528,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 306,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -43032,6 +43602,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 119,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -43105,6 +43676,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 611,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -43178,6 +43750,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 148,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -43251,6 +43824,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2017-05-17 04:45:17.708",
         "id": 127,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -43325,6 +43899,7 @@ export const MockGames = [
           "platform_name": "Xbox One",
           "last_played": null,
           "id": 413,
+          "preferred": true,
           "person_id": 1
         },
         {
@@ -43342,6 +43917,7 @@ export const MockGames = [
           "platform_name": "Xbox One",
           "last_played": null,
           "id": 414,
+          "preferred": true,
           "person_id": 4
         }
       ]
@@ -43431,6 +44007,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 871,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -43504,6 +44081,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 401,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -43577,6 +44155,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 697,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -43650,6 +44229,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 211,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -43721,6 +44301,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 672,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -43792,6 +44373,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 224,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -43863,6 +44445,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 244,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -43936,6 +44519,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 812,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -44009,6 +44593,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 508,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -44083,6 +44668,7 @@ export const MockGames = [
           "platform_name": "Wii U",
           "last_played": null,
           "id": 956,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -44107,6 +44693,7 @@ export const MockGames = [
           "platform_name": "Switch",
           "last_played": "2020-04-19 00:00:00.0",
           "id": 957,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -44179,6 +44766,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 451,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -44252,6 +44840,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2017-05-14 04:45:29.865",
         "id": 455,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -44323,6 +44912,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 443,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -44394,6 +44984,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 787,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -44465,6 +45056,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 785,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -44536,6 +45128,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 406,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -44608,6 +45201,7 @@ export const MockGames = [
           "platform_name": "PS3",
           "last_played": null,
           "id": 948,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -44632,6 +45226,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 949,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -44706,6 +45301,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2018-02-26 10:23:00.088",
         "id": 914,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -44777,6 +45373,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 338,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -44850,6 +45447,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 432,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -44923,6 +45521,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2017-08-10 04:45:39.273",
         "id": 6,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -44996,6 +45595,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2017-07-12 04:45:34.118",
         "id": 771,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -45069,6 +45669,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 742,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -45140,6 +45741,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 54,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -45213,6 +45815,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2017-07-04 04:45:31.116",
         "id": 440,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -45284,6 +45887,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-07-05 21:31:04.007",
         "id": 164,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -45357,6 +45961,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-08-25 14:29:48.657",
         "id": 407,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -45428,6 +46033,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 679,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -45501,6 +46107,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 285,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -45571,6 +46178,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 584,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -45643,6 +46251,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2017-07-08 04:45:28.485",
         "id": 512,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -45714,6 +46323,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2017-07-08 04:45:33.324",
         "id": 532,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -45785,6 +46395,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 891,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -45855,6 +46466,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 763,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -45924,6 +46536,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 109,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -45993,6 +46606,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 258,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -46062,6 +46676,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 529,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -46131,6 +46746,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 613,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -46201,6 +46817,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 806,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -46271,6 +46888,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 75,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -46341,6 +46959,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 319,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -46414,6 +47033,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-07-30 21:27:19.488",
         "id": 89,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -46484,6 +47104,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2017-07-11 04:45:37.421",
         "id": 604,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -46554,6 +47175,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-07-29 14:56:05.438",
         "id": 130,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -46627,6 +47249,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 924,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -46700,6 +47323,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 660,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -46773,6 +47397,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 28,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -46847,6 +47472,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": "2019-02-04 17:21:52.609",
           "id": 642,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -46873,6 +47499,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 643,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -46948,6 +47575,7 @@ export const MockGames = [
           "platform_name": "Xbox One",
           "last_played": null,
           "id": 968,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -46974,6 +47602,7 @@ export const MockGames = [
           "platform_name": "PC",
           "last_played": null,
           "id": 969,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -47048,6 +47677,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 472,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -47121,6 +47751,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 805,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -47194,6 +47825,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 571,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -47267,6 +47899,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 580,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -47340,6 +47973,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2017-08-11 20:02:45.218",
         "id": 885,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -47413,6 +48047,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2020-01-15 17:41:27.382",
         "id": 912,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -47487,6 +48122,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 733,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -47513,6 +48149,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 734,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -47589,6 +48226,7 @@ export const MockGames = [
             "platform_name": "PC",
             "last_played": null,
             "id": 951,
+            "preferred": true,
             "person_id": 4
           },
           {
@@ -47606,6 +48244,7 @@ export const MockGames = [
             "platform_name": "PC",
             "last_played": null,
             "id": 952,
+            "preferred": true,
             "person_id": 1
           }
         ]
@@ -47633,6 +48272,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 953,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -47722,6 +48362,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 889,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -47793,6 +48434,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 556,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -47864,6 +48506,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2018-01-14 15:13:22.72",
         "id": 877,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -47937,6 +48580,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 856,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -48010,6 +48654,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 384,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -48083,6 +48728,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 506,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -48156,6 +48802,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 911,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -48227,6 +48874,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 788,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -48298,6 +48946,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 609,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -48371,6 +49020,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2020-04-14 22:04:46.864",
         "id": 745,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -48445,6 +49095,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": "2018-02-27 20:31:27.396",
           "id": 248,
+          "preferred": true,
           "person_id": 1
         },
         {
@@ -48462,6 +49113,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 249,
+          "preferred": true,
           "person_id": 5
         }
       ]
@@ -48552,6 +49204,7 @@ export const MockGames = [
           "platform_name": "Xbox 360",
           "last_played": null,
           "id": 617,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -48578,6 +49231,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 618,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -48653,6 +49307,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": "2018-04-15 17:03:38.827",
           "id": 43,
+          "preferred": true,
           "person_id": 1
         },
         {
@@ -48670,6 +49325,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 44,
+          "preferred": true,
           "person_id": 4
         }
       ]
@@ -48759,6 +49415,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 453,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -48832,6 +49489,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 85,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -48905,6 +49563,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 632,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -48978,6 +49637,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2017-10-12 20:25:51.076",
         "id": 589,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -49051,6 +49711,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 327,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -49124,6 +49785,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 769,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -49195,6 +49857,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 103,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -49266,6 +49929,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-02-04 17:21:37.379",
         "id": 824,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -49336,6 +50000,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 586,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -49406,6 +50071,7 @@ export const MockGames = [
         "platform_name": "Switch",
         "last_played": null,
         "id": 107,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -49479,6 +50145,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 377,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -49552,6 +50219,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 790,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -49625,6 +50293,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 479,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -49696,6 +50365,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 202,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -49767,6 +50437,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2020-03-27 22:06:43.133",
         "id": 893,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -49840,6 +50511,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 638,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -49913,6 +50585,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 320,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -49984,6 +50657,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 271,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -50055,6 +50729,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-07-05 22:31:12.74",
         "id": 247,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -50126,6 +50801,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 635,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -50197,6 +50873,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 832,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -50268,6 +50945,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 155,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -50339,6 +51017,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 522,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -50412,6 +51091,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 500,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -50485,6 +51165,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 92,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -50556,6 +51237,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2018-08-08 20:04:10.635",
         "id": 204,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -50629,6 +51311,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 482,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -50701,6 +51384,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": "2018-08-08 20:04:03.449",
           "id": 897,
+          "preferred": true,
           "person_id": 1
         },
         {
@@ -50718,6 +51402,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 898,
+          "preferred": true,
           "person_id": 4
         }
       ]
@@ -50804,6 +51489,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 108,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -50874,6 +51560,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 34,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -50945,6 +51632,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 657,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -51018,6 +51706,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2018-02-14 23:09:50.901",
         "id": 392,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -51091,6 +51780,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-07-06 11:36:19.753",
         "id": 445,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -51165,6 +51855,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": "2020-01-13 18:26:18.039",
           "id": 276,
+          "preferred": true,
           "person_id": 1
         },
         {
@@ -51182,6 +51873,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 277,
+          "preferred": true,
           "person_id": 2
         }
       ]
@@ -51269,6 +51961,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 355,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -51342,6 +52035,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 168,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -51415,6 +52109,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 768,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -51488,6 +52183,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 71,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -51561,6 +52257,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 225,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -51634,6 +52331,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 727,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -51705,6 +52403,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 499,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -51776,6 +52475,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-07-06 18:44:40.848",
         "id": 866,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -51846,6 +52546,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 976,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -51916,6 +52617,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 265,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -51987,6 +52689,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2018-01-14 16:15:22.007",
         "id": 474,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -52060,6 +52763,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 35,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -52133,6 +52837,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 326,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -52206,6 +52911,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 784,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -52278,6 +52984,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 503,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -52350,6 +53057,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 645,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -52423,6 +53131,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 901,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -52496,6 +53205,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 460,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -52569,6 +53279,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 45,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -52640,6 +53351,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 55,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -52711,6 +53423,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 601,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -52784,6 +53497,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 540,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -52855,6 +53569,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 780,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -52928,6 +53643,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 574,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -53001,6 +53717,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 197,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -53074,6 +53791,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 843,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -53147,6 +53865,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 360,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -53220,6 +53939,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 434,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -53293,6 +54013,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 349,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -53367,6 +54088,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 676,
+          "preferred": true,
           "person_id": 1
         },
         {
@@ -53384,6 +54106,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 677,
+          "preferred": true,
           "person_id": 4
         }
       ]
@@ -53472,6 +54195,7 @@ export const MockGames = [
           "platform_name": "Switch",
           "last_played": null,
           "id": 221,
+          "preferred": true,
           "person_id": 1
         },
         {
@@ -53489,6 +54213,7 @@ export const MockGames = [
           "platform_name": "Switch",
           "last_played": null,
           "id": 222,
+          "preferred": true,
           "person_id": 4
         },
         {
@@ -53506,6 +54231,7 @@ export const MockGames = [
           "platform_name": "Switch",
           "last_played": null,
           "id": 223,
+          "preferred": true,
           "person_id": 5
         }
       ]
@@ -53608,6 +54334,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 464,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -53681,6 +54408,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 253,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -53754,6 +54482,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 416,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -53827,6 +54556,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 12,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -53900,6 +54630,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2018-04-20 16:10:58.217",
         "id": 295,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -53973,6 +54704,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2020-03-16 14:33:55.615",
         "id": 362,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -54047,6 +54779,7 @@ export const MockGames = [
           "platform_name": "PC",
           "last_played": "2018-05-22 00:00:00.0",
           "id": 954,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -54073,6 +54806,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 955,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -54147,6 +54881,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": "2020-03-02 00:00:00.0",
         "id": 4,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -54220,6 +54955,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 910,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -54293,6 +55029,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 154,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -54366,6 +55103,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 793,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -54439,6 +55177,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 563,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -54510,6 +55249,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 884,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -54583,6 +55323,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 403,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -54656,6 +55397,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 486,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -54729,6 +55471,7 @@ export const MockGames = [
         "platform_name": "PS3",
         "last_played": null,
         "id": 465,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -54800,6 +55543,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2020-01-15 23:46:50.866",
         "id": 394,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -54873,6 +55617,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 625,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -54946,6 +55691,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 305,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -55017,6 +55763,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 908,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -55090,6 +55837,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 646,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -55163,6 +55911,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 58,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -55234,6 +55983,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 492,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -55305,6 +56055,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 47,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -55378,6 +56129,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 840,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -55451,6 +56203,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 835,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -55524,6 +56277,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 663,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -55597,6 +56351,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 879,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -55670,6 +56425,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 135,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -55743,6 +56499,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 425,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -55814,6 +56571,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 669,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -55887,6 +56645,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 498,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -55958,6 +56717,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 759,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -56031,6 +56791,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 808,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -56102,6 +56863,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 909,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -56175,6 +56937,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 473,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -56248,6 +57011,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 731,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -56321,6 +57085,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 606,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -56395,6 +57160,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 728,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -56421,6 +57187,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 729,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -56493,6 +57260,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 612,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -56564,6 +57332,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 374,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -56635,6 +57404,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 490,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -56708,6 +57478,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2018-08-10 18:47:50.104",
         "id": 694,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -56781,6 +57552,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 495,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -56854,6 +57626,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 779,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -56928,6 +57701,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 339,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -56954,6 +57728,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 340,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -57028,6 +57803,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-11-15 17:54:52.109",
         "id": 577,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -57101,6 +57877,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": "2018-12-31 00:00:00.0",
         "id": 516,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -57174,6 +57951,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 263,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -57247,6 +58025,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 423,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -57320,6 +58099,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 547,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -57394,6 +58174,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 298,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -57420,6 +58201,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 299,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -57492,6 +58274,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 27,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -57563,6 +58346,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 844,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -57637,6 +58421,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 51,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -57663,6 +58448,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 52,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -57737,6 +58523,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 792,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -57808,6 +58595,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 621,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -57882,6 +58670,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 753,
+          "preferred": true,
           "person_id": 1
         },
         {
@@ -57899,6 +58688,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 754,
+          "preferred": true,
           "person_id": 4
         }
       ]
@@ -57988,6 +58778,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 398,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -58061,6 +58852,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 214,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -58134,6 +58926,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 475,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -58208,6 +59001,7 @@ export const MockGames = [
           "platform_name": "PC",
           "last_played": "2019-06-05 00:00:00.0",
           "id": 280,
+          "preferred": true,
           "person_id": 1
         },
         {
@@ -58225,6 +59019,7 @@ export const MockGames = [
           "platform_name": "PC",
           "last_played": null,
           "id": 281,
+          "preferred": true,
           "person_id": 2
         }
       ]
@@ -58314,6 +59109,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 88,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -58387,6 +59183,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 527,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -58458,6 +59255,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 176,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -58529,6 +59327,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 279,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -58602,6 +59401,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 576,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -58675,6 +59475,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 207,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -58749,6 +59550,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 930,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -58775,6 +59577,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 931,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -58849,6 +59652,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 664,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -58922,6 +59726,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 149,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -58995,6 +59800,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 607,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -59068,6 +59874,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 435,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -59141,6 +59948,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 336,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -59212,6 +60020,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 819,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -59285,6 +60094,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 347,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -59358,6 +60168,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 87,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -59429,6 +60240,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2018-11-22 15:18:44.503",
         "id": 311,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -59502,6 +60314,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2020-04-14 23:04:47.977",
         "id": 260,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -59575,6 +60388,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 736,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -59648,6 +60462,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 358,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -59721,6 +60536,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 873,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -59794,6 +60610,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 865,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -59867,6 +60684,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 570,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -59940,6 +60758,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 872,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -60011,6 +60830,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 744,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -60084,6 +60904,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-02-04 17:21:12.116",
         "id": 557,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -60157,6 +60978,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 878,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -60230,6 +61052,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 69,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -60303,6 +61126,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 895,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -60376,6 +61200,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 233,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -60449,6 +61274,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 429,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -60522,6 +61348,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-03-04 14:09:17.843",
         "id": 196,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -60595,6 +61422,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 794,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -60666,6 +61494,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 629,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -60737,6 +61566,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 592,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -60810,6 +61640,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 393,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -60883,6 +61714,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 614,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -60956,6 +61788,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 849,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -61029,6 +61862,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 188,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -61102,6 +61936,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 59,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -61175,6 +62010,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 698,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -61248,6 +62084,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": "2019-02-25 00:00:00.0",
         "id": 81,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -61321,6 +62158,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 166,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -61392,6 +62230,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 483,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -61465,6 +62304,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 169,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -61536,6 +62376,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 419,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -61609,6 +62450,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 39,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -61680,6 +62522,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 692,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -61751,6 +62594,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 312,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -61822,6 +62666,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 813,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -61895,6 +62740,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 585,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -61968,6 +62814,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 20,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -62039,6 +62886,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 114,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -62110,6 +62958,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 18,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -62183,6 +63032,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 520,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -62256,6 +63106,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 427,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -62329,6 +63180,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 598,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -62402,6 +63254,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": null,
         "id": 192,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -62475,6 +63328,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 837,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -62546,6 +63400,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 76,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -62619,6 +63474,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 228,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -62693,6 +63549,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 970,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -62719,6 +63576,7 @@ export const MockGames = [
           "platform_name": "PC",
           "last_played": null,
           "id": 971,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -62793,6 +63651,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 246,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -62866,6 +63725,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 99,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -62937,6 +63797,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 190,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -63008,6 +63869,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 61,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -63079,6 +63941,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 836,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -63152,6 +64015,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 882,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -63225,6 +64089,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 633,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -63298,6 +64163,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 651,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -63371,6 +64237,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 79,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -63442,6 +64309,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 129,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -63515,6 +64383,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 603,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -63588,6 +64457,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 628,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -63661,6 +64531,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 510,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -63732,6 +64603,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 345,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -63805,6 +64677,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 487,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -63878,6 +64751,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 302,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -63951,6 +64825,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 922,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -64024,6 +64899,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 667,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -64097,6 +64973,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 65,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -64170,6 +65047,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 133,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -64244,6 +65122,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 821,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -64270,6 +65149,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": null,
           "id": 822,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -64344,6 +65224,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 21,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -64417,6 +65298,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 504,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -64490,6 +65372,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 710,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -64562,6 +65445,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 40,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -64634,6 +65518,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 385,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -64707,6 +65592,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 254,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -64780,6 +65666,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 236,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -64851,6 +65738,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 97,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -64924,6 +65812,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 786,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -64997,6 +65886,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-08-16 20:17:44.893",
         "id": 696,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -65068,6 +65958,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 622,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -65141,6 +66032,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 150,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -65214,6 +66106,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 365,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -65285,6 +66178,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 719,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -65358,6 +66252,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 57,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -65429,6 +66324,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 273,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -65500,6 +66396,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 656,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -65573,6 +66470,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-07-29 14:56:04.741",
         "id": 163,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -65646,6 +66544,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2020-04-26 14:11:28.243",
         "id": 242,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -65719,6 +66618,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-08-02 17:58:35.589",
         "id": 165,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -65792,6 +66692,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 870,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -65863,6 +66764,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 761,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -65936,6 +66838,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 797,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -66007,6 +66910,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 608,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -66080,6 +66984,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-07-30 22:27:24.713",
         "id": 234,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -66151,6 +67056,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 600,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -66222,6 +67128,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2020-02-18 18:00:31.324",
         "id": 900,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -66293,6 +67200,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 553,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -66364,6 +67272,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-07-30 21:27:19.567",
         "id": 634,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -66437,6 +67346,7 @@ export const MockGames = [
         "platform_name": "Xbox One",
         "last_played": "2019-08-01 00:00:00.0",
         "id": 417,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -66510,6 +67420,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": "2019-08-01 00:00:00.0",
         "id": 175,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -66583,6 +67494,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 239,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -66656,6 +67568,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2019-11-28 15:38:20.105",
         "id": 561,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -66729,6 +67642,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2020-03-30 15:09:46.307",
         "id": 859,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -66800,6 +67714,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2020-01-15 18:41:32.143",
         "id": 534,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -66871,6 +67786,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 381,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -66945,6 +67861,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": "2020-03-20 17:39:15.344",
           "id": 932,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -66971,6 +67888,7 @@ export const MockGames = [
           "platform_name": "PC",
           "last_played": "2020-04-02 00:00:00.0",
           "id": 933,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -67043,6 +67961,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2020-04-26 20:12:12.042",
         "id": 315,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -67114,6 +68033,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2020-04-07 15:52:24.577",
         "id": 616,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -67185,6 +68105,7 @@ export const MockGames = [
         "platform_name": "Switch",
         "last_played": "2020-02-21 00:00:00.0",
         "id": 927,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -67258,6 +68179,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 400,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -67331,6 +68253,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 913,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -67404,6 +68327,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 599,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -67477,6 +68401,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 537,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -67550,6 +68475,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 569,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -67623,6 +68549,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 297,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -67696,6 +68623,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 62,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -67769,6 +68697,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 562,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -67842,6 +68771,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 334,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -67915,6 +68845,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 690,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -67988,6 +68919,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 93,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -68061,6 +68993,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 227,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -68134,6 +69067,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 402,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -68207,6 +69141,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 448,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -68280,6 +69215,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 505,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -68353,6 +69289,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 543,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -68426,6 +69363,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 724,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -68499,6 +69437,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 892,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -68572,6 +69511,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 637,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -68645,6 +69585,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 16,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -68716,6 +69657,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 796,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -68787,6 +69729,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 983,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -68860,6 +69803,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 689,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -68933,6 +69877,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 220,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -69004,6 +69949,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 907,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -69077,6 +70023,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 41,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -69150,6 +70097,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 541,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -69223,6 +70171,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 84,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -69296,6 +70245,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 817,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -69369,6 +70319,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 514,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -69440,6 +70391,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 981,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -69511,6 +70463,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 237,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -69582,6 +70535,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 726,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -69655,6 +70609,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 424,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -69729,6 +70684,7 @@ export const MockGames = [
           "platform_name": "PC",
           "last_played": null,
           "id": 972,
+          "preferred": true,
           "person_id": 1
         }]
       },
@@ -69755,6 +70711,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "last_played": null,
           "id": 973,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -69829,6 +70786,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 929,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -69902,6 +70860,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 70,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -69975,6 +70934,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 575,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -70048,6 +71008,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 709,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -70119,6 +71080,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 318,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -70192,6 +71154,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 121,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -70263,6 +71226,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 772,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -70336,6 +71300,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 110,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -70409,6 +71374,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 975,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -70482,6 +71448,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 596,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -70553,6 +71520,7 @@ export const MockGames = [
         "platform_name": "Switch",
         "last_played": "2020-04-21 00:00:00.0",
         "id": 982,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -70626,6 +71594,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 94,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -70699,6 +71668,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 846,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -70772,6 +71742,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 980,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -70843,6 +71814,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 765,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -70914,6 +71886,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 354,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -70985,6 +71958,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 610,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -71056,6 +72030,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 395,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -71127,6 +72102,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 288,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -71198,6 +72174,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 977,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -71271,6 +72248,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 342,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -71344,6 +72322,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 388,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -71415,6 +72394,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 979,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -71486,6 +72466,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": null,
         "id": 978,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -71559,6 +72540,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "last_played": null,
         "id": 764,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -71632,6 +72614,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": "2020-04-24 18:48:35.596",
         "id": 317,
+        "preferred": true,
         "person_id": 1
       }]
     }],
@@ -71705,6 +72688,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "last_played": null,
         "id": 146,
+        "preferred": true,
         "person_id": 1
       }]
     }],

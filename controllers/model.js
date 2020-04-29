@@ -171,6 +171,7 @@ exports.MyGamePlatform = sequelize.sequelize.define("my_game_platform", {
   last_played: Sequelize.DATE,
   finished_date: Sequelize.DATE,
   collection_add: Sequelize.DATE,
+  preferred: Sequelize.BOOLEAN,
   replay_reason: Sequelize.TEXT,
 }, {
   freezeTableName: true,

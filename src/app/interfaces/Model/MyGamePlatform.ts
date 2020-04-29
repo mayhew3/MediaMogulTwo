@@ -12,14 +12,15 @@ export class MyGamePlatform extends DataObject {
   game_platform_id = this.registerIntegerField('game_platform_id', true);
   platform_name = this.registerStringField("platform_name", true);
   rating = this.registerDecimalField("rating", true);
-  tier = this.registerIntegerField("tier", true);
-  final_score = this.registerDecimalField("final_score", true);
+  tier = this.registerIntegerField("tier", false);
+  final_score = this.registerDecimalField("final_score", false);
   minutes_played = this.registerIntegerField("minutes_played", true);
-  replay_score = this.registerDecimalField("replay_score", true);
-  last_played = this.registerDateField("last_played", true);
-  finished_date = this.registerDateField("finished_date", true);
-  collection_add = this.registerDateField("collection_add", true);
-  replay_reason = this.registerStringField("replay_reason", true);
+  replay_score = this.registerDecimalField("replay_score", false);
+  last_played = this.registerDateField("last_played", false);
+  finished_date = this.registerDateField("finished_date", false);
+  collection_add = this.registerDateField("collection_add", false);
+  preferred = this.registerBooleanField("preferred", true);
+  replay_reason = this.registerStringField("replay_reason", false);
 
   constructor(private availableGamePlatform: AvailableGamePlatform) {
     super();

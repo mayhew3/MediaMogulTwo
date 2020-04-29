@@ -57,20 +57,20 @@ export class GameCardComponent implements OnInit {
   }
 
   getMyRatingOrMetacritic(): number {
-    const myRating = this.game.personGame.rating.originalValue;
-    return !!myRating ? myRating : this.game.metacritic.originalValue;
+    const myRating = this.game.myRating;
+    return !!myRating ? myRating : this.game.bestMetacritic;
   }
 
   async openPlaytimePopup() {
     const modalRef = this.modalService.open(PlaytimePopupComponent, {size: 'lg'});
     modalRef.componentInstance.game = this.game;
-    this.handlePopupResult(modalRef);
+    await this.handlePopupResult(modalRef);
   }
 
   async openDetailPopup() {
     const modalRef = this.modalService.open(GameDetailComponent, {size: 'lg'});
     modalRef.componentInstance.game = this.game;
-    this.handlePopupResult(modalRef);
+    await this.handlePopupResult(modalRef);
   }
 
   isSteamGame(): boolean {

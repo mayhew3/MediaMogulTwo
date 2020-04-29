@@ -220,6 +220,25 @@ export class Game extends DataObject {
     return max > 0 ? max : null;
   }
 
+  get myPreferredPlatform(): MyGamePlatform {
+    const allPreferred = _.filter(this.myPlatforms, myPlatform => myPlatform.preferred.originalValue === true);
+    if (this.myPlatforms.length > 0 && allPreferred.length !== 1) {
+      throw new Error('Game should have exactly one preferred platform.');
+    }
+    return allPreferred[0];
+  }
+
+  get myRating(): number {
+    const preferred = this.myPreferredPlatform;
+    return !preferred ? null : preferred.rating.originalValue;
+  }
+
+  get bestMetacritic(): number {
+    const allMetacritics = _.map(this.availablePlatforms, availablePlatform => availablePlatform.metacritic.originalValue);
+    const max = _.max(allMetacritics);
+    return max > 0 ? max : null;
+  }
+
   getApiMethod(): string {
     return 'games';
   }
