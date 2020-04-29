@@ -35,16 +35,6 @@ export class PersonGame extends DataObject {
     return ArrayUtil.cloneArray(this._myPlatforms);
   }
 
-  initializedFromJSON(jsonObj: any): this {
-    super.initializedFromJSON(jsonObj);
-    this.removeTemporaryPlatforms();
-    _.forEach(jsonObj.myPlatforms, myPlatformObj => {
-      const availableGamePlatform = this.game.getAvailablePlatformWithID(myPlatformObj.available_game_platform_id);
-      this.addToMyPlatforms(myPlatformObj, availableGamePlatform);
-    });
-    return this;
-  }
-
   protected makeChangesToInsertPayload(json: any): any {
     const base = super.makeChangesToInsertPayload(json);
     base.myPlatforms = this.getPlatformsPayload();

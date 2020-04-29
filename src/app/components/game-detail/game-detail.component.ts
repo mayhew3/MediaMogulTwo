@@ -7,7 +7,6 @@ import {PlatformService} from '../../services/platform.service';
 import {GamePlatform} from '../../interfaces/Model/GamePlatform';
 import {ArrayUtil} from '../../utility/ArrayUtil';
 import * as _ from 'underscore';
-import {AvailableGamePlatform} from '../../interfaces/Model/AvailableGamePlatform';
 import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
 
 @Component({
@@ -59,25 +58,13 @@ export class GameDetailComponent implements OnInit {
     this.changedPersonFields = this.game.personGame.getChangedFields();
   }
 
-  isOwned(platform: GamePlatform): boolean {
-    return this.game.personGame.hasPlatformWithIGDBID(platform.igdb_platform_id.value);
-  }
-
   anyPlatformsAreFinished(): boolean {
-    const finishedPlatform = _.find(this.game.personGame.myPlatforms, myPlatform => this.isFinished(myPlatform));
+    const finishedPlatform = _.find(this.game.myPlatforms, myPlatform => this.isFinished(myPlatform));
     return !!finishedPlatform;
   }
 
   isFinished(myPlatform: MyGamePlatform): boolean {
     return !!myPlatform.finished_date.value;
-  }
-
-  getMyPlatform(availableGamePlatform: AvailableGamePlatform): MyGamePlatform {
-    return !this.game.personGame ? null : _.find(this.game.personGame.myPlatforms, myPlatform => myPlatform.platform.id.value === availableGamePlatform.platform.id.value);
-  }
-
-  getOwnedString(platform: GamePlatform): string {
-    return this.isOwned(platform) ? 'Owned' : 'Unowned';
   }
 
   hasPerson(): boolean {

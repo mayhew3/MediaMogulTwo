@@ -25,6 +25,9 @@ export class AvailableGamePlatform extends DataObject {
     if (!this.platform_name.value) {
       this.platform_name.initializeValue(this.gamePlatform.full_name.value);
     }
+    if (!!jsonObj.myPlatform) {
+      this.myGamePlatform = new MyGamePlatform(this).initializedFromJSON(jsonObj.myPlatform);
+    }
     return this;
   }
 

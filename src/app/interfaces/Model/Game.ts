@@ -136,7 +136,7 @@ export class Game extends DataObject {
     return !!existing;
   }
 
-  getMyPlatforms(): MyGamePlatform[] {
+  get myPlatforms(): MyGamePlatform[] {
     return _.compact(_.map(this.availablePlatforms, availablePlatform => availablePlatform.myGamePlatform));
   }
 
@@ -214,7 +214,7 @@ export class Game extends DataObject {
 
   discardChanges(): void {
     super.discardChanges();
-    for (const myPlatform of this.getMyPlatforms()) {
+    for (const myPlatform of this.myPlatforms) {
       myPlatform.discardChanges();
     }
   }

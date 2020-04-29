@@ -99,6 +99,11 @@ export class InMemoryDataService implements InMemoryDbService{
       const person_games = gameCopy.person_games;
       gameCopy.personGame = _.findWhere(person_games, {person_id: person_id});
       delete gameCopy.person_games;
+      _.forEach(gameCopy.availablePlatforms, availablePlatform => {
+        const myPlatforms = availablePlatform.myPlatforms;
+        availablePlatform.myPlatform = _.findWhere(myPlatforms, {person_id: person_id});
+        delete availablePlatform.myPlatforms;
+      });
       data.push(gameCopy);
     });
 
