@@ -9,7 +9,7 @@ export class OrderByLastPlayed extends GameOrdering {
   }
 
   sortValue(game: Game): any {
-    return game.isOwned() ? game.personGame.last_played.value : -1;
+    return !!game.getLastPlayed() ? game.getLastPlayed() : -1;
   }
 }
 
