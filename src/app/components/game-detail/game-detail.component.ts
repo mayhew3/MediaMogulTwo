@@ -29,6 +29,8 @@ export class GameDetailComponent implements OnInit {
 
   allPlatforms: GamePlatform[] = [];
 
+  debug = false;
+
   constructor(private gameService: GameService,
               public activeModal: NgbActiveModal,
               public personService: PersonService,
