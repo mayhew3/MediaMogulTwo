@@ -20,6 +20,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DuplicateResolutionComponent } from './components/duplicate-resolution/duplicate-resolution.component';
 import { DuplicateDetailComponent } from './components/duplicate-detail/duplicate-detail.component';
+import { BigCheckboxComponent } from './components/big-checkbox/big-checkbox.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { DuplicateDetailComponent } from './components/duplicate-detail/duplicat
     ProfileComponent,
     DashboardComponent,
     DuplicateResolutionComponent,
-    DuplicateDetailComponent
+    DuplicateDetailComponent,
+    BigCheckboxComponent
   ],
   imports: [
     BrowserModule,

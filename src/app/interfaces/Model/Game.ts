@@ -178,6 +178,18 @@ export class Game extends DataObject {
     return Game.cloneArray(this._availablePlatforms);
   }
 
+  getImageUrl(): string {
+    if (!!this.igdb_poster.value && this.igdb_poster.value !== '') {
+      return 'https://images.igdb.com/igdb/image/upload/t_720p/' + this.igdb_poster.value +  '.jpg';
+    } else if (!!this.logo.value && this.logo.value !== '') {
+      return 'https://cdn.edgecast.steamstatic.com/steam/apps/' + this.steamid.value + '/header.jpg';
+    } else if (!!this.giantbomb_medium_url.value && this.giantbomb_medium_url.value !== '') {
+      return this.giantbomb_medium_url.value;
+    } else {
+      return 'images/GenericSeries.gif';
+    }
+  }
+
   initializedFromJSON(jsonObj: any): this {
     super.initializedFromJSON(jsonObj);
     if (!this.allPlatforms) {

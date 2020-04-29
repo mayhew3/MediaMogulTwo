@@ -22,7 +22,7 @@ export class MyGamePlatform extends DataObject {
   preferred = this.registerBooleanField("preferred", true);
   replay_reason = this.registerStringField("replay_reason", false);
 
-  constructor(private availableGamePlatform: AvailableGamePlatform) {
+  constructor(public availableGamePlatform: AvailableGamePlatform) {
     super();
     this.platform_name.initializeValue(availableGamePlatform.platform_name.value);
   }

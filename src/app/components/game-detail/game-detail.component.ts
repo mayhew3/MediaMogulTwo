@@ -49,12 +49,30 @@ export class GameDetailComponent implements OnInit {
     this.titleEditMode = !this.titleEditMode;
   }
 
+  platformIsSelected(platform: MyGamePlatform): boolean {
+    return platform.id.originalValue === this.selectedPlatform.id.originalValue;
+  }
+
+  selectPlatform(platform: MyGamePlatform): void {
+    this.selectedPlatform = platform;
+  }
+
+  getMetacritic(): number {
+    return this.selectedPlatform.availableGamePlatform.metacritic.originalValue;
+  }
+
   anyFieldsChanged(): boolean {
     return Object.keys(this.changedGameFields).length > 0 || Object.keys(this.changedPersonFields).length > 0;
   }
 
-  onFinishedFieldEdit() {
+  onFinishedFieldEdit(event) {
+    this.finished = event;
     this.selectedPlatform.finished_date.value = !!this.finished ? new Date() : undefined;
+    this.onFieldEdit();
+  }
+
+  onNaturalEndEdit(event) {
+    this.game.natural_end.value = event;
     this.onFieldEdit();
   }
 
@@ -104,8 +122,4 @@ export class GameDetailComponent implements OnInit {
     await this.gameService.updateGame(this.game);
   }
 
-  async updateTitle() {
-    await this.gameService.updateGame(this.game);
-    this.titleEditMode = false;
-  }
 }

@@ -3,8 +3,8 @@
     <div class="col-6 gameImageContainer">
 
       <img class="rounded gameImage"
-           *ngIf="!!getImageUrl()"
-           src="{{getImageUrl()}}"
+           *ngIf="!!game.getImageUrl()"
+           src="{{game.getImageUrl()}}"
            [game]="game"
            (click)="openDetailPopup()"
            default="../../../assets/GenericSeries.gif"

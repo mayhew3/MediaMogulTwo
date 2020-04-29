@@ -11,277 +11,363 @@
 <div class="modal-body"
      *ngIf="!!game">
 
-  <h3 *ngIf="!titleEditMode">{{game.title.value}} <span (click)="toggleTitleEdit()"
-                                                  *ngIf="personService.isAdmin">
-    <svg class="bi bi-pencil" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 011.414 0l2 2a1 1 0 010 1.414l-9 9a1 1 0 01-.39.242l-3 1a1 1 0 01-1.266-1.265l1-3a1 1 0 01.242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z" clip-rule="evenodd"/>
-      <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 00.5.5H4v.5a.5.5 0 00.5.5H5v.5a.5.5 0 00.5.5H6v-1.5a.5.5 0 00-.5-.5H5v-.5a.5.5 0 00-.5-.5H3z" clip-rule="evenodd"/>
-    </svg>
-  </span></h3>
-
-  <div class="input-group"
-       *ngIf="titleEditMode">
-    <!--suppress HtmlFormInputWithoutLabel -->
-    <input type="text"
-           class="form-control darkInput"
-           [(ngModel)]="game.title.value"/>
-    <div class="input-group-append">
-      <button class="btn btn-default"
-              (click)="updateTitle()"
-              type="button">Update</button>
-    </div>
-  </div>
-
-  <h4>{{selectedPlatform.platform_name.originalValue}}</h4>
-
-  <div *ngIf="debug">
-
-    <h4>Available Platforms:</h4>
-
-    <div class="row">
-      <div class="col font-weight-bold">
-        Platform
-      </div>
-      <div class="col font-weight-bold">
-        Metacritic
-      </div>
-      <div class="col font-weight-bold">
-        Matched
-      </div>
-      <div class="col font-weight-bold">
-        Page
-      </div>
-
-    </div>
-
-    <div class="row"
-         *ngFor="let availablePlatform of game.availablePlatforms">
-      <div class="col">
-        {{availablePlatform.platform_name.value}}
-      </div>
-      <div class="col">
-        {{availablePlatform.metacritic.value}}
-      </div>
-
-      <div class="col">
-        {{availablePlatform.metacritic_matched.value | date: 'yyyy-MM-dd'}}
-      </div>
-      <div class="col">
-        {{availablePlatform.metacritic_page.value}}
-      </div>
-
-    </div>
-
-    <h4>My Platforms:</h4>
-
-    <div class="row">
-      <div class="col font-weight-bold">
-        Platform
-      </div>
-      <div class="col font-weight-bold">
-        Rating
-      </div>
-      <div class="col font-weight-bold">
-        Last Played
-      </div>
-      <div class="col font-weight-bold">
-        Minutes
-      </div>
-      <div class="col font-weight-bold" *ngIf="anyPlatformsAreFinished()">
-        Finished
-      </div>
-      <div class="col font-weight-bold" *ngIf="anyPlatformsAreFinished()">
-        Final
-      </div>
-      <div class="col font-weight-bold" *ngIf="anyPlatformsAreFinished()">
-        Replay
-      </div>
-      <div class="col font-weight-bold" *ngIf="anyPlatformsAreFinished()">
-        Reason
-      </div>
-
-    </div>
-
-
-    <div *ngIf="game.isOwned()">
-      <div class="row"
-           *ngFor="let myPlatform of game.myPlatforms">
-        <div class="col">
-          {{myPlatform.platform_name.value}}
-        </div>
-        <div class="col">
-          {{myPlatform.rating.value}}
-        </div>
-        <div class="col">
-          {{myPlatform.last_played.value | date: 'yyyy-MM-dd'}}
-        </div>
-        <div class="col">
-          {{myPlatform.minutes_played.value}}
-        </div>
-        <div class="col" *ngIf="anyPlatformsAreFinished()">
-          {{myPlatform.finished_date.value | date: 'yyyy-MM-dd'}}
-        </div>
-        <div class="col" *ngIf="anyPlatformsAreFinished()">
-          {{myPlatform.final_score.value}}
-        </div>
-        <div class="col" *ngIf="anyPlatformsAreFinished()">
-          {{myPlatform.replay_score.value}}
-        </div>
-        <div class="col" *ngIf="anyPlatformsAreFinished()">
-          {{myPlatform.replay_reason.value}}
-        </div>
-      </div>
-
-    </div>
-
-    <h4>Other Fields:</h4>
-
-    <div class="row">
-      <div class="col font-weight-bold">
-        TimeTotal
-      </div>
-      <div class="col font-weight-bold">
-        SteamID
-      </div>
-      <div class="col font-weight-bold">
-        Steam Cloud
-      </div>
-      <div class="col font-weight-bold">
-        Steam Page Gone
-      </div>
-      <div class="col font-weight-bold">
-        Steam Title
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        {{game.timetotal.value}}
-      </div>
-      <div class="col">
-        {{game.steamid.value}}
-      </div>
-      <div class="col">
-        {{game.steam_cloud.value}}
-      </div>
-      <div class="col">
-        {{game.steam_page_gone.value}}
-      </div>
-      <div class="col">
-        {{game.steam_title.value}}
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col font-weight-bold">
-        HowLong Title
-      </div>
-      <div class="col font-weight-bold">
-        HowLong Extras
-      </div>
-      <div class="col font-weight-bold">
-        GiantBomb Name
-      </div>
-      <div class="col font-weight-bold">
-        IGDB_W
-      </div>
-      <div class="col font-weight-bold">
-        IGDB_H
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        {{game.howlong_title.value}}
-      </div>
-      <div class="col">
-        {{game.howlong_extras.value}}
-      </div>
-      <div class="col">
-        {{game.giantbomb_name.value}}
-      </div>
-      <div class="col">
-        {{game.igdb_width.value}}
-      </div>
-      <div class="col">
-        {{game.igdb_height.value}}
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col font-weight-bold">
-        IGDB Rating
-      </div>
-      <div class="col font-weight-bold">
-        IGDB RCount
-      </div>
-      <div class="col font-weight-bold">
-        Release Date
-      </div>
-      <div class="col font-weight-bold">
-        Popularity
-      </div>
-      <div class="col font-weight-bold">
-        IGDB Slug
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        {{game.igdb_rating.value}}
-      </div>
-      <div class="col">
-        {{game.igdb_rating_count.value}}
-      </div>
-      <div class="col">
-        {{game.igdb_release_date.value | date: 'yyyy-MM-dd'}}
-      </div>
-      <div class="col">
-        {{game.igdb_popularity.value}}
-      </div>
-      <div class="col">
-        {{game.igdb_slug.value}}
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col font-weight-bold">
-        IGDB Updated
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        {{game.igdb_updated.value | date: 'yyyy-MM-dd'}}
-      </div>
-    </div>
-
-  </div>
-
   <form>
+
     <div class="row">
+      <div class="col-9">
 
-      <!--METACRITIC HINT-->
-      <div class="col-4">
-        <label class="col-form-label" for="metacriticHint">Metacritic Hint</label>
-        <input type="text"
-               id="metacriticHint"
-               class="darkInput form-control"
-               name="metacriticHint"
-               [(ngModel)]="game.metacritic_hint.value"
-               (ngModelChange)="onFieldEdit()"/>
+        <div class="row">
+
+          <div class="col-12">
+
+            <h3 *ngIf="!titleEditMode">{{game.title.value}} <span (click)="toggleTitleEdit()"
+                                                                  *ngIf="personService.isAdmin">
+              <svg class="bi bi-pencil" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 011.414 0l2 2a1 1 0 010 1.414l-9 9a1 1 0 01-.39.242l-3 1a1 1 0 01-1.266-1.265l1-3a1 1 0 01.242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 00.5.5H4v.5a.5.5 0 00.5.5H5v.5a.5.5 0 00.5.5H6v-1.5a.5.5 0 00-.5-.5H5v-.5a.5.5 0 00-.5-.5H3z" clip-rule="evenodd"/>
+              </svg>
+            </span></h3>
+
+            <div class="input-group"
+                 *ngIf="titleEditMode">
+              <!--suppress HtmlFormInputWithoutLabel -->
+              <input type="text"
+                     name="gameTitle"
+                     class="form-control darkInput"
+                     [(ngModel)]="game.title.value"
+                     (ngModelChange)="onFieldEdit()"/>
+              <div class="input-group-append">
+                <button class="btn btn-secondary"
+                        (click)="toggleTitleEdit()"
+                        type="button">Cancel</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <h4 *ngIf="game.myPlatforms.length === 1">{{selectedPlatform.platform_name.originalValue}}</h4>
+
+            <!--suppress HtmlFormInputWithoutLabel -->
+            <select *ngIf="game.myPlatforms.length > 1"
+                    class="custom-select"
+                    id="platformSelect">
+              <option *ngFor="let platform of game.myPlatforms"
+                      [selected]="platformIsSelected(platform)"
+                      (click)="selectPlatform(platform)">
+                {{platform.platform_name.originalValue}}
+              </option>
+            </select>
+
+          </div>
+
+        </div>
+
+        <div class="row" *ngIf="!titleEditMode">
+
+          <div class="col-4">
+            <span class="small">Metacritic:</span><br>
+            <mm-rating-box [maxValue]="100"
+                           [value]="getMetacritic()"></mm-rating-box>
+          </div>
+
+          <div class="col-4" *ngIf="!!game.igdb_release_date.originalValue">
+            <span class="small">Released:</span><br>
+            {{game.igdb_release_date.originalValue | date: 'yyyy-MM-dd'}}
+          </div>
+
+        </div>
+
+
+        <div class="form-row" *ngIf="titleEditMode">
+
+          <!--METACRITIC HINT-->
+          <div class="form-group col-4">
+            <label class="control-label" for="metacriticHint">Metacritic Hint</label>
+            <input type="text"
+                   id="metacriticHint"
+                   class="darkInput form-control"
+                   name="metacriticHint"
+                   [(ngModel)]="game.metacritic_hint.value"
+                   (ngModelChange)="onFieldEdit()"/>
+          </div>
+
+          <!--NATURAL END-->
+          <div class="form-group col-4">
+            <div class="custom-control custom-switch">
+              <label for="naturalEnd">Natural End</label><br>
+              <mm-big-checkbox id="naturalEnd"
+                               [value]="game.natural_end.originalValue"
+                               (valueChanged)="onNaturalEndEdit($event)"></mm-big-checkbox>
+            </div>
+          </div>
+
+          <!--HOWLONG-->
+          <div class="form-group col-4">
+            <label class="control-label" for="howlong">Howlong ID</label>
+            <input type="number"
+                   id="howlong"
+                   name="howlong"
+                   class="darkInput form-control"
+                   [(ngModel)]="game.howlong_id.value"
+                   (ngModelChange)="onFieldEdit()"/>
+          </div>
+
+          <!--GIANTBOMB-->
+          <div class="form-group col-4">
+            <label class="control-label" for="giantbomb">GiantBomb ID</label>
+            <input type="number"
+                   id="giantbomb"
+                   name="giantbomb"
+                   class="darkInput form-control"
+                   [(ngModel)]="game.giantbomb_id.value"
+                   (ngModelChange)="onFieldEdit()"/>
+          </div>
+
+        </div>
+
       </div>
 
-      <!--NATURAL END-->
-      <div class="col-4">
-        <label class="col-form-label" for="naturalEnd">Natural End</label>
-        <input type="checkbox"
-               id="naturalEnd"
-               name="naturalEnd"
-               class="form-control"
-               (change)="onFieldEdit()"
-               [(ngModel)]="game.natural_end.value">
+      <div class="col-3 gameImageContainer">
+
+        <img class="rounded gameImage"
+             *ngIf="!!game.getImageUrl()"
+             src="{{game.getImageUrl()}}"
+             [game]="game"
+             default="../../../assets/GenericSeries.gif"
+             alt="{{game.title.originalValue}}"/>
+
       </div>
+
+    </div>
+
+    <div *ngIf="debug">
+
+      <h4>Available Platforms:</h4>
+
+      <div class="row">
+        <div class="col font-weight-bold">
+          Platform
+        </div>
+        <div class="col font-weight-bold">
+          Metacritic
+        </div>
+        <div class="col font-weight-bold">
+          Matched
+        </div>
+        <div class="col font-weight-bold">
+          Page
+        </div>
+
+      </div>
+
+      <div class="row"
+           *ngFor="let availablePlatform of game.availablePlatforms">
+        <div class="col">
+          {{availablePlatform.platform_name.value}}
+        </div>
+        <div class="col">
+          {{availablePlatform.metacritic.value}}
+        </div>
+
+        <div class="col">
+          {{availablePlatform.metacritic_matched.value | date: 'yyyy-MM-dd'}}
+        </div>
+        <div class="col">
+          {{availablePlatform.metacritic_page.value}}
+        </div>
+
+      </div>
+
+      <h4>My Platforms:</h4>
+
+      <div class="row">
+        <div class="col font-weight-bold">
+          Platform
+        </div>
+        <div class="col font-weight-bold">
+          Rating
+        </div>
+        <div class="col font-weight-bold">
+          Last Played
+        </div>
+        <div class="col font-weight-bold">
+          Minutes
+        </div>
+        <div class="col font-weight-bold" *ngIf="anyPlatformsAreFinished()">
+          Finished
+        </div>
+        <div class="col font-weight-bold" *ngIf="anyPlatformsAreFinished()">
+          Final
+        </div>
+        <div class="col font-weight-bold" *ngIf="anyPlatformsAreFinished()">
+          Replay
+        </div>
+        <div class="col font-weight-bold" *ngIf="anyPlatformsAreFinished()">
+          Reason
+        </div>
+
+      </div>
+
+
+      <div *ngIf="game.isOwned()">
+        <div class="row"
+             *ngFor="let myPlatform of game.myPlatforms">
+          <div class="col">
+            {{myPlatform.platform_name.value}}
+          </div>
+          <div class="col">
+            {{myPlatform.rating.value}}
+          </div>
+          <div class="col">
+            {{myPlatform.last_played.value | date: 'yyyy-MM-dd'}}
+          </div>
+          <div class="col">
+            {{myPlatform.minutes_played.value}}
+          </div>
+          <div class="col" *ngIf="anyPlatformsAreFinished()">
+            {{myPlatform.finished_date.value | date: 'yyyy-MM-dd'}}
+          </div>
+          <div class="col" *ngIf="anyPlatformsAreFinished()">
+            {{myPlatform.final_score.value}}
+          </div>
+          <div class="col" *ngIf="anyPlatformsAreFinished()">
+            {{myPlatform.replay_score.value}}
+          </div>
+          <div class="col" *ngIf="anyPlatformsAreFinished()">
+            {{myPlatform.replay_reason.value}}
+          </div>
+        </div>
+
+      </div>
+
+      <h4>Other Fields:</h4>
+
+      <div class="row">
+        <div class="col font-weight-bold">
+          TimeTotal
+        </div>
+        <div class="col font-weight-bold">
+          SteamID
+        </div>
+        <div class="col font-weight-bold">
+          Steam Cloud
+        </div>
+        <div class="col font-weight-bold">
+          Steam Page Gone
+        </div>
+        <div class="col font-weight-bold">
+          Steam Title
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          {{game.timetotal.value}}
+        </div>
+        <div class="col">
+          {{game.steamid.value}}
+        </div>
+        <div class="col">
+          {{game.steam_cloud.value}}
+        </div>
+        <div class="col">
+          {{game.steam_page_gone.value}}
+        </div>
+        <div class="col">
+          {{game.steam_title.value}}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col font-weight-bold">
+          HowLong Title
+        </div>
+        <div class="col font-weight-bold">
+          HowLong Extras
+        </div>
+        <div class="col font-weight-bold">
+          GiantBomb Name
+        </div>
+        <div class="col font-weight-bold">
+          IGDB_W
+        </div>
+        <div class="col font-weight-bold">
+          IGDB_H
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          {{game.howlong_title.value}}
+        </div>
+        <div class="col">
+          {{game.howlong_extras.value}}
+        </div>
+        <div class="col">
+          {{game.giantbomb_name.value}}
+        </div>
+        <div class="col">
+          {{game.igdb_width.value}}
+        </div>
+        <div class="col">
+          {{game.igdb_height.value}}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col font-weight-bold">
+          IGDB Rating
+        </div>
+        <div class="col font-weight-bold">
+          IGDB RCount
+        </div>
+        <div class="col font-weight-bold">
+          Release Date
+        </div>
+        <div class="col font-weight-bold">
+          Popularity
+        </div>
+        <div class="col font-weight-bold">
+          IGDB Slug
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          {{game.igdb_rating.value}}
+        </div>
+        <div class="col">
+          {{game.igdb_rating_count.value}}
+        </div>
+        <div class="col">
+          {{game.igdb_release_date.value | date: 'yyyy-MM-dd'}}
+        </div>
+        <div class="col">
+          {{game.igdb_popularity.value}}
+        </div>
+        <div class="col">
+          {{game.igdb_slug.value}}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col font-weight-bold">
+          IGDB Updated
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          {{game.igdb_updated.value | date: 'yyyy-MM-dd'}}
+        </div>
+      </div>
+
+    </div>
+
+    <div class="form-row">
 
       <!--RATING-->
       <div class="col-4" *ngIf="hasPerson()">
@@ -294,37 +380,13 @@
                (ngModelChange)="onFieldEdit()"/>
       </div>
 
-      <!--HOWLONG-->
-      <div class="col-4">
-        <label class="col-form-label" for="howlong">Howlong ID</label>
-        <input type="number"
-               id="howlong"
-               name="howlong"
-               class="darkInput form-control"
-               [(ngModel)]="game.howlong_id.value"
-               (ngModelChange)="onFieldEdit()"/>
-      </div>
-
-      <!--GIANTBOMB-->
-      <div class="col-4">
-        <label class="col-form-label" for="giantbomb">GiantBomb ID</label>
-        <input type="number"
-               id="giantbomb"
-               name="giantbomb"
-               class="darkInput form-control"
-               [(ngModel)]="game.giantbomb_id.value"
-               (ngModelChange)="onFieldEdit()"/>
-      </div>
-
       <!--FINISHED-->
-      <div class="col-4" *ngIf="hasPerson()">
-        <label class="col-form-label" for="finished">Finished</label>
-        <input type="checkbox"
-               id="finished"
-               name="finished"
-               class="form-control"
-               (change)="onFinishedFieldEdit()"
-               [(ngModel)]="finished">
+      <div class="form-group col-4" *ngIf="hasPerson()">
+        <label class="col-form-label" for="finished">Finished</label><br>
+        <mm-big-checkbox [value]="finished"
+                         id="finished"
+                         (valueChanged)="onFinishedFieldEdit($event)">
+        </mm-big-checkbox>
       </div>
 
       <!--FINAL SCORE-->
