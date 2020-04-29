@@ -170,6 +170,7 @@ exports.MyGamePlatform = sequelize.sequelize.define("my_game_platform", {
   replay_score: Sequelize.DECIMAL,
   last_played: Sequelize.DATE,
   finished_date: Sequelize.DATE,
+  collection_add: Sequelize.DATE,
   replay_reason: Sequelize.TEXT,
 }, {
   freezeTableName: true,

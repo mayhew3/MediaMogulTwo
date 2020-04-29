@@ -38,40 +38,27 @@ exports.getGames = async function (request, response) {
     const resultObj = game.dataValues;
 
     const availableForGame = _.where(availablePlatforms, {game_id: game.id});
-    resultObj.availablePlatforms = _.map(availableForGame, platform => {
+    resultObj.availablePlatforms = _.map(availableForGame, availablePlatform => {
+      const myPlatformObj = _.findWhere(myPlatforms, {available_game_platform_id: availablePlatform.id});
+      let myPlatform = null;
+      if (!!myPlatformObj) {
+        myPlatform = myPlatformObj.dataValues;
+        myPlatform.game_platform_id = availablePlatform.game_platform_id;
+      }
       return {
-        id: platform.id,
-        game_platform_id: platform.game_platform_id,
-        platform_name: platform.platform_name,
-        metacritic: platform.metacritic,
-        metacritic_page: platform.metacritic_page,
-        metacritic_matched: platform.metacritic_matched,
+        id: availablePlatform.id,
+        game_platform_id: availablePlatform.game_platform_id,
+        platform_name: availablePlatform.platform_name,
+        metacritic: availablePlatform.metacritic,
+        metacritic_page: availablePlatform.metacritic_page,
+        metacritic_matched: availablePlatform.metacritic_matched,
+        myPlatform: myPlatform
       };
     });
 
     const personGame = _.findWhere(personGames, {game_id: game.id});
     if (!!personGame) {
-      const returnPersonObj = personGame.dataValues;
-      const availableIDs = _.pluck(resultObj.availablePlatforms, 'id');
-      const myPlatformsForGame = _.filter(myPlatforms, platform => _.contains(availableIDs, platform.available_game_platform_id));
-      returnPersonObj.myPlatforms = _.map(myPlatformsForGame, platform => {
-        const availableGamePlatform = _.findWhere(availablePlatforms, {id: platform.available_game_platform_id});
-        return {
-          id: platform.id,
-          game_platform_id: availableGamePlatform.game_platform_id,
-          available_game_platform_id: availableGamePlatform.id,
-          platform_name: platform.platform_name,
-          rating: platform.rating,
-          tier: platform.tier,
-          final_score: platform.final_score,
-          minutes_played: platform.minutes_played,
-          replay_score: platform.replay_score,
-          last_played: platform.last_played,
-          finished_date: platform.finished_date,
-          replay_reason: platform.replay_reason,
-        };
-      });
-      resultObj.personGame = returnPersonObj;
+      resultObj.personGame = personGame;
     }
 
     const poster = _.findWhere(defaultPosters, {game_id: game.id});
