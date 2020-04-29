@@ -9,9 +9,8 @@ import {GameFilterWithOptions} from '../../interfaces/Filters/GameFilterWithOpti
 import {CloudGameFilter} from '../../interfaces/Filters/CloudGameFilter';
 import {PlatformGameFilter} from '../../interfaces/Filters/PlatformGameFilter';
 import {GameFilter} from '../../interfaces/Filters/GameFilter';
-import {OwnedGameFilter} from '../../interfaces/Filters/OwnedGameFilter';
 import {PlatformService} from '../../services/platform.service';
-import {MultiplePlatformsGameFilter} from '../../interfaces/Filters/MultiplePlatformsGameFilter';
+import {OwnedGameFilter} from '../../interfaces/Filters/OwnedGameFilter';
 
 @Component({
   selector: 'mm-dashboard',
@@ -26,7 +25,7 @@ export class DashboardComponent implements OnInit {
   }
 
   getBaseFilter(): GameFilter {
-    return new MultiplePlatformsGameFilter();
+    return new OwnedGameFilter();
   }
 
   getChangeableFilters(): GameFilterWithOptions[] {
