@@ -251,6 +251,11 @@ export class Game extends DataObject {
     return max > 0 ? max : null;
   }
 
+  get isFinished(): boolean {
+    const allFinished = _.filter(this.myPlatforms, myPlatform => !!myPlatform.finished_date.originalValue);
+    return !_.isEmpty(allFinished);
+  }
+
   getApiMethod(): string {
     return 'games';
   }

@@ -39,6 +39,7 @@ export class InMemoryDataService implements InMemoryDbService{
       igdbMatches: [],
       gamePlatforms: this.gamePlatforms,
       resolve: [],
+      myPlatforms: [],
     };
   }
 
@@ -82,6 +83,8 @@ export class InMemoryDataService implements InMemoryDbService{
       this.updatePersonGame(requestInfo);
     } else if (collectionName === 'resolve') {
       this.packageUpResponse(this.getBody(requestInfo), requestInfo);
+    } else if (collectionName === 'myPlatforms') {
+      this.updateMyGamePlatform(requestInfo);
     }
     return null;
   }
@@ -185,6 +188,15 @@ export class InMemoryDataService implements InMemoryDbService{
     }
   }
 
+  private updateMyGamePlatform(requestInfo: RequestInfo) {
+    const jsonBody = this.getBody(requestInfo);
+    const myGamePlatform = this.findMyGamePlatform(jsonBody.id);
+    if (!!myGamePlatform) {
+      this.updateChangedFieldsOnObject(myGamePlatform, jsonBody.changedFields);
+      return this.packageUpResponse(myGamePlatform, requestInfo);
+    }
+  }
+
   private findGame(gameID: number): any {
     return _.findWhere(this.games, {id: gameID});
   }
@@ -199,7 +211,12 @@ export class InMemoryDataService implements InMemoryDbService{
   }
 
   private getMyPlatforms(): any[] {
-    return _.flatten(_.map(this.getPersonGames(), personGame => personGame.myPlatforms));
+    return _.flatten(_.map(this.getAvailablePlatforms(), availablePlatform => availablePlatform.myPlatforms));
+  }
+
+  private findMyGamePlatform(myGamePlatformID: number): any {
+    const myGamePlatforms = this.getMyPlatforms();
+    return _.findWhere(myGamePlatforms, {id: myGamePlatformID});
   }
 
   private findPersonGame(personGameID: number): any {

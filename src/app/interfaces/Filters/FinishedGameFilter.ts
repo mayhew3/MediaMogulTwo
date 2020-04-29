@@ -24,7 +24,7 @@ export class FinishedGameFilter extends GameFilterWithOptions {
   apply(game: Game): boolean {
     const gameFilterOptions = this.options;
     const selectedOptionKeys = _.map(_.where(gameFilterOptions, {isActive: true}), option => option.value);
-    const gameIsFinished = (!!game.personGame && !!game.personGame.finished_date.originalValue);
+    const gameIsFinished = game.isFinished;
     return _.contains(selectedOptionKeys, gameIsFinished);
   }
 
