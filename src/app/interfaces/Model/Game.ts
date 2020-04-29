@@ -6,6 +6,7 @@ import * as _ from 'underscore';
 import {PlatformService} from '../../services/platform.service';
 import {ArrayUtil} from '../../utility/ArrayUtil';
 import {AvailableGamePlatform} from './AvailableGamePlatform';
+import {MyGamePlatform} from './MyGamePlatform';
 
 export class Game extends DataObject {
   title = this.registerStringField('title', true);
@@ -135,6 +136,10 @@ export class Game extends DataObject {
     return !!existing;
   }
 
+  getMyPlatforms(): MyGamePlatform[] {
+    return _.compact(_.map(this.availablePlatforms, availablePlatform => availablePlatform.myGamePlatform));
+  }
+
   hasPlatformWithIGDBID(igdbID: number): boolean {
     const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform.igdb_platform_id.value === igdbID);
     return !!existing;
@@ -200,7 +205,7 @@ export class Game extends DataObject {
   }
 
   isOwned(): boolean {
-    return !!this._personGame;
+    return _.some(this.availablePlatforms, availablePlatform => availablePlatform.isOwned());
   }
 
   getApiMethod(): string {
@@ -209,8 +214,8 @@ export class Game extends DataObject {
 
   discardChanges(): void {
     super.discardChanges();
-    if (!!this._personGame) {
-      this._personGame.discardChanges();
+    for (const myPlatform of this.getMyPlatforms()) {
+      myPlatform.discardChanges();
     }
   }
 }

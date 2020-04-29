@@ -32,6 +32,10 @@ export class AvailableGamePlatform extends DataObject {
     return this.gamePlatform;
   }
 
+  isOwned(): boolean {
+    return !!this.myGamePlatform;
+  }
+
   isTemporary(): boolean {
     return !this.id.value || this.platform.isTemporary();
   }
