@@ -2,10 +2,11 @@
 import {DataObject} from '../DataObject/DataObject';
 import {GamePlatform} from './GamePlatform';
 import {Game} from './Game';
+import {MyGamePlatform} from './MyGamePlatform';
 
 export class AvailableGamePlatform extends DataObject {
 
-  game: Game;
+  myGamePlatform: MyGamePlatform;
 
   game_platform_id = this.registerIntegerField('game_platform_id', true);
   platform_name = this.registerStringField('platform_name', true);
@@ -13,7 +14,8 @@ export class AvailableGamePlatform extends DataObject {
   metacritic_page = this.registerBooleanField('metacritic_page', true);
   metacritic_matched = this.registerDateField('metacritic_matched', true);
 
-  constructor(private gamePlatform: GamePlatform) {
+  constructor(private gamePlatform: GamePlatform,
+              public game: Game) {
     super();
   }
 

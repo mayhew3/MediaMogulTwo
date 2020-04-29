@@ -98,7 +98,7 @@ export class Game extends DataObject {
     }
     const existing = _.find(this._availablePlatforms, availablePlatform => availablePlatform.platform.full_name.value === gamePlatform.full_name.value);
     if (!existing) {
-      const availableGamePlatform = new AvailableGamePlatform(gamePlatform);
+      const availableGamePlatform = new AvailableGamePlatform(gamePlatform, this);
       this._availablePlatforms.push(availableGamePlatform);
       return availableGamePlatform;
     } else {
@@ -107,7 +107,7 @@ export class Game extends DataObject {
   }
 
   addToAvailablePlatforms(platformObj: any, gamePlatform: GamePlatform) {
-    const realAvailablePlatform = new AvailableGamePlatform(gamePlatform).initializedFromJSON(platformObj);
+    const realAvailablePlatform = new AvailableGamePlatform(gamePlatform, this).initializedFromJSON(platformObj);
     this._availablePlatforms.push(realAvailablePlatform);
   }
 
@@ -117,7 +117,7 @@ export class Game extends DataObject {
     }
     const existing = _.find(this._availablePlatforms, availablePlatform => availablePlatform.platform.id.value === gamePlatform.id.value);
     if (!existing) {
-      const availablePlatform = new AvailableGamePlatform(gamePlatform);
+      const availablePlatform = new AvailableGamePlatform(gamePlatform, this);
       this._availablePlatforms.push(availablePlatform);
       return availablePlatform;
     } else {
