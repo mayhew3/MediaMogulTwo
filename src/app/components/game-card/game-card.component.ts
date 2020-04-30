@@ -5,6 +5,8 @@ import {PlaytimePopupComponent} from '../playtime-popup/playtime-popup.component
 import {GameDetailComponent} from '../game-detail/game-detail.component';
 import {GameListComponent} from '../game-list/game-list.component';
 import {GameService} from '../../services/game.service';
+import {AvailableGamePlatform} from '../../interfaces/Model/AvailableGamePlatform';
+import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
 
 @Component({
   selector: 'mm-game-card',
@@ -32,16 +34,27 @@ export class GameCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getImageUrl(): string {
-    if (!!this.game.igdb_poster.value && this.game.igdb_poster.value !== '') {
-      return 'https://images.igdb.com/igdb/image/upload/t_720p/' + this.game.igdb_poster.value +  '.jpg';
-    } else if (!!this.game.logo.value && this.game.logo.value !== '') {
-      return 'https://cdn.edgecast.steamstatic.com/steam/apps/' + this.game.steamid.value + '/header.jpg';
-    } else if (!!this.game.giantbomb_medium_url.value && this.game.giantbomb_medium_url.value !== '') {
-      return this.game.giantbomb_medium_url.value;
-    } else {
-      return 'images/GenericSeries.gif';
+  isNotRecentlyUnowned(): boolean {
+    return !this.game.isOwned() || this.successfullyAdded;
+  }
+
+  hasSingleAvailablePlatform(): boolean {
+    return this.game.availablePlatforms.length === 1;
+  }
+
+  getSingleAvailablePlatform(): AvailableGamePlatform {
+    if (!this.hasSingleAvailablePlatform()) {
+      throw new Error('Can only get single platform but there are ' + this.game.availablePlatforms.length + ' platforms.');
     }
+    return this.game.availablePlatforms[0];
+  }
+
+  showAddGameButton(): boolean {
+    return this.isNotRecentlyUnowned() && this.hasSingleAvailablePlatform();
+  }
+
+  showChoosePlatformsButton(): boolean {
+    return this.isNotRecentlyUnowned() && !this.hasSingleAvailablePlatform();
   }
 
   async handlePopupResult(modalRef: NgbModalRef) {
@@ -78,7 +91,9 @@ export class GameCardComponent implements OnInit {
   }
 
   async addToMyGames(): Promise<any> {
+    const availableGamePlatform = this.getSingleAvailablePlatform();
+    const myGamePlatform = new MyGamePlatform(availableGamePlatform);
+    await this.gameService.addMyGamePlatform(availableGamePlatform, myGamePlatform);
     this.successfullyAdded = true;
-    throw new Error('Not implemented yet!');
   }
 }

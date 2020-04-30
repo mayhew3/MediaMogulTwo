@@ -1,5 +1,5 @@
 <div class="gameCardInside">
-  <div class="row">
+  <div class="form-row">
     <div class="col-6 gameImageContainer">
 
       <img class="rounded gameImage"
@@ -43,10 +43,18 @@
         </div>
 
         <div class="col-12 m-1"
-             *ngIf="!game.isOwned() || successfullyAdded">
+             *ngIf="showAddGameButton()">
+          Platform: {{getSingleAvailablePlatform().platform_name.originalValue}}
           <button class="btn btn-success"
                   [disabled]="successfullyAdded"
                   (click)="addToMyGames()">Add Game</button>
+        </div>
+
+        <div class="col-12 m-1"
+             *ngIf="showChoosePlatformsButton()">
+          {{game.availablePlatforms.length}} Platforms
+          <button class="btn btn-success"
+                  [disabled]="successfullyAdded">Choose Platform(s)</button>
         </div>
       </div>
 
