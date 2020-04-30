@@ -170,7 +170,10 @@ export class InMemoryDataService implements InMemoryDbService{
     myGamePlatform.id = this.nextMyPlatformID();
     myGamePlatform.date_added = new Date();
     const availableGamePlatform = this.findAvailableGamePlatform(myGamePlatform.available_game_platform_id);
-    availableGamePlatform.myGamePlatform = myGamePlatform;
+    if (!availableGamePlatform.myPlatforms) {
+      availableGamePlatform.myPlatforms = [];
+    }
+    availableGamePlatform.myPlatforms.push(myGamePlatform);
     return this.packageUpResponse(myGamePlatform, requestInfo);
   }
 
@@ -245,8 +248,12 @@ export class InMemoryDataService implements InMemoryDbService{
     }));
   }
 
+  // todo: undefined is in there... WTF??
   private getAllMyPlatforms(): any[] {
-    return _.flatten(_.map(this.getAvailablePlatforms(), availablePlatform => availablePlatform.myPlatforms));
+    const availablePlatforms = this.getAvailablePlatforms();
+    return _.flatten(_.map(_.filter(availablePlatforms, availablePlatform => !!availablePlatform.myPlatforms), availablePlatform => {
+      return availablePlatform.myPlatforms;
+    }));
   }
 
   private findAvailableGamePlatform(availablePlatformID: number): any {
@@ -272,7 +279,8 @@ export class InMemoryDataService implements InMemoryDbService{
         return parseInt(item.id)
       }
     });
-    return ids.length > 0 ? _.max(ids) + 1 : 1;
+    const max = _.max(ids);
+    return ids.length > 0 ? max + 1 : 1;
   }
 
   private nextGameID(): number {
