@@ -117,6 +117,11 @@ export class Game extends DataObject {
     return !!existing;
   }
 
+  ownsPlatformWithID(platformID: number): boolean {
+    const existing = _.find(this.myPlatforms, myPlatform => myPlatform.platform.id.value === platformID);
+    return !!existing;
+  }
+
   get myPlatforms(): MyGamePlatform[] {
     return _.compact(_.map(this.availablePlatforms, availablePlatform => availablePlatform.myGamePlatform));
   }

@@ -6,7 +6,7 @@ import {PlatformService} from '../../services/platform.service';
 import {GamePlatform} from '../Model/GamePlatform';
 import {ArrayUtil} from '../../utility/ArrayUtil';
 
-export class PlatformGameFilter extends GameFilterWithOptions {
+export class ExistingPlatformGameFilter extends GameFilterWithOptions {
 
   constructor(private platformService: PlatformService) {
     super([]);

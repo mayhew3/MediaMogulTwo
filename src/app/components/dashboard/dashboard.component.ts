@@ -7,10 +7,11 @@ import {OrderByDateAdded} from '../../interfaces/OrderBy/OrderByDateAdded';
 import {FinishedGameFilter} from '../../interfaces/Filters/FinishedGameFilter';
 import {GameFilterWithOptions} from '../../interfaces/Filters/GameFilterWithOptions';
 import {CloudGameFilter} from '../../interfaces/Filters/CloudGameFilter';
-import {PlatformGameFilter} from '../../interfaces/Filters/PlatformGameFilter';
+import {ExistingPlatformGameFilter} from '../../interfaces/Filters/ExistingPlatformGameFilter';
 import {GameFilter} from '../../interfaces/Filters/GameFilter';
 import {PlatformService} from '../../services/platform.service';
 import {OwnedGameFilter} from '../../interfaces/Filters/OwnedGameFilter';
+import {OwnedPlatformGameFilter} from '../../interfaces/Filters/OwnedPlatformGameFilter';
 
 @Component({
   selector: 'mm-dashboard',
@@ -30,7 +31,7 @@ export class DashboardComponent implements OnInit {
 
   getChangeableFilters(): GameFilterWithOptions[] {
     return [new CloudGameFilter(),
-      new PlatformGameFilter(this.platformService),
+      new OwnedPlatformGameFilter(this.platformService),
       new FinishedGameFilter(),
     ];
   }
