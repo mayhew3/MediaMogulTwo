@@ -3,6 +3,6 @@ import {Game} from '../Model/Game';
 
 export class OwnedGameFilter extends GameFilter {
   apply(game: Game): boolean {
-    return !!game.personGame;
+    return game.isOwned();
   }
 }
