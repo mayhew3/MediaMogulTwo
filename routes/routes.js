@@ -40,6 +40,9 @@ module.exports = function(app) {
 
   privateGet('/gamePlatforms', platforms.getPlatforms);
 
+  privatePost('/availablePlatforms', games.addAvailableGamePlatform);
+
+  privatePost('/myPlatforms', games.addMyGamePlatform);
   privatePut('/myPlatforms', games.updateMyGamePlatform);
 
   privateGet('/igdbMatches', addGame.getIGDBMatches);

@@ -489,3 +489,17 @@ exports.addGameplaySession = async function(request, response) {
   await model.GameplaySession.create(gameplaySession);
   response.json({});
 };
+
+exports.addAvailableGamePlatform = async function(request, response) {
+  const availableGamePlatformObj = request.body;
+
+  const availableGamePlatform = await model.AvailableGamePlatform.create(availableGamePlatformObj);
+  response.json(availableGamePlatform);
+};
+
+exports.addMyGamePlatform = async function(request, response) {
+  const myGamePlatformObj = request.body;
+
+  const myGamePlatform = await model.MyGamePlatform.create(myGamePlatformObj);
+  response.json(myGamePlatform);
+};
