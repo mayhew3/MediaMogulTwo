@@ -5,6 +5,7 @@ import {GameService} from '../../services/game.service';
 import * as moment from 'moment';
 import {PersonService} from '../../services/person.service';
 import {GameplaySession} from '../../interfaces/Model/GameplaySession';
+import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
 
 @Component({
   selector: 'mm-playtime-popup',
@@ -22,8 +23,9 @@ export class PlaytimePopupComponent implements OnInit {
 
   gameplaySession = new GameplaySession();
 
-  sessionRating: number;
   finished = false;
+
+  selectedPlatform: MyGamePlatform;
 
   finalScore: number;
   replayScore: number;
@@ -37,10 +39,11 @@ export class PlaytimePopupComponent implements OnInit {
   }
 
   async ngOnInit(): Promise<any> {
-    this.original.initialize(this.game.personGame.minutes_played.value);
-    this.finished = !!this.game.personGame.finished_date.value;
-    this.finalScore = this.game.personGame.final_score.value;
-    this.replayScore = this.game.personGame.replay_score.value;
+    this.selectedPlatform = this.game.myPreferredPlatform;
+    this.original.initialize(this.selectedPlatform.minutes_played.value);
+    this.finished = !!this.selectedPlatform.finished_date.value;
+    this.finalScore = this.selectedPlatform.final_score.value;
+    this.replayScore = this.selectedPlatform.replay_score.value;
   }
 
   newChanged() {
@@ -77,9 +80,9 @@ export class PlaytimePopupComponent implements OnInit {
 
   anyFieldsChanged() {
     const gametimeChanged = this.added.asMinutes() > 0;
-    const finishedChanged = !this.finished !== !this.game.personGame.finished_date.value;
-    const finalScoreChanged = this.finalScore !== this.game.personGame.final_score.value;
-    const replayScoreChanged = this.replayScore !== this.game.personGame.replay_score.value;
+    const finishedChanged = !this.finished !== !this.selectedPlatform.finished_date.value;
+    const finalScoreChanged = this.finalScore !== this.selectedPlatform.final_score.value;
+    const replayScoreChanged = this.replayScore !== this.selectedPlatform.replay_score.value;
     return gametimeChanged || finishedChanged || finalScoreChanged || replayScoreChanged;
   }
 
@@ -87,10 +90,10 @@ export class PlaytimePopupComponent implements OnInit {
     this.personService.me$.subscribe(async person => {
       try {
         const playedDate = this.convertModelToDate();
-        const personGame = this.game.personGame;
-        personGame.minutes_played.value = this.resulting.asMinutes();
-        personGame.last_played.value = playedDate;
-        personGame.finished_date.value = this.finished ? playedDate : null;
+        const myPlatform = this.selectedPlatform;
+        myPlatform.minutes_played.value = this.resulting.asMinutes();
+        myPlatform.last_played.value = playedDate;
+        myPlatform.finished_date.value = this.finished ? playedDate : null;
 
         this.gameplaySession.game_id.value = this.game.id.value;
         this.gameplaySession.minutes.value = this.added.asMinutes();
@@ -98,7 +101,7 @@ export class PlaytimePopupComponent implements OnInit {
         this.gameplaySession.person_id.value = person.id.value;
 
         await this.gameService.insertGameplaySession(this.gameplaySession);
-        await this.gameService.updatePersonGame(personGame);
+        await this.gameService.updateMyPlatform(myPlatform);
         this.activeModal.close('Save Click');
       } catch (err) {
         console.error(err);
