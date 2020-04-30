@@ -13,6 +13,29 @@
 
   <h3>{{game.title.value}}</h3>
 
+  <div class="row">
+    <div class="col-4">
+
+      <!-- Single Platform-->
+      <h4 *ngIf="game.myPlatforms.length === 1">{{selectedPlatform.platform_name.originalValue}}</h4>
+
+      <!-- Multi Platform Dropdown -->
+
+      <!--suppress HtmlFormInputWithoutLabel -->
+      <select *ngIf="game.myPlatforms.length > 1"
+              class="custom-select"
+              id="platformSelect">
+        <option *ngFor="let platform of game.myPlatforms"
+                [selected]="platformIsSelected(platform)"
+                (click)="selectPlatform(platform)">
+          {{platform.platform_name.originalValue}}
+        </option>
+      </select>
+
+    </div>
+  </div>
+
+
   <form>
 
     <div class="row">

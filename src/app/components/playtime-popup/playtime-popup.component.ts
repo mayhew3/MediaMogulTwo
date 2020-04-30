@@ -40,7 +40,7 @@ export class PlaytimePopupComponent implements OnInit {
 
   async ngOnInit(): Promise<any> {
     this.selectedPlatform = this.game.myPreferredPlatform;
-    this.original.initialize(this.selectedPlatform.minutes_played.value);
+    this.initializeDates();
     this.finished = !!this.selectedPlatform.finished_date.value;
     this.finalScore = this.selectedPlatform.final_score.value;
     this.replayScore = this.selectedPlatform.replay_score.value;
@@ -56,6 +56,22 @@ export class PlaytimePopupComponent implements OnInit {
 
   validateModel() {
     this.validDate = this.isValidDate();
+  }
+
+  platformIsSelected(platform: MyGamePlatform): boolean {
+    return platform.id.originalValue === this.selectedPlatform.id.originalValue;
+  }
+
+  selectPlatform(platform: MyGamePlatform): void {
+    this.selectedPlatform = platform;
+    this.initializeDates();
+  }
+
+  initializeDates(): void {
+    this.original = new GameTime();
+    this.resulting = new GameTime();
+    this.added = new GameTime();
+    this.original.initialize(this.selectedPlatform.minutes_played.value);
   }
 
   convertModelToDate(): Date {
