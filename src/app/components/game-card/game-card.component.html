@@ -45,16 +45,18 @@
         <div class="col-12 m-1"
              *ngIf="showAddGameButton()">
           Platform: {{getSingleAvailablePlatform().platform_name.originalValue}}
-          <button class="btn btn-success"
-                  [disabled]="successfullyAdded"
-                  (click)="addToMyGames()">Add Game</button>
         </div>
 
         <div class="col-12 m-1"
              *ngIf="showChoosePlatformsButton()">
           {{game.availablePlatforms.length}} Platforms
+        </div>
+
+        <div class="col-12 m-1"
+             *ngIf="isNotRecentlyUnowned()">
           <button class="btn btn-success"
-                  [disabled]="successfullyAdded">Choose Platform(s)</button>
+                  [disabled]="successfullyAdded"
+                  (click)="addToMyGames()">Add Game</button>
         </div>
       </div>
 

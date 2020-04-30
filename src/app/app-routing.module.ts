@@ -9,6 +9,7 @@ import {HTTP_INTERCEPTORS} from '@angular/common/http';
 import {InterceptorService} from './services/interceptor.service';
 import {AddGameComponent} from './components/add-game/add-game.component';
 import {DuplicateResolutionComponent} from './components/duplicate-resolution/duplicate-resolution.component';
+import {SearchComponent} from './components/search/search.component';
 
 export const routes: Routes = [
   {
@@ -32,7 +33,7 @@ export const routes: Routes = [
   },
   {
     path: 'addGame',
-    component: AddGameComponent,
+    component: SearchComponent,
     canActivate: [AuthGuard]
   },
   {
