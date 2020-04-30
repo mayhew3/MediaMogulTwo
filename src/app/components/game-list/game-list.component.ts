@@ -3,7 +3,6 @@ import {Game} from '../../interfaces/Model/Game';
 import fast_sort from 'fast-sort';
 import * as _ from 'underscore';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
-import {AddGameComponent} from '../add-game/add-game.component';
 import {GameService} from '../../services/game.service';
 import {GameFilter} from '../../interfaces/Filters/GameFilter';
 import {GameOrdering} from '../../interfaces/OrderBy/GameOrdering';
@@ -31,15 +30,18 @@ export class GameListComponent implements OnInit{
   error: string;
   thisComponent = this;
 
+  visibleOptions: Map<GameFilterWithOptions, GameFilterOption[]>;
+
   constructor(private modalService: NgbModal,
               private gameService: GameService,
               private arrayService: ArrayService) {
   }
 
   async ngOnInit(): Promise<any> {
+    this.visibleOptions = new Map<GameFilterWithOptions, GameFilterOption[]>();
     this.selectedOrdering = this.orderings[0];
     this.nailedDownFilters = this.arrayService.cloneArray(this.changeableFilters);
-    this.fastSortGames();
+    this.sortAndFilterGames();
   }
 
   showOrderingDropdown(): boolean {
@@ -52,7 +54,40 @@ export class GameListComponent implements OnInit{
 
   async changeOrdering(ordering: GameOrdering) {
     this.selectedOrdering = ordering;
-    this.fastSortGames();
+    this.sortAndFilterGames();
+  }
+
+  sortAndFilterGames() {
+    this.gameService.games.subscribe(allGames => {
+
+      const allFilters = this.getAllFilters();
+      this.filteredGames = this.applyAll(allGames, allFilters);
+      this.sortGames();
+      this.updateVisibleOptions(allGames);
+
+      if (allGames.length > 0) {
+        this.initializing = false;
+      }
+    });
+  }
+
+  private sortGames() {
+    const isAscending = OrderingDirection[this.selectedOrdering.direction] === OrderingDirection.asc;
+    if (isAscending) {
+      // noinspection TypeScriptValidateJSTypes
+      fast_sort(this.filteredGames)
+        .by([
+          {asc: this.selectedOrdering.sortValue},
+          {asc: game => game.title.value}
+        ]);
+    } else {
+      // noinspection TypeScriptValidateJSTypes
+      fast_sort(this.filteredGames)
+        .by([
+          {desc: this.selectedOrdering.sortValue},
+          {asc: game => game.title.value}
+        ]);
+    }
   }
 
   applyAll(games: Game[], filters: GameFilter[]): Game[] {
@@ -64,33 +99,12 @@ export class GameListComponent implements OnInit{
     return filtered;
   }
 
-  fastSortGames() {
-    this.gameService.games.subscribe(allGames => {
-      const allFilters = this.arrayService.cloneArray(this.nailedDownFilters);
-      if (!!this.baseFilter) {
-        allFilters.push(this.baseFilter);
-      }
-      this.filteredGames = this.applyAll(allGames, allFilters);
-      const isAscending = OrderingDirection[this.selectedOrdering.direction] === OrderingDirection.asc;
-      if (isAscending) {
-        // noinspection TypeScriptValidateJSTypes
-        fast_sort(this.filteredGames)
-          .by([
-            {asc: this.selectedOrdering.sortValue},
-            {asc: game => game.title.value}
-          ]);
-      } else {
-        // noinspection TypeScriptValidateJSTypes
-        fast_sort(this.filteredGames)
-          .by([
-            {desc: this.selectedOrdering.sortValue},
-            {asc: game => game.title.value}
-          ]);
-      }
-      if (allGames.length > 0) {
-        this.initializing = false;
-      }
-    });
+  private getAllFilters(): GameFilter[] {
+    const allFilters = this.arrayService.cloneArray(this.nailedDownFilters);
+    if (!!this.baseFilter) {
+      allFilters.push(this.baseFilter);
+    }
+    return allFilters;
   }
 
   getOptionClass(option: GameFilterOption): string {
@@ -100,6 +114,31 @@ export class GameListComponent implements OnInit{
       classes.push('filterItem');
     }
     return classes.join(' ');
+  }
+
+  private getAllFiltersExcept(filter: GameFilterWithOptions): GameFilterWithOptions[] {
+    const allFilters = this.getAllFilters();
+    return _.without(allFilters, filter);
+  }
+
+  updateVisibleOptions(games: Game[]) {
+    for (let filter of this.nailedDownFilters) {
+      this.visibleOptions.set(filter, this.getUsedOptionsOnly(filter, games));
+    }
+  }
+
+  getUsedOptionsOnly(filter: GameFilterWithOptions, games: Game[]): GameFilterOption[] {
+    const otherFilters = this.getAllFiltersExcept(filter);
+    const filteredGames = this.applyAll(games, otherFilters);
+
+    const filteredOptions: GameFilterOption[] = [];
+    for (let option of filter.getRegularOptions()) {
+      const gamesForOption = _.filter(filteredGames, game => filter.gamePassesOption(game, option));
+      if (gamesForOption.length > 0) {
+        filteredOptions.push(option);
+      }
+    }
+    return filteredOptions;
   }
 
   toggleOption(option: GameFilterOption, parentFilter: GameFilterWithOptions) {
@@ -122,7 +161,7 @@ export class GameListComponent implements OnInit{
       noneOption.isActive = activeRegular.length === 0;
     }
 
-    this.fastSortGames();
+    this.sortAndFilterGames();
   }
 
 }

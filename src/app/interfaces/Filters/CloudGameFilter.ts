@@ -23,10 +23,8 @@ export class CloudGameFilter extends GameFilterWithOptions {
     super(CloudGameFilter.initializeOptions());
   }
 
-  apply(game: Game): boolean {
-    const gameFilterOptions = this.options;
-    const selectedOptionKeys = _.map(_.where(gameFilterOptions, {isActive: true}), option => option.value);
-    return _.contains(selectedOptionKeys, game.steam_cloud.value);
+  gamePassesOption(game: Game, option: GameFilterOption): boolean {
+    return game.steam_cloud.value === option.value;
   }
 
   getLabel(): string {

@@ -26,6 +26,10 @@ export class ExistingPlatformGameFilter extends GameFilterWithOptions {
     return filtered.length > 0;
   }
 
+  gamePassesOption(game: Game, option: GameFilterOption): boolean {
+    return game.hasPlatformWithID(option.value);
+  }
+
   getLabel(): string {
     return 'Platform';
   }

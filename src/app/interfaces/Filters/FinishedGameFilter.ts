@@ -21,11 +21,8 @@ export class FinishedGameFilter extends GameFilterWithOptions {
     super(FinishedGameFilter.initializeOptions());
   }
 
-  apply(game: Game): boolean {
-    const gameFilterOptions = this.options;
-    const selectedOptionKeys = _.map(_.where(gameFilterOptions, {isActive: true}), option => option.value);
-    const gameIsFinished = game.isFinished;
-    return _.contains(selectedOptionKeys, gameIsFinished);
+  gamePassesOption(game: Game, option: GameFilterOption): boolean {
+    return game.isFinished === option.value;
   }
 
   getLabel(): string {

@@ -19,7 +19,7 @@
                     ngbDropdownToggle>{{filter.getLabel()}}</button>
             <div ngbDropdownMenu
                  [attr.aria-labelledby]="'dropdown' + filter.getLabel()">
-              <button *ngFor="let option of filter.getRegularOptions()"
+              <button *ngFor="let option of visibleOptions.get(filter)"
                       ngbDropdownItem
                       (click)="toggleOption(option, filter)"
                       [ngClass]="getOptionClass(option)">
