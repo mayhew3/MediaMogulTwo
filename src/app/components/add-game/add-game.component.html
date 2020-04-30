@@ -1,1 +1,33 @@
-<p>Add Game component works!</p>
+<div class="modal-header">
+  <h1>Add Game</h1>
+  <button type="button"
+          class="btn btn-warning close"
+          aria-label="Close"
+          (click)="dismiss()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="modal-body"
+     *ngIf="!!game">
+  <h2>{{game.title.value}}</h2>
+
+  <div class="row m-1"
+       *ngFor="let platform of game.addablePlatforms">
+    <div class="col-9 small">
+      <h3>{{platform.platform_name.originalValue}}</h3>
+    </div>
+    <div class="col-3">
+      <button type="button"
+              class="btn btn-primary"
+              *ngIf="showAddButton(platform)"
+              (click)="addPlatform(platform)">Add</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-footer">
+  <button type="button"
+          class="btn btn-primary"
+          (click)="close()">Close</button>
+</div>

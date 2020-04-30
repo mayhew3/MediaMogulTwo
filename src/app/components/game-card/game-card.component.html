@@ -49,14 +49,14 @@
 
         <div class="col-12 m-1"
              *ngIf="showChoosePlatformsButton()">
-          {{game.availablePlatforms.length}} Platforms
+          {{game.addablePlatforms.length}} Platforms
         </div>
 
         <div class="col-12 m-1"
              *ngIf="isNotRecentlyUnowned()">
           <button class="btn btn-success"
                   [disabled]="successfullyAdded"
-                  (click)="addToMyGames()">Add Game</button>
+                  (click)="openAddGamePopup()">Add Game</button>
         </div>
       </div>
 

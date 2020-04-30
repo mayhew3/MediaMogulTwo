@@ -4,9 +4,8 @@ import {ModalDismissReasons, NgbModal, NgbModalRef} from '@ng-bootstrap/ng-boots
 import {PlaytimePopupComponent} from '../playtime-popup/playtime-popup.component';
 import {GameDetailComponent} from '../game-detail/game-detail.component';
 import {GameListComponent} from '../game-list/game-list.component';
-import {GameService} from '../../services/game.service';
 import {AvailableGamePlatform} from '../../interfaces/Model/AvailableGamePlatform';
-import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
+import {AddGameComponent} from '../add-game/add-game.component';
 
 @Component({
   selector: 'mm-game-card',
@@ -28,8 +27,7 @@ export class GameCardComponent implements OnInit {
       return `with: ${reason}`;
     }
   }
-  constructor(private modalService: NgbModal,
-              private gameService: GameService) { }
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
   }
@@ -39,14 +37,14 @@ export class GameCardComponent implements OnInit {
   }
 
   hasSingleAvailablePlatform(): boolean {
-    return this.game.availablePlatforms.length === 1;
+    return this.game.addablePlatforms.length === 1;
   }
 
   getSingleAvailablePlatform(): AvailableGamePlatform {
     if (!this.hasSingleAvailablePlatform()) {
-      throw new Error('Can only get single platform but there are ' + this.game.availablePlatforms.length + ' platforms.');
+      throw new Error('Can only get single platform but there are ' + this.game.addablePlatforms.length + ' platforms.');
     }
-    return this.game.availablePlatforms[0];
+    return this.game.addablePlatforms[0];
   }
 
   showAddGameButton(): boolean {
@@ -86,14 +84,14 @@ export class GameCardComponent implements OnInit {
     await this.handlePopupResult(modalRef);
   }
 
+  async openAddGamePopup() {
+    const modalRef = this.modalService.open(AddGameComponent, {size: 'md'});
+    modalRef.componentInstance.game = this.game;
+    await this.handlePopupResult(modalRef);
+  }
+
   isSteamGame(): boolean {
     return this.game.hasPlatform('Steam');
   }
 
-  async addToMyGames(): Promise<any> {
-    const availableGamePlatform = this.getSingleAvailablePlatform();
-    const myGamePlatform = new MyGamePlatform(availableGamePlatform);
-    await this.gameService.addMyGamePlatform(availableGamePlatform, myGamePlatform);
-    this.successfullyAdded = true;
-  }
 }

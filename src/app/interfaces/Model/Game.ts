@@ -93,20 +93,6 @@ export class Game extends DataObject {
     return availablePlatforms;
   }
 
-  addTemporaryPlatform(gamePlatform: GamePlatform): AvailableGamePlatform {
-    if (!gamePlatform.isTemporary()) {
-      throw new Error('Cannot add platform with id using addTemporaryPlatform!');
-    }
-    const existing = _.find(this._availablePlatforms, availablePlatform => availablePlatform.platform.full_name.value === gamePlatform.full_name.value);
-    if (!existing) {
-      const availableGamePlatform = new AvailableGamePlatform(gamePlatform, this);
-      this._availablePlatforms.push(availableGamePlatform);
-      return availableGamePlatform;
-    } else {
-      return existing;
-    }
-  }
-
   createAndAddAvailablePlatform(platformObj: any, gamePlatform: GamePlatform) {
     const realAvailablePlatform = new AvailableGamePlatform(gamePlatform, this).initializedFromJSON(platformObj);
     this._availablePlatforms.push(realAvailablePlatform);
@@ -115,20 +101,6 @@ export class Game extends DataObject {
   addToAvailablePlatforms(availableGamePlatform: AvailableGamePlatform) {
     this._availablePlatforms.push(availableGamePlatform);
     availableGamePlatform.game = this;
-  }
-
-  addToPlatforms(gamePlatform: GamePlatform): AvailableGamePlatform {
-    if (gamePlatform.isTemporary()) {
-      throw new Error('Cannot add platform without id using addToPlatforms!');
-    }
-    const existing = _.find(this._availablePlatforms, availablePlatform => availablePlatform.platform.id.value === gamePlatform.id.value);
-    if (!existing) {
-      const availablePlatform = new AvailableGamePlatform(gamePlatform, this);
-      this._availablePlatforms.push(availablePlatform);
-      return availablePlatform;
-    } else {
-      return existing;
-    }
   }
 
   hasPlatform(platformName: string): boolean {
@@ -145,31 +117,6 @@ export class Game extends DataObject {
     return _.compact(_.map(this.availablePlatforms, availablePlatform => availablePlatform.myGamePlatform));
   }
 
-  hasPlatformWithIGDBID(igdbID: number): boolean {
-    const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform.igdb_platform_id.value === igdbID);
-    return !!existing;
-  }
-
-  findPlatformWithIGDBID(igdbID: number): AvailableGamePlatform {
-    return _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform.igdb_platform_id.value === igdbID);
-  }
-
-  getAvailablePlatform(platform: GamePlatform): AvailableGamePlatform {
-    return _.find(this._availablePlatforms, availablePlatform => availablePlatform.platform.id.value === platform.id.value);
-  }
-
-  getAvailablePlatformWithID(availableGamePlatformID: number): AvailableGamePlatform {
-    return _.find(this._availablePlatforms, apg => apg.id.value === availableGamePlatformID);
-  }
-
-  getPlatformNames(): string[] {
-    return _.map(this.availablePlatforms, availablePlatform => availablePlatform.platform_name.value);
-  }
-
-  getPlatformIGDBIDs(): number[] {
-    return _.map(this.availablePlatforms, availablePlatform => availablePlatform.platform.igdb_platform_id.value);
-  }
-
   private removeTemporaryPlatforms() {
     const temporaryPlatforms = _.filter(this._availablePlatforms, availablePlatform => availablePlatform.isTemporary());
     _.forEach(temporaryPlatforms, availablePlatform => ArrayUtil.removeFromArray(this._availablePlatforms, availablePlatform));
@@ -181,6 +128,10 @@ export class Game extends DataObject {
 
   get availablePlatforms(): AvailableGamePlatform[] {
     return Game.cloneArray(this._availablePlatforms);
+  }
+
+  get addablePlatforms(): AvailableGamePlatform[] {
+    return _.filter(this._availablePlatforms, platform => platform.platform_name.originalValue !== 'Steam');
   }
 
   getImageUrl(): string {
