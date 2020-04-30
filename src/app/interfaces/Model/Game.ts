@@ -121,6 +121,10 @@ export class Game extends DataObject {
     return _.compact(_.map(this.availablePlatforms, availablePlatform => availablePlatform.myGamePlatform));
   }
 
+  findPlatformWithIGDBID(igdbID: number): AvailableGamePlatform {
+    return _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform.igdb_platform_id.value === igdbID);
+  }
+
   private removeTemporaryPlatforms() {
     const temporaryPlatforms = _.filter(this._availablePlatforms, availablePlatform => availablePlatform.isTemporary());
     _.forEach(temporaryPlatforms, availablePlatform => ArrayUtil.removeFromArray(this._availablePlatforms, availablePlatform));
