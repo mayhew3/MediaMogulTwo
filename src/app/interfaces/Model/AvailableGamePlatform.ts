@@ -43,6 +43,10 @@ export class AvailableGamePlatform extends DataObject {
     return !!this.myGamePlatform;
   }
 
+  canAddPlaytime(): boolean {
+    return this.gamePlatform.canAddPlaytime();
+  }
+
   isTemporary(): boolean {
     return !this.id.value || this.platform.isTemporary();
   }

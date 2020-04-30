@@ -12,6 +12,16 @@
      *ngIf="!!game">
   <h2>{{game.title.value}}</h2>
 
+  <div class="row m-2">
+    <div class="col-3">
+      <label class="col-form-label" for="rating">Rating</label>
+      <input type="number"
+             id="rating"
+             class="form-control form-control-lg darkInput"
+             [(ngModel)]="rating">
+    </div>
+  </div>
+
   <div class="row m-1"
        *ngFor="let platform of game.addablePlatforms">
     <div class="col-9 small">

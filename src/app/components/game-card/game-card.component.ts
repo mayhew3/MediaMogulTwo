@@ -55,6 +55,10 @@ export class GameCardComponent implements OnInit {
     return this.isNotRecentlyUnowned() && !this.hasSingleAvailablePlatform();
   }
 
+  showPlaytimeButton(): boolean {
+    return this.game.canAddPlaytime() && this.game.isOwned() && !this.successfullyAdded;
+  }
+
   async handlePopupResult(modalRef: NgbModalRef) {
     try {
       const result = await modalRef.result;
@@ -79,9 +83,11 @@ export class GameCardComponent implements OnInit {
   }
 
   async openDetailPopup() {
-    const modalRef = this.modalService.open(GameDetailComponent, {size: 'lg'});
-    modalRef.componentInstance.game = this.game;
-    await this.handlePopupResult(modalRef);
+    if (this.game.isOwned()) {
+      const modalRef = this.modalService.open(GameDetailComponent, {size: 'lg'});
+      modalRef.componentInstance.game = this.game;
+      await this.handlePopupResult(modalRef);
+    }
   }
 
   async openAddGamePopup() {

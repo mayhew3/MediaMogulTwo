@@ -39,7 +39,9 @@ export class PlaytimePopupComponent implements OnInit {
   }
 
   async ngOnInit(): Promise<any> {
-    this.selectedPlatform = this.game.myPreferredPlatform;
+    this.selectedPlatform = this.game.myPreferredPlatform.canAddPlaytime() ?
+      this.game.myPreferredPlatform :
+      this.game.myMutablePlatforms[0];
     this.initializeDates();
     this.finished = !!this.selectedPlatform.finished_date.value;
     this.finalScore = this.selectedPlatform.final_score.value;

@@ -13,6 +13,8 @@ import {GameService} from '../../services/game.service';
 export class AddGameComponent implements OnInit {
   @Input() game: Game;
 
+  rating: number;
+
   constructor(public activeModal: NgbActiveModal,
               private gameService: GameService) {
   }
@@ -26,6 +28,7 @@ export class AddGameComponent implements OnInit {
 
   async addPlatform(availableGamePlatform: AvailableGamePlatform) {
     const myGamePlatform = new MyGamePlatform(availableGamePlatform);
+    myGamePlatform.rating.value = this.rating;
     await this.gameService.addMyGamePlatform(availableGamePlatform, myGamePlatform);
   }
 

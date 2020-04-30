@@ -108,6 +108,10 @@ export class Game extends DataObject {
     return !!existing;
   }
 
+  canAddPlaytime(): boolean {
+    return this.myMutablePlatforms.length > 0;
+  }
+
   hasPlatformWithID(platformID: number): boolean {
     const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform.id.value === platformID);
     return !!existing;
@@ -131,7 +135,11 @@ export class Game extends DataObject {
   }
 
   get addablePlatforms(): AvailableGamePlatform[] {
-    return _.filter(this._availablePlatforms, platform => platform.platform_name.originalValue !== 'Steam');
+    return _.filter(this._availablePlatforms, availablePlatform => availablePlatform.canAddPlaytime());
+  }
+
+  get myMutablePlatforms(): MyGamePlatform[] {
+    return _.filter(this.myPlatforms, myGamePlatform => myGamePlatform.canAddPlaytime());
   }
 
   getImageUrl(): string {
