@@ -107,9 +107,14 @@ export class Game extends DataObject {
     }
   }
 
-  addToAvailablePlatforms(platformObj: any, gamePlatform: GamePlatform) {
+  createAndAddAvailablePlatform(platformObj: any, gamePlatform: GamePlatform) {
     const realAvailablePlatform = new AvailableGamePlatform(gamePlatform, this).initializedFromJSON(platformObj);
     this._availablePlatforms.push(realAvailablePlatform);
+  }
+
+  addToAvailablePlatforms(availableGamePlatform: AvailableGamePlatform) {
+    this._availablePlatforms.push(availableGamePlatform);
+    availableGamePlatform.game = this;
   }
 
   addToPlatforms(gamePlatform: GamePlatform): AvailableGamePlatform {
@@ -198,7 +203,7 @@ export class Game extends DataObject {
     this.removeTemporaryPlatforms();
     _.forEach(jsonObj.availablePlatforms, availablePlatform => {
       const realPlatform = this.getOrCreateGamePlatform(availablePlatform, this.allPlatforms);
-      this.addToAvailablePlatforms(availablePlatform, realPlatform);
+      this.createAndAddAvailablePlatform(availablePlatform, realPlatform);
     });
     this._personGame = !!jsonObj.personGame ? new PersonGame(this.platformService, this.allPlatforms, this).initializedFromJSON(jsonObj.personGame) : undefined;
     return this;

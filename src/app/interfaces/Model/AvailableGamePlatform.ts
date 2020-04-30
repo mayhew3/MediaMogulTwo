@@ -10,13 +10,17 @@ export class AvailableGamePlatform extends DataObject {
 
   game_platform_id = this.registerIntegerField('game_platform_id', true);
   platform_name = this.registerStringField('platform_name', true);
-  metacritic = this.registerDecimalField('metacritic', true);
-  metacritic_page = this.registerBooleanField('metacritic_page', true);
-  metacritic_matched = this.registerDateField('metacritic_matched', true);
+  metacritic = this.registerDecimalField('metacritic', false);
+  metacritic_page = this.registerBooleanField('metacritic_page', false);
+  metacritic_matched = this.registerDateField('metacritic_matched', false);
+  game_id = this.registerIntegerField('game_id', true);
 
   constructor(private gamePlatform: GamePlatform,
               public game: Game) {
     super();
+    this.game_platform_id.value = gamePlatform.id.value;
+    this.game_id.value = game.id.value;
+    this.platform_name.value = gamePlatform.full_name.value;
   }
 
 

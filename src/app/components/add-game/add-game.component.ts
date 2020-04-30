@@ -74,12 +74,6 @@ export class AddGameComponent implements OnInit {
     return _.filter(availablePlatforms, availablePlatform => !_.contains(matchPlatformIDs, availablePlatform.platform.igdb_platform_id.value));
   }
 
-  getMyPlatform(match: any, availablePlatform: AvailableGamePlatform): MyGamePlatform {
-    if (!!match.existingGame && !!match.existingGame.personGame) {
-      return _.find(match.existingGame.personGame.myPlatforms, myPlatform => myPlatform.platform_name.value === availablePlatform.platform_name.value);
-    }
-  }
-
   private findMatchingGame(match: any): Game {
     return this.gameService.findGame(match.id);
   }
@@ -88,13 +82,6 @@ export class AddGameComponent implements OnInit {
   private findExistingPlatformForGame(match: any, platform: any): AvailableGamePlatform {
     if (!!match.existingGame) {
       return match.existingGame.findPlatformWithIGDBID(platform.id);
-    }
-  }
-
-  // noinspection JSMethodCanBeStatic
-  private findOwnedPlatformForGame(match: any, platform: any): AvailableGamePlatform {
-    if (!!match.existingGame && !!match.existingGame.personGame) {
-      return match.existingGame.personGame.findPlatformWithIGDBID(platform.id);
     }
   }
 
@@ -111,7 +98,7 @@ export class AddGameComponent implements OnInit {
         match.existingGame = this.findMatchingGame(match);
         _.forEach(match.platforms, platform => {
           platform.availableGamePlatform = this.findExistingPlatformForGame(match, platform);
-          platform.myGamePlatform = this.findOwnedPlatformForGame(match, platform);
+          platform.myGamePlatform = !platform.availableGamePlatform ? undefined : platform.availableGamePlatform.myGamePlatform;
         });
       });
     } catch (err) {
@@ -126,27 +113,39 @@ export class AddGameComponent implements OnInit {
     if (!game) {
       await this.addGame(match, platform);
     } else {
-      await this.addToMyGames(game, platform);
+      await this.addToMyPlatforms(game, platform);
     }
   }
 
-  async addExistingWithMyPlatform(match: any, platform: AvailableGamePlatform) {
-    const game: Game = match.existingGame;
-    const personGame = new PersonGame(this.platformService, this.allPlatforms, game);
-    personGame.person_id.value = this.me.id.value;
-    personGame.rating.value = this.rating;
-    personGame.addToPlatforms(platform);
-    await this.gameService.addPersonGame(game, personGame);
+  async addExistingWithMyPlatform(availablePlatform: AvailableGamePlatform): Promise<MyGamePlatform> {
+    const myGamePlatform = new MyGamePlatform(availablePlatform);
+    myGamePlatform.rating.value = this.rating;
+    return this.gameService.addMyGamePlatform(availablePlatform, myGamePlatform);
   }
 
-  async addToMyGames(game: Game, platform: any) {
-    const personGame = new PersonGame(this.platformService, this.allPlatforms, game);
-    personGame.person_id.value = this.me.id.value;
-    personGame.game_id.value = game.id.value;
-    personGame.rating.value = this.rating;
-    const myGamePlatform = this.getOrCreateMyGamePlatform(platform, personGame);
-    await this.gameService.addPersonGame(game, personGame);
-    platform.myGamePlatform = myGamePlatform;
+  async getOrCreateGamePlatform(platform: any): Promise<GamePlatform> {
+    const existingPlatform = this.findPlatformWithIGDBID(platform.id);
+    if (!existingPlatform) {
+      const gamePlatform = this.createNewGamePlatform(platform);
+      return this.platformService.addPlatform(gamePlatform);
+    } else {
+      return existingPlatform;
+    }
+  }
+
+  async getOrCreateAvailablePlatform(game: Game, platform: any): Promise<AvailableGamePlatform> {
+    const gamePlatform = await this.getOrCreateGamePlatform(platform);
+    if (!platform.availableGamePlatform) {
+      const availablePlatformObj = new AvailableGamePlatform(gamePlatform, game);
+      platform.availableGamePlatform = await this.gameService.addAvailablePlatformForExistingGamePlatform(game, availablePlatformObj);
+    }
+    return platform.availableGamePlatform;
+  }
+
+  async addToMyPlatforms(game: Game, platform: any): Promise<MyGamePlatform> {
+    const availablePlatform = await this.getOrCreateAvailablePlatform(game, platform);
+    platform.myGamePlatform = await this.addExistingWithMyPlatform(availablePlatform);
+    return platform.myGamePlatform;
   }
 
   private getOrCreateExistingGamePlatform(platform: any, game: Game): AvailableGamePlatform {

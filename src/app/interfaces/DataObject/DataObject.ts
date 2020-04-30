@@ -30,6 +30,10 @@ export abstract class DataObject implements OnDestroy {
   initializedFromJSON(jsonObj: any): this {
     this.editMode = EditMode.UPDATE;
     for (const fieldValue of this.allFieldValues) {
+      // initialize any fields set in constructor, so they can be changedFields for Insert and Initialized for Update.
+      if (fieldValue.isChanged()) {
+        fieldValue.update();
+      }
       const jsonField = this.getValueFromJSON(fieldValue.getFieldName(), jsonObj);
       if (typeof jsonField === 'string') {
         fieldValue.initializeValueFromString(jsonField);
@@ -81,14 +85,15 @@ export abstract class DataObject implements OnDestroy {
   }
 
   async insert(http: HttpClient): Promise<this> {
-    const url = '/api/' + this.getApiMethod();
-    const changedFields = this.getChangedFields();
-    const insertPayload = this.makeChangesToInsertPayload(changedFields);
-    const returnObj = await http.post<any>(url, insertPayload)
-      .pipe(takeUntil(this._destroy$))
-      .toPromise();
-    this.initializedFromJSON(returnObj);
-    return this;
+    return new Promise(resolve => {
+      const url = '/api/' + this.getApiMethod();
+      const changedFields = this.getChangedFields();
+      const insertPayload = this.makeChangesToInsertPayload(changedFields);
+      http.post<any>(url, insertPayload, httpOptions).subscribe(returnObj => {
+        this.initializedFromJSON(returnObj);
+        resolve(this);
+      });
+    });
   }
 
   async update(http: HttpClient): Promise<this> {

@@ -40,6 +40,7 @@ export class InMemoryDataService implements InMemoryDbService{
       gamePlatforms: this.gamePlatforms,
       resolve: [],
       myPlatforms: [],
+      availablePlatforms: [],
     };
   }
 
@@ -69,6 +70,10 @@ export class InMemoryDataService implements InMemoryDbService{
       this.addGame(requestInfo);
     } else if (collectionName === 'personGames') {
       this.addPersonGame(requestInfo);
+    } else if (collectionName === 'myPlatforms') {
+      this.addMyPlatform(requestInfo);
+    } else if (collectionName === 'availablePlatforms') {
+      this.addAvailablePlatform(requestInfo);
     }
     return null;
   }
@@ -136,7 +141,7 @@ export class InMemoryDataService implements InMemoryDbService{
       personGame.id = this.nextPersonGameID();
       personGame.game_id = game.id;
       personGame.date_added = new Date();
-      this.updatePlatforms(personGame.myPlatforms, this.getMyPlatforms());
+      this.updatePlatforms(personGame.myPlatforms, this.getMyPlatformsForPerson(personGame.person_id));
     }
     return this.packageUpResponse(game, requestInfo);
   }
@@ -145,8 +150,28 @@ export class InMemoryDataService implements InMemoryDbService{
     const personGame = this.getBody(requestInfo);
     personGame.id = this.nextPersonGameID();
     personGame.date_added = new Date();
-    this.updatePlatforms(personGame.myPlatforms, this.getMyPlatforms());
+    const game = this.findGame(personGame.game_id);
+    game.personGame = personGame;
+    this.updatePlatforms(personGame.myPlatforms, this.getMyPlatformsForPerson(personGame.person_id));
     return this.packageUpResponse(personGame, requestInfo);
+  }
+
+  private addAvailablePlatform(requestInfo: RequestInfo) {
+    const availablePlatform = this.getBody(requestInfo);
+    availablePlatform.id = this.nextAvailablePlatformID();
+    availablePlatform.date_added = new Date();
+    const game = this.findGame(availablePlatform.game_id);
+    game.availablePlatforms.push(availablePlatform);
+    return this.packageUpResponse(availablePlatform, requestInfo);
+  }
+
+  private addMyPlatform(requestInfo: RequestInfo) {
+    const myGamePlatform = this.getBody(requestInfo);
+    myGamePlatform.id = this.nextMyPlatformID();
+    myGamePlatform.date_added = new Date();
+    const availableGamePlatform = this.findAvailableGamePlatform(myGamePlatform.available_game_platform_id);
+    availableGamePlatform.myGamePlatform = myGamePlatform;
+    return this.packageUpResponse(myGamePlatform, requestInfo);
   }
 
   private updatePlatforms(array: any[], masterList: any[]) {
@@ -210,12 +235,27 @@ export class InMemoryDataService implements InMemoryDbService{
     return _.flatten(_.map(this.games, game => game.availablePlatforms));
   }
 
-  private getMyPlatforms(): any[] {
+  private getMyPlatformsForPerson(person_id: number): any[] {
+    return _.flatten(_.map(this.getAvailablePlatforms(), availablePlatform => {
+      const undef = _.filter(availablePlatform.myPlatforms, platform => platform === undefined);
+      if (undef.length > 0) {
+        console.log("HUH?");
+      }
+      return _.filter(availablePlatform.myPlatforms, platform => platform !== undefined && platform.person_id === person_id);
+    }));
+  }
+
+  private getAllMyPlatforms(): any[] {
     return _.flatten(_.map(this.getAvailablePlatforms(), availablePlatform => availablePlatform.myPlatforms));
   }
 
+  private findAvailableGamePlatform(availablePlatformID: number): any {
+    const availablePlatforms = this.getAvailablePlatforms();
+    return _.findWhere(availablePlatforms, {id: availablePlatformID});
+  }
+
   private findMyGamePlatform(myGamePlatformID: number): any {
-    const myGamePlatforms = this.getMyPlatforms();
+    const myGamePlatforms = this.getAllMyPlatforms();
     return _.findWhere(myGamePlatforms, {id: myGamePlatformID});
   }
 
@@ -225,7 +265,13 @@ export class InMemoryDataService implements InMemoryDbService{
   }
 
   private nextID(array: any[]): number {
-    const ids = _.map(array, item => parseInt(item.id));
+    const ids = _.map(array, item => {
+      if (item === undefined) {
+        return undefined;
+      } else {
+        return parseInt(item.id)
+      }
+    });
     return ids.length > 0 ? _.max(ids) + 1 : 1;
   }
 
@@ -241,6 +287,11 @@ export class InMemoryDataService implements InMemoryDbService{
   private nextAvailablePlatformID(): number {
     const availablePlatforms = this.getAvailablePlatforms();
     return this.nextID(availablePlatforms);
+  }
+
+  private nextMyPlatformID(): number {
+    const myPlatforms = this.getAllMyPlatforms();
+    return this.nextID(myPlatforms);
   }
 
   private nextGamePlatformID(): number {

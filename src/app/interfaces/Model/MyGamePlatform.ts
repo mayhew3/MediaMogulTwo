@@ -21,10 +21,12 @@ export class MyGamePlatform extends DataObject {
   collection_add = this.registerDateField("collection_add", false);
   preferred = this.registerBooleanField("preferred", true);
   replay_reason = this.registerStringField("replay_reason", false);
+  person_id = this.registerIntegerField('person_id', true);
 
   constructor(public availableGamePlatform: AvailableGamePlatform) {
     super();
-    this.platform_name.initializeValue(availableGamePlatform.platform_name.value);
+    this.platform_name.value = availableGamePlatform.platform_name.value;
+    this.available_game_platform_id.value = availableGamePlatform.id.value;
   }
 
   get platform(): GamePlatform {
