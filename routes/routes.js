@@ -31,14 +31,12 @@ module.exports = function(app) {
   privatePut('/games', games.updateGame);
   privatePost('/games', games.addGame);
 
-  privatePut('/personGames', games.updatePersonGame);
-  privatePost('/personGames', games.addPersonGame);
-
   privatePost('/gameplaySessions', games.addGameplaySession);
 
   privateGet('/persons', persons.getPersons);
 
   privateGet('/gamePlatforms', platforms.getPlatforms);
+  privatePost('/gamePlatforms', platforms.addGamePlatform);
 
   privatePost('/availablePlatforms', games.addAvailableGamePlatform);
 

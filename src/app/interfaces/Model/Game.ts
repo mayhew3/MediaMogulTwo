@@ -205,7 +205,6 @@ export class Game extends DataObject {
       const realPlatform = this.getOrCreateGamePlatform(availablePlatform, this.allPlatforms);
       this.createAndAddAvailablePlatform(availablePlatform, realPlatform);
     });
-    this._personGame = !!jsonObj.personGame ? new PersonGame(this.platformService, this.allPlatforms, this).initializedFromJSON(jsonObj.personGame) : undefined;
     return this;
   }
 

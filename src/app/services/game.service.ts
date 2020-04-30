@@ -3,7 +3,6 @@ import {Game} from '../interfaces/Model/Game';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {ArrayService} from './array.service';
 import * as _ from 'underscore';
-import {PersonGame} from '../interfaces/Model/PersonGame';
 import {GameplaySession} from '../interfaces/Model/GameplaySession';
 import {PersonService} from './person.service';
 import {BehaviorSubject, Subject} from 'rxjs';
@@ -87,15 +86,6 @@ export class GameService implements OnDestroy {
     return resultGame;
   }
 
-  async addToMyGames(game: Game, rating: number): Promise<any> {
-    const personGame = new PersonGame(this.platformService, this.allPlatforms, game);
-    personGame.person_id.value = this.me.id.value;
-    personGame.rating.value = rating;
-
-    game.personGame = await personGame.commit(this.http);
-    this.pushGameListChange();
-  }
-
   async addAvailablePlatformForExistingGamePlatform(game: Game, availableGamePlatform: AvailableGamePlatform): Promise<AvailableGamePlatform> {
     const returnPlatform = await availableGamePlatform.commit(this.http);
     game.addToAvailablePlatforms(returnPlatform);
@@ -130,11 +120,6 @@ export class GameService implements OnDestroy {
       params: payload
     };
     return await this.http.get<any[]>('/api/igdbMatches', options).toPromise();
-  }
-
-  async updatePersonGame(personGame: PersonGame): Promise<any> {
-    await personGame.commit(this.http);
-    this.pushGameListChange();
   }
 
   async updateMyPlatform(myGamePlatform: MyGamePlatform): Promise<any> {

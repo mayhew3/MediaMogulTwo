@@ -76,13 +76,6 @@ exports.getGames = async function (request, response) {
 
 exports.addGame = async function(request, response) {
   const gameObj = request.body;
-  const personGameObj = gameObj.personGame;
-  delete gameObj.personGame;
-
-  const availablePlatformsObj = gameObj.availablePlatforms;
-  delete gameObj.availablePlatforms;
-
-  const allPlatforms = await model.GamePlatform.findAll();
 
   const coverObj = {
     igdb_game_id: gameObj.igdb_id,
@@ -108,68 +101,6 @@ exports.addGame = async function(request, response) {
     returnObj.igdb_poster = posterObj.image_id;
     returnObj.igdb_width = posterObj.width;
     returnObj.igdb_height = posterObj.height;
-  }
-
-  const platformsToAdd = _.filter(availablePlatformsObj, platform => !platform.game_platform_id);
-  const platformInserts = [];
-  for (const platform of platformsToAdd) {
-    platformInserts.push(model.GamePlatform.create(platform));
-  }
-  const addedPlatforms = await Promise.all(platformInserts);
-
-  arrayService.addToArray(allPlatforms, addedPlatforms);
-
-  for (let availablePlatformObj of availablePlatformsObj) {
-    if (!availablePlatformObj.game_platform_id) {
-      const gamePlatform = _.findWhere(addedPlatforms, platform => platform.full_name === availablePlatformObj.full_name);
-      availablePlatformObj.game_platform_id = gamePlatform.id;
-    }
-  }
-
-  const availableInserts = [];
-  for (const availablePlatformObj of availablePlatformsObj) {
-    availableInserts.push(addAvailablePlatform(availablePlatformObj, game, allPlatforms));
-  }
-
-  try {
-    const availableReturns = await Promise.all(availableInserts);
-    returnObj.availablePlatforms = _.map(availableReturns, avr => avr.dataValues);
-  } catch (err) {
-    handleError(err);
-  }
-
-  for (const gamePlatform of addedPlatforms) {
-    const availableGamePlatform = _.findWhere(returnObj.availablePlatforms, {game_platform_id: gamePlatform.id});
-    availableGamePlatform.gamePlatform = gamePlatform;
-  }
-
-  if (!!personGameObj) {
-    personGameObj.game_id = game.id;
-    try {
-      const returnPersonGame = await model.PersonGame.create(personGameObj);
-      returnObj.personGame = returnPersonGame.dataValues;
-    } catch (err) {
-      handleError(err);
-    }
-
-    const myPlatformsObj = personGameObj.myPlatforms;
-    delete personGameObj.myPlatforms;
-
-    const myPlatformInserts = [];
-
-    for (const myPlatform of myPlatformsObj) {
-      const matchingAvailable = getMatchingAvailable(myPlatform, returnObj.availablePlatforms);
-      if (!matchingAvailable) {
-        throw new Error(`No availablePlatform found. MyPlatform: ${JSON.stringify(myPlatform)}. AvailablePlatforms: ${returnObj.availablePlatforms}`);
-      }
-      myPlatformInserts.push(addMyPlatform(matchingAvailable, personGameObj.person_id));
-    }
-
-    try {
-      returnObj.personGame.myPlatforms = await Promise.all(myPlatformInserts);
-    } catch (err) {
-      handleError(err);
-    }
   }
 
   response.json(returnObj);
@@ -411,35 +342,6 @@ async function addMyPlatform(available_platform, person_id) {
     handleError(err);
   }
 }
-
-exports.addPersonGame = async function(request, response) {
-  const personGameObj = request.body;
-  const myPlatforms = personGameObj.myPlatforms;
-  delete personGameObj.myPlatforms;
-
-  const personGame = await model.PersonGame.create(personGameObj);
-
-  const returnObj = personGame.dataValues;
-
-  const availablePlatforms = await model.AvailableGamePlatform.findAll({
-    where: {
-      game_id: personGameObj.game_id
-    }
-  });
-
-  _.forEach(myPlatforms, async myPlatform => {
-    const availableGamePlatform = _.findWhere(availablePlatforms, availablePlatform => availablePlatform.game_platform_id === myPlatform.id);
-    const payload = {
-      available_game_platform_id: availableGamePlatform.id,
-      person_id: personGame.person_id
-    }
-    await model.MyGamePlatform.create(payload);
-  });
-
-  returnObj.myPlatforms = myPlatforms;
-
-  response.json(returnObj);
-};
 
 exports.updateGame = async function(request, response) {
   const gameID = request.body.id;
