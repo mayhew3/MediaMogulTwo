@@ -1,163 +1,43 @@
-<form>
-  <div class="form-row">
-    <div class="col-6">
-      <label class="col-form-label" for="name">Name</label>
-      <div class="input-group">
-        <input type="text"
-               class="darkInput form-control"
-               id="name"
-               name="name"
-               [required]="true"
-               (keyup.enter)="getMatches()"
-               [(ngModel)]="searchTitle"/>
-        <span class="input-group-append">
-          <input type="button"
-                 class="btn btn-info"
-                 [disabled]="!canSearch()"
-                 (click)="getMatches()"
-                 value="Search">
-        </span>
-      </div>
+<div class="modal-header">
+  <h1>Add Game</h1>
+  <button type="button"
+          class="btn btn-warning close"
+          aria-label="Close"
+          (click)="dismiss()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
 
+<div class="modal-body"
+     *ngIf="!!game">
+  <h2>{{game.title.value}}</h2>
+
+  <div class="row m-2">
+    <div class="col-3">
+      <label class="col-form-label" for="rating">Rating</label>
+      <input type="number"
+             id="rating"
+             class="form-control form-control-lg darkInput"
+             [(ngModel)]="rating">
     </div>
   </div>
-</form>
 
-<div class="row"
-     *ngIf="matches.length > 0">
-  <div class="col-2">
-    <label class="col-form-label" for="rating">Rating</label>
-    <input type="number"
-           id="rating"
-           class="form-control darkInput"
-           [(ngModel)]="rating">
-  </div>
-</div>
-
-<div class="row"
-     *ngIf="loading">
-  <div class="col-4">
-    Loading...
-  </div>
-</div>
-
-<div class="row"
-     *ngIf="!!error">
-  <div class="col-4">
-    Error while loading: {{error}}
-  </div>
-</div>
-
-<div class="form-row">
-  <div class="col-6 my-1"
-       *ngFor="let match of matches">
-
-    <div class="gameCardInside">
-
-      <div class="row">
-
-        <div class="col-6 gameImageContainer">
-          <img class="rounded gameImage"
-               *ngIf="!!getImageUrlForMatch(match)"
-               default="../../../assets/GenericSeries.gif"
-               src="{{getImageUrlForMatch(match)}}"
-               [match]="match"
-               alt="{{match.name}}">
-        </div>
-
-        <div class="col-6">
-          <div class="row">
-            <div class="col-12 m-1">
-              <h3>{{match.name}}</h3>
-            </div>
-
-            <div class="col-12 m-1" *ngIf="match.first_release_date">
-              Released: {{getDateFrom(match.first_release_date) | date: 'MMM d, yyyy':'America/Los_Angeles'}}
-            </div>
-
-            <div class="col-12 m-1">
-              IGDB ID: {{match.id}}
-            </div>
-
-            <div class="col-12 m-1" *ngIf="!!match.platforms && match.platforms.length > 0">
-              Platforms:
-
-              <div class="row"
-                   *ngFor="let availableGamePlatform of findExistingPlatformsNotListed(match)">
-                <div class="col-9">
-                  {{availableGamePlatform.platform_name.value}}
-                </div>
-                <div class="col-3" *ngIf="!getMyPlatform(match, availableGamePlatform)">
-                  <button class="btn btn-sm platformAddButton p-0 btn-success"
-                          (click)="addExistingWithMyPlatform(match, availableGamePlatform)">+</button>
-                </div>
-                <div class="col-3" *ngIf="!!getMyPlatform(match, availableGamePlatform)">
-                  <span style="color: lightgreen; font-weight: bold">
-                    <svg class="bi bi-check" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3.5-3.5a.5.5 0 11.708-.708L6.5 10.293l6.646-6.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
-                    </svg>
-                  </span>
-                </div>
-              </div>
-              <div class="row"
-                   *ngFor="let platform of match.platforms">
-                <div class="col-9">
-                  {{platform.name}}
-                </div>
-                <div class="col-3">
-                  <button class="btn btn-sm platformAddButton p-0"
-                          *ngIf="!platform.myGamePlatform"
-                          [ngClass]="getButtonClass(platform)"
-                          (click)="handleAddClick(match, platform)">+</button>
-                  <span *ngIf="!!platform.myGamePlatform" style="color: lightgreen; font-weight: bold">
-                    <svg class="bi bi-check" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3.5-3.5a.5.5 0 11.708-.708L6.5 10.293l6.646-6.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
-                    </svg>
-                  </span>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="col-12 m-1" *ngIf="!!match.genres && match.genres.length > 0">
-              Genres:
-              <ul>
-                <li *ngFor="let genre of match.genres">
-                  {{genre.name}}
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-12 m-1">
-              <div class="row">
-
-                <div class="col-6" *ngIf="!!match.rating">
-                  Rating:
-                  <mm-rating-box [maxValue]="100"
-                                 [value]="match.rating"></mm-rating-box>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-
-
-        </div>
-
-      </div>
-
-      <div class="row">
-        <div class="col-12 m-1">
-          {{match.summary}}
-        </div>
-
-        <div class="col-12 m-1">
-          <strong>Last Updated</strong>: {{getLastUpdatedFromNow(match)}}
-        </div>
-      </div>
-
+  <div class="row m-1"
+       *ngFor="let platform of game.addablePlatforms">
+    <div class="col-9 small">
+      <h3>{{platform.platform_name.originalValue}}</h3>
     </div>
-
+    <div class="col-3">
+      <button type="button"
+              class="btn btn-primary"
+              *ngIf="showAddButton(platform)"
+              (click)="addPlatform(platform)">Add</button>
+    </div>
   </div>
+</div>
+
+<div class="modal-footer">
+  <button type="button"
+          class="btn btn-primary"
+          (click)="close()">Close</button>
 </div>

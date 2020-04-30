@@ -17,15 +17,15 @@
     <div class="col-4">
 
       <!-- Single Platform-->
-      <h4 *ngIf="game.myPlatforms.length === 1">{{selectedPlatform.platform_name.originalValue}}</h4>
+      <h4 *ngIf="game.myMutablePlatforms.length === 1">{{selectedPlatform.platform_name.originalValue}}</h4>
 
       <!-- Multi Platform Dropdown -->
 
       <!--suppress HtmlFormInputWithoutLabel -->
-      <select *ngIf="game.myPlatforms.length > 1"
+      <select *ngIf="game.myMutablePlatforms.length > 1"
               class="custom-select"
               id="platformSelect">
-        <option *ngFor="let platform of game.myPlatforms"
+        <option *ngFor="let platform of game.myMutablePlatforms"
                 [selected]="platformIsSelected(platform)"
                 (click)="selectPlatform(platform)">
           {{platform.platform_name.originalValue}}
@@ -198,7 +198,7 @@
             <div class="form-row">
               <label class="col-4 col-form-label" for="finalScoreInput">Final</label>
               <div class="col-8">
-                <input [(ngModel)]="game.personGame.final_score.value"
+                <input [(ngModel)]="selectedPlatform.final_score.value"
                        class="darkInput form-control"
                        type="number"
                        id="finalScoreInput"
@@ -212,7 +212,7 @@
             <div class="form-row">
               <label class="col-4 col-form-label" for="replayInput">Replay</label>
               <div class="col-8">
-                <input [(ngModel)]="game.personGame.replay_score.value"
+                <input [(ngModel)]="selectedPlatform.replay_score.value"
                        class="darkInput form-control"
                        type="number"
                        id="replayInput"

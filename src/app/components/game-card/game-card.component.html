@@ -1,5 +1,5 @@
 <div class="gameCardInside">
-  <div class="row">
+  <div class="form-row">
     <div class="col-6 gameImageContainer">
 
       <img class="rounded gameImage"
@@ -37,16 +37,26 @@
         </div>
 
         <div class="col-12 m-1"
-             *ngIf="!isSteamGame() && game.isOwned() && !successfullyAdded">
+             *ngIf="showPlaytimeButton()">
           <button class="btn btn-primary"
                   (click)="openPlaytimePopup()">Playtime</button>
         </div>
 
         <div class="col-12 m-1"
-             *ngIf="!game.isOwned() || successfullyAdded">
+             *ngIf="showAddGameButton()">
+          Platform: {{getSingleAvailablePlatform().platform_name.originalValue}}
+        </div>
+
+        <div class="col-12 m-1"
+             *ngIf="showChoosePlatformsButton()">
+          {{game.addablePlatforms.length}} Platforms
+        </div>
+
+        <div class="col-12 m-1"
+             *ngIf="isNotRecentlyUnowned()">
           <button class="btn btn-success"
                   [disabled]="successfullyAdded"
-                  (click)="addToMyGames()">Add Game</button>
+                  (click)="openAddGamePopup()">Add Game</button>
         </div>
       </div>
 

@@ -93,42 +93,23 @@ export class Game extends DataObject {
     return availablePlatforms;
   }
 
-  addTemporaryPlatform(gamePlatform: GamePlatform): AvailableGamePlatform {
-    if (!gamePlatform.isTemporary()) {
-      throw new Error('Cannot add platform with id using addTemporaryPlatform!');
-    }
-    const existing = _.find(this._availablePlatforms, availablePlatform => availablePlatform.platform.full_name.value === gamePlatform.full_name.value);
-    if (!existing) {
-      const availableGamePlatform = new AvailableGamePlatform(gamePlatform, this);
-      this._availablePlatforms.push(availableGamePlatform);
-      return availableGamePlatform;
-    } else {
-      return existing;
-    }
-  }
-
-  addToAvailablePlatforms(platformObj: any, gamePlatform: GamePlatform) {
+  createAndAddAvailablePlatform(platformObj: any, gamePlatform: GamePlatform) {
     const realAvailablePlatform = new AvailableGamePlatform(gamePlatform, this).initializedFromJSON(platformObj);
     this._availablePlatforms.push(realAvailablePlatform);
   }
 
-  addToPlatforms(gamePlatform: GamePlatform): AvailableGamePlatform {
-    if (gamePlatform.isTemporary()) {
-      throw new Error('Cannot add platform without id using addToPlatforms!');
-    }
-    const existing = _.find(this._availablePlatforms, availablePlatform => availablePlatform.platform.id.value === gamePlatform.id.value);
-    if (!existing) {
-      const availablePlatform = new AvailableGamePlatform(gamePlatform, this);
-      this._availablePlatforms.push(availablePlatform);
-      return availablePlatform;
-    } else {
-      return existing;
-    }
+  addToAvailablePlatforms(availableGamePlatform: AvailableGamePlatform) {
+    this._availablePlatforms.push(availableGamePlatform);
+    availableGamePlatform.game = this;
   }
 
   hasPlatform(platformName: string): boolean {
     const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform_name.value === platformName);
     return !!existing;
+  }
+
+  canAddPlaytime(): boolean {
+    return this.myMutablePlatforms.length > 0;
   }
 
   hasPlatformWithID(platformID: number): boolean {
@@ -140,29 +121,8 @@ export class Game extends DataObject {
     return _.compact(_.map(this.availablePlatforms, availablePlatform => availablePlatform.myGamePlatform));
   }
 
-  hasPlatformWithIGDBID(igdbID: number): boolean {
-    const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform.igdb_platform_id.value === igdbID);
-    return !!existing;
-  }
-
   findPlatformWithIGDBID(igdbID: number): AvailableGamePlatform {
     return _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform.igdb_platform_id.value === igdbID);
-  }
-
-  getAvailablePlatform(platform: GamePlatform): AvailableGamePlatform {
-    return _.find(this._availablePlatforms, availablePlatform => availablePlatform.platform.id.value === platform.id.value);
-  }
-
-  getAvailablePlatformWithID(availableGamePlatformID: number): AvailableGamePlatform {
-    return _.find(this._availablePlatforms, apg => apg.id.value === availableGamePlatformID);
-  }
-
-  getPlatformNames(): string[] {
-    return _.map(this.availablePlatforms, availablePlatform => availablePlatform.platform_name.value);
-  }
-
-  getPlatformIGDBIDs(): number[] {
-    return _.map(this.availablePlatforms, availablePlatform => availablePlatform.platform.igdb_platform_id.value);
   }
 
   private removeTemporaryPlatforms() {
@@ -176,6 +136,14 @@ export class Game extends DataObject {
 
   get availablePlatforms(): AvailableGamePlatform[] {
     return Game.cloneArray(this._availablePlatforms);
+  }
+
+  get addablePlatforms(): AvailableGamePlatform[] {
+    return _.filter(this._availablePlatforms, availablePlatform => availablePlatform.canAddPlaytime());
+  }
+
+  get myMutablePlatforms(): MyGamePlatform[] {
+    return _.filter(this.myPlatforms, myGamePlatform => myGamePlatform.canAddPlaytime());
   }
 
   getImageUrl(): string {
@@ -198,9 +166,8 @@ export class Game extends DataObject {
     this.removeTemporaryPlatforms();
     _.forEach(jsonObj.availablePlatforms, availablePlatform => {
       const realPlatform = this.getOrCreateGamePlatform(availablePlatform, this.allPlatforms);
-      this.addToAvailablePlatforms(availablePlatform, realPlatform);
+      this.createAndAddAvailablePlatform(availablePlatform, realPlatform);
     });
-    this._personGame = !!jsonObj.personGame ? new PersonGame(this.platformService, this.allPlatforms, this).initializedFromJSON(jsonObj.personGame) : undefined;
     return this;
   }
 

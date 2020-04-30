@@ -4,7 +4,8 @@ import {ModalDismissReasons, NgbModal, NgbModalRef} from '@ng-bootstrap/ng-boots
 import {PlaytimePopupComponent} from '../playtime-popup/playtime-popup.component';
 import {GameDetailComponent} from '../game-detail/game-detail.component';
 import {GameListComponent} from '../game-list/game-list.component';
-import {GameService} from '../../services/game.service';
+import {AvailableGamePlatform} from '../../interfaces/Model/AvailableGamePlatform';
+import {AddGameComponent} from '../add-game/add-game.component';
 
 @Component({
   selector: 'mm-game-card',
@@ -26,22 +27,36 @@ export class GameCardComponent implements OnInit {
       return `with: ${reason}`;
     }
   }
-  constructor(private modalService: NgbModal,
-              private gameService: GameService) { }
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
   }
 
-  getImageUrl(): string {
-    if (!!this.game.igdb_poster.value && this.game.igdb_poster.value !== '') {
-      return 'https://images.igdb.com/igdb/image/upload/t_720p/' + this.game.igdb_poster.value +  '.jpg';
-    } else if (!!this.game.logo.value && this.game.logo.value !== '') {
-      return 'https://cdn.edgecast.steamstatic.com/steam/apps/' + this.game.steamid.value + '/header.jpg';
-    } else if (!!this.game.giantbomb_medium_url.value && this.game.giantbomb_medium_url.value !== '') {
-      return this.game.giantbomb_medium_url.value;
-    } else {
-      return 'images/GenericSeries.gif';
+  isNotRecentlyUnowned(): boolean {
+    return !this.game.isOwned() || this.successfullyAdded;
+  }
+
+  hasSingleAvailablePlatform(): boolean {
+    return this.game.addablePlatforms.length === 1;
+  }
+
+  getSingleAvailablePlatform(): AvailableGamePlatform {
+    if (!this.hasSingleAvailablePlatform()) {
+      throw new Error('Can only get single platform but there are ' + this.game.addablePlatforms.length + ' platforms.');
     }
+    return this.game.addablePlatforms[0];
+  }
+
+  showAddGameButton(): boolean {
+    return this.isNotRecentlyUnowned() && this.hasSingleAvailablePlatform();
+  }
+
+  showChoosePlatformsButton(): boolean {
+    return this.isNotRecentlyUnowned() && !this.hasSingleAvailablePlatform();
+  }
+
+  showPlaytimeButton(): boolean {
+    return this.game.canAddPlaytime() && this.game.isOwned() && !this.successfullyAdded;
   }
 
   async handlePopupResult(modalRef: NgbModalRef) {
@@ -68,7 +83,15 @@ export class GameCardComponent implements OnInit {
   }
 
   async openDetailPopup() {
-    const modalRef = this.modalService.open(GameDetailComponent, {size: 'lg'});
+    if (this.game.isOwned()) {
+      const modalRef = this.modalService.open(GameDetailComponent, {size: 'lg'});
+      modalRef.componentInstance.game = this.game;
+      await this.handlePopupResult(modalRef);
+    }
+  }
+
+  async openAddGamePopup() {
+    const modalRef = this.modalService.open(AddGameComponent, {size: 'md'});
     modalRef.componentInstance.game = this.game;
     await this.handlePopupResult(modalRef);
   }
@@ -77,8 +100,4 @@ export class GameCardComponent implements OnInit {
     return this.game.hasPlatform('Steam');
   }
 
-  async addToMyGames(): Promise<any> {
-    await this.gameService.addToMyGames(this.game, null);
-    this.successfullyAdded = true;
-  }
 }

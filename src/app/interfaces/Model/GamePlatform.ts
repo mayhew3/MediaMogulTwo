@@ -13,6 +13,10 @@ export class GamePlatform extends DataObject {
     return 'gamePlatforms';
   }
 
+  canAddPlaytime(): boolean {
+    return this.full_name.value !== 'Steam';
+  }
+
   isTemporary(): boolean {
     return !this.id.value;
   }

@@ -3,7 +3,6 @@ import {Game} from '../interfaces/Model/Game';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {ArrayService} from './array.service';
 import * as _ from 'underscore';
-import {PersonGame} from '../interfaces/Model/PersonGame';
 import {GameplaySession} from '../interfaces/Model/GameplaySession';
 import {PersonService} from './person.service';
 import {BehaviorSubject, Subject} from 'rxjs';
@@ -13,6 +12,7 @@ import {Person} from '../interfaces/Model/Person';
 import {first, takeUntil} from 'rxjs/operators';
 import {ArrayUtil} from '../utility/ArrayUtil';
 import {MyGamePlatform} from '../interfaces/Model/MyGamePlatform';
+import {AvailableGamePlatform} from '../interfaces/Model/AvailableGamePlatform';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -66,13 +66,12 @@ export class GameService implements OnDestroy {
     this._destroy$.complete();
   }
 
-  // todo: prune data so igdb_id is unique
   findGame(igdb_id: number): Game {
     const matching = _.filter(this._dataStore.games, game => game.igdb_id.value === igdb_id);
     if (matching.length > 1) {
       throw new Error(`Found multiple games with IGDB_ID ${igdb_id}`);
     } else if (matching.length === 0) {
-      return null;
+      return undefined;
     } else {
       return matching[0];
     }
@@ -87,20 +86,25 @@ export class GameService implements OnDestroy {
     return resultGame;
   }
 
-  async addToMyGames(game: Game, rating: number): Promise<any> {
-    const personGame = new PersonGame(this.platformService, this.allPlatforms, game);
-    personGame.person_id.value = this.me.id.value;
-    personGame.rating.value = rating;
-
-    game.personGame = await personGame.commit(this.http);
+  async addAvailablePlatformForExistingGamePlatform(game: Game, availableGamePlatform: AvailableGamePlatform): Promise<AvailableGamePlatform> {
+    const returnPlatform = await availableGamePlatform.commit(this.http);
+    game.addToAvailablePlatforms(returnPlatform);
     this.pushGameListChange();
+    return returnPlatform;
   }
 
-  async addPersonGame(game: Game, personGame: PersonGame): Promise<PersonGame> {
-    // todo: make sure in-memory and server are returning valid myGamePlatforms
-    game.personGame = await personGame.commit(this.http);
+  async addMyGamePlatform(availableGamePlatform: AvailableGamePlatform, myGamePlatform: MyGamePlatform): Promise<MyGamePlatform> {
+    myGamePlatform.person_id.value = this.me.id.value;
+    myGamePlatform.preferred.value = !availableGamePlatform.game.myPreferredPlatform;
+    myGamePlatform.platform_name.value = availableGamePlatform.platform_name.value;
+    myGamePlatform.game_platform_id.value = availableGamePlatform.game_platform_id.value;
+    myGamePlatform.minutes_played.value = 0;
+    myGamePlatform.collection_add.value = new Date();
+
+    const returnMyGamePlatform = await myGamePlatform.commit(this.http);
+    availableGamePlatform.myGamePlatform = returnMyGamePlatform;
     this.pushGameListChange();
-    return game.personGame;
+    return returnMyGamePlatform;
   }
 
   async updateGame(game: Game): Promise<any> {
@@ -116,11 +120,6 @@ export class GameService implements OnDestroy {
       params: payload
     };
     return await this.http.get<any[]>('/api/igdbMatches', options).toPromise();
-  }
-
-  async updatePersonGame(personGame: PersonGame): Promise<any> {
-    await personGame.commit(this.http);
-    this.pushGameListChange();
   }
 
   async updateMyPlatform(myGamePlatform: MyGamePlatform): Promise<any> {
