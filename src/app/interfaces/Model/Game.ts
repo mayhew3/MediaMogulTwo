@@ -52,7 +52,6 @@ export class Game extends DataObject {
 
   brokenImage = false;
 
-  private _personGame: PersonGame;
   private _availablePlatforms: AvailableGamePlatform[] = [];
 
   constructor(private platformService: PlatformService,
@@ -60,24 +59,9 @@ export class Game extends DataObject {
     super();
   }
 
-  get personGame(): PersonGame {
-    return this._personGame;
-  }
-
-  set personGame(personGame: PersonGame) {
-    this._personGame = personGame;
-    if (!!personGame && !!personGame.game_id) {
-      personGame.game_id.value = this.id.value;
-    }
-  }
-
   protected makeChangesToInsertPayload(json: any): any {
     const base = super.makeChangesToInsertPayload(json);
     base.availablePlatforms = this.getPlatformsPayload();
-    if (!!this._personGame) {
-      base.personGame = this._personGame.getChangedFields();
-      base.personGame.myPlatforms = this._personGame.getPlatformsPayload();
-    }
     return base;
   }
 
