@@ -1,7 +1,7 @@
 import {Injectable, OnDestroy} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable, of, Subject} from 'rxjs';
-import {catchError, concatMap, takeUntil, tap} from 'rxjs/operators';
+import {catchError, concatMap, filter, takeUntil, tap} from 'rxjs/operators';
 import {ArrayService} from './array.service';
 import * as _ from 'underscore';
 import {AuthService} from './auth.service';
@@ -15,7 +15,8 @@ export class PersonService implements OnDestroy {
   cache: Person[];
   private _destroy$ = new Subject();
 
-  me$ = this.authService.getUser$().pipe(
+  me$ = this.authService.userProfile$.pipe(
+    filter(user => !!user),
     concatMap((user) => this.getPersonWithEmail(user.email)),
     tap((person: Person) => {
       this.isAdmin = person.user_role.value === 'admin'
