@@ -18,8 +18,6 @@ import { BrowseGamesComponent } from './components/browse-games/browse-games.com
 import {AppRoutingModule} from './app-routing.module';
 import { ProfileComponent } from './components/profile/profile.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { DuplicateResolutionComponent } from './components/duplicate-resolution/duplicate-resolution.component';
-import { DuplicateDetailComponent } from './components/duplicate-detail/duplicate-detail.component';
 import { BigCheckboxComponent } from './components/big-checkbox/big-checkbox.component';
 import { SearchComponent } from './components/search/search.component';
 
@@ -38,8 +36,6 @@ import { SearchComponent } from './components/search/search.component';
     BrowseGamesComponent,
     ProfileComponent,
     DashboardComponent,
-    DuplicateResolutionComponent,
-    DuplicateDetailComponent,
     BigCheckboxComponent,
     SearchComponent
   ],
