@@ -17,7 +17,7 @@ import { PlaytimePopupComponent } from './components/playtime-popup/playtime-pop
 import {FormsModule} from '@angular/forms';
 import { RatingBoxComponent } from './components/rating-box/rating-box.component';
 import { GameDetailComponent } from './components/game-detail/game-detail.component';
-import { AddGameComponent } from './components/add-game/add-game.component';
+import { AddPlatformsComponent } from './components/add-platforms/add-platforms.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HomeComponent } from './components/home/home.component';
 import { BrowseGamesComponent } from './components/browse-games/browse-games.component';
@@ -36,7 +36,7 @@ import { SearchComponent } from './components/search/search.component';
     PlaytimePopupComponent,
     RatingBoxComponent,
     GameDetailComponent,
-    AddGameComponent,
+    AddPlatformsComponent,
     NavBarComponent,
     HomeComponent,
     BrowseGamesComponent,

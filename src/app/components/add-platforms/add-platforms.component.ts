@@ -7,10 +7,10 @@ import {GameService} from '../../services/game.service';
 
 @Component({
   selector: 'mm-add-game',
-  templateUrl: './add-game.component.html',
-  styleUrls: ['./add-game.component.scss']
+  templateUrl: './add-platforms.component.html',
+  styleUrls: ['./add-platforms.component.scss']
 })
-export class AddGameComponent implements OnInit {
+export class AddPlatformsComponent implements OnInit {
   @Input() game: Game;
 
   rating: number;

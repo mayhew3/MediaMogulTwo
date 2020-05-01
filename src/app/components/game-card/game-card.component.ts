@@ -5,7 +5,7 @@ import {PlaytimePopupComponent} from '../playtime-popup/playtime-popup.component
 import {GameDetailComponent} from '../game-detail/game-detail.component';
 import {GameListComponent} from '../game-list/game-list.component';
 import {AvailableGamePlatform} from '../../interfaces/Model/AvailableGamePlatform';
-import {AddGameComponent} from '../add-game/add-game.component';
+import {AddPlatformsComponent} from '../add-platforms/add-platforms.component';
 
 @Component({
   selector: 'mm-game-card',
@@ -108,7 +108,7 @@ export class GameCardComponent implements OnInit {
   }
 
   async openAddGamePopup() {
-    const modalRef = this.modalService.open(AddGameComponent, {size: 'md'});
+    const modalRef = this.modalService.open(AddPlatformsComponent, {size: 'md'});
     modalRef.componentInstance.game = this.game;
     await this.handlePopupResult(modalRef);
   }
