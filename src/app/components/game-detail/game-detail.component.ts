@@ -53,6 +53,14 @@ export class GameDetailComponent implements OnInit {
     this.titleEditMode = !this.titleEditMode;
   }
 
+  hasMultiplePlatforms() {
+    return this.game.myPlatforms.length > 1;
+  }
+
+  selectedIsPreferred() {
+    return this.selectedPlatform.id.originalValue === this.game.myPreferredPlatform.id.originalValue;
+  }
+
   platformIsSelected(platform: MyGamePlatform): boolean {
     return platform.id.originalValue === this.selectedPlatform.id.originalValue;
   }
