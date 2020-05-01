@@ -12,7 +12,8 @@
 
     </div>
 
-    <div class="col-6">
+    <div class="col-6"
+         style="padding-right: 15px">
       <div class="row">
 
         <div class="col-12 m-1">
@@ -60,6 +61,15 @@
         </div>
       </div>
 
+      <div class="row">
+        <div class="col-12 m-1 align-bottom"
+             *ngIf="showProgressBar()">
+          <p><ngb-progressbar type="primary"
+                              [value]="getProgressValue()">
+            <span class="progress-text">{{getProgressValue()}}%</span>
+          </ngb-progressbar></p>
+        </div>
+      </div>
     </div>
 
   </div>

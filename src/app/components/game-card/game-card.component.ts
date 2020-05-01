@@ -47,6 +47,28 @@ export class GameCardComponent implements OnInit {
     return this.game.addablePlatforms[0];
   }
 
+  getProgressValue(): number {
+    const minutesPlayed = this.game.myPreferredPlatform.minutes_played.originalValue;
+
+    const howlongExtras = this.game.howlong_extras.originalValue;
+    const timeTotal = this.game.timetotal.originalValue;
+    if (!howlongExtras && !timeTotal) {
+      return undefined;
+    }
+
+    const minutesToFinish = !howlongExtras ? timeTotal * 60 : howlongExtras * 60;
+    const baseRatio = minutesPlayed / minutesToFinish;
+    if (baseRatio > .99) {
+      return 99;
+    } else {
+      return Math.floor(baseRatio * 100);
+    }
+  }
+
+  showProgressBar(): boolean {
+    return this.game.isOwned() && this.game.natural_end.originalValue && this.getProgressValue() !== undefined;
+  }
+
   showAddGameButton(): boolean {
     return this.isNotRecentlyUnowned() && this.hasSingleAvailablePlatform();
   }
