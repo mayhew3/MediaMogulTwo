@@ -61,6 +61,14 @@ export class GameDetailComponent implements OnInit {
     return this.selectedPlatform.id.originalValue === this.game.myPreferredPlatform.id.originalValue;
   }
 
+  async changePreferredPlatform() {
+    this.game.myPreferredPlatform.preferred.value = false;
+    await this.gameService.updateMyPlatform(this.game.myPreferredPlatform);
+
+    this.selectedPlatform.preferred.value = true;
+    await this.gameService.updateMyPlatform(this.selectedPlatform);
+  }
+
   platformIsSelected(platform: MyGamePlatform): boolean {
     return platform.id.originalValue === this.selectedPlatform.id.originalValue;
   }
