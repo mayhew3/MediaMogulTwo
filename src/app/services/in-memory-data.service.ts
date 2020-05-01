@@ -33,7 +33,6 @@ export class InMemoryDataService implements InMemoryDbService{
   createDb(): {} {
     return {
       games: this.games,
-      personGames: [],
       gameplaySessions: [] as GameplaySession[],
       persons: this.persons,
       igdbMatches: [],
@@ -68,8 +67,6 @@ export class InMemoryDataService implements InMemoryDbService{
     const collectionName = requestInfo.collectionName;
     if (collectionName === 'games') {
       this.addGame(requestInfo);
-    } else if (collectionName === 'personGames') {
-      this.addPersonGame(requestInfo);
     } else if (collectionName === 'myPlatforms') {
       this.addMyPlatform(requestInfo);
     } else if (collectionName === 'availablePlatforms') {
@@ -84,8 +81,6 @@ export class InMemoryDataService implements InMemoryDbService{
     const collectionName = requestInfo.collectionName;
     if (collectionName === 'games') {
       this.updateGame(requestInfo);
-    } else if (collectionName === 'personGames') {
-      this.updatePersonGame(requestInfo);
     } else if (collectionName === 'resolve') {
       this.packageUpResponse(this.getBody(requestInfo), requestInfo);
     } else if (collectionName === 'myPlatforms') {
@@ -104,9 +99,6 @@ export class InMemoryDataService implements InMemoryDbService{
 
     _.forEach(this.games, game => {
       const gameCopy = lodash.cloneDeep(game);
-      const person_games = gameCopy.person_games;
-      gameCopy.personGame = _.findWhere(person_games, {person_id: person_id});
-      delete gameCopy.person_games;
       _.forEach(gameCopy.availablePlatforms, availablePlatform => {
         const myPlatforms = availablePlatform.myPlatforms;
         availablePlatform.myPlatform = _.findWhere(myPlatforms, {person_id: person_id});
@@ -136,24 +128,7 @@ export class InMemoryDataService implements InMemoryDbService{
     game.id = this.nextGameID();
     game.date_added = new Date();
     this.updatePlatforms(game.availablePlatforms, this.getAvailablePlatforms());
-    const personGame = game.personGame;
-    if (!!personGame) {
-      personGame.id = this.nextPersonGameID();
-      personGame.game_id = game.id;
-      personGame.date_added = new Date();
-      this.updatePlatforms(personGame.myPlatforms, this.getMyPlatformsForPerson(personGame.person_id));
-    }
     return this.packageUpResponse(game, requestInfo);
-  }
-
-  private addPersonGame(requestInfo: RequestInfo) {
-    const personGame = this.getBody(requestInfo);
-    personGame.id = this.nextPersonGameID();
-    personGame.date_added = new Date();
-    const game = this.findGame(personGame.game_id);
-    game.personGame = personGame;
-    this.updatePlatforms(personGame.myPlatforms, this.getMyPlatformsForPerson(personGame.person_id));
-    return this.packageUpResponse(personGame, requestInfo);
   }
 
   private addAvailablePlatform(requestInfo: RequestInfo) {
@@ -207,15 +182,6 @@ export class InMemoryDataService implements InMemoryDbService{
     }
   }
 
-  private updatePersonGame(requestInfo: RequestInfo) {
-    const jsonBody = this.getBody(requestInfo);
-    const personGame = this.findPersonGame(jsonBody.id);
-    if (!!personGame) {
-      this.updateChangedFieldsOnObject(personGame, jsonBody.changedFields);
-      return this.packageUpResponse(personGame, requestInfo);
-    }
-  }
-
   private updateMyGamePlatform(requestInfo: RequestInfo) {
     const jsonBody = this.getBody(requestInfo);
     const myGamePlatform = this.findMyGamePlatform(jsonBody.id);
@@ -229,26 +195,10 @@ export class InMemoryDataService implements InMemoryDbService{
     return _.findWhere(this.games, {id: gameID});
   }
 
-  private getPersonGames(): any[] {
-    const ownedGames = _.filter(this.games, game => !!game.person_games);
-    return _.flatten(_.map(ownedGames, game => game.person_games));
-  }
-
   private getAvailablePlatforms(): any[] {
     return _.flatten(_.map(this.games, game => game.availablePlatforms));
   }
 
-  private getMyPlatformsForPerson(person_id: number): any[] {
-    return _.flatten(_.map(this.getAvailablePlatforms(), availablePlatform => {
-      const undef = _.filter(availablePlatform.myPlatforms, platform => platform === undefined);
-      if (undef.length > 0) {
-        console.log("HUH?");
-      }
-      return _.filter(availablePlatform.myPlatforms, platform => platform !== undefined && platform.person_id === person_id);
-    }));
-  }
-
-  // todo: undefined is in there... WTF??
   private getAllMyPlatforms(): any[] {
     const availablePlatforms = this.getAvailablePlatforms();
     return _.flatten(_.map(_.filter(availablePlatforms, availablePlatform => !!availablePlatform.myPlatforms), availablePlatform => {
@@ -266,11 +216,6 @@ export class InMemoryDataService implements InMemoryDbService{
     return _.findWhere(myGamePlatforms, {id: myGamePlatformID});
   }
 
-  private findPersonGame(personGameID: number): any {
-    const personGames = this.getPersonGames();
-    return _.findWhere(personGames, {id: personGameID});
-  }
-
   private nextID(array: any[]): number {
     const ids = _.map(array, item => {
       if (item === undefined) {
@@ -285,11 +230,6 @@ export class InMemoryDataService implements InMemoryDbService{
 
   private nextGameID(): number {
     return this.nextID(this.games);
-  }
-
-  private nextPersonGameID(): number {
-    const personGames = this.getPersonGames();
-    return this.nextID(personGames);
   }
 
   private nextAvailablePlatformID(): number {
