@@ -33,6 +33,7 @@ export class DashboardComponent implements OnInit {
   getChangeableFilters(): GameFilterWithOptions[] {
     return [
       new OwnedCloudGameFilter(),
+      new ExistingPlatformGameFilter(this.platformService),
       new OwnedPlatformGameFilter(this.platformService),
       new FinishedGameFilter(),
     ];

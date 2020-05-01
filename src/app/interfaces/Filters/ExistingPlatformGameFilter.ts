@@ -31,7 +31,7 @@ export class ExistingPlatformGameFilter extends GameFilterWithOptions {
   }
 
   getLabel(): string {
-    return 'Platform';
+    return 'Available';
   }
 
 }
