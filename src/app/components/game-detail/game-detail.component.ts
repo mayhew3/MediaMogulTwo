@@ -77,6 +77,10 @@ export class GameDetailComponent implements OnInit {
     this.selectedPlatform = platform;
   }
 
+  showAddButton(): boolean {
+    return this.game.addablePlatforms.length > this.game.myMutablePlatforms.length;
+  }
+
   getMetacritic(): number {
     return this.selectedPlatform.availableGamePlatform.metacritic.originalValue;
   }
