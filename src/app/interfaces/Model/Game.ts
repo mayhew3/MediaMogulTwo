@@ -1,5 +1,4 @@
 /* tslint:disable:variable-name */
-import {PersonGame} from './PersonGame';
 import {DataObject} from '../DataObject/DataObject';
 import {GamePlatform} from './GamePlatform';
 import * as _ from 'underscore';
