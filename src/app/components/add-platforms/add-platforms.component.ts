@@ -15,6 +15,8 @@ export class AddPlatformsComponent implements OnInit {
 
   rating: number;
 
+  mostRecentAdd: MyGamePlatform;
+
   constructor(public activeModal: NgbActiveModal,
               private gameService: GameService) {
   }
@@ -29,15 +31,15 @@ export class AddPlatformsComponent implements OnInit {
   async addPlatform(availableGamePlatform: AvailableGamePlatform) {
     const myGamePlatform = new MyGamePlatform(availableGamePlatform);
     myGamePlatform.rating.value = this.rating;
-    await this.gameService.addMyGamePlatform(availableGamePlatform, myGamePlatform);
+    this.mostRecentAdd = await this.gameService.addMyGamePlatform(availableGamePlatform, myGamePlatform);
   }
 
   async close() {
-    this.activeModal.close('Submit click');
+    this.activeModal.close(this.mostRecentAdd);
   }
 
   dismiss() {
     this.game.discardChanges();
-    this.activeModal.dismiss('Cross Click');
+    this.activeModal.dismiss();
   }
 }

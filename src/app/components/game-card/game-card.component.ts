@@ -107,7 +107,7 @@ export class GameCardComponent implements OnInit {
     }
   }
 
-  async openAddGamePopup() {
+  async openAddPlatformsPopup() {
     const modalRef = this.modalService.open(AddPlatformsComponent, {size: 'md'});
     modalRef.componentInstance.game = this.game;
     await this.handlePopupResult(modalRef);

@@ -18,6 +18,8 @@
 
         <div class="row">
 
+          <!-- TITLE -->
+
           <div class="col-12">
 
             <h3 *ngIf="!titleEditMode">{{game.title.value}} <span (click)="toggleTitleEdit()"
@@ -49,21 +51,41 @@
         <div class="row">
           <div class="col-4">
 
-            <!-- Single Platform-->
-            <h4 *ngIf="game.myPlatforms.length === 1">{{selectedPlatform.platform_name.originalValue}}</h4>
+            <div class="form-row">
+              <div class="col-9">
 
-            <!-- Multi Platform Dropdown -->
+                <!-- Single Platform-->
 
-            <!--suppress HtmlFormInputWithoutLabel -->
-            <select *ngIf="game.myPlatforms.length > 1"
-                    class="custom-select"
-                    id="platformSelect">
-              <option *ngFor="let platform of game.myPlatforms"
-                      [selected]="platformIsSelected(platform)"
-                      (click)="selectPlatform(platform)">
-                {{platform.platform_name.originalValue}}
-              </option>
-            </select>
+                <span class="mx-1 selectedPlatform"
+                      *ngIf="game.myPlatforms.length === 1">
+                  {{selectedPlatform.platform_name.originalValue}}
+                </span>
+
+                <!-- Multi Platform Dropdown -->
+
+                <!--suppress HtmlFormInputWithoutLabel -->
+                <select *ngIf="game.myPlatforms.length > 1"
+                        class="custom-select"
+                        id="platformSelect">
+                  <option *ngFor="let platform of game.myPlatforms"
+                          [selected]="platformIsSelected(platform)"
+                          (click)="selectPlatform(platform)">
+                    {{platform.platform_name.originalValue}}
+                  </option>
+                </select>
+
+              </div>
+
+              <!-- Add Platforms -->
+              <div class="col-3">
+                <button type="button"
+                        class="btn btn-sm btn-primary mx-1"
+                        *ngIf="game.availablePlatforms.length > game.myPlatforms.length"
+                        (click)="openAddPlatformsPopup()">+</button>
+
+              </div>
+            </div>
+
 
           </div>
         </div>
