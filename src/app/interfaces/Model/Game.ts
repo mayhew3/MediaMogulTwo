@@ -117,8 +117,18 @@ export class Game extends DataObject {
     return !!existing;
   }
 
+  hasPlatformWithName(platformName: string): boolean {
+    const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform_name.value === platformName);
+    return !!existing;
+  }
+
   ownsPlatformWithID(platformID: number): boolean {
     const existing = _.find(this.myPlatforms, myPlatform => myPlatform.platform.id.value === platformID);
+    return !!existing;
+  }
+
+  ownsPlatformWithName(platformName: string): boolean {
+    const existing = _.find(this.myPlatforms, myPlatform => myPlatform.platform_name.value === platformName);
     return !!existing;
   }
 

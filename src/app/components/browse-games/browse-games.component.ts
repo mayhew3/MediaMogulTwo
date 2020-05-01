@@ -4,7 +4,7 @@ import {UnownedGameFilter} from '../../interfaces/Filters/UnownedGameFilter';
 import {GameOrdering} from '../../interfaces/OrderBy/GameOrdering';
 import {OrderByTitle} from '../../interfaces/OrderBy/OrderByTitle';
 import {OrderingDirection} from '../game-list/OrderingDirection';
-import {CloudGameFilter} from '../../interfaces/Filters/CloudGameFilter';
+import {ExistingCloudGameFilter} from '../../interfaces/Filters/ExistingCloudGameFilter';
 import {ExistingPlatformGameFilter} from '../../interfaces/Filters/ExistingPlatformGameFilter';
 import {GameFilterWithOptions} from '../../interfaces/Filters/GameFilterWithOptions';
 import {PlatformService} from '../../services/platform.service';
@@ -26,8 +26,7 @@ export class BrowseGamesComponent implements OnInit {
   }
 
   getChangeableFilters(): GameFilterWithOptions[] {
-    return [new CloudGameFilter(),
-      new ExistingPlatformGameFilter(this.platformService)];
+    return [new ExistingPlatformGameFilter(this.platformService)];
   }
 
   getOrderings(): GameOrdering[] {

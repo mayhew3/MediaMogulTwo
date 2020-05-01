@@ -6,7 +6,7 @@ import {OrderByLastPlayed} from '../../interfaces/OrderBy/OrderByLastPlayed';
 import {OrderByDateAdded} from '../../interfaces/OrderBy/OrderByDateAdded';
 import {FinishedGameFilter} from '../../interfaces/Filters/FinishedGameFilter';
 import {GameFilterWithOptions} from '../../interfaces/Filters/GameFilterWithOptions';
-import {CloudGameFilter} from '../../interfaces/Filters/CloudGameFilter';
+import {ExistingCloudGameFilter} from '../../interfaces/Filters/ExistingCloudGameFilter';
 import {ExistingPlatformGameFilter} from '../../interfaces/Filters/ExistingPlatformGameFilter';
 import {GameFilter} from '../../interfaces/Filters/GameFilter';
 import {PlatformService} from '../../services/platform.service';
@@ -30,7 +30,7 @@ export class DashboardComponent implements OnInit {
   }
 
   getChangeableFilters(): GameFilterWithOptions[] {
-    return [new CloudGameFilter(),
+    return [new ExistingCloudGameFilter(),
       new OwnedPlatformGameFilter(this.platformService),
       new FinishedGameFilter(),
     ];
