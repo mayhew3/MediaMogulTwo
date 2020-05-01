@@ -45,7 +45,6 @@ module.exports = function(app) {
 
   privateGet('/igdbMatches', addGame.getIGDBMatches);
 
-  privatePut('/resolve', games.combineGames);
 
   app.use('/api', router);
 

@@ -1,5 +1,3 @@
-const model = require('./model');
-const _ = require('underscore');
 const axios = require('axios');
 
 exports.getIGDBMatches = async function (request, response) {
