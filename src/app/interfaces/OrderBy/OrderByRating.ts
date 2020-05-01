@@ -9,9 +9,7 @@ export class OrderByRating extends GameOrdering {
   }
 
   sortValue(game: Game): any {
-    const myRating = game.myRating;
-    const bestMetacritic = game.bestMetacritic;
-    return !!myRating ? myRating : bestMetacritic;
+    return game.bestMyRatingOrMetacritic;
   }
 }
 

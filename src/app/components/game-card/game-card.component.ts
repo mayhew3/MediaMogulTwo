@@ -48,7 +48,7 @@ export class GameCardComponent implements OnInit {
   }
 
   getProgressValue(): number {
-    const minutesPlayed = this.game.myPreferredPlatform.minutes_played.originalValue;
+    const minutesPlayed = this.game.bestPlaytime;
 
     const howlongExtras = this.game.howlong_extras.originalValue;
     const timeTotal = this.game.timetotal.originalValue;
@@ -91,11 +91,6 @@ export class GameCardComponent implements OnInit {
     } catch (err) {
       this.closeResult = `Dismissed ${GameCardComponent.getDismissReason(err)}`;
     }
-  }
-
-  getMyRatingOrMetacritic(): number {
-    const myRating = this.game.myRating;
-    return !!myRating ? myRating : this.game.bestMetacritic;
   }
 
   async openPlaytimePopup() {

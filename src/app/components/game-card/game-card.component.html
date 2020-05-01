@@ -31,7 +31,7 @@
         </div>
 
         <div class="col-12 m-1" *ngIf="game.isOwned() && !successfullyAdded">
-          <mm-rating-box [value]="getMyRatingOrMetacritic()"
+          <mm-rating-box [value]="game.bestMyRatingOrMetacritic"
                          [maxValue]="100"
                          [faded]="!game.myRating">
           </mm-rating-box>

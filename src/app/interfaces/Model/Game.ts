@@ -216,6 +216,23 @@ export class Game extends DataObject {
     return max > 0 ? max : null;
   }
 
+  get bestPlaytime(): number {
+    const allPlaytimes = _.map(this.myPlatforms, myPlatform => myPlatform.minutes_played.originalValue);
+    const max = _.max(allPlaytimes);
+    return max > 0 ? max : null;
+  }
+
+  get bestMyRating(): number {
+    const allRatings = _.map(this.myPlatforms, myPlatform => myPlatform.rating.originalValue);
+    const max = _.max(allRatings);
+    return max > 0 ? max : null;
+  }
+
+  get bestMyRatingOrMetacritic(): number {
+    const myRating = this.bestMyRating;
+    return !!myRating ? myRating : this.bestMetacritic;
+  }
+
   get isFinished(): boolean {
     const allFinished = _.filter(this.myPlatforms, myPlatform => !!myPlatform.finished_date.originalValue);
     return !_.isEmpty(allFinished);
