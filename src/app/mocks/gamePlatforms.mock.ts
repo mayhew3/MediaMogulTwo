@@ -3,14 +3,16 @@ export const MockGamePlatforms = [
   {
     "full_name": "Steam",
     "short_name": "Steam",
-    "id": 1
+    "id": 1,
+    "metacritic_uri": "pc"
   },
   {
     "full_name": "Xbox",
     "igdb_platform_id": 11,
     "short_name": "Xbox",
     "id": 2,
-    "igdb_name": "Xbox"
+    "igdb_name": "Xbox",
+    "metacritic_uri": "xbox"
   },
   {
     "full_name": "Switch",
@@ -20,7 +22,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Nintendo Switch"
   },
   {
-    "full_name": "Xbox One",
+    "full_name": "Xbox Two",
     "igdb_platform_id": 49,
     "short_name": "Xbox One",
     "id": 4,
@@ -160,7 +162,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Windows Phone"
   },
   {
-    "full_name": "Super Nintendo Entertainment System (SNES)",
+    "full_name": "Super Nintendo",
     "igdb_platform_id": 19,
     "short_name": "SNES",
     "id": 24,

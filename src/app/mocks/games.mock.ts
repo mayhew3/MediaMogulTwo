@@ -25,7 +25,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:52:45.545",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:11:28.77",
+        "metacritic_matched": "2020-05-02 15:10:15.706",
         "game_platform_id": 7,
         "platform_name": "Xbox 360",
         "metacritic": 88,
@@ -60,7 +60,7 @@ export const MockGames = [
         "date_added": "2020-04-30 21:49:12.294",
         "metacritic_page": false,
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
         "id": 4340,
         "myPlatforms": []
       }
@@ -161,7 +161,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:47:17.348",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:13:42.706",
+        "metacritic_matched": "2020-05-02 14:57:09.776",
         "game_platform_id": 7,
         "platform_name": "Xbox 360",
         "metacritic": 86,
@@ -205,15 +205,6 @@ export const MockGames = [
     "metacritic_page": false,
     "igdb_popularity": 6.795220670521917,
     "availablePlatforms": [
-      {
-        "date_added": "2020-04-28 23:57:16.483",
-        "metacritic_page": false,
-        "game_platform_id": 9,
-        "platform_name": "NDS",
-        "metacritic": 89,
-        "id": 925,
-        "myPlatforms": []
-      },
       {
         "date_added": "2020-04-30 21:44:05.817",
         "metacritic_page": false,
@@ -277,6 +268,15 @@ export const MockGames = [
         "platform_name": "Arcade",
         "id": 3847,
         "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-28 23:57:16.483",
+        "metacritic_page": false,
+        "game_platform_id": 9,
+        "platform_name": "NDS",
+        "metacritic": 89,
+        "id": 925,
+        "myPlatforms": []
       }
     ],
     "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/1/10460/965246-ps360_alucard_face.jpg",
@@ -308,7 +308,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:45:20.305",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:14:25.65",
+        "metacritic_matched": "2020-05-02 14:52:47.406",
         "game_platform_id": 2,
         "platform_name": "Xbox",
         "metacritic": 84,
@@ -321,14 +321,6 @@ export const MockGames = [
         "game_platform_id": 15,
         "platform_name": "Linux",
         "id": 3834,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:44:03.33",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3835,
         "myPlatforms": []
       },
       {
@@ -361,6 +353,16 @@ export const MockGames = [
         "game_platform_id": 11,
         "platform_name": "PS4",
         "id": 3839,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:44:03.33",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 19:09:59.438",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 85,
+        "id": 3835,
         "myPlatforms": []
       }
     ],
@@ -398,7 +400,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:49:06.319",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:14:26.651",
+        "metacritic_matched": "2020-05-02 15:01:17.01",
         "game_platform_id": 2,
         "platform_name": "Xbox",
         "metacritic": 89,
@@ -536,7 +538,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "date_added": "2020-04-28 23:54:32.346",
       "metacritic_page": true,
-      "metacritic_matched": "2018-10-29 03:25:19.364",
+      "metacritic_matched": "2020-05-02 15:14:35.851",
       "game_platform_id": 6,
       "platform_name": "PS3",
       "metacritic": 94,
@@ -576,7 +578,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "date_added": "2020-04-28 23:55:14.811",
       "metacritic_page": true,
-      "metacritic_matched": "2015-08-28 00:13:36.329",
+      "metacritic_matched": "2020-05-02 15:16:28.427",
       "game_platform_id": 2,
       "platform_name": "Xbox",
       "metacritic": 94,
@@ -683,16 +685,6 @@ export const MockGames = [
     "igdb_popularity": 1.891564320978979,
     "availablePlatforms": [
       {
-        "date_added": "2020-04-28 23:57:24.29",
-        "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:13:37.64",
-        "game_platform_id": 2,
-        "platform_name": "Xbox",
-        "metacritic": 81,
-        "id": 934,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:43:52.612",
         "metacritic_page": false,
         "game_platform_id": 14,
@@ -714,6 +706,16 @@ export const MockGames = [
         "game_platform_id": 26,
         "platform_name": "PlayStation Portable",
         "id": 3822,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-28 23:57:24.29",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:22:02.371",
+        "game_platform_id": 2,
+        "platform_name": "Xbox",
+        "metacritic": 81,
+        "id": 934,
         "myPlatforms": []
       }
     ],
@@ -835,7 +837,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:50:08.209",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:14:03.518",
+        "metacritic_matched": "2020-05-02 15:03:54.335",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 62,
@@ -844,9 +846,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:40:40.0",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:20:23.354",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 62,
         "id": 3396,
         "myPlatforms": []
       }
@@ -924,29 +928,31 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
-        "date_added": "2020-04-28 23:56:16.194",
-        "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:18:01.359",
-        "game_platform_id": 1,
-        "platform_name": "Steam",
-        "metacritic": 69,
-        "id": 858,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:40:33.789",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3384,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:40:34.049",
         "metacritic_page": false,
         "game_platform_id": 22,
         "platform_name": "PlayStation Network",
         "id": 3385,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:40:33.789",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:20:09.378",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 69,
+        "id": 3384,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-28 23:56:16.194",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:18:56.362",
+        "game_platform_id": 1,
+        "platform_name": "Steam",
+        "metacritic": 69,
+        "id": 858,
         "myPlatforms": []
       }
     ],
@@ -1030,14 +1036,6 @@ export const MockGames = [
     "igdb_popularity": 1,
     "availablePlatforms": [
       {
-        "date_added": "2020-04-28 23:53:21.155",
-        "metacritic_page": true,
-        "game_platform_id": 1,
-        "platform_name": "Steam",
-        "id": 664,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:40:31.38",
         "metacritic_page": false,
         "game_platform_id": 10,
@@ -1051,6 +1049,14 @@ export const MockGames = [
         "game_platform_id": 16,
         "platform_name": "Mac",
         "id": 3380,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-28 23:53:21.155",
+        "metacritic_page": true,
+        "game_platform_id": 1,
+        "platform_name": "Steam",
+        "id": 664,
         "myPlatforms": []
       }
     ],
@@ -1088,21 +1094,23 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:40:28.982",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:19:59.803",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 67,
+        "id": 3375,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:55:15.552",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:40:14.652",
+        "metacritic_matched": "2020-05-02 15:16:32.57",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 67,
         "id": 790,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:40:28.982",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3375,
         "myPlatforms": []
       }
     ],
@@ -1145,7 +1153,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:40:27.817",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 3373,
@@ -1153,9 +1161,9 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:40:28.08",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
         "id": 3374,
         "myPlatforms": []
       }
@@ -1193,48 +1201,6 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
-        "date_added": "2020-04-28 23:56:08.973",
-        "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:18:05.501",
-        "game_platform_id": 1,
-        "platform_name": "Steam",
-        "metacritic": 80,
-        "id": 850,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:40:20.242",
-        "metacritic_page": false,
-        "game_platform_id": 15,
-        "platform_name": "Linux",
-        "id": 3354,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:40:20.509",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3355,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:40:20.954",
-        "metacritic_page": false,
-        "game_platform_id": 6,
-        "platform_name": "PS3",
-        "id": 3356,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:40:21.21",
-        "metacritic_page": false,
-        "game_platform_id": 16,
-        "platform_name": "Mac",
-        "id": 3357,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:40:21.465",
         "metacritic_page": false,
         "game_platform_id": 5,
@@ -1248,6 +1214,52 @@ export const MockGames = [
         "game_platform_id": 11,
         "platform_name": "PS4",
         "id": 3359,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:40:20.509",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:19:47.68",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 80,
+        "id": 3355,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-28 23:56:08.973",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:18:37.826",
+        "game_platform_id": 1,
+        "platform_name": "Steam",
+        "metacritic": 80,
+        "id": 850,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:40:21.21",
+        "metacritic_page": false,
+        "game_platform_id": 16,
+        "platform_name": "Mac",
+        "id": 3357,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:40:20.954",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:57:49.981",
+        "game_platform_id": 6,
+        "platform_name": "PS3",
+        "metacritic": 83,
+        "id": 3356,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:40:20.242",
+        "metacritic_page": false,
+        "game_platform_id": 15,
+        "platform_name": "Linux",
+        "id": 3354,
         "myPlatforms": []
       }
     ],
@@ -1284,21 +1296,23 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:40:19.194",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:19:44.282",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 80,
+        "id": 3352,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:55:35.095",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:17:59.156",
+        "metacritic_matched": "2020-05-02 15:17:23.153",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 80,
         "id": 812,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:40:19.194",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3352,
         "myPlatforms": []
       },
       {
@@ -1346,11 +1360,21 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:50:15.49",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:18:08.015",
+        "metacritic_matched": "2020-05-02 15:04:11.765",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 72,
         "id": 464,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:40:18.12",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:57:43.89",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 72,
+        "id": 3350,
         "myPlatforms": []
       },
       {
@@ -1359,14 +1383,6 @@ export const MockGames = [
         "game_platform_id": 15,
         "platform_name": "Linux",
         "id": 3349,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:40:18.12",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3350,
         "myPlatforms": []
       },
       {
@@ -1410,7 +1426,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:53:59.256",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:18:09.423",
+        "metacritic_matched": "2020-05-02 15:13:09.233",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 79,
@@ -1418,27 +1434,33 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:40:15.767",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3343,
+        "date_added": "2020-04-30 21:40:16.284",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:57:38.167",
+        "game_platform_id": 7,
+        "platform_name": "Xbox 360",
+        "metacritic": 75,
+        "id": 3345,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:40:17.047",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:57:41.427",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 60,
+        "id": 3348,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:40:16.036",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:16:43.666",
         "game_platform_id": 6,
         "platform_name": "PS3",
+        "metacritic": 74,
         "id": 3344,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:40:16.284",
-        "metacritic_page": false,
-        "game_platform_id": 7,
-        "platform_name": "Xbox 360",
-        "id": 3345,
         "myPlatforms": []
       },
       {
@@ -1450,19 +1472,21 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:40:16.79",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 3347,
+        "date_added": "2020-04-30 21:40:15.767",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:18:16.053",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 79,
+        "id": 3343,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:40:17.047",
+        "date_added": "2020-04-30 21:40:16.79",
         "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 3348,
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "id": 3347,
         "myPlatforms": []
       }
     ],
@@ -1500,7 +1524,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:51:29.255",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:18:11.236",
+        "metacritic_matched": "2020-05-02 15:07:14.465",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 72,
@@ -1509,9 +1533,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:40:14.863",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:18:14.318",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 72,
         "id": 3342,
         "myPlatforms": []
       }
@@ -1551,7 +1577,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:48:07.166",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:18:12.273",
+        "metacritic_matched": "2020-05-02 14:58:53.875",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 79,
@@ -1564,14 +1590,6 @@ export const MockGames = [
         "game_platform_id": 15,
         "platform_name": "Linux",
         "id": 3336,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:40:12.977",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3337,
         "myPlatforms": []
       },
       {
@@ -1591,18 +1609,30 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
+        "date_added": "2020-04-30 21:40:12.977",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:18:09.341",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 79,
+        "id": 3337,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:40:13.771",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:18:12.569",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 78,
         "id": 3340,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:40:14.033",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
         "id": 3341,
         "myPlatforms": []
       }
@@ -1638,7 +1668,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:54:19.55",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:18:14.031",
+        "metacritic_matched": "2020-05-02 15:14:00.411",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 74,
@@ -1654,19 +1684,21 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:40:10.111",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3331,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:40:10.38",
         "metacritic_page": false,
         "game_platform_id": 16,
         "platform_name": "Mac",
         "id": 3332,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:40:10.111",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:57:16.023",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 74,
+        "id": 3331,
         "myPlatforms": []
       }
     ],
@@ -1704,7 +1736,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:55:57.392",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:18:15.046",
+        "metacritic_matched": "2020-05-02 15:18:11.357",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 87,
@@ -1712,16 +1744,18 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 17:42:03.829",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1175,
+        "date_added": "2020-04-30 17:42:03.84",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:01:57.75",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 83,
+        "id": 1178,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 17:42:03.834",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 6,
         "platform_name": "PS3",
         "id": 1176,
@@ -1729,25 +1763,29 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 17:42:03.837",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 7,
         "platform_name": "Xbox 360",
         "id": 1177,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 17:42:03.84",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1178,
+        "date_added": "2020-04-30 17:42:03.829",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:28:22.671",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 87,
+        "id": 1175,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 17:42:03.843",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:28:25.372",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 82,
         "id": 1179,
         "myPlatforms": []
       }
@@ -1789,7 +1827,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:40:04.527",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 3323,
@@ -1872,7 +1910,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:57:01.223",
         "metacritic_page": true,
-        "metacritic_matched": "2015-09-29 21:28:36.287",
+        "metacritic_matched": "2020-05-02 15:21:06.58",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 79,
@@ -1888,16 +1926,8 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:40:00.635",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3314,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:40:00.888",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 6,
         "platform_name": "PS3",
         "id": 3315,
@@ -1905,7 +1935,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:40:01.136",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 7,
         "platform_name": "Xbox 360",
         "id": 3316,
@@ -1928,18 +1958,32 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
+        "date_added": "2020-04-30 21:40:00.635",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:17:49.458",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 79,
+        "id": 3314,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:40:01.9",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:17:51.847",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 58,
         "id": 3319,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:40:02.153",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:56:58.129",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 51,
         "id": 3320,
         "myPlatforms": []
       }
@@ -1984,7 +2028,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:39:59.509",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 3312,
@@ -2066,7 +2110,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:47:22.981",
         "metacritic_page": true,
-        "metacritic_matched": "2015-09-29 21:29:36.297",
+        "metacritic_matched": "2020-05-02 14:57:22.451",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 80,
@@ -2075,9 +2119,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:39:43.78",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:17:19.24",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 80,
         "id": 3274,
         "myPlatforms": []
       }
@@ -2115,9 +2161,19 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-28 23:51:43.645",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:07:53.436",
+        "game_platform_id": 1,
+        "platform_name": "Steam",
+        "metacritic": 84,
+        "id": 559,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:51:43.059",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:14:53.656",
+        "metacritic_matched": "2020-05-02 15:07:51.631",
         "game_platform_id": 6,
         "platform_name": "PS3",
         "metacritic": 82,
@@ -2136,37 +2192,31 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-28 23:51:43.645",
+        "date_added": "2020-04-30 21:39:42.923",
         "metacritic_page": true,
-        "metacritic_matched": "2015-09-29 21:28:15.518",
-        "game_platform_id": 1,
-        "platform_name": "Steam",
-        "metacritic": 84,
-        "id": 559,
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "id": 3273,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:39:42.318",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:17:12.274",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 84,
         "id": 3271,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:39:42.655",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:17:16.648",
         "game_platform_id": 7,
         "platform_name": "Xbox 360",
+        "metacritic": 84,
         "id": 3272,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:39:42.923",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 3273,
         "myPlatforms": []
       }
     ],
@@ -2211,7 +2261,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:46:38.346",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:18:16.249",
+        "metacritic_matched": "2020-05-02 14:55:37.788",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 72,
@@ -2219,26 +2269,12 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:39:40.298",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3266,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:39:40.555",
-        "metacritic_page": false,
-        "game_platform_id": 6,
-        "platform_name": "PS3",
-        "id": 3267,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:39:40.816",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:55:34.309",
         "game_platform_id": 7,
         "platform_name": "Xbox 360",
+        "metacritic": 81,
         "id": 3268,
         "myPlatforms": []
       },
@@ -2256,6 +2292,26 @@ export const MockGames = [
         "game_platform_id": 18,
         "platform_name": "BlackBerry OS",
         "id": 3270,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:39:40.298",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:17:04.77",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 72,
+        "id": 3266,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:39:40.555",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:17:08.137",
+        "game_platform_id": 6,
+        "platform_name": "PS3",
+        "metacritic": 82,
+        "id": 3267,
         "myPlatforms": []
       }
     ],
@@ -2293,7 +2349,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:54:25.897",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:18:17.938",
+        "metacritic_matched": "2020-05-02 15:14:18.348",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 53,
@@ -2310,9 +2366,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:39:39.329",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:17:00.931",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 53,
         "id": 3265,
         "myPlatforms": []
       }
@@ -2364,7 +2422,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:39:36.343",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 3258,
@@ -2414,7 +2472,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:57:20.819",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:17:57.455",
+        "metacritic_matched": "2020-05-02 15:21:52.632",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 87,
@@ -2423,9 +2481,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:39:34.982",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:16:51.608",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 87,
         "id": 3256,
         "myPlatforms": []
       }
@@ -2465,7 +2525,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:49:27.768",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:13:33.979",
+        "metacritic_matched": "2020-05-02 15:02:12.813",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 33,
@@ -2482,9 +2542,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:39:33.8",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:15:28.241",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 33,
         "id": 3254,
         "myPlatforms": []
       },
@@ -2532,7 +2594,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:45:17.718",
         "metacritic_page": true,
-        "metacritic_matched": "2015-09-29 21:29:27.776",
+        "metacritic_matched": "2020-05-02 14:52:42.238",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 67,
@@ -2541,9 +2603,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:39:32.644",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:16:49.62",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 67,
         "id": 3252,
         "myPlatforms": []
       }
@@ -2587,7 +2651,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:39:31.808",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 3251,
@@ -2629,11 +2693,21 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:55:28.231",
         "metacritic_page": true,
-        "metacritic_matched": "2015-09-29 21:29:38.032",
+        "metacritic_matched": "2020-05-02 15:17:04.917",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 72,
         "id": 804,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:39:30.685",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:54:57.357",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 72,
+        "id": 3249,
         "myPlatforms": []
       },
       {
@@ -2642,14 +2716,6 @@ export const MockGames = [
         "game_platform_id": 15,
         "platform_name": "Linux",
         "id": 3248,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:39:30.685",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3249,
         "myPlatforms": []
       },
       {
@@ -2695,7 +2761,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:51:00.991",
         "metacritic_page": true,
-        "metacritic_matched": "2015-09-29 21:28:26.388",
+        "metacritic_matched": "2020-05-02 15:05:59.448",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 71,
@@ -2711,19 +2777,21 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 17:42:00.695",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1074,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 17:42:00.703",
         "metacritic_page": false,
         "game_platform_id": 16,
         "platform_name": "Mac",
         "id": 1075,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 17:42:00.695",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:26:36.905",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 71,
+        "id": 1074,
         "myPlatforms": []
       }
     ],
@@ -2761,7 +2829,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:56:35.353",
         "metacritic_page": true,
-        "metacritic_matched": "2015-09-29 21:29:41.018",
+        "metacritic_matched": "2020-05-02 15:19:47.579",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 73,
@@ -2770,9 +2838,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 17:42:03.499",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:01:36.229",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 73,
         "id": 1165,
         "myPlatforms": []
       }
@@ -2810,7 +2880,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:43:49.928",
         "metacritic_page": true,
-        "metacritic_matched": "2015-09-29 21:28:41.822",
+        "metacritic_matched": "2020-05-02 14:49:21.861",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 75,
@@ -2826,19 +2896,21 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:39:27.694",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3246,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:39:27.955",
         "metacritic_page": false,
         "game_platform_id": 16,
         "platform_name": "Mac",
         "id": 3247,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:39:27.694",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:16:47.962",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 75,
+        "id": 3246,
         "myPlatforms": []
       }
     ],
@@ -2914,7 +2986,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:43:38.728",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:13:55.352",
+        "metacritic_matched": "2020-05-02 14:48:58.693",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 75,
@@ -2924,7 +2996,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:43:39.205",
         "metacritic_page": true,
-        "metacritic_matched": "2016-05-09 18:51:14.788",
+        "metacritic_matched": "2020-05-02 14:49:00.012",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 76,
@@ -2942,6 +3014,16 @@ export const MockGames = [
         }]
       },
       {
+        "date_added": "2020-04-30 21:39:22.566",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:54:39.718",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 75,
+        "id": 3235,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:39:22.313",
         "metacritic_page": false,
         "game_platform_id": 15,
@@ -2950,27 +3032,21 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:39:22.566",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3235,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:39:22.82",
-        "metacritic_page": false,
-        "game_platform_id": 7,
-        "platform_name": "Xbox 360",
-        "id": 3236,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:39:23.069",
         "metacritic_page": false,
         "game_platform_id": 16,
         "platform_name": "Mac",
         "id": 3237,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:39:22.82",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:15:08.741",
+        "game_platform_id": 7,
+        "platform_name": "Xbox 360",
+        "metacritic": 71,
+        "id": 3236,
         "myPlatforms": []
       },
       {
@@ -2993,7 +3069,7 @@ export const MockGames = [
         "date_added": "2020-04-30 21:39:23.926",
         "metacritic_page": false,
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
         "id": 3240,
         "myPlatforms": []
       }
@@ -3037,7 +3113,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:48:45.278",
         "metacritic_page": true,
-        "metacritic_matched": "2015-09-29 21:28:25.458",
+        "metacritic_matched": "2020-05-02 15:00:27.046",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 68,
@@ -3046,9 +3122,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:39:21.515",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:15:04.852",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 68,
         "id": 3233,
         "myPlatforms": []
       }
@@ -3086,19 +3164,11 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:50:59.317",
         "metacritic_page": true,
-        "metacritic_matched": "2015-09-29 21:28:21.327",
+        "metacritic_matched": "2020-05-02 15:05:55.011",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 51,
         "id": 510,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:39:15.719",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3217,
         "myPlatforms": []
       },
       {
@@ -3134,19 +3204,31 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:39:17.006",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 3222,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:39:17.258",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 3,
         "platform_name": "Switch",
         "id": 3223,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:39:15.719",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:14:49.145",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 51,
+        "id": 3217,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:39:17.006",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:14:50.963",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 66,
+        "id": 3222,
         "myPlatforms": []
       }
     ],
@@ -3184,7 +3266,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:56:45.21",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:12:05.18",
+        "metacritic_matched": "2020-05-02 15:20:22.158",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 79,
@@ -3193,9 +3275,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:39:13.799",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:54:08.966",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 79,
         "id": 3213,
         "myPlatforms": []
       },
@@ -3208,19 +3292,21 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:39:14.317",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 3215,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:39:14.574",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 3,
         "platform_name": "Switch",
         "id": 3216,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:39:14.317",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:14:45.982",
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "metacritic": 78,
+        "id": 3215,
         "myPlatforms": []
       }
     ],
@@ -3259,7 +3345,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:47:28.593",
         "metacritic_page": true,
-        "metacritic_matched": "2015-09-29 21:29:21.497",
+        "metacritic_matched": "2020-05-02 14:57:36.076",
         "game_platform_id": 6,
         "platform_name": "PS3",
         "metacritic": 92,
@@ -3284,7 +3370,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:47:29.185",
         "metacritic_page": true,
-        "metacritic_matched": "2015-09-29 21:28:32.102",
+        "metacritic_matched": "2020-05-02 14:57:38.023",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 94,
@@ -3292,19 +3378,23 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:39:12.54",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3211,
+        "date_added": "2020-04-30 21:39:12.926",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:13:08.906",
+        "game_platform_id": 7,
+        "platform_name": "Xbox 360",
+        "metacritic": 96,
+        "id": 3212,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:39:12.926",
-        "metacritic_page": false,
-        "game_platform_id": 7,
-        "platform_name": "Xbox 360",
-        "id": 3212,
+        "date_added": "2020-04-30 21:39:12.54",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:14:43.503",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 94,
+        "id": 3211,
         "myPlatforms": []
       }
     ],
@@ -3353,7 +3443,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:39:11.364",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 3210,
@@ -3393,7 +3483,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:44:07.761",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:13:56.331",
+        "metacritic_matched": "2020-05-02 14:50:03.823",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 72,
@@ -3402,9 +3492,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:39:10.588",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:14:41.292",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 72,
         "id": 3209,
         "myPlatforms": []
       }
@@ -3443,7 +3535,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:52:41.918",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:13:58.118",
+        "metacritic_matched": "2020-05-02 15:10:08.721",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 82,
@@ -3451,27 +3543,13 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:39:08.471",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3203,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:39:08.72",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:53:48.504",
         "game_platform_id": 6,
         "platform_name": "PS3",
+        "metacritic": 83,
         "id": 3204,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:39:08.988",
-        "metacritic_page": false,
-        "game_platform_id": 7,
-        "platform_name": "Xbox 360",
-        "id": 3205,
         "myPlatforms": []
       },
       {
@@ -3483,19 +3561,41 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:39:09.521",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 3207,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:39:09.778",
         "metacritic_page": false,
         "game_platform_id": 17,
         "platform_name": "Arcade",
         "id": 3208,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:39:08.471",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:14:33.635",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 82,
+        "id": 3203,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:39:08.988",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:14:36.687",
+        "game_platform_id": 7,
+        "platform_name": "Xbox 360",
+        "metacritic": 84,
+        "id": 3205,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:39:09.521",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:14:39.064",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 71,
+        "id": 3207,
         "myPlatforms": []
       }
     ],
@@ -3532,9 +3632,19 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:39:05.016",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:53:33.102",
+        "game_platform_id": 6,
+        "platform_name": "PS3",
+        "metacritic": 82,
+        "id": 3194,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-29 00:03:37.378276",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:13:58.697",
+        "metacritic_matched": "2020-05-02 15:24:54.628",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 83,
@@ -3547,22 +3657,6 @@ export const MockGames = [
         "game_platform_id": 15,
         "platform_name": "Linux",
         "id": 3192,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:39:04.714",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3193,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:39:05.016",
-        "metacritic_page": false,
-        "game_platform_id": 6,
-        "platform_name": "PS3",
-        "id": 3194,
         "myPlatforms": []
       },
       {
@@ -3604,6 +3698,16 @@ export const MockGames = [
         "platform_name": "PlayStation Network",
         "id": 3199,
         "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:39:04.714",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:14:22.571",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 83,
+        "id": 3193,
+        "myPlatforms": []
       }
     ],
     "giantbomb_name": "Skullgirls",
@@ -3641,7 +3745,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:49:29.456",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:13:59.274",
+        "metacritic_matched": "2020-05-02 15:02:15.997",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 80,
@@ -3657,19 +3761,21 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:39:03.393",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3190,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:39:03.673",
         "metacritic_page": false,
         "game_platform_id": 16,
         "platform_name": "Mac",
         "id": 3191,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:39:03.393",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:14:20.86",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 80,
+        "id": 3190,
         "myPlatforms": []
       }
     ],
@@ -3705,7 +3811,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:49:44.025",
         "metacritic_page": true,
-        "metacritic_matched": "2015-09-29 21:28:22.857",
+        "metacritic_matched": "2020-05-02 15:02:56.2",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 80,
@@ -3721,19 +3827,21 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:38:47.286",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3161,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:38:47.586",
         "metacritic_page": false,
         "game_platform_id": 16,
         "platform_name": "Mac",
         "id": 3162,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:38:47.286",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:13:46.16",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 80,
+        "id": 3161,
         "myPlatforms": []
       }
     ],
@@ -3769,7 +3877,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:56:00.921",
         "metacritic_page": true,
-        "metacritic_matched": "2015-09-29 21:28:52.78",
+        "metacritic_matched": "2020-05-02 15:18:19.268",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 90,
@@ -3785,19 +3893,21 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:38:45.994",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3158,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:38:46.259",
         "metacritic_page": false,
         "game_platform_id": 16,
         "platform_name": "Mac",
         "id": 3159,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:38:45.994",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:13:43.575",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 90,
+        "id": 3158,
         "myPlatforms": []
       }
     ],
@@ -3852,19 +3962,21 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:38:44.708",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3155,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:38:44.954",
         "metacritic_page": false,
         "game_platform_id": 16,
         "platform_name": "Mac",
         "id": 3156,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:38:44.708",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:13:41.456",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 90,
+        "id": 3155,
         "myPlatforms": []
       }
     ],
@@ -3901,16 +4013,6 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
-        "date_added": "2020-04-28 23:43:48.167",
-        "metacritic_page": true,
-        "metacritic_matched": "2015-09-29 21:29:48.642",
-        "game_platform_id": 1,
-        "platform_name": "Steam",
-        "metacritic": 88,
-        "id": 58,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:38:42.966",
         "metacritic_page": false,
         "game_platform_id": 15,
@@ -3920,9 +4022,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:38:43.21",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:12:38.169",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 88,
         "id": 3152,
         "myPlatforms": []
       },
@@ -3932,6 +4036,16 @@ export const MockGames = [
         "game_platform_id": 16,
         "platform_name": "Mac",
         "id": 3153,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-28 23:43:48.167",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 14:49:19.319",
+        "game_platform_id": 1,
+        "platform_name": "Steam",
+        "metacritic": 88,
+        "id": 58,
         "myPlatforms": []
       }
     ],
@@ -3968,24 +4082,6 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
-        "date_added": "2020-04-28 23:45:07.324",
-        "metacritic_page": true,
-        "metacritic_matched": "2015-09-29 21:28:27.183",
-        "game_platform_id": 1,
-        "platform_name": "Steam",
-        "metacritic": 92,
-        "id": 140,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:38:41.624",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3148,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:38:41.897",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -3999,6 +4095,26 @@ export const MockGames = [
         "game_platform_id": 13,
         "platform_name": "iOS",
         "id": 3150,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:38:41.624",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:52:22.797",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 92,
+        "id": 3148,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-28 23:45:07.324",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 14:52:18.144",
+        "game_platform_id": 1,
+        "platform_name": "Steam",
+        "metacritic": 92,
+        "id": 140,
         "myPlatforms": []
       }
     ],
@@ -4036,7 +4152,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:43:32.539",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:14:00.378",
+        "metacritic_matched": "2020-05-02 14:48:43.514",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 65,
@@ -4045,9 +4161,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:38:40.756",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:13:39.896",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 65,
         "id": 3147,
         "myPlatforms": []
       }
@@ -4086,7 +4204,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:55:06.768",
         "metacritic_page": true,
-        "metacritic_matched": "2015-08-28 00:14:02.462",
+        "metacritic_matched": "2020-05-02 15:16:05.983",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 62,
@@ -4095,9 +4213,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:38:38.259",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:13:31.093",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 62,
         "id": 3142,
         "myPlatforms": []
       }
@@ -4138,16 +4258,8 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
-        "date_added": "2020-04-28 23:57:32.376",
-        "metacritic_page": true,
-        "game_platform_id": 1,
-        "platform_name": "Steam",
-        "id": 943,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:38:36.187",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 3139,
@@ -4155,10 +4267,18 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:38:36.45",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 11,
         "platform_name": "PS4",
         "id": 3140,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-28 23:57:32.376",
+        "metacritic_page": true,
+        "game_platform_id": 1,
+        "platform_name": "Steam",
+        "id": 943,
         "myPlatforms": []
       }
     ],
@@ -4195,29 +4315,11 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
-        "date_added": "2020-04-28 23:55:20.078",
-        "metacritic_page": true,
-        "metacritic_matched": "2017-09-03 03:44:26.024",
-        "game_platform_id": 1,
-        "platform_name": "Steam",
-        "metacritic": 69,
-        "id": 795,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:38:33.365",
         "metacritic_page": false,
         "game_platform_id": 15,
         "platform_name": "Linux",
         "id": 3131,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:38:33.651",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3132,
         "myPlatforms": []
       },
       {
@@ -4245,27 +4347,53 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
+        "date_added": "2020-04-28 23:55:20.078",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:16:44.383",
+        "game_platform_id": 1,
+        "platform_name": "Steam",
+        "metacritic": 70,
+        "id": 795,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:38:33.651",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:51:48.249",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 70,
+        "id": 3132,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:38:35.188",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:51:59.443",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 29,
+        "id": 3138,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:38:34.667",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:13:27.999",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 69,
         "id": 3136,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:38:34.931",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:12:23.771",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 69,
         "id": 3137,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:38:35.188",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 3138,
         "myPlatforms": []
       }
     ],
@@ -4297,19 +4425,19 @@ export const MockGames = [
     "metacritic_page": false,
     "availablePlatforms": [
       {
-        "date_added": "2020-04-28 23:54:27.657",
-        "metacritic_page": false,
-        "game_platform_id": 1,
-        "platform_name": "Steam",
-        "id": 737,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:38:32.314",
         "metacritic_page": false,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 3130,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-28 23:54:27.657",
+        "metacritic_page": false,
+        "game_platform_id": 1,
+        "platform_name": "Steam",
+        "id": 737,
         "myPlatforms": []
       }
     ],
@@ -4389,7 +4517,7 @@ export const MockGames = [
         "date_added": "2020-04-30 21:38:31.485",
         "metacritic_page": false,
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
         "id": 3129,
         "myPlatforms": []
       }
@@ -4430,7 +4558,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:51:02.702",
         "metacritic_page": true,
-        "metacritic_matched": "2015-09-06 00:37:55.342",
+        "metacritic_matched": "2020-05-02 15:06:05.052",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 69,
@@ -4439,17 +4567,21 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:38:26.033",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:12:02.887",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 69,
         "id": 3114,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:38:26.311",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:12:05.517",
         "game_platform_id": 6,
         "platform_name": "PS3",
+        "metacritic": 70,
         "id": 3115,
         "myPlatforms": []
       },
@@ -4506,19 +4638,31 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:46:34.292",
         "metacritic_page": true,
-        "metacritic_matched": "2016-11-24 03:50:32.305",
+        "metacritic_matched": "2020-05-02 14:55:33.018",
         "game_platform_id": 1,
         "platform_name": "Steam",
-        "metacritic": 79,
+        "metacritic": 75,
         "id": 230,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:38:24.302",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:11:57.796",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 75,
         "id": 3110,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:38:24.811",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:51:18.78",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 75,
+        "id": 3112,
         "myPlatforms": []
       },
       {
@@ -4530,18 +4674,12 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:38:24.811",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 3112,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:38:25.079",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:12:00.321",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 79,
         "id": 3113,
         "myPlatforms": []
       }
@@ -4580,6 +4718,26 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:38:22.953",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:11:47.737",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 77,
+        "id": 3107,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:38:23.218",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:51:06.69",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 76,
+        "id": 3108,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-29 00:04:05.02846",
         "metacritic_page": true,
         "metacritic_matched": "2015-09-06 00:37:56.37",
@@ -4590,26 +4748,10 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:38:22.953",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3107,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:38:23.218",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 3108,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:38:23.464",
         "metacritic_page": false,
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
         "id": 3109,
         "myPlatforms": []
       }
@@ -4703,7 +4845,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:38:03.692",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 3073,
@@ -4757,7 +4899,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:38:02.575",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 3071,
@@ -4802,11 +4944,19 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:51:20.112",
         "metacritic_page": true,
-        "metacritic_matched": "2015-09-29 21:45:01.907",
+        "metacritic_matched": "2020-05-02 15:06:47.174",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 85,
         "id": 533,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:38:01.39",
+        "metacritic_page": false,
+        "game_platform_id": 16,
+        "platform_name": "Mac",
+        "id": 3069,
         "myPlatforms": []
       },
       {
@@ -4819,18 +4969,12 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:38:01.137",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:11:22.433",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 85,
         "id": 3068,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:38:01.39",
-        "metacritic_page": false,
-        "game_platform_id": 16,
-        "platform_name": "Mac",
-        "id": 3069,
         "myPlatforms": []
       }
     ],
@@ -4868,7 +5012,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:43:06.626",
         "metacritic_page": true,
-        "metacritic_matched": "2015-09-30 03:48:11.346",
+        "metacritic_matched": "2020-05-02 14:47:43.487",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 77,
@@ -4876,16 +5020,8 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:37:59.544",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3064,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:37:59.821",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 6,
         "platform_name": "PS3",
         "id": 3065,
@@ -4893,10 +5029,22 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:38:00.069",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:50:04.945",
         "game_platform_id": 7,
         "platform_name": "Xbox 360",
+        "metacritic": 77,
         "id": 3066,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:37:59.544",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:11:18.78",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 77,
+        "id": 3064,
         "myPlatforms": []
       }
     ],
@@ -4933,24 +5081,6 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
-        "date_added": "2020-04-28 23:43:52.668",
-        "metacritic_page": true,
-        "metacritic_matched": "2016-04-29 03:48:22.761",
-        "game_platform_id": 1,
-        "platform_name": "Steam",
-        "metacritic": 90,
-        "id": 63,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:37:55.543",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 3056,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:37:55.81",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -4960,17 +5090,37 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:37:56.068",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 11,
         "platform_name": "PS4",
         "id": 3058,
         "myPlatforms": []
       },
       {
+        "date_added": "2020-04-28 23:43:52.668",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 14:49:27.688",
+        "game_platform_id": 1,
+        "platform_name": "Steam",
+        "metacritic": 84,
+        "id": 63,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:37:55.543",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:11:06.733",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 84,
+        "id": 3056,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:37:56.331",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
         "id": 3059,
         "myPlatforms": []
       }
@@ -5015,27 +5165,13 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:36:54.721",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 2921,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:36:55.002",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:04:45.748",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 73,
         "id": 2922,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:36:55.252",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 2923,
         "myPlatforms": []
       },
       {
@@ -5052,6 +5188,26 @@ export const MockGames = [
         "game_platform_id": 49,
         "platform_name": "Xbox Series X",
         "id": 2925,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:36:54.721",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:07:35.439",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 79,
+        "id": 2921,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:36:55.252",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:46:57.036",
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "metacritic": 74,
+        "id": 2923,
         "myPlatforms": []
       }
     ],
@@ -5084,7 +5240,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:49:37.633",
         "metacritic_page": true,
-        "metacritic_matched": "2016-05-15 03:47:38.302",
+        "metacritic_matched": "2020-05-02 15:02:35.145",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 87,
@@ -5132,11 +5288,21 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:55:11.33",
         "metacritic_page": true,
-        "metacritic_matched": "2016-08-20 03:47:19.398",
+        "metacritic_matched": "2020-05-02 15:16:17.212",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 69,
         "id": 785,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:34:49.864",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:58:37.947",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 69,
+        "id": 2674,
         "myPlatforms": []
       },
       {
@@ -5145,14 +5311,6 @@ export const MockGames = [
         "game_platform_id": 15,
         "platform_name": "Linux",
         "id": 2673,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:34:49.864",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 2674,
         "myPlatforms": []
       },
       {
@@ -5194,7 +5352,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:46:29.433",
         "metacritic_page": true,
-        "metacritic_matched": "2018-10-11 03:25:45.764",
+        "metacritic_matched": "2020-05-02 14:55:19.29",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 77,
@@ -5221,14 +5379,6 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:55.391",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1869,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:27:55.665",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -5238,26 +5388,38 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:27:55.928",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 11,
         "platform_name": "PS4",
         "id": 1871,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:56.198",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1872,
+        "date_added": "2020-04-30 21:27:55.391",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:20:50.704",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 77,
+        "id": 1869,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:27:56.471",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:20:59.897",
         "game_platform_id": 3,
         "platform_name": "Switch",
+        "metacritic": 75,
         "id": 1873,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:27:56.198",
+        "metacritic_page": true,
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "id": 1872,
         "myPlatforms": []
       }
     ],
@@ -5301,7 +5463,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:50:49.507",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:47:25.683",
+        "metacritic_matched": "2020-05-02 15:05:30.034",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 75,
@@ -5328,14 +5490,6 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:53.504",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1864,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:27:53.786",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -5345,17 +5499,29 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:27:54.043",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 11,
         "platform_name": "PS4",
         "id": 1866,
         "myPlatforms": []
       },
       {
+        "date_added": "2020-04-30 21:27:53.504",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:20:44.394",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 75,
+        "id": 1864,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:27:54.295",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:20:47.991",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 72,
         "id": 1867,
         "myPlatforms": []
       }
@@ -5398,10 +5564,10 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:47:37.211",
         "metacritic_page": true,
-        "metacritic_matched": "2018-10-08 03:25:37.405",
+        "metacritic_matched": "2020-05-02 14:57:48.987",
         "game_platform_id": 10,
         "platform_name": "PC",
-        "metacritic": 89,
+        "metacritic": 88,
         "id": 296,
         "myPlatforms": [
           {
@@ -5435,9 +5601,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:27:52.395",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:20:42.957",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 92,
         "id": 1862,
         "myPlatforms": []
       }
@@ -5496,7 +5664,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:44:24.975",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-08 07:43:10.258",
+        "metacritic_matched": "2020-05-02 14:50:43.71",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 66,
@@ -5516,33 +5684,41 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:27:50.543",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:38:50.096",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 66,
         "id": 1858,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:27:50.806",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:20:35.094",
         "game_platform_id": 6,
         "platform_name": "PS3",
+        "metacritic": 70,
         "id": 1859,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:27:51.103",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:20:36.801",
         "game_platform_id": 7,
         "platform_name": "Xbox 360",
+        "metacritic": 67,
         "id": 1860,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:27:51.396",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:20:40.491",
         "game_platform_id": 5,
         "platform_name": "Wii U",
+        "metacritic": 58,
         "id": 1861,
         "myPlatforms": []
       }
@@ -5589,7 +5765,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:51:40.307",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:43:04.823",
+        "metacritic_matched": "2020-05-02 15:07:44.636",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 76,
@@ -5608,19 +5784,13 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:27:48.889",
-        "metacritic_page": false,
-        "game_platform_id": 8,
-        "platform_name": "Wii",
-        "id": 1854,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:27:49.164",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1855,
+        "date_added": "2020-04-30 21:27:49.715",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:38:47.828",
+        "game_platform_id": 2,
+        "platform_name": "Xbox",
+        "metacritic": 77,
+        "id": 1857,
         "myPlatforms": []
       },
       {
@@ -5632,11 +5802,23 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:49.715",
-        "metacritic_page": false,
-        "game_platform_id": 2,
-        "platform_name": "Xbox",
-        "id": 1857,
+        "date_added": "2020-04-30 21:27:48.889",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:20:17.463",
+        "game_platform_id": 8,
+        "platform_name": "Wii",
+        "metacritic": 71,
+        "id": 1854,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:27:49.164",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:20:20.703",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 76,
+        "id": 1855,
         "myPlatforms": []
       }
     ],
@@ -5769,6 +5951,32 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:27:45.063",
+        "metacritic_page": true,
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "id": 1845,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:27:45.461",
+        "metacritic_page": false,
+        "game_platform_id": 16,
+        "platform_name": "Mac",
+        "id": 1846,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:27:45.763",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:38:39.863",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 45,
+        "id": 1847,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:47:36.232",
         "metacritic_page": true,
         "game_platform_id": 1,
@@ -5788,34 +5996,12 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:27:45.063",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1845,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:27:45.461",
-        "metacritic_page": false,
-        "game_platform_id": 16,
-        "platform_name": "Mac",
-        "id": 1846,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:27:45.763",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1847,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:27:46.026",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:20:10.386",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 35,
         "id": 1848,
         "myPlatforms": []
       }
@@ -5862,7 +6048,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:52:27.803",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:43:17.982",
+        "metacritic_matched": "2020-05-02 15:09:34.776",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 87,
@@ -5890,14 +6076,6 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:43.672",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1842,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:27:43.948",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -5906,10 +6084,22 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
+        "date_added": "2020-04-30 21:27:43.672",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:19:59.142",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 87,
+        "id": 1842,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:27:44.21",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:20:00.472",
         "game_platform_id": 3,
         "platform_name": "Switch",
+        "metacritic": 90,
         "id": 1844,
         "myPlatforms": []
       }
@@ -5956,7 +6146,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:46:22.661",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:43:20.098",
+        "metacritic_matched": "2020-05-02 14:55:05.535",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 75,
@@ -5976,9 +6166,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:27:41.96",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:33:08.195",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 75,
         "id": 1839,
         "myPlatforms": []
       },
@@ -6038,9 +6230,19 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:27:40.308",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:19:54.166",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 83,
+        "id": 1836,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-29 00:02:09.702918",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-07 07:01:33.014",
+        "metacritic_matched": "2020-05-02 15:24:01.191",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 83,
@@ -6061,7 +6263,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-29 00:02:09.710482",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-04 20:55:50.252",
+        "metacritic_matched": "2020-05-02 15:24:03.527",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 84,
@@ -6080,18 +6282,12 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:27:40.308",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1836,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:27:40.725",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:19:55.818",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 85,
         "id": 1837,
         "myPlatforms": []
       }
@@ -6137,9 +6333,25 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:27:38.429",
+        "metacritic_page": false,
+        "game_platform_id": 15,
+        "platform_name": "Linux",
+        "id": 1831,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:27:38.954",
+        "metacritic_page": false,
+        "game_platform_id": 16,
+        "platform_name": "Mac",
+        "id": 1833,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:53:53.828",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:42:53.666",
+        "metacritic_matched": "2020-05-02 15:12:57.417",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 61,
@@ -6158,42 +6370,32 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:27:38.429",
-        "metacritic_page": false,
-        "game_platform_id": 15,
-        "platform_name": "Linux",
-        "id": 1831,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:27:38.684",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:19:45.368",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 61,
         "id": 1832,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:38.954",
-        "metacritic_page": false,
-        "game_platform_id": 16,
-        "platform_name": "Mac",
-        "id": 1833,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:27:39.214",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:19:49.3",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 60,
         "id": 1834,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:27:39.472",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:19:51.826",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 58,
         "id": 1835,
         "myPlatforms": []
       }
@@ -6239,7 +6441,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:45:27.816",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-07 07:01:29.999",
+        "metacritic_matched": "2020-05-02 14:53:07.924",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 73,
@@ -6259,9 +6461,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:27:37.503",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:19:42.586",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 73,
         "id": 1830,
         "myPlatforms": []
       }
@@ -6308,7 +6512,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:52:58.308",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:43:00.928",
+        "metacritic_matched": "2020-05-02 15:10:43.335",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 73,
@@ -6328,25 +6532,31 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:27:36.045",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:19:35.587",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 73,
         "id": 1827,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:27:36.297",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:19:37.373",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 69,
         "id": 1828,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:27:36.557",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:19:39.245",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 67,
         "id": 1829,
         "myPlatforms": []
       }
@@ -6391,7 +6601,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:50:10.85",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:44:25.123",
+        "metacritic_matched": "2020-05-02 15:04:00.452",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 81,
@@ -6408,14 +6618,6 @@ export const MockGames = [
           "preferred": true,
           "person_id": 1
         }]
-      },
-      {
-        "date_added": "2020-04-30 21:27:34.404",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1823,
-        "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:27:34.672",
@@ -6435,10 +6637,20 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:27:35.222",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 3,
         "platform_name": "Switch",
         "id": 1826,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:27:34.404",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:19:31.217",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 81,
+        "id": 1823,
         "myPlatforms": []
       }
     ],
@@ -6484,7 +6696,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:48:31.093",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:42:46.189",
+        "metacritic_matched": "2020-05-02 14:59:46.877",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 76,
@@ -6511,19 +6723,21 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:33.304",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1821,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:27:33.616",
         "metacritic_page": false,
         "game_platform_id": 16,
         "platform_name": "Mac",
         "id": 1822,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:27:33.304",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:19:28.17",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 76,
+        "id": 1821,
         "myPlatforms": []
       }
     ],
@@ -6563,25 +6777,6 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
-        "date_added": "2020-04-28 23:56:24.351",
-        "metacritic_page": true,
-        "game_platform_id": 1,
-        "platform_name": "Steam",
-        "id": 867,
-        "myPlatforms": [{
-          "date_added": "2020-04-28 23:56:24.84",
-          "tier": 2,
-          "game_platform_id": 1,
-          "available_game_platform_id": 867,
-          "minutes_played": 0,
-          "platform_name": "Steam",
-          "id": 819,
-          "collection_add": "2018-11-08 17:10:36.935",
-          "preferred": true,
-          "person_id": 1
-        }]
-      },
-      {
         "date_added": "2020-04-30 21:27:31.427",
         "metacritic_page": false,
         "game_platform_id": 15,
@@ -6606,10 +6801,29 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
+        "date_added": "2020-04-28 23:56:24.351",
+        "metacritic_page": true,
+        "game_platform_id": 1,
+        "platform_name": "Steam",
+        "id": 867,
+        "myPlatforms": [{
+          "date_added": "2020-04-28 23:56:24.84",
+          "tier": 2,
+          "game_platform_id": 1,
+          "available_game_platform_id": 867,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "id": 819,
+          "collection_add": "2018-11-08 17:10:36.935",
+          "preferred": true,
+          "person_id": 1
+        }]
+      },
+      {
         "date_added": "2020-04-30 21:27:32.24",
         "metacritic_page": false,
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
         "id": 1819,
         "myPlatforms": []
       }
@@ -6655,7 +6869,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:48:41.55",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:44:07.755",
+        "metacritic_matched": "2020-05-02 15:00:15.561",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 76,
@@ -6672,14 +6886,6 @@ export const MockGames = [
           "preferred": true,
           "person_id": 1
         }]
-      },
-      {
-        "date_added": "2020-04-30 21:27:28.952",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1809,
-        "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:27:29.205",
@@ -6707,26 +6913,38 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:27:30.013",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 11,
         "platform_name": "PS4",
         "id": 1813,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:30.269",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1814,
+        "date_added": "2020-04-30 21:27:28.952",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:19:12.339",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 76,
+        "id": 1809,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:27:30.516",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:19:21.511",
         "game_platform_id": 3,
         "platform_name": "Switch",
+        "metacritic": 73,
         "id": 1815,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:27:30.269",
+        "metacritic_page": true,
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "id": 1814,
         "myPlatforms": []
       }
     ],
@@ -6772,7 +6990,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:44:24.032",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:44:30.868",
+        "metacritic_matched": "2020-05-02 14:50:41.199",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 69,
@@ -6799,14 +7017,6 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:27.412",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1806,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:27:27.691",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -6815,10 +7025,22 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
+        "date_added": "2020-04-30 21:27:27.412",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:19:07.626",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 69,
+        "id": 1806,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:27:27.952",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:19:09.561",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 72,
         "id": 1808,
         "myPlatforms": []
       }
@@ -6890,7 +7112,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:27:25.178",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 1800,
@@ -6906,26 +7128,32 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:27:25.712",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:18:59.546",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 80,
         "id": 1802,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:25.977",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1803,
+        "date_added": "2020-04-30 21:27:26.233",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:19:05.694",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 78,
+        "id": 1804,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:26.233",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1804,
+        "date_added": "2020-04-30 21:27:25.977",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:19:03.284",
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "metacritic": 74,
+        "id": 1803,
         "myPlatforms": []
       }
     ],
@@ -6973,7 +7201,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:47:15.402",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:43:42.186",
+        "metacritic_matched": "2020-05-02 14:57:05.424",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 87,
@@ -6994,14 +7222,6 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:27:23.048",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1794,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:27:23.297",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -7010,27 +7230,41 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:23.555",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1796,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:27:23.835",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1797,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:27:24.091",
         "metacritic_page": false,
         "game_platform_id": 30,
         "platform_name": "Oculus VR",
         "id": 1798,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:27:23.048",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:18:50.585",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 87,
+        "id": 1794,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:27:23.555",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:18:52.889",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 80,
+        "id": 1796,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:27:23.835",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:18:54.583",
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "metacritic": 81,
+        "id": 1797,
         "myPlatforms": []
       }
     ],
@@ -7072,9 +7306,25 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:27:21.382",
+        "metacritic_page": true,
+        "game_platform_id": 6,
+        "platform_name": "PS3",
+        "id": 1790,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:27:21.671",
+        "metacritic_page": true,
+        "game_platform_id": 7,
+        "platform_name": "Xbox 360",
+        "id": 1791,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:55:01.251",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-08 07:43:17.42",
+        "metacritic_matched": "2020-05-02 15:15:50.608",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 91,
@@ -7095,41 +7345,31 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:27:21.132",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:18:40.281",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 91,
         "id": 1789,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:21.382",
-        "metacritic_page": false,
-        "game_platform_id": 6,
-        "platform_name": "PS3",
-        "id": 1790,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:27:21.671",
-        "metacritic_page": false,
-        "game_platform_id": 7,
-        "platform_name": "Xbox 360",
-        "id": 1791,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:27:21.92",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:18:46.893",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 93,
         "id": 1792,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:27:22.197",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:18:49.435",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 95,
         "id": 1793,
         "myPlatforms": []
       }
@@ -7178,7 +7418,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:48:52.595",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:45:18.54",
+        "metacritic_matched": "2020-05-02 15:00:43.084",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 72,
@@ -7198,34 +7438,42 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:27:19.391",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:18:31.949",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 72,
         "id": 1785,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:27:19.691",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:18:34.628",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 62,
         "id": 1786,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:19.94",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1787,
+        "date_added": "2020-04-30 21:27:20.197",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:18:38.491",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 70,
+        "id": 1788,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:20.197",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1788,
+        "date_added": "2020-04-30 21:27:19.94",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:18:36.8",
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "metacritic": 62,
+        "id": 1787,
         "myPlatforms": []
       }
     ],
@@ -7265,9 +7513,17 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:27:17.933",
+        "metacritic_page": true,
+        "game_platform_id": 7,
+        "platform_name": "Xbox 360",
+        "id": 1782,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:57:15.599",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-07 07:02:00.49",
+        "metacritic_matched": "2020-05-02 15:21:40.035",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 80,
@@ -7287,41 +7543,41 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:27:17.413",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:18:17.907",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 80,
         "id": 1780,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:27:17.678",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:18:21.601",
         "game_platform_id": 6,
         "platform_name": "PS3",
+        "metacritic": 66,
         "id": 1781,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:17.933",
-        "metacritic_page": false,
-        "game_platform_id": 7,
-        "platform_name": "Xbox 360",
-        "id": 1782,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:27:18.187",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:18:26.683",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 75,
         "id": 1783,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:27:18.44",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:18:29.782",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 76,
         "id": 1784,
         "myPlatforms": []
       }
@@ -7369,7 +7625,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:57:08.271",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:43:55.836",
+        "metacritic_matched": "2020-05-02 15:21:24.291",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 76,
@@ -7389,34 +7645,42 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:27:15.695",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:18:07.658",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 76,
         "id": 1776,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:27:15.972",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:18:09.695",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 76,
         "id": 1777,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:16.223",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1778,
+        "date_added": "2020-04-30 21:27:16.476",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:18:14.197",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 69,
+        "id": 1779,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:16.476",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1779,
+        "date_added": "2020-04-30 21:27:16.223",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:18:11.601",
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "metacritic": 78,
+        "id": 1778,
         "myPlatforms": []
       }
     ],
@@ -7462,7 +7726,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:52:22.193",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:45:50.91",
+        "metacritic_matched": "2020-05-02 15:09:20.631",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 85,
@@ -7481,14 +7745,6 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:27:13.609",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1770,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:27:13.873",
         "metacritic_page": false,
         "game_platform_id": 21,
@@ -7505,27 +7761,43 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
+        "date_added": "2020-04-30 21:27:13.609",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:17:58.28",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 85,
+        "id": 1770,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:27:14.39",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:18:00.475",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 77,
         "id": 1773,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:14.635",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1774,
+        "date_added": "2020-04-30 21:27:14.915",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:18:04.97",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 83,
+        "id": 1775,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:14.915",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1775,
+        "date_added": "2020-04-30 21:27:14.635",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:18:03.121",
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "metacritic": 80,
+        "id": 1774,
         "myPlatforms": []
       }
     ],
@@ -7568,7 +7840,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:57:14.681",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:45:25.287",
+        "metacritic_matched": "2020-05-02 15:21:38.327",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 84,
@@ -7588,25 +7860,31 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:27:12.072",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:17:52.286",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 84,
         "id": 1767,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:27:12.333",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:17:54.935",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 82,
         "id": 1768,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:27:12.607",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:17:56.433",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 84,
         "id": 1769,
         "myPlatforms": []
       }
@@ -7649,6 +7927,30 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:27:09.716",
+        "metacritic_page": false,
+        "game_platform_id": 15,
+        "platform_name": "Linux",
+        "id": 1761,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:27:09.978",
+        "metacritic_page": true,
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "id": 1762,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:27:10.234",
+        "metacritic_page": false,
+        "game_platform_id": 16,
+        "platform_name": "Mac",
+        "id": 1763,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:55:07.67",
         "metacritic_page": true,
         "game_platform_id": 1,
@@ -7668,51 +7970,33 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:27:09.716",
-        "metacritic_page": false,
-        "game_platform_id": 15,
-        "platform_name": "Linux",
-        "id": 1761,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:27:09.978",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1762,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:27:10.234",
-        "metacritic_page": false,
-        "game_platform_id": 16,
-        "platform_name": "Mac",
-        "id": 1763,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:27:10.501",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:17:45.457",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 76,
         "id": 1764,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:10.775",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1765,
+        "date_added": "2020-04-30 21:27:11.029",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:17:50.035",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 85,
+        "id": 1766,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:11.029",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1766,
+        "date_added": "2020-04-30 21:27:10.775",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:17:47.161",
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "metacritic": 80,
+        "id": 1765,
         "myPlatforms": []
       }
     ],
@@ -7758,7 +8042,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:52:09.182",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:44:40.243",
+        "metacritic_matched": "2020-05-02 15:08:48.38",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 75,
@@ -7779,35 +8063,41 @@ export const MockGames = [
         }]
       },
       {
+        "date_added": "2020-04-30 21:27:08.911",
+        "metacritic_page": true,
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "id": 1760,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:27:08.131",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:17:35.007",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 75,
         "id": 1757,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:27:08.391",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:17:36.43",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 82,
         "id": 1758,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:27:08.653",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:17:38.108",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 75,
         "id": 1759,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:27:08.911",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1760,
         "myPlatforms": []
       }
     ],
@@ -7853,40 +8143,11 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
-        "date_added": "2020-04-28 23:57:21.572",
-        "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:45:32.314",
-        "game_platform_id": 1,
-        "platform_name": "Steam",
-        "metacritic": 79,
-        "id": 931,
-        "myPlatforms": [{
-          "date_added": "2020-04-28 23:57:22.059",
-          "tier": 2,
-          "game_platform_id": 1,
-          "available_game_platform_id": 931,
-          "minutes_played": 0,
-          "platform_name": "Steam",
-          "id": 878,
-          "collection_add": "2019-02-04 17:21:22.084",
-          "preferred": true,
-          "person_id": 1
-        }]
-      },
-      {
         "date_added": "2020-04-30 21:27:05.64",
         "metacritic_page": false,
         "game_platform_id": 15,
         "platform_name": "Linux",
         "id": 1750,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:27:05.899",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1751,
         "myPlatforms": []
       },
       {
@@ -7906,27 +8167,64 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
+        "date_added": "2020-04-28 23:57:21.572",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:21:54.082",
+        "game_platform_id": 1,
+        "platform_name": "Steam",
+        "metacritic": 79,
+        "id": 931,
+        "myPlatforms": [{
+          "date_added": "2020-04-28 23:57:22.059",
+          "tier": 2,
+          "game_platform_id": 1,
+          "available_game_platform_id": 931,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "id": 878,
+          "collection_add": "2019-02-04 17:21:22.084",
+          "preferred": true,
+          "person_id": 1
+        }]
+      },
+      {
+        "date_added": "2020-04-30 21:27:05.899",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:17:24.597",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 79,
+        "id": 1751,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:27:06.666",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:17:27.72",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 73,
         "id": 1754,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:06.922",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1755,
+        "date_added": "2020-04-30 21:27:07.185",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:17:31.413",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 76,
+        "id": 1756,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:07.185",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1756,
+        "date_added": "2020-04-30 21:27:06.922",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:17:30.653",
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "metacritic": 79,
+        "id": 1755,
         "myPlatforms": []
       }
     ],
@@ -7972,7 +8270,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:44:05.041",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:45:53.404",
+        "metacritic_matched": "2020-05-02 14:49:57.264",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 75,
@@ -7999,14 +8297,6 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:04.292",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1747,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:27:04.572",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -8015,10 +8305,22 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
+        "date_added": "2020-04-30 21:27:04.292",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:17:19.159",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 75,
+        "id": 1747,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:27:04.832",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:17:22.473",
         "game_platform_id": 3,
         "platform_name": "Switch",
+        "metacritic": 81,
         "id": 1749,
         "myPlatforms": []
       }
@@ -8065,7 +8367,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:57:38.585",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:43:53.99",
+        "metacritic_matched": "2020-05-02 15:22:31.881",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 68,
@@ -8085,9 +8387,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:27:02.837",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:17:13.993",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 68,
         "id": 1745,
         "myPlatforms": []
       }
@@ -8133,7 +8437,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:46:50.223",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:44:37.799",
+        "metacritic_matched": "2020-05-02 14:56:04.009",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 78,
@@ -8160,14 +8464,6 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:00.673",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1739,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:27:00.939",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -8184,27 +8480,43 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
+        "date_added": "2020-04-30 21:27:00.673",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:17:03.611",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 78,
+        "id": 1739,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:27:01.463",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:17:06.213",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 77,
         "id": 1742,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:01.735",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1743,
+        "date_added": "2020-04-30 21:27:02.007",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:17:11.514",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 75,
+        "id": 1744,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:27:02.007",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1744,
+        "date_added": "2020-04-30 21:27:01.735",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:17:08.381",
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "metacritic": 86,
+        "id": 1743,
         "myPlatforms": []
       }
     ],
@@ -8251,7 +8563,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:50:04.454",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:43:57.943",
+        "metacritic_matched": "2020-05-02 15:03:47.24",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 72,
@@ -8270,19 +8582,21 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:26:59.155",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1736,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:26:59.413",
         "metacritic_page": false,
         "game_platform_id": 13,
         "platform_name": "iOS",
         "id": 1737,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:59.155",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:17:00.469",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 72,
+        "id": 1736,
         "myPlatforms": []
       }
     ],
@@ -8328,7 +8642,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:46:11.927",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:43:24.488",
+        "metacritic_matched": "2020-05-02 14:54:42.529",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 90,
@@ -8357,14 +8671,6 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:26:57.742",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1733,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:26:58.0",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -8373,10 +8679,22 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
+        "date_added": "2020-04-30 21:26:57.742",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:16:55.768",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 90,
+        "id": 1733,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:26:58.265",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:16:58.287",
         "game_platform_id": 3,
         "platform_name": "Switch",
+        "metacritic": 89,
         "id": 1735,
         "myPlatforms": []
       }
@@ -8423,9 +8741,25 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:26:55.315",
+        "metacritic_page": false,
+        "game_platform_id": 15,
+        "platform_name": "Linux",
+        "id": 1726,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:55.829",
+        "metacritic_page": false,
+        "game_platform_id": 16,
+        "platform_name": "Mac",
+        "id": 1728,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:55:59.059",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:43:38.272",
+        "metacritic_matched": "2020-05-02 15:18:16.336",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 70,
@@ -8444,51 +8778,43 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:26:55.315",
-        "metacritic_page": false,
-        "game_platform_id": 15,
-        "platform_name": "Linux",
-        "id": 1726,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:26:55.582",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:16:46.152",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 70,
         "id": 1727,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:26:55.829",
-        "metacritic_page": false,
-        "game_platform_id": 16,
-        "platform_name": "Mac",
-        "id": 1728,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:26:56.112",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:16:49.109",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 73,
         "id": 1729,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:26:56.371",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1730,
+        "date_added": "2020-04-30 21:26:56.653",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:16:52.622",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 74,
+        "id": 1731,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:26:56.653",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1731,
+        "date_added": "2020-04-30 21:26:56.371",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:16:51.139",
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "metacritic": 78,
+        "id": 1730,
         "myPlatforms": []
       }
     ],
@@ -8530,6 +8856,46 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:26:53.202",
+        "metacritic_page": false,
+        "game_platform_id": 15,
+        "platform_name": "Linux",
+        "id": 1720,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:53.463",
+        "metacritic_page": true,
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "id": 1721,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:53.713",
+        "metacritic_page": false,
+        "game_platform_id": 16,
+        "platform_name": "Mac",
+        "id": 1722,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:53.988",
+        "metacritic_page": true,
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "id": 1723,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:54.506",
+        "metacritic_page": true,
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "id": 1725,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:53:18.537",
         "metacritic_page": true,
         "game_platform_id": 1,
@@ -8549,51 +8915,11 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:26:53.202",
-        "metacritic_page": false,
-        "game_platform_id": 15,
-        "platform_name": "Linux",
-        "id": 1720,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:53.463",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1721,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:53.713",
-        "metacritic_page": false,
-        "game_platform_id": 16,
-        "platform_name": "Mac",
-        "id": 1722,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:53.988",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1723,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:26:54.239",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
         "id": 1724,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:54.506",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1725,
         "myPlatforms": []
       }
     ],
@@ -8634,6 +8960,14 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:26:52.342",
+        "metacritic_page": true,
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "id": 1719,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:52:42.69",
         "metacritic_page": true,
         "game_platform_id": 1,
@@ -8651,14 +8985,6 @@ export const MockGames = [
           "preferred": true,
           "person_id": 1
         }]
-      },
-      {
-        "date_added": "2020-04-30 21:26:52.342",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1719,
-        "myPlatforms": []
       }
     ],
     "giantbomb_id": 68932,
@@ -8702,7 +9028,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:49:26.774",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-07 07:01:57.106",
+        "metacritic_matched": "2020-05-02 15:02:09.682",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 74,
@@ -8729,14 +9055,6 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:26:50.669",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1715,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:26:50.939",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -8745,19 +9063,31 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:26:51.229",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1717,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:26:51.487",
         "metacritic_page": false,
         "game_platform_id": 3,
         "platform_name": "Switch",
         "id": 1718,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:50.669",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:16:27.147",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 74,
+        "id": 1715,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:51.229",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:16:29.251",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 70,
+        "id": 1717,
         "myPlatforms": []
       }
     ],
@@ -8803,7 +9133,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:53:04.752",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:44:28.305",
+        "metacritic_matched": "2020-05-02 15:10:54.006",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 86,
@@ -8822,14 +9152,6 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:26:48.8",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1710,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:26:49.052",
         "metacritic_page": false,
         "game_platform_id": 6,
@@ -8838,18 +9160,32 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
+        "date_added": "2020-04-30 21:26:48.8",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:16:21.614",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 86,
+        "id": 1710,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:26:49.315",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:16:23.494",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 85,
         "id": 1712,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:26:49.58",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:16:24.262",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 90,
         "id": 1713,
         "myPlatforms": []
       }
@@ -8897,7 +9233,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:56:53.137",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:44:33.838",
+        "metacritic_matched": "2020-05-02 15:20:39.226",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 73,
@@ -8917,9 +9253,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:26:47.805",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:16:19.782",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 73,
         "id": 1709,
         "myPlatforms": []
       }
@@ -8963,9 +9301,55 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:26:45.794",
+        "metacritic_page": false,
+        "game_platform_id": 16,
+        "platform_name": "Mac",
+        "id": 1704,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:46.052",
+        "metacritic_page": false,
+        "game_platform_id": 13,
+        "platform_name": "iOS",
+        "id": 1705,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:45.529",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:16:10.863",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 76,
+        "id": 1703,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:46.307",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:16:13.474",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 78,
+        "id": 1706,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:46.86",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:16:17.145",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 82,
+        "id": 1708,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:46:04.163",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:44:13.765",
+        "metacritic_matched": "2020-05-02 14:54:25.96",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 76,
@@ -8984,51 +9368,13 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:26:45.529",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1703,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:45.794",
-        "metacritic_page": false,
-        "game_platform_id": 16,
-        "platform_name": "Mac",
-        "id": 1704,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:46.052",
-        "metacritic_page": false,
-        "game_platform_id": 13,
-        "platform_name": "iOS",
-        "id": 1705,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:46.307",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1706,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:26:46.604",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:16:15.334",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 83,
         "id": 1707,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:46.86",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1708,
         "myPlatforms": []
       }
     ],
@@ -9073,40 +9419,11 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
-        "date_added": "2020-04-28 23:43:55.342",
-        "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:44:59.466",
-        "game_platform_id": 1,
-        "platform_name": "Steam",
-        "metacritic": 84,
-        "id": 66,
-        "myPlatforms": [{
-          "date_added": "2020-04-28 23:43:55.905",
-          "tier": 2,
-          "game_platform_id": 1,
-          "available_game_platform_id": 66,
-          "minutes_played": 0,
-          "platform_name": "Steam",
-          "id": 59,
-          "collection_add": "2019-02-05 17:34:54.444",
-          "preferred": true,
-          "person_id": 1
-        }]
-      },
-      {
         "date_added": "2020-04-30 21:26:42.768",
         "metacritic_page": false,
         "game_platform_id": 15,
         "platform_name": "Linux",
         "id": 1695,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:43.031",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1696,
         "myPlatforms": []
       },
       {
@@ -9142,19 +9459,54 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:26:44.338",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1701,
+        "date_added": "2020-04-30 21:26:43.031",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:16:02.378",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 84,
+        "id": 1696,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:26:44.61",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:16:08.811",
         "game_platform_id": 3,
         "platform_name": "Switch",
+        "metacritic": 82,
         "id": 1702,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-28 23:43:55.342",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 14:49:33.79",
+        "game_platform_id": 1,
+        "platform_name": "Steam",
+        "metacritic": 84,
+        "id": 66,
+        "myPlatforms": [{
+          "date_added": "2020-04-28 23:43:55.905",
+          "tier": 2,
+          "game_platform_id": 1,
+          "available_game_platform_id": 66,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "id": 59,
+          "collection_add": "2019-02-05 17:34:54.444",
+          "preferred": true,
+          "person_id": 1
+        }]
+      },
+      {
+        "date_added": "2020-04-30 21:26:44.338",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:16:06.833",
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "metacritic": 84,
+        "id": 1701,
         "myPlatforms": []
       }
     ],
@@ -9198,9 +9550,25 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:26:41.066",
+        "metacritic_page": false,
+        "game_platform_id": 16,
+        "platform_name": "Mac",
+        "id": 1691,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:41.328",
+        "metacritic_page": true,
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "id": 1692,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:54:24.952",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:45:08.511",
+        "metacritic_matched": "2020-05-02 15:14:15.941",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 89,
@@ -9221,42 +9589,30 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:26:40.807",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:15:51.025",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 89,
         "id": 1690,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:26:41.066",
-        "metacritic_page": false,
-        "game_platform_id": 16,
-        "platform_name": "Mac",
-        "id": 1691,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:41.328",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1692,
+        "date_added": "2020-04-30 21:26:41.875",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:15:59.427",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 86,
+        "id": 1694,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:26:41.604",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
         "id": 1693,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:41.875",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1694,
         "myPlatforms": []
       }
     ],
@@ -9299,7 +9655,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "date_added": "2020-04-28 23:44:18.254",
       "metacritic_page": true,
-      "metacritic_matched": "2019-04-05 05:45:54.018",
+      "metacritic_matched": "2020-05-02 14:50:25.204",
       "game_platform_id": 11,
       "platform_name": "PS4",
       "metacritic": 87,
@@ -9357,9 +9713,45 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:26:38.479",
+        "metacritic_page": true,
+        "game_platform_id": 6,
+        "platform_name": "PS3",
+        "id": 1686,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:38.751",
+        "metacritic_page": true,
+        "game_platform_id": 7,
+        "platform_name": "Xbox 360",
+        "id": 1687,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:38.233",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:15:36.976",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 71,
+        "id": 1685,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:39.006",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:15:45.575",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 67,
+        "id": 1688,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:45:44.317",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-09 08:27:01.404",
+        "metacritic_matched": "2020-05-02 14:53:41.655",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 71,
@@ -9378,42 +9770,12 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:26:38.233",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1685,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:38.479",
-        "metacritic_page": false,
-        "game_platform_id": 6,
-        "platform_name": "PS3",
-        "id": 1686,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:38.751",
-        "metacritic_page": false,
-        "game_platform_id": 7,
-        "platform_name": "Xbox 360",
-        "id": 1687,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:39.006",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1688,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:26:39.261",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:15:49.274",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 63,
         "id": 1689,
         "myPlatforms": []
       }
@@ -9473,7 +9835,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:26:37.425",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 1684,
@@ -9522,7 +9884,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:45:47.205",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:42:02.822",
+        "metacritic_matched": "2020-05-02 14:53:47.64",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 83,
@@ -9549,14 +9911,6 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:26:35.495",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1679,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:26:35.766",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -9565,27 +9919,43 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
+        "date_added": "2020-04-30 21:26:35.495",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:15:25.942",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 83,
+        "id": 1679,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:26:36.047",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:15:29.249",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 79,
         "id": 1681,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:26:36.32",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1682,
+        "date_added": "2020-04-30 21:26:36.591",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:15:33.261",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 79,
+        "id": 1683,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:26:36.591",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1683,
+        "date_added": "2020-04-30 21:26:36.32",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:15:30.984",
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "metacritic": 78,
+        "id": 1682,
         "myPlatforms": []
       }
     ],
@@ -9698,7 +10068,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:43:30.568",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:42:07.359",
+        "metacritic_matched": "2020-05-02 14:48:39.77",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 85,
@@ -9725,14 +10095,6 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:26:32.207",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1672,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:26:32.477",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -9741,19 +10103,33 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:26:32.771",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1674,
+        "date_added": "2020-04-30 21:26:32.207",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:15:16.02",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 85,
+        "id": 1672,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:26:33.029",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:15:22.075",
         "game_platform_id": 3,
         "platform_name": "Switch",
+        "metacritic": 76,
         "id": 1675,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:32.771",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:15:19.199",
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "metacritic": 75,
+        "id": 1674,
         "myPlatforms": []
       }
     ],
@@ -9786,25 +10162,6 @@ export const MockGames = [
     "igdb_popularity": 1,
     "availablePlatforms": [
       {
-        "date_added": "2020-04-28 23:54:18.647",
-        "metacritic_page": false,
-        "game_platform_id": 1,
-        "platform_name": "Steam",
-        "id": 727,
-        "myPlatforms": [{
-          "date_added": "2020-04-28 23:54:19.132",
-          "tier": 2,
-          "game_platform_id": 1,
-          "available_game_platform_id": 727,
-          "minutes_played": 0,
-          "platform_name": "Steam",
-          "id": 692,
-          "collection_add": "2019-03-18 14:56:50.481",
-          "preferred": true,
-          "person_id": 1
-        }]
-      },
-      {
         "date_added": "2020-04-30 21:26:29.989",
         "metacritic_page": false,
         "game_platform_id": 10,
@@ -9829,19 +10186,38 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:26:30.776",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1669,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:26:31.051",
         "metacritic_page": false,
         "game_platform_id": 3,
         "platform_name": "Switch",
         "id": 1670,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-28 23:54:18.647",
+        "metacritic_page": false,
+        "game_platform_id": 1,
+        "platform_name": "Steam",
+        "id": 727,
+        "myPlatforms": [{
+          "date_added": "2020-04-28 23:54:19.132",
+          "tier": 2,
+          "game_platform_id": 1,
+          "available_game_platform_id": 727,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "id": 692,
+          "collection_add": "2019-03-18 14:56:50.481",
+          "preferred": true,
+          "person_id": 1
+        }]
+      },
+      {
+        "date_added": "2020-04-30 21:26:30.776",
+        "metacritic_page": false,
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "id": 1669,
         "myPlatforms": []
       }
     ],
@@ -9906,7 +10282,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:26:28.606",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 1663,
@@ -9914,17 +10290,21 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:26:28.861",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:15:06.14",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 67,
         "id": 1664,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:26:29.119",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:15:08.514",
         "game_platform_id": 3,
         "platform_name": "Switch",
+        "metacritic": 72,
         "id": 1665,
         "myPlatforms": []
       }
@@ -9967,6 +10347,22 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:26:27.036",
+        "metacritic_page": true,
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "id": 1659,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:27.316",
+        "metacritic_page": false,
+        "game_platform_id": 22,
+        "platform_name": "PlayStation Network",
+        "id": 1660,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:56:18.802",
         "metacritic_page": true,
         "game_platform_id": 1,
@@ -9986,34 +10382,22 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:26:27.036",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1659,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:27.316",
-        "metacritic_page": false,
-        "game_platform_id": 22,
-        "platform_name": "PlayStation Network",
-        "id": 1660,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:26:27.562",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:14:57.903",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 77,
         "id": 1661,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:26:27.821",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:15:00.388",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 80,
         "id": 1662,
         "myPlatforms": []
       }
@@ -10058,9 +10442,55 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:26:25.161",
+        "metacritic_page": false,
+        "game_platform_id": 16,
+        "platform_name": "Mac",
+        "id": 1654,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:25.431",
+        "metacritic_page": false,
+        "game_platform_id": 22,
+        "platform_name": "PlayStation Network",
+        "id": 1655,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:24.889",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:14:48.923",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 79,
+        "id": 1653,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:25.698",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:14:51.733",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 59,
+        "id": 1656,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:26.236",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:14:54.044",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 73,
+        "id": 1658,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:52:36.137",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:45:38.126",
+        "metacritic_matched": "2020-05-02 15:09:55.426",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 79,
@@ -10079,51 +10509,13 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:26:24.889",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1653,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:25.161",
-        "metacritic_page": false,
-        "game_platform_id": 16,
-        "platform_name": "Mac",
-        "id": 1654,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:25.431",
-        "metacritic_page": false,
-        "game_platform_id": 22,
-        "platform_name": "PlayStation Network",
-        "id": 1655,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:25.698",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1656,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:26:25.973",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:14:53.201",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 72,
         "id": 1657,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:26.236",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1658,
         "myPlatforms": []
       }
     ],
@@ -10168,7 +10560,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:43:11.479",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:42:10.723",
+        "metacritic_matched": "2020-05-02 14:47:57.865",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 85,
@@ -10187,19 +10579,21 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:26:23.785",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1651,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:26:24.049",
         "metacritic_page": false,
         "game_platform_id": 16,
         "platform_name": "Mac",
         "id": 1652,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:23.785",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:14:47.179",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 85,
+        "id": 1651,
         "myPlatforms": []
       }
     ],
@@ -10258,7 +10652,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:26:22.699",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 1649,
@@ -10266,9 +10660,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:26:22.956",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:14:42.189",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 76,
         "id": 1650,
         "myPlatforms": []
       }
@@ -10321,6 +10717,14 @@ export const MockGames = [
         }]
       },
       {
+        "date_added": "2020-04-30 21:26:21.633",
+        "metacritic_page": false,
+        "game_platform_id": 16,
+        "platform_name": "Mac",
+        "id": 1648,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:26:21.098",
         "metacritic_page": false,
         "game_platform_id": 15,
@@ -10330,18 +10734,10 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:26:21.373",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 1647,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:21.633",
-        "metacritic_page": false,
-        "game_platform_id": 16,
-        "platform_name": "Mac",
-        "id": 1648,
         "myPlatforms": []
       }
     ],
@@ -10390,7 +10786,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:51:33.733",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:45:59.47",
+        "metacritic_matched": "2020-05-02 15:07:27.449",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 82,
@@ -10410,25 +10806,31 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:26:19.68",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:14:28.929",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 82,
         "id": 1643,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:26:19.94",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:14:30.895",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 81,
         "id": 1644,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:26:20.198",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:14:34.161",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 83,
         "id": 1645,
         "myPlatforms": []
       }
@@ -10475,7 +10877,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:50:02.494",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:42:16.677",
+        "metacritic_matched": "2020-05-02 15:03:43.815",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 71,
@@ -10502,14 +10904,6 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:26:18.004",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1639,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:26:18.255",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -10531,6 +10925,16 @@ export const MockGames = [
         "game_platform_id": 13,
         "platform_name": "iOS",
         "id": 1642,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:18.004",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:14:26.635",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 71,
+        "id": 1639,
         "myPlatforms": []
       }
     ],
@@ -10564,11 +10968,31 @@ export const MockGames = [
     "igdb_popularity": 5.457862054247628,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:26:16.572",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:14:22.9",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 56,
+        "id": 1636,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:16.843",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:14:24.485",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 60,
+        "id": 1637,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:52:49.182",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-05 05:42:27.47",
+        "metacritic_matched": "2020-05-02 15:10:25.434",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
         "metacritic": 68,
         "id": 629,
         "myPlatforms": [{
@@ -10577,29 +11001,13 @@ export const MockGames = [
           "game_platform_id": 4,
           "available_game_platform_id": 629,
           "minutes_played": 0,
-          "platform_name": "Xbox One",
+          "platform_name": "Xbox Two",
           "rating": 78,
           "id": 598,
           "collection_add": "2019-04-02 13:11:00.666129",
           "preferred": true,
           "person_id": 1
         }]
-      },
-      {
-        "date_added": "2020-04-30 21:26:16.572",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1636,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:16.843",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1637,
-        "myPlatforms": []
       }
     ],
     "howlong_id": 38277,
@@ -10635,11 +11043,21 @@ export const MockGames = [
     "igdb_popularity": 4.789148364160662,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:26:15.59",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:14:21.41",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 81,
+        "id": 1635,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:46:08.044",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-10 09:07:06.139",
+        "metacritic_matched": "2020-05-02 14:54:34.787",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
         "metacritic": 80,
         "id": 203,
         "myPlatforms": [{
@@ -10648,21 +11066,13 @@ export const MockGames = [
           "game_platform_id": 4,
           "available_game_platform_id": 203,
           "minutes_played": 0,
-          "platform_name": "Xbox One",
+          "platform_name": "Xbox Two",
           "rating": 77,
           "id": 192,
           "collection_add": "2019-04-02 13:12:46.187217",
           "preferred": true,
           "person_id": 1
         }]
-      },
-      {
-        "date_added": "2020-04-30 21:26:15.59",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1635,
-        "myPlatforms": []
       }
     ],
     "igdb_poster": "vk9uczy2gvbs0kh9qcee",
@@ -10697,9 +11107,17 @@ export const MockGames = [
     "igdb_popularity": 68.98239632727633,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:26:14.694",
+        "metacritic_page": false,
+        "game_platform_id": 29,
+        "platform_name": "Google Stadia",
+        "id": 1634,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:56:41.58",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-04 20:04:59.266",
+        "metacritic_matched": "2020-05-02 15:20:06.056",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 97,
@@ -10720,26 +11138,22 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:26:14.08",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:14:17.795",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 93,
         "id": 1632,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:26:14.437",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:14:18.868",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 97,
         "id": 1633,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:14.694",
-        "metacritic_page": false,
-        "game_platform_id": 29,
-        "platform_name": "Google Stadia",
-        "id": 1634,
         "myPlatforms": []
       }
     ],
@@ -10840,7 +11254,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:46:43.797",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-04 21:00:59.46",
+        "metacritic_matched": "2020-05-02 14:55:46.787",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 83,
@@ -10867,14 +11281,6 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:26:10.809",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1626,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:26:11.089",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -10891,19 +11297,31 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:26:11.704",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1629,
+        "date_added": "2020-04-30 21:26:10.809",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:14:11.015",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 87,
+        "id": 1626,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:26:11.963",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:14:15.193",
         "game_platform_id": 3,
         "platform_name": "Switch",
+        "metacritic": 87,
         "id": 1630,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:11.704",
+        "metacritic_page": true,
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "id": 1629,
         "myPlatforms": []
       }
     ],
@@ -10936,9 +11354,25 @@ export const MockGames = [
     "igdb_popularity": 71.21132735440014,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:26:08.84",
+        "metacritic_page": false,
+        "game_platform_id": 15,
+        "platform_name": "Linux",
+        "id": 1622,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:09.189",
+        "metacritic_page": false,
+        "game_platform_id": 16,
+        "platform_name": "Mac",
+        "id": 1623,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-29 00:04:18.682262",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-04 21:03:47.072",
+        "metacritic_matched": "2020-05-02 15:25:34.806",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 79,
@@ -10960,7 +11394,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-29 00:04:18.686894",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-21 15:19:23.337",
+        "metacritic_matched": "2020-05-02 15:25:37.214",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 84,
@@ -10979,26 +11413,12 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:26:08.84",
-        "metacritic_page": false,
-        "game_platform_id": 15,
-        "platform_name": "Linux",
-        "id": 1622,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:09.189",
-        "metacritic_page": false,
-        "game_platform_id": 16,
-        "platform_name": "Mac",
-        "id": 1623,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:26:09.557",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:14:07.853",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 82,
         "id": 1624,
         "myPlatforms": []
       }
@@ -11039,7 +11459,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:47:02.719",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-09 08:32:19.213",
+        "metacritic_matched": "2020-05-02 14:56:34.384",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 75,
@@ -11059,7 +11479,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:26:07.656",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 1620,
@@ -11067,9 +11487,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:26:08.007",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:14:03.29",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 77,
         "id": 1621,
         "myPlatforms": []
       }
@@ -11116,7 +11538,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:44:35.588",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-06 06:28:36.87",
+        "metacritic_matched": "2020-05-02 14:51:16.989",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 80,
@@ -11135,14 +11557,6 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:26:06.279",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1617,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:26:06.531",
         "metacritic_page": false,
         "game_platform_id": 6,
@@ -11151,10 +11565,20 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
+        "date_added": "2020-04-30 21:26:06.279",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:13:55.594",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 80,
+        "id": 1617,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:26:06.87",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
         "id": 1619,
         "myPlatforms": []
       }
@@ -11212,30 +11636,6 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:26:04.156",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1612,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:04.41",
-        "metacritic_page": false,
-        "game_platform_id": 6,
-        "platform_name": "PS3",
-        "id": 1613,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:04.676",
-        "metacritic_page": false,
-        "game_platform_id": 7,
-        "platform_name": "Xbox 360",
-        "id": 1614,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:26:04.948",
         "metacritic_page": false,
         "game_platform_id": 20,
@@ -11249,6 +11649,36 @@ export const MockGames = [
         "game_platform_id": 22,
         "platform_name": "PlayStation Network",
         "id": 1616,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:04.156",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:13:44.694",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 82,
+        "id": 1612,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:04.41",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:13:48.054",
+        "game_platform_id": 6,
+        "platform_name": "PS3",
+        "metacritic": 83,
+        "id": 1613,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:26:04.676",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:13:50.765",
+        "game_platform_id": 7,
+        "platform_name": "Xbox 360",
+        "metacritic": 84,
+        "id": 1614,
         "myPlatforms": []
       }
     ],
@@ -11286,33 +11716,6 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
-        "date_added": "2020-04-28 23:43:57.305",
-        "metacritic_page": true,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 68,
-        "myPlatforms": [{
-          "date_added": "2020-04-28 23:43:57.824",
-          "tier": 2,
-          "game_platform_id": 11,
-          "available_game_platform_id": 68,
-          "minutes_played": 0,
-          "platform_name": "PS4",
-          "id": 61,
-          "collection_add": "2019-04-04 21:01:41.277808",
-          "preferred": true,
-          "person_id": 1
-        }]
-      },
-      {
-        "date_added": "2020-04-30 21:26:02.105",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1607,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:26:02.382",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -11337,12 +11740,43 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
+        "date_added": "2020-04-30 21:26:02.105",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:13:37.545",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 82,
+        "id": 1607,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:26:03.247",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:13:41.096",
         "game_platform_id": 3,
         "platform_name": "Switch",
+        "metacritic": 72,
         "id": 1611,
         "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-28 23:43:57.305",
+        "metacritic_page": true,
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "id": 68,
+        "myPlatforms": [{
+          "date_added": "2020-04-28 23:43:57.824",
+          "tier": 2,
+          "game_platform_id": 11,
+          "available_game_platform_id": 68,
+          "minutes_played": 0,
+          "platform_name": "PS4",
+          "id": 61,
+          "collection_add": "2019-04-04 21:01:41.277808",
+          "preferred": true,
+          "person_id": 1
+        }]
       }
     ],
     "giantbomb_id": 50565,
@@ -11379,38 +11813,11 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
-        "date_added": "2020-04-28 23:56:40.655",
-        "metacritic_page": true,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 885,
-        "myPlatforms": [{
-          "date_added": "2020-04-28 23:56:41.17",
-          "tier": 2,
-          "game_platform_id": 11,
-          "available_game_platform_id": 885,
-          "minutes_played": 0,
-          "platform_name": "PS4",
-          "id": 836,
-          "collection_add": "2019-04-04 21:01:48.931158",
-          "preferred": true,
-          "person_id": 1
-        }]
-      },
-      {
         "date_added": "2020-04-30 21:26:00.016",
         "metacritic_page": false,
         "game_platform_id": 15,
         "platform_name": "Linux",
         "id": 1602,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:26:00.308",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1603,
         "myPlatforms": []
       },
       {
@@ -11430,10 +11837,41 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
+        "date_added": "2020-04-28 23:56:40.655",
+        "metacritic_page": true,
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "id": 885,
+        "myPlatforms": [{
+          "date_added": "2020-04-28 23:56:41.17",
+          "tier": 2,
+          "game_platform_id": 11,
+          "available_game_platform_id": 885,
+          "minutes_played": 0,
+          "platform_name": "PS4",
+          "id": 836,
+          "collection_add": "2019-04-04 21:01:48.931158",
+          "preferred": true,
+          "person_id": 1
+        }]
+      },
+      {
+        "date_added": "2020-04-30 21:26:00.308",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:13:31.823",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 75,
+        "id": 1603,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:26:01.222",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:13:35.225",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 74,
         "id": 1606,
         "myPlatforms": []
       }
@@ -11474,9 +11912,17 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:25:58.846",
+        "metacritic_page": false,
+        "game_platform_id": 22,
+        "platform_name": "PlayStation Network",
+        "id": 1600,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:57:25.91",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-06 06:28:48.064",
+        "metacritic_matched": "2020-05-02 15:22:05.787",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 61,
@@ -11496,25 +11942,21 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:25:58.58",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:13:24.843",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 61,
         "id": 1599,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:25:58.846",
-        "metacritic_page": false,
-        "game_platform_id": 22,
-        "platform_name": "PlayStation Network",
-        "id": 1600,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:25:59.222",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:13:28.945",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 53,
         "id": 1601,
         "myPlatforms": []
       }
@@ -11557,7 +11999,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:53:23.825",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-04 21:05:31.57",
+        "metacritic_matched": "2020-05-02 15:11:34.66",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 82,
@@ -11577,17 +12019,21 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:25:57.33",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:13:21.299",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 78,
         "id": 1597,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:25:57.672",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:13:23.206",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 81,
         "id": 1598,
         "myPlatforms": []
       }
@@ -11628,28 +12074,6 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
-        "date_added": "2020-04-28 23:53:41.999",
-        "metacritic_page": true,
-        "metacritic_matched": "2019-04-06 06:28:26.836",
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "metacritic": 76,
-        "id": 687,
-        "myPlatforms": [{
-          "date_added": "2020-04-28 23:53:42.486",
-          "tier": 2,
-          "game_platform_id": 11,
-          "available_game_platform_id": 687,
-          "minutes_played": 0,
-          "platform_name": "PS4",
-          "rating": 76,
-          "id": 651,
-          "collection_add": "2019-04-04 21:02:45.281812",
-          "preferred": true,
-          "person_id": 1
-        }]
-      },
-      {
         "date_added": "2020-04-30 21:25:55.396",
         "metacritic_page": false,
         "game_platform_id": 15,
@@ -11688,6 +12112,28 @@ export const MockGames = [
         "platform_name": "Ouya",
         "id": 1596,
         "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-28 23:53:41.999",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:12:32.598",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 76,
+        "id": 687,
+        "myPlatforms": [{
+          "date_added": "2020-04-28 23:53:42.486",
+          "tier": 2,
+          "game_platform_id": 11,
+          "available_game_platform_id": 687,
+          "minutes_played": 0,
+          "platform_name": "PS4",
+          "rating": 76,
+          "id": 651,
+          "collection_add": "2019-04-04 21:02:45.281812",
+          "preferred": true,
+          "person_id": 1
+        }]
       }
     ],
     "giantbomb_id": 50551,
@@ -11727,7 +12173,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:44:16.364",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-04 21:05:57.713",
+        "metacritic_matched": "2020-05-02 14:50:21.527",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 67,
@@ -11747,7 +12193,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:25:53.801",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 1589,
@@ -11832,7 +12278,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:25:51.034",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 1582,
@@ -11840,7 +12286,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:25:51.323",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 6,
         "platform_name": "PS3",
         "id": 1583,
@@ -11855,14 +12301,6 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:25:51.871",
-        "metacritic_page": false,
-        "game_platform_id": 5,
-        "platform_name": "Wii U",
-        "id": 1585,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:25:52.19",
         "metacritic_page": false,
         "game_platform_id": 19,
@@ -11871,19 +12309,33 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:25:52.536",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1587,
+        "date_added": "2020-04-30 21:25:51.871",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:13:07.728",
+        "game_platform_id": 5,
+        "platform_name": "Wii U",
+        "metacritic": 78,
+        "id": 1585,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:25:52.803",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:13:13.606",
         "game_platform_id": 3,
         "platform_name": "Switch",
+        "metacritic": 74,
         "id": 1588,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:52.536",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:13:12.271",
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "metacritic": 72,
+        "id": 1587,
         "myPlatforms": []
       }
     ],
@@ -11917,7 +12369,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "date_added": "2020-04-28 23:52:53.828",
       "metacritic_page": true,
-      "metacritic_matched": "2019-04-05 05:51:32.836",
+      "metacritic_matched": "2020-05-02 15:10:35.079",
       "game_platform_id": 11,
       "platform_name": "PS4",
       "metacritic": 81,
@@ -11974,7 +12426,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:53:17.63",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-07 07:07:44.086",
+        "metacritic_matched": "2020-05-02 15:11:24.449",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 66,
@@ -11993,27 +12445,31 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:25:48.417",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1578,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:25:48.682",
-        "metacritic_page": false,
-        "game_platform_id": 7,
-        "platform_name": "Xbox 360",
-        "id": 1579,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:25:48.94",
         "metacritic_page": false,
         "game_platform_id": 19,
         "platform_name": "PlayStation Vita",
         "id": 1580,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:48.417",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:12:54.794",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 69,
+        "id": 1578,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:48.682",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:12:57.16",
+        "game_platform_id": 7,
+        "platform_name": "Xbox 360",
+        "metacritic": 69,
+        "id": 1579,
         "myPlatforms": []
       }
     ],
@@ -12053,9 +12509,35 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:25:46.761",
+        "metacritic_page": true,
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "id": 1574,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:47.028",
+        "metacritic_page": false,
+        "game_platform_id": 19,
+        "platform_name": "PlayStation Vita",
+        "id": 1575,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:47.627",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:12:52.134",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 76,
+        "id": 1577,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:51:23.712",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-04 21:07:00.369",
+        "metacritic_matched": "2020-05-02 15:06:58.456",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 66,
@@ -12074,35 +12556,13 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:25:46.761",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1574,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:25:47.028",
-        "metacritic_page": false,
-        "game_platform_id": 19,
-        "platform_name": "PlayStation Vita",
-        "id": 1575,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:25:47.376",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:12:49.704",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 65,
         "id": 1576,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:25:47.627",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1577,
         "myPlatforms": []
       }
     ],
@@ -12153,7 +12613,7 @@ export const MockGames = [
         "date_added": "2020-04-30 21:25:45.842",
         "metacritic_page": false,
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
         "id": 1573,
         "myPlatforms": []
       }
@@ -12196,7 +12656,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "date_added": "2020-04-28 23:51:00.061",
       "metacritic_page": true,
-      "metacritic_matched": "2019-04-04 21:09:03.874",
+      "metacritic_matched": "2020-05-02 15:05:56.994",
       "game_platform_id": 11,
       "platform_name": "PS4",
       "metacritic": 62,
@@ -12250,7 +12710,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "date_added": "2020-04-28 23:47:58.352",
       "metacritic_page": true,
-      "metacritic_matched": "2019-04-04 21:08:37.601",
+      "metacritic_matched": "2020-05-02 14:58:38.047",
       "game_platform_id": 11,
       "platform_name": "PS4",
       "metacritic": 71,
@@ -12304,9 +12764,27 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:25:43.032",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:36:17.75",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 62,
+        "id": 1570,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:43.301",
+        "metacritic_page": false,
+        "game_platform_id": 16,
+        "platform_name": "Mac",
+        "id": 1571,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:58:01.695",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-07 07:07:26.435",
+        "metacritic_matched": "2020-05-02 15:23:31.816",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 68,
@@ -12325,26 +12803,12 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:25:43.032",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1570,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:25:43.301",
-        "metacritic_page": false,
-        "game_platform_id": 16,
-        "platform_name": "Mac",
-        "id": 1571,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:25:43.65",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:36:21.375",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 67,
         "id": 1572,
         "myPlatforms": []
       }
@@ -12385,9 +12849,17 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:25:41.882",
+        "metacritic_page": true,
+        "game_platform_id": 6,
+        "platform_name": "PS3",
+        "id": 1568,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:53:56.527",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-08 07:47:42.911",
+        "metacritic_matched": "2020-05-02 15:13:02.638",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 53,
@@ -12407,25 +12879,21 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:25:41.626",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:12:31.542",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 56,
         "id": 1567,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:25:41.882",
-        "metacritic_page": false,
-        "game_platform_id": 6,
-        "platform_name": "PS3",
-        "id": 1568,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:25:42.143",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:12:34.023",
         "game_platform_id": 7,
         "platform_name": "Xbox 360",
+        "metacritic": 56,
         "id": 1569,
         "myPlatforms": []
       }
@@ -12470,9 +12938,37 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:25:40.221",
+        "metacritic_page": true,
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "id": 1564,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:39.958",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:12:23.037",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 80,
+        "id": 1563,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:40.728",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:12:29.527",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 77,
+        "id": 1566,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:44:01.171",
         "metacritic_page": true,
-        "metacritic_matched": "2019-05-31 11:19:10.724",
+        "metacritic_matched": "2020-05-02 14:49:47.29",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 80,
@@ -12491,35 +12987,11 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:25:39.958",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1563,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:25:40.221",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1564,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:25:40.477",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
         "id": 1565,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:25:40.728",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1566,
         "myPlatforms": []
       }
     ],
@@ -12565,7 +13037,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:45:09.075",
         "metacritic_page": true,
-        "metacritic_matched": "2019-05-31 11:20:08.346",
+        "metacritic_matched": "2020-05-02 14:52:22.091",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 82,
@@ -12584,14 +13056,6 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:25:38.62",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1560,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:25:38.89",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -12600,10 +13064,22 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
+        "date_added": "2020-04-30 21:25:38.62",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:12:16.702",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 82,
+        "id": 1560,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:25:39.149",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:12:20.372",
         "game_platform_id": 3,
         "platform_name": "Switch",
+        "metacritic": 76,
         "id": 1562,
         "myPlatforms": []
       }
@@ -12650,7 +13126,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:56:26.154",
         "metacritic_page": true,
-        "metacritic_matched": "2018-07-17 03:23:01.153",
+        "metacritic_matched": "2020-05-02 15:19:22.53",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 69,
@@ -12670,7 +13146,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:56:26.737",
         "metacritic_page": true,
-        "metacritic_matched": "2019-06-01 03:43:53.504",
+        "metacritic_matched": "2020-05-02 15:19:25.607",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 75,
@@ -12690,9 +13166,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:25:37.733",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:12:13.046",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 75,
         "id": 1559,
         "myPlatforms": []
       }
@@ -12739,10 +13217,10 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:43:12.512",
         "metacritic_page": true,
-        "metacritic_matched": "2019-05-31 11:21:44.693",
+        "metacritic_matched": "2020-05-02 14:47:59.605",
         "game_platform_id": 1,
         "platform_name": "Steam",
-        "metacritic": 81,
+        "metacritic": 82,
         "id": 22,
         "myPlatforms": [{
           "date_added": "2020-04-28 23:43:13.032",
@@ -12758,14 +13236,6 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:25:35.835",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1554,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:25:36.097",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -12774,27 +13244,41 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
+        "date_added": "2020-04-30 21:25:35.835",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:12:06.149",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 82,
+        "id": 1554,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:25:36.368",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:12:08.796",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 79,
         "id": 1556,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:25:36.64",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1557,
+        "date_added": "2020-04-30 21:25:36.904",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:12:12.267",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 82,
+        "id": 1558,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:25:36.904",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1558,
+        "date_added": "2020-04-30 21:25:36.64",
+        "metacritic_page": true,
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "id": 1557,
         "myPlatforms": []
       }
     ],
@@ -12840,7 +13324,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:51:17.375",
         "metacritic_page": true,
-        "metacritic_matched": "2019-05-31 11:22:01.154",
+        "metacritic_matched": "2020-05-02 15:06:40.909",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 81,
@@ -12867,19 +13351,21 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:25:34.763",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1552,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:25:35.031",
         "metacritic_page": false,
         "game_platform_id": 16,
         "platform_name": "Mac",
         "id": 1553,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:34.763",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:12:03.519",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 81,
+        "id": 1552,
         "myPlatforms": []
       }
     ],
@@ -12922,40 +13408,11 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
-        "date_added": "2020-04-28 23:54:37.612",
-        "metacritic_page": true,
-        "metacritic_matched": "2019-05-31 11:22:22.997",
-        "game_platform_id": 1,
-        "platform_name": "Steam",
-        "metacritic": 80,
-        "id": 748,
-        "myPlatforms": [{
-          "date_added": "2020-04-28 23:54:38.092",
-          "tier": 2,
-          "game_platform_id": 1,
-          "available_game_platform_id": 748,
-          "minutes_played": 0,
-          "platform_name": "Steam",
-          "id": 710,
-          "collection_add": "2019-05-31 11:12:50.253",
-          "preferred": true,
-          "person_id": 1
-        }]
-      },
-      {
         "date_added": "2020-04-30 21:25:31.924",
         "metacritic_page": false,
         "game_platform_id": 15,
         "platform_name": "Linux",
         "id": 1544,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:25:32.198",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1545,
         "myPlatforms": []
       },
       {
@@ -12976,26 +13433,57 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:25:32.988",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 11,
         "platform_name": "PS4",
         "id": 1548,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:25:33.272",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1549,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:25:33.541",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 3,
         "platform_name": "Switch",
         "id": 1550,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-28 23:54:37.612",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:14:48.793",
+        "game_platform_id": 1,
+        "platform_name": "Steam",
+        "metacritic": 80,
+        "id": 748,
+        "myPlatforms": [{
+          "date_added": "2020-04-28 23:54:38.092",
+          "tier": 2,
+          "game_platform_id": 1,
+          "available_game_platform_id": 748,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "id": 710,
+          "collection_add": "2019-05-31 11:12:50.253",
+          "preferred": true,
+          "person_id": 1
+        }]
+      },
+      {
+        "date_added": "2020-04-30 21:25:32.198",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:11:53.187",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 80,
+        "id": 1545,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:33.272",
+        "metacritic_page": true,
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "id": 1549,
         "myPlatforms": []
       }
     ],
@@ -13035,7 +13523,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "date_added": "2020-04-28 23:43:31.533",
       "metacritic_page": true,
-      "metacritic_matched": "2019-05-31 11:22:56.354",
+      "metacritic_matched": "2020-05-02 14:48:41.314",
       "game_platform_id": 1,
       "platform_name": "Steam",
       "metacritic": 79,
@@ -13094,7 +13582,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:49:18.39",
         "metacritic_page": true,
-        "metacritic_matched": "2019-05-31 11:23:21.01",
+        "metacritic_matched": "2020-05-02 15:01:44.003",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 70,
@@ -13118,14 +13606,6 @@ export const MockGames = [
         "game_platform_id": 15,
         "platform_name": "Linux",
         "id": 1536,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:25:29.034",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1537,
         "myPlatforms": []
       },
       {
@@ -13154,26 +13634,38 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:25:30.155",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 11,
         "platform_name": "PS4",
         "id": 1541,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:25:30.416",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1542,
+        "date_added": "2020-04-30 21:25:29.034",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:11:42.438",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 70,
+        "id": 1537,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:25:30.676",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:11:51.102",
         "game_platform_id": 3,
         "platform_name": "Switch",
+        "metacritic": 73,
         "id": 1543,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:30.416",
+        "metacritic_page": true,
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "id": 1542,
         "myPlatforms": []
       }
     ],
@@ -13219,7 +13711,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:47:09.613",
         "metacritic_page": true,
-        "metacritic_matched": "2019-05-31 11:23:37.725",
+        "metacritic_matched": "2020-05-02 14:56:51.849",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 68,
@@ -13239,25 +13731,31 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:25:27.339",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:11:34.061",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 68,
         "id": 1533,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:25:27.615",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:11:37.441",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 67,
         "id": 1534,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:25:27.883",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:11:40.573",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 62,
         "id": 1535,
         "myPlatforms": []
       }
@@ -13303,7 +13801,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:46:53.111",
         "metacritic_page": true,
-        "metacritic_matched": "2019-05-31 11:23:48.542",
+        "metacritic_matched": "2020-05-02 14:56:10.551",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 69,
@@ -13330,14 +13828,6 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:25:25.535",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1529,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:25:25.809",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -13354,10 +13844,20 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
+        "date_added": "2020-04-30 21:25:25.535",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:11:29.582",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 69,
+        "id": 1529,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:25:26.321",
         "metacritic_page": false,
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
         "id": 1532,
         "myPlatforms": []
       }
@@ -13420,7 +13920,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:25:24.468",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 1527,
@@ -13466,9 +13966,25 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:25:23.138",
+        "metacritic_page": false,
+        "game_platform_id": 15,
+        "platform_name": "Linux",
+        "id": 1524,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:23.659",
+        "metacritic_page": false,
+        "game_platform_id": 16,
+        "platform_name": "Mac",
+        "id": 1526,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:55:50.899",
         "metacritic_page": true,
-        "metacritic_matched": "2019-05-31 11:24:07.213",
+        "metacritic_matched": "2020-05-02 15:17:54.837",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 73,
@@ -13487,27 +14003,13 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:25:23.138",
-        "metacritic_page": false,
-        "game_platform_id": 15,
-        "platform_name": "Linux",
-        "id": 1524,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:25:23.406",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:11:24.437",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 73,
         "id": 1525,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:25:23.659",
-        "metacritic_page": false,
-        "game_platform_id": 16,
-        "platform_name": "Mac",
-        "id": 1526,
         "myPlatforms": []
       }
     ],
@@ -13551,9 +14053,27 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:25:21.498",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:36:55.302",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 78,
+        "id": 1520,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:22.303",
+        "metacritic_page": false,
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "id": 1523,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:54:23.089",
         "metacritic_page": true,
-        "metacritic_matched": "2019-06-01 03:45:32.05",
+        "metacritic_matched": "2020-05-02 15:14:11.417",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 78,
@@ -13574,35 +14094,23 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:25:21.498",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1520,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:25:21.766",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:11:18.586",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 76,
         "id": 1521,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:25:22.027",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:11:20.914",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 80,
         "id": 1522,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:25:22.303",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1523,
         "myPlatforms": []
       }
     ],
@@ -13657,7 +14165,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:25:20.61",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 1519,
@@ -13709,7 +14217,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:45:28.782",
         "metacritic_page": true,
-        "metacritic_matched": "2019-06-08 10:45:23.885",
+        "metacritic_matched": "2020-05-02 14:53:09.583",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 83,
@@ -13736,19 +14244,21 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:25:19.53",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1517,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:25:19.786",
         "metacritic_page": false,
         "game_platform_id": 16,
         "platform_name": "Mac",
         "id": 1518,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:19.53",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:11:13.38",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 83,
+        "id": 1517,
         "myPlatforms": []
       }
     ],
@@ -13794,7 +14304,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:48:59.315",
         "metacritic_page": true,
-        "metacritic_matched": "2019-06-08 10:46:04.209",
+        "metacritic_matched": "2020-05-02 15:00:59.262",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 68,
@@ -13811,14 +14321,6 @@ export const MockGames = [
           "preferred": true,
           "person_id": 1
         }]
-      },
-      {
-        "date_added": "2020-04-30 21:25:17.543",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1512,
-        "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:25:17.286",
@@ -13846,10 +14348,22 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:25:18.355",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:11:10.98",
         "game_platform_id": 3,
         "platform_name": "Switch",
+        "metacritic": 72,
         "id": 1515,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:17.543",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:28:37.061",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 68,
+        "id": 1512,
         "myPlatforms": []
       }
     ],
@@ -13891,6 +14405,14 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:25:16.125",
+        "metacritic_page": true,
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "id": 1509,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:54:45.821",
         "metacritic_page": true,
         "game_platform_id": 1,
@@ -13910,18 +14432,12 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:25:16.125",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1509,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:25:16.413",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:11:08.051",
         "game_platform_id": 3,
         "platform_name": "Switch",
+        "metacritic": 71,
         "id": 1510,
         "myPlatforms": []
       }
@@ -13962,9 +14478,39 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:25:14.515",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:35:31.418",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 67,
+        "id": 1505,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:14.78",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:35:33.983",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 70,
+        "id": 1506,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:15.32",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:35:37.124",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 72,
+        "id": 1508,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:43:53.433",
         "metacritic_page": true,
-        "metacritic_matched": "2019-06-09 04:33:28.785",
+        "metacritic_matched": "2020-05-02 14:49:29.608",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 67,
@@ -13983,35 +14529,13 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:25:14.515",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1505,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:25:14.78",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1506,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:25:15.059",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:35:35.758",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 73,
         "id": 1507,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:25:15.32",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1508,
         "myPlatforms": []
       }
     ],
@@ -14072,7 +14596,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:25:13.628",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 1504,
@@ -14109,6 +14633,14 @@ export const MockGames = [
     "igdb_popularity": 1.44578216048949,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:25:12.815",
+        "metacritic_page": true,
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "id": 1503,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:53:46.556",
         "metacritic_page": true,
         "game_platform_id": 1,
@@ -14126,14 +14658,6 @@ export const MockGames = [
           "preferred": true,
           "person_id": 1
         }]
-      },
-      {
-        "date_added": "2020-04-30 21:25:12.815",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1503,
-        "myPlatforms": []
       }
     ],
     "steam_cloud": false,
@@ -14181,7 +14705,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:45:41.379",
         "metacritic_page": true,
-        "metacritic_matched": "2019-07-05 18:32:32.581",
+        "metacritic_matched": "2020-05-02 14:53:36.603",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 76,
@@ -14202,14 +14726,6 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:25:11.112",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1499,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:25:11.373",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -14218,18 +14734,30 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
+        "date_added": "2020-04-30 21:25:11.112",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:35:29.464",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 76,
+        "id": 1499,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:25:11.646",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:10:51.017",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 61,
         "id": 1501,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:25:11.91",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
         "id": 1502,
         "myPlatforms": []
       }
@@ -14278,7 +14806,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:46:58.869",
         "metacritic_page": true,
-        "metacritic_matched": "2019-07-05 18:33:39.111",
+        "metacritic_matched": "2020-05-02 14:56:25.348",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 93,
@@ -14288,23 +14816,15 @@ export const MockGames = [
           "tier": 2,
           "game_platform_id": 1,
           "available_game_platform_id": 256,
-          "minutes_played": 3661,
+          "minutes_played": 3692,
           "platform_name": "Steam",
           "rating": 92,
-          "last_played": "2020-04-26 14:11:28.243",
+          "last_played": "2020-05-02 14:40:28.687",
           "id": 242,
           "collection_add": "2019-07-05 18:30:13.802",
           "preferred": true,
           "person_id": 1
         }]
-      },
-      {
-        "date_added": "2020-04-30 21:25:09.166",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1494,
-        "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:25:09.439",
@@ -14337,6 +14857,16 @@ export const MockGames = [
         "platform_name": "PlayStation VR",
         "id": 1498,
         "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:09.166",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:35:27.682",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 93,
+        "id": 1494,
+        "myPlatforms": []
       }
     ],
     "giantbomb_id": 65652,
@@ -14346,8 +14876,8 @@ export const MockGames = [
     "person_games": [{
       "date_added": "2019-07-05 18:30:13.802",
       "tier": 2,
-      "minutes_played": 3661,
-      "last_played": "2020-04-26 14:11:28.243",
+      "minutes_played": 3692,
+      "last_played": "2020-05-02 14:40:28.687",
       "rating": 92,
       "id": 1450,
       "person_id": 1
@@ -14380,7 +14910,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:45:43.274",
         "metacritic_page": true,
-        "metacritic_matched": "2019-07-06 08:04:50.335",
+        "metacritic_matched": "2020-05-02 14:53:39.236",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 81,
@@ -14399,22 +14929,6 @@ export const MockGames = [
           "preferred": true,
           "person_id": 1
         }]
-      },
-      {
-        "date_added": "2020-04-30 21:25:07.197",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1489,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:25:07.466",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1490,
-        "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:25:07.742",
@@ -14438,6 +14952,26 @@ export const MockGames = [
         "game_platform_id": 32,
         "platform_name": "PlayStation VR",
         "id": 1493,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:07.197",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:35:25.103",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 81,
+        "id": 1489,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:07.466",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:35:26.539",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 85,
+        "id": 1490,
         "myPlatforms": []
       }
     ],
@@ -14482,41 +15016,11 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
-        "date_added": "2020-04-28 23:57:12.852",
-        "metacritic_page": true,
-        "metacritic_matched": "2019-07-07 12:52:59.043",
-        "game_platform_id": 1,
-        "platform_name": "Steam",
-        "metacritic": 71,
-        "id": 921,
-        "myPlatforms": [{
-          "date_added": "2020-04-28 23:57:13.357",
-          "tier": 2,
-          "game_platform_id": 1,
-          "available_game_platform_id": 921,
-          "minutes_played": 0,
-          "platform_name": "Steam",
-          "rating": 81,
-          "id": 870,
-          "collection_add": "2019-07-07 12:49:22.514",
-          "preferred": true,
-          "person_id": 1
-        }]
-      },
-      {
         "date_added": "2020-04-30 21:25:03.97",
         "metacritic_page": false,
         "game_platform_id": 15,
         "platform_name": "Linux",
         "id": 1479,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:25:04.225",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1480,
         "myPlatforms": []
       },
       {
@@ -14552,35 +15056,71 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:25:05.537",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1485,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:25:05.802",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1486,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:25:06.074",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1487,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:25:06.381",
         "metacritic_page": false,
         "game_platform_id": 32,
         "platform_name": "PlayStation VR",
         "id": 1488,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:04.225",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:35:21.294",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 71,
+        "id": 1480,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:05.537",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:35:23.373",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 88,
+        "id": 1485,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-28 23:57:12.852",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:21:35.403",
+        "game_platform_id": 1,
+        "platform_name": "Steam",
+        "metacritic": 71,
+        "id": 921,
+        "myPlatforms": [{
+          "date_added": "2020-04-28 23:57:13.357",
+          "tier": 2,
+          "game_platform_id": 1,
+          "available_game_platform_id": 921,
+          "minutes_played": 0,
+          "platform_name": "Steam",
+          "rating": 81,
+          "id": 870,
+          "collection_add": "2019-07-07 12:49:22.514",
+          "preferred": true,
+          "person_id": 1
+        }]
+      },
+      {
+        "date_added": "2020-04-30 21:25:06.074",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:10:37.525",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 84,
+        "id": 1487,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:05.802",
+        "metacritic_page": true,
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "id": 1486,
         "myPlatforms": []
       }
     ],
@@ -14622,6 +15162,50 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:25:01.79",
+        "metacritic_page": false,
+        "game_platform_id": 15,
+        "platform_name": "Linux",
+        "id": 1473,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:02.07",
+        "metacritic_page": true,
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "id": 1474,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:02.342",
+        "metacritic_page": false,
+        "game_platform_id": 16,
+        "platform_name": "Mac",
+        "id": 1475,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:02.624",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:35:18.218",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 63,
+        "id": 1476,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:03.159",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:35:20.099",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 58,
+        "id": 1478,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:55:25.485",
         "metacritic_page": true,
         "game_platform_id": 1,
@@ -14642,51 +15226,11 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:25:01.79",
-        "metacritic_page": false,
-        "game_platform_id": 15,
-        "platform_name": "Linux",
-        "id": 1473,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:25:02.07",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1474,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:25:02.342",
-        "metacritic_page": false,
-        "game_platform_id": 16,
-        "platform_name": "Mac",
-        "id": 1475,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:25:02.624",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1476,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:25:02.884",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
         "id": 1477,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:25:03.159",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1478,
         "myPlatforms": []
       }
     ],
@@ -14726,9 +15270,25 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:25:00.422",
+        "metacritic_page": false,
+        "game_platform_id": 15,
+        "platform_name": "Linux",
+        "id": 1470,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:25:00.944",
+        "metacritic_page": false,
+        "game_platform_id": 16,
+        "platform_name": "Mac",
+        "id": 1472,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:56:02.575",
         "metacritic_page": true,
-        "metacritic_matched": "2019-07-08 08:22:11.216",
+        "metacritic_matched": "2020-05-02 15:18:25.506",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 78,
@@ -14748,27 +15308,13 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:25:00.422",
-        "metacritic_page": false,
-        "game_platform_id": 15,
-        "platform_name": "Linux",
-        "id": 1470,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:25:00.687",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:10:12.47",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 78,
         "id": 1471,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:25:00.944",
-        "metacritic_page": false,
-        "game_platform_id": 16,
-        "platform_name": "Mac",
-        "id": 1472,
         "myPlatforms": []
       }
     ],
@@ -14840,7 +15386,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:24:59.33",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 1468,
@@ -14898,10 +15444,10 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:46:51.172",
         "metacritic_page": true,
-        "metacritic_matched": "2019-07-09 12:05:36.578",
+        "metacritic_matched": "2020-05-02 14:56:05.788",
         "game_platform_id": 1,
         "platform_name": "Steam",
-        "metacritic": 79,
+        "metacritic": 77,
         "id": 248,
         "myPlatforms": [{
           "date_added": "2020-04-28 23:46:51.718",
@@ -14919,32 +15465,8 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:24:57.06",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1462,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:24:57.357",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1463,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:24:57.624",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1464,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:24:57.893",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 3,
         "platform_name": "Switch",
         "id": 1465,
@@ -14956,6 +15478,34 @@ export const MockGames = [
         "game_platform_id": 32,
         "platform_name": "PlayStation VR",
         "id": 1466,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:24:57.06",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:35:15.148",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 77,
+        "id": 1462,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:24:57.357",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:35:16.863",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 76,
+        "id": 1463,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:24:57.624",
+        "metacritic_page": true,
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "id": 1464,
         "myPlatforms": []
       }
     ],
@@ -15020,7 +15570,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:24:56.063",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 1461,
@@ -15066,6 +15616,24 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:24:54.884",
+        "metacritic_page": false,
+        "game_platform_id": 22,
+        "platform_name": "PlayStation Network",
+        "id": 1459,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:24:55.153",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:35:12.967",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 71,
+        "id": 1460,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:57:42.421",
         "metacritic_page": true,
         "game_platform_id": 1,
@@ -15085,22 +15653,6 @@ export const MockGames = [
           "preferred": true,
           "person_id": 1
         }]
-      },
-      {
-        "date_added": "2020-04-30 21:24:54.884",
-        "metacritic_page": false,
-        "game_platform_id": 22,
-        "platform_name": "PlayStation Network",
-        "id": 1459,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:24:55.153",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1460,
-        "myPlatforms": []
       }
     ],
     "giantbomb_id": 51751,
@@ -15192,6 +15744,14 @@ export const MockGames = [
     "igdb_popularity": 1,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:24:53.281",
+        "metacritic_page": false,
+        "game_platform_id": 31,
+        "platform_name": "SteamVR",
+        "id": 1457,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:53:24.753",
         "metacritic_page": true,
         "game_platform_id": 1,
@@ -15214,14 +15774,6 @@ export const MockGames = [
           "preferred": true,
           "person_id": 1
         }]
-      },
-      {
-        "date_added": "2020-04-30 21:24:53.281",
-        "metacritic_page": false,
-        "game_platform_id": 31,
-        "platform_name": "SteamVR",
-        "id": 1457,
-        "myPlatforms": []
       }
     ],
     "steam_cloud": false,
@@ -15269,11 +15821,21 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:24:52.225",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:35:09.863",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 86,
+        "id": 1456,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:49:53.144",
         "metacritic_page": true,
         "metacritic_matched": "2019-08-01 10:36:57.68",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
         "metacritic": 84,
         "id": 440,
         "myPlatforms": [{
@@ -15282,7 +15844,7 @@ export const MockGames = [
           "game_platform_id": 4,
           "available_game_platform_id": 440,
           "minutes_played": 30,
-          "platform_name": "Xbox One",
+          "platform_name": "Xbox Two",
           "rating": 80,
           "last_played": "2019-08-01 00:00:00.0",
           "id": 417,
@@ -15290,14 +15852,6 @@ export const MockGames = [
           "preferred": true,
           "person_id": 1
         }]
-      },
-      {
-        "date_added": "2020-04-30 21:24:52.225",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1456,
-        "myPlatforms": []
       }
     ],
     "giantbomb_id": 45269,
@@ -15337,7 +15891,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "date_added": "2020-04-28 23:45:52.989",
       "metacritic_page": true,
-      "metacritic_matched": "2019-08-01 22:57:09.313",
+      "metacritic_matched": "2020-05-02 14:54:02.733",
       "game_platform_id": 10,
       "platform_name": "PC",
       "metacritic": 89,
@@ -15403,7 +15957,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:46:55.955",
         "metacritic_page": true,
-        "metacritic_matched": "2019-09-05 11:17:45.668",
+        "metacritic_matched": "2020-05-02 14:56:19.51",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 64,
@@ -15424,17 +15978,21 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:24:50.438",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:35:07.063",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 70,
         "id": 1454,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:24:50.801",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:09:49.601",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 69,
         "id": 1455,
         "myPlatforms": []
       }
@@ -15477,9 +16035,47 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:24:48.729",
+        "metacritic_page": false,
+        "game_platform_id": 16,
+        "platform_name": "Mac",
+        "id": 1450,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:24:48.985",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:59.954",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 72,
+        "id": 1451,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:24:49.537",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:35:05.181",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 71,
+        "id": 1453,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:24:48.465",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:09:37.38",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 80,
+        "id": 1449,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:52:12.967",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-17 17:37:54.288",
+        "metacritic_matched": "2020-05-02 15:08:54.151",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 80,
@@ -15500,43 +16096,13 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:24:48.465",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1449,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:24:48.729",
-        "metacritic_page": false,
-        "game_platform_id": 16,
-        "platform_name": "Mac",
-        "id": 1450,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:24:48.985",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1451,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:24:49.267",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:35:02.911",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 77,
         "id": 1452,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:24:49.537",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1453,
         "myPlatforms": []
       }
     ],
@@ -15582,29 +16148,6 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
-        "date_added": "2020-04-28 23:57:02.847",
-        "metacritic_page": true,
-        "metacritic_matched": "2020-04-17 17:36:55.413",
-        "game_platform_id": 1,
-        "platform_name": "Steam",
-        "metacritic": 93,
-        "id": 910,
-        "myPlatforms": [{
-          "date_added": "2020-04-28 23:57:03.338",
-          "tier": 2,
-          "game_platform_id": 1,
-          "available_game_platform_id": 910,
-          "minutes_played": 181,
-          "platform_name": "Steam",
-          "rating": 87,
-          "last_played": "2020-03-30 15:09:46.307",
-          "id": 859,
-          "collection_add": "2019-11-21 16:45:12.415",
-          "preferred": true,
-          "person_id": 1
-        }]
-      },
-      {
         "date_added": "2020-04-30 21:24:47.134",
         "metacritic_page": false,
         "game_platform_id": 44,
@@ -15627,6 +16170,29 @@ export const MockGames = [
         "platform_name": "SteamVR",
         "id": 1448,
         "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-28 23:57:02.847",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:21:11.63",
+        "game_platform_id": 1,
+        "platform_name": "Steam",
+        "metacritic": 93,
+        "id": 910,
+        "myPlatforms": [{
+          "date_added": "2020-04-28 23:57:03.338",
+          "tier": 2,
+          "game_platform_id": 1,
+          "available_game_platform_id": 910,
+          "minutes_played": 181,
+          "platform_name": "Steam",
+          "rating": 87,
+          "last_played": "2020-03-30 15:09:46.307",
+          "id": 859,
+          "collection_add": "2019-11-21 16:45:12.415",
+          "preferred": true,
+          "person_id": 1
+        }]
       }
     ],
     "giantbomb_id": 76068,
@@ -15745,7 +16311,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:24:44.407",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 1441,
@@ -15753,26 +16319,32 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:24:44.686",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:53.028",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 73,
         "id": 1442,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:24:44.945",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1443,
+        "date_added": "2020-04-30 21:24:45.201",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:57.808",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 76,
+        "id": 1444,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:24:45.201",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1444,
+        "date_added": "2020-04-30 21:24:44.945",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:55.902",
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "metacritic": 74,
+        "id": 1443,
         "myPlatforms": []
       }
     ],
@@ -15816,9 +16388,27 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:24:43.522",
+        "metacritic_page": false,
+        "game_platform_id": 29,
+        "platform_name": "Google Stadia",
+        "id": 1440,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:24:42.99",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:09:18.068",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 83,
+        "id": 1438,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-29 00:02:21.643645",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-17 17:38:34.002",
+        "metacritic_matched": "2020-05-02 15:24:05.357",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 86,
@@ -15828,7 +16418,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-29 00:02:21.650841",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-21 15:12:36.268",
+        "metacritic_matched": "2020-05-02 15:24:06.219",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 86,
@@ -15848,27 +16438,13 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:24:42.99",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1438,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:24:43.262",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:50.531",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 87,
         "id": 1439,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:24:43.522",
-        "metacritic_page": false,
-        "game_platform_id": 29,
-        "platform_name": "Google Stadia",
-        "id": 1440,
         "myPlatforms": []
       }
     ],
@@ -15936,7 +16512,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:24:41.648",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 1436,
@@ -16012,7 +16588,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:24:40.221",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 10,
         "platform_name": "PC",
         "id": 1433,
@@ -16056,9 +16632,11 @@ export const MockGames = [
     "igdb_popularity": 15.26502913566367,
     "availablePlatforms": [{
       "date_added": "2020-04-28 23:58:06.209",
-      "metacritic_page": false,
+      "metacritic_page": true,
+      "metacritic_matched": "2020-05-01 17:58:40.815",
       "game_platform_id": 3,
       "platform_name": "Switch",
+      "metacritic": 85,
       "id": 980,
       "myPlatforms": [{
         "date_added": "2020-04-28 23:58:06.705",
@@ -16109,7 +16687,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:49:34.87",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-17 17:36:25.951",
+        "metacritic_matched": "2020-05-02 15:02:27.776",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 84,
@@ -16130,17 +16708,21 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:24:38.215",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:47.538",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 84,
         "id": 1431,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:24:38.581",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:48.868",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 82,
         "id": 1432,
         "myPlatforms": []
       }
@@ -16178,7 +16760,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:57:54.231",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-17 17:36:33.173",
+        "metacritic_matched": "2020-05-02 15:23:12.997",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 83,
@@ -16199,17 +16781,21 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:24:36.213",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:09:00.862",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 86,
         "id": 1429,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:24:37.295",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:45.818",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 89,
         "id": 1430,
         "myPlatforms": []
       }
@@ -16252,7 +16838,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "date_added": "2020-04-28 23:52:50.113",
       "metacritic_page": true,
-      "metacritic_matched": "2020-04-17 17:36:37.97",
+      "metacritic_matched": "2020-05-02 15:10:27.98",
       "game_platform_id": 11,
       "platform_name": "PS4",
       "metacritic": 86,
@@ -16309,7 +16895,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:51:51.224",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-17 17:36:42.242",
+        "metacritic_matched": "2020-05-02 15:08:08.954",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 86,
@@ -16330,26 +16916,32 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:24:33.881",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:38.728",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 84,
         "id": 1426,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:24:34.224",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1427,
+        "date_added": "2020-04-30 21:24:34.494",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:43.401",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 86,
+        "id": 1428,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:24:34.494",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1428,
+        "date_added": "2020-04-30 21:24:34.224",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:41.56",
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "metacritic": 83,
+        "id": 1427,
         "myPlatforms": []
       }
     ],
@@ -16385,7 +16977,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:52:21.252",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-17 17:36:44.285",
+        "metacritic_matched": "2020-05-02 15:09:17.09",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 78,
@@ -16406,9 +16998,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:24:32.972",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:35.478",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 80,
         "id": 1425,
         "myPlatforms": []
       }
@@ -16447,7 +17041,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:47:53.605",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-17 17:36:51.663",
+        "metacritic_matched": "2020-05-02 14:58:27.884",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 78,
@@ -16475,14 +17069,6 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:24:31.16",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1421,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:24:31.432",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -16491,19 +17077,33 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:24:31.779",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1423,
+        "date_added": "2020-04-30 21:24:31.16",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:31.917",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 76,
+        "id": 1421,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:24:32.059",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:08:46.431",
         "game_platform_id": 3,
         "platform_name": "Switch",
+        "metacritic": 82,
         "id": 1424,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:24:31.779",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:33.753",
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "metacritic": 77,
+        "id": 1423,
         "myPlatforms": []
       }
     ],
@@ -16541,7 +17141,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "date_added": "2020-04-28 23:43:58.254",
       "metacritic_page": true,
-      "metacritic_matched": "2020-04-17 17:36:54.115",
+      "metacritic_matched": "2020-05-02 14:49:40.128",
       "game_platform_id": 11,
       "platform_name": "PS4",
       "metacritic": 85,
@@ -16593,7 +17193,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "date_added": "2020-04-28 23:52:13.888",
       "metacritic_page": true,
-      "metacritic_matched": "2020-04-17 17:37:07.068",
+      "metacritic_matched": "2020-05-02 15:08:56.2",
       "game_platform_id": 11,
       "platform_name": "PS4",
       "metacritic": 95,
@@ -16652,7 +17252,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "date_added": "2020-04-28 23:48:29.259",
       "metacritic_page": true,
-      "metacritic_matched": "2020-04-17 17:37:10.558",
+      "metacritic_matched": "2020-05-02 14:59:41.532",
       "game_platform_id": 11,
       "platform_name": "PS4",
       "metacritic": 88,
@@ -16707,9 +17307,37 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:24:27.425",
+        "metacritic_page": false,
+        "game_platform_id": 16,
+        "platform_name": "Mac",
+        "id": 1417,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:24:27.168",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:27.911",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 75,
+        "id": 1416,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:24:28.042",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:29.711",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 79,
+        "id": 1419,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:54:16.831",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-17 17:37:15.314",
+        "metacritic_matched": "2020-05-02 15:13:54.831",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 68,
@@ -16729,35 +17357,13 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:24:27.168",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1416,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:24:27.425",
-        "metacritic_page": false,
-        "game_platform_id": 16,
-        "platform_name": "Mac",
-        "id": 1417,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:24:27.774",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:08:38.936",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 77,
         "id": 1418,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:24:28.042",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1419,
         "myPlatforms": []
       }
     ],
@@ -16820,17 +17426,21 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:24:25.909",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:33:12.915",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 86,
         "id": 1414,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:24:26.269",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:25.98",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 87,
         "id": 1415,
         "myPlatforms": []
       }
@@ -16867,7 +17477,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "date_added": "2020-04-28 23:46:42.841",
       "metacritic_page": true,
-      "metacritic_matched": "2020-04-17 17:37:28.07",
+      "metacritic_matched": "2020-05-02 14:55:45.369",
       "game_platform_id": 11,
       "platform_name": "PS4",
       "metacritic": 86,
@@ -16920,7 +17530,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:49:36.714",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-17 17:37:33.495",
+        "metacritic_matched": "2020-05-02 15:02:32.41",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 79,
@@ -16982,9 +17592,27 @@ export const MockGames = [
     "igdb_popularity": 3.451824129836195,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:24:23.323",
+        "metacritic_page": true,
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "id": 1412,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:24:22.678",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:21.488",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 80,
+        "id": 1410,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:50:24.855",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-17 17:37:43.54",
+        "metacritic_matched": "2020-05-02 15:04:29.849",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 84,
@@ -17004,27 +17632,13 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:24:22.678",
-        "metacritic_page": false,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 1410,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:24:23.043",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:24.219",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 84,
         "id": 1411,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:24:23.323",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1412,
         "myPlatforms": []
       }
     ],
@@ -17060,7 +17674,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "date_added": "2020-04-28 23:51:18.266",
       "metacritic_page": true,
-      "metacritic_matched": "2020-04-17 17:37:47.878",
+      "metacritic_matched": "2020-05-02 15:06:42.969",
       "game_platform_id": 11,
       "platform_name": "PS4",
       "metacritic": 91,
@@ -17118,7 +17732,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:51:56.818",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-17 17:37:50.969",
+        "metacritic_matched": "2020-05-02 15:08:24.839",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 57,
@@ -17139,26 +17753,32 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:24:20.468",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:15.427",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 56,
         "id": 1407,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:24:20.807",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1408,
+        "date_added": "2020-04-30 21:24:21.093",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:08:18.606",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 57,
+        "id": 1409,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:24:21.093",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1409,
+        "date_added": "2020-04-30 21:24:20.807",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:18.945",
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "metacritic": 62,
+        "id": 1408,
         "myPlatforms": []
       }
     ],
@@ -17198,9 +17818,19 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:24:19.204",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:11.756",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 82,
+        "id": 1405,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:54:50.418",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-20 17:59:03.367",
+        "metacritic_matched": "2020-05-02 15:15:23.578",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 85,
@@ -17221,18 +17851,12 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:24:19.204",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1405,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:24:19.482",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:34:13.617",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 84,
         "id": 1406,
         "myPlatforms": []
       }
@@ -17272,9 +17896,19 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:24:17.653",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:33:06.154",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 80,
+        "id": 1402,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:57:35.902",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-21 15:17:30.167",
+        "metacritic_matched": "2020-05-02 15:22:27.185",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 79,
@@ -17294,27 +17928,23 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:24:17.653",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1402,
+        "date_added": "2020-04-30 21:24:18.174",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:08:07.191",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 73,
+        "id": 1404,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:24:17.907",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:08:04.452",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 82,
         "id": 1403,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:24:18.174",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1404,
         "myPlatforms": []
       }
     ],
@@ -17348,26 +17978,24 @@ export const MockGames = [
     "igdb_popularity": 3.674692962936937,
     "availablePlatforms": [
       {
-        "date_added": "2020-04-28 23:53:27.594",
+        "date_added": "2020-04-30 21:24:15.995",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-21 15:17:37.84",
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "metacritic": 78,
-        "id": 671,
-        "myPlatforms": [{
-          "date_added": "2020-04-28 23:53:28.11",
-          "tier": 2,
-          "game_platform_id": 10,
-          "available_game_platform_id": 671,
-          "minutes_played": 0,
-          "platform_name": "PC",
-          "rating": 73,
-          "id": 637,
-          "collection_add": "2020-04-20 17:57:31.260327",
-          "preferred": true,
-          "person_id": 1
-        }]
+        "metacritic_matched": "2020-05-02 15:33:00.593",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 80,
+        "id": 1400,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:24:16.252",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:33:03.453",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 71,
+        "id": 1401,
+        "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:24:15.115",
@@ -17394,20 +18022,26 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:24:15.995",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1400,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:24:16.252",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1401,
-        "myPlatforms": []
+        "date_added": "2020-04-28 23:53:27.594",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:11:40.41",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 78,
+        "id": 671,
+        "myPlatforms": [{
+          "date_added": "2020-04-28 23:53:28.11",
+          "tier": 2,
+          "game_platform_id": 10,
+          "available_game_platform_id": 671,
+          "minutes_played": 0,
+          "platform_name": "PC",
+          "rating": 73,
+          "id": 637,
+          "collection_add": "2020-04-20 17:57:31.260327",
+          "preferred": true,
+          "person_id": 1
+        }]
       }
     ],
     "igdb_poster": "co1r09",
@@ -17449,7 +18083,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:43:07.437",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-20 18:01:24.671",
+        "metacritic_matched": "2020-05-02 14:47:44.713",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 78,
@@ -17505,6 +18139,22 @@ export const MockGames = [
     "igdb_popularity": 2.560237561713214,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:24:12.84",
+        "metacritic_page": false,
+        "game_platform_id": 15,
+        "platform_name": "Linux",
+        "id": 1394,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:24:13.226",
+        "metacritic_page": false,
+        "game_platform_id": 16,
+        "platform_name": "Mac",
+        "id": 1395,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:56:01.66",
         "metacritic_page": true,
         "game_platform_id": 10,
@@ -17523,22 +18173,6 @@ export const MockGames = [
           "preferred": true,
           "person_id": 1
         }]
-      },
-      {
-        "date_added": "2020-04-30 21:24:12.84",
-        "metacritic_page": false,
-        "game_platform_id": 15,
-        "platform_name": "Linux",
-        "id": 1394,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:24:13.226",
-        "metacritic_page": false,
-        "game_platform_id": 16,
-        "platform_name": "Mac",
-        "id": 1395,
-        "myPlatforms": []
       }
     ],
     "igdb_poster": "co1ix5",
@@ -17612,9 +18246,29 @@ export const MockGames = [
     "igdb_popularity": 2.337346481468469,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:24:10.973",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:57.976",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 66,
+        "id": 1391,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:24:11.552",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:59.694",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 75,
+        "id": 1393,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:54:15.901",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-22 15:27:54.754",
+        "metacritic_matched": "2020-05-02 15:13:53.014",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 69,
@@ -17634,27 +18288,13 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:24:10.973",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1391,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:24:11.281",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:07:44.033",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 67,
         "id": 1392,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:24:11.552",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1393,
         "myPlatforms": []
       }
     ],
@@ -17691,7 +18331,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:46:36.064",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-21 15:18:09.392",
+        "metacritic_matched": "2020-05-02 14:55:35.69",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 65,
@@ -17712,26 +18352,32 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:24:09.499",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:51.746",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 68,
         "id": 1388,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:24:09.778",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1389,
+        "date_added": "2020-04-30 21:24:10.056",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:55.912",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 55,
+        "id": 1390,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:24:10.056",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1390,
+        "date_added": "2020-04-30 21:24:09.778",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:54.174",
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "metacritic": 76,
+        "id": 1389,
         "myPlatforms": []
       }
     ],
@@ -17765,24 +18411,14 @@ export const MockGames = [
     "igdb_popularity": 1.668679308137144,
     "availablePlatforms": [
       {
-        "date_added": "2020-04-28 23:57:48.811",
+        "date_added": "2020-04-30 21:24:07.759",
         "metacritic_page": true,
-        "game_platform_id": 10,
-        "platform_name": "PC",
-        "id": 961,
-        "myPlatforms": [{
-          "date_added": "2020-04-28 23:57:49.29",
-          "tier": 2,
-          "game_platform_id": 10,
-          "available_game_platform_id": 961,
-          "minutes_played": 0,
-          "platform_name": "PC",
-          "rating": 65,
-          "id": 907,
-          "collection_add": "2020-04-20 18:00:13.621159",
-          "preferred": true,
-          "person_id": 1
-        }]
+        "metacritic_matched": "2020-05-02 15:32:49.827",
+        "game_platform_id": 6,
+        "platform_name": "PS3",
+        "metacritic": 77,
+        "id": 1384,
+        "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:24:07.397",
@@ -17790,14 +18426,6 @@ export const MockGames = [
         "game_platform_id": 15,
         "platform_name": "Linux",
         "id": 1383,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:24:07.759",
-        "metacritic_page": false,
-        "game_platform_id": 6,
-        "platform_name": "PS3",
-        "id": 1384,
         "myPlatforms": []
       },
       {
@@ -17823,6 +18451,26 @@ export const MockGames = [
         "platform_name": "iOS",
         "id": 1387,
         "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-28 23:57:48.811",
+        "metacritic_page": true,
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "id": 961,
+        "myPlatforms": [{
+          "date_added": "2020-04-28 23:57:49.29",
+          "tier": 2,
+          "game_platform_id": 10,
+          "available_game_platform_id": 961,
+          "minutes_played": 0,
+          "platform_name": "PC",
+          "rating": 65,
+          "id": 907,
+          "collection_add": "2020-04-20 18:00:13.621159",
+          "preferred": true,
+          "person_id": 1
+        }]
       }
     ],
     "giantbomb_id": 32304,
@@ -17868,7 +18516,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:43:33.506",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-20 18:05:47.466",
+        "metacritic_matched": "2020-05-02 14:48:45.625",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 38,
@@ -17905,26 +18553,30 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:24:06.036",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 11,
         "platform_name": "PS4",
         "id": 1380,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:24:06.298",
-        "metacritic_page": false,
-        "game_platform_id": 4,
-        "platform_name": "Xbox One",
-        "id": 1381,
+        "date_added": "2020-04-30 21:24:06.583",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:07:27.412",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 39,
+        "id": 1382,
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:24:06.583",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1382,
+        "date_added": "2020-04-30 21:24:06.298",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:47.25",
+        "game_platform_id": 4,
+        "platform_name": "Xbox Two",
+        "metacritic": 42,
+        "id": 1381,
         "myPlatforms": []
       }
     ],
@@ -17958,9 +18610,19 @@ export const MockGames = [
     "igdb_popularity": 3.228931027123814,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:24:04.549",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:45.443",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 79,
+        "id": 1377,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:51:54.92",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-21 15:18:37.738",
+        "metacritic_matched": "2020-05-02 15:08:20.55",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 76,
@@ -17978,14 +18640,6 @@ export const MockGames = [
           "preferred": true,
           "person_id": 1
         }]
-      },
-      {
-        "date_added": "2020-04-30 21:24:04.549",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1377,
-        "myPlatforms": []
       }
     ],
     "igdb_poster": "co1n2l",
@@ -18027,7 +18681,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:44:21.151",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-20 18:07:19.297",
+        "metacritic_matched": "2020-05-02 14:50:32.205",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 84,
@@ -18045,6 +18699,16 @@ export const MockGames = [
           "preferred": true,
           "person_id": 1
         }]
+      },
+      {
+        "date_added": "2020-04-30 21:24:03.363",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:39.78",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 80,
+        "id": 1375,
+        "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:24:02.443",
@@ -18071,18 +18735,12 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:24:03.363",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1375,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:24:03.633",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:41.976",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 76,
         "id": 1376,
         "myPlatforms": []
       }
@@ -18123,9 +18781,19 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:24:01.196",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:38.208",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 65,
+        "id": 1370,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:56:22.485",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-20 18:08:11.788",
+        "metacritic_matched": "2020-05-02 15:19:13.032",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 68,
@@ -18145,18 +18813,12 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:24:01.196",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1370,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:24:01.474",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:07:11.025",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 70,
         "id": 1371,
         "myPlatforms": []
       }
@@ -18199,7 +18861,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:51:27.437",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-20 18:08:57.289",
+        "metacritic_matched": "2020-05-02 15:07:08.013",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 75,
@@ -18219,27 +18881,31 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:23:59.669",
-        "metacritic_page": false,
-        "game_platform_id": 22,
-        "platform_name": "PlayStation Network",
-        "id": 1367,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:23:59.931",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:34.426",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 75,
         "id": 1368,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:24:00.202",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:35.969",
         "game_platform_id": 3,
         "platform_name": "Switch",
+        "metacritic": 76,
         "id": 1369,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:23:59.669",
+        "metacritic_page": false,
+        "game_platform_id": 22,
+        "platform_name": "PlayStation Network",
+        "id": 1367,
         "myPlatforms": []
       }
     ],
@@ -18331,8 +18997,34 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:23:56.086",
+        "date_added": "2020-04-30 21:23:57.436",
+        "metacritic_page": true,
+        "game_platform_id": 5,
+        "platform_name": "Wii U",
+        "id": 1363,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:23:57.701",
         "metacritic_page": false,
+        "game_platform_id": 19,
+        "platform_name": "PlayStation Vita",
+        "id": 1364,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:23:57.964",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:06:58.546",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 73,
+        "id": 1365,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:23:56.086",
+        "metacritic_page": true,
         "game_platform_id": 6,
         "platform_name": "PS3",
         "id": 1358,
@@ -18340,7 +19032,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:23:56.334",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 7,
         "platform_name": "Xbox 360",
         "id": 1359,
@@ -18371,34 +19063,12 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:23:57.436",
-        "metacritic_page": false,
-        "game_platform_id": 5,
-        "platform_name": "Wii U",
-        "id": 1363,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:23:57.701",
-        "metacritic_page": false,
-        "game_platform_id": 19,
-        "platform_name": "PlayStation Vita",
-        "id": 1364,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:23:57.964",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1365,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:23:58.223",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:32.931",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 74,
         "id": 1366,
         "myPlatforms": []
       }
@@ -18547,9 +19217,19 @@ export const MockGames = [
     "igdb_popularity": 2.560237561713214,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:23:51.351",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:28.579",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 71,
+        "id": 1347,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:49:59.67",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-21 15:19:10.182",
+        "metacritic_matched": "2020-05-02 15:03:39.45",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 75,
@@ -18585,27 +19265,21 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:23:51.351",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1347,
+        "date_added": "2020-04-30 21:23:51.881",
+        "metacritic_page": true,
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "id": 1349,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:23:51.607",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:30.415",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 77,
         "id": 1348,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:23:51.881",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1349,
         "myPlatforms": []
       }
     ],
@@ -18649,7 +19323,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-29 00:04:24.921718",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-20 18:12:29.537",
+        "metacritic_matched": "2020-05-02 15:25:41.411",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 72,
@@ -18671,7 +19345,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-29 00:04:24.940286",
         "metacritic_page": true,
-        "metacritic_matched": "2019-04-07 07:07:20.314",
+        "metacritic_matched": "2020-05-02 15:25:43.04",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 71,
@@ -18690,9 +19364,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:23:49.858",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:24.934",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 72,
         "id": 1344,
         "myPlatforms": []
       }
@@ -18734,7 +19410,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "date_added": "2020-04-28 23:58:08.081",
       "metacritic_page": true,
-      "metacritic_matched": "2020-04-20 18:13:37.13",
+      "metacritic_matched": "2020-05-02 15:23:46.711",
       "game_platform_id": 10,
       "platform_name": "PC",
       "metacritic": 81,
@@ -18791,7 +19467,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:44:05.993",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-20 18:14:50.709",
+        "metacritic_matched": "2020-05-02 14:50:00.065",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 76,
@@ -18811,6 +19487,16 @@ export const MockGames = [
         }]
       },
       {
+        "date_added": "2020-04-30 21:23:47.892",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:06:23.901",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 73,
+        "id": 1342,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:23:47.235",
         "metacritic_page": false,
         "game_platform_id": 15,
@@ -18827,18 +19513,12 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:23:47.892",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1342,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:23:48.176",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:22.275",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 76,
         "id": 1343,
         "myPlatforms": []
       }
@@ -18881,7 +19561,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:52:26.869",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-21 15:19:44.478",
+        "metacritic_matched": "2020-05-02 15:09:33.432",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 84,
@@ -18901,6 +19581,16 @@ export const MockGames = [
         }]
       },
       {
+        "date_added": "2020-04-30 21:23:46.41",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:20.485",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 80,
+        "id": 1339,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:23:45.899",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -18910,18 +19600,10 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:23:46.156",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 11,
         "platform_name": "PS4",
         "id": 1338,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:23:46.41",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1339,
         "myPlatforms": []
       }
     ],
@@ -18961,9 +19643,19 @@ export const MockGames = [
     "metacritic_page": true,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:23:44.564",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:14.991",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 71,
+        "id": 1335,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-28 23:54:36.7",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-20 18:15:34.036",
+        "metacritic_matched": "2020-05-02 15:14:47.12",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 71,
@@ -19015,18 +19707,12 @@ export const MockGames = [
         "myPlatforms": []
       },
       {
-        "date_added": "2020-04-30 21:23:44.564",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1335,
-        "myPlatforms": []
-      },
-      {
         "date_added": "2020-04-30 21:23:44.821",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:18.307",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 74,
         "id": 1336,
         "myPlatforms": []
       }
@@ -19089,9 +19775,9 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:23:42.476",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
         "id": 1330,
         "myPlatforms": []
       }
@@ -19138,10 +19824,10 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:44:56.276",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-20 18:17:19.529",
+        "metacritic_matched": "2020-05-02 14:51:52.34",
         "game_platform_id": 10,
         "platform_name": "PC",
-        "metacritic": 58,
+        "metacritic": 61,
         "id": 129,
         "myPlatforms": [{
           "date_added": "2020-04-28 23:44:56.862",
@@ -19158,6 +19844,16 @@ export const MockGames = [
         }]
       },
       {
+        "date_added": "2020-04-30 21:23:40.887",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:13.629",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 43,
+        "id": 1328,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:23:40.079",
         "metacritic_page": false,
         "game_platform_id": 16,
@@ -19167,7 +19863,7 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:23:40.343",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 11,
         "platform_name": "PS4",
         "id": 1326,
@@ -19175,18 +19871,12 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:23:40.623",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:05:59.828",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 61,
         "id": 1327,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:23:40.887",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1328,
         "myPlatforms": []
       }
     ],
@@ -19273,7 +19963,7 @@ export const MockGames = [
         "date_added": "2020-04-30 21:23:39.174",
         "metacritic_page": false,
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
         "id": 1324,
         "myPlatforms": []
       }
@@ -19317,7 +20007,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:44:45.531",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-21 15:20:00.628",
+        "metacritic_matched": "2020-05-02 14:51:31.848",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 63,
@@ -19337,6 +20027,16 @@ export const MockGames = [
         }]
       },
       {
+        "date_added": "2020-04-30 21:23:37.096",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:11.952",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 42,
+        "id": 1319,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:23:36.195",
         "metacritic_page": false,
         "game_platform_id": 15,
@@ -19354,18 +20054,10 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:23:36.816",
-        "metacritic_page": false,
+        "metacritic_page": true,
         "game_platform_id": 11,
         "platform_name": "PS4",
         "id": 1318,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:23:37.096",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1319,
         "myPlatforms": []
       }
     ],
@@ -19399,9 +20091,19 @@ export const MockGames = [
     "igdb_popularity": 9.692831005782875,
     "availablePlatforms": [
       {
+        "date_added": "2020-04-30 21:23:34.575",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:07.9",
+        "game_platform_id": 11,
+        "platform_name": "PS4",
+        "metacritic": 67,
+        "id": 1313,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-29 08:13:51.6",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-22 15:29:26.994",
+        "metacritic_matched": "2020-05-02 15:25:46.178",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 70,
@@ -19421,27 +20123,21 @@ export const MockGames = [
         }]
       },
       {
-        "date_added": "2020-04-30 21:23:34.575",
-        "metacritic_page": false,
-        "game_platform_id": 11,
-        "platform_name": "PS4",
-        "id": 1313,
+        "date_added": "2020-04-30 21:23:35.111",
+        "metacritic_page": true,
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "id": 1315,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:23:34.842",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:09.559",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 73,
         "id": 1314,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:23:35.111",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1315,
         "myPlatforms": []
       }
     ],
@@ -19478,7 +20174,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:52:47.198",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-21 15:20:15.749",
+        "metacritic_matched": "2020-05-02 15:10:21.546",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 81,
@@ -19498,27 +20194,33 @@ export const MockGames = [
         }]
       },
       {
+        "date_added": "2020-04-30 21:23:33.385",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:32:04.695",
+        "game_platform_id": 3,
+        "platform_name": "Switch",
+        "metacritic": 80,
+        "id": 1312,
+        "myPlatforms": []
+      },
+      {
         "date_added": "2020-04-30 21:23:32.867",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:05:33.562",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 82,
         "id": 1310,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:23:33.132",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-01 18:05:37.76",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 84,
         "id": 1311,
-        "myPlatforms": []
-      },
-      {
-        "date_added": "2020-04-30 21:23:33.385",
-        "metacritic_page": false,
-        "game_platform_id": 3,
-        "platform_name": "Switch",
-        "id": 1312,
         "myPlatforms": []
       }
     ],
@@ -19546,9 +20248,11 @@ export const MockGames = [
     "metacritic_page": false,
     "availablePlatforms": [{
       "date_added": "2020-04-29 08:13:56.334",
-      "metacritic_page": false,
+      "metacritic_page": true,
+      "metacritic_matched": "2020-05-02 15:26:15.242",
       "game_platform_id": 3,
       "platform_name": "Switch",
+      "metacritic": 92,
       "id": 1043,
       "myPlatforms": [{
         "date_added": "2020-04-29 08:13:56.838",
@@ -19601,7 +20305,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:44:30.791",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-20 18:29:38.968",
+        "metacritic_matched": "2020-05-02 14:51:03.878",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 89,
@@ -19672,7 +20376,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:56:50.437",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-21 15:20:29.17",
+        "metacritic_matched": "2020-05-02 15:20:34.879",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 82,
@@ -19726,7 +20430,7 @@ export const MockGames = [
     "availablePlatforms": [{
       "date_added": "2020-04-29 08:13:54.678",
       "metacritic_page": true,
-      "metacritic_matched": "2020-04-21 15:20:35.028",
+      "metacritic_matched": "2020-05-02 15:25:51.607",
       "game_platform_id": 10,
       "platform_name": "PC",
       "metacritic": 74,
@@ -20249,7 +20953,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:48:36.867",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-21 15:20:59.845",
+        "metacritic_matched": "2020-05-02 14:59:59.602",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 92,
@@ -20318,7 +21022,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:49:21.989",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-22 15:30:01.378",
+        "metacritic_matched": "2020-05-02 15:01:54.082",
         "game_platform_id": 10,
         "platform_name": "PC",
         "metacritic": 88,
@@ -20529,7 +21233,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:55:28.966",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-20 20:44:27.678",
+        "metacritic_matched": "2020-05-02 15:17:07.353",
         "game_platform_id": 11,
         "platform_name": "PS4",
         "metacritic": 54,
@@ -20550,17 +21254,21 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 21:22:48.554",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:30:56.837",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 59,
         "id": 1272,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 21:22:49.022",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:31:00.485",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 65,
         "id": 1273,
         "myPlatforms": []
       }
@@ -20597,7 +21305,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:48:13.795",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-24 15:42:29.856",
+        "metacritic_matched": "2020-05-02 14:59:10.453",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 78,
@@ -20619,9 +21327,11 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 17:03:57.342",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:26:25.188",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 78,
         "id": 1067,
         "myPlatforms": []
       }
@@ -20671,7 +21381,7 @@ export const MockGames = [
       {
         "date_added": "2020-04-28 23:45:24.881",
         "metacritic_page": true,
-        "metacritic_matched": "2020-04-24 18:49:52.399",
+        "metacritic_matched": "2020-05-02 14:52:59.013",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "metacritic": 79,
@@ -20691,25 +21401,31 @@ export const MockGames = [
       },
       {
         "date_added": "2020-04-30 17:03:53.451",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:26:17.817",
         "game_platform_id": 10,
         "platform_name": "PC",
+        "metacritic": 79,
         "id": 1064,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 17:03:54.177",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:26:20.665",
         "game_platform_id": 11,
         "platform_name": "PS4",
+        "metacritic": 75,
         "id": 1065,
         "myPlatforms": []
       },
       {
         "date_added": "2020-04-30 17:03:54.701",
-        "metacritic_page": false,
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:26:23.153",
         "game_platform_id": 4,
-        "platform_name": "Xbox One",
+        "platform_name": "Xbox Two",
+        "metacritic": 78,
         "id": 1066,
         "myPlatforms": []
       }
@@ -20741,9 +21457,11 @@ export const MockGames = [
     "igdb_popularity": 1,
     "availablePlatforms": [{
       "date_added": "2020-05-01 00:04:03.403216",
-      "metacritic_page": false,
+      "metacritic_page": true,
+      "metacritic_matched": "2020-05-01 19:23:14.098",
       "game_platform_id": 3,
       "platform_name": "Switch",
+      "metacritic": 80,
       "id": 4427,
       "myPlatforms": [{
         "date_added": "2020-05-01 00:04:03.698184",
