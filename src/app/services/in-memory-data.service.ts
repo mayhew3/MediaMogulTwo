@@ -85,6 +85,8 @@ export class InMemoryDataService implements InMemoryDbService{
       this.packageUpResponse(this.getBody(requestInfo), requestInfo);
     } else if (collectionName === 'myPlatforms') {
       this.updateMyGamePlatform(requestInfo);
+    } else if (collectionName === 'gamePlatforms') {
+      this.updateGamePlatform(requestInfo);
     }
     return null;
   }
@@ -127,7 +129,7 @@ export class InMemoryDataService implements InMemoryDbService{
     const game = this.getBody(requestInfo);
     game.id = this.nextGameID();
     game.date_added = new Date();
-    this.updatePlatforms(game.availablePlatforms, this.getAvailablePlatforms());
+    this.updatePlatforms(game.availablePlatforms, this.getAllAvailablePlatforms());
     return this.packageUpResponse(game, requestInfo);
   }
 
@@ -182,6 +184,22 @@ export class InMemoryDataService implements InMemoryDbService{
     }
   }
 
+  private updateGamePlatform(requestInfo: RequestInfo) {
+    const jsonBody = this.getBody(requestInfo);
+    const gamePlatform = this.findGamePlatform(jsonBody.id);
+    if (!!gamePlatform) {
+      const changedFields = jsonBody.changedFields;
+      const old_name = gamePlatform.full_name;
+      this.updateChangedFieldsOnObject(gamePlatform, changedFields);
+      const full_name = changedFields.full_name;
+      if (!!full_name && full_name !== old_name) {
+        this.updateAllAvailablePlatformsWithName(old_name, full_name);
+        this.updateAllMyPlatformsWithName(old_name, full_name);
+      }
+      return this.packageUpResponse(gamePlatform, requestInfo);
+    }
+  }
+
   private updateMyGamePlatform(requestInfo: RequestInfo) {
     const jsonBody = this.getBody(requestInfo);
     const myGamePlatform = this.findMyGamePlatform(jsonBody.id);
@@ -191,23 +209,37 @@ export class InMemoryDataService implements InMemoryDbService{
     }
   }
 
+  private updateAllAvailablePlatformsWithName(oldName: string, newName: string) {
+    const withName = _.where(this.getAllAvailablePlatforms(), {platform_name: oldName});
+    withName.forEach(availablePlatform => availablePlatform.platform_name = newName);
+  }
+
+  private updateAllMyPlatformsWithName(oldName: string, newName: string) {
+    const withName = _.where(this.getAllMyPlatforms(), {platform_name: oldName});
+    withName.forEach(myPlatform => myPlatform.platform_name = newName);
+  }
+
   private findGame(gameID: number): any {
     return _.findWhere(this.games, {id: gameID});
   }
 
-  private getAvailablePlatforms(): any[] {
+  private findGamePlatform(gamePlatformID: number): any {
+    return _.findWhere(this.gamePlatforms, {id: gamePlatformID});
+  }
+
+  private getAllAvailablePlatforms(): any[] {
     return _.flatten(_.map(this.games, game => game.availablePlatforms));
   }
 
   private getAllMyPlatforms(): any[] {
-    const availablePlatforms = this.getAvailablePlatforms();
+    const availablePlatforms = this.getAllAvailablePlatforms();
     return _.flatten(_.map(_.filter(availablePlatforms, availablePlatform => !!availablePlatform.myPlatforms), availablePlatform => {
       return availablePlatform.myPlatforms;
     }));
   }
 
   private findAvailableGamePlatform(availablePlatformID: number): any {
-    const availablePlatforms = this.getAvailablePlatforms();
+    const availablePlatforms = this.getAllAvailablePlatforms();
     return _.findWhere(availablePlatforms, {id: availablePlatformID});
   }
 
@@ -233,7 +265,7 @@ export class InMemoryDataService implements InMemoryDbService{
   }
 
   private nextAvailablePlatformID(): number {
-    const availablePlatforms = this.getAvailablePlatforms();
+    const availablePlatforms = this.getAllAvailablePlatforms();
     return this.nextID(availablePlatforms);
   }
 
