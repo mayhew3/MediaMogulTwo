@@ -1,7 +1,9 @@
 <h1>My Global Platforms</h1>
 
+<h3>My Platforms</h3>
+
 <div class="row"
-     *ngFor="let platform of platformService.myPlatforms | async">
+     *ngFor="let platform of myGlobalPlatforms()">
   <div class="col">
     {{platform.full_name.originalValue}}
   </div>
@@ -9,3 +11,14 @@
     {{platform.myGlobalPlatform.rank.originalValue}}
   </div>
 </div>
+
+<br>
+<h3>Other Platforms</h3>
+
+<div class="row"
+     *ngFor="let platform of otherPlatforms()">
+  <div class="col">
+    {{platform.full_name.originalValue}}
+  </div>
+</div>
+

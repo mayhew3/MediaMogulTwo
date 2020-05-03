@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {PlatformService} from '../../services/platform.service';
+import {GamePlatform} from '../../interfaces/Model/GamePlatform';
+import {ArrayUtil} from '../../utility/ArrayUtil';
+import * as _ from 'underscore';
 
 @Component({
   selector: 'mm-my-platforms',
@@ -8,9 +11,23 @@ import {PlatformService} from '../../services/platform.service';
 })
 export class MyPlatformsComponent implements OnInit {
 
-  constructor(public platformService: PlatformService) { }
+  allPlatforms: GamePlatform[] = [];
+
+  constructor(private platformService: PlatformService) { }
 
   ngOnInit(): void {
+    this.platformService.platforms.subscribe(incoming => {
+      ArrayUtil.refreshArray(this.allPlatforms, incoming);
+    });
   }
+
+  myGlobalPlatforms(): GamePlatform[] {
+    return _.filter(this.allPlatforms, platform => platform.isAvailableForMe());
+  }
+
+  otherPlatforms(): GamePlatform[] {
+    return _.filter(this.allPlatforms, platform => !platform.isAvailableForMe());
+  }
+
 
 }
