@@ -10,7 +10,8 @@ exports.getGames = async function (request, response) {
     where: {
       retired: 0,
       igdb_ignored: null
-    }
+    },
+    order: ['id']
   });
   const defaultPosters = await model.IGDBPoster.findAll({
     where: {

@@ -1,7 +1,9 @@
 const model = require('./model');
 
 exports.getPlatforms = async function (request, response) {
-  const platforms = await model.GamePlatform.findAll();
+  const platforms = await model.GamePlatform.findAll({
+    order: ['id']
+  });
   response.json(platforms);
 };
 
@@ -20,7 +22,28 @@ exports.updateGamePlatform = async function(request, response) {
 
   try {
     const gamePlatform = await model.GamePlatform.findByPk(gamePlatformID);
+    const oldPlatformName = gamePlatform.full_name;
     await gamePlatform.update(changedFields);
+
+    const newPlatformName = changedFields.full_name;
+    if (!!newPlatformName && newPlatformName !== oldPlatformName) {
+      const changedAvailableFields = {
+        platform_name: newPlatformName
+      };
+
+      await model.AvailableGamePlatform.update(changedAvailableFields, {
+        where: {
+          platform_name: oldPlatformName
+        }
+      });
+
+      await model.MyGamePlatform.update(changedAvailableFields, {
+        where: {
+          platform_name: oldPlatformName
+        }
+      });
+    }
+
     response.json({});
   } catch (err) {
     console.error(err);
