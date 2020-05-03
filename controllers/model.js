@@ -161,5 +161,18 @@ exports.MyGamePlatform = sequelize.sequelize.define("my_game_platform", {
   updatedAt: false
 });
 
+exports.MyGlobalPlatform = sequelize.sequelize.define("person_platform", {
+  id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
+  person_id: Sequelize.INTEGER,
+  game_platform_id: Sequelize.INTEGER,
+  date_added: Sequelize.DATE,
+  platform_name: Sequelize.TEXT,
+  rank: Sequelize.INTEGER,
+}, {
+  freezeTableName: true,
+  createdAt: false,
+  updatedAt: false
+});
+
 exports.Game.hasMany(exports.GameplaySession, {foreignKey: 'game_id'});
 exports.GameplaySession.belongsTo(exports.Game, {foreignKey: 'game_id'});

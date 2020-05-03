@@ -1,10 +1,34 @@
 const model = require('./model');
+const _ = require('underscore');
 
 exports.getPlatforms = async function (request, response) {
+  const person_id = request.query.person_id;
+
   const platforms = await model.GamePlatform.findAll({
     order: ['id']
   });
-  response.json(platforms);
+
+  const myGlobals = await model.MyGlobalPlatform.findAll({
+    where: {
+      person_id: person_id
+    }
+  });
+
+  const outputObj = [];
+
+  for (const platform of platforms) {
+    const myGlobalPlatform = _.findWhere(myGlobals, {game_platform_id: platform.id});
+
+    const returnObj = platform.dataValues;
+
+    if (!!myGlobalPlatform) {
+      returnObj.myPlatform = myGlobalPlatform;
+    }
+
+    outputObj.push(returnObj);
+  }
+
+  response.json(outputObj);
 };
 
 exports.addGamePlatform = async function(request, response) {
@@ -48,3 +72,19 @@ exports.updateGamePlatform = async function(request, response) {
     response.send({msg: 'Error updating gamePlatform: ' + JSON.stringify(changedFields)});
   }
 }
+
+exports.addMyGlobalPlatform = async function(request, response) {
+  const myGlobalObj = request.body;
+
+  const myGlobal = await model.MyGlobalPlatform.create(myGlobalObj);
+  response.json(myGlobal);
+};
+
+exports.deleteMyGlobalPlatform = async function(request, response) {
+  const myGlobalPlatformID = request.params.id;
+
+  const myGlobalPlatform = await model.MyGlobalPlatform.findByPk(myGlobalPlatformID);
+  await myGlobalPlatform.destroy();
+
+  response.json({msg: 'Success'});
+};

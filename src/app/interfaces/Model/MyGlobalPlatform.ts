@@ -8,7 +8,7 @@ export class MyGlobalPlatform extends DataObject {
 
   game_platform_id = this.registerIntegerField('game_platform_id', true);
   platform_name = this.registerStringField("platform_name", true);
-  rank = this.registerDecimalField("rank", true);
+  rank = this.registerIntegerField("rank", true);
   person_id = this.registerIntegerField('person_id', true);
 
   constructor(private gamePlatform: GamePlatform) {

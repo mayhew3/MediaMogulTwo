@@ -226,7 +226,8 @@ export class InMemoryDataService implements InMemoryDbService{
         full_name: platformWrapper.full_name,
         short_name: platformWrapper.short_name,
         igdb_platform_id: platformWrapper.igdb_platform_id,
-        igdb_name: platformWrapper.igdb_name
+        igdb_name: platformWrapper.igdb_name,
+        my_platforms: []
       }
       this.gamePlatforms.push(gamePlatform);
       return gamePlatform;

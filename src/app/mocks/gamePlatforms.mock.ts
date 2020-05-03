@@ -1,12 +1,21 @@
 
 export const MockGamePlatforms = [
   {
+    "my_platforms": [{
+      "date_added": "2020-05-03 15:11:17.677126",
+      "game_platform_id": 1,
+      "platform_name": "Steam",
+      "rank": 1,
+      "id": 7,
+      "person_id": 1
+    }],
     "full_name": "Steam",
     "metacritic_uri": "pc",
     "short_name": "Steam",
     "id": 1
   },
   {
+    "my_platforms": [],
     "full_name": "Xbox",
     "metacritic_uri": "xbox",
     "igdb_platform_id": 11,
@@ -15,40 +24,39 @@ export const MockGamePlatforms = [
     "igdb_name": "Xbox"
   },
   {
+    "my_platforms": [{
+      "date_added": "2020-05-03 15:11:28.250164",
+      "game_platform_id": 3,
+      "platform_name": "Switch",
+      "rank": 5,
+      "id": 11,
+      "person_id": 1
+    }],
     "full_name": "Switch",
     "metacritic_uri": "switch",
     "igdb_platform_id": 130,
     "short_name": "Switch",
     "id": 3,
-    "igdb_name": "Nintendo Switch",
-    "my_platforms": [
-      {
-        "id": 2,
-        "game_platform_id": 3,
-        "person_id": 1,
-        "rank": 2,
-        "platform_name": "Switch"
-      }
-    ]
+    "igdb_name": "Nintendo Switch"
   },
   {
+    "my_platforms": [{
+      "date_added": "2020-05-03 15:11:19.855811",
+      "game_platform_id": 4,
+      "platform_name": "Xbox One",
+      "rank": 2,
+      "id": 8,
+      "person_id": 1
+    }],
     "full_name": "Xbox One",
     "metacritic_uri": "xbox-one",
     "igdb_platform_id": 49,
     "short_name": "Xbox One",
     "id": 4,
-    "igdb_name": "Xbox One",
-    "my_platforms": [
-      {
-        "id": 1,
-        "game_platform_id": 4,
-        "person_id": 1,
-        "rank": 3,
-        "platform_name": "Xbox One"
-      }
-    ]
+    "igdb_name": "Xbox One"
   },
   {
+    "my_platforms": [],
     "full_name": "Wii U",
     "metacritic_uri": "wii-u",
     "igdb_platform_id": 41,
@@ -57,23 +65,23 @@ export const MockGamePlatforms = [
     "igdb_name": "Wii U"
   },
   {
+    "my_platforms": [],
     "full_name": "PS3",
     "metacritic_uri": "playstation-3",
     "igdb_platform_id": 9,
     "short_name": "PS3",
     "id": 6,
-    "igdb_name": "PlayStation 3",
-    "my_platforms": [
-      {
-        "id": 3,
-        "game_platform_id": 6,
-        "person_id": 1,
-        "rank": 1,
-        "platform_name": "PS3"
-      }
-    ]
+    "igdb_name": "PlayStation 3"
   },
   {
+    "my_platforms": [{
+      "date_added": "2020-05-03 15:11:39.020286",
+      "game_platform_id": 7,
+      "platform_name": "Xbox 360",
+      "rank": 6,
+      "id": 12,
+      "person_id": 1
+    }],
     "full_name": "Xbox 360",
     "metacritic_uri": "xbox-360",
     "igdb_platform_id": 12,
@@ -82,6 +90,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Xbox 360"
   },
   {
+    "my_platforms": [],
     "full_name": "Wii",
     "metacritic_uri": "wii",
     "igdb_platform_id": 5,
@@ -90,6 +99,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Wii"
   },
   {
+    "my_platforms": [],
     "full_name": "Nintendo DS",
     "metacritic_uri": "ds",
     "igdb_platform_id": 20,
@@ -98,6 +108,14 @@ export const MockGamePlatforms = [
     "igdb_name": "Nintendo DS"
   },
   {
+    "my_platforms": [{
+      "date_added": "2020-05-03 15:11:23.786667",
+      "game_platform_id": 10,
+      "platform_name": "PC",
+      "rank": 3,
+      "id": 9,
+      "person_id": 1
+    }],
     "full_name": "PC",
     "metacritic_uri": "pc",
     "igdb_platform_id": 6,
@@ -106,6 +124,14 @@ export const MockGamePlatforms = [
     "igdb_name": "PC (Microsoft Windows)"
   },
   {
+    "my_platforms": [{
+      "date_added": "2020-05-03 15:11:26.153095",
+      "game_platform_id": 11,
+      "platform_name": "PS4",
+      "rank": 4,
+      "id": 10,
+      "person_id": 1
+    }],
     "full_name": "PS4",
     "metacritic_uri": "playstation-4",
     "igdb_platform_id": 48,
@@ -114,6 +140,7 @@ export const MockGamePlatforms = [
     "igdb_name": "PlayStation 4"
   },
   {
+    "my_platforms": [],
     "full_name": "Android",
     "igdb_platform_id": 34,
     "short_name": "Android",
@@ -121,6 +148,14 @@ export const MockGamePlatforms = [
     "igdb_name": "Android"
   },
   {
+    "my_platforms": [{
+      "date_added": "2020-05-03 15:11:44.817359",
+      "game_platform_id": 13,
+      "platform_name": "iOS",
+      "rank": 7,
+      "id": 13,
+      "person_id": 1
+    }],
     "full_name": "iOS",
     "metacritic_uri": "ios",
     "igdb_platform_id": 39,
@@ -129,6 +164,7 @@ export const MockGamePlatforms = [
     "igdb_name": "iOS"
   },
   {
+    "my_platforms": [],
     "full_name": "PlayStation 2",
     "metacritic_uri": "playstation-2",
     "igdb_platform_id": 8,
@@ -137,6 +173,7 @@ export const MockGamePlatforms = [
     "igdb_name": "PlayStation 2"
   },
   {
+    "my_platforms": [],
     "full_name": "Linux",
     "igdb_platform_id": 3,
     "short_name": "Linux",
@@ -144,6 +181,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Linux"
   },
   {
+    "my_platforms": [],
     "full_name": "Mac",
     "igdb_platform_id": 14,
     "short_name": "Mac",
@@ -151,6 +189,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Mac"
   },
   {
+    "my_platforms": [],
     "full_name": "Arcade",
     "igdb_platform_id": 52,
     "short_name": "Arcade",
@@ -158,6 +197,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Arcade"
   },
   {
+    "my_platforms": [],
     "full_name": "BlackBerry OS",
     "igdb_platform_id": 73,
     "short_name": "blackberry",
@@ -165,6 +205,7 @@ export const MockGamePlatforms = [
     "igdb_name": "BlackBerry OS"
   },
   {
+    "my_platforms": [],
     "full_name": "PlayStation Vita",
     "metacritic_uri": "playstation-vita",
     "igdb_platform_id": 46,
@@ -173,6 +214,7 @@ export const MockGamePlatforms = [
     "igdb_name": "PlayStation Vita"
   },
   {
+    "my_platforms": [],
     "full_name": "Xbox Live Arcade",
     "igdb_platform_id": 36,
     "short_name": "xla",
@@ -180,6 +222,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Xbox Live Arcade"
   },
   {
+    "my_platforms": [],
     "full_name": "Nintendo 3DS",
     "igdb_platform_id": 37,
     "short_name": "3DS",
@@ -187,6 +230,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Nintendo 3DS"
   },
   {
+    "my_platforms": [],
     "full_name": "PlayStation Network",
     "igdb_platform_id": 45,
     "short_name": "psn",
@@ -194,6 +238,7 @@ export const MockGamePlatforms = [
     "igdb_name": "PlayStation Network"
   },
   {
+    "my_platforms": [],
     "full_name": "Windows Phone",
     "igdb_platform_id": 74,
     "short_name": "Win Phone",
@@ -201,6 +246,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Windows Phone"
   },
   {
+    "my_platforms": [],
     "full_name": "Super Nintendo Entertainment System (SNES)",
     "igdb_platform_id": 19,
     "short_name": "SNES",
@@ -208,6 +254,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Super Nintendo Entertainment System (SNES)"
   },
   {
+    "my_platforms": [],
     "full_name": "Virtual Console (Nintendo)",
     "igdb_platform_id": 47,
     "short_name": "VC",
@@ -215,6 +262,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Virtual Console (Nintendo)"
   },
   {
+    "my_platforms": [],
     "full_name": "PlayStation Portable",
     "igdb_platform_id": 38,
     "short_name": "PSP",
@@ -222,6 +270,7 @@ export const MockGamePlatforms = [
     "igdb_name": "PlayStation Portable"
   },
   {
+    "my_platforms": [],
     "full_name": "Ouya",
     "igdb_platform_id": 72,
     "short_name": "Ouya",
@@ -229,6 +278,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Ouya"
   },
   {
+    "my_platforms": [],
     "full_name": "WiiWare",
     "igdb_platform_id": 56,
     "short_name": "WiiWare",
@@ -236,6 +286,7 @@ export const MockGamePlatforms = [
     "igdb_name": "WiiWare"
   },
   {
+    "my_platforms": [],
     "full_name": "Google Stadia",
     "igdb_platform_id": 170,
     "short_name": "Stadia",
@@ -243,6 +294,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Google Stadia"
   },
   {
+    "my_platforms": [],
     "full_name": "Oculus VR",
     "igdb_platform_id": 162,
     "short_name": "Oculus VR",
@@ -250,6 +302,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Oculus VR"
   },
   {
+    "my_platforms": [],
     "full_name": "SteamVR",
     "igdb_platform_id": 163,
     "short_name": "Steam VR",
@@ -257,6 +310,7 @@ export const MockGamePlatforms = [
     "igdb_name": "SteamVR"
   },
   {
+    "my_platforms": [],
     "full_name": "PlayStation VR",
     "igdb_platform_id": 165,
     "short_name": "PlayStation VR",
@@ -264,6 +318,7 @@ export const MockGamePlatforms = [
     "igdb_name": "PlayStation VR"
   },
   {
+    "my_platforms": [],
     "full_name": "PC DOS",
     "igdb_platform_id": 13,
     "short_name": "DOS",
@@ -271,6 +326,7 @@ export const MockGamePlatforms = [
     "igdb_name": "PC DOS"
   },
   {
+    "my_platforms": [],
     "full_name": "Commodore C64/128",
     "igdb_platform_id": 15,
     "short_name": "C64",
@@ -278,6 +334,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Commodore C64/128"
   },
   {
+    "my_platforms": [],
     "full_name": "Amiga",
     "igdb_platform_id": 16,
     "short_name": "Amiga",
@@ -285,6 +342,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Amiga"
   },
   {
+    "my_platforms": [],
     "full_name": "Nintendo Entertainment System (NES)",
     "igdb_platform_id": 18,
     "short_name": "NES",
@@ -292,6 +350,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Nintendo Entertainment System (NES)"
   },
   {
+    "my_platforms": [],
     "full_name": "Amstrad CPC",
     "igdb_platform_id": 25,
     "short_name": "ACPC",
@@ -299,6 +358,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Amstrad CPC"
   },
   {
+    "my_platforms": [],
     "full_name": "Atari ST/STE",
     "igdb_platform_id": 63,
     "short_name": "Atari-ST",
@@ -306,6 +366,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Atari ST/STE"
   },
   {
+    "my_platforms": [],
     "full_name": "Apple II",
     "igdb_platform_id": 75,
     "short_name": "Apple][",
@@ -313,24 +374,28 @@ export const MockGamePlatforms = [
     "igdb_name": "Apple II"
   },
   {
+    "my_platforms": [],
     "full_name": "Apple IIGS",
     "igdb_platform_id": 115,
     "id": 40,
     "igdb_name": "Apple IIGS"
   },
   {
+    "my_platforms": [],
     "full_name": "FM Towns",
     "igdb_platform_id": 118,
     "id": 41,
     "igdb_name": "FM Towns"
   },
   {
+    "my_platforms": [],
     "full_name": "PC-98",
     "igdb_platform_id": 149,
     "id": 42,
     "igdb_name": "PC-98"
   },
   {
+    "my_platforms": [],
     "full_name": "Mobile",
     "igdb_platform_id": 55,
     "short_name": "Mobile",
@@ -338,12 +403,14 @@ export const MockGamePlatforms = [
     "igdb_name": "Mobile"
   },
   {
+    "my_platforms": [],
     "full_name": "Windows Mixed Reality",
     "igdb_platform_id": 161,
     "id": 44,
     "igdb_name": "Windows Mixed Reality"
   },
   {
+    "my_platforms": [],
     "full_name": "Nintendo GameCube",
     "igdb_platform_id": 21,
     "short_name": "NGC",
@@ -351,12 +418,14 @@ export const MockGamePlatforms = [
     "igdb_name": "Nintendo GameCube"
   },
   {
+    "my_platforms": [],
     "full_name": "Turbografx-16/PC Engine CD",
     "igdb_platform_id": 150,
     "id": 46,
     "igdb_name": "Turbografx-16/PC Engine CD"
   },
   {
+    "my_platforms": [],
     "full_name": "Dreamcast",
     "igdb_platform_id": 23,
     "short_name": "DC",
@@ -364,18 +433,21 @@ export const MockGamePlatforms = [
     "igdb_name": "Dreamcast"
   },
   {
+    "my_platforms": [],
     "full_name": "PlayStation 5",
     "igdb_platform_id": 167,
     "id": 48,
     "igdb_name": "PlayStation 5"
   },
   {
+    "my_platforms": [],
     "full_name": "Xbox Series X",
     "igdb_platform_id": 169,
     "id": 49,
     "igdb_name": "Xbox Series X"
   },
   {
+    "my_platforms": [],
     "full_name": "Game Boy Advance",
     "igdb_platform_id": 24,
     "short_name": "GBA",
@@ -383,12 +455,14 @@ export const MockGamePlatforms = [
     "igdb_name": "Game Boy Advance"
   },
   {
+    "my_platforms": [],
     "full_name": "Amazon Fire TV",
     "igdb_platform_id": 132,
     "id": 51,
     "igdb_name": "Amazon Fire TV"
   },
   {
+    "my_platforms": [],
     "full_name": "PlayStation",
     "igdb_platform_id": 7,
     "short_name": "PS1",
@@ -396,6 +470,7 @@ export const MockGamePlatforms = [
     "igdb_name": "PlayStation"
   },
   {
+    "my_platforms": [],
     "full_name": "Game Boy",
     "igdb_platform_id": 33,
     "short_name": "Game Boy",
@@ -403,6 +478,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Game Boy"
   },
   {
+    "my_platforms": [],
     "full_name": "Sega Saturn",
     "igdb_platform_id": 32,
     "short_name": "Saturn",
@@ -410,6 +486,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Sega Saturn"
   },
   {
+    "my_platforms": [],
     "full_name": "N-Gage",
     "igdb_platform_id": 42,
     "short_name": "NGage",
@@ -417,6 +494,7 @@ export const MockGamePlatforms = [
     "igdb_name": "N-Gage"
   },
   {
+    "my_platforms": [],
     "full_name": "Family Computer Disk System",
     "igdb_platform_id": 51,
     "short_name": "fds",
@@ -424,6 +502,7 @@ export const MockGamePlatforms = [
     "igdb_name": "Family Computer Disk System"
   },
   {
+    "my_platforms": [],
     "full_name": "Web browser",
     "igdb_platform_id": 82,
     "short_name": "browser",

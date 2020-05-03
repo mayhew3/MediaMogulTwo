@@ -94,10 +94,15 @@ export class PlatformService implements OnDestroy {
   }
 
   async addMyGlobalPlatform(myGlobalPlatform: MyGlobalPlatform): Promise<MyGlobalPlatform> {
-    const gamePlatform = myGlobalPlatform.platform;
-    gamePlatform.myGlobalPlatform = await myGlobalPlatform.commit(this.http);
-    this.pushPlatformListChange();
-    return gamePlatform.myGlobalPlatform;
+    return new Promise(resolve => {
+      this.personService.me$.subscribe(async person => {
+        myGlobalPlatform.person_id.value = person.id.value;
+        const gamePlatform = myGlobalPlatform.platform;
+        gamePlatform.myGlobalPlatform = await myGlobalPlatform.commit(this.http);
+        this.pushPlatformListChange();
+        resolve(gamePlatform.myGlobalPlatform);
+      });
+    });
   }
 
   async removeMyGlobalPlatform(myGlobalPlatform: MyGlobalPlatform): Promise<any> {
