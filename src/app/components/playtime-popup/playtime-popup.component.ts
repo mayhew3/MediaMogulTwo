@@ -6,6 +6,7 @@ import * as moment from 'moment';
 import {PersonService} from '../../services/person.service';
 import {GameplaySession} from '../../interfaces/Model/GameplaySession';
 import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
+import * as _ from 'underscore';
 
 @Component({
   selector: 'mm-playtime-popup',
@@ -62,6 +63,10 @@ export class PlaytimePopupComponent implements OnInit {
 
   platformIsSelected(platform: MyGamePlatform): boolean {
     return platform.id.originalValue === this.selectedPlatform.id.originalValue;
+  }
+
+  platformsExceptSelected(): MyGamePlatform[] {
+    return _.without(this.game.myMutablePlatforms, this.selectedPlatform);
   }
 
   selectPlatform(platform: MyGamePlatform): void {

@@ -23,6 +23,7 @@ export class GameListComponent implements OnInit{
   @Input() changeableFilters: GameFilterWithOptions[];
   @Input() orderings: GameOrdering[];
   nailedDownFilters: GameFilterWithOptions[];
+  nailedDownOrderings: GameOrdering[];
   selectedOrdering: GameOrdering;
   filteredGames: Game[] = [];
   page = 1;
@@ -41,15 +42,12 @@ export class GameListComponent implements OnInit{
     this.visibleOptions = new Map<GameFilterWithOptions, GameFilterOption[]>();
     this.selectedOrdering = this.orderings[0];
     this.nailedDownFilters = this.arrayService.cloneArray(this.changeableFilters);
+    this.nailedDownOrderings = this.arrayService.cloneArray(this.orderings);
     this.sortAndFilterGames();
   }
 
   showOrderingDropdown(): boolean {
     return !this.initializing;
-  }
-
-  isSelected(ordering: GameOrdering): boolean {
-    return ordering.displayName === this.selectedOrdering.displayName;
   }
 
   async changeOrdering(ordering: GameOrdering) {

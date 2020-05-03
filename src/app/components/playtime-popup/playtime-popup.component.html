@@ -21,16 +21,25 @@
 
       <!-- Multi Platform Dropdown -->
 
-      <!--suppress HtmlFormInputWithoutLabel -->
-      <select *ngIf="game.myMutablePlatforms.length > 1"
-              class="custom-select"
-              id="platformSelect">
-        <option *ngFor="let platform of game.myMutablePlatforms"
-                [selected]="platformIsSelected(platform)"
-                (click)="selectPlatform(platform)">
-          {{platform.platform_name.originalValue}}
-        </option>
-      </select>
+      <div ngbDropdown
+           *ngIf="game.myMutablePlatforms.length > 1">
+        <button class="btn btn-lg btn-primary"
+                id="platformDropdown"
+                name="platformDropdown"
+                ngbDropdownToggle>
+          {{selectedPlatform.platform_name.originalValue}}
+        </button>
+        <div ngbDropdownMenu
+             [attr.aria-labelledby]="'dropdownPlatform'">
+          <button
+            class="btn-lg"
+            *ngFor="let platform of platformsExceptSelected()"
+            ngbDropdownItem
+            (click)="selectPlatform(platform)">
+            {{platform.platform_name.originalValue}}
+          </button>
+        </div>
+      </div>
 
     </div>
   </div>

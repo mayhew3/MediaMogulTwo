@@ -73,6 +73,10 @@ export class GameDetailComponent implements OnInit {
     return platform.id.originalValue === this.selectedPlatform.id.originalValue;
   }
 
+  platformsExceptSelected(): MyGamePlatform[] {
+    return _.without(this.game.myPlatforms, this.selectedPlatform);
+  }
+
   selectPlatform(platform: MyGamePlatform): void {
     this.selectedPlatform = platform;
   }

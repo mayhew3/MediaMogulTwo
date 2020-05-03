@@ -38,11 +38,23 @@
           <label class="col-form-label mx-1" for="orderBy">Order By: </label>
           <div class="form-group mx-1">
 
-            <select class="custom-select" id="orderBy">
-              <option *ngFor="let ordering of orderings"
-                      [selected]="isSelected(ordering)"
-                      (click)="changeOrdering(ordering)">{{ordering.displayName}}</option>
-            </select>
+            <div ngbDropdown
+                 placement="bottom-right">
+              <button class="btn btn-info"
+                      id="orderBy"
+                      ngbDropdownToggle>
+                {{selectedOrdering.displayName}}
+              </button>
+              <div ngbDropdownMenu>
+                <button
+                  *ngFor="let ordering of nailedDownOrderings"
+                  ngbDropdownItem
+                  (click)="changeOrdering(ordering)">
+                  {{ordering.displayName}}
+                </button>
+              </div>
+            </div>
+
 
           </div>
 
