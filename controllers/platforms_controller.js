@@ -11,3 +11,17 @@ exports.addGamePlatform = async function(request, response) {
   const gamePlatform = await model.GamePlatform.create(gamePlatformObj);
   response.json(gamePlatform);
 };
+
+exports.updateGamePlatform = async function(request, response) {
+  const gamePlatformID = request.body.id;
+  const changedFields = request.body.changedFields;
+
+  try {
+    const gamePlatform = await model.GamePlatform.findByPk(gamePlatformID);
+    await gamePlatform.update(changedFields);
+    response.json({});
+  } catch (err) {
+    console.error(err);
+    response.send({msg: 'Error updating gamePlatform: ' + JSON.stringify(changedFields)});
+  }
+}

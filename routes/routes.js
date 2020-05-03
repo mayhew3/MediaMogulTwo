@@ -37,6 +37,7 @@ module.exports = function(app) {
 
   privateGet('/gamePlatforms', platforms.getPlatforms);
   privatePost('/gamePlatforms', platforms.addGamePlatform);
+  privatePut('/gamePlatforms', platforms.updateGamePlatform);
 
   privatePost('/availablePlatforms', games.addAvailableGamePlatform);
 
