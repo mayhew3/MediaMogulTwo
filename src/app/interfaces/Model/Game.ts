@@ -141,7 +141,7 @@ export class Game extends DataObject {
   }
 
   get addablePlatforms(): AvailableGamePlatform[] {
-    return _.filter(this._availablePlatforms, availablePlatform => availablePlatform.canAddPlaytime());
+    return _.filter(this._availablePlatforms, availablePlatform => availablePlatform.canAddToGame());
   }
 
   get myMutablePlatforms(): MyGamePlatform[] {
