@@ -9,6 +9,7 @@ import {HTTP_INTERCEPTORS} from '@angular/common/http';
 import {InterceptorService} from './services/interceptor.service';
 import {SearchComponent} from './components/search/search.component';
 import {PlatformListComponent} from './components/platform-list/platform-list.component';
+import {MyPlatformsComponent} from './components/my-platforms/my-platforms.component';
 
 export const routes: Routes = [
   {
@@ -38,6 +39,11 @@ export const routes: Routes = [
   {
     path: 'platforms',
     component: PlatformListComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'myPlatforms',
+    component: MyPlatformsComponent,
     canActivate: [AuthGuard]
   },
 ];

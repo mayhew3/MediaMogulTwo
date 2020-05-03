@@ -28,6 +28,7 @@ import { BigCheckboxComponent } from './components/big-checkbox/big-checkbox.com
 import { SearchComponent } from './components/search/search.component';
 import { PlatformListComponent } from './components/platform-list/platform-list.component';
 import { PlatformDetailComponent } from './components/platform-detail/platform-detail.component';
+import { MyPlatformsComponent } from './components/my-platforms/my-platforms.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { PlatformDetailComponent } from './components/platform-detail/platform-d
     BigCheckboxComponent,
     SearchComponent,
     PlatformListComponent,
-    PlatformDetailComponent
+    PlatformDetailComponent,
+    MyPlatformsComponent
   ],
   imports: [
     BrowserModule,
