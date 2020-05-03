@@ -26,7 +26,7 @@ export const MockGamePlatforms = [
         "id": 2,
         "game_platform_id": 3,
         "person_id": 1,
-        "rank": 1,
+        "rank": 2,
         "platform_name": "Switch"
       }
     ]

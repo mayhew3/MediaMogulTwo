@@ -32,7 +32,7 @@ export class PlatformService implements OnDestroy {
       map((platforms: GamePlatform[]) => {
         const filtered: GamePlatform[] = _.filter(platforms, platform => platform.isAvailableForMe());
         fast_sort(filtered)
-          .asc(platform => platform.myGlobalPlatform.rank);
+          .asc(platform => platform.myGlobalPlatform.rank.originalValue);
         return filtered;
       })
     );
