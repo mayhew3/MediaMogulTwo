@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {GamePlatform} from '../../interfaces/Model/GamePlatform';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
-import {GameService} from '../../services/game.service';
+import {PlatformService} from '../../services/platform.service';
 
 @Component({
   selector: 'mm-platform-detail',
@@ -12,12 +12,13 @@ export class PlatformDetailComponent implements OnInit {
   @Input() platform: GamePlatform;
 
   constructor(private activeModal: NgbActiveModal,
-              private gameService: GameService) { }
+              private platformService: PlatformService) { }
 
   ngOnInit(): void {
   }
 
   async close() {
+    await this.platformService.updatePlatform(this.platform);
     this.activeModal.close();
   }
 

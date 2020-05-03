@@ -62,6 +62,12 @@ export class PlatformService implements OnDestroy {
     return returnObj;
   }
 
+  async updatePlatform(gamePlatform: GamePlatform): Promise<GamePlatform> {
+    await gamePlatform.commit(this.http);
+    this.pushPlatformListChange();
+    return gamePlatform;
+  }
+
   addToPlatformsIfDoesntExist(gamePlatform: GamePlatform): void {
     if (gamePlatform.isTemporary()) {
       throw new Error('PlatformService cannot contain temporary platforms');

@@ -9,7 +9,7 @@ import {BehaviorSubject, Subject} from 'rxjs';
 import {PlatformService} from './platform.service';
 import {GamePlatform} from '../interfaces/Model/GamePlatform';
 import {Person} from '../interfaces/Model/Person';
-import {first, takeUntil} from 'rxjs/operators';
+import {filter, first, takeUntil} from 'rxjs/operators';
 import {ArrayUtil} from '../utility/ArrayUtil';
 import {MyGamePlatform} from '../interfaces/Model/MyGamePlatform';
 import {AvailableGamePlatform} from '../interfaces/Model/AvailableGamePlatform';
@@ -133,17 +133,6 @@ export class GameService implements OnDestroy {
     return returnObj;
   }
 
-  async combinePlatforms(gameToKeep: Game, otherGames: Game[]): Promise<any> {
-    const payload = {
-      id: gameToKeep.id.value,
-      other_game_ids: _.map(otherGames, game => game.id.value),
-      person_id: this.me.id.value,
-    }
-    await this.http.put<any>('/api/resolve', payload, httpOptions).toPromise();
-    _.forEach(otherGames, game => ArrayUtil.removeFromArray(this._dataStore.games, game));
-    this.pushGameListChange();
-  }
-
   // PRIVATE CACHE MANAGEMENT METHODS
 
   private refreshCache() {
@@ -151,7 +140,7 @@ export class GameService implements OnDestroy {
       this.me = person;
       this.platformService.platforms
         // only refresh the games the FIRST time platforms returns a valid array
-        .pipe(first(platforms => !!platforms && platforms.length > 0))
+        .pipe(filter(platforms => !!platforms && platforms.length > 0))
         .subscribe(platforms => {
           const personID = person.id.value;
           const payload = {
