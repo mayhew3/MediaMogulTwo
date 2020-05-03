@@ -17,6 +17,8 @@ export class PlatformListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // todo: order platform list
+
   async openDetailPopup(platform: GamePlatform) {
     const modalRef = this.modalService.open(PlatformDetailComponent, {size: 'md'});
     modalRef.componentInstance.platform = platform;

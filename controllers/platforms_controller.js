@@ -12,6 +12,8 @@ exports.addGamePlatform = async function(request, response) {
   response.json(gamePlatform);
 };
 
+// todo: update all available and my platforms with full_name
+
 exports.updateGamePlatform = async function(request, response) {
   const gamePlatformID = request.body.id;
   const changedFields = request.body.changedFields;
