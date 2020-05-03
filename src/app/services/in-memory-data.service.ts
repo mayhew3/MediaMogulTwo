@@ -8,6 +8,7 @@ import * as lodash from 'lodash';
 import {MockPersons} from '../mocks/persons.mock';
 import {MockIGDBMatches} from '../mocks/igdb.matches.mock';
 import {MockGamePlatforms} from '../mocks/gamePlatforms.mock';
+import {ArrayUtil} from '../utility/ArrayUtil';
 
 @Injectable({
   providedIn: 'root'
@@ -97,6 +98,17 @@ export class InMemoryDataService implements InMemoryDbService{
     }
     return null;
   }
+
+  // noinspection JSUnusedGlobalSymbols
+  delete(requestInfo: RequestInfo): Observable<Response> {
+    console.log('HTTP override: DELETE');
+    const collectionName = requestInfo.collectionName;
+    if (collectionName === 'myGlobalPlatforms') {
+      this.deleteMyGlobalPlatform(requestInfo);
+    }
+    return null;
+  }
+
 
   // DOMAIN HELPERS
 
@@ -245,6 +257,16 @@ export class InMemoryDataService implements InMemoryDbService{
     if (!!myGlobalPlatform) {
       this.updateChangedFieldsOnObject(myGlobalPlatform, jsonBody.changedFields);
       return this.packageUpResponse(myGlobalPlatform, requestInfo);
+    }
+  }
+
+  private deleteMyGlobalPlatform(requestInfo: RequestInfo) {
+    const myGlobalPlatformID = parseInt(requestInfo.id);
+    const myGlobalPlatform = this.findMyGlobalPlatform(myGlobalPlatformID);
+    if (!!myGlobalPlatform) {
+      const gamePlatform = this.findGamePlatform(myGlobalPlatform.game_platform_id);
+      ArrayUtil.removeFromArray(gamePlatform.my_platforms, myGlobalPlatform);
+      return this.packageUpResponse({}, requestInfo);
     }
   }
 

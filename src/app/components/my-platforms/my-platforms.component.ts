@@ -38,4 +38,8 @@ export class MyPlatformsComponent implements OnInit {
     await this.platformService.addMyGlobalPlatform(myGlobalPlatform);
   }
 
+  async removeFromMyPlatforms(platform: GamePlatform) {
+    await this.platformService.removeMyGlobalPlatform(platform.myGlobalPlatform);
+  }
+
 }

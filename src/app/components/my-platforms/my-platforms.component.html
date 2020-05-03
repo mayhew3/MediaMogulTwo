@@ -8,9 +8,13 @@
     {{platform.full_name.originalValue}}
   </div>
   <div class="col-1">
-    <button class="btn btn-sm btn-warning">Remove</button>
+    <button class="btn btn-sm btn-warning"
+            (click)="removeFromMyPlatforms(platform)">
+      Remove
+    </button>
   </div>
   <div class="col-1">
+    <!--suppress HtmlFormInputWithoutLabel -->
     <input type="number"
            class="form-control form-control-sm darkInput"
            [(ngModel)]="platform.myGlobalPlatform.rank.value"/>
