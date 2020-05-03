@@ -45,6 +45,10 @@ export class MyGamePlatform extends DataObject {
     return this.availableGamePlatform.canAddToGame();
   }
 
+  isPreferred(): boolean {
+    return this.preferred.originalValue === true;
+  }
+
   isTemporary(): boolean {
     return !this.id.value || this.platform.isTemporary();
   }
