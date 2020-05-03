@@ -5,6 +5,7 @@ import {HttpClient} from '@angular/common/http';
 import {ArrayService} from './array.service';
 import {takeUntil} from 'rxjs/operators';
 import * as _ from 'underscore';
+import fast_sort from 'fast-sort';
 
 @Injectable({
   providedIn: 'root'
@@ -42,6 +43,7 @@ export class PlatformService implements OnDestroy {
       .pipe(takeUntil(this._destroy$))
       .subscribe(platformObjs => {
         this._platforms = this.convertObjectsToPlatforms(platformObjs);
+        fast_sort(this._platforms).asc(platform => platform.id.originalValue);
         this.pushPlatformListChange();
         this._fetching = false;
       });
