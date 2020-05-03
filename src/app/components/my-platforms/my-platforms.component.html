@@ -4,11 +4,16 @@
 
 <div class="row"
      *ngFor="let platform of myGlobalPlatforms()">
-  <div class="col">
+  <div class="col-3">
     {{platform.full_name.originalValue}}
   </div>
-  <div class="col">
-    {{platform.myGlobalPlatform.rank.originalValue}}
+  <div class="col-1">
+    <button class="btn btn-sm btn-warning">Remove</button>
+  </div>
+  <div class="col-1">
+    <input type="number"
+           class="form-control form-control-sm darkInput"
+           [(ngModel)]="platform.myGlobalPlatform.rank.value"/>
   </div>
 </div>
 
@@ -17,8 +22,11 @@
 
 <div class="row"
      *ngFor="let platform of otherPlatforms()">
-  <div class="col">
+  <div class="col-3">
     {{platform.full_name.originalValue}}
+  </div>
+  <div class="col-1">
+    <button class="btn btn-sm btn-primary">Add</button>
   </div>
 </div>
 
