@@ -8,6 +8,8 @@ import * as _ from 'underscore';
 import {Game} from '../../interfaces/Model/Game';
 import {NgbModal, NgbTypeaheadSelectItemEvent} from '@ng-bootstrap/ng-bootstrap';
 import {GameDetailComponent} from '../game-detail/game-detail.component';
+import {PersonService} from '../../services/person.service';
+import {Person} from '../../interfaces/Model/Person';
 
 @Component({
   selector: 'mm-nav-bar',
@@ -33,6 +35,7 @@ export class NavBarComponent implements OnInit {
   constructor(public auth: AuthService,
               private gameService: GameService,
               private arrayService: ArrayService,
+              public personService: PersonService,
               private modalService: NgbModal) { }
 
   ngOnInit(): void {

@@ -19,6 +19,9 @@
              routerLink="/browse">Browse</a>
           <a class="dropdown-item"
              routerLink="/search">Add Game</a>
+          <a class="dropdown-item"
+             *ngIf="personService.isAdmin"
+             routerLink="/platforms">Platforms</a>
         </div>
       </li>
 

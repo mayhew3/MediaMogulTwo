@@ -8,6 +8,7 @@ import {DashboardComponent} from './components/dashboard/dashboard.component';
 import {HTTP_INTERCEPTORS} from '@angular/common/http';
 import {InterceptorService} from './services/interceptor.service';
 import {SearchComponent} from './components/search/search.component';
+import {PlatformListComponent} from './components/platform-list/platform-list.component';
 
 export const routes: Routes = [
   {
@@ -32,6 +33,11 @@ export const routes: Routes = [
   {
     path: 'search',
     component: SearchComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'platforms',
+    component: PlatformListComponent,
     canActivate: [AuthGuard]
   },
 ];
