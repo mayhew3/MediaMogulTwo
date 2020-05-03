@@ -57,14 +57,14 @@
                 <!-- Single Platform-->
 
                 <span class="mx-1 selectedPlatform"
-                      *ngIf="game.myPlatforms.length === 1">
+                      *ngIf="game.myPlatformsInGlobal.length === 1">
                   {{selectedPlatform.platform_name.originalValue}}
                 </span>
 
                 <!-- Multi Platform Dropdown -->
 
                 <div ngbDropdown
-                     *ngIf="game.myPlatforms.length > 1">
+                     *ngIf="game.myPlatformsInGlobal.length > 1">
                   <button class="btn btn-lg btn-primary"
                           id="platformDropdown"
                           name="platformDropdown"
@@ -275,7 +275,7 @@
 
       <div *ngIf="game.isOwned()">
         <div class="row"
-             *ngFor="let myPlatform of game.myPlatforms">
+             *ngFor="let myPlatform of game.myPlatformsInGlobal">
           <div class="col">
             {{myPlatform.platform_name.value}}
           </div>

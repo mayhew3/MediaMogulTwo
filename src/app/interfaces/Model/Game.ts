@@ -106,17 +106,21 @@ export class Game extends DataObject {
   }
 
   ownsPlatformWithID(platformID: number): boolean {
-    const existing = _.find(this.myPlatforms, myPlatform => myPlatform.platform.id.value === platformID);
+    const existing = _.find(this.myPlatformsInGlobal, myPlatform => myPlatform.platform.id.value === platformID);
     return !!existing;
   }
 
   ownsPlatformWithName(platformName: string): boolean {
-    const existing = _.find(this.myPlatforms, myPlatform => myPlatform.platform_name.value === platformName);
+    const existing = _.find(this.myPlatformsInGlobal, myPlatform => myPlatform.platform_name.value === platformName);
     return !!existing;
   }
 
   get myPlatforms(): MyGamePlatform[] {
     return _.compact(_.map(this.availablePlatforms, availablePlatform => availablePlatform.myGamePlatform));
+  }
+
+  get myPlatformsInGlobal(): MyGamePlatform[] {
+    return _.filter(this.myPlatforms, myPlatform => myPlatform.platform.isAvailableForMe());
   }
 
   findPlatformWithIGDBID(igdbID: number): AvailableGamePlatform {
@@ -141,7 +145,7 @@ export class Game extends DataObject {
   }
 
   get myMutablePlatforms(): MyGamePlatform[] {
-    return _.filter(this.myPlatforms, myGamePlatform => myGamePlatform.canAddPlaytime());
+    return _.filter(this.myPlatformsInGlobal, myGamePlatform => myGamePlatform.canAddPlaytime());
   }
 
   getImageUrl(): string {
@@ -182,28 +186,24 @@ export class Game extends DataObject {
   }
 
   isOwned(): boolean {
-    return !_.isEmpty(this.myPlatforms);
-  }
-
-  hasPlatformInMyGlobals(): boolean {
-    return _.some(this.myPlatforms, myPlatform => myPlatform.platform.isAvailableForMe());
+    return !_.isEmpty(this.myPlatformsInGlobal);
   }
 
   getLastPlayed(): Date {
-    const allLastPlayed = _.map(this.myPlatforms, myPlatform => myPlatform.last_played.originalValue);
+    const allLastPlayed = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.last_played.originalValue);
     const max = _.max(allLastPlayed);
     return max > 0 ? max : null;
   }
 
   getOwnershipDateAdded(): Date {
-    const allDateAdded = _.map(this.myPlatforms, myPlatform => myPlatform.collection_add.originalValue);
+    const allDateAdded = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.collection_add.originalValue);
     const max = _.max(allDateAdded);
     return max > 0 ? max : null;
   }
 
   get myPreferredPlatform(): MyGamePlatform {
-    const allPreferred = _.filter(this.myPlatforms, myPlatform => myPlatform.preferred.originalValue === true);
-    if (this.myPlatforms.length > 0 && allPreferred.length !== 1) {
+    const allPreferred = _.filter(this.myPlatformsInGlobal, myPlatform => myPlatform.preferred.originalValue === true);
+    if (this.myPlatformsInGlobal.length > 0 && allPreferred.length !== 1) {
       throw new Error('Game should have exactly one preferred platform.');
     }
     return allPreferred[0];
@@ -221,13 +221,13 @@ export class Game extends DataObject {
   }
 
   get bestPlaytime(): number {
-    const allPlaytimes = _.map(this.myPlatforms, myPlatform => myPlatform.minutes_played.originalValue);
+    const allPlaytimes = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.minutes_played.originalValue);
     const max = _.max(allPlaytimes);
     return max > 0 ? max : null;
   }
 
   get bestMyRating(): number {
-    const allRatings = _.map(this.myPlatforms, myPlatform => myPlatform.rating.originalValue);
+    const allRatings = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.rating.originalValue);
     const max = _.max(allRatings);
     return max > 0 ? max : null;
   }
@@ -238,7 +238,7 @@ export class Game extends DataObject {
   }
 
   get isFinished(): boolean {
-    const allFinished = _.filter(this.myPlatforms, myPlatform => !!myPlatform.finished_date.originalValue);
+    const allFinished = _.filter(this.myPlatformsInGlobal, myPlatform => !!myPlatform.finished_date.originalValue);
     return !_.isEmpty(allFinished);
   }
 
