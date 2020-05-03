@@ -27,6 +27,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { BigCheckboxComponent } from './components/big-checkbox/big-checkbox.component';
 import { SearchComponent } from './components/search/search.component';
 import { PlatformListComponent } from './components/platform-list/platform-list.component';
+import { PlatformDetailComponent } from './components/platform-detail/platform-detail.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { PlatformListComponent } from './components/platform-list/platform-list.
     DashboardComponent,
     BigCheckboxComponent,
     SearchComponent,
-    PlatformListComponent
+    PlatformListComponent,
+    PlatformDetailComponent
   ],
   imports: [
     BrowserModule,

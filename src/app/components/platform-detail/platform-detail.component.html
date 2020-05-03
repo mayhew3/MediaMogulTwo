@@ -1,0 +1,42 @@
+<div class="modal-header">
+  <h1>Edit Platform</h1>
+  <button type="button"
+          class="btn btn-warning close"
+          aria-label="Close"
+          (click)="dismiss()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="modal-body"
+     *ngIf="!!platform">
+
+  <div class="row">
+    <div class="col">
+      <label for="fullName"
+             class="control-label">Full Name:</label>
+      <input type="text"
+             id="fullName"
+             class="form-control darkInput"
+             [(ngModel)]="platform.full_name.value"/>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <label for="shortName"
+             class="control-label">Short Name:</label>
+      <input type="text"
+             id="shortName"
+             class="form-control darkInput"
+             [(ngModel)]="platform.short_name.value"/>
+    </div>
+  </div>
+
+</div>
+
+<div class="modal-footer">
+  <button type="button"
+          class="btn btn-primary"
+          (click)="close()">Submit</button>
+</div>

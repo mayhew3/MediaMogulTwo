@@ -19,7 +19,8 @@
 </div>
 
 <div class="row"
-     *ngFor="let platform of platformService.platforms | async">
+     *ngFor="let platform of platformService.platforms | async"
+     (click)="openDetailPopup(platform)">
 
   <div class="col-1">
     {{platform.id.originalValue}}
