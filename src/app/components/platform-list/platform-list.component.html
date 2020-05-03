@@ -1,1 +1,39 @@
-<p>platform-list works!</p>
+
+<div class="row">
+
+  <div class="col-1">
+    ID
+  </div>
+  <div class="col-3">
+    Full Name
+  </div>
+  <div class="col-3">
+    Short Name
+  </div>
+  <div class="col-2">
+    IGDB ID
+  </div>
+  <div class="col-3">
+    IGDB Name
+  </div>
+</div>
+
+<div class="row"
+     *ngFor="let platform of platformService.platforms | async">
+
+  <div class="col-1">
+    {{platform.id.originalValue}}
+  </div>
+  <div class="col-3">
+    {{platform.full_name.originalValue}}
+  </div>
+  <div class="col-3">
+    {{platform.short_name.originalValue}}
+  </div>
+  <div class="col-2">
+    {{platform.igdb_platform_id.originalValue}}
+  </div>
+  <div class="col-3">
+    {{platform.igdb_name.originalValue}}
+  </div>
+</div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {PlatformService} from '../../services/platform.service';
 
 @Component({
   selector: 'mm-platform-list',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlatformListComponent implements OnInit {
 
-  constructor() { }
+  constructor(public platformService: PlatformService) { }
 
   ngOnInit(): void {
   }
