@@ -4,16 +4,7 @@ export const MockGamePlatforms = [
     "full_name": "Steam",
     "metacritic_uri": "pc",
     "short_name": "Steam",
-    "id": 1,
-    "my_platforms": [
-      {
-        "id": 1,
-        "game_platform_id": 1,
-        "person_id": 1,
-        "rank": 1,
-        "platform_name": "Steam"
-      }
-    ]
+    "id": 1
   },
   {
     "full_name": "Xbox",
@@ -29,7 +20,16 @@ export const MockGamePlatforms = [
     "igdb_platform_id": 130,
     "short_name": "Switch",
     "id": 3,
-    "igdb_name": "Nintendo Switch"
+    "igdb_name": "Nintendo Switch",
+    "my_platforms": [
+      {
+        "id": 2,
+        "game_platform_id": 3,
+        "person_id": 1,
+        "rank": 1,
+        "platform_name": "Switch"
+      }
+    ]
   },
   {
     "full_name": "Xbox One",
@@ -37,7 +37,16 @@ export const MockGamePlatforms = [
     "igdb_platform_id": 49,
     "short_name": "Xbox One",
     "id": 4,
-    "igdb_name": "Xbox One"
+    "igdb_name": "Xbox One",
+    "my_platforms": [
+      {
+        "id": 1,
+        "game_platform_id": 4,
+        "person_id": 1,
+        "rank": 3,
+        "platform_name": "Xbox One"
+      }
+    ]
   },
   {
     "full_name": "Wii U",
@@ -53,7 +62,16 @@ export const MockGamePlatforms = [
     "igdb_platform_id": 9,
     "short_name": "PS3",
     "id": 6,
-    "igdb_name": "PlayStation 3"
+    "igdb_name": "PlayStation 3",
+    "my_platforms": [
+      {
+        "id": 3,
+        "game_platform_id": 6,
+        "person_id": 1,
+        "rank": 1,
+        "platform_name": "PS3"
+      }
+    ]
   },
   {
     "full_name": "Xbox 360",
