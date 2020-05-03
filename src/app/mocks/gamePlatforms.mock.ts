@@ -2,27 +2,29 @@
 export const MockGamePlatforms = [
   {
     "full_name": "Steam",
+    "metacritic_uri": "pc",
     "short_name": "Steam",
-    "id": 1,
-    "metacritic_uri": "pc"
+    "id": 1
   },
   {
     "full_name": "Xbox",
+    "metacritic_uri": "xbox",
     "igdb_platform_id": 11,
     "short_name": "Xbox",
     "id": 2,
-    "igdb_name": "Xbox",
-    "metacritic_uri": "xbox"
+    "igdb_name": "Xbox"
   },
   {
     "full_name": "Switch",
+    "metacritic_uri": "switch",
     "igdb_platform_id": 130,
     "short_name": "Switch",
     "id": 3,
     "igdb_name": "Nintendo Switch"
   },
   {
-    "full_name": "Xbox Two",
+    "full_name": "Xbox One",
+    "metacritic_uri": "xone",
     "igdb_platform_id": 49,
     "short_name": "Xbox One",
     "id": 4,
