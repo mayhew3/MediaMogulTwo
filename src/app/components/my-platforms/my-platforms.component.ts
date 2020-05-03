@@ -3,6 +3,7 @@ import {PlatformService} from '../../services/platform.service';
 import {GamePlatform} from '../../interfaces/Model/GamePlatform';
 import {ArrayUtil} from '../../utility/ArrayUtil';
 import * as _ from 'underscore';
+import {MyGlobalPlatform} from '../../interfaces/Model/MyGlobalPlatform';
 
 @Component({
   selector: 'mm-my-platforms',
@@ -29,5 +30,12 @@ export class MyPlatformsComponent implements OnInit {
     return _.filter(this.allPlatforms, platform => !platform.isAvailableForMe());
   }
 
+  async addToMyPlatforms(platform: GamePlatform) {
+    const myGlobalPlatform = new MyGlobalPlatform(platform);
+    const gamePlatforms = this.myGlobalPlatforms();
+    const ranks = _.map(gamePlatforms, myGlobalPlatform => myGlobalPlatform.myGlobalPlatform.rank.value);
+    myGlobalPlatform.rank.value = _.max(ranks) > 0 ? _.max(ranks) + 1 : 1;
+    await this.platformService.addMyGlobalPlatform(myGlobalPlatform);
+  }
 
 }

@@ -7,6 +7,7 @@ import {map, takeUntil} from 'rxjs/operators';
 import * as _ from 'underscore';
 import fast_sort from 'fast-sort';
 import {PersonService} from './person.service';
+import {MyGlobalPlatform} from '../interfaces/Model/MyGlobalPlatform';
 
 @Injectable({
   providedIn: 'root'
@@ -90,6 +91,19 @@ export class PlatformService implements OnDestroy {
     await gamePlatform.commit(this.http);
     this.pushPlatformListChange();
     return gamePlatform;
+  }
+
+  async addMyGlobalPlatform(myGlobalPlatform: MyGlobalPlatform): Promise<MyGlobalPlatform> {
+    const gamePlatform = myGlobalPlatform.platform;
+    gamePlatform.myGlobalPlatform = await myGlobalPlatform.commit(this.http);
+    this.pushPlatformListChange();
+    return gamePlatform.myGlobalPlatform;
+  }
+
+  async updateMyGlobalPlatform(myGlobalPlatform: MyGlobalPlatform): Promise<MyGlobalPlatform> {
+    await myGlobalPlatform.commit(this.http);
+    this.pushPlatformListChange();
+    return myGlobalPlatform;
   }
 
   addToPlatformsIfDoesntExist(gamePlatform: GamePlatform): void {

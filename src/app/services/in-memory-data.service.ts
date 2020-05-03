@@ -174,7 +174,10 @@ export class InMemoryDataService implements InMemoryDbService{
     const gamePlatform = this.findGamePlatform(myGlobalPlatform.game_platform_id);
     myGlobalPlatform.id = this.nextMyGlobalPlatformID();
     myGlobalPlatform.date_added = new Date();
-    gamePlatform.myPlatforms.push(myGlobalPlatform);
+    if (!gamePlatform.my_platforms) {
+      gamePlatform.my_platforms = [];
+    }
+    gamePlatform.my_platforms.push(myGlobalPlatform);
     return this.packageUpResponse(myGlobalPlatform, requestInfo);
   }
 
@@ -277,7 +280,7 @@ export class InMemoryDataService implements InMemoryDbService{
   }
 
   private getAllMyGlobalPlatforms(): any[] {
-    return _.flatten(_.map(this.gamePlatforms, gamePlatform => gamePlatform.myPlatforms));
+    return _.flatten(_.map(this.gamePlatforms, gamePlatform => gamePlatform.my_platforms));
   }
 
   private getAllMyPlatforms(): any[] {
