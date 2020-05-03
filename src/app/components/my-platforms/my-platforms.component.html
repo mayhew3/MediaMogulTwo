@@ -1,1 +1,8 @@
-<p>my-platforms works!</p>
+<h1>My Global Platforms</h1>
+
+<div class="row"
+     *ngFor="let platform of platformService.myPlatforms | async">
+  <div class="col">
+    {{platform.full_name.originalValue}}
+  </div>
+</div>
