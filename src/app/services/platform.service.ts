@@ -1,11 +1,12 @@
 import {Injectable, OnDestroy} from '@angular/core';
-import {BehaviorSubject, Subject} from 'rxjs';
+import {BehaviorSubject, Observable, Subject} from 'rxjs';
 import {GamePlatform} from '../interfaces/Model/GamePlatform';
 import {HttpClient} from '@angular/common/http';
 import {ArrayService} from './array.service';
-import {takeUntil} from 'rxjs/operators';
+import {map, takeUntil} from 'rxjs/operators';
 import * as _ from 'underscore';
 import fast_sort from 'fast-sort';
+import {PersonService} from './person.service';
 
 @Injectable({
   providedIn: 'root'
@@ -18,11 +19,23 @@ export class PlatformService implements OnDestroy {
   private _destroy$ = new Subject();
 
   constructor(private http: HttpClient,
-              private arrayService: ArrayService) { }
+              private arrayService: ArrayService,
+              private personService: PersonService) { }
 
   // public observable for all changes to platform list
   get platforms() {
     return this._platforms$.asObservable();
+  }
+
+  get myPlatforms(): Observable<GamePlatform[]> {
+    return this.platforms.pipe(
+      map((platforms: GamePlatform[]) => {
+        const filtered: GamePlatform[] = _.filter(platforms, platform => platform.isAvailableForMe());
+        fast_sort(filtered)
+          .asc(platform => platform.myGlobalPlatform.rank);
+        return filtered;
+      })
+    );
   }
 
   maybeRefreshCache() {
@@ -38,15 +51,24 @@ export class PlatformService implements OnDestroy {
   }
 
   private refreshCache() {
-    this.http
-      .get<any[]>('api/gamePlatforms')
-      .pipe(takeUntil(this._destroy$))
-      .subscribe(platformObjs => {
-        this._platforms = this.convertObjectsToPlatforms(platformObjs);
-        fast_sort(this._platforms).asc(platform => platform.id.originalValue);
-        this.pushPlatformListChange();
-        this._fetching = false;
-      });
+    this.personService.me$.subscribe(person => {
+      const personID = person.id.value;
+      const payload = {
+        person_id: personID.toString()
+      };
+      const options = {
+        params: payload
+      };
+      this.http
+        .get<any[]>('api/gamePlatforms', options)
+        .pipe(takeUntil(this._destroy$))
+        .subscribe(platformObjs => {
+          this._platforms = this.convertObjectsToPlatforms(platformObjs);
+          fast_sort(this._platforms).asc(platform => platform.id.originalValue);
+          this.pushPlatformListChange();
+          this._fetching = false;
+        });
+    });
   }
 
   private pushPlatformListChange() {

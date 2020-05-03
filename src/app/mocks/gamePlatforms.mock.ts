@@ -4,7 +4,16 @@ export const MockGamePlatforms = [
     "full_name": "Steam",
     "metacritic_uri": "pc",
     "short_name": "Steam",
-    "id": 1
+    "id": 1,
+    "my_platforms": [
+      {
+        "id": 1,
+        "game_platform_id": 1,
+        "person_id": 1,
+        "rank": 1,
+        "platform_name": "Steam"
+      }
+    ]
   },
   {
     "full_name": "Xbox",
