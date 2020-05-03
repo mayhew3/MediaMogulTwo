@@ -182,7 +182,11 @@ export class Game extends DataObject {
   }
 
   isOwned(): boolean {
-    return _.some(this.availablePlatforms, availablePlatform => availablePlatform.isOwned());
+    return !_.isEmpty(this.myPlatforms);
+  }
+
+  hasPlatformInMyGlobals(): boolean {
+    return _.some(this.myPlatforms, myPlatform => myPlatform.platform.isAvailableForMe());
   }
 
   getLastPlayed(): Date {
