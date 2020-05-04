@@ -32,8 +32,6 @@ export class GameDetailComponent implements OnInit {
 
   debug = false;
 
-  closeResult = '';
-
   constructor(private gameService: GameService,
               private modalService: NgbModal,
               public activeModal: NgbActiveModal,
@@ -118,7 +116,7 @@ export class GameDetailComponent implements OnInit {
     return !!myPlatform.finished_date.value;
   }
 
-  hasPerson(): boolean {
+  hasSelectedPlatform(): boolean {
     return !!this.selectedPlatform;
   }
 

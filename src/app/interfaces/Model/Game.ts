@@ -105,9 +105,12 @@ export class Game extends DataObject {
     return !!existing;
   }
 
+  getOwnedPlatformWithID(platformID: number): MyGamePlatform {
+    return _.find(this.myPlatformsInGlobal, myPlatform => myPlatform.platform.id.value === platformID);
+  }
+
   ownsPlatformWithID(platformID: number): boolean {
-    const existing = _.find(this.myPlatformsInGlobal, myPlatform => myPlatform.platform.id.value === platformID);
-    return !!existing;
+    return !!this.getOwnedPlatformWithID(platformID);
   }
 
   ownsPlatformWithName(platformName: string): boolean {
@@ -211,6 +214,15 @@ export class Game extends DataObject {
       throw new Error('Game should have exactly one preferred platform.');
     }
     return allPreferred[0];
+  }
+
+  get myPreferredPlatformNullAllowed(): MyGamePlatform {
+    const allPreferred = _.filter(this.myPlatformsInGlobal, myPlatform => myPlatform.preferred.originalValue === true);
+    if (allPreferred.length === 0) {
+      return undefined;
+    } else {
+      return allPreferred[0];
+    }
   }
 
   get myRating(): number {

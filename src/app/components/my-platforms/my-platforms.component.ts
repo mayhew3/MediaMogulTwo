@@ -63,9 +63,11 @@ export class MyPlatformsComponent implements OnInit {
     const ranks = _.map(gamePlatforms, myGlobalPlatform => myGlobalPlatform.myGlobalPlatform.rank.value);
     myGlobalPlatform.rank.value = _.max(ranks) > 0 ? _.max(ranks) + 1 : 1;
     await this.platformService.addMyGlobalPlatform(myGlobalPlatform);
+    await this.gameService.platformJustAddedToGlobal(platform);
   }
 
   async removeFromMyPlatforms(platform: GamePlatform) {
+    await this.gameService.platformAboutToBeRemovedFromGlobal(platform);
     await this.platformService.removeMyGlobalPlatform(platform.myGlobalPlatform);
   }
 

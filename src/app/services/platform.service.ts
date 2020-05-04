@@ -62,7 +62,6 @@ export class PlatformService implements OnDestroy {
       };
       this.http
         .get<any[]>('api/gamePlatforms', options)
-        .pipe(takeUntil(this._destroy$))
         .subscribe(platformObjs => {
           this._platforms = this.convertObjectsToPlatforms(platformObjs);
           fast_sort(this._platforms).asc(platform => platform.id.originalValue);
