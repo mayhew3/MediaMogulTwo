@@ -1071,6 +1071,143 @@ export const MockGames = [
     "igdb_id": 29770
   },
   {
+    "igdb_updated": "2020-04-29 17:00:00.0",
+    "igdb_release_date": "2011-04-18 17:00:00.0",
+    "metacritic": 95,
+    "title": "Portal 2",
+    "platform": "Steam",
+    "igdb_popularity": 22.39773786038862,
+    "giantbomb_medium_url": "http://static.giantbomb.com/uploads/scale_medium/8/87790/1828915-box_portal2.png",
+    "steam_cloud": true,
+    "logo": "d2a1119ddc202fab81d9b87048f495cbd6377502",
+    "howlong_id": 7231,
+    "howlong_extras": 12.5,
+    "igdb_summary": "Sequel to the acclaimed Portal (2007), Portal 2 pits the protagonist of the original game, Chell, and her new robot friend, Wheatley, against more puzzles conceived by GLaDOS, an A.I. with the sole purpose of testing the Portal Gun's mechanics and taking revenge on Chell for the events of Portal. As a result of several interactions and revelations, Chell once again pushes to escape Aperture Science Labs.",
+    "igdb_height": 381,
+    "id": 333,
+    "metacritic_matched": "2015-08-28 00:15:55.674",
+    "steam_title": "Portal 2",
+    "natural_end": true,
+    "igdb_rating_count": 1859,
+    "igdb_slug": "portal-2",
+    "howlong_title": "Portal 2",
+    "igdb_rating": 91.5148061616568,
+    "steamid": 620,
+    "date_added": "2014-09-29 03:48:16.504",
+    "metacritic_page": true,
+    "availablePlatforms": [
+      {
+        "date_added": "2020-04-28 23:49:00.349",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:01:03.266",
+        "game_platform_id": 7,
+        "platform_name": "Xbox 360",
+        "metacritic": 95,
+        "id": 383,
+        "myPlatforms": [{
+          "date_added": "2020-04-28 23:49:01.575",
+          "tier": 2,
+          "game_platform_id": 7,
+          "available_game_platform_id": 383,
+          "minutes_played": 0,
+          "platform_name": "Xbox 360",
+          "rating": 80,
+          "id": 366,
+          "preferred": false,
+          "person_id": 1
+        }]
+      },
+      {
+        "date_added": "2020-04-30 21:40:30.555",
+        "metacritic_page": false,
+        "game_platform_id": 16,
+        "platform_name": "Mac",
+        "id": 3378,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:40:29.932",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:20:02.513",
+        "game_platform_id": 10,
+        "platform_name": "PC",
+        "metacritic": 95,
+        "id": 3376,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-30 21:40:30.21",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 16:20:06.495",
+        "game_platform_id": 6,
+        "platform_name": "PS3",
+        "metacritic": 95,
+        "id": 3377,
+        "myPlatforms": []
+      },
+      {
+        "date_added": "2020-04-28 23:49:00.946",
+        "metacritic_page": true,
+        "metacritic_matched": "2020-05-02 15:01:05.039",
+        "game_platform_id": 1,
+        "platform_name": "Steam",
+        "metacritic": 95,
+        "id": 384,
+        "myPlatforms": [
+          {
+            "date_added": "2020-04-28 23:49:01.75",
+            "tier": 2,
+            "game_platform_id": 1,
+            "available_game_platform_id": 384,
+            "minutes_played": 24,
+            "platform_name": "Steam",
+            "rating": 91.8,
+            "last_played": "2019-08-02 13:58:05.327",
+            "id": 367,
+            "collection_add": "2014-09-29 03:48:16.504",
+            "preferred": false,
+            "person_id": 1
+          },
+          {
+            "date_added": "2020-04-28 23:49:01.928",
+            "tier": 1,
+            "game_platform_id": 1,
+            "available_game_platform_id": 384,
+            "minutes_played": 0,
+            "platform_name": "Steam",
+            "id": 368,
+            "collection_add": "2018-11-11 00:45:59.664712",
+            "preferred": false,
+            "person_id": 4
+          }
+        ]
+      }
+    ],
+    "giantbomb_id": 21662,
+    "giantbomb_name": "Portal 2",
+    "igdb_poster": "co1oby",
+    "igdb_width": 270,
+    "person_games": [
+      {
+        "date_added": "2014-09-29 03:48:16.504",
+        "tier": 2,
+        "minutes_played": 24,
+        "last_played": "2019-08-02 13:58:05.327",
+        "rating": 91.8,
+        "id": 20,
+        "person_id": 1
+      },
+      {
+        "date_added": "2018-11-11 00:45:59.664712",
+        "tier": 1,
+        "minutes_played": 0,
+        "id": 789,
+        "person_id": 4
+      }
+    ],
+    "igdb_id": 72
+  },
+  {
     "igdb_updated": "2020-03-22 17:00:00.0",
     "igdb_release_date": "2013-07-30 17:00:00.0",
     "metacritic": 67,
