@@ -136,70 +136,15 @@ export class GameService implements OnDestroy {
 
   async platformAboutToBeRemovedFromGlobal(gamePlatform: GamePlatform) {
     for (const game of this._dataStore.games) {
-      const myPlatformsInGlobal = game.myPlatformsInGlobal;
       const matching = game.getOwnedPlatformWithID(gamePlatform.id.originalValue);
 
-      if (!!matching && matching.isPreferred()) {
-
+      if (!!matching && matching.isManuallyPreferred()) {
         matching.preferred.value = false;
         await matching.commit(this.http);
-
-        if (myPlatformsInGlobal.length > 1) {
-          const otherInGlobal: MyGamePlatform[] = _.without(myPlatformsInGlobal, matching);
-          fast_sort(otherInGlobal)
-            .asc(myPlatform => myPlatform.platform.myGlobalPlatform.rank.originalValue);
-
-          const replacement = otherInGlobal[0];
-
-          replacement.preferred.value = true;
-          await replacement.commit(this.http);
-        }
       }
 
     }
-
     this.pushGameListChange();
-  }
-
-  async platformJustAddedToGlobal(gamePlatform: GamePlatform) {
-    for (const game of this._dataStore.games) {
-      const myPlatformsInGlobal = game.myPlatformsInGlobal;
-      const matching = game.getOwnedPlatformWithID(gamePlatform.id.originalValue);
-
-      if (!!matching) {
-        const previousPreferred = game.myPreferredPlatformNullAllowed;
-
-        fast_sort(myPlatformsInGlobal)
-          .asc(myPlatform => myPlatform.platform.myGlobalPlatform.rank.originalValue);
-
-        const topOption = myPlatformsInGlobal[0];
-
-        if (!previousPreferred ||
-          topOption.id.originalValue !== previousPreferred.id.originalValue) {
-
-          topOption.preferred.value = true;
-          await topOption.commit(this.http);
-
-          if (!!previousPreferred) {
-            previousPreferred.preferred.value = false;
-            await previousPreferred.commit(this.http);
-          }
-
-          // NO fucking clue why this is needed. When I commit topOption, my game variable is no longer the same
-          // object as the games array of the same name.
-          this.updateGameWithBetterGame(game);
-        }
-      }
-
-    }
-
-    this.pushGameListChange();
-  }
-
-  updateGameWithBetterGame(outdatedGame: Game) {
-    const matchingGame = _.find(this._dataStore.games, game => game.id.value === outdatedGame.id.value);
-    ArrayUtil.removeFromArray(this._dataStore.games, matchingGame);
-    this._dataStore.games.push(outdatedGame);
   }
 
   // PRIVATE CACHE MANAGEMENT METHODS

@@ -45,7 +45,7 @@ export class MyGamePlatform extends DataObject {
     return this.availableGamePlatform.canAddToGame();
   }
 
-  isPreferred(): boolean {
+  isManuallyPreferred(): boolean {
     return this.preferred.originalValue === true;
   }
 

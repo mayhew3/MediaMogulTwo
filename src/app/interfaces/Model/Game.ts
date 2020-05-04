@@ -6,6 +6,7 @@ import {PlatformService} from '../../services/platform.service';
 import {ArrayUtil} from '../../utility/ArrayUtil';
 import {AvailableGamePlatform} from './AvailableGamePlatform';
 import {MyGamePlatform} from './MyGamePlatform';
+import fast_sort from 'fast-sort';
 
 export class Game extends DataObject {
   title = this.registerStringField('title', true);
@@ -209,11 +210,19 @@ export class Game extends DataObject {
   }
 
   get myPreferredPlatform(): MyGamePlatform {
-    const allPreferred = _.filter(this.myPlatformsInGlobal, myPlatform => myPlatform.preferred.originalValue === true);
-    if (this.myPlatformsInGlobal.length > 0 && allPreferred.length !== 1) {
-      throw new Error('Game should have exactly one preferred platform.');
+    const myPlatforms = this.myPlatformsInGlobal;
+    if (myPlatforms.length > 0) {
+      const manualPreferred = _.find(myPlatforms, myPlatform => !!myPlatform.preferred.originalValue);
+      if (!!manualPreferred) {
+        return manualPreferred;
+      } else {
+        fast_sort(myPlatforms)
+          .asc(myPlatform => myPlatform.platform.myGlobalPlatform.rank.originalValue);
+        return myPlatforms[0];
+      }
+    } else {
+      return undefined;
     }
-    return allPreferred[0];
   }
 
   get myPreferredPlatformNullAllowed(): MyGamePlatform {

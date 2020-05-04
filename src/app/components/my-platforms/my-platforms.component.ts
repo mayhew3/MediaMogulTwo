@@ -48,7 +48,7 @@ export class MyPlatformsComponent implements OnInit {
   getCountOfPreferredGames(platform: GamePlatform): number {
     return _.filter(this.allGames, game => {
       const matching = _.find(game.myPlatforms, myPlatform => myPlatform.availableGamePlatform.gamePlatform.id.originalValue === platform.id.originalValue);
-      return !!matching && matching.isPreferred() && this.hasAlternatePreferred(game, matching);
+      return !!matching && matching.isManuallyPreferred() && this.hasAlternatePreferred(game, matching);
     }).length;
   }
 
@@ -63,7 +63,6 @@ export class MyPlatformsComponent implements OnInit {
     const ranks = _.map(gamePlatforms, myGlobalPlatform => myGlobalPlatform.myGlobalPlatform.rank.value);
     myGlobalPlatform.rank.value = _.max(ranks) > 0 ? _.max(ranks) + 1 : 1;
     await this.platformService.addMyGlobalPlatform(myGlobalPlatform);
-    await this.gameService.platformJustAddedToGlobal(platform);
   }
 
   async removeFromMyPlatforms(platform: GamePlatform) {
