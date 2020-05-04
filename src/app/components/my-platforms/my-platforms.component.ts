@@ -73,7 +73,8 @@ export class MyPlatformsComponent implements OnInit {
     if (this.hasDuplicates()) {
       throw new Error(`Can't update ranks with duplicates.`);
     }
-    
+    const changedPlatforms = _.filter(this.myGlobalPlatforms(), myGlobalPlatform => myGlobalPlatform.hasChanges());
+    await this.gameService.updateMultipleGlobalPlatforms(changedPlatforms);
   }
 
   async addToMyPlatforms(platform: GamePlatform) {

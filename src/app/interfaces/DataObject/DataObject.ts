@@ -62,6 +62,10 @@ export abstract class DataObject implements OnDestroy {
     return jsonField === undefined ? null : jsonField;
   }
 
+  hasChanges(): boolean {
+    return _.some(this.allFieldValues, fieldValue => fieldValue.isChanged());
+  }
+
   getChangedFields(): any {
     const returnObj = {};
     for (const fieldValue of this.allFieldValues) {

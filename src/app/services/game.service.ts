@@ -14,6 +14,7 @@ import {MyGamePlatform} from '../interfaces/Model/MyGamePlatform';
 import {AvailableGamePlatform} from '../interfaces/Model/AvailableGamePlatform';
 import fast_sort from 'fast-sort';
 import {ArrayUtil} from '../utility/ArrayUtil';
+import {MyGlobalPlatform} from '../interfaces/Model/MyGlobalPlatform';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -126,6 +127,18 @@ export class GameService implements OnDestroy {
   async updateMyPlatform(myGamePlatform: MyGamePlatform): Promise<any> {
     await myGamePlatform.commit(this.http);
     this.pushGameListChange();
+  }
+
+  async updateMultipleGlobalPlatforms(myGlobalPlatforms: MyGlobalPlatform[]): Promise<any> {
+    const allChangedFields = [];
+    _.forEach(myGlobalPlatforms, myGlobalPlatform => {
+      const payload = {
+        id: myGlobalPlatform.id.originalValue,
+        changedFields: myGlobalPlatform.getChangedFields()
+      };
+      allChangedFields.push(payload);
+    });
+    await this.http.put('/api/multipleGlobals', allChangedFields).toPromise();
   }
 
   async insertGameplaySession(gameplaySession: GameplaySession): Promise<GameplaySession> {
