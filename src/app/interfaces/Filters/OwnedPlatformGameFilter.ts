@@ -10,7 +10,7 @@ export class OwnedPlatformGameFilter extends GameFilterWithOptions {
 
   constructor(private platformService: PlatformService) {
     super([]);
-    platformService.platforms.subscribe(platforms => this.updateOptions(platforms));
+    platformService.myPlatforms.subscribe(platforms => this.updateOptions(platforms));
   }
 
   updateOptions(platforms: GamePlatform[]) {

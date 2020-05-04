@@ -2,11 +2,11 @@
 export const MockGamePlatforms = [
   {
     "my_platforms": [{
-      "date_added": "2020-05-03 15:11:17.677126",
+      "date_added": "2020-05-04 00:04:12.226725",
       "game_platform_id": 1,
       "platform_name": "Steam",
-      "rank": 1,
-      "id": 7,
+      "rank": 4,
+      "id": 4,
       "person_id": 1
     }],
     "full_name": "Steam",
@@ -15,7 +15,14 @@ export const MockGamePlatforms = [
     "id": 1
   },
   {
-    "my_platforms": [],
+    "my_platforms": [{
+      "date_added": "2020-05-04 00:04:49.263892",
+      "game_platform_id": 2,
+      "platform_name": "Xbox",
+      "rank": 7,
+      "id": 9,
+      "person_id": 1
+    }],
     "full_name": "Xbox",
     "metacritic_uri": "xbox",
     "igdb_platform_id": 11,
@@ -25,11 +32,11 @@ export const MockGamePlatforms = [
   },
   {
     "my_platforms": [{
-      "date_added": "2020-05-03 15:11:28.250164",
+      "date_added": "2020-05-03 23:52:27.864051",
       "game_platform_id": 3,
       "platform_name": "Switch",
-      "rank": 5,
-      "id": 11,
+      "rank": 3,
+      "id": 3,
       "person_id": 1
     }],
     "full_name": "Switch",
@@ -41,11 +48,11 @@ export const MockGamePlatforms = [
   },
   {
     "my_platforms": [{
-      "date_added": "2020-05-03 15:11:19.855811",
+      "date_added": "2020-05-04 00:04:32.828454",
       "game_platform_id": 4,
       "platform_name": "Xbox One",
-      "rank": 2,
-      "id": 8,
+      "rank": 5,
+      "id": 6,
       "person_id": 1
     }],
     "full_name": "Xbox One",
@@ -56,7 +63,14 @@ export const MockGamePlatforms = [
     "igdb_name": "Xbox One"
   },
   {
-    "my_platforms": [],
+    "my_platforms": [{
+      "date_added": "2020-05-03 23:52:25.927338",
+      "game_platform_id": 5,
+      "platform_name": "Wii U",
+      "rank": 2,
+      "id": 2,
+      "person_id": 1
+    }],
     "full_name": "Wii U",
     "metacritic_uri": "wii-u",
     "igdb_platform_id": 41,
@@ -75,11 +89,11 @@ export const MockGamePlatforms = [
   },
   {
     "my_platforms": [{
-      "date_added": "2020-05-03 15:11:39.020286",
+      "date_added": "2020-05-04 00:04:46.880097",
       "game_platform_id": 7,
       "platform_name": "Xbox 360",
       "rank": 6,
-      "id": 12,
+      "id": 8,
       "person_id": 1
     }],
     "full_name": "Xbox 360",
@@ -99,7 +113,14 @@ export const MockGamePlatforms = [
     "igdb_name": "Wii"
   },
   {
-    "my_platforms": [],
+    "my_platforms": [{
+      "date_added": "2020-05-04 00:04:55.761969",
+      "game_platform_id": 9,
+      "platform_name": "Nintendo DS",
+      "rank": 8,
+      "id": 10,
+      "person_id": 1
+    }],
     "full_name": "Nintendo DS",
     "metacritic_uri": "ds",
     "igdb_platform_id": 20,
@@ -109,11 +130,11 @@ export const MockGamePlatforms = [
   },
   {
     "my_platforms": [{
-      "date_added": "2020-05-03 15:11:23.786667",
+      "date_added": "2020-05-04 00:04:57.569085",
       "game_platform_id": 10,
       "platform_name": "PC",
-      "rank": 3,
-      "id": 9,
+      "rank": 9,
+      "id": 11,
       "person_id": 1
     }],
     "full_name": "PC",
@@ -125,11 +146,11 @@ export const MockGamePlatforms = [
   },
   {
     "my_platforms": [{
-      "date_added": "2020-05-03 15:11:26.153095",
+      "date_added": "2020-05-03 23:52:22.665473",
       "game_platform_id": 11,
       "platform_name": "PS4",
-      "rank": 4,
-      "id": 10,
+      "rank": 1,
+      "id": 1,
       "person_id": 1
     }],
     "full_name": "PS4",
@@ -149,11 +170,11 @@ export const MockGamePlatforms = [
   },
   {
     "my_platforms": [{
-      "date_added": "2020-05-03 15:11:44.817359",
+      "date_added": "2020-05-04 00:05:01.738936",
       "game_platform_id": 13,
       "platform_name": "iOS",
-      "rank": 7,
-      "id": 13,
+      "rank": 10,
+      "id": 12,
       "person_id": 1
     }],
     "full_name": "iOS",
@@ -214,7 +235,14 @@ export const MockGamePlatforms = [
     "igdb_name": "PlayStation Vita"
   },
   {
-    "my_platforms": [],
+    "my_platforms": [{
+      "date_added": "2020-05-04 00:05:15.658142",
+      "game_platform_id": 20,
+      "platform_name": "Xbox Live Arcade",
+      "rank": 11,
+      "id": 13,
+      "person_id": 1
+    }],
     "full_name": "Xbox Live Arcade",
     "igdb_platform_id": 36,
     "short_name": "xla",
@@ -230,7 +258,14 @@ export const MockGamePlatforms = [
     "igdb_name": "Nintendo 3DS"
   },
   {
-    "my_platforms": [],
+    "my_platforms": [{
+      "date_added": "2020-05-04 00:05:20.008018",
+      "game_platform_id": 22,
+      "platform_name": "PlayStation Network",
+      "rank": 12,
+      "id": 14,
+      "person_id": 1
+    }],
     "full_name": "PlayStation Network",
     "igdb_platform_id": 45,
     "short_name": "psn",
@@ -302,7 +337,14 @@ export const MockGamePlatforms = [
     "igdb_name": "Oculus VR"
   },
   {
-    "my_platforms": [],
+    "my_platforms": [{
+      "date_added": "2020-05-04 00:05:33.603551",
+      "game_platform_id": 31,
+      "platform_name": "SteamVR",
+      "rank": 13,
+      "id": 15,
+      "person_id": 1
+    }],
     "full_name": "SteamVR",
     "igdb_platform_id": 163,
     "short_name": "Steam VR",

@@ -2187,7 +2187,7 @@ export const MockGames = [
           "platform_name": "PS3",
           "rating": 85,
           "id": 530,
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -3009,7 +3009,7 @@ export const MockGames = [
           "minutes_played": 0,
           "platform_name": "PS4",
           "id": 46,
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -3363,7 +3363,7 @@ export const MockGames = [
           "minutes_played": 12300,
           "platform_name": "PS3",
           "id": 272,
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -5366,7 +5366,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 214,
           "collection_add": "2018-10-02 13:48:42.65",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -5477,7 +5477,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 475,
           "collection_add": "2018-10-02 13:48:47.097",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -5581,7 +5581,7 @@ export const MockGames = [
             "last_played": "2019-06-05 00:00:00.0",
             "id": 280,
             "collection_add": "2018-10-06 16:18:03.071",
-            "preferred": true,
+            "preferred": false,
             "person_id": 1
           },
           {
@@ -5594,7 +5594,7 @@ export const MockGames = [
             "rating": 99,
             "id": 281,
             "collection_add": "2018-10-25 16:11:09.234554",
-            "preferred": true,
+            "preferred": false,
             "person_id": 2
           }
         ]
@@ -5678,7 +5678,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 88,
           "collection_add": "2018-11-08 17:09:47.334",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -5779,7 +5779,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 527,
           "collection_add": "2018-11-08 17:09:54.249",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -5865,7 +5865,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 176,
           "collection_add": "2018-11-08 17:10:00.632",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -5991,7 +5991,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 279,
           "collection_add": "2018-11-08 17:10:04.38",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -6063,7 +6063,7 @@ export const MockGames = [
           "rating": 77,
           "id": 576,
           "collection_add": "2018-11-08 17:10:21.336",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -6160,7 +6160,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 207,
           "collection_add": "2018-11-08 17:10:21.795",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -6266,7 +6266,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 930,
           "collection_add": "2018-11-08 17:10:23.852",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -6365,7 +6365,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 664,
           "collection_add": "2018-11-08 17:10:26.673",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -6455,7 +6455,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 149,
           "collection_add": "2018-11-08 17:10:27.514",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -6526,7 +6526,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 607,
           "collection_add": "2018-11-08 17:10:27.898",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -6615,7 +6615,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 435,
           "collection_add": "2018-11-08 17:10:29.195",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -6710,7 +6710,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 336,
           "collection_add": "2018-11-08 17:10:30.486",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -6823,7 +6823,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 819,
           "collection_add": "2018-11-08 17:10:36.935",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -6883,7 +6883,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 347,
           "collection_add": "2018-11-08 17:10:44.021",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -7004,7 +7004,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 87,
           "collection_add": "2018-11-08 17:10:48.385",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -7098,7 +7098,7 @@ export const MockGames = [
           "last_played": "2018-11-22 15:18:44.503",
           "id": 311,
           "collection_add": "2018-11-20 15:07:33.173",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -7217,7 +7217,7 @@ export const MockGames = [
           "last_played": "2020-04-14 23:04:47.977",
           "id": 260,
           "collection_add": "2019-02-04 17:20:35.675",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -7339,7 +7339,7 @@ export const MockGames = [
           "rating": 66,
           "id": 736,
           "collection_add": "2019-02-04 17:20:39.787",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -7432,7 +7432,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 358,
           "collection_add": "2019-02-04 17:20:43.479",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -7537,7 +7537,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 873,
           "collection_add": "2019-02-04 17:20:46.44",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -7639,7 +7639,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 865,
           "collection_add": "2019-02-04 17:20:57.088",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -7740,7 +7740,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 570,
           "collection_add": "2019-02-04 17:20:58.771",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -7854,7 +7854,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 872,
           "collection_add": "2019-02-04 17:21:03.378",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -7965,7 +7965,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 744,
           "collection_add": "2019-02-04 17:21:08.23",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -8058,7 +8058,7 @@ export const MockGames = [
           "last_played": "2019-02-04 17:21:12.116",
           "id": 557,
           "collection_add": "2019-02-04 17:21:11.871",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -8183,7 +8183,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 878,
           "collection_add": "2019-02-04 17:21:22.084",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -8284,7 +8284,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 69,
           "collection_add": "2019-02-04 17:21:23.994",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -8381,7 +8381,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 895,
           "collection_add": "2019-02-04 17:21:25.664",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -8451,7 +8451,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 233,
           "collection_add": "2019-02-04 17:21:31.743",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -8577,7 +8577,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 429,
           "collection_add": "2019-02-04 17:21:32.878",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -8658,7 +8658,7 @@ export const MockGames = [
           "last_played": "2019-03-04 14:09:17.843",
           "id": 196,
           "collection_add": "2019-02-04 17:21:40.102",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -8773,7 +8773,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 794,
           "collection_add": "2019-02-04 17:21:41.409",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -8918,7 +8918,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 629,
           "collection_add": "2019-02-04 17:21:47.455",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -8982,7 +8982,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 592,
           "collection_add": "2019-02-04 17:21:48.1",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -9042,7 +9042,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 393,
           "collection_add": "2019-02-04 17:21:49.233",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -9147,7 +9147,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 614,
           "collection_add": "2019-02-04 17:21:52.095",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -9247,7 +9247,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 849,
           "collection_add": "2019-02-04 17:21:53.026",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -9363,7 +9363,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 188,
           "collection_add": "2019-02-05 17:34:52.893",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -9505,7 +9505,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 59,
           "collection_add": "2019-02-05 17:34:54.444",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -9591,7 +9591,7 @@ export const MockGames = [
           "rating": 92,
           "id": 698,
           "collection_add": "2019-02-05 17:34:59.411",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -9671,7 +9671,7 @@ export const MockGames = [
         "last_played": "2019-02-25 00:00:00.0",
         "id": 81,
         "collection_add": "2019-02-13 11:48:35.556977",
-        "preferred": true,
+        "preferred": false,
         "person_id": 1
       }]
     }],
@@ -9775,7 +9775,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 166,
           "collection_add": "2019-03-18 14:56:28.373",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -9829,7 +9829,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 483,
           "collection_add": "2019-03-18 14:56:43.067",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -9898,7 +9898,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 169,
           "collection_add": "2019-03-18 14:56:43.325",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -10002,7 +10002,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 419,
           "collection_add": "2019-03-18 14:56:45.754",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -10082,7 +10082,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 39,
           "collection_add": "2019-03-18 14:56:46.5",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -10216,7 +10216,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 692,
           "collection_add": "2019-03-18 14:56:50.481",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -10276,7 +10276,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 312,
           "collection_add": "2019-03-18 14:56:58.125",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -10377,7 +10377,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 813,
           "collection_add": "2019-03-18 14:56:59.532",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -10504,7 +10504,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 585,
           "collection_add": "2019-03-18 14:57:05.451",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -10574,7 +10574,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 20,
           "collection_add": "2019-03-18 14:57:07.174",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -10646,7 +10646,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 114,
           "collection_add": "2019-03-18 14:57:10.744",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -10712,7 +10712,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 18,
           "collection_add": "2019-03-18 14:57:13.122",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -10800,7 +10800,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 520,
           "collection_add": "2019-03-18 14:57:14.188",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -10891,7 +10891,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 427,
           "collection_add": "2019-03-18 14:57:15.673",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -10985,7 +10985,7 @@ export const MockGames = [
           "rating": 78,
           "id": 598,
           "collection_add": "2019-04-02 13:11:00.666129",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -11060,7 +11060,7 @@ export const MockGames = [
           "rating": 77,
           "id": 192,
           "collection_add": "2019-04-02 13:12:46.187217",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -11132,7 +11132,7 @@ export const MockGames = [
           "rating": 84,
           "id": 837,
           "collection_add": "2019-04-04 19:22:02.178606",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -11201,7 +11201,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "id": 76,
           "collection_add": "2019-04-04 20:55:45.433315",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -11268,7 +11268,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "id": 228,
           "collection_add": "2019-04-04 20:59:48.601274",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -11387,7 +11387,7 @@ export const MockGames = [
           "rating": 73,
           "id": 970,
           "collection_add": "2019-04-04 21:00:47.206944",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -11473,7 +11473,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "id": 246,
           "collection_add": "2019-04-04 21:00:59.611947",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -11552,7 +11552,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "id": 99,
           "collection_add": "2019-04-04 21:01:24.64477",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -11631,7 +11631,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "id": 190,
           "collection_add": "2019-04-04 21:01:33.361571",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -11774,7 +11774,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "id": 61,
           "collection_add": "2019-04-04 21:01:41.277808",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -11851,7 +11851,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "id": 836,
           "collection_add": "2019-04-04 21:01:48.931158",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -11936,7 +11936,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "id": 882,
           "collection_add": "2019-04-04 21:02:13.140722",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -12013,7 +12013,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "id": 633,
           "collection_add": "2019-04-04 21:02:19.993638",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -12131,7 +12131,7 @@ export const MockGames = [
           "rating": 76,
           "id": 651,
           "collection_add": "2019-04-04 21:02:45.281812",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -12187,7 +12187,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "id": 79,
           "collection_add": "2019-04-04 21:02:54.299273",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -12264,7 +12264,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "id": 129,
           "collection_add": "2019-04-04 21:03:00.94462",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -12383,7 +12383,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "id": 603,
         "collection_add": "2019-04-04 21:03:49.009435",
-        "preferred": true,
+        "preferred": false,
         "person_id": 1
       }]
     }],
@@ -12440,7 +12440,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "id": 628,
           "collection_add": "2019-04-04 21:04:03.987044",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -12561,7 +12561,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "id": 510,
           "collection_add": "2019-04-04 21:04:12.21642",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -12605,7 +12605,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "id": 345,
           "collection_add": "2019-04-04 21:04:54.906502",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -12670,7 +12670,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "id": 487,
         "collection_add": "2019-04-04 21:05:01.544754",
-        "preferred": true,
+        "preferred": false,
         "person_id": 1
       }]
     }],
@@ -12724,7 +12724,7 @@ export const MockGames = [
         "platform_name": "PS4",
         "id": 302,
         "collection_add": "2019-04-04 21:05:10.327396",
-        "preferred": true,
+        "preferred": false,
         "person_id": 1
       }]
     }],
@@ -12808,7 +12808,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "id": 922,
           "collection_add": "2019-04-04 21:05:16.706839",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -12873,7 +12873,7 @@ export const MockGames = [
           "platform_name": "PS4",
           "id": 667,
           "collection_add": "2019-04-04 21:05:24.455241",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -12990,7 +12990,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 65,
           "collection_add": "2019-05-31 11:11:17.229",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -13051,7 +13051,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 133,
           "collection_add": "2019-05-31 11:12:28.951",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -13139,7 +13139,7 @@ export const MockGames = [
           "minutes_played": 0,
           "platform_name": "PS4",
           "id": 821,
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -13231,7 +13231,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 21,
           "collection_add": "2019-05-31 11:12:37.672",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -13338,7 +13338,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 504,
           "collection_add": "2019-05-31 11:12:41.298",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -13472,7 +13472,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 710,
           "collection_add": "2019-05-31 11:12:50.253",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -13537,7 +13537,7 @@ export const MockGames = [
         "platform_name": "Steam",
         "id": 40,
         "collection_add": "2019-05-31 11:12:54.452",
-        "preferred": true,
+        "preferred": false,
         "person_id": 1
       }]
     }],
@@ -13596,7 +13596,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 385,
           "collection_add": "2019-05-31 11:13:02.923",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -13725,7 +13725,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 254,
           "collection_add": "2019-05-31 11:13:35.754",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -13815,7 +13815,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 236,
           "collection_add": "2019-05-31 11:13:39.95",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -13914,7 +13914,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 97,
           "collection_add": "2019-05-31 11:15:08.903",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -13998,7 +13998,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 786,
           "collection_add": "2019-05-31 11:15:12.613",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -14089,7 +14089,7 @@ export const MockGames = [
           "last_played": "2019-08-16 20:17:44.893",
           "id": 696,
           "collection_add": "2019-05-31 11:15:15.535",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -14159,7 +14159,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 622,
           "collection_add": "2019-05-31 11:15:22.199",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -14231,7 +14231,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 150,
           "collection_add": "2019-06-08 10:40:59.108",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -14318,7 +14318,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 365,
           "collection_add": "2019-06-08 10:41:45.666",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -14427,7 +14427,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 719,
           "collection_add": "2019-06-08 10:42:56.443",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -14534,7 +14534,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 57,
           "collection_add": "2019-06-08 10:43:04.918",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -14590,7 +14590,7 @@ export const MockGames = [
           "rating": 56,
           "id": 273,
           "collection_add": "2019-06-08 10:43:09.154",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -14655,7 +14655,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 656,
           "collection_add": "2019-07-05 15:28:13.851",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -14721,7 +14721,7 @@ export const MockGames = [
           "last_played": "2019-07-29 14:56:04.741",
           "id": 163,
           "collection_add": "2019-07-05 18:29:27.692",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -14822,7 +14822,7 @@ export const MockGames = [
           "last_played": "2020-05-02 14:40:28.687",
           "id": 242,
           "collection_add": "2019-07-05 18:30:13.802",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -14926,7 +14926,7 @@ export const MockGames = [
           "last_played": "2019-08-02 17:58:35.589",
           "id": 165,
           "collection_add": "2019-07-05 18:30:24.851",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -15109,7 +15109,7 @@ export const MockGames = [
           "rating": 81,
           "id": 870,
           "collection_add": "2019-07-07 12:49:22.514",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -15229,7 +15229,7 @@ export const MockGames = [
           "rating": 83,
           "id": 761,
           "collection_add": "2019-07-07 12:50:44.046",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -15303,7 +15303,7 @@ export const MockGames = [
           "rating": 85,
           "id": 797,
           "collection_add": "2019-07-07 13:50:58.815",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -15372,7 +15372,7 @@ export const MockGames = [
           "rating": 85,
           "id": 608,
           "collection_add": "2019-07-08 14:59:14.79",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -15460,7 +15460,7 @@ export const MockGames = [
           "last_played": "2019-07-30 22:27:24.713",
           "id": 234,
           "collection_add": "2019-07-09 12:04:56.743",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -15564,7 +15564,7 @@ export const MockGames = [
           "rating": 75,
           "id": 600,
           "collection_add": "2019-07-10 13:23:32.125",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -15650,7 +15650,7 @@ export const MockGames = [
           "last_played": "2020-02-18 18:00:31.324",
           "id": 900,
           "collection_add": "2019-07-22 15:50:56.773",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -15700,7 +15700,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 553,
           "collection_add": "2019-07-26 00:06:35.249",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -15771,7 +15771,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "last_played": "2019-07-30 21:27:19.567",
           "id": 634,
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -15839,7 +15839,7 @@ export const MockGames = [
           "last_played": "2019-08-01 00:00:00.0",
           "id": 417,
           "collection_add": "2019-08-01 10:30:39.832084",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -15910,7 +15910,7 @@ export const MockGames = [
         "platform_name": "PC",
         "last_played": "2019-08-01 00:00:00.0",
         "id": 175,
-        "preferred": true,
+        "preferred": false,
         "person_id": 1
       }]
     }],
@@ -15972,7 +15972,7 @@ export const MockGames = [
           "rating": 80,
           "id": 239,
           "collection_add": "2019-09-05 11:15:48.614257",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -16101,7 +16101,7 @@ export const MockGames = [
           "last_played": "2019-11-28 15:38:20.105",
           "id": 561,
           "collection_add": "2019-11-13 17:35:46.216",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -16190,7 +16190,7 @@ export const MockGames = [
           "last_played": "2020-03-30 15:09:46.307",
           "id": 859,
           "collection_add": "2019-11-21 16:45:12.415",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -16240,7 +16240,7 @@ export const MockGames = [
           "last_played": "2020-01-15 18:41:32.143",
           "id": 534,
           "collection_add": "2019-12-19 15:01:17.946",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -16305,7 +16305,7 @@ export const MockGames = [
           "rating": 85,
           "id": 381,
           "collection_add": "2019-12-31 13:44:15.424",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -16443,7 +16443,7 @@ export const MockGames = [
           "rating": 87,
           "last_played": "2020-04-02 00:00:00.0",
           "id": 933,
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -16498,7 +16498,7 @@ export const MockGames = [
           "last_played": "2020-04-26 20:12:12.042",
           "id": 315,
           "collection_add": "2020-03-21 14:41:11.058",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -16582,7 +16582,7 @@ export const MockGames = [
           "last_played": "2020-04-07 15:52:24.577",
           "id": 616,
           "collection_add": "2020-04-07 14:52:18.9",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -16649,7 +16649,7 @@ export const MockGames = [
         "last_played": "2020-02-21 00:00:00.0",
         "id": 927,
         "collection_add": "2020-04-14 11:21:42.257946",
-        "preferred": true,
+        "preferred": false,
         "person_id": 1
       }]
     }],
@@ -16702,7 +16702,7 @@ export const MockGames = [
           "rating": 83,
           "id": 400,
           "collection_add": "2020-04-15 10:24:44.279892",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -16785,7 +16785,7 @@ export const MockGames = [
           "rating": 40,
           "id": 913,
           "collection_add": "2020-04-15 10:42:44.592685",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -16853,7 +16853,7 @@ export const MockGames = [
         "rating": 83,
         "id": 599,
         "collection_add": "2020-04-15 10:44:16.00443",
-        "preferred": true,
+        "preferred": false,
         "person_id": 1
       }]
     }],
@@ -16910,7 +16910,7 @@ export const MockGames = [
           "rating": 70,
           "id": 537,
           "collection_add": "2020-04-15 10:44:52.084242",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -16992,7 +16992,7 @@ export const MockGames = [
           "rating": 80,
           "id": 569,
           "collection_add": "2020-04-15 10:45:17.984293",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -17056,7 +17056,7 @@ export const MockGames = [
           "rating": 50,
           "id": 297,
           "collection_add": "2020-04-15 10:45:40.751635",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -17156,7 +17156,7 @@ export const MockGames = [
         "rating": 74,
         "id": 62,
         "collection_add": "2020-04-15 10:46:12.220939",
-        "preferred": true,
+        "preferred": false,
         "person_id": 1
       }]
     }],
@@ -17208,7 +17208,7 @@ export const MockGames = [
         "rating": 85,
         "id": 562,
         "collection_add": "2020-04-15 10:47:48.677429",
-        "preferred": true,
+        "preferred": false,
         "person_id": 1
       }]
     }],
@@ -17267,7 +17267,7 @@ export const MockGames = [
         "rating": 60,
         "id": 334,
         "collection_add": "2020-04-15 10:48:10.113718",
-        "preferred": true,
+        "preferred": false,
         "person_id": 1
       }]
     }],
@@ -17352,7 +17352,7 @@ export const MockGames = [
           "rating": 40,
           "id": 690,
           "collection_add": "2020-04-15 10:48:25.379603",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -17420,7 +17420,7 @@ export const MockGames = [
           "rating": 73,
           "id": 93,
           "collection_add": "2020-04-15 10:48:43.540251",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -17492,7 +17492,7 @@ export const MockGames = [
         "rating": 70,
         "id": 227,
         "collection_add": "2020-04-15 10:49:37.607679",
-        "preferred": true,
+        "preferred": false,
         "person_id": 1
       }]
     }],
@@ -17545,7 +17545,7 @@ export const MockGames = [
           "rating": 60,
           "id": 402,
           "collection_add": "2020-04-15 10:50:17.406586",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -17637,7 +17637,7 @@ export const MockGames = [
           "rating": 80,
           "id": 448,
           "collection_add": "2020-04-15 10:50:31.126265",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -17689,7 +17689,7 @@ export const MockGames = [
         "rating": 81,
         "id": 505,
         "collection_add": "2020-04-15 10:50:56.393378",
-        "preferred": true,
+        "preferred": false,
         "person_id": 1
       }]
     }],
@@ -17747,7 +17747,7 @@ export const MockGames = [
           "rating": 55,
           "id": 543,
           "collection_add": "2020-04-15 10:51:10.801376",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -17856,7 +17856,7 @@ export const MockGames = [
           "last_played": "2019-12-29 00:00:00.0",
           "id": 724,
           "collection_add": "2020-04-20 17:56:42.529493",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -17923,7 +17923,7 @@ export const MockGames = [
           "rating": 70,
           "id": 892,
           "collection_add": "2020-04-20 17:57:12.274367",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -18039,7 +18039,7 @@ export const MockGames = [
           "rating": 73,
           "id": 637,
           "collection_add": "2020-04-20 17:57:31.260327",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -18098,7 +18098,7 @@ export const MockGames = [
           "rating": 56,
           "id": 16,
           "collection_add": "2020-04-20 17:58:27.952097",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -18170,7 +18170,7 @@ export const MockGames = [
           "rating": 70,
           "id": 796,
           "collection_add": "2020-04-20 17:58:54.378313",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -18209,7 +18209,7 @@ export const MockGames = [
         "rating": 70,
         "id": 982,
         "collection_add": "2020-04-20 17:59:19.427923",
-        "preferred": true,
+        "preferred": false,
         "person_id": 1
       }]
     }],
@@ -18283,7 +18283,7 @@ export const MockGames = [
           "rating": 40,
           "id": 689,
           "collection_add": "2020-04-20 17:59:34.537329",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -18346,7 +18346,7 @@ export const MockGames = [
           "rating": 65,
           "id": 220,
           "collection_add": "2020-04-20 17:59:48.362337",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -18468,7 +18468,7 @@ export const MockGames = [
           "rating": 65,
           "id": 907,
           "collection_add": "2020-04-20 18:00:13.621159",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -18531,7 +18531,7 @@ export const MockGames = [
           "rating": 42,
           "id": 41,
           "collection_add": "2020-04-20 18:00:47.929088",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -18637,7 +18637,7 @@ export const MockGames = [
           "rating": 76,
           "id": 541,
           "collection_add": "2020-04-20 18:01:04.312296",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       }
@@ -18696,7 +18696,7 @@ export const MockGames = [
           "rating": 76,
           "id": 84,
           "collection_add": "2020-04-20 18:01:20.880564",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -18808,7 +18808,7 @@ export const MockGames = [
           "rating": 50,
           "id": 817,
           "collection_add": "2020-04-20 18:01:38.015714",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -18876,7 +18876,7 @@ export const MockGames = [
           "rating": 77,
           "id": 514,
           "collection_add": "2020-04-20 18:01:53.091299",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -18942,7 +18942,7 @@ export const MockGames = [
         "rating": 45,
         "id": 980,
         "collection_add": "2020-04-20 18:02:26.206518",
-        "preferred": true,
+        "preferred": false,
         "person_id": 1
       }]
     }],
@@ -18992,7 +18992,7 @@ export const MockGames = [
           "rating": 68,
           "id": 237,
           "collection_add": "2020-04-20 18:02:50.634539",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -19117,7 +19117,7 @@ export const MockGames = [
           "rating": 68,
           "id": 726,
           "collection_add": "2020-04-20 18:03:05.548334",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -19254,7 +19254,7 @@ export const MockGames = [
           "rating": 64,
           "id": 424,
           "collection_add": "2020-04-20 18:04:01.020574",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -19348,7 +19348,7 @@ export const MockGames = [
           "rating": 50,
           "id": 972,
           "collection_add": "2020-04-20 18:05:05.950786",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -19425,7 +19425,7 @@ export const MockGames = [
         "rating": 70,
         "id": 929,
         "collection_add": "2020-04-20 18:05:17.586178",
-        "preferred": true,
+        "preferred": false,
         "person_id": 1
       }]
     }],
@@ -19482,7 +19482,7 @@ export const MockGames = [
           "rating": 70,
           "id": 70,
           "collection_add": "2020-04-20 18:05:30.38444",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -19576,7 +19576,7 @@ export const MockGames = [
           "rating": 71,
           "id": 575,
           "collection_add": "2020-04-20 18:05:47.068094",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -19680,7 +19680,7 @@ export const MockGames = [
           "rating": 63,
           "id": 709,
           "collection_add": "2020-04-20 18:06:00.855373",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -19761,7 +19761,7 @@ export const MockGames = [
           "rating": 45,
           "id": 318,
           "collection_add": "2020-04-20 18:06:50.235313",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -19839,7 +19839,7 @@ export const MockGames = [
           "rating": 55,
           "id": 121,
           "collection_add": "2020-04-20 18:07:05.402054",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -19923,7 +19923,7 @@ export const MockGames = [
           "rating": 67,
           "id": 772,
           "collection_add": "2020-04-20 18:07:20.057271",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -20022,7 +20022,7 @@ export const MockGames = [
           "rating": 55,
           "id": 110,
           "collection_add": "2020-04-20 18:07:37.83543",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -20128,7 +20128,7 @@ export const MockGames = [
           "rating": 48,
           "id": 975,
           "collection_add": "2020-04-20 18:08:03.236367",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -20189,7 +20189,7 @@ export const MockGames = [
           "rating": 72,
           "id": 596,
           "collection_add": "2020-04-20 18:08:21.917065",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -20265,7 +20265,7 @@ export const MockGames = [
         "last_played": "2020-04-21 00:00:00.0",
         "id": 981,
         "collection_add": "2020-04-20 18:21:47.123299",
-        "preferred": true,
+        "preferred": false,
         "person_id": 1
       }]
     }],
@@ -20320,7 +20320,7 @@ export const MockGames = [
           "rating": 68,
           "id": 94,
           "collection_add": "2020-04-20 18:29:10.22381",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -20391,7 +20391,7 @@ export const MockGames = [
           "rating": 68,
           "id": 846,
           "collection_add": "2020-04-20 18:29:17.927627",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -20445,7 +20445,7 @@ export const MockGames = [
         "rating": 67,
         "id": 979,
         "collection_add": "2020-04-20 18:29:41.62361",
-        "preferred": true,
+        "preferred": false,
         "person_id": 1
       }]
     }],
@@ -20493,7 +20493,7 @@ export const MockGames = [
           "rating": 3,
           "id": 765,
           "collection_add": "2020-04-20 18:30:11.638302",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -20570,7 +20570,7 @@ export const MockGames = [
           "rating": 60,
           "id": 354,
           "collection_add": "2020-04-20 18:30:40.762976",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -20659,7 +20659,7 @@ export const MockGames = [
           "rating": 60,
           "id": 610,
           "collection_add": "2020-04-20 18:30:49.680826",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -20756,7 +20756,7 @@ export const MockGames = [
           "rating": 60,
           "id": 395,
           "collection_add": "2020-04-20 18:30:57.406966",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -20836,7 +20836,7 @@ export const MockGames = [
           "rating": 59,
           "id": 288,
           "collection_add": "2020-04-20 18:31:19.409475",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -20914,7 +20914,7 @@ export const MockGames = [
         "rating": 78,
         "id": 976,
         "collection_add": "2020-04-20 18:31:35.089546",
-        "preferred": true,
+        "preferred": false,
         "person_id": 1
       }]
     }],
@@ -20968,7 +20968,7 @@ export const MockGames = [
           "rating": 74,
           "id": 342,
           "collection_add": "2020-04-20 18:32:11.735953",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -21037,7 +21037,7 @@ export const MockGames = [
           "rating": 70,
           "id": 388,
           "collection_add": "2020-04-20 18:32:49.975838",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -21148,7 +21148,7 @@ export const MockGames = [
         "rating": 70,
         "id": 978,
         "collection_add": "2020-04-20 18:33:18.011724",
-        "preferred": true,
+        "preferred": false,
         "person_id": 1
       }]
     }],
@@ -21188,7 +21188,7 @@ export const MockGames = [
         "rating": 70,
         "id": 977,
         "collection_add": "2020-04-20 18:33:58.866116",
-        "preferred": true,
+        "preferred": false,
         "person_id": 1
       }]
     }],
@@ -21248,7 +21248,7 @@ export const MockGames = [
           "rating": 55,
           "id": 764,
           "collection_add": "2020-04-20 20:40:37.62342",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -21321,7 +21321,7 @@ export const MockGames = [
           "last_played": "2020-04-24 18:48:35.596",
           "id": 317,
           "collection_add": "2020-04-23 21:38:14.774",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -21395,7 +21395,7 @@ export const MockGames = [
           "platform_name": "Steam",
           "id": 146,
           "collection_add": "2020-04-24 18:48:33.417",
-          "preferred": true,
+          "preferred": false,
           "person_id": 1
         }]
       },
@@ -21473,7 +21473,7 @@ export const MockGames = [
         "last_played": "2020-02-12 00:00:00.0",
         "id": 1002,
         "collection_add": "2020-05-01 00:04:03.649",
-        "preferred": true,
+        "preferred": false,
         "person_id": 1
       }]
     }],
