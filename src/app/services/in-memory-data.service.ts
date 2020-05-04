@@ -42,6 +42,7 @@ export class InMemoryDataService implements InMemoryDbService{
       myPlatforms: [],
       availablePlatforms: [],
       myGlobalPlatforms: [],
+      multipleGlobals: [],
     };
   }
 
@@ -95,6 +96,8 @@ export class InMemoryDataService implements InMemoryDbService{
       this.updateGamePlatform(requestInfo);
     } else if (collectionName === 'myGlobalPlatforms') {
       this.updateMyGlobalPlatform(requestInfo);
+    } else if (collectionName === 'multipleGlobals') {
+      this.updateMultipleGlobals(requestInfo);
     }
     return null;
   }
@@ -258,6 +261,17 @@ export class InMemoryDataService implements InMemoryDbService{
     if (!!myGlobalPlatform) {
       this.updateChangedFieldsOnObject(myGlobalPlatform, jsonBody.changedFields);
       return this.packageUpResponse(myGlobalPlatform, requestInfo);
+    }
+  }
+
+  private updateMultipleGlobals(requestInfo: RequestInfo) {
+    const jsonBody = this.getBody(requestInfo);
+    for (const payload of jsonBody.payloads) {
+      const myGlobalPlatform = this.findMyGlobalPlatform(payload.id);
+      if (!!myGlobalPlatform) {
+        this.updateChangedFieldsOnObject(myGlobalPlatform, payload.changedFields);
+        return this.packageUpResponse(myGlobalPlatform, requestInfo);
+      }
     }
   }
 

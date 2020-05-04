@@ -9,11 +9,9 @@ import {BehaviorSubject, Subject} from 'rxjs';
 import {PlatformService} from './platform.service';
 import {GamePlatform} from '../interfaces/Model/GamePlatform';
 import {Person} from '../interfaces/Model/Person';
-import {filter, takeUntil} from 'rxjs/operators';
+import {filter} from 'rxjs/operators';
 import {MyGamePlatform} from '../interfaces/Model/MyGamePlatform';
 import {AvailableGamePlatform} from '../interfaces/Model/AvailableGamePlatform';
-import fast_sort from 'fast-sort';
-import {ArrayUtil} from '../utility/ArrayUtil';
 import {MyGlobalPlatform} from '../interfaces/Model/MyGlobalPlatform';
 
 const httpOptions = {
@@ -138,7 +136,13 @@ export class GameService implements OnDestroy {
       };
       allChangedFields.push(payload);
     });
-    await this.http.put('/api/multipleGlobals', allChangedFields).toPromise();
+    const fullPayload = {
+      // only need this for in-memory-api
+      id: 213892,
+      payloads: allChangedFields
+    };
+    await this.http.put('/api/multipleGlobals', fullPayload).toPromise();
+    _.forEach(myGlobalPlatforms, myGlobalPlatform => myGlobalPlatform.moveChanges());
   }
 
   async insertGameplaySession(gameplaySession: GameplaySession): Promise<GameplaySession> {
