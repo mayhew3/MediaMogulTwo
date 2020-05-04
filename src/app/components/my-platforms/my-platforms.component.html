@@ -1,6 +1,16 @@
 <h1>My Global Platforms</h1>
 
-<h3>My Platforms</h3>
+<div class="row">
+  <div class="col-4">
+    <h3>My Platforms</h3>
+  </div>
+  <div class="col-2">
+    <button class="btn btn-sm btn-info"
+            [disabled]="!canUpdateRanks()"
+            (click)="updateRanks()">Update Ranks</button>
+  </div>
+</div>
+
 
 <!-- todo: warning if any platforms are preferred for game -->
 
@@ -24,7 +34,7 @@
 
 
 <div class="row my-1"
-     *ngFor="let platform of myGlobalPlatforms()">
+     *ngFor="let platform of platformsInGlobal()">
   <div class="col-3">
     {{platform.full_name.originalValue}}
   </div>

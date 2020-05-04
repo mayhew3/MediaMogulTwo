@@ -6,7 +6,6 @@ import * as _ from 'underscore';
 import {MyGlobalPlatform} from '../../interfaces/Model/MyGlobalPlatform';
 import {GameService} from '../../services/game.service';
 import {Game} from '../../interfaces/Model/Game';
-import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
 
 @Component({
   selector: 'mm-my-platforms',
@@ -30,8 +29,12 @@ export class MyPlatformsComponent implements OnInit {
     });
   }
 
-  myGlobalPlatforms(): GamePlatform[] {
+  platformsInGlobal(): GamePlatform[] {
     return _.filter(this.allPlatforms, platform => platform.isAvailableForMe());
+  }
+
+  myGlobalPlatforms(): MyGlobalPlatform[] {
+    return _.map(this.platformsInGlobal(), platform => platform.myGlobalPlatform);
   }
 
   otherPlatforms(): GamePlatform[] {
@@ -48,18 +51,34 @@ export class MyPlatformsComponent implements OnInit {
   getCountOfPreferredGames(platform: GamePlatform): number {
     return _.filter(this.allGames, game => {
       const matching = _.find(game.myPlatforms, myPlatform => myPlatform.availableGamePlatform.gamePlatform.id.originalValue === platform.id.originalValue);
-      return !!matching && matching.isManuallyPreferred() && this.hasAlternatePreferred(game, matching);
+      return !!matching && matching.isManuallyPreferred();
     }).length;
   }
 
-  hasAlternatePreferred(game: Game, myGamePlatform: MyGamePlatform): boolean {
-    const otherPlatforms = _.without(game.myPlatformsInGlobal, myGamePlatform);
-    return otherPlatforms.length > 0;
+  canUpdateRanks(): boolean {
+    return this.hasChanges() && !this.hasDuplicates();
+  }
+
+  hasChanges(): boolean {
+    return _.filter(this.myGlobalPlatforms(), myGlobalPlatform => myGlobalPlatform.rank.isChanged()).length > 0;
+  }
+
+  hasDuplicates(): boolean {
+    const ranks = _.map(this.myGlobalPlatforms(), myGlobalPlatform => myGlobalPlatform.rank.value);
+    const uniqRanks = _.uniq(ranks);
+    return ranks.length !== uniqRanks.length;
+  }
+
+  async updateRanks() {
+    if (this.hasDuplicates()) {
+      throw new Error(`Can't update ranks with duplicates.`);
+    }
+    
   }
 
   async addToMyPlatforms(platform: GamePlatform) {
     const myGlobalPlatform = new MyGlobalPlatform(platform);
-    const gamePlatforms = this.myGlobalPlatforms();
+    const gamePlatforms = this.platformsInGlobal();
     const ranks = _.map(gamePlatforms, myGlobalPlatform => myGlobalPlatform.myGlobalPlatform.rank.value);
     myGlobalPlatform.rank.value = _.max(ranks) > 0 ? _.max(ranks) + 1 : 1;
     await this.platformService.addMyGlobalPlatform(myGlobalPlatform);
