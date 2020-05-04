@@ -62,6 +62,10 @@ export abstract class DataObject implements OnDestroy {
     return jsonField === undefined ? null : jsonField;
   }
 
+  hasChanges(): boolean {
+    return _.some(this.allFieldValues, fieldValue => fieldValue.isChanged());
+  }
+
   getChangedFields(): any {
     const returnObj = {};
     for (const fieldValue of this.allFieldValues) {
@@ -80,20 +84,21 @@ export abstract class DataObject implements OnDestroy {
     }
   }
 
+  async delete(http: HttpClient): Promise<any> {
+    const url = '/api/' + this.getApiMethod() + "/" + this.id.value;
+    await http.delete(url, httpOptions).toPromise();
+  }
+
   protected makeChangesToInsertPayload(json: any): any {
     return json;
   }
 
   async insert(http: HttpClient): Promise<this> {
-    return new Promise(resolve => {
-      const url = '/api/' + this.getApiMethod();
-      const changedFields = this.getChangedFields();
-      const insertPayload = this.makeChangesToInsertPayload(changedFields);
-      http.post<any>(url, insertPayload, httpOptions).subscribe(returnObj => {
-        this.initializedFromJSON(returnObj);
-        resolve(this);
-      });
-    });
+    const url = '/api/' + this.getApiMethod();
+    const changedFields = this.getChangedFields();
+    const insertPayload = this.makeChangesToInsertPayload(changedFields);
+    const returnObj = await http.post<any>(url, insertPayload, httpOptions).toPromise();
+    return this.initializedFromJSON(returnObj);
   }
 
   async update(http: HttpClient): Promise<this> {
@@ -105,7 +110,6 @@ export abstract class DataObject implements OnDestroy {
       changedFields: changedFields
     }
     await http.put<any>(url, payload, httpOptions)
-      .pipe(takeUntil(this._destroy$))
       .toPromise();
     this.moveChanges();
     return this;

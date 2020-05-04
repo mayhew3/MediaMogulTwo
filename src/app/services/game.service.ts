@@ -9,10 +9,10 @@ import {BehaviorSubject, Subject} from 'rxjs';
 import {PlatformService} from './platform.service';
 import {GamePlatform} from '../interfaces/Model/GamePlatform';
 import {Person} from '../interfaces/Model/Person';
-import {filter, first, takeUntil} from 'rxjs/operators';
-import {ArrayUtil} from '../utility/ArrayUtil';
+import {filter} from 'rxjs/operators';
 import {MyGamePlatform} from '../interfaces/Model/MyGamePlatform';
 import {AvailableGamePlatform} from '../interfaces/Model/AvailableGamePlatform';
+import {MyGlobalPlatform} from '../interfaces/Model/MyGlobalPlatform';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -127,10 +127,41 @@ export class GameService implements OnDestroy {
     this.pushGameListChange();
   }
 
+  async updateMultipleGlobalPlatforms(myGlobalPlatforms: MyGlobalPlatform[]): Promise<any> {
+    const allChangedFields = [];
+    _.forEach(myGlobalPlatforms, myGlobalPlatform => {
+      const payload = {
+        id: myGlobalPlatform.id.originalValue,
+        changedFields: myGlobalPlatform.getChangedFields()
+      };
+      allChangedFields.push(payload);
+    });
+    const fullPayload = {
+      // only need this for in-memory-api
+      id: 213892,
+      payloads: allChangedFields
+    };
+    await this.http.put('/api/multipleGlobals', fullPayload).toPromise();
+    _.forEach(myGlobalPlatforms, myGlobalPlatform => myGlobalPlatform.moveChanges());
+  }
+
   async insertGameplaySession(gameplaySession: GameplaySession): Promise<GameplaySession> {
     const returnObj = await gameplaySession.commit(this.http);
     this.pushGameListChange();
     return returnObj;
+  }
+
+  async platformAboutToBeRemovedFromGlobal(gamePlatform: GamePlatform) {
+    for (const game of this._dataStore.games) {
+      const matching = game.getOwnedPlatformWithID(gamePlatform.id.originalValue);
+
+      if (!!matching && matching.isManuallyPreferred()) {
+        matching.preferred.value = false;
+        await matching.commit(this.http);
+      }
+
+    }
+    this.pushGameListChange();
   }
 
   // PRIVATE CACHE MANAGEMENT METHODS
@@ -151,7 +182,6 @@ export class GameService implements OnDestroy {
           };
           this.http
             .get<any[]>(this._gamesUrl, options)
-            .pipe(takeUntil(this._destroy$))
             .subscribe(gameObjs => {
               this._dataStore.games = this.convertObjectsToGames(gameObjs, platforms);
               this.gameRefreshCount++;

@@ -32,8 +32,6 @@ export class GameDetailComponent implements OnInit {
 
   debug = false;
 
-  closeResult = '';
-
   constructor(private gameService: GameService,
               private modalService: NgbModal,
               public activeModal: NgbActiveModal,
@@ -54,7 +52,7 @@ export class GameDetailComponent implements OnInit {
   }
 
   hasMultiplePlatforms() {
-    return this.game.myPlatforms.length > 1;
+    return this.game.myPlatformsInGlobal.length > 1;
   }
 
   selectedIsPreferred() {
@@ -74,7 +72,7 @@ export class GameDetailComponent implements OnInit {
   }
 
   platformsExceptSelected(): MyGamePlatform[] {
-    return _.without(this.game.myPlatforms, this.selectedPlatform);
+    return _.without(this.game.myPlatformsInGlobal, this.selectedPlatform);
   }
 
   selectPlatform(platform: MyGamePlatform): void {
@@ -110,7 +108,7 @@ export class GameDetailComponent implements OnInit {
   }
 
   anyPlatformsAreFinished(): boolean {
-    const finishedPlatform = _.find(this.game.myPlatforms, myPlatform => this.isFinished(myPlatform));
+    const finishedPlatform = _.find(this.game.myPlatformsInGlobal, myPlatform => this.isFinished(myPlatform));
     return !!finishedPlatform;
   }
 
@@ -118,7 +116,7 @@ export class GameDetailComponent implements OnInit {
     return !!myPlatform.finished_date.value;
   }
 
-  hasPerson(): boolean {
+  hasSelectedPlatform(): boolean {
     return !!this.selectedPlatform;
   }
 

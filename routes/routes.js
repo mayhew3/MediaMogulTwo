@@ -39,6 +39,11 @@ module.exports = function(app) {
   privatePost('/gamePlatforms', platforms.addGamePlatform);
   privatePut('/gamePlatforms', platforms.updateGamePlatform);
 
+  privatePost('/myGlobalPlatforms', platforms.addMyGlobalPlatform);
+  privateDelete('/myGlobalPlatforms/:id', platforms.deleteMyGlobalPlatform);
+
+  privatePut('/multipleGlobals', platforms.updateMultipleGlobals);
+
   privatePost('/availablePlatforms', games.addAvailableGamePlatform);
 
   privatePost('/myPlatforms', games.addMyGamePlatform);

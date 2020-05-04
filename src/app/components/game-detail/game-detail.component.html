@@ -48,7 +48,7 @@
 
         </div>
 
-        <div class="row">
+        <div class="row" *ngIf="hasSelectedPlatform()">
           <div class="col-6">
 
             <div class="form-row">
@@ -57,14 +57,14 @@
                 <!-- Single Platform-->
 
                 <span class="mx-1 selectedPlatform"
-                      *ngIf="game.myPlatforms.length === 1">
+                      *ngIf="game.myPlatformsInGlobal.length === 1">
                   {{selectedPlatform.platform_name.originalValue}}
                 </span>
 
                 <!-- Multi Platform Dropdown -->
 
                 <div ngbDropdown
-                     *ngIf="game.myPlatforms.length > 1">
+                     *ngIf="game.myPlatformsInGlobal.length > 1">
                   <button class="btn btn-lg btn-primary"
                           id="platformDropdown"
                           name="platformDropdown"
@@ -128,7 +128,7 @@
 
         <div class="row" *ngIf="!titleEditMode">
 
-          <div class="col-4">
+          <div class="col-4" *ngIf="hasSelectedPlatform()">
             <span class="small">Metacritic:</span><br>
             <mm-rating-box [maxValue]="100"
                            [value]="getMetacritic()"></mm-rating-box>
@@ -275,7 +275,7 @@
 
       <div *ngIf="game.isOwned()">
         <div class="row"
-             *ngFor="let myPlatform of game.myPlatforms">
+             *ngFor="let myPlatform of game.myPlatformsInGlobal">
           <div class="col">
             {{myPlatform.platform_name.value}}
           </div>
@@ -428,10 +428,10 @@
 
     </div>
 
-    <div class="form-row">
+    <div class="form-row" *ngIf="hasSelectedPlatform()">
 
       <!--RATING-->
-      <div class="col-4" *ngIf="hasPerson()">
+      <div class="col-4">
         <label class="col-form-label" for="rating">Rating</label>
         <input type="number"
                id="rating"
@@ -442,7 +442,7 @@
       </div>
 
       <!--FINISHED-->
-      <div class="form-group col-4" *ngIf="hasPerson()">
+      <div class="form-group col-4">
         <label class="col-form-label" for="finished">Finished</label><br>
         <mm-big-checkbox [value]="finished"
                          id="finished"
@@ -451,7 +451,7 @@
       </div>
 
       <!--FINAL SCORE-->
-      <div class="col-4" *ngIf="hasPerson() && !!finished">
+      <div class="col-4" *ngIf="!!finished">
         <label class="col-form-label" for="finalScore">Final Score</label>
         <input type="number"
                id="finalScore"
@@ -462,7 +462,7 @@
       </div>
 
       <!--REPLAY SCORE-->
-      <div class="col-4" *ngIf="hasPerson() && !!finished">
+      <div class="col-4" *ngIf="!!finished">
         <label class="col-form-label" for="replay">Replay</label>
         <input type="number"
                id="replay"

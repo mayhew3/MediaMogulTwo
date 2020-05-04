@@ -62,7 +62,6 @@ export class PersonService implements OnDestroy {
       return new Observable<Person[]>((observer) => {
         this.http.get<any[]>(this.personsUrl)
           .pipe(
-            takeUntil(this._destroy$),
             catchError(this.handleError<any[]>('getPersons', [])),
           )
           .subscribe(

@@ -1,0 +1,97 @@
+<h1>My Global Platforms</h1>
+
+<div class="row">
+  <div class="col-4">
+    <h3>My Platforms</h3>
+  </div>
+  <div class="col-2">
+    <button class="btn btn-sm btn-info"
+            [disabled]="!canUpdateRanks()"
+            (click)="updateRanks()">Update Ranks</button>
+  </div>
+</div>
+
+
+<!-- todo: warning if any platforms are preferred for game -->
+
+<div class="row my-1">
+  <div class="col-3">
+    Name
+  </div>
+  <div class="col-1">
+    <!-- BUTTON -->
+  </div>
+  <div class="col-1">
+    Rank
+  </div>
+  <div class="col-1">
+    Owned
+  </div>
+  <div class="col-1">
+    Preferred
+  </div>
+</div>
+
+
+<div class="row my-1"
+     *ngFor="let platform of platformsInGlobal()">
+  <div class="col-3">
+    {{platform.full_name.originalValue}}
+  </div>
+  <div class="col-1">
+    <button class="btn btn-sm btn-warning"
+            (click)="removeFromMyPlatforms(platform)">
+      Remove
+    </button>
+  </div>
+  <div class="col-1">
+    <!--suppress HtmlFormInputWithoutLabel -->
+    <input type="number"
+           class="form-control form-control-sm darkInput"
+           [(ngModel)]="platform.myGlobalPlatform.rank.value"/>
+  </div>
+  <div class="col-1">
+    {{getCountOfOwnedGames(platform)}}
+  </div>
+  <div class="col-1">
+    {{getCountOfPreferredGames(platform)}}
+  </div>
+</div>
+
+<br>
+<h3>Other Platforms</h3>
+
+
+<div class="row my-1">
+  <div class="col-3">
+    Name
+  </div>
+  <div class="col-1">
+    <!-- BUTTON -->
+  </div>
+  <div class="col-1">
+    <!-- NO RANK -->
+  </div>
+  <div class="col-1">
+    Owned
+  </div>
+</div>
+
+
+<div class="row my-1"
+     *ngFor="let platform of otherPlatforms()">
+  <div class="col-3">
+    {{platform.full_name.originalValue}}
+  </div>
+  <div class="col-1">
+    <button class="btn btn-sm btn-primary"
+            (click)="addToMyPlatforms(platform)">Add</button>
+  </div>
+  <div class="col-1">
+    <!-- No Rank -->
+  </div>
+  <div class="col-1">
+    {{getCountOfOwnedGames(platform)}}
+  </div>
+</div>
+

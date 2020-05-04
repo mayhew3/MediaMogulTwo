@@ -88,6 +88,22 @@ export class SearchComponent implements OnInit {
     return _.find(this.allPlatforms, platform => platform.igdb_platform_id.value === igdbID);
   }
 
+  hasAvailablePlatforms(match: any): boolean {
+    return !!match.platforms && this.getAvailablePlatforms(match).length > 0;
+  }
+
+  hasUnavailablePlatforms(match: any): boolean {
+    return !!match.platforms && this.getUnavailablePlatforms(match).length > 0;
+  }
+
+  getAvailablePlatforms(match: any): any[] {
+    return _.filter(match.platforms, platform => !platform.unavailablePlatform);
+  }
+
+  getUnavailablePlatforms(match: any): any[] {
+    return _.filter(match.platforms, platform => platform.unavailablePlatform);
+  }
+
   async getMatches() {
     this.loading = true;
     try {
@@ -96,8 +112,19 @@ export class SearchComponent implements OnInit {
       _.forEach(this.matches, match => {
         match.existingGame = this.findMatchingGame(match);
         _.forEach(match.platforms, platform => {
-          platform.availableGamePlatform = this.findExistingPlatformForGame(match, platform);
-          platform.myGamePlatform = !platform.availableGamePlatform ? undefined : platform.availableGamePlatform.myGamePlatform;
+          const existingGamePlatform = this.findPlatformWithIGDBID(platform.id);
+          if (!!existingGamePlatform) {
+            platform.unavailablePlatform = !existingGamePlatform.isAvailableForMe();
+          }
+          const availableGamePlatform = this.findExistingPlatformForGame(match, platform);
+          if (!!availableGamePlatform) {
+            if (availableGamePlatform.platform.isAvailableForMe()) {
+              platform.availableGamePlatform = availableGamePlatform;
+              platform.myGamePlatform = !platform.availableGamePlatform ? undefined : platform.availableGamePlatform.myGamePlatform;
+            } else {
+              platform.unavailablePlatform = true;
+            }
+          }
         });
       });
     } catch (err) {

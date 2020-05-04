@@ -8,6 +8,7 @@ import * as lodash from 'lodash';
 import {MockPersons} from '../mocks/persons.mock';
 import {MockIGDBMatches} from '../mocks/igdb.matches.mock';
 import {MockGamePlatforms} from '../mocks/gamePlatforms.mock';
+import {ArrayUtil} from '../utility/ArrayUtil';
 
 @Injectable({
   providedIn: 'root'
@@ -40,6 +41,8 @@ export class InMemoryDataService implements InMemoryDbService{
       resolve: [],
       myPlatforms: [],
       availablePlatforms: [],
+      myGlobalPlatforms: [],
+      multipleGlobals: [],
     };
   }
 
@@ -57,6 +60,8 @@ export class InMemoryDataService implements InMemoryDbService{
       return this.getGames(requestInfo);
     } else if (collectionName === 'igdbMatches') {
       return this.getIGDBMatches(requestInfo);
+    } else if (collectionName === 'gamePlatforms') {
+      return this.getGamePlatforms(requestInfo);
     }
     return null;
   }
@@ -71,6 +76,8 @@ export class InMemoryDataService implements InMemoryDbService{
       this.addMyPlatform(requestInfo);
     } else if (collectionName === 'availablePlatforms') {
       this.addAvailablePlatform(requestInfo);
+    } else if (collectionName === 'myGlobalPlatforms') {
+      this.addMyGlobalPlatform(requestInfo);
     }
     return null;
   }
@@ -87,9 +94,24 @@ export class InMemoryDataService implements InMemoryDbService{
       this.updateMyGamePlatform(requestInfo);
     } else if (collectionName === 'gamePlatforms') {
       this.updateGamePlatform(requestInfo);
+    } else if (collectionName === 'myGlobalPlatforms') {
+      this.updateMyGlobalPlatform(requestInfo);
+    } else if (collectionName === 'multipleGlobals') {
+      this.updateMultipleGlobals(requestInfo);
     }
     return null;
   }
+
+  // noinspection JSUnusedGlobalSymbols
+  delete(requestInfo: RequestInfo): Observable<Response> {
+    console.log('HTTP override: DELETE');
+    const collectionName = requestInfo.collectionName;
+    if (collectionName === 'myGlobalPlatforms') {
+      this.deleteMyGlobalPlatform(requestInfo);
+    }
+    return null;
+  }
+
 
   // DOMAIN HELPERS
 
@@ -107,6 +129,26 @@ export class InMemoryDataService implements InMemoryDbService{
         delete availablePlatform.myPlatforms;
       });
       data.push(gameCopy);
+    });
+
+    return this.packageGetData(data, requestInfo);
+  }
+
+  private getGamePlatforms(requestInfo: RequestInfo): Observable<ResponseOptions> {
+    const entries = requestInfo.query.entries();
+    const person_id = parseInt(entries.next().value[1][0]);
+
+    const data = [];
+
+    _.forEach(this.gamePlatforms, gamePlatform => {
+      const gamePlatformCopy = lodash.cloneDeep(gamePlatform);
+      const myPlatforms = gamePlatformCopy.my_platforms;
+      if (!!myPlatforms) {
+        gamePlatformCopy.myPlatform = _.findWhere(myPlatforms, {person_id: person_id});
+        delete gamePlatformCopy.my_platforms;
+      }
+
+      data.push(gamePlatformCopy);
     });
 
     return this.packageGetData(data, requestInfo);
@@ -142,6 +184,18 @@ export class InMemoryDataService implements InMemoryDbService{
     return this.packageUpResponse(availablePlatform, requestInfo);
   }
 
+  private addMyGlobalPlatform(requestInfo: RequestInfo) {
+    const myGlobalPlatform = this.getBody(requestInfo);
+    const gamePlatform = this.findGamePlatform(myGlobalPlatform.game_platform_id);
+    myGlobalPlatform.id = this.nextMyGlobalPlatformID();
+    myGlobalPlatform.date_added = new Date();
+    if (!gamePlatform.my_platforms) {
+      gamePlatform.my_platforms = [];
+    }
+    gamePlatform.my_platforms.push(myGlobalPlatform);
+    return this.packageUpResponse(myGlobalPlatform, requestInfo);
+  }
+
   private addMyPlatform(requestInfo: RequestInfo) {
     const myGamePlatform = this.getBody(requestInfo);
     myGamePlatform.id = this.nextMyPlatformID();
@@ -175,7 +229,8 @@ export class InMemoryDataService implements InMemoryDbService{
         full_name: platformWrapper.full_name,
         short_name: platformWrapper.short_name,
         igdb_platform_id: platformWrapper.igdb_platform_id,
-        igdb_name: platformWrapper.igdb_name
+        igdb_name: platformWrapper.igdb_name,
+        my_platforms: []
       }
       this.gamePlatforms.push(gamePlatform);
       return gamePlatform;
@@ -197,6 +252,36 @@ export class InMemoryDataService implements InMemoryDbService{
         this.updateAllMyPlatformsWithName(old_name, full_name);
       }
       return this.packageUpResponse(gamePlatform, requestInfo);
+    }
+  }
+
+  private updateMyGlobalPlatform(requestInfo: RequestInfo) {
+    const jsonBody = this.getBody(requestInfo);
+    const myGlobalPlatform = this.findMyGlobalPlatform(jsonBody.id);
+    if (!!myGlobalPlatform) {
+      this.updateChangedFieldsOnObject(myGlobalPlatform, jsonBody.changedFields);
+      return this.packageUpResponse(myGlobalPlatform, requestInfo);
+    }
+  }
+
+  private updateMultipleGlobals(requestInfo: RequestInfo) {
+    const jsonBody = this.getBody(requestInfo);
+    for (const payload of jsonBody.payloads) {
+      const myGlobalPlatform = this.findMyGlobalPlatform(payload.id);
+      if (!!myGlobalPlatform) {
+        this.updateChangedFieldsOnObject(myGlobalPlatform, payload.changedFields);
+        return this.packageUpResponse(myGlobalPlatform, requestInfo);
+      }
+    }
+  }
+
+  private deleteMyGlobalPlatform(requestInfo: RequestInfo) {
+    const myGlobalPlatformID = parseInt(requestInfo.id);
+    const myGlobalPlatform = this.findMyGlobalPlatform(myGlobalPlatformID);
+    if (!!myGlobalPlatform) {
+      const gamePlatform = this.findGamePlatform(myGlobalPlatform.game_platform_id);
+      ArrayUtil.removeFromArray(gamePlatform.my_platforms, myGlobalPlatform);
+      return this.packageUpResponse({}, requestInfo);
     }
   }
 
@@ -231,6 +316,10 @@ export class InMemoryDataService implements InMemoryDbService{
     return _.flatten(_.map(this.games, game => game.availablePlatforms));
   }
 
+  private getAllMyGlobalPlatforms(): any[] {
+    return _.flatten(_.map(this.gamePlatforms, gamePlatform => gamePlatform.my_platforms));
+  }
+
   private getAllMyPlatforms(): any[] {
     const availablePlatforms = this.getAllAvailablePlatforms();
     return _.flatten(_.map(_.filter(availablePlatforms, availablePlatform => !!availablePlatform.myPlatforms), availablePlatform => {
@@ -246,6 +335,11 @@ export class InMemoryDataService implements InMemoryDbService{
   private findMyGamePlatform(myGamePlatformID: number): any {
     const myGamePlatforms = this.getAllMyPlatforms();
     return _.findWhere(myGamePlatforms, {id: myGamePlatformID});
+  }
+
+  private findMyGlobalPlatform(myGlobalPlatformID: number): any {
+    const myGlobalPlatforms = this.getAllMyGlobalPlatforms();
+    return _.findWhere(myGlobalPlatforms, {id: myGlobalPlatformID});
   }
 
   private nextID(array: any[]): number {
@@ -267,6 +361,11 @@ export class InMemoryDataService implements InMemoryDbService{
   private nextAvailablePlatformID(): number {
     const availablePlatforms = this.getAllAvailablePlatforms();
     return this.nextID(availablePlatforms);
+  }
+
+  private nextMyGlobalPlatformID(): number {
+    const myGlobalPlatforms = this.getAllMyGlobalPlatforms();
+    return this.nextID(myGlobalPlatforms);
   }
 
   private nextMyPlatformID(): number {
