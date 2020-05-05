@@ -24,8 +24,12 @@
 
   <div class="row m-1"
        *ngFor="let platform of game.addablePlatforms">
-    <div class="col-9 small">
+    <div class="col-6 small">
       <h3>{{platform.platform_name.originalValue}}</h3>
+    </div>
+    <div class="col-3">
+      <mm-rating-box [value]="platform.metacritic.originalValue"
+                     [maxValue]="100"></mm-rating-box>
     </div>
     <div class="col-3">
       <button type="button"
