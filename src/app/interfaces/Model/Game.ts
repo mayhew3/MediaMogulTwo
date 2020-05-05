@@ -240,7 +240,7 @@ export class Game extends DataObject {
   }
 
   get bestMetacritic(): number {
-    const allMetacritics = _.map(this.availablePlatforms, availablePlatform => availablePlatform.metacritic.originalValue);
+    const allMetacritics = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.availableGamePlatform.metacritic.originalValue);
     const max = _.max(allMetacritics);
     return max > 0 ? max : null;
   }
