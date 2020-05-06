@@ -13,6 +13,7 @@ import {GameTime} from '../../interfaces/Utility/GameTime';
 import {PlaytimePopupComponent} from '../playtime-popup/playtime-popup.component';
 import {GameplaySession} from '../../interfaces/Model/GameplaySession';
 import {GameplaySessionService} from '../../services/gameplay.session.service';
+import fast_sort from 'fast-sort';
 
 enum DetailNav {RATING = 'Rating', PLAYTIME = 'Playtime'}
 
@@ -63,7 +64,13 @@ export class GameDetailComponent implements OnInit {
 
     this.gameplaySessionService.getGameplaySessions(this.game).subscribe(sessions => {
       ArrayUtil.refreshArray(this.gameplaySessions, sessions);
+      this.sortSessions();
     });
+  }
+
+  sortSessions() {
+    fast_sort(this.gameplaySessions)
+      .desc(session => session.start_time.originalValue);
   }
 
   toggleTitleEdit() {
@@ -92,7 +99,7 @@ export class GameDetailComponent implements OnInit {
 
   getFilteredSessions(): GameplaySession[] {
     return _.filter(this.gameplaySessions, gameplaySession => {
-      return _.indexOf(this.gameplaySessions, gameplaySession) === 0 || gameplaySession.minutes.originalValue > 1;
+      return _.last(this.gameplaySessions) === gameplaySession || gameplaySession.minutes.originalValue > 1;
     });
   }
 
@@ -199,7 +206,9 @@ export class GameDetailComponent implements OnInit {
   async openPlaytimePopup() {
     const modalRef = this.modalService.open(PlaytimePopupComponent, {size: 'lg'});
     modalRef.componentInstance.game = this.game;
-    await modalRef.result;
+    const resultSession = await modalRef.result;
+    this.gameplaySessions.push(resultSession);
+    this.sortSessions();
     this.initializeDates(this.selectedPlatform);
   }
 
