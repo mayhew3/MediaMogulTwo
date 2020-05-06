@@ -59,6 +59,7 @@ exports.GameplaySession = sequelize.sequelize.define("gameplay_session", {
   start_time: Sequelize.DATE,
   rating: Sequelize.DECIMAL,
   person_id: Sequelize.INTEGER,
+  game_id: Sequelize.INTEGER,
   date_added: Sequelize.DATE,
 }, {
   freezeTableName: true,

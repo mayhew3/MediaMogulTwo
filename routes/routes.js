@@ -31,6 +31,7 @@ module.exports = function(app) {
   privatePut('/games', games.updateGame);
   privatePost('/games', games.addGame);
 
+  privateGet('/gameplaySessions', games.getGameplaySessions);
   privatePost('/gameplaySessions', games.addGameplaySession);
 
   privateGet('/persons', persons.getPersons);

@@ -130,6 +130,20 @@ exports.updateMyGamePlatform = async function(request, response) {
   }
 }
 
+exports.getGameplaySessions = async function (request, response) {
+  const person_id = request.query.person_id;
+  const game_id = request.query.game_id;
+
+  const mySessions = await model.GameplaySession.findAll({
+    where: {
+      person_id: person_id,
+      game_id: game_id
+    }
+  });
+
+  response.json(mySessions);
+};
+
 exports.addGameplaySession = async function(request, response) {
   const gameplaySession = request.body;
 

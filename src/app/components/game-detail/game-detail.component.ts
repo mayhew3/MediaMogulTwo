@@ -99,7 +99,7 @@ export class GameDetailComponent implements OnInit {
 
   getFilteredSessions(): GameplaySession[] {
     return _.filter(this.gameplaySessions, gameplaySession => {
-      return _.last(this.gameplaySessions) === gameplaySession || gameplaySession.minutes.originalValue > 1;
+      return _.last(this.gameplaySessions) === gameplaySession || gameplaySession.minutes.originalValue > 2;
     });
   }
 
