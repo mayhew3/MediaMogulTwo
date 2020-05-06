@@ -1,18 +1,12 @@
 import {Injectable, OnDestroy} from '@angular/core';
 import {Game} from '../interfaces/Model/Game';
-import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
 import {ArrayService} from './array.service';
 import * as _ from 'underscore';
 import {GameplaySession} from '../interfaces/Model/GameplaySession';
 import {PersonService} from './person.service';
-import {BehaviorSubject, Observable, Subject} from 'rxjs';
-import {PlatformService} from './platform.service';
-import {GamePlatform} from '../interfaces/Model/GamePlatform';
-import {Person} from '../interfaces/Model/Person';
-import {concatMap, filter, map} from 'rxjs/operators';
-import {MyGamePlatform} from '../interfaces/Model/MyGamePlatform';
-import {AvailableGamePlatform} from '../interfaces/Model/AvailableGamePlatform';
-import {MyGlobalPlatform} from '../interfaces/Model/MyGlobalPlatform';
+import {Observable, Subject} from 'rxjs';
+import {concatMap, map} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -42,6 +36,11 @@ export class GameplaySessionService implements OnDestroy {
         };
         // @ts-ignore
         return this.http.get<GameplaySession[]>(this._gamesUrl, options);
+      }),
+      map((sessionArr: any[]) => {
+        return _.map(sessionArr, sessionObj => {
+          return new GameplaySession().initializedFromJSON(sessionObj)
+        })
       })
     );
   }

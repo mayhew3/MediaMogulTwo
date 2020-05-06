@@ -90,6 +90,12 @@ export class GameDetailComponent implements OnInit {
     return DetailNav.PLAYTIME;
   }
 
+  getFilteredSessions(): GameplaySession[] {
+    return _.filter(this.gameplaySessions, gameplaySession => {
+      return _.indexOf(this.gameplaySessions, gameplaySession) === 0 || gameplaySession.minutes.originalValue > 1;
+    });
+  }
+
   getPillClass(detailOption: DetailNav): string {
     return detailOption === this.platformNav ? 'selectedPill' : '';
   }
