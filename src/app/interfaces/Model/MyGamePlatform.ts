@@ -3,6 +3,7 @@ import {DataObject} from '../DataObject/DataObject';
 import {AvailableGamePlatform} from './AvailableGamePlatform';
 import {Person} from './Person';
 import {GamePlatform} from './GamePlatform';
+import {Game} from './Game';
 
 export class MyGamePlatform extends DataObject {
 
@@ -33,6 +34,10 @@ export class MyGamePlatform extends DataObject {
     return this.availableGamePlatform.platform;
   }
 
+  get game(): Game {
+    return this.availableGamePlatform.game;
+  }
+
   initializedFromJSON(jsonObj: any): this {
     super.initializedFromJSON(jsonObj);
     if (!this.platform_name.value) {
@@ -43,6 +48,22 @@ export class MyGamePlatform extends DataObject {
 
   canAddPlaytime(): boolean {
     return this.availableGamePlatform.canAddToGame();
+  }
+
+  getProgressPercent(): number {
+    const minutesPlayed = this.minutes_played.originalValue;
+    const minutesToFinish = this.game.minutesToFinish;
+
+    if (!minutesToFinish) {
+      return undefined;
+    }
+
+    const baseRatio = minutesPlayed / minutesToFinish;
+    if (baseRatio > .99) {
+      return 99;
+    } else {
+      return Math.floor(baseRatio * 100);
+    }
   }
 
   isManuallyPreferred(): boolean {

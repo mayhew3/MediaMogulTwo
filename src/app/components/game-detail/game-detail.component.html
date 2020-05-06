@@ -58,6 +58,7 @@
               <ul ngbNav
                   #nav="ngbNav"
                   [(activeId)]="selectedPlatform"
+                  (navChange)="selectedPlatformChanged($event)"
                   class="nav nav-tabs">
                 <li *ngFor="let platform of game.myPlatformsInGlobal"
                     [ngbNavItem]="platform"
@@ -151,14 +152,31 @@
 
                             <h5>PLAYTIME</h5>
 
-                            <ngb-progressbar type="primary"
-                                             [value]="game.getProgressPercent()"
-                                             *ngIf="showProgressBar()">
-                              <span class="progress-text">{{game.getProgressPercent()}}%</span>
-                            </ngb-progressbar><br>
+                            <div class="row m-2">
+                              <div class="col-12">
 
-                            Time played: {{original.toString()}}<br>
-                            Time total: {{timeTotal.toString()}}<br>
+                                <ngb-progressbar type="primary"
+                                                 [value]="selectedPlatform.getProgressPercent()"
+                                                 *ngIf="showProgressBar()">
+                                  <span class="progress-text">{{selectedPlatform.getProgressPercent()}}%</span>
+                                </ngb-progressbar>
+
+                              </div>
+                            </div>
+
+                            <div class="row m-2">
+                              <div class="col-6">
+
+                                Time played: {{original.toString()}}<br>
+                                Time total: {{timeTotal.toString()}}<br>
+
+                              </div>
+                              <div class="col-6"
+                                   *ngIf="showPlaytimeButton()">
+                                <button class="btn btn-primary"
+                                        (click)="openPlaytimePopup()">Add Playtime</button>
+                              </div>
+                            </div>
 
                           </ng-template>
                         </li>

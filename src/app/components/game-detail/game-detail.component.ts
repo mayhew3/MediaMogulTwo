@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {GameService} from '../../services/game.service';
-import {NgbActiveModal, NgbModal, NgbModalRef} from '@ng-bootstrap/ng-bootstrap';
+import {NgbActiveModal, NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {PersonService} from '../../services/person.service';
 import {Game} from '../../interfaces/Model/Game';
 import {PlatformService} from '../../services/platform.service';
@@ -10,6 +10,7 @@ import * as _ from 'underscore';
 import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
 import {AddPlatformsComponent} from '../add-platforms/add-platforms.component';
 import {GameTime} from '../../interfaces/Utility/GameTime';
+import {PlaytimePopupComponent} from '../playtime-popup/playtime-popup.component';
 
 enum DetailNav {RATING = 'Rating', PLAYTIME = 'Playtime'}
 
@@ -53,14 +54,7 @@ export class GameDetailComponent implements OnInit {
     this.selectedPlatform = this.game.myPreferredPlatform;
     this.finished = !!this.selectedPlatform && !!this.selectedPlatform.finished_date.value;
     this.editedTitle = this.game.title.value;
-    this.initializeDates();
-  }
-
-  initializeDates(): void {
-    this.original = new GameTime();
-    this.timeTotal = new GameTime();
-    this.original.initialize(this.selectedPlatform.minutes_played.value);
-    this.timeTotal.initialize(this.game.minutesToFinish);
+    this.initializeDates(this.selectedPlatform);
   }
 
   toggleTitleEdit() {
@@ -87,16 +81,12 @@ export class GameDetailComponent implements OnInit {
     return DetailNav.PLAYTIME;
   }
 
-  getNavOptions(): string[] {
-    return Object.keys(DetailNav);
-  }
-
-  getDisplayValueOf(detailOption: string): string {
-    return DetailNav[detailOption];
-  }
-
   getPillClass(detailOption: DetailNav): string {
     return detailOption === this.platformNav ? 'selectedPill' : '';
+  }
+
+  selectedPlatformChanged(event) {
+    this.initializeDates(event.nextId);
   }
 
   async changePreferredPlatform() {
@@ -105,18 +95,6 @@ export class GameDetailComponent implements OnInit {
 
     this.selectedPlatform.preferred.value = true;
     await this.gameService.updateMyPlatform(this.selectedPlatform);
-  }
-
-  platformIsSelected(platform: MyGamePlatform): boolean {
-    return platform.id.originalValue === this.selectedPlatform.id.originalValue;
-  }
-
-  platformsExceptSelected(): MyGamePlatform[] {
-    return _.without(this.game.myPlatformsInGlobal, this.selectedPlatform);
-  }
-
-  selectPlatform(platform: MyGamePlatform): void {
-    this.selectedPlatform = platform;
   }
 
   showAddButton(): boolean {
@@ -195,6 +173,26 @@ export class GameDetailComponent implements OnInit {
 
   async doGameUpdate() {
     await this.gameService.updateGame(this.game);
+  }
+
+  // PLAYTIME
+
+  showPlaytimeButton(): boolean {
+    return this.selectedPlatform.canAddPlaytime();
+  }
+
+  async openPlaytimePopup() {
+    const modalRef = this.modalService.open(PlaytimePopupComponent, {size: 'lg'});
+    modalRef.componentInstance.game = this.game;
+    await modalRef.result;
+    this.initializeDates(this.selectedPlatform);
+  }
+
+  initializeDates(selectedPlatform: MyGamePlatform): void {
+    this.original = new GameTime();
+    this.timeTotal = new GameTime();
+    this.original.initialize(selectedPlatform.minutes_played.value);
+    this.timeTotal.initialize(this.game.minutesToFinish);
   }
 
 }
