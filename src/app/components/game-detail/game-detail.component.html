@@ -178,6 +178,38 @@
                               </div>
                             </div>
 
+                            <div class="row m-2">
+                              <div class="col-12">
+                                Sessions:
+
+                                <div class="row">
+                                  <div class="col">
+                                    Date
+                                  </div>
+                                  <div class="col">
+                                    Minutes
+                                  </div>
+                                  <div class="col">
+                                    Rating
+                                  </div>
+                                </div>
+
+                                <div class="row"
+                                     *ngFor="let session of getFilteredSessions()">
+                                  <div class="col">
+                                    {{session.start_time.originalValue | date: 'yyyy-MM-dd'}}
+                                  </div>
+                                  <div class="col">
+                                    {{session.minutes.originalValue}}
+                                  </div>
+                                  <div class="col">
+                                    {{session.rating.originalValue}}
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+
                           </ng-template>
                         </li>
 

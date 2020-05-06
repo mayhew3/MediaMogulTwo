@@ -11,6 +11,9 @@ import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
 import {AddPlatformsComponent} from '../add-platforms/add-platforms.component';
 import {GameTime} from '../../interfaces/Utility/GameTime';
 import {PlaytimePopupComponent} from '../playtime-popup/playtime-popup.component';
+import {GameplaySession} from '../../interfaces/Model/GameplaySession';
+import {GameplaySessionService} from '../../services/gameplay.session.service';
+import fast_sort from 'fast-sort';
 
 enum DetailNav {RATING = 'Rating', PLAYTIME = 'Playtime'}
 
@@ -41,11 +44,14 @@ export class GameDetailComponent implements OnInit {
 
   debug = false;
 
+  gameplaySessions: GameplaySession[] = [];
+
   constructor(private gameService: GameService,
               private modalService: NgbModal,
               public activeModal: NgbActiveModal,
               public personService: PersonService,
-              private platformService: PlatformService) {
+              private platformService: PlatformService,
+              private gameplaySessionService: GameplaySessionService) {
     this.platformService.platforms.subscribe(platforms => ArrayUtil.refreshArray(this.allPlatforms, platforms));
     this.platformService.maybeRefreshCache();
   }
@@ -55,6 +61,16 @@ export class GameDetailComponent implements OnInit {
     this.finished = !!this.selectedPlatform && !!this.selectedPlatform.finished_date.value;
     this.editedTitle = this.game.title.value;
     this.initializeDates(this.selectedPlatform);
+
+    this.gameplaySessionService.getGameplaySessions(this.game).subscribe(sessions => {
+      ArrayUtil.refreshArray(this.gameplaySessions, sessions);
+      this.sortSessions();
+    });
+  }
+
+  sortSessions() {
+    fast_sort(this.gameplaySessions)
+      .desc(session => session.start_time.originalValue);
   }
 
   toggleTitleEdit() {
@@ -79,6 +95,12 @@ export class GameDetailComponent implements OnInit {
 
   getPlaytimeOption(): DetailNav {
     return DetailNav.PLAYTIME;
+  }
+
+  getFilteredSessions(): GameplaySession[] {
+    return _.filter(this.gameplaySessions, gameplaySession => {
+      return _.last(this.gameplaySessions) === gameplaySession || gameplaySession.minutes.originalValue > 2;
+    });
   }
 
   getPillClass(detailOption: DetailNav): string {
@@ -184,7 +206,9 @@ export class GameDetailComponent implements OnInit {
   async openPlaytimePopup() {
     const modalRef = this.modalService.open(PlaytimePopupComponent, {size: 'lg'});
     modalRef.componentInstance.game = this.game;
-    await modalRef.result;
+    const resultSession = await modalRef.result;
+    this.gameplaySessions.push(resultSession);
+    this.sortSessions();
     this.initializeDates(this.selectedPlatform);
   }
 

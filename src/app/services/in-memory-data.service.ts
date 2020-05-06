@@ -9,6 +9,7 @@ import {MockPersons} from '../mocks/persons.mock';
 import {MockIGDBMatches} from '../mocks/igdb.matches.mock';
 import {MockGamePlatforms} from '../mocks/gamePlatforms.mock';
 import {ArrayUtil} from '../utility/ArrayUtil';
+import {MockGameplaySessions} from '../mocks/gameplaySessions.mock';
 
 @Injectable({
   providedIn: 'root'
@@ -18,6 +19,7 @@ export class InMemoryDataService implements InMemoryDbService{
   games = MockGames;
   persons = MockPersons;
   gamePlatforms = MockGamePlatforms;
+  gameplaySessions = MockGameplaySessions;
 
   // STATIC HELPERS
 
@@ -34,7 +36,7 @@ export class InMemoryDataService implements InMemoryDbService{
   createDb(): {} {
     return {
       games: this.games,
-      gameplaySessions: [] as GameplaySession[],
+      gameplaySessions: this.gameplaySessions,
       persons: this.persons,
       igdbMatches: [],
       gamePlatforms: this.gamePlatforms,

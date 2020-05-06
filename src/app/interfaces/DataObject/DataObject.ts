@@ -110,6 +110,7 @@ export abstract class DataObject implements OnDestroy {
       changedFields: changedFields
     }
     await http.put<any>(url, payload, httpOptions)
+      .pipe(takeUntil(this._destroy$))
       .toPromise();
     this.moveChanges();
     return this;

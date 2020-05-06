@@ -8,9 +8,10 @@ export class GameTime {
   // tslint:disable-next-line:variable-name
   private _minutes: number;
 
-  initialize(minutesPlayed: number) {
+  initialize(minutesPlayed: number): this {
     this._duration = moment.duration(minutesPlayed, 'minutes');
     this.updateHoursAndMinutes();
+    return this;
   }
 
   get hours(): number {

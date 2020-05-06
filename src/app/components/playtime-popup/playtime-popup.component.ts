@@ -124,9 +124,9 @@ export class PlaytimePopupComponent implements OnInit {
         this.gameplaySession.start_time.value = playedDate;
         this.gameplaySession.person_id.value = person.id.value;
 
-        await this.gameService.insertGameplaySession(this.gameplaySession);
+        const resultSession = await this.gameService.insertGameplaySession(this.gameplaySession);
         await this.gameService.updateMyPlatform(myPlatform);
-        this.activeModal.close('Save Click');
+        this.activeModal.close(resultSession);
       } catch (err) {
         console.error(err);
       }
