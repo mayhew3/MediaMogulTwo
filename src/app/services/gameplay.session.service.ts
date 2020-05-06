@@ -23,18 +23,16 @@ export class GameplaySessionService implements OnDestroy {
   }
 
   getGameplaySessions(game: Game): Observable<GameplaySession[]> {
-    // @ts-ignore
     return this.personService.me$.pipe(
       concatMap(me => {
         const personID = me.id.value;
         const payload = {
           person_id: personID.toString(),
-          game_id: game.id.originalValue
+          game_id: game.id.originalValue.toString()
         };
         const options = {
           params: payload
         };
-        // @ts-ignore
         return this.http.get<GameplaySession[]>(this._gamesUrl, options)
           .pipe(takeUntil(this._destroy$));
       }),
