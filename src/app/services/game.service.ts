@@ -9,7 +9,7 @@ import {BehaviorSubject, Subject} from 'rxjs';
 import {PlatformService} from './platform.service';
 import {GamePlatform} from '../interfaces/Model/GamePlatform';
 import {Person} from '../interfaces/Model/Person';
-import {filter} from 'rxjs/operators';
+import {filter, takeUntil} from 'rxjs/operators';
 import {MyGamePlatform} from '../interfaces/Model/MyGamePlatform';
 import {AvailableGamePlatform} from '../interfaces/Model/AvailableGamePlatform';
 import {MyGlobalPlatform} from '../interfaces/Model/MyGlobalPlatform';
@@ -182,6 +182,7 @@ export class GameService implements OnDestroy {
           };
           this.http
             .get<any[]>(this._gamesUrl, options)
+            .pipe(takeUntil(this._destroy$))
             .subscribe(gameObjs => {
               this._dataStore.games = this.convertObjectsToGames(gameObjs, platforms);
               this.gameRefreshCount++;

@@ -6,7 +6,7 @@ import * as _ from 'underscore';
 import {GameplaySession} from '../interfaces/Model/GameplaySession';
 import {PersonService} from './person.service';
 import {Observable, Subject} from 'rxjs';
-import {concatMap, map} from 'rxjs/operators';
+import {concatMap, map, takeUntil} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -35,7 +35,8 @@ export class GameplaySessionService implements OnDestroy {
           params: payload
         };
         // @ts-ignore
-        return this.http.get<GameplaySession[]>(this._gamesUrl, options);
+        return this.http.get<GameplaySession[]>(this._gamesUrl, options)
+          .pipe(takeUntil(this._destroy$));
       }),
       map((sessionArr: any[]) => {
         return _.map(sessionArr, sessionObj => {
