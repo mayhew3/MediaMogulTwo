@@ -79,7 +79,7 @@
                           <a ngbNavLink
                              class="nav-link"
                              [ngClass]="getPillClass(getRatingOption())">{{getRatingOption()}}</a>
-                          
+
                           <ng-template ngbNavContent>
 
                             <div class="row darkerBg">
@@ -149,7 +149,16 @@
                              [ngClass]="getPillClass(getPlaytimeOption())">{{getPlaytimeOption()}}</a>
                           <ng-template ngbNavContent>
 
-                            PLAYTIME
+                            <h5>PLAYTIME</h5>
+
+                            <ngb-progressbar type="primary"
+                                             [value]="game.getProgressPercent()"
+                                             *ngIf="showProgressBar()">
+                              <span class="progress-text">{{game.getProgressPercent()}}%</span>
+                            </ngb-progressbar><br>
+
+                            Time played: {{original.toString()}}<br>
+                            Time total: {{timeTotal.toString()}}<br>
 
                           </ng-template>
                         </li>

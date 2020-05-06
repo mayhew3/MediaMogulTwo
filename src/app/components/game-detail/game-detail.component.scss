@@ -10,3 +10,10 @@
   border-radius: 3px;
   color: $gray-400;
 }
+
+.progress-text {
+  color: white;
+  position: absolute;
+  display: block;
+  left: 46%; /* just in case calc is unavailable in a browser */
+}

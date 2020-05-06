@@ -239,6 +239,32 @@ export class Game extends DataObject {
     return !preferred ? null : preferred.rating.originalValue;
   }
 
+  get minutesToFinish(): number {
+    const howlongExtras = this.howlong_extras.originalValue;
+    const timeTotal = this.timetotal.originalValue;
+    if (!howlongExtras && !timeTotal) {
+      return undefined;
+    }
+
+    return !howlongExtras ? timeTotal * 60 : howlongExtras * 60;
+  }
+
+  getProgressPercent(): number {
+    const minutesPlayed = this.bestPlaytime;
+    const minutesToFinish = this.minutesToFinish;
+
+    if (!minutesToFinish) {
+      return undefined;
+    }
+
+    const baseRatio = minutesPlayed / minutesToFinish;
+    if (baseRatio > .99) {
+      return 99;
+    } else {
+      return Math.floor(baseRatio * 100);
+    }
+  }
+
   get bestMetacritic(): number {
     const allMetacritics = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.availableGamePlatform.metacritic.originalValue);
     const max = _.max(allMetacritics);

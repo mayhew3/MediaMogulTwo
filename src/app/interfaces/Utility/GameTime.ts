@@ -40,6 +40,10 @@ export class GameTime {
     this.updateHoursAndMinutes();
   }
 
+  toString(): string {
+    return `${this._hours}h ${this._minutes}m`;
+  }
+
   getDurationClone(): moment.Duration {
     return this._duration.clone();
   }

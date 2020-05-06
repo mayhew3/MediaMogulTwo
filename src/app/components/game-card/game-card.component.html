@@ -65,8 +65,8 @@
         <div class="col-12 m-1 align-bottom"
              *ngIf="showProgressBar()">
           <p><ngb-progressbar type="primary"
-                              [value]="getProgressValue()">
-            <span class="progress-text">{{getProgressValue()}}%</span>
+                              [value]="game.getProgressPercent()">
+            <span class="progress-text">{{game.getProgressPercent()}}%</span>
           </ngb-progressbar></p>
         </div>
       </div>

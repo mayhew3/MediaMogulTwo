@@ -9,6 +9,7 @@ import {ArrayUtil} from '../../utility/ArrayUtil';
 import * as _ from 'underscore';
 import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
 import {AddPlatformsComponent} from '../add-platforms/add-platforms.component';
+import {GameTime} from '../../interfaces/Utility/GameTime';
 
 enum DetailNav {RATING = 'Rating', PLAYTIME = 'Playtime'}
 
@@ -34,6 +35,9 @@ export class GameDetailComponent implements OnInit {
 
   platformNav = DetailNav.RATING;
 
+  original = new GameTime();
+  timeTotal = new GameTime();
+
   debug = false;
 
   constructor(private gameService: GameService,
@@ -49,10 +53,22 @@ export class GameDetailComponent implements OnInit {
     this.selectedPlatform = this.game.myPreferredPlatform;
     this.finished = !!this.selectedPlatform && !!this.selectedPlatform.finished_date.value;
     this.editedTitle = this.game.title.value;
+    this.initializeDates();
+  }
+
+  initializeDates(): void {
+    this.original = new GameTime();
+    this.timeTotal = new GameTime();
+    this.original.initialize(this.selectedPlatform.minutes_played.value);
+    this.timeTotal.initialize(this.game.minutesToFinish);
   }
 
   toggleTitleEdit() {
     this.titleEditMode = !this.titleEditMode;
+  }
+
+  showProgressBar(): boolean {
+    return this.game.isOwned() && this.game.natural_end.originalValue && this.game.getProgressPercent() !== undefined;
   }
 
   hasMultiplePlatforms() {
