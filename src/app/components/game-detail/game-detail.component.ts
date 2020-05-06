@@ -10,6 +10,8 @@ import * as _ from 'underscore';
 import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
 import {AddPlatformsComponent} from '../add-platforms/add-platforms.component';
 
+enum DetailNav {RATING = 'Rating', PLAYTIME = 'Playtime'}
+
 @Component({
   selector: 'mm-game-detail',
   templateUrl: './game-detail.component.html',
@@ -29,6 +31,8 @@ export class GameDetailComponent implements OnInit {
   selectedPlatform: MyGamePlatform;
 
   allPlatforms: GamePlatform[] = [];
+
+  platformNav = DetailNav.RATING;
 
   debug = false;
 
@@ -57,6 +61,26 @@ export class GameDetailComponent implements OnInit {
 
   selectedIsPreferred() {
     return this.selectedPlatform.id.originalValue === this.game.myPreferredPlatform.id.originalValue;
+  }
+
+  getRatingOption(): DetailNav {
+    return DetailNav.RATING;
+  }
+
+  getPlaytimeOption(): DetailNav {
+    return DetailNav.PLAYTIME;
+  }
+
+  getNavOptions(): string[] {
+    return Object.keys(DetailNav);
+  }
+
+  getDisplayValueOf(detailOption: string): string {
+    return DetailNav[detailOption];
+  }
+
+  getPillClass(detailOption: DetailNav): string {
+    return detailOption === this.platformNav ? 'selectedPill' : '';
   }
 
   async changePreferredPlatform() {

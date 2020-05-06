@@ -66,65 +66,105 @@
                      class="nav-link">{{platform.platform_name.originalValue}}</a>
                   <ng-template ngbNavContent>
 
-                    <div class="row" *ngIf="hasSelectedPlatform()">
+                    <div *ngIf="hasSelectedPlatform()">
 
-                      <!-- METACRITIC -->
-                      <div class="col" *ngIf="hasSelectedPlatform()">
-                        <span class="small">Metacritic:</span><br>
-                        <mm-rating-box [maxValue]="100"
-                                       [value]="getMetacritic()"></mm-rating-box>
+                      <div class="row">
+                      <ul ngbNav
+                          #detailNav="ngbNav"
+                          [(activeId)]="platformNav"
+                          class="nav">
+
+                        <li [ngbNavItem]="getRatingOption()"
+                            class="nav-item">
+                          <a ngbNavLink
+                             class="nav-link"
+                             [ngClass]="getPillClass(getRatingOption())">{{getRatingOption()}}</a>
+                          <ng-template ngbNavContent>
+
+                            <div class="row darkerBg">
+
+                              <!-- METACRITIC -->
+                              <div class="col" *ngIf="hasSelectedPlatform()">
+                                <span class="small">Metacritic:</span><br>
+                                <mm-rating-box [maxValue]="100"
+                                               [value]="getMetacritic()"></mm-rating-box>
+                              </div>
+
+                              <!--RATING-->
+                              <div class="col">
+                                <label class="col-form-label col-form-label-sm" for="rating">Rating</label>
+                                <input type="number"
+                                       id="rating"
+                                       name="rating"
+                                       class="darkInput form-control form-control-lg"
+                                       [(ngModel)]="selectedPlatform.rating.value"
+                                       (ngModelChange)="onFieldEdit()"/>
+                              </div>
+
+                              <!--FINISHED-->
+                              <div class="form-group col">
+                                <label class="col-form-label col-form-label-sm" for="finished">Finished</label><br>
+                                <mm-big-checkbox [value]="finished"
+                                                 id="finished"
+                                                 (valueChanged)="onFinishedFieldEdit($event)">
+                                </mm-big-checkbox>
+                              </div>
+
+                              <!--FINAL SCORE-->
+                              <div class="col">
+                                <div *ngIf="!!finished">
+                                  <label class="col-form-label col-form-label-sm" for="finalScore">Final Score</label>
+                                  <input type="number"
+                                         id="finalScore"
+                                         name="finalScore"
+                                         class="darkInput form-control form-control-lg"
+                                         [(ngModel)]="selectedPlatform.final_score.value"
+                                         (ngModelChange)="onFieldEdit()"/>
+                                </div>
+                              </div>
+
+                              <!--REPLAY SCORE-->
+                              <div class="col">
+                                <div *ngIf="!!finished">
+                                  <label class="col-form-label col-form-label-sm" for="replay">Replay</label>
+                                  <input type="number"
+                                         id="replay"
+                                         name="replay"
+                                         class="darkInput form-control form-control-lg"
+                                         [(ngModel)]="selectedPlatform.replay_score.value"
+                                         (ngModelChange)="onFieldEdit()"/>
+                                </div>
+                              </div>
+
+                            </div>
+
+                          </ng-template>
+                        </li>
+
+                        <li [ngbNavItem]="getPlaytimeOption()"
+                            class="nav-item">
+                          <a ngbNavLink
+                             class="nav-link"
+                             [ngClass]="getPillClass(getPlaytimeOption())">{{getPlaytimeOption()}}</a>
+                          <ng-template ngbNavContent>
+
+                            PLAYTIME
+
+                          </ng-template>
+                        </li>
+
+                      </ul>
                       </div>
 
-                      <!--RATING-->
-                      <div class="col">
-                        <label class="col-form-label col-form-label-sm" for="rating">Rating</label>
-                        <input type="number"
-                               id="rating"
-                               name="rating"
-                               class="darkInput form-control form-control-lg"
-                               [(ngModel)]="selectedPlatform.rating.value"
-                               (ngModelChange)="onFieldEdit()"/>
-                      </div>
 
-                      <!--FINISHED-->
-                      <div class="form-group col">
-                        <label class="col-form-label col-form-label-sm" for="finished">Finished</label><br>
-                        <mm-big-checkbox [value]="finished"
-                                         id="finished"
-                                         (valueChanged)="onFinishedFieldEdit($event)">
-                        </mm-big-checkbox>
-                      </div>
-
-                      <!--FINAL SCORE-->
-                      <div class="col">
-                        <div *ngIf="!!finished">
-                          <label class="col-form-label col-form-label-sm" for="finalScore">Final Score</label>
-                          <input type="number"
-                                 id="finalScore"
-                                 name="finalScore"
-                                 class="darkInput form-control form-control-lg"
-                                 [(ngModel)]="selectedPlatform.final_score.value"
-                                 (ngModelChange)="onFieldEdit()"/>
-                        </div>
-                      </div>
-
-                      <!--REPLAY SCORE-->
-                      <div class="col">
-                        <div *ngIf="!!finished">
-                          <label class="col-form-label col-form-label-sm" for="replay">Replay</label>
-                          <input type="number"
-                                 id="replay"
-                                 name="replay"
-                                 class="darkInput form-control form-control-lg"
-                                 [(ngModel)]="selectedPlatform.replay_score.value"
-                                 (ngModelChange)="onFieldEdit()"/>
-                        </div>
-                      </div>
+                      <div [ngbNavOutlet]="detailNav"></div>
 
 
                     </div>
 
                   </ng-template>
+
+
                 </li>
               </ul>
 
@@ -159,20 +199,11 @@
 
             </div>
 
-
-
-
-
-            <div class="row darkerBg">
-
+            <div class="row darkerBg p-2">
               <div class="col-12">
-
                 <div [ngbNavOutlet]="nav"></div>
-
               </div>
-
             </div>
-
 
           </div>
         </div>

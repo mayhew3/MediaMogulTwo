@@ -1,4 +1,12 @@
+@import '../../../solar_variables';
+
 .selectedPlatform {
   font-size: 18pt;
   font-weight: bold;
+}
+
+.selectedPill {
+  background-color: $gray-800;
+  border-radius: 3px;
+  color: $gray-400;
 }
