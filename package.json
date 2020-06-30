@@ -34,7 +34,7 @@
     "bootstrap-icons": "1.0.0-alpha3",
     "debug": "4.1.1",
     "express": "4.17.1",
-    "express-jwt": "5.3.3",
+    "express-jwt": "6.0.0",
     "fast-sort": "2.1.1",
     "jquery": "3.5.0",
     "jwks-rsa": "1.7.0",
