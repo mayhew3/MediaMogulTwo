@@ -6,7 +6,7 @@ import {FieldValueDate} from './FieldValueDate';
 import {FieldValueBoolean} from './FieldValueBoolean';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Subject} from 'rxjs';
-import {OnDestroy} from '@angular/core';
+import {Injectable, OnDestroy} from '@angular/core';
 import {takeUntil} from 'rxjs/operators';
 import {ArrayUtil} from '../../utility/ArrayUtil';
 import * as _ from 'underscore';
@@ -17,6 +17,9 @@ const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
 
+@Injectable({
+  providedIn: 'root'
+})
 export abstract class DataObject implements OnDestroy {
   private editMode = EditMode.INSERT;
   private initialized = false;
