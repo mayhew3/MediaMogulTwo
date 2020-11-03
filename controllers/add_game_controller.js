@@ -1,4 +1,4 @@
-const axios = require('axios');
+const tokens = require('./igdb_token_service');
 
 exports.getIGDBMatches = async function (request, response) {
   const game_title = request.query.game_title;
