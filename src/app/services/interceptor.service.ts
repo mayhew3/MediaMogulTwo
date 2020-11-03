@@ -15,7 +15,7 @@ export class InterceptorService implements HttpInterceptor {
     req: HttpRequest<any>,
     next: HttpHandler
   ): Observable<HttpEvent<any>> {
-    return this.auth.getTokenSilently$().pipe(
+    return this.auth.getTokenSilently$({audience: 'https://media-mogul-two.herokuapp.com'}).pipe(
       mergeMap(token => {
         const tokenReq = req.clone({
           setHeaders: { Authorization: `Bearer ${token}` }
