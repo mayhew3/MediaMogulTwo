@@ -11,7 +11,7 @@ import {Person} from '../interfaces/Model/Person';
   providedIn: 'root'
 })
 export class PersonService implements OnDestroy {
-  personsUrl = 'api/persons';
+  personsUrl = '/api/persons';
   cache: Person[];
   private _destroy$ = new Subject();
 

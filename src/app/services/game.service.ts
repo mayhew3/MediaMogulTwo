@@ -22,7 +22,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class GameService implements OnDestroy {
-  private _gamesUrl = 'api/games';
+  private _gamesUrl = '/api/games';
   private _games$ = new BehaviorSubject<Game[]>([]);
   private _dataStore: {games: Game[]} = {games: []};
   private _fetching = false;

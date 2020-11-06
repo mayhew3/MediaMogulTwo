@@ -62,16 +62,7 @@ import { AuthHttpInterceptor } from '@auth0/auth0-angular';
 
       // Specify configuration for the interceptor
       httpInterceptor: {
-        allowedList: [
-          {
-            // Match any request that starts 'https://media-mogul-two.herokuapp.com/api/' (note the asterisk)
-            uri: 'https://media-mogul-two.herokuapp.com/api/*',
-            tokenOptions: {
-              // The attached token should target this audience
-              audience: 'https://media-mogul-two.herokuapp.com/',
-            }
-          }
-        ]
+        allowedList: ['/api/*'],
       },
     }),
   ],
