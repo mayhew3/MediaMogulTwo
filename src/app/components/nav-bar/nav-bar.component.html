@@ -4,7 +4,7 @@
 
       <!-- DROPDOWN: make sure you have jquery, @popperjs/core, and bootstrap js included in index.html! -->
       <li class="nav-item dropdown active"
-          *ngIf="auth.loggedIn">
+          *ngIf="isLoggedIn$() | async">
         <a class="nav-link dropdown-toggle"
            href="#"
            id="navbarDropdown"
@@ -30,12 +30,12 @@
 
       <!--TODO: href goes nowhere? -->
       <li class="nav-item active">
-        <a routerLink="/" class="nav-link" (click)="auth.login()" *ngIf="!auth.loggedIn">Log In</a>
-        <a routerLink="/" class="nav-link" (click)="auth.logout()" *ngIf="auth.loggedIn">Log Out</a>
+        <a routerLink="/" class="nav-link" (click)="auth.loginWithRedirect()" *ngIf="!(isLoggedIn$() | async)">Log In</a>
+        <a routerLink="/" class="nav-link" (click)="auth.logout({ returnTo: document.location.origin })" *ngIf="isLoggedIn$() | async">Log Out</a>
       </li>
 
       <li class="nav-item active">
-        <a routerLink="profile" class="nav-link" *ngIf="auth.loggedIn">Profile</a>
+        <a routerLink="profile" class="nav-link" *ngIf="isLoggedIn$() | async">Profile</a>
       </li>
 
       <li class="nav-item">

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree, CanActivate } from '@angular/router';
 import { Observable } from 'rxjs';
-import { AuthService } from '../auth.service';
+import { AuthService } from '@auth0/auth0-angular';
 import { tap } from 'rxjs/operators';
 
 @Injectable({
@@ -18,7 +18,9 @@ export class AuthGuard implements CanActivate {
     return this.auth.isAuthenticated$.pipe(
       tap(loggedIn => {
         if (!loggedIn) {
-          this.auth.login(state.url);
+          this.auth.loginWithRedirect({
+            redirect_uri: state.url
+          });
         }
       })
     );

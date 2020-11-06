@@ -4,7 +4,7 @@ import {Observable, of, Subject} from 'rxjs';
 import {catchError, concatMap, filter, takeUntil, tap} from 'rxjs/operators';
 import {ArrayService} from './array.service';
 import * as _ from 'underscore';
-import {AuthService} from './auth.service';
+import {AuthService} from '@auth0/auth0-angular';
 import {Person} from '../interfaces/Model/Person';
 
 @Injectable({
@@ -15,7 +15,7 @@ export class PersonService implements OnDestroy {
   cache: Person[];
   private _destroy$ = new Subject();
 
-  me$ = this.authService.userProfile$.pipe(
+  me$ = this.authService.user$.pipe(
     filter(user => !!user),
     concatMap((user) => this.getPersonWithEmail(user.email)),
     tap((person: Person) => {

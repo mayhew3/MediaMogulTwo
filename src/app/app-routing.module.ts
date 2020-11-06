@@ -5,8 +5,6 @@ import {BrowseGamesComponent} from './components/browse-games/browse-games.compo
 import {ProfileComponent} from './components/profile/profile.component';
 import {AuthGuard} from './services/auth/auth.guard';
 import {DashboardComponent} from './components/dashboard/dashboard.component';
-import {HTTP_INTERCEPTORS} from '@angular/common/http';
-import {InterceptorService} from './services/interceptor.service';
 import {SearchComponent} from './components/search/search.component';
 import {PlatformListComponent} from './components/platform-list/platform-list.component';
 import {MyPlatformsComponent} from './components/my-platforms/my-platforms.component';
@@ -52,12 +50,6 @@ export const routes: Routes = [
   declarations: [],
   imports: [[RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })]],
   exports: [RouterModule],
-  providers: [
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: InterceptorService,
-      multi: true,
-    }
-  ],
+  providers: [],
 })
 export class AppRoutingModule { }
