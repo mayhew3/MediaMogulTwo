@@ -23,6 +23,9 @@ import { SearchComponent } from './components/search/search.component';
 import { PlatformListComponent } from './components/platform-list/platform-list.component';
 import { PlatformDetailComponent } from './components/platform-detail/platform-detail.component';
 import { MyPlatformsComponent } from './components/my-platforms/my-platforms.component';
+import { AuthModule } from '@auth0/auth0-angular';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthHttpInterceptor } from '@auth0/auth0-angular';
 
 @NgModule({
   declarations: [
@@ -51,8 +54,21 @@ import { MyPlatformsComponent } from './components/my-platforms/my-platforms.com
     NgbModule,
     FormsModule,
     AppRoutingModule,
+    AuthModule.forRoot({
+      domain: environment.domain,
+      clientId: environment.clientID,
+      redirectUri: `${window.location.origin}`,
+      audience: 'https://media-mogul-two.herokuapp.com',
+
+      // Specify configuration for the interceptor
+      httpInterceptor: {
+        allowedList: ['/api/*'],
+      },
+    }),
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: AuthHttpInterceptor, multi: true },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

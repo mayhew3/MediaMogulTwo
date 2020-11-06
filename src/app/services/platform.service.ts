@@ -61,7 +61,7 @@ export class PlatformService implements OnDestroy {
         params: payload
       };
       this.http
-        .get<any[]>('api/gamePlatforms', options)
+        .get<any[]>('/api/gamePlatforms', options)
         .pipe(takeUntil(this._destroy$))
         .subscribe(platformObjs => {
           this._platforms = this.convertObjectsToPlatforms(platformObjs);

@@ -12,7 +12,7 @@ import {concatMap, map, takeUntil} from 'rxjs/operators';
   providedIn: 'root'
 })
 export class GameplaySessionService implements OnDestroy {
-  private _gamesUrl = 'api/gameplaySessions';
+  private _gamesUrl = '/api/gameplaySessions';
 
   private _destroy$ = new Subject();
 
