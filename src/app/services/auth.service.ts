@@ -19,7 +19,6 @@ export class AuthService {
       redirect_uri: `${window.location.origin}`,
       audience: 'https://media-mogul-two.herokuapp.com',
       cacheLocation: 'localstorage',
-      useRefreshTokens: true,
     })
   ) as Observable<Auth0Client>).pipe(
     shareReplay(1), // Every subscription receives the same shared value
