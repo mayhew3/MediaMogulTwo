@@ -48,7 +48,8 @@
         "no-console": "warn",
         "no-underscore-dangle": "warn",
         "@typescript-eslint/explicit-function-return-type": "warn",
-        "no-extra-boolean-cast": "off"
+        "no-extra-boolean-cast": "off",
+        "@typescript-eslint/member-ordering": "warn"
       }
     },
     {

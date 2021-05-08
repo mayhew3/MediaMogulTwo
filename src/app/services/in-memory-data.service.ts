@@ -33,7 +33,7 @@ export class InMemoryDataService implements InMemoryDbService{
 
   constructor() { }
 
-  createDb(): {} {
+  createDb(): Record<string, unknown> {
     return {
       games: this.games,
       gameplaySessions: this.gameplaySessions,

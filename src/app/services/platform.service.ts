@@ -51,35 +51,6 @@ export class PlatformService implements OnDestroy {
     this._destroy$.complete();
   }
 
-  private refreshCache() {
-    this.personService.me$.subscribe(person => {
-      const personID = person.id.value;
-      const payload = {
-        person_id: personID.toString()
-      };
-      const options = {
-        params: payload
-      };
-      this.http
-        .get<any[]>('/api/gamePlatforms', options)
-        .pipe(takeUntil(this._destroy$))
-        .subscribe(platformObjs => {
-          this._platforms = this.convertObjectsToPlatforms(platformObjs);
-          fast_sort(this._platforms).asc(platform => platform.id.originalValue);
-          this.pushPlatformListChange();
-          this._fetching = false;
-        });
-    });
-  }
-
-  private pushPlatformListChange() {
-    this._platforms$.next(this.arrayService.cloneArray(this._platforms));
-  }
-
-  private convertObjectsToPlatforms(platformObjs: any[]): GamePlatform[] {
-    return _.map(platformObjs, platformObj => new GamePlatform().initializedFromJSON(platformObj));
-  }
-
   async addPlatform(gamePlatform: GamePlatform): Promise<GamePlatform> {
     const returnObj = await gamePlatform.commit(this.http);
     this._platforms.push(returnObj);
@@ -129,4 +100,34 @@ export class PlatformService implements OnDestroy {
     }
 
   }
+
+  private refreshCache() {
+    this.personService.me$.subscribe(person => {
+      const personID = person.id.value;
+      const payload = {
+        person_id: personID.toString()
+      };
+      const options = {
+        params: payload
+      };
+      this.http
+        .get<any[]>('/api/gamePlatforms', options)
+        .pipe(takeUntil(this._destroy$))
+        .subscribe(platformObjs => {
+          this._platforms = this.convertObjectsToPlatforms(platformObjs);
+          fast_sort(this._platforms).asc(platform => platform.id.originalValue);
+          this.pushPlatformListChange();
+          this._fetching = false;
+        });
+    });
+  }
+
+  private pushPlatformListChange() {
+    this._platforms$.next(this.arrayService.cloneArray(this._platforms));
+  }
+
+  private convertObjectsToPlatforms(platformObjs: any[]): GamePlatform[] {
+    return _.map(platformObjs, platformObj => new GamePlatform().initializedFromJSON(platformObj));
+  }
+
 }
