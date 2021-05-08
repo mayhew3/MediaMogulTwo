@@ -1,9 +1,9 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Angular CLI Server" type="js.build_tools.npm">
+  <configuration default="false" name="build-server-only" type="js.build_tools.npm" nameIsGenerated="true">
     <package-json value="$PROJECT_DIR$/package.json" />
     <command value="run" />
     <scripts>
-      <script value="start-local" />
+      <script value="build-server-only" />
     </scripts>
     <node-interpreter value="project" />
     <envs />
