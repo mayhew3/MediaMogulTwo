@@ -27,7 +27,7 @@ export class NavBarComponent implements OnInit {
   search = (text$: Observable<string>) =>
     text$.pipe(
       distinctUntilChanged(),
-      map(term =>
+      map((term: string) =>
         _.filter(this.games, v => v.title.value.toLowerCase().indexOf(term.toLowerCase()) > -1)
           .slice(0, 6))
     );

@@ -24,7 +24,7 @@ export class PlatformService implements OnDestroy {
               private personService: PersonService) { }
 
   // public observable for all changes to platform list
-  get platforms() {
+  get platforms(): Observable<GamePlatform[]> {
     return this._platforms$.asObservable();
   }
 
