@@ -11,14 +11,20 @@
       "parserOptions": {
         "project": [
           "tsconfig.json",
+          "tsconfig.server.json",
           "e2e/tsconfig.json"
         ],
         "createDefaultProgram": true
       },
       "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
         "plugin:@angular-eslint/ng-cli-compat",
         "plugin:@angular-eslint/ng-cli-compat--formatting-add-on",
         "plugin:@angular-eslint/template/process-inline-templates"
+      ],
+      "plugins": [
+        "@typescript-eslint"
       ],
       "rules": {
         "@angular-eslint/component-selector": [
@@ -41,7 +47,8 @@
         "camelcase": "off",
         "no-console": "warn",
         "no-underscore-dangle": "warn",
-        "@typescript-eslint/explicit-function-return-type": "warn"
+        "@typescript-eslint/explicit-function-return-type": "warn",
+        "no-extra-boolean-cast": "off"
       }
     },
     {

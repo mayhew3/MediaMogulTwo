@@ -35,7 +35,7 @@ export class RatingBoxComponent implements OnInit {
   }
 
   colorStyle(): string {
-    return this.colorTransformService.colorStyle(this.value, this.maxValue, this.faded);;
+    return this.colorTransformService.colorStyle(this.value, this.maxValue, this.faded);
   }
 
   boxShadow(): string {
