@@ -6,15 +6,12 @@ import {ColorTransformService} from '../../services/color-transform.service';
   templateUrl: './rating-box.component.html',
   styleUrls: ['./rating-box.component.scss']
 })
-export class RatingBoxComponent implements OnInit {
+export class RatingBoxComponent {
   @Input() value: number;
   @Input() maxValue: number;
   @Input() faded: boolean;
 
   constructor(private colorTransformService: ColorTransformService) { }
-
-  ngOnInit(): void {
-  }
 
   getValue(): number {
     return this.getFormattedNumber(this.value);

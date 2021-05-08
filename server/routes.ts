@@ -29,7 +29,7 @@ module.exports = (app: Express): void => {
 
   const router = express.Router();
 
-  const privateGet = (endpoint, callback) => {
+  const privateGet = (endpoint, callback): void => {
     router.get(endpoint, authCheck, callback);
   };
 

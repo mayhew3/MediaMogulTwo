@@ -9,13 +9,10 @@ import {PlatformDetailComponent} from '../platform-detail/platform-detail.compon
   templateUrl: './platform-list.component.html',
   styleUrls: ['./platform-list.component.scss']
 })
-export class PlatformListComponent implements OnInit {
+export class PlatformListComponent {
 
   constructor(public platformService: PlatformService,
               private modalService: NgbModal) { }
-
-  ngOnInit(): void {
-  }
 
   async openDetailPopup(platform: GamePlatform) {
     const modalRef = this.modalService.open(PlatformDetailComponent, {size: 'md'});

@@ -10,7 +10,7 @@ import {GameService} from '../../services/game.service';
   templateUrl: './add-platforms.component.html',
   styleUrls: ['./add-platforms.component.scss']
 })
-export class AddPlatformsComponent implements OnInit {
+export class AddPlatformsComponent {
   @Input() game: Game;
 
   rating: number;
@@ -19,9 +19,6 @@ export class AddPlatformsComponent implements OnInit {
 
   constructor(public activeModal: NgbActiveModal,
               private gameService: GameService) {
-  }
-
-  ngOnInit(): void {
   }
 
   showAddButton(availableGamePlatform: AvailableGamePlatform): boolean {

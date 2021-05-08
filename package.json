@@ -12,6 +12,9 @@
     "build-server-only": "tsc --project tsconfig.server.json",
     "test": "ng test",
     "lint": "ng lint",
+    "lint-errors": "ng lint --quiet",
+    "lint-server": "eslint ./server/**/*.ts",
+    "lint-server-errors": "eslint ./server/**/*.ts --quiet",
     "e2e": "ng e2e",
     "heroku-postbuild": "tsc --project tsconfig.server.json && ng build --configuration=$NG_ENV"
   },

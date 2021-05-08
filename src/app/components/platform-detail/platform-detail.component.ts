@@ -8,14 +8,11 @@ import {PlatformService} from '../../services/platform.service';
   templateUrl: './platform-detail.component.html',
   styleUrls: ['./platform-detail.component.scss']
 })
-export class PlatformDetailComponent implements OnInit {
+export class PlatformDetailComponent {
   @Input() platform: GamePlatform;
 
   constructor(private activeModal: NgbActiveModal,
               private platformService: PlatformService) { }
-
-  ngOnInit(): void {
-  }
 
   async close() {
     await this.platformService.updatePlatform(this.platform);

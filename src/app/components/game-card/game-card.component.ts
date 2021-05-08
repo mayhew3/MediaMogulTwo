@@ -12,7 +12,7 @@ import {AddPlatformsComponent} from '../add-platforms/add-platforms.component';
   templateUrl: './game-card.component.html',
   styleUrls: ['./game-card.component.scss']
 })
-export class GameCardComponent implements OnInit {
+export class GameCardComponent {
   @Input() game: Game;
   @Input() parentList: GameListComponent;
   closeResult = '';
@@ -29,8 +29,7 @@ export class GameCardComponent implements OnInit {
   }
   constructor(private modalService: NgbModal) { }
 
-  ngOnInit(): void {
-  }
+
 
   isNotRecentlyUnowned(): boolean {
     return !this.game.isOwned() || this.successfullyAdded;

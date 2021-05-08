@@ -1,18 +1,15 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
   selector: 'mm-big-checkbox',
   templateUrl: './big-checkbox.component.html',
   styleUrls: ['./big-checkbox.component.scss']
 })
-export class BigCheckboxComponent implements OnInit {
+export class BigCheckboxComponent {
   @Input() value: boolean;
   @Output() valueChanged = new EventEmitter<boolean>();
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
   toggleCheckbox() {
     this.value = !this.value;

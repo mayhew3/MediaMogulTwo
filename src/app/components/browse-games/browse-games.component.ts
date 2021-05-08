@@ -1,10 +1,9 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {GameFilter} from '../../interfaces/Filters/GameFilter';
 import {UnownedGameFilter} from '../../interfaces/Filters/UnownedGameFilter';
 import {GameOrdering} from '../../interfaces/OrderBy/GameOrdering';
 import {OrderByTitle} from '../../interfaces/OrderBy/OrderByTitle';
 import {OrderingDirection} from '../game-list/OrderingDirection';
-import {ExistingCloudGameFilter} from '../../interfaces/Filters/ExistingCloudGameFilter';
 import {ExistingPlatformGameFilter} from '../../interfaces/Filters/ExistingPlatformGameFilter';
 import {GameFilterWithOptions} from '../../interfaces/Filters/GameFilterWithOptions';
 import {PlatformService} from '../../services/platform.service';
@@ -14,12 +13,9 @@ import {PlatformService} from '../../services/platform.service';
   templateUrl: './browse-games.component.html',
   styleUrls: ['./browse-games.component.scss']
 })
-export class BrowseGamesComponent implements OnInit {
+export class BrowseGamesComponent {
 
   constructor(private platformService: PlatformService) { }
-
-  ngOnInit(): void {
-  }
 
   getBaseFilter(): GameFilter {
     return new UnownedGameFilter();
