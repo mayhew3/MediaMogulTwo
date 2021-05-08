@@ -26,7 +26,8 @@ exports.getIGDBMatches = async function (request, response) {
     aggregated_rating_count, version_parent, first_release_date, genres.name, involved_companies.company.name,
     player_perspectives.name, rating, rating_count, release_dates.date, release_dates.platform.name,
     slug, summary, tags, updated_at, url;
-  where release_dates.region = (2,8);`;
+  where release_dates.region = (2,8);
+  limit 30;`;
 
   const options = {
     headers: {
