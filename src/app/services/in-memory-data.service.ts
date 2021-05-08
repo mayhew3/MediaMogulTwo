@@ -127,7 +127,7 @@ export class InMemoryDataService implements InMemoryDbService{
       const gameCopy = lodash.cloneDeep(game);
       _.forEach(gameCopy.availablePlatforms, availablePlatform => {
         const myPlatforms = availablePlatform.myPlatforms;
-        availablePlatform.myPlatform = _.findWhere(myPlatforms, {person_id: person_id});
+        availablePlatform.myPlatform = _.findWhere(myPlatforms, {person_id});
         delete availablePlatform.myPlatforms;
       });
       data.push(gameCopy);
@@ -146,7 +146,7 @@ export class InMemoryDataService implements InMemoryDbService{
       const gamePlatformCopy = lodash.cloneDeep(gamePlatform);
       const myPlatforms = gamePlatformCopy.my_platforms;
       if (!!myPlatforms) {
-        gamePlatformCopy.myPlatform = _.findWhere(myPlatforms, {person_id: person_id});
+        gamePlatformCopy.myPlatform = _.findWhere(myPlatforms, {person_id});
         delete gamePlatformCopy.my_platforms;
       }
 
@@ -233,7 +233,7 @@ export class InMemoryDataService implements InMemoryDbService{
         igdb_platform_id: platformWrapper.igdb_platform_id,
         igdb_name: platformWrapper.igdb_name,
         my_platforms: []
-      }
+      };
       this.gamePlatforms.push(gamePlatform);
       return gamePlatform;
     } else {
@@ -324,9 +324,7 @@ export class InMemoryDataService implements InMemoryDbService{
 
   private getAllMyPlatforms(): any[] {
     const availablePlatforms = this.getAllAvailablePlatforms();
-    return _.flatten(_.map(_.filter(availablePlatforms, availablePlatform => !!availablePlatform.myPlatforms), availablePlatform => {
-      return availablePlatform.myPlatforms;
-    }));
+    return _.flatten(_.map(_.filter(availablePlatforms, availablePlatform => !!availablePlatform.myPlatforms), availablePlatform => availablePlatform.myPlatforms));
   }
 
   private findAvailableGamePlatform(availablePlatformID: number): any {
@@ -349,7 +347,7 @@ export class InMemoryDataService implements InMemoryDbService{
       if (item === undefined) {
         return undefined;
       } else {
-        return parseInt(item.id)
+        return parseInt(item.id);
       }
     });
     const max = _.max(ids);

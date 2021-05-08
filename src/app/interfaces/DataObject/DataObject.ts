@@ -88,7 +88,7 @@ export abstract class DataObject implements OnDestroy {
   }
 
   async delete(http: HttpClient): Promise<any> {
-    const url = '/api/' + this.getApiMethod() + "/" + this.id.value;
+    const url = '/api/' + this.getApiMethod() + '/' + this.id.value;
     await http.delete(url, httpOptions).toPromise();
   }
 
@@ -110,8 +110,8 @@ export abstract class DataObject implements OnDestroy {
     // todo: check if changedFields is empty
     const payload = {
       id: this.id.value,
-      changedFields: changedFields
-    }
+      changedFields
+    };
     await http.put<any>(url, payload, httpOptions)
       .pipe(takeUntil(this._destroy$))
       .toPromise();

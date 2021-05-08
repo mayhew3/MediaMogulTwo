@@ -98,9 +98,7 @@ export class GameDetailComponent implements OnInit {
   }
 
   getFilteredSessions(): GameplaySession[] {
-    return _.filter(this.gameplaySessions, gameplaySession => {
-      return _.last(this.gameplaySessions) === gameplaySession || gameplaySession.minutes.originalValue > 2;
-    });
+    return _.filter(this.gameplaySessions, gameplaySession => _.last(this.gameplaySessions) === gameplaySession || gameplaySession.minutes.originalValue > 2);
   }
 
   getPillClass(detailOption: DetailNav): string {

@@ -92,7 +92,7 @@ export class GameListComponent implements OnInit{
     let filtered = this.arrayService.cloneArray(games);
     _.forEach(filters, filter => {
       // bind() returns a copy of a function with 'this' bound to an object.
-      filtered = _.filter(filtered, filter.apply.bind(filter))
+      filtered = _.filter(filtered, filter.apply.bind(filter));
     });
     return filtered;
   }
@@ -120,7 +120,7 @@ export class GameListComponent implements OnInit{
   }
 
   updateVisibleOptions(games: Game[]) {
-    for (let filter of this.nailedDownFilters) {
+    for (const filter of this.nailedDownFilters) {
       this.visibleOptions.set(filter, this.getUsedOptionsOnly(filter, games));
     }
   }
@@ -130,7 +130,7 @@ export class GameListComponent implements OnInit{
     const filteredGames = this.applyAll(games, otherFilters);
 
     const filteredOptions: GameFilterOption[] = [];
-    for (let option of filter.getRegularOptions()) {
+    for (const option of filter.getRegularOptions()) {
       const gamesForOption = _.filter(filteredGames, game => filter.gamePassesOption(game, option));
       if (gamesForOption.length > 0) {
         filteredOptions.push(option);

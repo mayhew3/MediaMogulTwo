@@ -37,11 +37,7 @@ export class GameplaySessionService implements OnDestroy {
         return this.http.get<GameplaySession[]>(this._gamesUrl, options)
           .pipe(takeUntil(this._destroy$));
       }),
-      map((sessionArr: any[]) => {
-        return _.map(sessionArr, sessionObj => {
-          return new GameplaySession().initializedFromJSON(sessionObj)
-        })
-      })
+      map((sessionArr: any[]) => _.map(sessionArr, sessionObj => new GameplaySession().initializedFromJSON(sessionObj)))
     );
   }
 

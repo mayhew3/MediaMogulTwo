@@ -19,7 +19,7 @@ export class PersonService implements OnDestroy {
     filter(user => !!user),
     concatMap((user: any) => this.getPersonWithEmail(user.email)),
     tap((person: Person) => {
-      this.isAdmin = person.user_role.value === 'admin'
+      this.isAdmin = person.user_role.value === 'admin';
     })
   );
   isAdmin: boolean = null;
@@ -31,9 +31,7 @@ export class PersonService implements OnDestroy {
   }
 
   getPersonWithEmail(email: string): Observable<Person> {
-    return this.getDataWithCacheUpdate<Person>(() => {
-      return this.getPersonWithEmailFromCache(email);
-    });
+    return this.getDataWithCacheUpdate<Person>(() => this.getPersonWithEmailFromCache(email));
   }
 
   private getPersonWithEmailFromCache(email: string): Person {
@@ -82,6 +80,7 @@ export class PersonService implements OnDestroy {
   /**
    * Handle Http operation that failed.
    * Let the app continue.
+   *
    * @param operation - name of the operation that failed
    * @param result - optional value to return as the observable result
    */

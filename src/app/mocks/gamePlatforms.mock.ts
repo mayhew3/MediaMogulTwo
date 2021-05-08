@@ -1,4 +1,5 @@
-
+/* eslint-disable  @typescript-eslint/quotes */
+/* eslint-disable quote-props */
 export const MockGamePlatforms = [
   {
     "my_platforms": [{

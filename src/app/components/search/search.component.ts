@@ -135,7 +135,7 @@ export class SearchComponent implements OnInit {
   }
 
   async handleAddClick(match: any, platform: any) {
-    let game: Game = this.findMatchingGame(match);
+    const game: Game = this.findMatchingGame(match);
     if (!game) {
       await this.addGame(match, platform);
     } else {

@@ -1,4 +1,4 @@
-import * as moment from "moment";
+import * as moment from 'moment';
 
 export class GameTime {
   // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
