@@ -1,4 +1,4 @@
-const model = require('./model');
+import * as model from './model';
 const _ = require('underscore');
 const moment = require('moment');
 
@@ -65,7 +65,7 @@ exports.getGames = async function (request, response) {
 exports.addGame = async function(request, response) {
   const gameObj = request.body;
 
-  const coverObj = {
+  const coverObj: any = {
     igdb_game_id: gameObj.igdb_id,
     image_id: gameObj.igdb_poster,
     width: gameObj.igdb_width,

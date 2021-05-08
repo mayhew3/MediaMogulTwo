@@ -1,18 +1,19 @@
 {
   "name": "media-mogul-two",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "ng": "ng",
-    "start": "node ./bin/www",
+    "start": "node ./dist/out-tsc/server/www",
     "start-local": "ng serve",
     "server": "ng build && node ./bin/www",
     "debug": "ng build && node ./bin/www dev $NODE_DEBUG_OPTION",
     "build": "ng build",
-    "build-node": "ng build --configuration=node-server",
+    "build-node": "tsc --project tsconfig.server.json && ng build --configuration=node-server",
+    "build-server-only": "tsc --project tsconfig.server.json",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "heroku-postbuild": "ng build --configuration=$NG_ENV"
+    "heroku-postbuild": "tsc --project tsconfig.server.json && ng build --configuration=$NG_ENV"
   },
   "private": true,
   "dependencies": {
@@ -48,6 +49,7 @@
     "socket.io": "2.4.1",
     "tslib": "2.2.0",
     "underscore": "1.13.1",
+    "yargs": "17.0.1",
     "zone.js": "0.11.4"
   },
   "devDependencies": {
