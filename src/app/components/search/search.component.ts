@@ -31,7 +31,7 @@ export class SearchComponent implements OnInit {
               private personService: PersonService) {
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.platformService.platforms.subscribe(platforms => ArrayUtil.refreshArray(this.allPlatforms, platforms));
     this.personService.me$.subscribe(person => this.me = person);
   }

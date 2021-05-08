@@ -21,7 +21,7 @@ export class AddPlatformsComponent implements OnInit {
               private gameService: GameService) {
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
   showAddButton(availableGamePlatform: AvailableGamePlatform): boolean {
