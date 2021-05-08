@@ -171,7 +171,7 @@ export class GameService implements OnDestroy {
       this.me = person;
       this.platformService.platforms
         // only refresh the games the FIRST time platforms returns a valid array
-        .pipe(filter(platforms => !!platforms && platforms.length > 0))
+        .pipe(filter((platforms: GamePlatform[]) => !!platforms && platforms.length > 0))
         .subscribe(platforms => {
           const personID = person.id.value;
           const payload = {

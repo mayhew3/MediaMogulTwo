@@ -1,4 +1,4 @@
-const _ = require('underscore');
+import _ from 'underscore';
 
 exports.addToArray = function(originalArray, newArray) {
   originalArray.push.apply(originalArray, newArray);

@@ -3,10 +3,10 @@ const jwt = require("express-jwt");
 const jwks = require("jwks-rsa");
 
 module.exports = function(app) {
-  let games = require('../controllers/games_controller');
-  let persons = require('../controllers/persons_controller');
-  let platforms = require('../controllers/platforms_controller');
-  let addGame = require('../controllers/add_game_controller');
+  let games = require('./controllers/games_controller');
+  let persons = require('./controllers/persons_controller');
+  let platforms = require('./controllers/platforms_controller');
+  let addGame = require('./controllers/add_game_controller');
 
   const authConfig = {
     domain: 'mayhew3.auth0.com',

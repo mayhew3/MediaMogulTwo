@@ -1,4 +1,4 @@
-const model = require('./model');
+import * as model from './model';
 const _ = require('underscore');
 const Sequelize = require('./sequelize');
 

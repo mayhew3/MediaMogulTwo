@@ -1,4 +1,4 @@
-const model = require('./model');
+import * as model from './model';
 
 exports.getPersons = async function (request, response) {
   const persons = await model.Person.findAll();

@@ -1,7 +1,7 @@
-const Sequelize = require('sequelize');
+import Sequelize from 'sequelize';
 const sequelize = require('./sequelize');
 
-exports.Game = sequelize.sequelize.define("game", {
+export const Game = sequelize.sequelize.define("game", {
   id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
   title: Sequelize.TEXT,
   date_added: Sequelize.DATE,
@@ -42,7 +42,7 @@ exports.Game = sequelize.sequelize.define("game", {
   updatedAt: false
 });
 
-exports.Person = sequelize.sequelize.define('person', {
+export const Person = sequelize.sequelize.define('person', {
   id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
   email: Sequelize.TEXT,
   user_role: Sequelize.TEXT,
@@ -53,7 +53,7 @@ exports.Person = sequelize.sequelize.define('person', {
   updatedAt: false
 });
 
-exports.GameplaySession = sequelize.sequelize.define("gameplay_session", {
+export const GameplaySession = sequelize.sequelize.define("gameplay_session", {
   id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
   minutes: Sequelize.INTEGER,
   start_time: Sequelize.DATE,
@@ -67,7 +67,7 @@ exports.GameplaySession = sequelize.sequelize.define("gameplay_session", {
   updatedAt: false
 });
 
-exports.GameLog = sequelize.sequelize.define("game_log", {
+export const GameLog = sequelize.sequelize.define("game_log", {
   id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
   date_added: Sequelize.DATE,
 }, {
@@ -76,7 +76,7 @@ exports.GameLog = sequelize.sequelize.define("game_log", {
   updatedAt: false
 });
 
-exports.SteamAttribute = sequelize.sequelize.define("steam_attribute", {
+export const SteamAttribute = sequelize.sequelize.define("steam_attribute", {
   id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
   date_added: Sequelize.DATE,
 }, {
@@ -85,7 +85,7 @@ exports.SteamAttribute = sequelize.sequelize.define("steam_attribute", {
   updatedAt: false
 });
 
-exports.PossibleGameMatch = sequelize.sequelize.define("possible_game_match", {
+export const PossibleGameMatch = sequelize.sequelize.define("possible_game_match", {
   id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
   date_added: Sequelize.DATE,
 }, {
@@ -95,7 +95,7 @@ exports.PossibleGameMatch = sequelize.sequelize.define("possible_game_match", {
 });
 
 
-exports.IGDBPoster = sequelize.sequelize.define("igdb_poster", {
+export const IGDBPoster = sequelize.sequelize.define("igdb_poster", {
   id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
   image_id: Sequelize.TEXT,
   default_for_game: Sequelize.BOOLEAN,
@@ -110,7 +110,7 @@ exports.IGDBPoster = sequelize.sequelize.define("igdb_poster", {
   updatedAt: false
 });
 
-exports.GamePlatform = sequelize.sequelize.define("game_platform", {
+export const GamePlatform = sequelize.sequelize.define("game_platform", {
   id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
   full_name: Sequelize.TEXT,
   short_name: Sequelize.TEXT,
@@ -125,7 +125,7 @@ exports.GamePlatform = sequelize.sequelize.define("game_platform", {
   updatedAt: false
 });
 
-exports.AvailableGamePlatform = sequelize.sequelize.define("available_game_platform", {
+export const AvailableGamePlatform = sequelize.sequelize.define("available_game_platform", {
   id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
   game_id: Sequelize.INTEGER,
   game_platform_id: Sequelize.INTEGER,
@@ -140,7 +140,7 @@ exports.AvailableGamePlatform = sequelize.sequelize.define("available_game_platf
   updatedAt: false
 });
 
-exports.MyGamePlatform = sequelize.sequelize.define("my_game_platform", {
+export const MyGamePlatform = sequelize.sequelize.define("my_game_platform", {
   id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
   person_id: Sequelize.INTEGER,
   available_game_platform_id: Sequelize.INTEGER,
@@ -162,7 +162,7 @@ exports.MyGamePlatform = sequelize.sequelize.define("my_game_platform", {
   updatedAt: false
 });
 
-exports.MyGlobalPlatform = sequelize.sequelize.define("person_platform", {
+export const MyGlobalPlatform = sequelize.sequelize.define("person_platform", {
   id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true },
   person_id: Sequelize.INTEGER,
   game_platform_id: Sequelize.INTEGER,
