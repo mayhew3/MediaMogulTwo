@@ -1,8 +1,10 @@
+import {Express} from 'express';
+
 const express = require('express');
 const jwt = require('express-jwt');
 const jwks = require('jwks-rsa');
 
-module.exports = (app) => {
+module.exports = (app: Express): void => {
   const games = require('./controllers/games_controller');
   const persons = require('./controllers/persons_controller');
   const platforms = require('./controllers/platforms_controller');
@@ -31,19 +33,20 @@ module.exports = (app) => {
     router.get(endpoint, authCheck, callback);
   };
 
-  const publicGet = (endpoint, callback) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const publicGet = (endpoint, callback): void => {
     router.get(endpoint, callback);
   };
 
-  const privatePost = (endpoint, callback) => {
+  const privatePost = (endpoint, callback): void => {
     router.post(endpoint, authCheck, callback);
   };
 
-  const privatePut = (endpoint, callback) => {
+  const privatePut = (endpoint, callback): void => {
     router.put(endpoint, authCheck, callback);
   };
 
-  const privateDelete = (endpoint, callback) => {
+  const privateDelete = (endpoint, callback): void => {
     router.delete(endpoint, authCheck, callback);
   };
 
@@ -80,6 +83,7 @@ module.exports = (app) => {
   // development error handler
   // will print stacktrace
   if (app.get('env') === 'development') {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     app.use((err, req, res, next) => {
       console.log(err.message);
       console.log(err.stack);
@@ -93,6 +97,7 @@ module.exports = (app) => {
 
   // production error handler
   // no stacktraces leaked to user
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   app.use((err, req, res, next) => {
     console.log(err.message);
     console.log(err.stack);

@@ -1,22 +1,22 @@
-const arrayService = require('../../src/app/utility/ArrayUtil');
-const _ = require('underscore');
+import {ArrayUtil} from '../../src/app/utility/ArrayUtil';
+import _ from 'underscore';
 
 const clients = [];
 const persons = [];
-const existing_person_rooms = [];
 
 const globalChannels = [
   'odds',
   'voting'
 ];
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const personalChannels = [
   'winner'
 ];
 
 let io;
 
-export const initIO = (in_io) => {
+export const initIO = (in_io: Record<string, any>): void => {
   io = in_io;
   io.on('connection', (client) => {
     console.log('Connection established. Adding client.');
@@ -34,7 +34,7 @@ export const initIO = (in_io) => {
 
     client.on('disconnect', () => {
       console.log('Client disconnected. Removing from array.');
-      arrayService.removeFromArray(clients, client);
+      ArrayUtil.removeFromArray(clients, client);
 
       if (!!person_id) {
         removeClientForPerson(person_id, client);
@@ -44,13 +44,7 @@ export const initIO = (in_io) => {
 
 };
 
-const addToPersonRooms = (room_name) => {
-  if (!_.contains(existing_person_rooms, room_name)) {
-    existing_person_rooms.push(room_name);
-  }
-};
-
-const initAllRooms = (client, person_id) => {
+const initAllRooms = (client, person_id): void => {
   if (!!person_id) {
     // initPersonRoom(client, person_id);
   }
@@ -58,26 +52,7 @@ const initAllRooms = (client, person_id) => {
   initGlobalChannels(client);
 };
 
-const initPersonRoom = (client, person_id) => {
-  const room_name = 'person_' + person_id;
-  client.join(room_name);
-  addToPersonRooms(room_name);
-};
-
-const initPersonalChannels = (client) => {
-  _.each(personalChannels, channelName => {
-    client.on(channelName, msg => {
-      if (!msg.person_id) {
-        console.error('No person id on message for channel \'' + channelName + '\'');
-      }
-      console.log('Message received on channel \'' + channelName + '\' to person ' + msg.person_id);
-      const room_name = 'person_' + msg.person_id;
-      client.to(room_name).emit(channelName, msg);
-    });
-  });
-};
-
-const initGlobalChannels = (client) => {
+const initGlobalChannels = (client: Record<string, any>): void => {
   _.each(globalChannels, channelName => {
     client.on(channelName, msg => {
       console.log(`Message received on channel ${channelName} to everyone.`);
@@ -88,18 +63,11 @@ const initGlobalChannels = (client) => {
 
 /* API */
 
-export const getNumberOfClients = (): number => clients.length;
-
-export const emitToAll = (channel, msg) => {
+export const emitToAll = (channel: Record<string, any>, msg: Record<string, any>): void => {
   io.emit(channel, msg);
 };
 
-export const emitToPerson = (person_id, channel, msg) => {
-  const clientsForPerson = getClientsForPerson(person_id);
-  emitToClients(clientsForPerson, channel, msg);
-};
-
-export const emitToAllExceptPerson = (person_id, channel, msg) => {
+export const emitToAllExceptPerson = (person_id: number, channel: string, msg: Record<string, any>): void => {
   const clientsForEveryoneExceptPerson = getClientsForEveryoneExceptPerson(person_id);
   emitToClients(clientsForEveryoneExceptPerson, channel, msg);
 };
@@ -107,7 +75,7 @@ export const emitToAllExceptPerson = (person_id, channel, msg) => {
 
 /* PRIVATE METHODS */
 
-const addClientForPerson = (person_id, client) => {
+const addClientForPerson = (person_id, client): void => {
   const existingArray = _.findWhere(persons, {person_id});
   if (!existingArray) {
     persons.push({
@@ -119,32 +87,23 @@ const addClientForPerson = (person_id, client) => {
   }
 };
 
-const removeClientForPerson = (person_id, client) => {
+const removeClientForPerson = (person_id, client): void => {
   const existingArray = _.findWhere(persons, {person_id});
   if (!existingArray) {
     console.log('Warning: Disconnect received for person_id that never connected: ' + person_id);
   } else {
-    arrayService.removeFromArray(existingArray.clients, client);
+    ArrayUtil.removeFromArray(existingArray.clients, client);
   }
 };
 
-const getClientsForPerson = (person_id) => {
-  const existingArray = _.findWhere(persons, {person_id});
-  if (!existingArray) {
-    return [];
-  } else {
-    return existingArray.clients;
-  }
-};
-
-const getClientsForEveryoneExceptPerson = (person_id) => {
+const getClientsForEveryoneExceptPerson = (person_id): any[] => {
   const otherPersons = _.filter(persons, person => person_id !== person.person_id);
   const cs = [];
-  _.each(otherPersons, person => arrayService.addToArray(cs, person.clients));
+  _.each(otherPersons, person => ArrayUtil.addToArray(cs, person.clients));
   return cs;
 };
 
-const emitToClients = (cs, channel, msg) => {
+const emitToClients = (cs, channel, msg): void => {
   _.each(cs, client => {
     client.emit(channel, msg);
   });

@@ -1,8 +1,8 @@
-import express from 'express';
+import express, {Express} from 'express';
 const path = require('path');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
-const app = express();
+const app: Express = express();
 
 app.use(logger('dev'));
 app.use(bodyParser.urlencoded({ extended: true }));

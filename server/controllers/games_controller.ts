@@ -2,7 +2,7 @@ import * as model from './model';
 const _ = require('underscore');
 const moment = require('moment');
 
-export const getGames = async (request, response) => {
+export const getGames = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   const person_id = request.query.person_id;
 
   // noinspection JSCheckFunctionSignatures
@@ -62,7 +62,7 @@ export const getGames = async (request, response) => {
   response.json(outputObject);
 };
 
-export const addGame = async (request, response) => {
+export const addGame = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   const gameObj = request.body;
 
   const coverObj: any = {
@@ -94,7 +94,7 @@ export const addGame = async (request, response) => {
   response.json(returnObj);
 };
 
-export const updateGame = async (request, response) => {
+export const updateGame = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   const gameID = request.body.id;
   const changedFields = request.body.changedFields;
 
@@ -108,7 +108,7 @@ export const updateGame = async (request, response) => {
   }
 };
 
-export const updateMyGamePlatform = async (request, response) => {
+export const updateMyGamePlatform = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   const myPlatformID = request.body.id;
   const changedFields = request.body.changedFields;
 
@@ -122,7 +122,7 @@ export const updateMyGamePlatform = async (request, response) => {
   }
 };
 
-export const getGameplaySessions = async (request, response) => {
+export const getGameplaySessions = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   const person_id = request.query.person_id;
   const game_id = request.query.game_id;
 
@@ -136,21 +136,21 @@ export const getGameplaySessions = async (request, response) => {
   response.json(mySessions);
 };
 
-export const addGameplaySession = async (request, response) => {
+export const addGameplaySession = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   const gameplaySession = request.body;
 
   await model.GameplaySession.create(gameplaySession);
   response.json({});
 };
 
-export const addAvailableGamePlatform = async (request, response) => {
+export const addAvailableGamePlatform = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   const availableGamePlatformObj = request.body;
 
   const availableGamePlatform = await model.AvailableGamePlatform.create(availableGamePlatformObj);
   response.json(availableGamePlatform);
 };
 
-export const addMyGamePlatform = async (request, response) => {
+export const addMyGamePlatform = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   const myGamePlatformObj = request.body;
 
   const myGamePlatform = await model.MyGamePlatform.create(myGamePlatformObj);

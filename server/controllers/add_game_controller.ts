@@ -1,7 +1,7 @@
 import axios from 'axios';
 const tokens = require('./igdb_token_service');
 
-export const getIGDBMatches = async (request, response) => {
+export const getIGDBMatches = async (request: Record<string, any>, response: Record<string, any>): Promise<any> => {
   const game_title = request.query.game_title;
 
   console.log('Finding IGDB matches for game: ' + game_title);

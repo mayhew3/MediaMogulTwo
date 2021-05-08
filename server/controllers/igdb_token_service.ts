@@ -1,7 +1,7 @@
 const axios = require('axios');
 let token = null;
 
-export const getToken = () => {
+export const getToken = (): Promise<any> => {
   if (token === null) {
     return getTokenFromIGDB();
   } else {
@@ -11,7 +11,7 @@ export const getToken = () => {
   }
 };
 
-const getTokenFromIGDB = (): Promise<void> => new Promise((resolve, reject) => {
+const getTokenFromIGDB = (): Promise<any> => new Promise((resolve, reject) => {
   const clientID = process.env.IGDB_V4_CLIENT_ID;
   const clientSecret = process.env.IGDB_V4_CLIENT_SECRET;
 

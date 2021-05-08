@@ -2,7 +2,7 @@ import * as model from './model';
 const _ = require('underscore');
 const Sequelize = require('./sequelize');
 
-export const getPlatforms = async (request, response) => {
+export const getPlatforms = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   const person_id = request.query.person_id;
 
   const platforms = await model.GamePlatform.findAll({
@@ -32,14 +32,14 @@ export const getPlatforms = async (request, response) => {
   response.json(outputObj);
 };
 
-export const addGamePlatform = async (request, response) => {
+export const addGamePlatform = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   const gamePlatformObj = request.body;
 
   const gamePlatform = await model.GamePlatform.create(gamePlatformObj);
   response.json(gamePlatform);
 };
 
-export const updateGamePlatform = async (request, response) => {
+export const updateGamePlatform = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   const gamePlatformID = request.body.id;
   const changedFields = request.body.changedFields;
 
@@ -74,7 +74,7 @@ export const updateGamePlatform = async (request, response) => {
   }
 };
 
-export const updateMultipleGlobals = async (request, response) => {
+export const updateMultipleGlobals = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   try {
     const result = await Sequelize.sequelize.transaction(async (t) => {
 
@@ -97,14 +97,14 @@ export const updateMultipleGlobals = async (request, response) => {
   }
 };
 
-export const addMyGlobalPlatform = async (request, response) => {
+export const addMyGlobalPlatform = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   const myGlobalObj = request.body;
 
   const myGlobal = await model.MyGlobalPlatform.create(myGlobalObj);
   response.json(myGlobal);
 };
 
-export const deleteMyGlobalPlatform = async (request, response) => {
+export const deleteMyGlobalPlatform = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   const myGlobalPlatformID = request.params.id;
 
   const myGlobalPlatform = await model.MyGlobalPlatform.findByPk(myGlobalPlatformID);
