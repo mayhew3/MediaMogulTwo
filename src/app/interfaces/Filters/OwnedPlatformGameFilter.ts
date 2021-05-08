@@ -13,7 +13,7 @@ export class OwnedPlatformGameFilter extends GameFilterWithOptions {
     platformService.myPlatforms.subscribe(platforms => this.updateOptions(platforms));
   }
 
-  updateOptions(platforms: GamePlatform[]) {
+  updateOptions(platforms: GamePlatform[]): void {
     const options = _.map(platforms, platform => new GameFilterOption(platform.full_name.value, platform.id.value, true, false));
     ArrayUtil.refreshArray(this.options, options);
     this.addAllAndNone();

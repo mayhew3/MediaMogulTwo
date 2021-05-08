@@ -21,17 +21,16 @@ export class InMemoryDataService implements InMemoryDbService{
   gamePlatforms = MockGamePlatforms;
   gameplaySessions = MockGameplaySessions;
 
+  constructor() { }
+
   // STATIC HELPERS
 
-  private static finishOptions(options: ResponseOptions, {headers, url}: RequestInfo) {
+  private static finishOptions(options: ResponseOptions, {headers, url}: RequestInfo): ResponseOptions {
     options.statusText = getStatusText(options.status);
     options.headers = headers;
     options.url = url;
     return options;
   }
-
-
-  constructor() { }
 
   createDb(): Record<string, unknown> {
     return {
@@ -56,7 +55,7 @@ export class InMemoryDataService implements InMemoryDbService{
 
   // HTTP OVERRIDES
 
-  get(requestInfo: RequestInfo) {
+  get(requestInfo: RequestInfo): Observable<Response> {
     const collectionName = requestInfo.collectionName;
     if (collectionName === 'games') {
       return this.getGames(requestInfo);
@@ -117,7 +116,7 @@ export class InMemoryDataService implements InMemoryDbService{
 
   // DOMAIN HELPERS
 
-  private getGames(requestInfo: RequestInfo): Observable<ResponseOptions> {
+  private getGames(requestInfo: RequestInfo): Observable<Response> {
     const person_id = requestInfo.query.get('person_id');
 
     const data = [];
@@ -135,7 +134,7 @@ export class InMemoryDataService implements InMemoryDbService{
     return this.packageGetData(data, requestInfo);
   }
 
-  private getGamePlatforms(requestInfo: RequestInfo): Observable<ResponseOptions> {
+  private getGamePlatforms(requestInfo: RequestInfo): Observable<Response> {
     const person_id = requestInfo.query.get('person_id');
 
     const data = [];
@@ -154,11 +153,11 @@ export class InMemoryDataService implements InMemoryDbService{
     return this.packageGetData(data, requestInfo);
   }
 
-  private getIGDBMatches(requestInfo: RequestInfo): Observable<ResponseOptions> {
+  private getIGDBMatches(requestInfo: RequestInfo): Observable<Response> {
     return this.packageGetData(MockIGDBMatches, requestInfo);
   }
 
-  private updateGame(requestInfo: RequestInfo) {
+  private updateGame(requestInfo: RequestInfo): Observable<Response> {
     const jsonBody = this.getBody(requestInfo);
     const game = this.findGame(jsonBody.id);
     if (!!game) {
@@ -167,7 +166,7 @@ export class InMemoryDataService implements InMemoryDbService{
     }
   }
 
-  private addGame(requestInfo: RequestInfo) {
+  private addGame(requestInfo: RequestInfo): Observable<Response> {
     const game = this.getBody(requestInfo);
     game.id = this.nextGameID();
     game.date_added = new Date();
@@ -175,7 +174,7 @@ export class InMemoryDataService implements InMemoryDbService{
     return this.packageUpResponse(game, requestInfo);
   }
 
-  private addAvailablePlatform(requestInfo: RequestInfo) {
+  private addAvailablePlatform(requestInfo: RequestInfo): Observable<Response> {
     const availablePlatform = this.getBody(requestInfo);
     availablePlatform.id = this.nextAvailablePlatformID();
     availablePlatform.date_added = new Date();
@@ -184,7 +183,7 @@ export class InMemoryDataService implements InMemoryDbService{
     return this.packageUpResponse(availablePlatform, requestInfo);
   }
 
-  private addMyGlobalPlatform(requestInfo: RequestInfo) {
+  private addMyGlobalPlatform(requestInfo: RequestInfo): Observable<Response> {
     const myGlobalPlatform = this.getBody(requestInfo);
     const gamePlatform = this.findGamePlatform(myGlobalPlatform.game_platform_id);
     myGlobalPlatform.id = this.nextMyGlobalPlatformID();
@@ -196,7 +195,7 @@ export class InMemoryDataService implements InMemoryDbService{
     return this.packageUpResponse(myGlobalPlatform, requestInfo);
   }
 
-  private addMyPlatform(requestInfo: RequestInfo) {
+  private addMyPlatform(requestInfo: RequestInfo): Observable<Response> {
     const myGamePlatform = this.getBody(requestInfo);
     myGamePlatform.id = this.nextMyPlatformID();
     myGamePlatform.date_added = new Date();
@@ -208,7 +207,7 @@ export class InMemoryDataService implements InMemoryDbService{
     return this.packageUpResponse(myGamePlatform, requestInfo);
   }
 
-  private updatePlatforms(array: any[], masterList: any[]) {
+  private updatePlatforms(array: any[], masterList: any[]): void {
     const newPlatforms = _.filter(array, platform => !platform.game_platform_id);
     _.forEach(newPlatforms, platform => {
       platform.gamePlatform = this.getOrCreateGamePlatform(platform);
@@ -239,7 +238,7 @@ export class InMemoryDataService implements InMemoryDbService{
     }
   }
 
-  private updateGamePlatform(requestInfo: RequestInfo) {
+  private updateGamePlatform(requestInfo: RequestInfo): Observable<Response> {
     const jsonBody = this.getBody(requestInfo);
     const gamePlatform = this.findGamePlatform(jsonBody.id);
     if (!!gamePlatform) {
@@ -255,7 +254,7 @@ export class InMemoryDataService implements InMemoryDbService{
     }
   }
 
-  private updateMyGlobalPlatform(requestInfo: RequestInfo) {
+  private updateMyGlobalPlatform(requestInfo: RequestInfo): Observable<Response> {
     const jsonBody = this.getBody(requestInfo);
     const myGlobalPlatform = this.findMyGlobalPlatform(jsonBody.id);
     if (!!myGlobalPlatform) {
@@ -264,7 +263,7 @@ export class InMemoryDataService implements InMemoryDbService{
     }
   }
 
-  private updateMultipleGlobals(requestInfo: RequestInfo) {
+  private updateMultipleGlobals(requestInfo: RequestInfo): Observable<Response> {
     const jsonBody = this.getBody(requestInfo);
     for (const payload of jsonBody.payloads) {
       const myGlobalPlatform = this.findMyGlobalPlatform(payload.id);
@@ -275,7 +274,7 @@ export class InMemoryDataService implements InMemoryDbService{
     }
   }
 
-  private deleteMyGlobalPlatform(requestInfo: RequestInfo) {
+  private deleteMyGlobalPlatform(requestInfo: RequestInfo): Observable<Response> {
     const myGlobalPlatformID = +requestInfo.id;
     const myGlobalPlatform = this.findMyGlobalPlatform(myGlobalPlatformID);
     if (!!myGlobalPlatform) {
@@ -285,7 +284,7 @@ export class InMemoryDataService implements InMemoryDbService{
     }
   }
 
-  private updateMyGamePlatform(requestInfo: RequestInfo) {
+  private updateMyGamePlatform(requestInfo: RequestInfo): Observable<Response> {
     const jsonBody = this.getBody(requestInfo);
     const myGamePlatform = this.findMyGamePlatform(jsonBody.id);
     if (!!myGamePlatform) {
@@ -294,12 +293,12 @@ export class InMemoryDataService implements InMemoryDbService{
     }
   }
 
-  private updateAllAvailablePlatformsWithName(oldName: string, newName: string) {
+  private updateAllAvailablePlatformsWithName(oldName: string, newName: string): void {
     const withName = _.where(this.getAllAvailablePlatforms(), {platform_name: oldName});
     withName.forEach(availablePlatform => availablePlatform.platform_name = newName);
   }
 
-  private updateAllMyPlatformsWithName(oldName: string, newName: string) {
+  private updateAllMyPlatformsWithName(oldName: string, newName: string): void {
     const withName = _.where(this.getAllMyPlatforms(), {platform_name: oldName});
     withName.forEach(myPlatform => myPlatform.platform_name = newName);
   }
@@ -380,7 +379,7 @@ export class InMemoryDataService implements InMemoryDbService{
 
 
   // noinspection JSMethodCanBeStatic
-  private updateChangedFieldsOnObject(obj: any, changedFields: any) {
+  private updateChangedFieldsOnObject(obj: any, changedFields: any): void {
     for (const key in changedFields) {
       if (Object.prototype.hasOwnProperty.call(changedFields, key)) {
         obj[key] = changedFields[key];
@@ -394,7 +393,7 @@ export class InMemoryDataService implements InMemoryDbService{
   }
 
   // noinspection JSMethodCanBeStatic
-  private packageGetData(data, requestInfo: RequestInfo): Observable<ResponseOptions> {
+  private packageGetData(data, requestInfo: RequestInfo): Observable<Response> {
     const dataEncapsulation = requestInfo.utils.getConfig().dataEncapsulation;
     const options: ResponseOptions = data ?
       {
@@ -409,7 +408,7 @@ export class InMemoryDataService implements InMemoryDbService{
     return requestInfo.utils.createResponse$(() => finishedOptions);
   }
 
-  private packageUpResponse(body, requestInfo): Observable<ResponseOptions> {
+  private packageUpResponse(body, requestInfo): Observable<Response> {
     const options: ResponseOptions = {
       body,
       status: STATUS.OK

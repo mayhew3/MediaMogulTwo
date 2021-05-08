@@ -38,7 +38,7 @@ export class PlatformService implements OnDestroy {
     );
   }
 
-  maybeRefreshCache() {
+  maybeRefreshCache(): void {
     if (!this._platforms) {
       this._fetching = true;
       this.refreshCache();
@@ -100,7 +100,7 @@ export class PlatformService implements OnDestroy {
 
   }
 
-  private refreshCache() {
+  private refreshCache(): void {
     this.personService.me$.subscribe(person => {
       const personID = person.id.value;
       const payload = {
@@ -121,7 +121,7 @@ export class PlatformService implements OnDestroy {
     });
   }
 
-  private pushPlatformListChange() {
+  private pushPlatformListChange(): void {
     this._platforms$.next(ArrayUtil.cloneArray(this._platforms));
   }
 

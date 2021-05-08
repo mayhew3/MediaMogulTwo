@@ -50,15 +50,15 @@ export class PlaytimePopupComponent implements OnInit {
     this.replayScore = this.selectedPlatform.replay_score.value;
   }
 
-  newChanged() {
+  newChanged(): void {
     this.added.duration = this.resulting.getDurationClone().subtract(this.original.duration);
   }
 
-  addedChanged() {
+  addedChanged(): void {
     this.resulting.duration = this.added.getDurationClone().add(this.original.duration);
   }
 
-  validateModel() {
+  validateModel(): void {
     this.validDate = this.isValidDate();
   }
 
@@ -102,7 +102,7 @@ export class PlaytimePopupComponent implements OnInit {
       !this.validDate;
   }
 
-  anyFieldsChanged() {
+  anyFieldsChanged(): boolean {
     const gametimeChanged = this.added.asMinutes() > 0;
     const finishedChanged = !this.finished !== !this.selectedPlatform.finished_date.value;
     const finalScoreChanged = this.finalScore !== this.selectedPlatform.final_score.value;
@@ -110,7 +110,7 @@ export class PlaytimePopupComponent implements OnInit {
     return gametimeChanged || finishedChanged || finalScoreChanged || replayScoreChanged;
   }
 
-  async saveAndClose() {
+  async saveAndClose(): Promise<void> {
     this.personService.me$.subscribe(async person => {
       try {
         const playedDate = this.convertModelToDate();
@@ -133,7 +133,7 @@ export class PlaytimePopupComponent implements OnInit {
     });
   }
 
-  dismiss() {
+  dismiss(): void {
     this.game.discardChanges();
     this.activeModal.dismiss('Cross Click');
   }

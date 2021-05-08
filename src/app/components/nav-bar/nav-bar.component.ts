@@ -18,25 +18,25 @@ import {ArrayUtil} from '../../utility/ArrayUtil';
 })
 export class NavBarComponent implements OnInit {
 
-  games = [];
+  games: Game[] = [];
   initializing = true;
   public model: Game;
-
-  formatter = (game: Game) => game.title.value;
-
-  search = (text$: Observable<string>) =>
-    text$.pipe(
-      distinctUntilChanged(),
-      map((term: string) =>
-        _.filter(this.games, v => v.title.value.toLowerCase().indexOf(term.toLowerCase()) > -1)
-          .slice(0, 6))
-    );
 
   constructor(public auth: AuthService,
               private gameService: GameService,
               public personService: PersonService,
               private modalService: NgbModal,
               @Inject(DOCUMENT) public document: Document) { }
+
+  formatter = (game: Game): string => game.title.value;
+
+  search = (text$: Observable<string>): Observable<Game[]> =>
+    text$.pipe(
+      distinctUntilChanged(),
+      map((term: string) =>
+        _.filter(this.games, v => v.title.value.toLowerCase().indexOf(term.toLowerCase()) > -1)
+          .slice(0, 6))
+    );
 
   ngOnInit(): void {
     this.gameService.games.subscribe(games => {
@@ -50,7 +50,7 @@ export class NavBarComponent implements OnInit {
     return this.auth.isAuthenticated$;
   }
 
-  async openPopup(event: NgbTypeaheadSelectItemEvent) {
+  async openPopup(event: NgbTypeaheadSelectItemEvent): Promise<void> {
     const modalRef = this.modalService.open(GameDetailComponent, {size: 'lg'});
     modalRef.componentInstance.game = event.item;
   }

@@ -16,7 +16,7 @@ export class ImagePreloadDirective {
   }
 
   @HostListener('error')
-  load(){
+  load(): void {
     const element: HTMLImageElement = this.eRef.nativeElement;
     element.src = this.default;
     if (!!this.game) {

@@ -49,12 +49,12 @@ export class GameListComponent implements OnInit{
     return !this.initializing;
   }
 
-  async changeOrdering(ordering: GameOrdering) {
+  changeOrdering(ordering: GameOrdering): void {
     this.selectedOrdering = ordering;
     this.sortAndFilterGames();
   }
 
-  sortAndFilterGames() {
+  sortAndFilterGames(): void {
     this.gameService.games.subscribe(allGames => {
 
       const allFilters = this.getAllFilters();
@@ -68,7 +68,8 @@ export class GameListComponent implements OnInit{
     });
   }
 
-  private sortGames() {
+  /* eslint-disable @typescript-eslint/explicit-function-return-type */
+  private sortGames(): void {
     const isAscending = OrderingDirection[this.selectedOrdering.direction] === OrderingDirection.asc;
     if (isAscending) {
       // noinspection TypeScriptValidateJSTypes
@@ -118,7 +119,7 @@ export class GameListComponent implements OnInit{
     return _.without(allFilters, filter);
   }
 
-  updateVisibleOptions(games: Game[]) {
+  updateVisibleOptions(games: Game[]): void {
     for (const filter of this.nailedDownFilters) {
       this.visibleOptions.set(filter, this.getUsedOptionsOnly(filter, games));
     }
@@ -138,7 +139,7 @@ export class GameListComponent implements OnInit{
     return filteredOptions;
   }
 
-  toggleOption(option: GameFilterOption, parentFilter: GameFilterWithOptions) {
+  toggleOption(option: GameFilterOption, parentFilter: GameFilterWithOptions): void {
     const regularOptions = _.where(parentFilter.options, {special: false});
     const specialOptions = _.where(parentFilter.options, {special: true});
     if (option.special) {

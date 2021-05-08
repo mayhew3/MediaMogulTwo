@@ -11,7 +11,7 @@ export class BigCheckboxComponent {
 
   constructor() { }
 
-  toggleCheckbox() {
+  toggleCheckbox(): void {
     this.value = !this.value;
     this.valueChanged.emit(this.value);
   }

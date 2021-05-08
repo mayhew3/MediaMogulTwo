@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Game} from '../../interfaces/Model/Game';
 import {ModalDismissReasons, NgbModal, NgbModalRef} from '@ng-bootstrap/ng-bootstrap';
 import {PlaytimePopupComponent} from '../playtime-popup/playtime-popup.component';
@@ -18,6 +18,8 @@ export class GameCardComponent {
   closeResult = '';
   successfullyAdded = false;
 
+  constructor(private modalService: NgbModal) { }
+
   private static getDismissReason(reason: any): string {
     if (reason === ModalDismissReasons.ESC) {
       return 'by pressing ESC';
@@ -27,9 +29,6 @@ export class GameCardComponent {
       return `with: ${reason}`;
     }
   }
-  constructor(private modalService: NgbModal) { }
-
-
 
   isNotRecentlyUnowned(): boolean {
     return !this.game.isOwned() || this.successfullyAdded;
@@ -62,7 +61,7 @@ export class GameCardComponent {
     return this.game.canAddPlaytime() && this.game.isOwned() && !this.successfullyAdded;
   }
 
-  async handlePopupResult(modalRef: NgbModalRef) {
+  async handlePopupResult(modalRef: NgbModalRef): Promise<void> {
     try {
       const result = await modalRef.result;
       this.closeResult = `Closed with: ${result}`;
@@ -74,13 +73,13 @@ export class GameCardComponent {
     }
   }
 
-  async openPlaytimePopup() {
+  async openPlaytimePopup(): Promise<void> {
     const modalRef = this.modalService.open(PlaytimePopupComponent, {size: 'lg'});
     modalRef.componentInstance.game = this.game;
     await this.handlePopupResult(modalRef);
   }
 
-  async openDetailPopup() {
+  async openDetailPopup(): Promise<void> {
     if (this.game.isOwned()) {
       const modalRef = this.modalService.open(GameDetailComponent, {size: 'lg'});
       modalRef.componentInstance.game = this.game;
@@ -88,7 +87,7 @@ export class GameCardComponent {
     }
   }
 
-  async openAddPlatformsPopup() {
+  async openAddPlatformsPopup(): Promise<void> {
     const modalRef = this.modalService.open(AddPlatformsComponent, {size: 'md'});
     modalRef.componentInstance.game = this.game;
     await this.handlePopupResult(modalRef);

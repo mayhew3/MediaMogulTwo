@@ -53,14 +53,14 @@ export class GameTime {
     return this._duration?.asMinutes();
   }
 
-  private updateDuration() {
+  private updateDuration(): void {
     const hoursDuration = moment.duration(!this._hours ? 0 : this._hours, 'hours');
     const minutesDuration = moment.duration(!this._minutes ? 0 : this._minutes, 'minutes');
 
     this._duration = hoursDuration.add(minutesDuration);
   }
 
-  private updateHoursAndMinutes() {
+  private updateHoursAndMinutes(): void {
     this._hours = Math.floor(this._duration.asHours());
     this._minutes = this._duration.minutes();
   }

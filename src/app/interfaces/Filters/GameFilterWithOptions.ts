@@ -16,7 +16,7 @@ export abstract class GameFilterWithOptions extends GameFilter {
     return _.where(this.options, {special: true});
   }
 
-  addAllAndNone() {
+  addAllAndNone(): void {
     this.options.push(new GameFilterOption('All', 'All', true, true));
     this.options.push(new GameFilterOption('None', 'None', false, true));
   }

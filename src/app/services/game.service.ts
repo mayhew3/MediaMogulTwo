@@ -4,7 +4,7 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 import * as _ from 'underscore';
 import {GameplaySession} from '../interfaces/Model/GameplaySession';
 import {PersonService} from './person.service';
-import {BehaviorSubject, Subject} from 'rxjs';
+import {BehaviorSubject, Observable, Subject} from 'rxjs';
 import {PlatformService} from './platform.service';
 import {GamePlatform} from '../interfaces/Model/GamePlatform';
 import {Person} from '../interfaces/Model/Person';
@@ -48,12 +48,12 @@ export class GameService implements OnDestroy {
   }
 
   // public observable for all changes to game list
-  get games() {
+  get games(): Observable<Game[]> {
     return this._games$.asObservable();
   }
 
   // trigger fetching of game list if it doesn't exist already.
-  maybeRefreshCache() {
+  maybeRefreshCache(): void {
     if (this._dataStore.games.length === 0 && !this._fetching) {
       this._fetching = true;
       this.refreshCache();
@@ -150,7 +150,7 @@ export class GameService implements OnDestroy {
     return returnObj;
   }
 
-  async platformAboutToBeRemovedFromGlobal(gamePlatform: GamePlatform) {
+  async platformAboutToBeRemovedFromGlobal(gamePlatform: GamePlatform): Promise<void> {
     for (const game of this._dataStore.games) {
       const matching = game.getOwnedPlatformWithID(gamePlatform.id.originalValue);
 
@@ -165,7 +165,7 @@ export class GameService implements OnDestroy {
 
   // PRIVATE CACHE MANAGEMENT METHODS
 
-  private refreshCache() {
+  private refreshCache(): void {
     this.personService.me$.subscribe(person => {
       this.me = person;
       this.platformService.platforms
@@ -194,7 +194,7 @@ export class GameService implements OnDestroy {
   }
 
   // re-pushes full game list out to all subscribers. Call this after any changes are made.
-  private pushGameListChange() {
+  private pushGameListChange(): void {
     this._games$.next(ArrayUtil.cloneArray(this._dataStore.games));
   }
 

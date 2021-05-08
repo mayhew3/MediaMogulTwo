@@ -103,7 +103,7 @@ export class SearchComponent implements OnInit {
     return _.filter(match.platforms, platform => platform.unavailablePlatform);
   }
 
-  async getMatches() {
+  async getMatches(): Promise<void> {
     this.loading = true;
     try {
       const matches = await this.gameService.getIGDBMatches(this.searchTitle);
@@ -133,7 +133,7 @@ export class SearchComponent implements OnInit {
     }
   }
 
-  async handleAddClick(match: any, platform: any) {
+  async handleAddClick(match: any, platform: any): Promise<void> {
     const game: Game = this.findMatchingGame(match);
     if (!game) {
       await this.addGame(match, platform);
@@ -177,7 +177,7 @@ export class SearchComponent implements OnInit {
   }
 
   // noinspection JSMethodCanBeStatic
-  private createNewGamePlatform(platform: any) {
+  private createNewGamePlatform(platform: any): GamePlatform {
     const gamePlatform = new GamePlatform();
     gamePlatform.full_name.value = platform.name;
     gamePlatform.short_name.value = platform.name;

@@ -68,12 +68,12 @@ export class GameDetailComponent implements OnInit {
     });
   }
 
-  sortSessions() {
+  sortSessions(): void {
     fast_sort(this.gameplaySessions)
       .desc(session => session.start_time.originalValue);
   }
 
-  toggleTitleEdit() {
+  toggleTitleEdit(): void {
     this.titleEditMode = !this.titleEditMode;
   }
 
@@ -81,11 +81,11 @@ export class GameDetailComponent implements OnInit {
     return this.game.isOwned() && this.game.natural_end.originalValue && this.game.getProgressPercent() !== undefined;
   }
 
-  hasMultiplePlatforms() {
+  hasMultiplePlatforms(): boolean {
     return this.game.myPlatformsInGlobal.length > 1;
   }
 
-  selectedIsPreferred() {
+  selectedIsPreferred(): boolean {
     return this.selectedPlatform.id.originalValue === this.game.myPreferredPlatform.id.originalValue;
   }
 
@@ -105,11 +105,11 @@ export class GameDetailComponent implements OnInit {
     return detailOption === this.platformNav ? 'selectedPill' : '';
   }
 
-  selectedPlatformChanged(event) {
+  selectedPlatformChanged(event): void {
     this.initializeDates(event.nextId);
   }
 
-  async changePreferredPlatform() {
+  async changePreferredPlatform(): Promise<void> {
     this.game.myPreferredPlatform.preferred.value = false;
     await this.gameService.updateMyPlatform(this.game.myPreferredPlatform);
 
@@ -129,18 +129,18 @@ export class GameDetailComponent implements OnInit {
     return Object.keys(this.changedGameFields).length > 0 || Object.keys(this.changedPersonFields).length > 0;
   }
 
-  onFinishedFieldEdit(event) {
+  onFinishedFieldEdit(event): void {
     this.finished = event;
     this.selectedPlatform.finished_date.value = !!this.finished ? new Date() : null;
     this.onFieldEdit();
   }
 
-  onNaturalEndEdit(event) {
+  onNaturalEndEdit(event): void {
     this.game.natural_end.value = event;
     this.onFieldEdit();
   }
 
-  onFieldEdit() {
+  onFieldEdit(): void {
     this.changedGameFields = this.game.getChangedFields();
     this.changedPersonFields = this.selectedPlatform.getChangedFields();
   }
@@ -158,7 +158,7 @@ export class GameDetailComponent implements OnInit {
     return !!this.selectedPlatform;
   }
 
-  async openAddPlatformsPopup() {
+  async openAddPlatformsPopup(): Promise<void> {
     const modalRef = this.modalService.open(AddPlatformsComponent, {size: 'md'});
     modalRef.componentInstance.game = this.game;
     const resultPlatform = await modalRef.result;
@@ -167,7 +167,7 @@ export class GameDetailComponent implements OnInit {
     }
   }
 
-  async changeValues() {
+  async changeValues(): Promise<void> {
     const allUpdates = [];
 
     if (Object.getOwnPropertyNames(this.changedPersonFields).length > 0) {
@@ -182,16 +182,16 @@ export class GameDetailComponent implements OnInit {
     this.activeModal.close('Update Click');
   }
 
-  dismiss() {
+  dismiss(): void {
     this.game.discardChanges();
     this.activeModal.dismiss('Cross Click');
   }
 
-  async doPersonUpdate() {
+  async doPersonUpdate(): Promise<void> {
     await this.gameService.updateMyPlatform(this.selectedPlatform);
   }
 
-  async doGameUpdate() {
+  async doGameUpdate(): Promise<void> {
     await this.gameService.updateGame(this.game);
   }
 
@@ -201,7 +201,7 @@ export class GameDetailComponent implements OnInit {
     return this.selectedPlatform.canAddPlaytime();
   }
 
-  async openPlaytimePopup() {
+  async openPlaytimePopup(): Promise<void> {
     const modalRef = this.modalService.open(PlaytimePopupComponent, {size: 'lg'});
     modalRef.componentInstance.game = this.game;
     const resultSession = await modalRef.result;

@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import {Game} from '../../interfaces/Model/Game';
 import {AvailableGamePlatform} from '../../interfaces/Model/AvailableGamePlatform';
@@ -25,17 +25,17 @@ export class AddPlatformsComponent {
     return !availableGamePlatform.myGamePlatform && availableGamePlatform.platform_name.originalValue !== 'Steam';
   }
 
-  async addPlatform(availableGamePlatform: AvailableGamePlatform) {
+  async addPlatform(availableGamePlatform: AvailableGamePlatform): Promise<void> {
     const myGamePlatform = new MyGamePlatform(availableGamePlatform);
     myGamePlatform.rating.value = this.rating;
     this.mostRecentAdd = await this.gameService.addMyGamePlatform(availableGamePlatform, myGamePlatform);
   }
 
-  async close() {
+  async close(): Promise<void> {
     this.activeModal.close(this.mostRecentAdd);
   }
 
-  dismiss() {
+  dismiss(): void {
     this.game.discardChanges();
     this.activeModal.dismiss();
   }
