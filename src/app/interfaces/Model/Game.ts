@@ -1,4 +1,4 @@
-/* tslint:disable:variable-name */
+/* eslint-disable @typescript-eslint/naming-convention, no-underscore-dangle, id-blacklist, id-match */
 import {DataObject} from '../DataObject/DataObject';
 import {GamePlatform} from './GamePlatform';
 import * as _ from 'underscore';

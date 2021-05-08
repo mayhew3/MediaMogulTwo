@@ -1,5 +1,5 @@
-/* tslint:disable quotemark */
-/* tslint:disable:object-literal-key-quotes */
+/* eslint-disable  @typescript-eslint/quotes */
+/* eslint-disable quote-props */
 export const MockGames = [
   {
     "igdb_updated": "2020-04-26 17:00:00.0",

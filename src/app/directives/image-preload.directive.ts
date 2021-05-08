@@ -2,7 +2,7 @@ import {Directive, Input, HostBinding, HostListener, ElementRef} from '@angular/
 import {Game} from '../interfaces/Model/Game';
 
 @Directive({
-  // tslint:disable-next-line:directive-selector
+  // eslint-disable-next-line @angular-eslint/directive-selector
   selector: 'img[default]',
 })
 
