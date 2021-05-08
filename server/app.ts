@@ -1,8 +1,8 @@
 import express from 'express';
-let path = require('path');
-let logger = require('morgan');
-let bodyParser = require('body-parser');
-let app = express();
+const path = require('path');
+const logger = require('morgan');
+const bodyParser = require('body-parser');
+const app = express();
 
 app.use(logger('dev'));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -14,7 +14,7 @@ app.use('/popper_js', express.static(__dirname + '../../../node_modules/@popperj
 
 require('./routes.js')(app);
 
-app.get('/*', function(req, res) {
+app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname + '../../../media-mogul-two/index.html'));
 });
 

@@ -2,7 +2,7 @@ import * as model from './model';
 const _ = require('underscore');
 const Sequelize = require('./sequelize');
 
-exports.getPlatforms = async function (request, response) {
+export const getPlatforms = async (request, response) => {
   const person_id = request.query.person_id;
 
   const platforms = await model.GamePlatform.findAll({
@@ -11,7 +11,7 @@ exports.getPlatforms = async function (request, response) {
 
   const myGlobals = await model.MyGlobalPlatform.findAll({
     where: {
-      person_id: person_id
+      person_id
     }
   });
 
@@ -32,14 +32,14 @@ exports.getPlatforms = async function (request, response) {
   response.json(outputObj);
 };
 
-exports.addGamePlatform = async function(request, response) {
+export const addGamePlatform = async (request, response) => {
   const gamePlatformObj = request.body;
 
   const gamePlatform = await model.GamePlatform.create(gamePlatformObj);
   response.json(gamePlatform);
 };
 
-exports.updateGamePlatform = async function(request, response) {
+export const updateGamePlatform = async (request, response) => {
   const gamePlatformID = request.body.id;
   const changedFields = request.body.changedFields;
 
@@ -72,9 +72,9 @@ exports.updateGamePlatform = async function(request, response) {
     console.error(err);
     response.send({msg: 'Error updating gamePlatform: ' + JSON.stringify(changedFields)});
   }
-}
+};
 
-exports.updateMultipleGlobals = async function(request, response) {
+export const updateMultipleGlobals = async (request, response) => {
   try {
     const result = await Sequelize.sequelize.transaction(async (t) => {
 
@@ -97,14 +97,14 @@ exports.updateMultipleGlobals = async function(request, response) {
   }
 };
 
-exports.addMyGlobalPlatform = async function(request, response) {
+export const addMyGlobalPlatform = async (request, response) => {
   const myGlobalObj = request.body;
 
   const myGlobal = await model.MyGlobalPlatform.create(myGlobalObj);
   response.json(myGlobal);
 };
 
-exports.deleteMyGlobalPlatform = async function(request, response) {
+export const deleteMyGlobalPlatform = async (request, response) => {
   const myGlobalPlatformID = request.params.id;
 
   const myGlobalPlatform = await model.MyGlobalPlatform.findByPk(myGlobalPlatformID);

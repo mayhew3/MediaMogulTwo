@@ -2,7 +2,7 @@ import * as model from './model';
 const _ = require('underscore');
 const moment = require('moment');
 
-exports.getGames = async function (request, response) {
+export const getGames = async (request, response) => {
   const person_id = request.query.person_id;
 
   // noinspection JSCheckFunctionSignatures
@@ -21,7 +21,7 @@ exports.getGames = async function (request, response) {
   const availablePlatforms = await model.AvailableGamePlatform.findAll();
   const myPlatforms = await model.MyGamePlatform.findAll({
     where: {
-      person_id: person_id
+      person_id
     }
   });
 
@@ -45,7 +45,7 @@ exports.getGames = async function (request, response) {
         metacritic: availablePlatform.metacritic,
         metacritic_page: availablePlatform.metacritic_page,
         metacritic_matched: availablePlatform.metacritic_matched,
-        myPlatform: myPlatform
+        myPlatform
       };
     });
 
@@ -62,7 +62,7 @@ exports.getGames = async function (request, response) {
   response.json(outputObject);
 };
 
-exports.addGame = async function(request, response) {
+export const addGame = async (request, response) => {
   const gameObj = request.body;
 
   const coverObj: any = {
@@ -71,7 +71,7 @@ exports.addGame = async function(request, response) {
     width: gameObj.igdb_width,
     height: gameObj.igdb_height,
     default_for_game: true,
-  }
+  };
   delete gameObj.igdb_width;
   delete gameObj.igdb_height;
 
@@ -80,7 +80,7 @@ exports.addGame = async function(request, response) {
     gameObj.igdb_next_update = moment().add(7, 'days').toDate();
   }
 
-  const game = await tryToAddGame(gameObj);
+  const game = await model.Game.create(gameObj);
   const returnObj = game.dataValues;
 
   if (!!coverObj.image_id) {
@@ -94,15 +94,7 @@ exports.addGame = async function(request, response) {
   response.json(returnObj);
 };
 
-async function tryToAddGame(gameObj) {
-  try {
-    return await model.Game.create(gameObj);
-  } catch (err) {
-    throw err;
-  }
-}
-
-exports.updateGame = async function(request, response) {
+export const updateGame = async (request, response) => {
   const gameID = request.body.id;
   const changedFields = request.body.changedFields;
 
@@ -116,7 +108,7 @@ exports.updateGame = async function(request, response) {
   }
 };
 
-exports.updateMyGamePlatform = async function(request, response) {
+export const updateMyGamePlatform = async (request, response) => {
   const myPlatformID = request.body.id;
   const changedFields = request.body.changedFields;
 
@@ -128,37 +120,37 @@ exports.updateMyGamePlatform = async function(request, response) {
     console.error(err);
     response.send({msg: 'Error updating myGamePlatform: ' + JSON.stringify(changedFields)});
   }
-}
+};
 
-exports.getGameplaySessions = async function (request, response) {
+export const getGameplaySessions = async (request, response) => {
   const person_id = request.query.person_id;
   const game_id = request.query.game_id;
 
   const mySessions = await model.GameplaySession.findAll({
     where: {
-      person_id: person_id,
-      game_id: game_id
+      person_id,
+      game_id
     }
   });
 
   response.json(mySessions);
 };
 
-exports.addGameplaySession = async function(request, response) {
+export const addGameplaySession = async (request, response) => {
   const gameplaySession = request.body;
 
   await model.GameplaySession.create(gameplaySession);
   response.json({});
 };
 
-exports.addAvailableGamePlatform = async function(request, response) {
+export const addAvailableGamePlatform = async (request, response) => {
   const availableGamePlatformObj = request.body;
 
   const availableGamePlatform = await model.AvailableGamePlatform.create(availableGamePlatformObj);
   response.json(availableGamePlatform);
 };
 
-exports.addMyGamePlatform = async function(request, response) {
+export const addMyGamePlatform = async (request, response) => {
   const myGamePlatformObj = request.body;
 
   const myGamePlatform = await model.MyGamePlatform.create(myGamePlatformObj);

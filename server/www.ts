@@ -10,6 +10,6 @@ const www_io = require('socket.io')(server);
 
 sockets.initIO(www_io);
 
-server.listen(app.get('port'), function() {
+server.listen(app.get('port'), () => {
   debug('Express server listening on port ' + server.address().port);
 });
