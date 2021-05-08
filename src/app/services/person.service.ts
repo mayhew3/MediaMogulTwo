@@ -2,10 +2,10 @@ import {Injectable, OnDestroy} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable, of, Subject} from 'rxjs';
 import {catchError, concatMap, filter, takeUntil, tap} from 'rxjs/operators';
-import {ArrayService} from './array.service';
 import * as _ from 'underscore';
 import {AuthService} from '@auth0/auth0-angular';
 import {Person} from '../interfaces/Model/Person';
+import {ArrayUtil} from '../utility/ArrayUtil';
 
 @Injectable({
   providedIn: 'root'
@@ -25,7 +25,6 @@ export class PersonService implements OnDestroy {
   isAdmin: boolean = null;
 
   constructor(private http: HttpClient,
-              private arrayService: ArrayService,
               private authService: AuthService) {
     this.cache = [];
   }
@@ -66,7 +65,7 @@ export class PersonService implements OnDestroy {
           .subscribe(
             (personObjs: any[]) => {
               const persons = _.map(personObjs, personObj => new Person().initializedFromJSON(personObj));
-              this.arrayService.addToArray(this.cache, persons);
+              ArrayUtil.addToArray(this.cache, persons);
               observer.next(persons);
             },
             (err: Error) => observer.error(err)

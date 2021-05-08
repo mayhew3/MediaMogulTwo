@@ -1,7 +1,6 @@
 import {Injectable, OnDestroy} from '@angular/core';
 import {Game} from '../interfaces/Model/Game';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {ArrayService} from './array.service';
 import * as _ from 'underscore';
 import {GameplaySession} from '../interfaces/Model/GameplaySession';
 import {PersonService} from './person.service';
@@ -13,6 +12,7 @@ import {filter, takeUntil} from 'rxjs/operators';
 import {MyGamePlatform} from '../interfaces/Model/MyGamePlatform';
 import {AvailableGamePlatform} from '../interfaces/Model/AvailableGamePlatform';
 import {MyGlobalPlatform} from '../interfaces/Model/MyGlobalPlatform';
+import {ArrayUtil} from '../utility/ArrayUtil';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -34,7 +34,6 @@ export class GameService implements OnDestroy {
   private gameRefreshCount = 0;
 
   constructor(private http: HttpClient,
-              private arrayService: ArrayService,
               private personService: PersonService,
               private platformService: PlatformService) {
     this.platformService.platforms.subscribe(platforms => {
@@ -196,7 +195,7 @@ export class GameService implements OnDestroy {
 
   // re-pushes full game list out to all subscribers. Call this after any changes are made.
   private pushGameListChange() {
-    this._games$.next(this.arrayService.cloneArray(this._dataStore.games));
+    this._games$.next(ArrayUtil.cloneArray(this._dataStore.games));
   }
 
   private convertObjectsToGames(gameObjs: any[], platforms: GamePlatform[]): Game[] {

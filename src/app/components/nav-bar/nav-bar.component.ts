@@ -3,13 +3,13 @@ import {AuthService} from '@auth0/auth0-angular';
 import {GameService} from '../../services/game.service';
 import {Observable} from 'rxjs';
 import {distinctUntilChanged, map} from 'rxjs/operators';
-import {ArrayService} from '../../services/array.service';
 import * as _ from 'underscore';
 import {Game} from '../../interfaces/Model/Game';
 import {NgbModal, NgbTypeaheadSelectItemEvent} from '@ng-bootstrap/ng-bootstrap';
 import {GameDetailComponent} from '../game-detail/game-detail.component';
 import {PersonService} from '../../services/person.service';
-import { DOCUMENT } from '@angular/common';
+import {DOCUMENT} from '@angular/common';
+import {ArrayUtil} from '../../utility/ArrayUtil';
 
 @Component({
   selector: 'mm-nav-bar',
@@ -34,14 +34,13 @@ export class NavBarComponent implements OnInit {
 
   constructor(public auth: AuthService,
               private gameService: GameService,
-              private arrayService: ArrayService,
               public personService: PersonService,
               private modalService: NgbModal,
               @Inject(DOCUMENT) public document: Document) { }
 
   ngOnInit(): void {
     this.gameService.games.subscribe(games => {
-      this.arrayService.refreshArray(this.games, games);
+      ArrayUtil.refreshArray(this.games, games);
       this.initializing = false;
     });
     this.gameService.maybeRefreshCache();

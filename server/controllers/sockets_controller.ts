@@ -1,4 +1,4 @@
-const arrayService = require('./array_util');
+const arrayService = require('../../src/app/utility/ArrayUtil');
 const _ = require('underscore');
 
 const clients = [];

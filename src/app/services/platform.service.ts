@@ -2,12 +2,12 @@ import {Injectable, OnDestroy} from '@angular/core';
 import {BehaviorSubject, Observable, Subject} from 'rxjs';
 import {GamePlatform} from '../interfaces/Model/GamePlatform';
 import {HttpClient} from '@angular/common/http';
-import {ArrayService} from './array.service';
 import {map, takeUntil} from 'rxjs/operators';
 import * as _ from 'underscore';
 import fast_sort from 'fast-sort';
 import {PersonService} from './person.service';
 import {MyGlobalPlatform} from '../interfaces/Model/MyGlobalPlatform';
+import {ArrayUtil} from '../utility/ArrayUtil';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +20,6 @@ export class PlatformService implements OnDestroy {
   private _destroy$ = new Subject();
 
   constructor(private http: HttpClient,
-              private arrayService: ArrayService,
               private personService: PersonService) { }
 
   // public observable for all changes to platform list
@@ -123,7 +122,7 @@ export class PlatformService implements OnDestroy {
   }
 
   private pushPlatformListChange() {
-    this._platforms$.next(this.arrayService.cloneArray(this._platforms));
+    this._platforms$.next(ArrayUtil.cloneArray(this._platforms));
   }
 
   private convertObjectsToPlatforms(platformObjs: any[]): GamePlatform[] {

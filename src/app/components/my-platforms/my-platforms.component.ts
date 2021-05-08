@@ -80,7 +80,7 @@ export class MyPlatformsComponent implements OnInit {
   async addToMyPlatforms(platform: GamePlatform) {
     const myGlobalPlatform = new MyGlobalPlatform(platform);
     const gamePlatforms = this.platformsInGlobal();
-    const ranks = _.map(gamePlatforms, myGlobalPlatform => myGlobalPlatform.myGlobalPlatform.rank.value);
+    const ranks = _.map(gamePlatforms, mgp => mgp.myGlobalPlatform.rank.value);
     myGlobalPlatform.rank.value = _.max(ranks) > 0 ? _.max(ranks) + 1 : 1;
     await this.platformService.addMyGlobalPlatform(myGlobalPlatform);
   }

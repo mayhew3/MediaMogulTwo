@@ -118,8 +118,7 @@ export class InMemoryDataService implements InMemoryDbService{
   // DOMAIN HELPERS
 
   private getGames(requestInfo: RequestInfo): Observable<ResponseOptions> {
-    const entries = requestInfo.query.entries();
-    const person_id = parseInt(entries.next().value[1][0]);
+    const person_id = requestInfo.query.get('person_id');
 
     const data = [];
 
@@ -137,8 +136,7 @@ export class InMemoryDataService implements InMemoryDbService{
   }
 
   private getGamePlatforms(requestInfo: RequestInfo): Observable<ResponseOptions> {
-    const entries = requestInfo.query.entries();
-    const person_id = parseInt(entries.next().value[1][0]);
+    const person_id = requestInfo.query.get('person_id');
 
     const data = [];
 
@@ -278,7 +276,7 @@ export class InMemoryDataService implements InMemoryDbService{
   }
 
   private deleteMyGlobalPlatform(requestInfo: RequestInfo) {
-    const myGlobalPlatformID = parseInt(requestInfo.id);
+    const myGlobalPlatformID = +requestInfo.id;
     const myGlobalPlatform = this.findMyGlobalPlatform(myGlobalPlatformID);
     if (!!myGlobalPlatform) {
       const gamePlatform = this.findGamePlatform(myGlobalPlatform.game_platform_id);
@@ -347,7 +345,7 @@ export class InMemoryDataService implements InMemoryDbService{
       if (item === undefined) {
         return undefined;
       } else {
-        return parseInt(item.id);
+        return +item.id;
       }
     });
     const max = _.max(ids);
@@ -384,7 +382,7 @@ export class InMemoryDataService implements InMemoryDbService{
   // noinspection JSMethodCanBeStatic
   private updateChangedFieldsOnObject(obj: any, changedFields: any) {
     for (const key in changedFields) {
-      if (changedFields.hasOwnProperty(key)) {
+      if (Object.prototype.hasOwnProperty.call(changedFields, key)) {
         obj[key] = changedFields[key];
       }
     }
