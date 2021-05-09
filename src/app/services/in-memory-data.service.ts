@@ -10,6 +10,8 @@ import {MockIGDBMatches} from '../mocks/igdb.matches.mock';
 import {MockGamePlatforms} from '../mocks/gamePlatforms.mock';
 import {ArrayUtil} from '../utility/ArrayUtil';
 import {MockGameplaySessions} from '../mocks/gameplaySessions.mock';
+import {LoggerService} from './logger.service';
+import {InMemoryCallbacksService} from './in-memory-callbacks.service';
 
 @Injectable({
   providedIn: 'root'
@@ -21,7 +23,8 @@ export class InMemoryDataService implements InMemoryDbService{
   gamePlatforms = MockGamePlatforms;
   gameplaySessions = MockGameplaySessions;
 
-  constructor() { }
+  constructor(private callbackService: InMemoryCallbacksService,
+              private logger: LoggerService) { }
 
   // STATIC HELPERS
 
@@ -50,6 +53,25 @@ export class InMemoryDataService implements InMemoryDbService{
   // noinspection JSUnusedGlobalSymbols
   genId(sessions: GameplaySession[]): number {
     return sessions.length > 0 ? _.max(sessions.map(session => session.id)) + 1 : 1;
+  }
+
+  /* SOCKET METHODS */
+
+  on(channel, callback): void {
+    this.callbackService.on(channel, callback);
+  }
+
+  off(channel, callback): void {
+    this.callbackService.off(channel, callback);
+  }
+
+  getCallbacks(channel): any[] {
+    return this.callbackService.getCallbacks(channel);
+  }
+
+  broadcastToChannel(channel, msg): void {
+    const callbacks = this.getCallbacks(channel);
+    _.forEach(callbacks, callback => callback(msg));
   }
 
 

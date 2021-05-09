@@ -34,6 +34,7 @@ import {NgxsModule} from '@ngxs/store';
 import {PersonState} from './states/person.state';
 import {NgxsReduxDevtoolsPluginModule} from '@ngxs/devtools-plugin';
 import {NgxsLoggerPluginModule} from '@ngxs/logger-plugin';
+import {InMemoryCallbacksService} from './services/in-memory-callbacks.service';
 
 @NgModule({
   declarations: [
@@ -89,6 +90,10 @@ import {NgxsLoggerPluginModule} from '@ngxs/logger-plugin';
   ],
   providers: [
     MyAuthService,
+    environment.socketModule,
+    environment.initSocketModule,
+    environment.loggerModule,
+    InMemoryCallbacksService,
     { provide: HTTP_INTERCEPTORS, useClass: AuthHttpInterceptor, multi: true },
   ],
   bootstrap: [AppComponent]
