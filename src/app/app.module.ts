@@ -66,10 +66,6 @@ import {MyAuthService} from './services/my-auth.service';
       clientId: environment.clientID,
       redirectUri: `${window.location.origin}`,
       audience: 'https://media-mogul-two.herokuapp.com',
-      useRefreshTokens: true,
-      cacheLocation: 'localstorage',
-      scope: 'offline_access',
-      leeway: 80,
 
       // Specify configuration for the interceptor
       httpInterceptor: {

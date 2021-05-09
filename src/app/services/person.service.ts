@@ -33,17 +33,17 @@ export class PersonService implements OnDestroy {
     });
   }
 
+  ngOnDestroy(): void {
+    this._destroy$.next();
+    this._destroy$.complete();
+  }
+
   getPersonWithEmail(email: string): Observable<Person> {
     return this.getDataWithCacheUpdate<Person>(() => this.getPersonWithEmailFromCache(email));
   }
 
   private getPersonWithEmailFromCache(email: string): Person {
     return _.find(this.cache, person => person.email.value === email);
-  }
-
-  ngOnDestroy(): void {
-    this._destroy$.next();
-    this._destroy$.complete();
   }
 
 
