@@ -30,6 +30,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MyAuthService} from './services/my-auth.service';
+import {NgxsModule} from '@ngxs/store';
+import {PersonState} from './states/person.state';
+import {NgxsReduxDevtoolsPluginModule} from '@ngxs/devtools-plugin';
+import {NgxsLoggerPluginModule} from '@ngxs/logger-plugin';
 
 @NgModule({
   declarations: [
@@ -61,6 +65,15 @@ import {MyAuthService} from './services/my-auth.service';
     MatProgressSpinnerModule,
     MatSnackBarModule,
     AppRoutingModule,
+    NgxsModule.forRoot([
+      PersonState
+    ], {
+      developmentMode: !environment.production
+    }),
+    NgxsReduxDevtoolsPluginModule.forRoot(),
+    NgxsLoggerPluginModule.forRoot({
+      disabled: environment.production
+    }),
     AuthModule.forRoot({
       domain: environment.domain,
       clientId: environment.clientID,

@@ -93,7 +93,7 @@ export class GameService implements OnDestroy {
   }
 
   async addMyGamePlatform(availableGamePlatform: AvailableGamePlatform, myGamePlatform: MyGamePlatform): Promise<MyGamePlatform> {
-    myGamePlatform.person_id.value = this.me.id.value;
+    myGamePlatform.person_id.value = this.me.id;
     myGamePlatform.preferred.value = !availableGamePlatform.game.myPreferredPlatform;
     myGamePlatform.platform_name.value = availableGamePlatform.platform_name.value;
     myGamePlatform.game_platform_id.value = availableGamePlatform.game_platform_id.value;
@@ -172,7 +172,7 @@ export class GameService implements OnDestroy {
         // only refresh the games the FIRST time platforms returns a valid array
         .pipe(filter((platforms: GamePlatform[]) => !!platforms && platforms.length > 0))
         .subscribe(platforms => {
-          const personID = person.id.value;
+          const personID = person.id;
           const payload = {
             person_id: personID.toString()
           };

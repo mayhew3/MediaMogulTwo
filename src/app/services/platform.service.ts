@@ -66,7 +66,7 @@ export class PlatformService implements OnDestroy {
   async addMyGlobalPlatform(myGlobalPlatform: MyGlobalPlatform): Promise<MyGlobalPlatform> {
     return new Promise(resolve => {
       this.personService.me$.subscribe(async person => {
-        myGlobalPlatform.person_id.value = person.id.value;
+        myGlobalPlatform.person_id.value = person.id;
         const gamePlatform = myGlobalPlatform.platform;
         gamePlatform.myGlobalPlatform = await myGlobalPlatform.commit(this.http);
         this.pushPlatformListChange();
@@ -102,7 +102,7 @@ export class PlatformService implements OnDestroy {
 
   private refreshCache(): void {
     this.personService.me$.subscribe(person => {
-      const personID = person.id.value;
+      const personID = person.id;
       const payload = {
         person_id: personID.toString()
       };

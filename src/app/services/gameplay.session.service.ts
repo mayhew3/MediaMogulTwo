@@ -24,7 +24,7 @@ export class GameplaySessionService implements OnDestroy {
   getGameplaySessions(game: Game): Observable<GameplaySession[]> {
     return this.personService.me$.pipe(
       concatMap((me: Person) => {
-        const personID = me.id.value;
+        const personID = me.id;
         const payload = {
           person_id: personID.toString(),
           game_id: game.id.originalValue.toString()
