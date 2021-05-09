@@ -23,7 +23,7 @@ export const getPlatforms = async (request: Record<string, any>, response: Recor
     const returnObj = platform.dataValues;
 
     if (!!myGlobalPlatform) {
-      returnObj.myPlatform = myGlobalPlatform;
+      returnObj.myGlobalPlatform = myGlobalPlatform;
     }
 
     outputObj.push(returnObj);
