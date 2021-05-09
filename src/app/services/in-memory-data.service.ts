@@ -272,6 +272,14 @@ export class InMemoryDataService implements InMemoryDbService{
         this.updateAllAvailablePlatformsWithName(old_name, full_name);
         this.updateAllMyPlatformsWithName(old_name, full_name);
       }
+
+      this.broadcastToChannel('update_global_platform', {
+        global_platform_id: jsonBody.id,
+        full_name: changedFields.full_name,
+        short_name: changedFields.short_name,
+        metacritic_uri: changedFields.metacritic_uri
+      });
+
       return this.packageUpResponse(gamePlatform, requestInfo);
     }
   }

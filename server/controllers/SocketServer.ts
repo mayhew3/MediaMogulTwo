@@ -9,6 +9,7 @@ export class SocketServer {
   existing_person_rooms = [];
 
   globalChannels = [
+    'update_global_platform'
   ];
 
   personalChannels = [

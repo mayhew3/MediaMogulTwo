@@ -15,7 +15,8 @@ export class AddGlobalPlatform {
 
 export class UpdateGlobalPlatform {
   static readonly type = '[GlobalPlatform] Update';
-  constructor(public full_name: string,
+  constructor(public global_platform_id: number,
+              public full_name: string,
               public short_name: string,
               public metacritic_uri: string) {
   }
