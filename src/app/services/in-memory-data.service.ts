@@ -117,7 +117,7 @@ export class InMemoryDataService implements InMemoryDbService{
   // DOMAIN HELPERS
 
   private getGames(requestInfo: RequestInfo): Observable<Response> {
-    const person_id = requestInfo.query.get('person_id');
+    const person_id = +requestInfo.query.get('person_id')[0];
 
     const data = [];
 
@@ -135,7 +135,7 @@ export class InMemoryDataService implements InMemoryDbService{
   }
 
   private getGamePlatforms(requestInfo: RequestInfo): Observable<Response> {
-    const person_id = requestInfo.query.get('person_id');
+    const person_id = +requestInfo.query.get('person_id')[0];
 
     const data = [];
 

@@ -30,8 +30,8 @@
 
       <!--TODO: href goes nowhere? -->
       <li class="nav-item active">
-        <a routerLink="/" class="nav-link" (click)="auth.loginWithRedirect()" *ngIf="(isLoggedIn$() | async) === false">Log In</a>
-        <a routerLink="/" class="nav-link" (click)="auth.logout({ returnTo: document.location.origin })" *ngIf="isLoggedIn$() | async">Log Out</a>
+        <a routerLink="/" class="nav-link" (click)="auth.login()" *ngIf="(isLoggedIn$() | async) === false">Log In</a>
+        <a routerLink="/" class="nav-link" (click)="auth.logout()" *ngIf="isLoggedIn$() | async">Log Out</a>
       </li>
 
       <li class="nav-item active">

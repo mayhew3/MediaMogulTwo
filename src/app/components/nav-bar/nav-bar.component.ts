@@ -1,5 +1,4 @@
 import {Component, Inject, OnInit} from '@angular/core';
-import {AuthService} from '@auth0/auth0-angular';
 import {GameService} from '../../services/game.service';
 import {Observable} from 'rxjs';
 import {distinctUntilChanged, map} from 'rxjs/operators';
@@ -10,6 +9,7 @@ import {GameDetailComponent} from '../game-detail/game-detail.component';
 import {PersonService} from '../../services/person.service';
 import {DOCUMENT} from '@angular/common';
 import {ArrayUtil} from '../../utility/ArrayUtil';
+import {MyAuthService} from '../../services/my-auth.service';
 
 @Component({
   selector: 'mm-nav-bar',
@@ -22,7 +22,7 @@ export class NavBarComponent implements OnInit {
   initializing = true;
   public model: Game;
 
-  constructor(public auth: AuthService,
+  constructor(public auth: MyAuthService,
               private gameService: GameService,
               public personService: PersonService,
               private modalService: NgbModal,
