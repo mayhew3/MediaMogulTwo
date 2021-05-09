@@ -12,6 +12,7 @@ import {AvailableGamePlatform} from '../interfaces/Model/AvailableGamePlatform';
 import {ApiService} from './api.service';
 import {Store} from '@ngxs/store';
 import {GetGlobalPlatforms} from '../actions/global.platform.action';
+import {MyGamePlatform} from '../interfaces/Model/MyGamePlatform';
 
 @Injectable({
   providedIn: 'root'
@@ -41,7 +42,7 @@ export class PlatformService {
       map((platforms: GamePlatform[]) => {
         const filtered: GamePlatform[] = _.filter(platforms, platform => !!platform.myGlobalPlatform);
         fast_sort(filtered)
-          .asc(platform => platform.myGlobalPlatform.rank.originalValue);
+          .asc(platform => platform.myGlobalPlatform.rank);
         return filtered;
       })
     );
@@ -71,27 +72,24 @@ export class PlatformService {
     this.apiService.executePutAfterFullyConnected('/api/gamePlatforms', data);
   }
 
-  async addMyGlobalPlatform(myGlobalPlatform: MyGlobalPlatform): Promise<MyGlobalPlatform> {
-    return new Promise(resolve => {
-      this.personService.me$.subscribe(async person => {
-        myGlobalPlatform.person_id.value = person.id;
-        const gamePlatform = myGlobalPlatform.platform;
-        gamePlatform.myGlobalPlatform = await myGlobalPlatform.commit(this.http);
-        // this.pushPlatformListChange();
-        resolve(gamePlatform.myGlobalPlatform);
-      });
+  addMyGlobalPlatform(myGlobalPlatform: MyGlobalPlatform): void {
+    this.personService.me$.subscribe(person => {
+      myGlobalPlatform.person_id = person.id;
+      const gamePlatform = myGlobalPlatform.platform;
+      this.apiService.executePostAfterFullyConnected('/api/myGlobalPlatforms', gamePlatform);
     });
   }
 
-  async removeMyGlobalPlatform(myGlobalPlatform: MyGlobalPlatform): Promise<any> {
-    const gamePlatform = myGlobalPlatform.platform;
-    await myGlobalPlatform.delete(this.http);
-    delete gamePlatform.myGlobalPlatform;
-    // this.pushPlatformListChange();
+  removeMyGlobalPlatform(myGlobalPlatform: MyGlobalPlatform): void {
+    this.apiService.executeDeleteAfterFullyConnected('/api/myGlobalPlatforms', myGlobalPlatform.id);
   }
 
-  addablePlatforms(game: Game): GamePlatform[] {
+  addablePlatforms(game: Game): AvailableGamePlatform[] {
     return _.filter(game.availablePlatforms, availableGamePlatform => this.canAddToGame(availableGamePlatform));
+  }
+
+  myMutablePlatforms(game: Game): MyGamePlatform[] {
+    return _.filter(game.myPlatformsInGlobal, myGamePlatform => this.canAddPlaytime(myGamePlatform.platform));
   }
 
   canAddToGame(availableGamePlatform: AvailableGamePlatform): boolean {

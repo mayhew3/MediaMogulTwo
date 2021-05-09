@@ -114,7 +114,7 @@ export class GameListComponent implements OnInit{
     return classes.join(' ');
   }
 
-  private getAllFiltersExcept(filter: GameFilterWithOptions): GameFilterWithOptions[] {
+  private getAllFiltersExcept(filter: GameFilterWithOptions): GameFilter[] {
     const allFilters = this.getAllFilters();
     return _.without(allFilters, filter);
   }

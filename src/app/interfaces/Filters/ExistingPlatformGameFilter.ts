@@ -14,7 +14,7 @@ export class ExistingPlatformGameFilter extends GameFilterWithOptions {
   }
 
   updateOptions(platforms: GamePlatform[]): void {
-    const options = _.map(platforms, platform => new GameFilterOption(platform.full_name.value, platform.id.value, true, false));
+    const options = _.map(platforms, platform => new GameFilterOption(platform.full_name, platform.id, true, false));
     ArrayUtil.refreshArray(this.options, options);
     this.addAllAndNone();
   }

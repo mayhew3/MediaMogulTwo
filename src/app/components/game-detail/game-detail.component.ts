@@ -14,6 +14,7 @@ import {PlaytimePopupComponent} from '../playtime-popup/playtime-popup.component
 import {GameplaySession} from '../../interfaces/Model/GameplaySession';
 import {GameplaySessionService} from '../../services/gameplay.session.service';
 import fast_sort from 'fast-sort';
+import {AvailableGamePlatform} from '../../interfaces/Model/AvailableGamePlatform';
 
 enum DetailNav {RATING = 'Rating', PLAYTIME = 'Playtime'}
 
@@ -116,8 +117,12 @@ export class GameDetailComponent implements OnInit {
     await this.gameService.updateMyPlatform(this.selectedPlatform);
   }
 
+  get addablePlatforms(): AvailableGamePlatform[] {
+    return this.platformService.addablePlatforms(this.game);
+  }
+
   showAddButton(): boolean {
-    return this.game.addablePlatforms.length > this.game.myMutablePlatforms.length;
+    return this.addablePlatforms.length > this.platformService.myMutablePlatforms(this.game).length;
   }
 
   getMetacritic(): number {

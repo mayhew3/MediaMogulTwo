@@ -69,7 +69,7 @@ export class SearchComponent implements OnInit {
     }
     const availablePlatforms = existingGame.availablePlatforms;
     const matchPlatformIDs = _.map(match.platforms, platform => platform.id);
-    return _.filter(availablePlatforms, availablePlatform => !_.contains(matchPlatformIDs, availablePlatform.platform.igdb_platform_id.value));
+    return _.filter(availablePlatforms, availablePlatform => !_.contains(matchPlatformIDs, availablePlatform.platform.igdb_platform_id));
   }
 
   private findMatchingGame(match: any): Game {
@@ -84,7 +84,7 @@ export class SearchComponent implements OnInit {
   }
 
   private findPlatformWithIGDBID(igdbID: number): GamePlatform {
-    return _.find(this.allPlatforms, platform => platform.igdb_platform_id.value === igdbID);
+    return _.find(this.allPlatforms, platform => platform.igdb_platform_id === igdbID);
   }
 
   hasAvailablePlatforms(match: any): boolean {

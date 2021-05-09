@@ -6,6 +6,8 @@ import {GameDetailComponent} from '../game-detail/game-detail.component';
 import {GameListComponent} from '../game-list/game-list.component';
 import {AvailableGamePlatform} from '../../interfaces/Model/AvailableGamePlatform';
 import {AddPlatformsComponent} from '../add-platforms/add-platforms.component';
+import {PlatformService} from '../../services/platform.service';
+import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
 
 @Component({
   selector: 'mm-game-card',
@@ -18,7 +20,8 @@ export class GameCardComponent {
   closeResult = '';
   successfullyAdded = false;
 
-  constructor(private modalService: NgbModal) { }
+  constructor(private modalService: NgbModal,
+              private platformService: PlatformService) { }
 
   private static getDismissReason(reason: any): string {
     if (reason === ModalDismissReasons.ESC) {
@@ -35,14 +38,22 @@ export class GameCardComponent {
   }
 
   hasSingleAvailablePlatform(): boolean {
-    return this.game.addablePlatforms.length === 1;
+    return this.addablePlatforms.length === 1;
   }
 
   getSingleAvailablePlatform(): AvailableGamePlatform {
     if (!this.hasSingleAvailablePlatform()) {
-      throw new Error('Can only get single platform but there are ' + this.game.addablePlatforms.length + ' platforms.');
+      throw new Error('Can only get single platform but there are ' + this.addablePlatforms.length + ' platforms.');
     }
-    return this.game.addablePlatforms[0];
+    return this.addablePlatforms[0];
+  }
+
+  get addablePlatforms(): AvailableGamePlatform[] {
+    return this.platformService.addablePlatforms(this.game);
+  }
+
+  get myMutablePlatforms(): MyGamePlatform[] {
+    return this.platformService.myMutablePlatforms(this.game);
   }
 
   showProgressBar(): boolean {
@@ -57,8 +68,12 @@ export class GameCardComponent {
     return this.isNotRecentlyUnowned() && !this.hasSingleAvailablePlatform();
   }
 
+  canAddPlaytime(): boolean {
+    return this.myMutablePlatforms.length > 0;
+  }
+
   showPlaytimeButton(): boolean {
-    return this.game.canAddPlaytime() && this.game.isOwned() && !this.successfullyAdded;
+    return this.canAddPlaytime() && this.game.isOwned() && !this.successfullyAdded;
   }
 
   async handlePopupResult(modalRef: NgbModalRef): Promise<void> {

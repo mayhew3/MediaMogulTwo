@@ -30,7 +30,7 @@ export class MyPlatformsComponent implements OnInit {
   }
 
   platformsInGlobal(): GamePlatform[] {
-    return _.sortBy(_.filter(this.allPlatforms, platform => !!platform.myGlobalPlatform), platform => platform.myGlobalPlatform.rank.originalValue);
+    return _.sortBy(_.filter(this.allPlatforms, (platform: GamePlatform) => !!platform.myGlobalPlatform), (platform: GamePlatform) => platform.myGlobalPlatform.rank);
   }
 
   myGlobalPlatforms(): MyGlobalPlatform[] {
@@ -43,14 +43,14 @@ export class MyPlatformsComponent implements OnInit {
 
   getCountOfOwnedGames(platform: GamePlatform): number {
     return _.filter(this.allGames, game => {
-      const matching = _.find(game.myPlatforms, myPlatform => myPlatform.availableGamePlatform.gamePlatform.id.originalValue === platform.id);
+      const matching = _.find(game.myPlatforms, myPlatform => myPlatform.availableGamePlatform.gamePlatform.id === platform.id);
       return !!matching;
     }).length;
   }
 
   getCountOfPreferredGames(platform: GamePlatform): number {
     return _.filter(this.allGames, game => {
-      const matching = _.find(game.myPlatforms, myPlatform => myPlatform.availableGamePlatform.gamePlatform.id.originalValue === platform.id);
+      const matching = _.find(game.myPlatforms, myPlatform => myPlatform.availableGamePlatform.gamePlatform.id === platform.id);
       return !!matching && matching.isManuallyPreferred();
     }).length;
   }
@@ -60,11 +60,11 @@ export class MyPlatformsComponent implements OnInit {
   }
 
   hasChanges(): boolean {
-    return _.filter(this.myGlobalPlatforms(), myGlobalPlatform => myGlobalPlatform.rank.isChanged()).length > 0;
+    return _.filter(this.myGlobalPlatforms(), myGlobalPlatform => !!myGlobalPlatform.rank).length > 0;
   }
 
   hasDuplicates(): boolean {
-    const ranks = _.map(this.myGlobalPlatforms(), myGlobalPlatform => myGlobalPlatform.rank.value);
+    const ranks = _.map(this.myGlobalPlatforms(), myGlobalPlatform => myGlobalPlatform.rank);
     const uniqRanks = _.uniq(ranks);
     return ranks.length !== uniqRanks.length;
   }
@@ -73,15 +73,17 @@ export class MyPlatformsComponent implements OnInit {
     if (this.hasDuplicates()) {
       throw new Error(`Can't update ranks with duplicates.`);
     }
-    const changedPlatforms = _.filter(this.myGlobalPlatforms(), myGlobalPlatform => myGlobalPlatform.hasChanges());
+    const changedPlatforms = _.filter(this.myGlobalPlatforms(), myGlobalPlatform => true);
     await this.gameService.updateMultipleGlobalPlatforms(changedPlatforms);
   }
 
   async addToMyPlatforms(platform: GamePlatform): Promise<void> {
-    const myGlobalPlatform = new MyGlobalPlatform(platform);
+    const myGlobalPlatform = new MyGlobalPlatform();
+    myGlobalPlatform.game_platform_id = platform.id;
+    myGlobalPlatform.platform_name = platform.full_name;
     const gamePlatforms = this.platformsInGlobal();
-    const ranks = _.map(gamePlatforms, mgp => mgp.myGlobalPlatform.rank.value);
-    myGlobalPlatform.rank.value = _.max(ranks) > 0 ? _.max(ranks) + 1 : 1;
+    const ranks = _.map(gamePlatforms, mgp => mgp.myGlobalPlatform.rank);
+    myGlobalPlatform.rank = _.max(ranks) > 0 ? _.max(ranks) + 1 : 1;
     await this.platformService.addMyGlobalPlatform(myGlobalPlatform);
   }
 

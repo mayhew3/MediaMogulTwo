@@ -52,7 +52,7 @@ export class InMemoryDataService implements InMemoryDbService{
 
   // noinspection JSUnusedGlobalSymbols
   genId(sessions: GameplaySession[]): number {
-    return sessions.length > 0 ? _.max(sessions.map(session => session.id)) + 1 : 1;
+    return sessions.length > 0 ? _.max(sessions.map(session => session.id)) as number + 1 : 1;
   }
 
   /* SOCKET METHODS */

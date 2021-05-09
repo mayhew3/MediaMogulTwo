@@ -68,10 +68,10 @@ export class Game extends DataObject {
   private getPlatformsPayload(): any[] {
     const availablePlatforms = [];
     _.forEach(this.availablePlatforms, availablePlatform => {
-      if (!availablePlatform.platform.id.value) {
-        availablePlatforms.push(availablePlatform.platform.getChangedFields());
+      if (!availablePlatform.platform.id) {
+        // availablePlatforms.push(availablePlatform.platform.getChangedFields());
       } else {
-        availablePlatforms.push({game_platform_id: availablePlatform.platform.id.value});
+        availablePlatforms.push({game_platform_id: availablePlatform.platform.id});
       }
     });
     return availablePlatforms;
@@ -92,12 +92,8 @@ export class Game extends DataObject {
     return !!existing;
   }
 
-  canAddPlaytime(): boolean {
-    return this.myMutablePlatforms.length > 0;
-  }
-
   hasPlatformWithID(platformID: number): boolean {
-    const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform.id.value === platformID);
+    const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform.id === platformID);
     return !!existing;
   }
 
@@ -107,7 +103,7 @@ export class Game extends DataObject {
   }
 
   getOwnedPlatformWithID(platformID: number): MyGamePlatform {
-    return _.find(this.myPlatformsInGlobal, myPlatform => myPlatform.platform.id.value === platformID);
+    return _.find(this.myPlatformsInGlobal, myPlatform => myPlatform.platform.id === platformID);
   }
 
   ownsPlatformWithID(platformID: number): boolean {
@@ -128,7 +124,7 @@ export class Game extends DataObject {
   }
 
   findPlatformWithIGDBID(igdbID: number): AvailableGamePlatform {
-    return _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform.igdb_platform_id.value === igdbID);
+    return _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform.igdb_platform_id === igdbID);
   }
 
   private removeTemporaryPlatforms(): void {
@@ -140,16 +136,8 @@ export class Game extends DataObject {
     return originalArray.slice();
   }
 
-  get addablePlatforms(): AvailableGamePlatform[] {
-    return _.filter(this.availablePlatforms, availablePlatform => availablePlatform.canAddToGame());
-  }
-
   get availablePlatformsNotInGlobal(): AvailableGamePlatform[] {
     return _.filter(this.availablePlatforms, availablePlatform => !availablePlatform.gamePlatform.myGlobalPlatform);
-  }
-
-  get myMutablePlatforms(): MyGamePlatform[] {
-    return _.filter(this.myPlatformsInGlobal, myGamePlatform => myGamePlatform.canAddPlaytime());
   }
 
   getImageUrl(): string {
@@ -178,7 +166,7 @@ export class Game extends DataObject {
   }
 
   getOrCreateGamePlatform(platformObj: any, allPlatforms: GamePlatform[]): GamePlatform {
-    const foundPlatform = _.find(allPlatforms, platform => platform.id.value === platformObj.game_platform_id);
+    const foundPlatform = _.find(allPlatforms, (platform: GamePlatform) => platform.id === platformObj.game_platform_id);
     return foundPlatform;
   }
 
@@ -188,14 +176,14 @@ export class Game extends DataObject {
 
   getLastPlayed(): Date {
     const allLastPlayed = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.last_played.originalValue);
-    const max = _.max(allLastPlayed);
-    return max > 0 ? max : null;
+    const max = _.max(allLastPlayed) as Date;
+    return !!max ? max : null;
   }
 
   getOwnershipDateAdded(): Date {
     const allDateAdded = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.collection_add.originalValue);
-    const max = _.max(allDateAdded);
-    return max > 0 ? max : null;
+    const max = _.max(allDateAdded) as Date;
+    return !!max ? max : null;
   }
 
   get myPreferredPlatform(): MyGamePlatform {
@@ -206,7 +194,7 @@ export class Game extends DataObject {
         return manualPreferred;
       } else {
         fast_sort(myPlatforms)
-          .asc(myPlatform => myPlatform.platform.myGlobalPlatform.rank.originalValue);
+          .asc(myPlatform => myPlatform.platform.myGlobalPlatform.rank);
         return myPlatforms[0];
       }
     } else {

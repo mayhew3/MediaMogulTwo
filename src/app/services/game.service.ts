@@ -132,8 +132,8 @@ export class GameService implements OnDestroy {
     const allChangedFields = [];
     _.forEach(myGlobalPlatforms, myGlobalPlatform => {
       const payload = {
-        id: myGlobalPlatform.id.originalValue,
-        changedFields: myGlobalPlatform.getChangedFields()
+        id: myGlobalPlatform.id,
+        // changedFields: myGlobalPlatform.getChangedFields()
       };
       allChangedFields.push(payload);
     });
@@ -143,7 +143,7 @@ export class GameService implements OnDestroy {
       payloads: allChangedFields
     };
     await this.http.put('/api/multipleGlobals', fullPayload).toPromise();
-    _.forEach(myGlobalPlatforms, myGlobalPlatform => myGlobalPlatform.moveChanges());
+    // _.forEach(myGlobalPlatforms, myGlobalPlatform => myGlobalPlatform.moveChanges());
   }
 
   async insertGameplaySession(gameplaySession: GameplaySession): Promise<void> {

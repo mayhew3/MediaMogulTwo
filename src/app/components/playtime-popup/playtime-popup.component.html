@@ -17,12 +17,12 @@
     <div class="col-4">
 
       <!-- Single Platform-->
-      <h4 *ngIf="game.myMutablePlatforms.length === 1">{{selectedPlatform.platform_name.originalValue}}</h4>
+      <h4 *ngIf="myMutablePlatforms.length === 1">{{selectedPlatform.platform_name.originalValue}}</h4>
 
       <!-- Multi Platform Dropdown -->
 
       <div ngbDropdown
-           *ngIf="game.myMutablePlatforms.length > 1">
+           *ngIf="myMutablePlatforms.length > 1">
         <button class="btn btn-lg btn-primary"
                 id="platformDropdown"
                 name="platformDropdown"

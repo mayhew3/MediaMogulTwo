@@ -18,7 +18,7 @@ export class BrowseGamesComponent {
   constructor(private platformService: PlatformService) { }
 
   getBaseFilter(): GameFilter {
-    return new UnownedGameFilter();
+    return new UnownedGameFilter(this.platformService);
   }
 
   getChangeableFilters(): GameFilterWithOptions[] {

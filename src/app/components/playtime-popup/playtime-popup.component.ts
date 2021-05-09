@@ -46,11 +46,15 @@ export class PlaytimePopupComponent implements OnInit {
     const availableGamePlatform = this.game.myPreferredPlatform.availableGamePlatform;
     this.selectedPlatform = this.platformService.canAddToGame(availableGamePlatform) ?
       this.game.myPreferredPlatform :
-      this.game.myMutablePlatforms[0];
+      this.myMutablePlatforms[0];
     this.initializeDates();
     this.finished = !!this.selectedPlatform.finished_date.value;
     this.finalScore = this.selectedPlatform.final_score.value;
     this.replayScore = this.selectedPlatform.replay_score.value;
+  }
+
+  get myMutablePlatforms(): MyGamePlatform[] {
+    return this.platformService.myMutablePlatforms(this.game);
   }
 
   newChanged(): void {
@@ -70,7 +74,7 @@ export class PlaytimePopupComponent implements OnInit {
   }
 
   platformsExceptSelected(): MyGamePlatform[] {
-    return _.without(this.game.myMutablePlatforms, this.selectedPlatform);
+    return _.without(this.myMutablePlatforms, this.selectedPlatform);
   }
 
   selectPlatform(platform: MyGamePlatform): void {
