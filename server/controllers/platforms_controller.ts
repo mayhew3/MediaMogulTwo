@@ -1,6 +1,7 @@
 import * as model from './model';
 const _ = require('underscore');
 const Sequelize = require('./sequelize');
+import {socketServer} from '../www';
 
 export const getPlatforms = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   const person_id = request.query.person_id;
@@ -66,6 +67,15 @@ export const updateGamePlatform = async (request: Record<string, any>, response:
         }
       });
     }
+
+    const msg = {
+      global_platform_id: gamePlatformID,
+      full_name: changedFields.full_name,
+      short_name: changedFields.short_name,
+      metacritic_uri: changedFields.metacritic_uri
+    };
+
+    socketServer.emitToAll('update_global_platform', msg);
 
     response.json({});
   } catch (err) {
