@@ -119,14 +119,14 @@ export class PlaytimePopupComponent implements OnInit {
         myPlatform.last_played.value = playedDate;
         myPlatform.finished_date.value = this.finished ? playedDate : null;
 
-        this.gameplaySession.game_id = this.game.id.value;
-        this.gameplaySession.minutes = this.added.asMinutes();
-        this.gameplaySession.start_time = playedDate;
-        this.gameplaySession.person_id = person.id;
+        this.gameplaySession.game_id.value = this.game.id.value;
+        this.gameplaySession.minutes.value = this.added.asMinutes();
+        this.gameplaySession.start_time.value = playedDate;
+        this.gameplaySession.person_id.value = person.id;
 
-        await this.gameService.insertGameplaySession(this.gameplaySession);
+        const resultSession = await this.gameService.insertGameplaySession(this.gameplaySession);
         await this.gameService.updateMyPlatform(myPlatform);
-        this.activeModal.close();
+        this.activeModal.close(resultSession);
       } catch (err) {
         console.error(err);
       }

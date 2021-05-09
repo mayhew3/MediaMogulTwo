@@ -15,21 +15,12 @@ import {GetGameplaySessions} from '../actions/gameplay.session.action';
 })
 export class GameplaySessionService implements OnDestroy {
 
-  gameplaySessions: Observable<GameplaySession[]> = this.store.select(state => state.gameplaySessions).pipe(
-    map(model => model.gameplaySessions),
-    filter(gameplaySessions => !!gameplaySessions)
-  );
-
   private _gamesUrl = '/api/gameplaySessions';
 
   private _destroy$ = new Subject();
 
   constructor(private http: HttpClient,
-              private personService: PersonService,
-              private store: Store) {
-    this.personService.me$.subscribe(me => {
-      this.store.dispatch(new GetGameplaySessions(me.id));
-    });
+              private personService: PersonService) {
   }
 
   getGameplaySessions(game: Game): Observable<GameplaySession[]> {
