@@ -25,6 +25,11 @@ import {PlatformDetailComponent} from './components/platform-detail/platform-det
 import {MyPlatformsComponent} from './components/my-platforms/my-platforms.component';
 import {AuthHttpInterceptor, AuthModule} from '@auth0/auth0-angular';
 import {HTTP_INTERCEPTORS} from '@angular/common/http';
+import { ErrorNotificationComponent } from './components/error-notification/error-notification.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MyAuthService} from './services/my-auth.service';
 
 @NgModule({
   declarations: [
@@ -45,27 +50,36 @@ import {HTTP_INTERCEPTORS} from '@angular/common/http';
     SearchComponent,
     PlatformListComponent,
     PlatformDetailComponent,
-    MyPlatformsComponent
+    MyPlatformsComponent,
+    ErrorNotificationComponent
   ],
   imports: [
     BrowserModule,
     environment.httpModules,
     NgbModule,
     FormsModule,
+    MatProgressSpinnerModule,
+    MatSnackBarModule,
     AppRoutingModule,
     AuthModule.forRoot({
       domain: environment.domain,
       clientId: environment.clientID,
       redirectUri: `${window.location.origin}`,
       audience: 'https://media-mogul-two.herokuapp.com',
+      useRefreshTokens: true,
+      cacheLocation: 'localstorage',
+      scope: 'offline_access',
+      leeway: 80,
 
       // Specify configuration for the interceptor
       httpInterceptor: {
         allowedList: ['/api/*'],
       },
     }),
+    BrowserAnimationsModule,
   ],
   providers: [
+    MyAuthService,
     { provide: HTTP_INTERCEPTORS, useClass: AuthHttpInterceptor, multi: true },
   ],
   bootstrap: [AppComponent]

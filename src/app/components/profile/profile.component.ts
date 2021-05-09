@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {AuthService} from '@auth0/auth0-angular';
+import {Component} from '@angular/core';
+import {MyAuthService} from '../../services/my-auth.service';
 
 @Component({
   selector: 'mm-profile',
@@ -8,6 +8,6 @@ import {AuthService} from '@auth0/auth0-angular';
 })
 export class ProfileComponent {
 
-  constructor(public auth: AuthService) { }
+  constructor(public auth: MyAuthService) { }
 
 }

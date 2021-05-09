@@ -1,11 +1,11 @@
 import {Injectable, OnDestroy} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable, of, Subject} from 'rxjs';
-import {catchError, concatMap, filter, takeUntil, tap} from 'rxjs/operators';
+import {catchError, filter, mergeMap, takeUntil, tap} from 'rxjs/operators';
 import * as _ from 'underscore';
-import {AuthService} from '@auth0/auth0-angular';
 import {Person} from '../interfaces/Model/Person';
 import {ArrayUtil} from '../utility/ArrayUtil';
+import {MyAuthService} from './my-auth.service';
 
 @Injectable({
   providedIn: 'root'
@@ -13,20 +13,24 @@ import {ArrayUtil} from '../utility/ArrayUtil';
 export class PersonService implements OnDestroy {
   personsUrl = '/api/persons';
   cache: Person[];
+
+  isAdmin: boolean = null;
+  failedEmail = false;
+
+  me$ = this.auth.userEmail$.pipe(
+    mergeMap(email => this.getPersonWithEmail(email)),
+    tap(person => this.failedEmail = !person),
+    filter(person => !!person)
+  );
+
   private _destroy$ = new Subject();
 
-  me$ = this.authService.user$.pipe(
-    filter(user => !!user),
-    concatMap((user: any) => this.getPersonWithEmail(user.email)),
-    tap((person: Person) => {
-      this.isAdmin = person.user_role.value === 'admin';
-    })
-  );
-  isAdmin: boolean = null;
-
   constructor(private http: HttpClient,
-              private authService: AuthService) {
+              private auth: MyAuthService) {
     this.cache = [];
+    this.me$.subscribe(me => {
+      this.isAdmin = (me.user_role.value === 'admin');
+    });
   }
 
   getPersonWithEmail(email: string): Observable<Person> {
