@@ -1,8 +1,13 @@
 import {GameplaySession} from '../interfaces/Model/GameplaySession';
 import {Action, State, StateContext} from '@ngxs/store';
 import {Injectable} from '@angular/core';
-import {GetGameplaySessions} from '../actions/gameplay.session.action';
+import {AddGameplaySession, GetGameplaySessions} from '../actions/gameplay.session.action';
 import {Observable} from 'rxjs';
+import {HttpParams} from '@angular/common/http';
+import {ApiService} from '../services/api.service';
+import {tap} from 'rxjs/operators';
+import produce from 'immer';
+import _ from 'underscore';
 
 export class GameplaySessionStateModel {
   gameplaySessions: GameplaySession[];
@@ -16,8 +21,40 @@ export class GameplaySessionStateModel {
 })
 @Injectable()
 export class GameplaySessionState {
-  @Action(GetGameplaySessions)
-  getGameplaySessions({setState}: StateContext<GameplaySessionStateModel>): Observable<any> {
 
+  constructor(private api: ApiService) {
   }
+
+  @Action(GetGameplaySessions)
+  getGameplaySessions({setState}: StateContext<GameplaySessionStateModel>, action: GetGameplaySessions): Observable<any> {
+    const params = new HttpParams()
+      .set('person_id', action.person_id.toString());
+    return this.api.getAfterFullyConnected<any[]>('/api/gameplaySessions', params).pipe(
+      tap(result => {
+        setState(
+          produce(draft => {
+            draft.gameplaySessions = result;
+            _.each(draft.gameplaySessions, gs => gs.start_time = new Date(gs.start_time));
+          })
+        );
+      })
+    );
+  }
+
+  @Action(AddGameplaySession)
+  addGameplaySession({setState}: StateContext<GameplaySessionStateModel>, action: AddGameplaySession): void {
+    const data: GameplaySession = {
+      game_id: action.game_id,
+      minutes: action.minutes,
+      rating: action.rating,
+      person_id: action.person_id,
+      start_time: action.start_time
+    };
+    // todo: implement socket, so this gets called when new gameplaysession message received.
+    /*
+    setState(
+      produce(draft => )
+    );*/
+  }
+
 }

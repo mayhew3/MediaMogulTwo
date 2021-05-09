@@ -6,6 +6,16 @@ export class GetGameplaySessions {
   }
 }
 
+export class AddGameplaySession {
+  static readonly type = '[GameplaySession] Add';
+  constructor(public rating: number,
+              public game_id: number,
+              public minutes: number,
+              public start_time: Date,
+              public person_id: number) {
+  }
+}
+
 export class UpdateGameplaySession {
   static readonly type = '[GameplaySession] Update';
   constructor(public rating: number,
