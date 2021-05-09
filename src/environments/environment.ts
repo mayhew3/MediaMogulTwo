@@ -9,6 +9,7 @@ import {SocketService} from '../app/services/socket.service';
 import {LoggerService} from '../app/services/logger.service';
 import {InitSocketService} from '../app/services/init-socket.service';
 import {SocketServiceMock} from '../app/services/socket.mock.service';
+import {InitSocketMockService} from '../app/services/init-socket.mock.service';
 
 export const environment = {
   production: false,
@@ -20,7 +21,7 @@ export const environment = {
   domain: 'mayhew3.auth0.com',
   socketModule: {provide: SocketService, useClass: SocketServiceMock},
   loggerModule: {provide: LoggerService, useClass: LoggerService},
-  initSocketModule: {provide: InitSocketService, useClass: InitSocketService}
+  initSocketModule: {provide: InitSocketService, useClass: InitSocketMockService}
 };
 
 /*

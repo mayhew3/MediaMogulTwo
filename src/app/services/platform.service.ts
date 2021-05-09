@@ -74,10 +74,10 @@ export class PlatformService {
     this.apiService.executePutAfterFullyConnected('/api/gamePlatforms', data);
   }
 
-  addMyGlobalPlatform(myGlobalPlatform: MyGlobalPlatform): void {
+  addMyGlobalPlatform(myGlobalPlatformObj: any): void {
     this.personService.me$.subscribe(person => {
-      myGlobalPlatform.person_id = person.id;
-      const gamePlatform = myGlobalPlatform.platform;
+      myGlobalPlatformObj.person_id = person.id;
+      const gamePlatform = myGlobalPlatformObj.platform;
       this.apiService.executePostAfterFullyConnected('/api/myGlobalPlatforms', gamePlatform);
     });
   }

@@ -79,9 +79,11 @@ export class MyPlatformsComponent implements OnInit {
   }
 
   async addToMyPlatforms(platform: GamePlatform): Promise<void> {
-    const myGlobalPlatform = new MyGlobalPlatform();
-    myGlobalPlatform.game_platform_id = platform.id;
-    myGlobalPlatform.platform_name = platform.full_name;
+    const myGlobalPlatform = {
+      game_platform_id: platform.id,
+      platform_name: platform.full_name,
+      rank: undefined
+    };
     const gamePlatforms = this.platformsInGlobal();
     const ranks = _.map(gamePlatforms, mgp => mgp.myGlobalPlatform.rank);
     myGlobalPlatform.rank = _.max(ranks) > 0 ? _.max(ranks) + 1 : 1;

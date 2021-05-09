@@ -182,13 +182,13 @@ export class SearchComponent implements OnInit {
   }
 
   // noinspection JSMethodCanBeStatic
-  private createNewGamePlatform(platform: any): GamePlatform {
-    const gamePlatform = new GamePlatform();
-    gamePlatform.full_name = platform.name;
-    gamePlatform.short_name = platform.name;
-    gamePlatform.igdb_name = platform.name;
-    gamePlatform.igdb_platform_id = platform.id;
-    return gamePlatform;
+  private createNewGamePlatform(platform: any): any {
+    return {
+      full_name: platform.name,
+      short_name: platform.name,
+      igdb_name: platform.name,
+      igdb_platform_id: platform.id
+    };
   }
 
   async addGame(match: any, selectedPlatform: any): Promise<Game> {

@@ -23,4 +23,6 @@ export class SocketServiceMock {
   get isConnected$(): Observable<boolean> {
     return of(true);
   }
+
+  init(): void {}
 }
