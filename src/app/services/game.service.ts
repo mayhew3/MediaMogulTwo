@@ -13,6 +13,8 @@ import {MyGamePlatform} from '../interfaces/Model/MyGamePlatform';
 import {AvailableGamePlatform} from '../interfaces/Model/AvailableGamePlatform';
 import {MyGlobalPlatform} from '../interfaces/Model/MyGlobalPlatform';
 import {ArrayUtil} from '../utility/ArrayUtil';
+import {AddGameplaySession} from '../actions/gameplay.session.action';
+import {ApiService} from './api.service';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -35,6 +37,7 @@ export class GameService implements OnDestroy {
 
   constructor(private http: HttpClient,
               private personService: PersonService,
+              private apiService: ApiService,
               private platformService: PlatformService) {
     this.platformService.platforms.subscribe(platforms => {
       this.allPlatforms = platforms;
@@ -144,10 +147,8 @@ export class GameService implements OnDestroy {
     _.forEach(myGlobalPlatforms, myGlobalPlatform => myGlobalPlatform.moveChanges());
   }
 
-  async insertGameplaySession(gameplaySession: GameplaySession): Promise<GameplaySession> {
-    const returnObj = await gameplaySession.commit(this.http);
-    this.pushGameListChange();
-    return returnObj;
+  async insertGameplaySession(gameplaySession: GameplaySession): Promise<void> {
+    this.apiService.executePostAfterFullyConnected( '/api/gameplaySessions', gameplaySession);
   }
 
   async platformAboutToBeRemovedFromGlobal(gamePlatform: GamePlatform): Promise<void> {
