@@ -52,7 +52,7 @@ export class Game extends DataObject {
 
   brokenImage = false;
 
-  private _availablePlatforms: AvailableGamePlatform[] = [];
+  availablePlatforms: AvailableGamePlatform[] = [];
 
   constructor(private platformService: PlatformService,
               private allPlatforms: GamePlatform[]) {
@@ -79,11 +79,11 @@ export class Game extends DataObject {
 
   createAndAddAvailablePlatform(platformObj: any, gamePlatform: GamePlatform): void {
     const realAvailablePlatform = new AvailableGamePlatform(gamePlatform, this).initializedFromJSON(platformObj);
-    this._availablePlatforms.push(realAvailablePlatform);
+    this.availablePlatforms.push(realAvailablePlatform);
   }
 
   addToAvailablePlatforms(availableGamePlatform: AvailableGamePlatform): void {
-    this._availablePlatforms.push(availableGamePlatform);
+    this.availablePlatforms.push(availableGamePlatform);
     availableGamePlatform.game = this;
   }
 
@@ -124,7 +124,7 @@ export class Game extends DataObject {
   }
 
   get myPlatformsInGlobal(): MyGamePlatform[] {
-    return _.filter(this.myPlatforms, myPlatform => myPlatform.platform.isAvailableForMe());
+    return _.filter(this.myPlatforms, myPlatform => !!myPlatform.platform.myGlobalPlatform);
   }
 
   findPlatformWithIGDBID(igdbID: number): AvailableGamePlatform {
@@ -132,24 +132,20 @@ export class Game extends DataObject {
   }
 
   private removeTemporaryPlatforms(): void {
-    const temporaryPlatforms = _.filter(this._availablePlatforms, availablePlatform => availablePlatform.isTemporary());
-    _.forEach(temporaryPlatforms, availablePlatform => ArrayUtil.removeFromArray(this._availablePlatforms, availablePlatform));
+    const temporaryPlatforms = _.filter(this.availablePlatforms, availablePlatform => availablePlatform.isTemporary());
+    _.forEach(temporaryPlatforms, availablePlatform => ArrayUtil.removeFromArray(this.availablePlatforms, availablePlatform));
   }
 
   private static cloneArray(originalArray): any[] {
     return originalArray.slice();
   }
 
-  get availablePlatforms(): AvailableGamePlatform[] {
-    return Game.cloneArray(this._availablePlatforms);
-  }
-
   get addablePlatforms(): AvailableGamePlatform[] {
-    return _.filter(this._availablePlatforms, availablePlatform => availablePlatform.canAddToGame());
+    return _.filter(this.availablePlatforms, availablePlatform => availablePlatform.canAddToGame());
   }
 
   get availablePlatformsNotInGlobal(): AvailableGamePlatform[] {
-    return _.filter(this._availablePlatforms, availablePlatform => !availablePlatform.gamePlatform.isAvailableForMe());
+    return _.filter(this.availablePlatforms, availablePlatform => !availablePlatform.gamePlatform.myGlobalPlatform);
   }
 
   get myMutablePlatforms(): MyGamePlatform[] {
@@ -183,14 +179,7 @@ export class Game extends DataObject {
 
   getOrCreateGamePlatform(platformObj: any, allPlatforms: GamePlatform[]): GamePlatform {
     const foundPlatform = _.find(allPlatforms, platform => platform.id.value === platformObj.game_platform_id);
-    if (!foundPlatform) {
-      const newPlatform = new GamePlatform().initializedFromJSON(platformObj.gamePlatform);
-      this.platformService.addToPlatformsIfDoesntExist(newPlatform);
-      this.allPlatforms.push(newPlatform);
-      return newPlatform;
-    } else {
-      return foundPlatform;
-    }
+    return foundPlatform;
   }
 
   isOwned(): boolean {

@@ -41,20 +41,4 @@ export class GameplaySessionState {
     );
   }
 
-  @Action(AddGameplaySession)
-  addGameplaySession({setState}: StateContext<GameplaySessionStateModel>, action: AddGameplaySession): void {
-    const data: GameplaySession = {
-      game_id: action.game_id,
-      minutes: action.minutes,
-      rating: action.rating,
-      person_id: action.person_id,
-      start_time: action.start_time
-    };
-    // todo: implement socket, so this gets called when new gameplaysession message received.
-    /*
-    setState(
-      produce(draft => )
-    );*/
-  }
-
 }

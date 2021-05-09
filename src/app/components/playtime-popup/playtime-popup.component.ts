@@ -8,6 +8,7 @@ import {GameplaySession} from '../../interfaces/Model/GameplaySession';
 import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
 import * as _ from 'underscore';
 import {GameTime} from '../../interfaces/Utility/GameTime';
+import {PlatformService} from '../../services/platform.service';
 
 @Component({
   selector: 'mm-playtime-popup',
@@ -34,6 +35,7 @@ export class PlaytimePopupComponent implements OnInit {
 
   constructor(public activeModal: NgbActiveModal,
               private gameService: GameService,
+              private platformService: PlatformService,
               private calendar: NgbCalendar,
               private personService: PersonService) {
     this.model = calendar.getToday();
@@ -41,7 +43,8 @@ export class PlaytimePopupComponent implements OnInit {
   }
 
   async ngOnInit(): Promise<any> {
-    this.selectedPlatform = this.game.myPreferredPlatform.canAddPlaytime() ?
+    const availableGamePlatform = this.game.myPreferredPlatform.availableGamePlatform;
+    this.selectedPlatform = this.platformService.canAddToGame(availableGamePlatform) ?
       this.game.myPreferredPlatform :
       this.game.myMutablePlatforms[0];
     this.initializeDates();

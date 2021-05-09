@@ -113,11 +113,11 @@ export class SearchComponent implements OnInit {
         _.forEach(match.platforms, platform => {
           const existingGamePlatform = this.findPlatformWithIGDBID(platform.id);
           if (!!existingGamePlatform) {
-            platform.unavailablePlatform = !existingGamePlatform.isAvailableForMe();
+            platform.unavailablePlatform = !existingGamePlatform.myGlobalPlatform;
           }
           const availableGamePlatform = this.findExistingPlatformForGame(match, platform);
           if (!!availableGamePlatform) {
-            if (availableGamePlatform.platform.isAvailableForMe()) {
+            if (availableGamePlatform.platform.myGlobalPlatform) {
               platform.availableGamePlatform = availableGamePlatform;
               platform.myGamePlatform = !platform.availableGamePlatform ? undefined : platform.availableGamePlatform.myGamePlatform;
             } else {
@@ -148,14 +148,19 @@ export class SearchComponent implements OnInit {
     return this.gameService.addMyGamePlatform(availablePlatform, myGamePlatform);
   }
 
-  async getOrCreateGamePlatform(platform: any): Promise<GamePlatform> {
-    const existingPlatform = this.findPlatformWithIGDBID(platform.id);
-    if (!existingPlatform) {
-      const gamePlatform = this.createNewGamePlatform(platform);
-      return this.platformService.addPlatform(gamePlatform);
-    } else {
-      return existingPlatform;
-    }
+  getOrCreateGamePlatform(platform: any): Promise<GamePlatform> {
+    return new Promise((resolve) => {
+      const existingPlatform = this.findPlatformWithIGDBID(platform.id);
+      if (!existingPlatform) {
+        this.platformService.waitForPlatformAdded(platform.id).subscribe(addedPlatform => {
+          resolve(addedPlatform);
+        });
+        const gamePlatform = this.createNewGamePlatform(platform);
+        this.platformService.addPlatform(gamePlatform);
+      } else {
+        resolve(existingPlatform);
+      }
+    });
   }
 
   async getOrCreateAvailablePlatform(game: Game, platform: any): Promise<AvailableGamePlatform> {
@@ -179,10 +184,10 @@ export class SearchComponent implements OnInit {
   // noinspection JSMethodCanBeStatic
   private createNewGamePlatform(platform: any): GamePlatform {
     const gamePlatform = new GamePlatform();
-    gamePlatform.full_name.value = platform.name;
-    gamePlatform.short_name.value = platform.name;
-    gamePlatform.igdb_name.value = platform.name;
-    gamePlatform.igdb_platform_id.value = platform.id;
+    gamePlatform.full_name = platform.name;
+    gamePlatform.short_name = platform.name;
+    gamePlatform.igdb_name = platform.name;
+    gamePlatform.igdb_platform_id = platform.id;
     return gamePlatform;
   }
 
@@ -217,7 +222,7 @@ export class SearchComponent implements OnInit {
 
     for (const platform of match.platforms) {
       const availablePlatform = await this.getOrCreateAvailablePlatform(game, platform);
-      if (selectedPlatform.id === availablePlatform.platform.igdb_platform_id.value) {
+      if (selectedPlatform.id === availablePlatform.platform.igdb_platform_id) {
         selectedAvailablePlatform = availablePlatform;
       }
     }

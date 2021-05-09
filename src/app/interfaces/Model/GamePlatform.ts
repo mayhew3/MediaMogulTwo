@@ -1,40 +1,14 @@
 /* eslint-disable @typescript-eslint/naming-convention, no-underscore-dangle, id-blacklist, id-match */
-import {DataObject} from '../DataObject/DataObject';
 import {MyGlobalPlatform} from './MyGlobalPlatform';
 
-export class GamePlatform extends DataObject {
-  full_name = this.registerStringField('full_name', false);
-  short_name = this.registerStringField('short_name', false);
-  igdb_platform_id = this.registerIntegerField('igdb_platform_id', false);
-  igdb_name = this.registerStringField('igdb_name', false);
-  metacritic_uri = this.registerStringField('metacritic_uri', false);
+export class GamePlatform {
+  id: number;
+  full_name: string;
+  short_name: string;
+  igdb_platform_id: number;
+  igdb_name: string;
+  metacritic_uri: string;
 
   myGlobalPlatform: MyGlobalPlatform;
-
-  parent: GamePlatform;
-
-  initializedFromJSON(jsonObj: any): this {
-    super.initializedFromJSON(jsonObj);
-    if (!!jsonObj.myPlatform) {
-      this.myGlobalPlatform = new MyGlobalPlatform(this).initializedFromJSON(jsonObj.myPlatform);
-    }
-    return this;
-  }
-
-  isAvailableForMe(): boolean {
-    return !!this.myGlobalPlatform;
-  }
-
-  getApiMethod(): string {
-    return 'gamePlatforms';
-  }
-
-  canAddPlaytime(): boolean {
-    return this.full_name.value !== 'Steam';
-  }
-
-  isTemporary(): boolean {
-    return !this.id.value;
-  }
 
 }

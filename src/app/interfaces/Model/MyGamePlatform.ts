@@ -46,10 +46,6 @@ export class MyGamePlatform extends DataObject {
     return this;
   }
 
-  canAddPlaytime(): boolean {
-    return this.availableGamePlatform.canAddToGame();
-  }
-
   getProgressPercent(): number {
     const minutesPlayed = this.minutes_played.originalValue;
     const minutesToFinish = this.game.minutesToFinish;
@@ -71,7 +67,7 @@ export class MyGamePlatform extends DataObject {
   }
 
   isTemporary(): boolean {
-    return !this.id.value || this.platform.isTemporary();
+    return !this.id.value || !this.platform.id;
   }
 
   getApiMethod(): string {

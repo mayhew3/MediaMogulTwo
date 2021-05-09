@@ -53,7 +53,6 @@ export class GameDetailComponent implements OnInit {
               private platformService: PlatformService,
               private gameplaySessionService: GameplaySessionService) {
     this.platformService.platforms.subscribe(platforms => ArrayUtil.refreshArray(this.allPlatforms, platforms));
-    this.platformService.maybeRefreshCache();
   }
 
   ngOnInit(): void {
@@ -198,7 +197,7 @@ export class GameDetailComponent implements OnInit {
   // PLAYTIME
 
   showPlaytimeButton(): boolean {
-    return this.selectedPlatform.canAddPlaytime();
+    return this.platformService.canAddToGame(this.selectedPlatform.availableGamePlatform);
   }
 
   async openPlaytimePopup(): Promise<void> {

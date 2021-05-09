@@ -47,7 +47,6 @@ export class GameService implements OnDestroy {
         console.log(`GameService updated with ${platforms.length} platforms.`);
       }
     });
-    this.platformService.maybeRefreshCache();
   }
 
   // public observable for all changes to game list
@@ -153,7 +152,7 @@ export class GameService implements OnDestroy {
 
   async platformAboutToBeRemovedFromGlobal(gamePlatform: GamePlatform): Promise<void> {
     for (const game of this._dataStore.games) {
-      const matching = game.getOwnedPlatformWithID(gamePlatform.id.originalValue);
+      const matching = game.getOwnedPlatformWithID(gamePlatform.id);
 
       if (!!matching && matching.isManuallyPreferred()) {
         matching.preferred.value = false;

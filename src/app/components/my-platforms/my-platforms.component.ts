@@ -30,7 +30,7 @@ export class MyPlatformsComponent implements OnInit {
   }
 
   platformsInGlobal(): GamePlatform[] {
-    return _.sortBy(_.filter(this.allPlatforms, platform => platform.isAvailableForMe()), platform => platform.myGlobalPlatform.rank.originalValue);
+    return _.sortBy(_.filter(this.allPlatforms, platform => !!platform.myGlobalPlatform), platform => platform.myGlobalPlatform.rank.originalValue);
   }
 
   myGlobalPlatforms(): MyGlobalPlatform[] {
@@ -38,19 +38,19 @@ export class MyPlatformsComponent implements OnInit {
   }
 
   otherPlatforms(): GamePlatform[] {
-    return _.filter(this.allPlatforms, platform => !platform.isAvailableForMe());
+    return _.filter(this.allPlatforms, platform => !platform.myGlobalPlatform);
   }
 
   getCountOfOwnedGames(platform: GamePlatform): number {
     return _.filter(this.allGames, game => {
-      const matching = _.find(game.myPlatforms, myPlatform => myPlatform.availableGamePlatform.gamePlatform.id.originalValue === platform.id.originalValue);
+      const matching = _.find(game.myPlatforms, myPlatform => myPlatform.availableGamePlatform.gamePlatform.id.originalValue === platform.id);
       return !!matching;
     }).length;
   }
 
   getCountOfPreferredGames(platform: GamePlatform): number {
     return _.filter(this.allGames, game => {
-      const matching = _.find(game.myPlatforms, myPlatform => myPlatform.availableGamePlatform.gamePlatform.id.originalValue === platform.id.originalValue);
+      const matching = _.find(game.myPlatforms, myPlatform => myPlatform.availableGamePlatform.gamePlatform.id.originalValue === platform.id);
       return !!matching && matching.isManuallyPreferred();
     }).length;
   }

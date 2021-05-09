@@ -35,6 +35,7 @@ import {PersonState} from './states/person.state';
 import {NgxsReduxDevtoolsPluginModule} from '@ngxs/devtools-plugin';
 import {NgxsLoggerPluginModule} from '@ngxs/logger-plugin';
 import {InMemoryCallbacksService} from './services/in-memory-callbacks.service';
+import {GlobalPlatformState} from './states/global.platform.state';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import {InMemoryCallbacksService} from './services/in-memory-callbacks.service';
     MatSnackBarModule,
     AppRoutingModule,
     NgxsModule.forRoot([
-      PersonState
+      PersonState,
+      GlobalPlatformState
     ], {
       developmentMode: !environment.production
     }),

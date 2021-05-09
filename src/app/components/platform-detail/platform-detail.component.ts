@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {GamePlatform} from '../../interfaces/Model/GamePlatform';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import {PlatformService} from '../../services/platform.service';
@@ -8,19 +8,28 @@ import {PlatformService} from '../../services/platform.service';
   templateUrl: './platform-detail.component.html',
   styleUrls: ['./platform-detail.component.scss']
 })
-export class PlatformDetailComponent {
+export class PlatformDetailComponent implements OnInit {
   @Input() platform: GamePlatform;
+
+  full_name: string;
+  short_name: string;
+  metacritic_uri: string;
 
   constructor(private activeModal: NgbActiveModal,
               private platformService: PlatformService) { }
 
-  async close(): Promise<void> {
-    await this.platformService.updatePlatform(this.platform);
+  close(): void {
+    this.platformService.updatePlatform(this.platform, this.full_name, this.short_name, this.metacritic_uri);
     this.activeModal.close();
   }
 
   dismiss(): void {
-    this.platform.discardChanges();
     this.activeModal.dismiss();
+  }
+
+  ngOnInit(): void {
+    this.full_name = this.platform.full_name;
+    this.short_name = this.platform.short_name;
+    this.metacritic_uri = this.platform.metacritic_uri;
   }
 }

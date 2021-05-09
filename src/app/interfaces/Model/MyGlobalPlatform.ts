@@ -1,7 +1,5 @@
 /* eslint-disable @typescript-eslint/naming-convention, no-underscore-dangle, id-blacklist, id-match */
 import {DataObject} from '../DataObject/DataObject';
-import {AvailableGamePlatform} from './AvailableGamePlatform';
-import {Person} from './Person';
 import {GamePlatform} from './GamePlatform';
 
 export class MyGlobalPlatform extends DataObject {
@@ -13,8 +11,8 @@ export class MyGlobalPlatform extends DataObject {
 
   constructor(private gamePlatform: GamePlatform) {
     super();
-    this.platform_name.value = gamePlatform.full_name.value;
-    this.game_platform_id.value = gamePlatform.id.value;
+    this.platform_name.value = gamePlatform.full_name;
+    this.game_platform_id.value = gamePlatform.id;
   }
 
   get platform(): GamePlatform {
@@ -24,7 +22,7 @@ export class MyGlobalPlatform extends DataObject {
   initializedFromJSON(jsonObj: any): this {
     super.initializedFromJSON(jsonObj);
     if (!this.platform_name.value) {
-      this.platform_name.initializeValue(this.gamePlatform.full_name.value);
+      this.platform_name.initializeValue(this.gamePlatform.full_name);
     }
     return this;
   }

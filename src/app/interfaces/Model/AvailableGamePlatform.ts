@@ -15,19 +15,19 @@ export class AvailableGamePlatform extends DataObject {
   metacritic_matched = this.registerDateField('metacritic_matched', false);
   game_id = this.registerIntegerField('game_id', true);
 
-  constructor(private gamePlatform: GamePlatform,
+  constructor(public gamePlatform: GamePlatform,
               public game: Game) {
     super();
-    this.game_platform_id.value = gamePlatform.id.value;
+    this.game_platform_id.value = gamePlatform.id;
     this.game_id.value = game.id.value;
-    this.platform_name.value = gamePlatform.full_name.value;
+    this.platform_name.value = gamePlatform.full_name;
   }
 
 
   initializedFromJSON(jsonObj: any): this {
     super.initializedFromJSON(jsonObj);
     if (!this.platform_name.value) {
-      this.platform_name.initializeValue(this.gamePlatform.full_name.value);
+      this.platform_name.initializeValue(this.gamePlatform.full_name);
     }
     if (!!jsonObj.myPlatform) {
       this.myGamePlatform = new MyGamePlatform(this).initializedFromJSON(jsonObj.myPlatform);
@@ -39,16 +39,8 @@ export class AvailableGamePlatform extends DataObject {
     return this.gamePlatform;
   }
 
-  isOwned(): boolean {
-    return !!this.myGamePlatform;
-  }
-
-  canAddToGame(): boolean {
-    return this.gamePlatform.canAddPlaytime() && this.gamePlatform.isAvailableForMe();
-  }
-
   isTemporary(): boolean {
-    return !this.id.value || this.platform.isTemporary();
+    return !this.id.value || !this.platform.id;
   }
 
   getApiMethod(): string {

@@ -1,36 +1,45 @@
-import {Injectable, OnDestroy} from '@angular/core';
-import {BehaviorSubject, Observable, Subject} from 'rxjs';
+import {Injectable} from '@angular/core';
+import {Observable} from 'rxjs';
 import {GamePlatform} from '../interfaces/Model/GamePlatform';
 import {HttpClient} from '@angular/common/http';
-import {map, takeUntil} from 'rxjs/operators';
-import * as _ from 'underscore';
+import {filter, map} from 'rxjs/operators';
+import _ from 'underscore';
 import fast_sort from 'fast-sort';
 import {PersonService} from './person.service';
 import {MyGlobalPlatform} from '../interfaces/Model/MyGlobalPlatform';
-import {ArrayUtil} from '../utility/ArrayUtil';
+import {Game} from '../interfaces/Model/Game';
+import {AvailableGamePlatform} from '../interfaces/Model/AvailableGamePlatform';
+import {ApiService} from './api.service';
+import {Store} from '@ngxs/store';
+import {GetGlobalPlatforms} from '../actions/global.platform.action';
 
 @Injectable({
   providedIn: 'root'
 })
-export class PlatformService implements OnDestroy {
-  private _platforms$ = new BehaviorSubject<GamePlatform[]>([]);
-  private _platforms: GamePlatform[];
-  private _fetching = false;
-
-  private _destroy$ = new Subject();
+export class PlatformService {
 
   constructor(private http: HttpClient,
-              private personService: PersonService) { }
+              private apiService: ApiService,
+              private store: Store,
+              private personService: PersonService) {
+    this.personService.me$.subscribe(me => {
+      this.store.dispatch(new GetGlobalPlatforms(me.id));
+    });
+  }
 
   // public observable for all changes to platform list
   get platforms(): Observable<GamePlatform[]> {
-    return this._platforms$.asObservable();
+    return this.store.select(state => state.globalPlatforms).pipe(
+      filter(store => !!store),
+      map(store => store.globalPlatforms),
+      filter(globalPlatforms => !!globalPlatforms)
+    );
   }
 
   get myPlatforms(): Observable<GamePlatform[]> {
     return this.platforms.pipe(
       map((platforms: GamePlatform[]) => {
-        const filtered: GamePlatform[] = _.filter(platforms, platform => platform.isAvailableForMe());
+        const filtered: GamePlatform[] = _.filter(platforms, platform => !!platform.myGlobalPlatform);
         fast_sort(filtered)
           .asc(platform => platform.myGlobalPlatform.rank.originalValue);
         return filtered;
@@ -38,29 +47,28 @@ export class PlatformService implements OnDestroy {
     );
   }
 
-  maybeRefreshCache(): void {
-    if (!this._platforms) {
-      this._fetching = true;
-      this.refreshCache();
-    }
+  addPlatform(gamePlatform: GamePlatform): void {
+    this.apiService.executePostAfterFullyConnected('/api/gamePlatforms', gamePlatform);
   }
 
-  ngOnDestroy(): void {
-    this._destroy$.next();
-    this._destroy$.complete();
+  waitForPlatformAdded(igdb_platform_id: number): Observable<GamePlatform> {
+    return this.platforms.pipe(
+      map(globalPlatforms => _.findWhere(globalPlatforms, {igdb_platform_id})),
+      filter(platform => !!platform)
+    );
   }
 
-  async addPlatform(gamePlatform: GamePlatform): Promise<GamePlatform> {
-    const returnObj = await gamePlatform.commit(this.http);
-    this._platforms.push(returnObj);
-    this.pushPlatformListChange();
-    return returnObj;
-  }
-
-  async updatePlatform(gamePlatform: GamePlatform): Promise<GamePlatform> {
-    await gamePlatform.commit(this.http);
-    this.pushPlatformListChange();
-    return gamePlatform;
+  updatePlatform(gamePlatform: GamePlatform,
+                 full_name: string,
+                 short_name: string,
+                 metacritic_uri: string): void {
+    const data = {
+      id: gamePlatform.id,
+      full_name,
+      short_name,
+      metacritic_uri
+    };
+    this.apiService.executePutAfterFullyConnected('/api/gamePlatforms', data);
   }
 
   async addMyGlobalPlatform(myGlobalPlatform: MyGlobalPlatform): Promise<MyGlobalPlatform> {
@@ -69,7 +77,7 @@ export class PlatformService implements OnDestroy {
         myGlobalPlatform.person_id.value = person.id;
         const gamePlatform = myGlobalPlatform.platform;
         gamePlatform.myGlobalPlatform = await myGlobalPlatform.commit(this.http);
-        this.pushPlatformListChange();
+        // this.pushPlatformListChange();
         resolve(gamePlatform.myGlobalPlatform);
       });
     });
@@ -79,54 +87,19 @@ export class PlatformService implements OnDestroy {
     const gamePlatform = myGlobalPlatform.platform;
     await myGlobalPlatform.delete(this.http);
     delete gamePlatform.myGlobalPlatform;
-    this.pushPlatformListChange();
+    // this.pushPlatformListChange();
   }
 
-  async updateMyGlobalPlatform(myGlobalPlatform: MyGlobalPlatform): Promise<MyGlobalPlatform> {
-    await myGlobalPlatform.commit(this.http);
-    this.pushPlatformListChange();
-    return myGlobalPlatform;
+  addablePlatforms(game: Game): GamePlatform[] {
+    return _.filter(game.availablePlatforms, availableGamePlatform => this.canAddToGame(availableGamePlatform));
   }
 
-  addToPlatformsIfDoesntExist(gamePlatform: GamePlatform): void {
-    if (gamePlatform.isTemporary()) {
-      throw new Error('PlatformService cannot contain temporary platforms');
-    }
-    const existing = _.find(this._platforms, platform => platform.id.value === gamePlatform.id.value);
-    if (!existing) {
-      this._platforms.push(gamePlatform);
-      this.pushPlatformListChange();
-    }
-
+  canAddToGame(availableGamePlatform: AvailableGamePlatform): boolean {
+    return this.canAddPlaytime(availableGamePlatform.gamePlatform) && !!availableGamePlatform.gamePlatform.myGlobalPlatform;
   }
 
-  private refreshCache(): void {
-    this.personService.me$.subscribe(person => {
-      const personID = person.id;
-      const payload = {
-        person_id: personID.toString()
-      };
-      const options = {
-        params: payload
-      };
-      this.http
-        .get<any[]>('/api/gamePlatforms', options)
-        .pipe(takeUntil(this._destroy$))
-        .subscribe(platformObjs => {
-          this._platforms = this.convertObjectsToPlatforms(platformObjs);
-          fast_sort(this._platforms).asc(platform => platform.id.originalValue);
-          this.pushPlatformListChange();
-          this._fetching = false;
-        });
-    });
-  }
-
-  private pushPlatformListChange(): void {
-    this._platforms$.next(ArrayUtil.cloneArray(this._platforms));
-  }
-
-  private convertObjectsToPlatforms(platformObjs: any[]): GamePlatform[] {
-    return _.map(platformObjs, platformObj => new GamePlatform().initializedFromJSON(platformObj));
+  canAddPlaytime(gamePlatform: GamePlatform): boolean {
+    return gamePlatform.full_name !== 'Steam';
   }
 
 }
