@@ -6,6 +6,7 @@ import * as _ from 'underscore';
 import {Person} from '../interfaces/Model/Person';
 import {ArrayUtil} from '../utility/ArrayUtil';
 import {MyAuthService} from './my-auth.service';
+import {ApiService} from './api.service';
 
 @Injectable({
   providedIn: 'root'
@@ -26,10 +27,12 @@ export class PersonService implements OnDestroy {
   private _destroy$ = new Subject();
 
   constructor(private http: HttpClient,
-              private auth: MyAuthService) {
+              private auth: MyAuthService,
+              private apiService: ApiService) {
     this.cache = [];
     this.me$.subscribe(me => {
       this.isAdmin = (me.user_role.value === 'admin');
+      this.apiService.meChanged(me);
     });
   }
 

@@ -1,0 +1,41 @@
+@use 'sass:color';
+@import '../solar_variables';
+
+.splashBackground {
+}
+
+.frontLogo {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  filter: drop-shadow(1px 1px 10px $black);
+}
+
+.wideContainer {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: color.scale($body-bg, $alpha: -10%);
+}
+
+.centerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.textContainer {
+  text-align: center;
+  background-color: $body-bg;
+  padding: 30px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 0.19rem black;
+}
+
+.signInButton {
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-color: black;
+  border-width: 2px;
+}
