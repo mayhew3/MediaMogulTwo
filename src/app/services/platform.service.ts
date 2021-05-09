@@ -65,9 +65,11 @@ export class PlatformService {
                  metacritic_uri: string): void {
     const data = {
       id: gamePlatform.id,
-      full_name,
-      short_name,
-      metacritic_uri
+      changedFields: {
+        full_name,
+        short_name,
+        metacritic_uri
+      }
     };
     this.apiService.executePutAfterFullyConnected('/api/gamePlatforms', data);
   }
