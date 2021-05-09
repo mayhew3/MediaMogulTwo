@@ -30,7 +30,8 @@ export class MyPlatformsComponent implements OnInit {
   }
 
   platformsInGlobal(): GamePlatform[] {
-    return _.sortBy(_.filter(this.allPlatforms, (platform: GamePlatform) => !!platform.myGlobalPlatform), (platform: GamePlatform) => platform.myGlobalPlatform.rank);
+    const myPlatforms = _.filter(this.allPlatforms, (platform: GamePlatform) => !!platform.myGlobalPlatform);
+    return _.sortBy(myPlatforms, (platform: GamePlatform) => platform.myGlobalPlatform.rank);
   }
 
   myGlobalPlatforms(): MyGlobalPlatform[] {
