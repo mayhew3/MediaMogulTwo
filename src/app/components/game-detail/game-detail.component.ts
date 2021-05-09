@@ -70,7 +70,7 @@ export class GameDetailComponent implements OnInit {
 
   sortSessions(): void {
     fast_sort(this.gameplaySessions)
-      .desc(session => session.start_time.originalValue);
+      .desc(session => session.start_time);
   }
 
   toggleTitleEdit(): void {

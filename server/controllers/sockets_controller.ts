@@ -30,7 +30,7 @@ export const initIO = (in_io: Record<string, any>): void => {
       addClientForPerson(person_id, client);
     }
 
-    initAllRooms(client, person_id);
+    initAllRooms(client);
 
     client.on('disconnect', () => {
       console.log('Client disconnected. Removing from array.');
@@ -44,11 +44,7 @@ export const initIO = (in_io: Record<string, any>): void => {
 
 };
 
-const initAllRooms = (client, person_id): void => {
-  if (!!person_id) {
-    // initPersonRoom(client, person_id);
-  }
-  // initPersonalChannels(client);
+const initAllRooms = (client): void => {
   initGlobalChannels(client);
 };
 
