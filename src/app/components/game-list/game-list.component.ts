@@ -9,7 +9,7 @@ import {GameOrdering} from '../../interfaces/OrderBy/GameOrdering';
 import {OrderingDirection} from './OrderingDirection';
 import {GameFilterWithOptions} from '../../interfaces/Filters/GameFilterWithOptions';
 import {GameFilterOption} from '../../interfaces/Filters/GameFilterOption';
-import {ArrayService} from '../../services/array.service';
+import {ArrayUtil} from '../../utility/ArrayUtil';
 
 @Component({
   selector: 'mm-game-list',
@@ -19,7 +19,7 @@ import {ArrayService} from '../../services/array.service';
 export class GameListComponent implements OnInit{
   @Input() title: string;
   @Input() pageSize: number;
-  @Input() baseFilter: GameFilter;
+  @Input() baseFilter: GameFilterWithOptions;
   @Input() changeableFilters: GameFilterWithOptions[];
   @Input() orderings: GameOrdering[];
   nailedDownFilters: GameFilterWithOptions[];
@@ -34,15 +34,14 @@ export class GameListComponent implements OnInit{
   visibleOptions: Map<GameFilterWithOptions, GameFilterOption[]>;
 
   constructor(private modalService: NgbModal,
-              private gameService: GameService,
-              private arrayService: ArrayService) {
+              private gameService: GameService) {
   }
 
   async ngOnInit(): Promise<any> {
     this.visibleOptions = new Map<GameFilterWithOptions, GameFilterOption[]>();
     this.selectedOrdering = this.orderings[0];
-    this.nailedDownFilters = this.arrayService.cloneArray(this.changeableFilters);
-    this.nailedDownOrderings = this.arrayService.cloneArray(this.orderings);
+    this.nailedDownFilters = ArrayUtil.cloneArray(this.changeableFilters);
+    this.nailedDownOrderings = ArrayUtil.cloneArray(this.orderings);
     this.sortAndFilterGames();
   }
 
@@ -50,12 +49,12 @@ export class GameListComponent implements OnInit{
     return !this.initializing;
   }
 
-  async changeOrdering(ordering: GameOrdering) {
+  changeOrdering(ordering: GameOrdering): void {
     this.selectedOrdering = ordering;
     this.sortAndFilterGames();
   }
 
-  sortAndFilterGames() {
+  sortAndFilterGames(): void {
     this.gameService.games.subscribe(allGames => {
 
       const allFilters = this.getAllFilters();
@@ -69,7 +68,8 @@ export class GameListComponent implements OnInit{
     });
   }
 
-  private sortGames() {
+  /* eslint-disable @typescript-eslint/explicit-function-return-type */
+  private sortGames(): void {
     const isAscending = OrderingDirection[this.selectedOrdering.direction] === OrderingDirection.asc;
     if (isAscending) {
       // noinspection TypeScriptValidateJSTypes
@@ -89,16 +89,16 @@ export class GameListComponent implements OnInit{
   }
 
   applyAll(games: Game[], filters: GameFilter[]): Game[] {
-    let filtered = this.arrayService.cloneArray(games);
+    let filtered = ArrayUtil.cloneArray(games);
     _.forEach(filters, filter => {
       // bind() returns a copy of a function with 'this' bound to an object.
-      filtered = _.filter(filtered, filter.apply.bind(filter))
+      filtered = _.filter(filtered, filter.apply.bind(filter));
     });
     return filtered;
   }
 
   private getAllFilters(): GameFilter[] {
-    const allFilters = this.arrayService.cloneArray(this.nailedDownFilters);
+    const allFilters = ArrayUtil.cloneArray(this.nailedDownFilters);
     if (!!this.baseFilter) {
       allFilters.push(this.baseFilter);
     }
@@ -119,8 +119,8 @@ export class GameListComponent implements OnInit{
     return _.without(allFilters, filter);
   }
 
-  updateVisibleOptions(games: Game[]) {
-    for (let filter of this.nailedDownFilters) {
+  updateVisibleOptions(games: Game[]): void {
+    for (const filter of this.nailedDownFilters) {
       this.visibleOptions.set(filter, this.getUsedOptionsOnly(filter, games));
     }
   }
@@ -130,7 +130,7 @@ export class GameListComponent implements OnInit{
     const filteredGames = this.applyAll(games, otherFilters);
 
     const filteredOptions: GameFilterOption[] = [];
-    for (let option of filter.getRegularOptions()) {
+    for (const option of filter.getRegularOptions()) {
       const gamesForOption = _.filter(filteredGames, game => filter.gamePassesOption(game, option));
       if (gamesForOption.length > 0) {
         filteredOptions.push(option);
@@ -139,7 +139,7 @@ export class GameListComponent implements OnInit{
     return filteredOptions;
   }
 
-  toggleOption(option: GameFilterOption, parentFilter: GameFilterWithOptions) {
+  toggleOption(option: GameFilterOption, parentFilter: GameFilterWithOptions): void {
     const regularOptions = _.where(parentFilter.options, {special: false});
     const specialOptions = _.where(parentFilter.options, {special: true});
     if (option.special) {

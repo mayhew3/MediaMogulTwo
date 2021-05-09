@@ -7,7 +7,7 @@ const { SpecReporter } = require('jasmine-spec-reporter');
 /**
  * @type { import("protractor").Config }
  */
-exports.config = {
+export const config = {
   allScriptsTimeout: 11000,
   specs: [
     './src/**/*.e2e-spec.ts'

@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/quotes */
+/* eslint-disable quote-props */
 export const MockIGDBMatches = [{
   'summary': 'Sequel to the acclaimed Portal (2007), Portal 2 pits the protagonist of the original game, Chell, and her new robot friend, Wheatley, against more puzzles conceived by GLaDOS, an A.I. with the sole purpose of testing the Portal Gun\'s mechanics and taking revenge on Chell for the events of Portal. As a result of several interactions and revelations, Chell once again pushes to escape Aperture Science Labs.',
   'keywords': [{'name': 'comedy', 'id': 350}, {'name': 'first person shooter', 'id': 453}, {

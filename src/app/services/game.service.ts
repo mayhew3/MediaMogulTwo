@@ -1,11 +1,10 @@
 import {Injectable, OnDestroy} from '@angular/core';
 import {Game} from '../interfaces/Model/Game';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {ArrayService} from './array.service';
 import * as _ from 'underscore';
 import {GameplaySession} from '../interfaces/Model/GameplaySession';
 import {PersonService} from './person.service';
-import {BehaviorSubject, Subject} from 'rxjs';
+import {BehaviorSubject, Observable, Subject} from 'rxjs';
 import {PlatformService} from './platform.service';
 import {GamePlatform} from '../interfaces/Model/GamePlatform';
 import {Person} from '../interfaces/Model/Person';
@@ -13,6 +12,7 @@ import {filter, takeUntil} from 'rxjs/operators';
 import {MyGamePlatform} from '../interfaces/Model/MyGamePlatform';
 import {AvailableGamePlatform} from '../interfaces/Model/AvailableGamePlatform';
 import {MyGlobalPlatform} from '../interfaces/Model/MyGlobalPlatform';
+import {ArrayUtil} from '../utility/ArrayUtil';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -34,7 +34,6 @@ export class GameService implements OnDestroy {
   private gameRefreshCount = 0;
 
   constructor(private http: HttpClient,
-              private arrayService: ArrayService,
               private personService: PersonService,
               private platformService: PlatformService) {
     this.platformService.platforms.subscribe(platforms => {
@@ -49,12 +48,12 @@ export class GameService implements OnDestroy {
   }
 
   // public observable for all changes to game list
-  get games() {
+  get games(): Observable<Game[]> {
     return this._games$.asObservable();
   }
 
   // trigger fetching of game list if it doesn't exist already.
-  maybeRefreshCache() {
+  maybeRefreshCache(): void {
     if (this._dataStore.games.length === 0 && !this._fetching) {
       this._fetching = true;
       this.refreshCache();
@@ -151,7 +150,7 @@ export class GameService implements OnDestroy {
     return returnObj;
   }
 
-  async platformAboutToBeRemovedFromGlobal(gamePlatform: GamePlatform) {
+  async platformAboutToBeRemovedFromGlobal(gamePlatform: GamePlatform): Promise<void> {
     for (const game of this._dataStore.games) {
       const matching = game.getOwnedPlatformWithID(gamePlatform.id.originalValue);
 
@@ -166,7 +165,7 @@ export class GameService implements OnDestroy {
 
   // PRIVATE CACHE MANAGEMENT METHODS
 
-  private refreshCache() {
+  private refreshCache(): void {
     this.personService.me$.subscribe(person => {
       this.me = person;
       this.platformService.platforms
@@ -195,8 +194,8 @@ export class GameService implements OnDestroy {
   }
 
   // re-pushes full game list out to all subscribers. Call this after any changes are made.
-  private pushGameListChange() {
-    this._games$.next(this.arrayService.cloneArray(this._dataStore.games));
+  private pushGameListChange(): void {
+    this._games$.next(ArrayUtil.cloneArray(this._dataStore.games));
   }
 
   private convertObjectsToGames(gameObjs: any[], platforms: GamePlatform[]): Game[] {

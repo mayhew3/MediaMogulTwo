@@ -2,12 +2,12 @@ import {Injectable, OnDestroy} from '@angular/core';
 import {BehaviorSubject, Observable, Subject} from 'rxjs';
 import {GamePlatform} from '../interfaces/Model/GamePlatform';
 import {HttpClient} from '@angular/common/http';
-import {ArrayService} from './array.service';
 import {map, takeUntil} from 'rxjs/operators';
 import * as _ from 'underscore';
 import fast_sort from 'fast-sort';
 import {PersonService} from './person.service';
 import {MyGlobalPlatform} from '../interfaces/Model/MyGlobalPlatform';
+import {ArrayUtil} from '../utility/ArrayUtil';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +20,6 @@ export class PlatformService implements OnDestroy {
   private _destroy$ = new Subject();
 
   constructor(private http: HttpClient,
-              private arrayService: ArrayService,
               private personService: PersonService) { }
 
   // public observable for all changes to platform list
@@ -39,7 +38,7 @@ export class PlatformService implements OnDestroy {
     );
   }
 
-  maybeRefreshCache() {
+  maybeRefreshCache(): void {
     if (!this._platforms) {
       this._fetching = true;
       this.refreshCache();
@@ -49,35 +48,6 @@ export class PlatformService implements OnDestroy {
   ngOnDestroy(): void {
     this._destroy$.next();
     this._destroy$.complete();
-  }
-
-  private refreshCache() {
-    this.personService.me$.subscribe(person => {
-      const personID = person.id.value;
-      const payload = {
-        person_id: personID.toString()
-      };
-      const options = {
-        params: payload
-      };
-      this.http
-        .get<any[]>('/api/gamePlatforms', options)
-        .pipe(takeUntil(this._destroy$))
-        .subscribe(platformObjs => {
-          this._platforms = this.convertObjectsToPlatforms(platformObjs);
-          fast_sort(this._platforms).asc(platform => platform.id.originalValue);
-          this.pushPlatformListChange();
-          this._fetching = false;
-        });
-    });
-  }
-
-  private pushPlatformListChange() {
-    this._platforms$.next(this.arrayService.cloneArray(this._platforms));
-  }
-
-  private convertObjectsToPlatforms(platformObjs: any[]): GamePlatform[] {
-    return _.map(platformObjs, platformObj => new GamePlatform().initializedFromJSON(platformObj));
   }
 
   async addPlatform(gamePlatform: GamePlatform): Promise<GamePlatform> {
@@ -129,4 +99,34 @@ export class PlatformService implements OnDestroy {
     }
 
   }
+
+  private refreshCache(): void {
+    this.personService.me$.subscribe(person => {
+      const personID = person.id.value;
+      const payload = {
+        person_id: personID.toString()
+      };
+      const options = {
+        params: payload
+      };
+      this.http
+        .get<any[]>('/api/gamePlatforms', options)
+        .pipe(takeUntil(this._destroy$))
+        .subscribe(platformObjs => {
+          this._platforms = this.convertObjectsToPlatforms(platformObjs);
+          fast_sort(this._platforms).asc(platform => platform.id.originalValue);
+          this.pushPlatformListChange();
+          this._fetching = false;
+        });
+    });
+  }
+
+  private pushPlatformListChange(): void {
+    this._platforms$.next(ArrayUtil.cloneArray(this._platforms));
+  }
+
+  private convertObjectsToPlatforms(platformObjs: any[]): GamePlatform[] {
+    return _.map(platformObjs, platformObj => new GamePlatform().initializedFromJSON(platformObj));
+  }
+
 }

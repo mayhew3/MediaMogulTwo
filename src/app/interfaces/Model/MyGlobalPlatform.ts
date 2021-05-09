@@ -1,4 +1,4 @@
-/* tslint:disable:variable-name */
+/* eslint-disable @typescript-eslint/naming-convention, no-underscore-dangle, id-blacklist, id-match */
 import {DataObject} from '../DataObject/DataObject';
 import {AvailableGamePlatform} from './AvailableGamePlatform';
 import {Person} from './Person';
@@ -7,8 +7,8 @@ import {GamePlatform} from './GamePlatform';
 export class MyGlobalPlatform extends DataObject {
 
   game_platform_id = this.registerIntegerField('game_platform_id', true);
-  platform_name = this.registerStringField("platform_name", true);
-  rank = this.registerIntegerField("rank", true);
+  platform_name = this.registerStringField('platform_name', true);
+  rank = this.registerIntegerField('rank', true);
   person_id = this.registerIntegerField('person_id', true);
 
   constructor(private gamePlatform: GamePlatform) {

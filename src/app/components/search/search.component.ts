@@ -1,8 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {GamePlatform} from '../../interfaces/Model/GamePlatform';
 import {Person} from '../../interfaces/Model/Person';
 import {GameService} from '../../services/game.service';
-import {ArrayService} from '../../services/array.service';
 import {PlatformService} from '../../services/platform.service';
 import {PersonService} from '../../services/person.service';
 import * as moment from 'moment';
@@ -10,6 +9,7 @@ import {AvailableGamePlatform} from '../../interfaces/Model/AvailableGamePlatfor
 import {Game} from '../../interfaces/Model/Game';
 import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
 import * as _ from 'underscore';
+import {ArrayUtil} from '../../utility/ArrayUtil';
 
 @Component({
   selector: 'mm-search',
@@ -27,13 +27,12 @@ export class SearchComponent implements OnInit {
   me: Person;
 
   constructor(private gameService: GameService,
-              private arrayService: ArrayService,
               private platformService: PlatformService,
               private personService: PersonService) {
   }
 
-  ngOnInit() {
-    this.platformService.platforms.subscribe(platforms => this.arrayService.refreshArray(this.allPlatforms, platforms));
+  ngOnInit(): void {
+    this.platformService.platforms.subscribe(platforms => ArrayUtil.refreshArray(this.allPlatforms, platforms));
     this.personService.me$.subscribe(person => this.me = person);
   }
 
@@ -104,11 +103,11 @@ export class SearchComponent implements OnInit {
     return _.filter(match.platforms, platform => platform.unavailablePlatform);
   }
 
-  async getMatches() {
+  async getMatches(): Promise<void> {
     this.loading = true;
     try {
       const matches = await this.gameService.getIGDBMatches(this.searchTitle);
-      this.arrayService.refreshArray(this.matches, matches);
+      ArrayUtil.refreshArray(this.matches, matches);
       _.forEach(this.matches, match => {
         match.existingGame = this.findMatchingGame(match);
         _.forEach(match.platforms, platform => {
@@ -134,8 +133,8 @@ export class SearchComponent implements OnInit {
     }
   }
 
-  async handleAddClick(match: any, platform: any) {
-    let game: Game = this.findMatchingGame(match);
+  async handleAddClick(match: any, platform: any): Promise<void> {
+    const game: Game = this.findMatchingGame(match);
     if (!game) {
       await this.addGame(match, platform);
     } else {
@@ -178,7 +177,7 @@ export class SearchComponent implements OnInit {
   }
 
   // noinspection JSMethodCanBeStatic
-  private createNewGamePlatform(platform: any) {
+  private createNewGamePlatform(platform: any): GamePlatform {
     const gamePlatform = new GamePlatform();
     gamePlatform.full_name.value = platform.name;
     gamePlatform.short_name.value = platform.name;
@@ -187,54 +186,50 @@ export class SearchComponent implements OnInit {
     return gamePlatform;
   }
 
-  addGame(match: any, selectedPlatform: any): Promise<Game> {
-    return new Promise<Game>(async next => {
-      const gameObj = new Game(this.platformService, this.allPlatforms);
+  async addGame(match: any, selectedPlatform: any): Promise<Game> {
+    const gameObj = new Game(this.platformService, this.allPlatforms);
 
-      gameObj.title.value = match.name;
-      gameObj.igdb_id.value = match.id;
+    gameObj.title.value = match.name;
+    gameObj.igdb_id.value = match.id;
 
-      gameObj.igdb_rating.value = match.rating;
-      gameObj.igdb_rating_count.value = match.rating_count;
-      gameObj.igdb_popularity.value = match.popularity;
-      gameObj.igdb_slug.value = match.slug;
-      gameObj.igdb_summary.value = match.summary;
-      gameObj.igdb_updated.value = this.getDateFrom(match.updated_at);
+    gameObj.igdb_rating.value = match.rating;
+    gameObj.igdb_rating_count.value = match.rating_count;
+    gameObj.igdb_popularity.value = match.popularity;
+    gameObj.igdb_slug.value = match.slug;
+    gameObj.igdb_summary.value = match.summary;
+    gameObj.igdb_updated.value = this.getDateFrom(match.updated_at);
 
-      const releaseDates = _.map(match.release_dates, release_date => release_date.date);
-      const compact = _.compact(releaseDates);
-      const minUnixDate = _.min(compact);
+    const releaseDates = _.map(match.release_dates, release_date => release_date.date);
+    const compact = _.compact(releaseDates);
+    const minUnixDate = _.min(compact);
 
-      gameObj.igdb_release_date.value = this.getDateFrom(minUnixDate);
+    gameObj.igdb_release_date.value = this.getDateFrom(minUnixDate);
 
-      if (!!match.cover) {
-        gameObj.igdb_poster.value = match.cover.image_id;
-        gameObj.igdb_width.value = match.cover.width;
-        gameObj.igdb_height.value = match.cover.height;
+    if (!!match.cover) {
+      gameObj.igdb_poster.value = match.cover.image_id;
+      gameObj.igdb_width.value = match.cover.width;
+      gameObj.igdb_height.value = match.cover.height;
+    }
+
+    const game = await this.gameService.addGame(gameObj);
+
+    let selectedAvailablePlatform;
+
+    for (const platform of match.platforms) {
+      const availablePlatform = await this.getOrCreateAvailablePlatform(game, platform);
+      if (selectedPlatform.id === availablePlatform.platform.igdb_platform_id.value) {
+        selectedAvailablePlatform = availablePlatform;
       }
+    }
 
-      const game = await this.gameService.addGame(gameObj);
+    if (!!selectedAvailablePlatform) {
+      // noinspection JSUnusedAssignment
+      await this.addToMyPlatforms(selectedAvailablePlatform, match, selectedPlatform);
+    } else {
+      throw new Error(`No available platform found for platform name '${selectedPlatform.name}'`);
+    }
 
-      let selectedAvailablePlatform;
-
-      for (const platform of match.platforms) {
-        const availablePlatform = await this.getOrCreateAvailablePlatform(game, platform);
-        if (selectedPlatform.id === availablePlatform.platform.igdb_platform_id.value) {
-          selectedAvailablePlatform = availablePlatform;
-        }
-      }
-
-      if (!!selectedAvailablePlatform) {
-        // noinspection JSUnusedAssignment
-        await this.addToMyPlatforms(selectedAvailablePlatform, match, selectedPlatform);
-      } else {
-        throw new Error(`No available platform found for platform name '${selectedPlatform.name}'`);
-      }
-
-      next(game);
-
-    });
-
+    return game;
 
   }
 }

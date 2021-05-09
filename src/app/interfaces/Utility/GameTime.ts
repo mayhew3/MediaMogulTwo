@@ -1,11 +1,11 @@
-import * as moment from "moment";
+import * as moment from 'moment';
 
 export class GameTime {
-  // tslint:disable-next-line:variable-name
+  // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
   private _duration: moment.Duration;
-  // tslint:disable-next-line:variable-name
+  // eslint-disable-next-line @typescript-eslint/naming-convention,no-underscore-dangle,id-blacklist,id-match
   private _hours: number;
-  // tslint:disable-next-line:variable-name
+  // eslint-disable-next-line @typescript-eslint/naming-convention, no-underscore-dangle, id-blacklist, id-match
   private _minutes: number;
 
   initialize(minutesPlayed: number): this {
@@ -53,14 +53,14 @@ export class GameTime {
     return this._duration?.asMinutes();
   }
 
-  private updateDuration() {
+  private updateDuration(): void {
     const hoursDuration = moment.duration(!this._hours ? 0 : this._hours, 'hours');
     const minutesDuration = moment.duration(!this._minutes ? 0 : this._minutes, 'minutes');
 
     this._duration = hoursDuration.add(minutesDuration);
   }
 
-  private updateHoursAndMinutes() {
+  private updateHoursAndMinutes(): void {
     this._hours = Math.floor(this._duration.asHours());
     this._minutes = this._duration.minutes();
   }

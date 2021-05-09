@@ -1,4 +1,5 @@
-
+/* eslint-disable  @typescript-eslint/quotes */
+/* eslint-disable quote-props */
 export const MockGameplaySessions = [
   {
     "start_time": "2014-10-15 03:44:06.807",

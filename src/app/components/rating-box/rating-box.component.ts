@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {ColorTransformService} from '../../services/color-transform.service';
 
 @Component({
@@ -6,26 +6,23 @@ import {ColorTransformService} from '../../services/color-transform.service';
   templateUrl: './rating-box.component.html',
   styleUrls: ['./rating-box.component.scss']
 })
-export class RatingBoxComponent implements OnInit {
+export class RatingBoxComponent {
   @Input() value: number;
   @Input() maxValue: number;
   @Input() faded: boolean;
 
   constructor(private colorTransformService: ColorTransformService) { }
 
-  ngOnInit(): void {
-  }
-
   getValue(): number {
-    return this.getFormattedNumber(this.value);
+    return +this.getFormattedNumber(this.value);
   }
 
-  getFormattedNumber(value) {
+  getFormattedNumber(value): string {
     if (!!this.value) {
       const floored = Math.floor(value);
       const remainder = value - floored;
       if (remainder < .05) {
-        return floored;
+        return floored.toString();
       } else {
         return value.toFixed(1);
       }
@@ -35,7 +32,7 @@ export class RatingBoxComponent implements OnInit {
   }
 
   colorStyle(): string {
-    return this.colorTransformService.colorStyle(this.value, this.maxValue, this.faded);;
+    return this.colorTransformService.colorStyle(this.value, this.maxValue, this.faded);
   }
 
   boxShadow(): string {

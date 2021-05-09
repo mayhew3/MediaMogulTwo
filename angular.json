@@ -119,15 +119,11 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
             ]
           }
         },
@@ -148,6 +144,7 @@
   },
   "defaultProject": "media-mogul-two",
   "cli": {
-    "analytics": "eccd4a51-5159-4fdd-953f-16a0059f90b2"
+    "analytics": "eccd4a51-5159-4fdd-953f-16a0059f90b2",
+    "defaultCollection": "@angular-eslint/schematics"
   }
 }

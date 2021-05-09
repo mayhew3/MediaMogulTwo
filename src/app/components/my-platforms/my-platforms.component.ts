@@ -69,7 +69,7 @@ export class MyPlatformsComponent implements OnInit {
     return ranks.length !== uniqRanks.length;
   }
 
-  async updateRanks() {
+  async updateRanks(): Promise<void> {
     if (this.hasDuplicates()) {
       throw new Error(`Can't update ranks with duplicates.`);
     }
@@ -77,15 +77,15 @@ export class MyPlatformsComponent implements OnInit {
     await this.gameService.updateMultipleGlobalPlatforms(changedPlatforms);
   }
 
-  async addToMyPlatforms(platform: GamePlatform) {
+  async addToMyPlatforms(platform: GamePlatform): Promise<void> {
     const myGlobalPlatform = new MyGlobalPlatform(platform);
     const gamePlatforms = this.platformsInGlobal();
-    const ranks = _.map(gamePlatforms, myGlobalPlatform => myGlobalPlatform.myGlobalPlatform.rank.value);
+    const ranks = _.map(gamePlatforms, mgp => mgp.myGlobalPlatform.rank.value);
     myGlobalPlatform.rank.value = _.max(ranks) > 0 ? _.max(ranks) + 1 : 1;
     await this.platformService.addMyGlobalPlatform(myGlobalPlatform);
   }
 
-  async removeFromMyPlatforms(platform: GamePlatform) {
+  async removeFromMyPlatforms(platform: GamePlatform): Promise<void> {
     await this.gameService.platformAboutToBeRemovedFromGlobal(platform);
     await this.platformService.removeMyGlobalPlatform(platform.myGlobalPlatform);
   }

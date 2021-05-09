@@ -36,12 +36,12 @@ export abstract class FieldValue<T> {
     return this.fieldName;
   }
 
-  initializeValue(value: T) {
+  initializeValue(value: T): void {
     this._originalValue = value;
     this._value = value;
   }
 
-  initializeValueFromString(valueString: string) {
+  initializeValueFromString(valueString: string): void {
     const convertedValue = this.getConversion(valueString);
     this.initializeValue(convertedValue);
     this.wasText = true;
@@ -55,15 +55,15 @@ export abstract class FieldValue<T> {
     }
   }
 
-  changeValueFromString(valueString: string) {
+  changeValueFromString(valueString: string): void {
     this.value = this.getConversion(valueString);
   }
 
-  discardChange() {
+  discardChange(): void {
     this._value = this._originalValue;
   }
 
-  nullValue() {
+  nullValue(): void {
     this.explicitNull = true;
     this._value = null;
   }
@@ -76,7 +76,7 @@ export abstract class FieldValue<T> {
     return (this._originalValue !== null && this.wasText && !this.isText);
   }
 
-  private valueHasChanged() {
+  private valueHasChanged(): boolean {
     return !this.isSame(this._originalValue, this._value);
   }
 
@@ -95,7 +95,7 @@ export abstract class FieldValue<T> {
     }
   }
 
-  update() {
+  update(): void {
     const changed = this.getChangedValue();
     if (changed !== undefined) {
       this._value = changed;

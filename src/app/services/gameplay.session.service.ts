@@ -1,7 +1,6 @@
 import {Injectable, OnDestroy} from '@angular/core';
 import {Game} from '../interfaces/Model/Game';
 import {HttpClient} from '@angular/common/http';
-import {ArrayService} from './array.service';
 import * as _ from 'underscore';
 import {GameplaySession} from '../interfaces/Model/GameplaySession';
 import {PersonService} from './person.service';
@@ -18,7 +17,6 @@ export class GameplaySessionService implements OnDestroy {
   private _destroy$ = new Subject();
 
   constructor(private http: HttpClient,
-              private arrayService: ArrayService,
               private personService: PersonService) {
 
   }
@@ -37,11 +35,7 @@ export class GameplaySessionService implements OnDestroy {
         return this.http.get<GameplaySession[]>(this._gamesUrl, options)
           .pipe(takeUntil(this._destroy$));
       }),
-      map((sessionArr: any[]) => {
-        return _.map(sessionArr, sessionObj => {
-          return new GameplaySession().initializedFromJSON(sessionObj)
-        })
-      })
+      map((sessionArr: any[]) => _.map(sessionArr, sessionObj => new GameplaySession().initializedFromJSON(sessionObj)))
     );
   }
 

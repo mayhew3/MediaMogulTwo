@@ -1,17 +1,19 @@
-let express = require('express');
-const jwt = require("express-jwt");
-const jwks = require("jwks-rsa");
+import {Express} from 'express';
 
-module.exports = function(app) {
-  let games = require('./controllers/games_controller');
-  let persons = require('./controllers/persons_controller');
-  let platforms = require('./controllers/platforms_controller');
-  let addGame = require('./controllers/add_game_controller');
+const express = require('express');
+const jwt = require('express-jwt');
+const jwks = require('jwks-rsa');
+
+module.exports = (app: Express): void => {
+  const games = require('./controllers/games_controller');
+  const persons = require('./controllers/persons_controller');
+  const platforms = require('./controllers/platforms_controller');
+  const addGame = require('./controllers/add_game_controller');
 
   const authConfig = {
     domain: 'mayhew3.auth0.com',
     audience: 'https://media-mogul-two.herokuapp.com'
-  }
+  };
 
   const authCheck = jwt({
     secret: jwks.expressJwtSecret({
@@ -25,7 +27,28 @@ module.exports = function(app) {
     algorithms: ['RS256']
   });
 
-  let router = express.Router();
+  const router = express.Router();
+
+  const privateGet = (endpoint, callback): void => {
+    router.get(endpoint, authCheck, callback);
+  };
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const publicGet = (endpoint, callback): void => {
+    router.get(endpoint, callback);
+  };
+
+  const privatePost = (endpoint, callback): void => {
+    router.post(endpoint, authCheck, callback);
+  };
+
+  const privatePut = (endpoint, callback): void => {
+    router.put(endpoint, authCheck, callback);
+  };
+
+  const privateDelete = (endpoint, callback): void => {
+    router.delete(endpoint, authCheck, callback);
+  };
 
   privateGet('/games', games.getGames);
   privatePut('/games', games.updateGame);
@@ -55,35 +78,16 @@ module.exports = function(app) {
 
   app.use('/api', router);
 
-  function privateGet(endpoint, callback) {
-    router.get(endpoint, authCheck, callback);
-  }
-
-  function publicGet(endpoint, callback) {
-    router.get(endpoint, callback);
-  }
-
-  function privatePost(endpoint, callback) {
-    router.post(endpoint, authCheck, callback);
-  }
-
-  function privatePut(endpoint, callback) {
-    router.put(endpoint, authCheck, callback);
-  }
-
-  function privateDelete(endpoint, callback) {
-    router.delete(endpoint, authCheck, callback);
-  }
-
   // error handlers
 
   // development error handler
   // will print stacktrace
   if (app.get('env') === 'development') {
-    app.use(function (err, req, res, next) {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    app.use((err, req, res, next) => {
       console.log(err.message);
       console.log(err.stack);
-      console.log("Status: " + err.status);
+      console.log('Status: ' + err.status);
       res.status(err.status || 500).json({
         message: err.message,
         error: err
@@ -93,10 +97,11 @@ module.exports = function(app) {
 
   // production error handler
   // no stacktraces leaked to user
-  app.use(function (err, req, res, next) {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  app.use((err, req, res, next) => {
     console.log(err.message);
     console.log(err.stack);
-    console.log("Status: " + err.status);
+    console.log('Status: ' + err.status);
     res.status(err.status || 500).json({
       message: err.message,
       error: err

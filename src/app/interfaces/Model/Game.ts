@@ -1,4 +1,4 @@
-/* tslint:disable:variable-name */
+/* eslint-disable @typescript-eslint/naming-convention, no-underscore-dangle, id-blacklist, id-match */
 import {DataObject} from '../DataObject/DataObject';
 import {GamePlatform} from './GamePlatform';
 import * as _ from 'underscore';
@@ -77,12 +77,12 @@ export class Game extends DataObject {
     return availablePlatforms;
   }
 
-  createAndAddAvailablePlatform(platformObj: any, gamePlatform: GamePlatform) {
+  createAndAddAvailablePlatform(platformObj: any, gamePlatform: GamePlatform): void {
     const realAvailablePlatform = new AvailableGamePlatform(gamePlatform, this).initializedFromJSON(platformObj);
     this._availablePlatforms.push(realAvailablePlatform);
   }
 
-  addToAvailablePlatforms(availableGamePlatform: AvailableGamePlatform) {
+  addToAvailablePlatforms(availableGamePlatform: AvailableGamePlatform): void {
     this._availablePlatforms.push(availableGamePlatform);
     availableGamePlatform.game = this;
   }
@@ -131,7 +131,7 @@ export class Game extends DataObject {
     return _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform.igdb_platform_id.value === igdbID);
   }
 
-  private removeTemporaryPlatforms() {
+  private removeTemporaryPlatforms(): void {
     const temporaryPlatforms = _.filter(this._availablePlatforms, availablePlatform => availablePlatform.isTemporary());
     _.forEach(temporaryPlatforms, availablePlatform => ArrayUtil.removeFromArray(this._availablePlatforms, availablePlatform));
   }

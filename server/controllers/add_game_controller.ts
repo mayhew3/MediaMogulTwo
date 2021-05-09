@@ -1,7 +1,7 @@
 import axios from 'axios';
 const tokens = require('./igdb_token_service');
 
-exports.getIGDBMatches = async function (request, response) {
+export const getIGDBMatches = async (request: Record<string, any>, response: Record<string, any>): Promise<any> => {
   const game_title = request.query.game_title;
 
   console.log('Finding IGDB matches for game: ' + game_title);
@@ -32,9 +32,9 @@ exports.getIGDBMatches = async function (request, response) {
   const options = {
     headers: {
       'Content-Type': 'application/json',
-      'Accept': 'application/json',
+      Accept: 'application/json',
       'Accept-Language': 'en',
-      'Authorization': 'Bearer ' + token,
+      Authorization: 'Bearer ' + token,
       'Client-ID': clientID
     },
     json: true
@@ -43,8 +43,8 @@ exports.getIGDBMatches = async function (request, response) {
   axios.post(igdbUrl, params, options).then(matches => {
     response.json(matches.data);
   }).catch(err => {
-    console.log(err.response.data[0].cause)
+    console.log(err.response.data[0].cause);
   });
 
 
-}
+};
