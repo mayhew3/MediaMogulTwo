@@ -57,7 +57,7 @@ export class GameCardComponent {
   }
 
   showProgressBar(): boolean {
-    return this.game.isOwned() && this.game.natural_end && this.game.getProgressPercent() !== undefined;
+    return this.game.isOwned() && this.game.data.natural_end && this.game.getProgressPercent() !== undefined;
   }
 
   showAddGameButton(): boolean {

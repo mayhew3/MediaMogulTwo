@@ -8,7 +8,7 @@
            [game]="game"
            (click)="openDetailPopup()"
            default="../../../assets/GenericSeries.gif"
-           alt="{{game.title.originalValue}}"/>
+           alt="{{game.title}}"/>
 
     </div>
 
@@ -17,11 +17,11 @@
       <div class="row">
 
         <div class="col-12 m-1">
-          {{game.title.originalValue}}
+          {{game.title}}
         </div>
 
         <div class="col-12 m-1" *ngIf="game.myPreferredPlatform">
-          {{game.myPreferredPlatform.platform_name.originalValue}}
+          {{game.myPreferredPlatform.platform_name}}
         </div>
 
         <div class="col-12 m-1" *ngIf="game.isOwned() && !!game.getLastPlayed()">
@@ -45,7 +45,7 @@
 
         <div class="col-12 m-1"
              *ngIf="showAddGameButton()">
-          Platform: {{getSingleAvailablePlatform().platform_name.originalValue}}
+          Platform: {{getSingleAvailablePlatform().platform_name}}
         </div>
 
         <div class="col-12 m-1"

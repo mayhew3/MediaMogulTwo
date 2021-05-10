@@ -22,7 +22,7 @@
 
           <div class="col-12">
 
-            <h3 *ngIf="!titleEditMode">{{game.title.value}} <span (click)="toggleTitleEdit()"
+            <h3 *ngIf="!titleEditMode">{{game.title}} <span (click)="toggleTitleEdit()"
                                                                   *ngIf="personService.isAdmin">
               <svg class="bi bi-pencil" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 011.414 0l2 2a1 1 0 010 1.414l-9 9a1 1 0 01-.39.242l-3 1a1 1 0 01-1.266-1.265l1-3a1 1 0 01.242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z" clip-rule="evenodd"/>
@@ -36,7 +36,7 @@
               <input type="text"
                      name="gameTitle"
                      class="form-control darkInput"
-                     [(ngModel)]="game.title.value"
+                     [(ngModel)]="editedTitle"
                      (ngModelChange)="onFieldEdit()"/>
               <div class="input-group-append">
                 <button class="btn btn-secondary"
@@ -64,7 +64,7 @@
                     [ngbNavItem]="platform"
                     class="nav-item">
                   <a ngbNavLink
-                     class="nav-link">{{platform.platform_name.originalValue}}</a>
+                     class="nav-link">{{platform.platform_name}}</a>
                   <ng-template ngbNavContent>
 
                     <div *ngIf="hasSelectedPlatform()">
@@ -99,7 +99,7 @@
                                        id="rating"
                                        name="rating"
                                        class="darkInput form-control form-control-lg"
-                                       [(ngModel)]="selectedPlatform.rating.value"
+                                       [(ngModel)]="selectedPlatform.data.rating"
                                        (ngModelChange)="onFieldEdit()"/>
                               </div>
 
@@ -120,7 +120,7 @@
                                          id="finalScore"
                                          name="finalScore"
                                          class="darkInput form-control form-control-lg"
-                                         [(ngModel)]="selectedPlatform.final_score.value"
+                                         [(ngModel)]="selectedPlatform.data.final_score"
                                          (ngModelChange)="onFieldEdit()"/>
                                 </div>
                               </div>
@@ -133,7 +133,7 @@
                                          id="replay"
                                          name="replay"
                                          class="darkInput form-control form-control-lg"
-                                         [(ngModel)]="selectedPlatform.replay_score.value"
+                                         [(ngModel)]="selectedPlatform.data.replay_score"
                                          (ngModelChange)="onFieldEdit()"/>
                                 </div>
                               </div>
@@ -197,13 +197,13 @@
                                 <div class="row"
                                      *ngFor="let session of getFilteredSessions()">
                                   <div class="col">
-                                    {{session.start_time.originalValue | date: 'yyyy-MM-dd'}}
+                                    {{session.start_time | date: 'yyyy-MM-dd'}}
                                   </div>
                                   <div class="col">
-                                    {{session.minutes.originalValue}}
+                                    {{session.minutes}}
                                   </div>
                                   <div class="col">
-                                    {{session.rating.originalValue}}
+                                    {{session.rating}}
                                   </div>
                                 </div>
 
@@ -279,7 +279,7 @@
                    id="metacriticHint"
                    class="darkInput form-control"
                    name="metacriticHint"
-                   [(ngModel)]="game.metacritic_hint.value"
+                   [(ngModel)]="game.data.metacritic_hint"
                    (ngModelChange)="onFieldEdit()"/>
           </div>
 
@@ -288,7 +288,7 @@
             <div class="custom-control custom-switch">
               <label for="naturalEnd">Natural End</label><br>
               <mm-big-checkbox id="naturalEnd"
-                               [value]="game.natural_end.originalValue"
+                               [value]="game.data.natural_end"
                                (valueChanged)="onNaturalEndEdit($event)"></mm-big-checkbox>
             </div>
           </div>
@@ -300,7 +300,7 @@
                    id="howlong"
                    name="howlong"
                    class="darkInput form-control"
-                   [(ngModel)]="game.howlong_id.value"
+                   [(ngModel)]="game.data.howlong_id"
                    (ngModelChange)="onFieldEdit()"/>
           </div>
 
@@ -311,7 +311,7 @@
                    id="giantbomb"
                    name="giantbomb"
                    class="darkInput form-control"
-                   [(ngModel)]="game.giantbomb_id.value"
+                   [(ngModel)]="game.data.giantbomb_id"
                    (ngModelChange)="onFieldEdit()"/>
           </div>
 
@@ -329,15 +329,15 @@
                  src="{{game.getImageUrl()}}"
                  [game]="game"
                  default="../../../assets/GenericSeries.gif"
-                 alt="{{game.title.originalValue}}"/>
+                 alt="{{game.title}}"/>
           </div>
         </div>
 
         <!-- RELEASE DATE -->
         <div class="row" *ngIf="!titleEditMode">
-          <div class="col-12" *ngIf="!!game.igdb_release_date.originalValue">
+          <div class="col-12" *ngIf="!!game.data.igdb_release_date">
             <span class="small">Released:</span><br>
-            {{game.igdb_release_date.originalValue | date: 'yyyy-MM-dd'}}
+            {{game.data.igdb_release_date | date: 'yyyy-MM-dd'}}
           </div>
         </div>
 
@@ -369,17 +369,17 @@
       <div class="row"
            *ngFor="let availablePlatform of game.availablePlatforms">
         <div class="col">
-          {{availablePlatform.platform_name.value}}
+          {{availablePlatform.platform_name}}
         </div>
         <div class="col">
-          {{availablePlatform.metacritic.value}}
+          {{availablePlatform.metacritic}}
         </div>
 
         <div class="col">
-          {{availablePlatform.metacritic_matched.value | date: 'yyyy-MM-dd'}}
+          {{availablePlatform.metacritic_matched | date: 'yyyy-MM-dd'}}
         </div>
         <div class="col">
-          {{availablePlatform.metacritic_page.value}}
+          {{availablePlatform.metacritic_page}}
         </div>
 
       </div>
@@ -419,28 +419,28 @@
         <div class="row"
              *ngFor="let myPlatform of game.myPlatformsInGlobal">
           <div class="col">
-            {{myPlatform.platform_name.value}}
+            {{myPlatform.platform_name}}
           </div>
           <div class="col">
-            {{myPlatform.rating.value}}
+            {{myPlatform.data.rating}}
           </div>
           <div class="col">
-            {{myPlatform.last_played.value | date: 'yyyy-MM-dd'}}
+            {{myPlatform.data.last_played | date: 'yyyy-MM-dd'}}
           </div>
           <div class="col">
-            {{myPlatform.minutes_played.value}}
+            {{myPlatform.data.minutes_played}}
           </div>
           <div class="col" *ngIf="anyPlatformsAreFinished()">
-            {{myPlatform.finished_date.value | date: 'yyyy-MM-dd'}}
+            {{myPlatform.data.finished_date | date: 'yyyy-MM-dd'}}
           </div>
           <div class="col" *ngIf="anyPlatformsAreFinished()">
-            {{myPlatform.final_score.value}}
+            {{myPlatform.data.final_score}}
           </div>
           <div class="col" *ngIf="anyPlatformsAreFinished()">
-            {{myPlatform.replay_score.value}}
+            {{myPlatform.data.replay_score}}
           </div>
           <div class="col" *ngIf="anyPlatformsAreFinished()">
-            {{myPlatform.replay_reason.value}}
+            {{myPlatform.data.replay_reason}}
           </div>
         </div>
 
@@ -468,19 +468,19 @@
 
       <div class="row">
         <div class="col">
-          {{game.timetotal.value}}
+          {{game.data.timetotal}}
         </div>
         <div class="col">
-          {{game.steamid.value}}
+          {{game.data.steamid}}
         </div>
         <div class="col">
-          {{game.steam_cloud.value}}
+          {{game.data.steam_cloud}}
         </div>
         <div class="col">
-          {{game.steam_page_gone.value}}
+          {{game.data.steam_page_gone}}
         </div>
         <div class="col">
-          {{game.steam_title.value}}
+          {{game.data.steam_title}}
         </div>
       </div>
 
@@ -504,19 +504,19 @@
 
       <div class="row">
         <div class="col">
-          {{game.howlong_title.value}}
+          {{game.data.howlong_title}}
         </div>
         <div class="col">
-          {{game.howlong_extras.value}}
+          {{game.data.howlong_extras}}
         </div>
         <div class="col">
-          {{game.giantbomb_name.value}}
+          {{game.data.giantbomb_name}}
         </div>
         <div class="col">
-          {{game.igdb_width.value}}
+          {{game.data.igdb_width}}
         </div>
         <div class="col">
-          {{game.igdb_height.value}}
+          {{game.data.igdb_height}}
         </div>
       </div>
 
@@ -540,19 +540,19 @@
 
       <div class="row">
         <div class="col">
-          {{game.igdb_rating.value}}
+          {{game.data.igdb_rating}}
         </div>
         <div class="col">
-          {{game.igdb_rating_count.value}}
+          {{game.data.igdb_rating_count}}
         </div>
         <div class="col">
-          {{game.igdb_release_date.value | date: 'yyyy-MM-dd'}}
+          {{game.data.igdb_release_date | date: 'yyyy-MM-dd'}}
         </div>
         <div class="col">
-          {{game.igdb_popularity.value}}
+          {{game.data.igdb_popularity}}
         </div>
         <div class="col">
-          {{game.igdb_slug.value}}
+          {{game.data.igdb_slug}}
         </div>
       </div>
 
@@ -564,7 +564,7 @@
 
       <div class="row">
         <div class="col">
-          {{game.igdb_updated.value | date: 'yyyy-MM-dd'}}
+          {{game.data.igdb_updated | date: 'yyyy-MM-dd'}}
         </div>
       </div>
 

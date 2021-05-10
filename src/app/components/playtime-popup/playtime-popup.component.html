@@ -11,13 +11,13 @@
 <div class="modal-body"
      *ngIf="!!game">
 
-  <h3>{{game.title.value}}</h3>
+  <h3>{{game.title}}</h3>
 
   <div class="row">
     <div class="col-4">
 
       <!-- Single Platform-->
-      <h4 *ngIf="myMutablePlatforms.length === 1">{{selectedPlatform.platform_name.originalValue}}</h4>
+      <h4 *ngIf="myMutablePlatforms.length === 1">{{selectedPlatform.platform_name}}</h4>
 
       <!-- Multi Platform Dropdown -->
 
@@ -27,7 +27,7 @@
                 id="platformDropdown"
                 name="platformDropdown"
                 ngbDropdownToggle>
-          {{selectedPlatform.platform_name.originalValue}}
+          {{selectedPlatform.platform_name}}
         </button>
         <div ngbDropdownMenu
              [attr.aria-labelledby]="'dropdownPlatform'">
@@ -36,7 +36,7 @@
             *ngFor="let platform of platformsExceptSelected()"
             ngbDropdownItem
             (click)="selectPlatform(platform)">
-            {{platform.platform_name.originalValue}}
+            {{platform.platform_name}}
           </button>
         </div>
       </div>
@@ -207,7 +207,7 @@
             <div class="form-row">
               <label class="col-4 col-form-label" for="finalScoreInput">Final</label>
               <div class="col-8">
-                <input [(ngModel)]="selectedPlatform.final_score.value"
+                <input [(ngModel)]="selectedPlatform.data.final_score"
                        class="darkInput form-control"
                        type="number"
                        id="finalScoreInput"
@@ -221,7 +221,7 @@
             <div class="form-row">
               <label class="col-4 col-form-label" for="replayInput">Replay</label>
               <div class="col-8">
-                <input [(ngModel)]="selectedPlatform.replay_score.value"
+                <input [(ngModel)]="selectedPlatform.data.replay_score"
                        class="darkInput form-control"
                        type="number"
                        id="replayInput"

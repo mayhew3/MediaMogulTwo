@@ -30,7 +30,7 @@ export class GameDetailComponent implements OnInit {
   changedPersonFields = {};
   finished = false;
 
-  editedTitle;
+  editedTitle: string;
 
   titleEditMode = false;
 
@@ -58,7 +58,7 @@ export class GameDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.selectedPlatform = this.game.myPreferredPlatform;
-    this.finished = !!this.selectedPlatform && !!this.selectedPlatform.finished_date;
+    this.finished = !!this.selectedPlatform && !!this.selectedPlatform.data.finished_date;
     this.editedTitle = this.game.title;
     this.initializeDates(this.selectedPlatform);
 
@@ -78,7 +78,7 @@ export class GameDetailComponent implements OnInit {
   }
 
   showProgressBar(): boolean {
-    return this.game.isOwned() && this.game.natural_end && this.game.getProgressPercent() !== undefined;
+    return this.game.isOwned() && this.game.data.natural_end && this.game.getProgressPercent() !== undefined;
   }
 
   hasMultiplePlatforms(): boolean {
@@ -155,7 +155,7 @@ export class GameDetailComponent implements OnInit {
   }
 
   isFinished(myPlatform: MyGamePlatform): boolean {
-    return !!myPlatform.finished_date;
+    return !!myPlatform.data.finished_date;
   }
 
   hasSelectedPlatform(): boolean {
@@ -187,7 +187,7 @@ export class GameDetailComponent implements OnInit {
   }
 
   dismiss(): void {
-    this.game.discardChanges();
+    // this.game.discardChanges();
     this.activeModal.dismiss('Cross Click');
   }
 
@@ -217,7 +217,7 @@ export class GameDetailComponent implements OnInit {
   initializeDates(selectedPlatform: MyGamePlatform): void {
     this.original = new GameTime();
     this.timeTotal = new GameTime();
-    this.original.initialize(selectedPlatform.minutes_played);
+    this.original.initialize(selectedPlatform.data.minutes_played);
     this.timeTotal.initialize(this.game.minutesToFinish);
   }
 

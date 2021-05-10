@@ -43,7 +43,7 @@ export class AddPlatformsComponent {
   }
 
   dismiss(): void {
-    this.game.discardChanges();
+    // this.game.discardChanges();
     this.activeModal.dismiss();
   }
 }

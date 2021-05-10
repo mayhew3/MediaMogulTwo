@@ -19,10 +19,10 @@ import {ArrayUtil} from '../../utility/ArrayUtil';
 export class GameListComponent implements OnInit{
   @Input() title: string;
   @Input() pageSize: number;
-  @Input() baseFilter: GameFilterWithOptions;
+  @Input() baseFilter: GameFilter;
   @Input() changeableFilters: GameFilterWithOptions[];
   @Input() orderings: GameOrdering[];
-  nailedDownFilters: GameFilterWithOptions[];
+  nailedDownFilters: GameFilter[];
   nailedDownOrderings: GameOrdering[];
   selectedOrdering: GameOrdering;
   filteredGames: Game[] = [];
@@ -121,7 +121,10 @@ export class GameListComponent implements OnInit{
 
   updateVisibleOptions(games: Game[]): void {
     for (const filter of this.nailedDownFilters) {
-      this.visibleOptions.set(filter, this.getUsedOptionsOnly(filter, games));
+      if (filter.hasOptions()) {
+        const filterWithOptions = filter as GameFilterWithOptions;
+        this.visibleOptions.set(filterWithOptions, this.getUsedOptionsOnly(filterWithOptions, games));
+      }
     }
   }
 

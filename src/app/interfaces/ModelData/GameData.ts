@@ -43,6 +43,8 @@ export interface GameData {
   igdb_summary: string;
   igdb_updated: Date;
 
+  date_added: Date;
+
   availablePlatforms: AvailableGamePlatform[];
 
 }

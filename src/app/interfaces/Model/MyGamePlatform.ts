@@ -6,7 +6,7 @@ import {MyGamePlatformData} from '../ModelData/MyGamePlatformData';
 
 export class MyGamePlatform {
 
-  constructor(public myGamePlatformData: MyGamePlatformData,
+  constructor(public data: MyGamePlatformData,
               public availableGamePlatform: AvailableGamePlatform) {
   }
 
@@ -14,12 +14,16 @@ export class MyGamePlatform {
     return this.availableGamePlatform.gamePlatform;
   }
 
+  get platform_name(): string {
+    return this.data.platform_name;
+  }
+
   get game(): Game {
     return this.availableGamePlatform.game;
   }
 
   get id(): number {
-    return this.myGamePlatformData.id;
+    return this.data.id;
   }
 
 /*
@@ -33,7 +37,7 @@ export class MyGamePlatform {
 */
 
   getProgressPercent(): number {
-    const minutesPlayed = this.myGamePlatformData.minutes_played;
+    const minutesPlayed = this.data.minutes_played;
     const minutesToFinish = this.game.minutesToFinish;
 
     if (!minutesToFinish) {
@@ -49,11 +53,11 @@ export class MyGamePlatform {
   }
 
   isManuallyPreferred(): boolean {
-    return this.myGamePlatformData.preferred === true;
+    return this.data.preferred === true;
   }
 
   isTemporary(): boolean {
-    return !this.myGamePlatformData.id || !this.platform.id;
+    return !this.data.id || !this.platform.id;
   }
 
   getApiMethod(): string {

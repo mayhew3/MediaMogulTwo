@@ -135,20 +135,19 @@ export class SearchComponent implements OnInit {
   }
 
   async handleAddClick(match: any, platform: any): Promise<void> {
-    const game: Game = this.findMatchingGame(match);
+    /*const game: Game = this.findMatchingGame(match);
     if (!game) {
       // await this.addGame(match, platform);
     } else {
       // await this.addToMyPlatforms(game, match, platform);
-    }
+    }*/
   }
-/*
-  async addExistingWithMyPlatform(availablePlatform: AvailableGamePlatform): Promise<MyGamePlatform> {
-    const myGamePlatform = new MyGamePlatform(availablePlatform);
+
+  async addExistingWithMyPlatform(availablePlatform: AvailableGamePlatform): Promise<void> {
+    /*const myGamePlatform = new MyGamePlatform(availablePlatform);
     myGamePlatform.rating = this.rating;
-    return this.gameService.addMyGamePlatform(availablePlatform, myGamePlatform);
+    return this.gameService.addMyGamePlatform(availablePlatform, myGamePlatform);*/
   }
-  */
 /*
   getOrCreateGamePlatform(platform: any): Promise<GamePlatform> {
     return new Promise((resolve) => {

@@ -25,9 +25,9 @@ export class MyCloudGameFilter extends GameFilterWithOptions {
 
   gamePassesOption(game: Game, option: GameFilterOption): boolean {
     if (option.value === true) {
-      return game.steam_cloud === true && game.ownsPlatformWithName('Steam');
+      return game.data.steam_cloud === true && game.ownsPlatformWithName('Steam');
     } else {
-      return game.steam_cloud === false;
+      return game.data.steam_cloud === false;
     }
   }
 

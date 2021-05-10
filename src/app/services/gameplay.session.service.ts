@@ -23,7 +23,7 @@ export class GameplaySessionService implements OnDestroy {
               private personService: PersonService) {
   }
 
-  getGameplaySessions(game: Game): Observable<GameplaySession[]> {
+  getGameplaySessions(game: Game): Observable<any[]> {
     return this.personService.me$.pipe(
       concatMap((me: Person) => {
         const personID = me.id;
@@ -37,7 +37,7 @@ export class GameplaySessionService implements OnDestroy {
         return this.http.get<GameplaySession[]>(this._gamesUrl, options)
           .pipe(takeUntil(this._destroy$));
       }),
-      map((sessionArr: any[]) => _.map(sessionArr, sessionObj => new GameplaySession().initializedFromJSON(sessionObj)))
+      map((sessionArr: any[]) => _.map(sessionArr, () => {}))
     );
   }
 

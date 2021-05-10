@@ -10,15 +10,19 @@ export class Game {
 
   brokenImage = false;
 
-  constructor(public gameData: GameData) {
+  constructor(public data: GameData) {
   }
 
   get id(): number {
-    return this.gameData.id;
+    return this.data.id;
+  }
+
+  get title(): string {
+    return this.data.title;
   }
 
   get availablePlatforms(): AvailableGamePlatform[] {
-    return this.gameData.availablePlatforms;
+    return this.data.availablePlatforms;
   }
 /*
 
@@ -57,7 +61,7 @@ export class Game {
   }
 
   hasPlatformWithID(platformID: number): boolean {
-    const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.gamePlatform.id === platformID);
+    const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.game_platform_id === platformID);
     return !!existing;
   }
 
@@ -107,12 +111,12 @@ export class Game {
   }
 
   getImageUrl(): string {
-    if (!!this.gameData.igdb_poster && this.gameData.igdb_poster !== '') {
-      return 'https://images.igdb.com/igdb/image/upload/t_720p/' + this.gameData.igdb_poster +  '.jpg';
-    } else if (!!this.gameData.logo && this.gameData.logo !== '') {
-      return 'https://cdn.edgecast.steamstatic.com/steam/apps/' + this.gameData.steamid + '/header.jpg';
-    } else if (!!this.gameData.giantbomb_medium_url && this.gameData.giantbomb_medium_url !== '') {
-      return this.gameData.giantbomb_medium_url;
+    if (!!this.data.igdb_poster && this.data.igdb_poster !== '') {
+      return 'https://images.igdb.com/igdb/image/upload/t_720p/' + this.data.igdb_poster +  '.jpg';
+    } else if (!!this.data.logo && this.data.logo !== '') {
+      return 'https://cdn.edgecast.steamstatic.com/steam/apps/' + this.data.steamid + '/header.jpg';
+    } else if (!!this.data.giantbomb_medium_url && this.data.giantbomb_medium_url !== '') {
+      return this.data.giantbomb_medium_url;
     } else {
       return 'images/GenericSeries.gif';
     }
@@ -142,13 +146,13 @@ export class Game {
   }
 
   getLastPlayed(): Date {
-    const allLastPlayed = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.last_played);
+    const allLastPlayed = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.data.last_played);
     const max = _.max(allLastPlayed) as Date;
     return !!max ? max : null;
   }
 
   getOwnershipDateAdded(): Date {
-    const allDateAdded = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.collection_add);
+    const allDateAdded = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.data.collection_add);
     const max = _.max(allDateAdded) as Date;
     return !!max ? max : null;
   }
@@ -156,7 +160,7 @@ export class Game {
   get myPreferredPlatform(): MyGamePlatform {
     const myPlatforms = this.myPlatformsInGlobal;
     if (myPlatforms.length > 0) {
-      const manualPreferred = _.find(myPlatforms, myPlatform => !!myPlatform.preferred);
+      const manualPreferred = _.find(myPlatforms, myPlatform => !!myPlatform.data.preferred);
       if (!!manualPreferred) {
         return manualPreferred;
       } else {
@@ -182,12 +186,12 @@ export class Game {
 
   get myRating(): number {
     const preferred = this.myPreferredPlatform;
-    return !preferred ? null : preferred.rating;
+    return !preferred ? null : preferred.data.rating;
   }
 
   get minutesToFinish(): number {
-    const howlongExtras = this.gameData.howlong_extras;
-    const timeTotal = this.gameData.timetotal;
+    const howlongExtras = this.data.howlong_extras;
+    const timeTotal = this.data.timetotal;
     if (!howlongExtras && !timeTotal) {
       return undefined;
     }
@@ -218,13 +222,13 @@ export class Game {
   }
 
   get bestPlaytime(): number {
-    const allPlaytimes = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.minutes_played);
+    const allPlaytimes = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.data.minutes_played);
     const max = _.max(allPlaytimes);
     return max > 0 ? max : null;
   }
 
   get bestMyRating(): number {
-    const allRatings = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.rating);
+    const allRatings = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.data.rating);
     const max = _.max(allRatings);
     return max > 0 ? max : null;
   }
@@ -235,7 +239,7 @@ export class Game {
   }
 
   get isFinished(): boolean {
-    const allFinished = _.filter(this.myPlatformsInGlobal, myPlatform => !!myPlatform.finished_date);
+    const allFinished = _.filter(this.myPlatformsInGlobal, myPlatform => !!myPlatform.data.finished_date);
     return !_.isEmpty(allFinished);
   }
 

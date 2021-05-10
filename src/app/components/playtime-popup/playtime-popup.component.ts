@@ -24,7 +24,9 @@ export class PlaytimePopupComponent implements OnInit {
   resulting = new GameTime();
   added = new GameTime();
 
-  gameplaySession = {};
+  gameplaySession = {
+    rating: null
+  };
 
   finished = false;
 
@@ -48,9 +50,9 @@ export class PlaytimePopupComponent implements OnInit {
       this.game.myPreferredPlatform :
       this.myMutablePlatforms[0];
     this.initializeDates();
-    this.finished = !!this.selectedPlatform.myGamePlatformData.finished_date;
-    this.finalScore = this.selectedPlatform.myGamePlatformData.final_score;
-    this.replayScore = this.selectedPlatform.myGamePlatformData.replay_score;
+    this.finished = !!this.selectedPlatform.data.finished_date;
+    this.finalScore = this.selectedPlatform.data.final_score;
+    this.replayScore = this.selectedPlatform.data.replay_score;
   }
 
   get myMutablePlatforms(): MyGamePlatform[] {
@@ -70,7 +72,7 @@ export class PlaytimePopupComponent implements OnInit {
   }
 
   platformIsSelected(platform: MyGamePlatform): boolean {
-    return platform.id === this.selectedPlatform.myGamePlatformData.id;
+    return platform.id === this.selectedPlatform.data.id;
   }
 
   platformsExceptSelected(): MyGamePlatform[] {
@@ -86,7 +88,7 @@ export class PlaytimePopupComponent implements OnInit {
     this.original = new GameTime();
     this.resulting = new GameTime();
     this.added = new GameTime();
-    this.original.initialize(this.selectedPlatform.myGamePlatformData.minutes_played);
+    this.original.initialize(this.selectedPlatform.data.minutes_played);
   }
 
   convertModelToDate(): Date {

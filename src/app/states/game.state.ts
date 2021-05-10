@@ -19,7 +19,7 @@ export class GameStateModel {
   }
 })
 @Injectable()
-export class GlobalPlatformState {
+export class GameState {
   constructor(private api: ApiService) {
   }
 

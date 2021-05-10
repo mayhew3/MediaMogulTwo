@@ -91,8 +91,8 @@ export class MyPlatformsComponent implements OnInit {
   }
 
   async removeFromMyPlatforms(platform: GamePlatform): Promise<void> {
-    await this.gameService.platformAboutToBeRemovedFromGlobal(platform);
-    await this.platformService.removeMyGlobalPlatform(platform.myGlobalPlatform);
+    /*await this.gameService.platformAboutToBeRemovedFromGlobal(platform);
+    await this.platformService.removeMyGlobalPlatform(platform.myGlobalPlatform);*/
   }
 
 }

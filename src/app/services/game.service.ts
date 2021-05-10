@@ -41,7 +41,7 @@ export class GameService {
   findGame(igdb_id: number): Observable<Game> {
     return this.games.pipe(
       map(games => {
-        const matching = _.filter(games, game => game.gameData.igdb_id === igdb_id);
+        const matching = _.filter(games, game => game.data.igdb_id === igdb_id);
         if (matching.length > 1) {
           throw new Error(`Found multiple games with IGDB_ID ${igdb_id}`);
         } else if (matching.length === 0) {
