@@ -4,7 +4,7 @@ export const MockGamePlatforms = [
   {
     "my_platforms": [
       {
-        "date_added": "2020-05-04 14:15:57.461842",
+        "date_added": "2020-05-04T14:15:57.461842",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "rank": 1,
@@ -12,7 +12,7 @@ export const MockGamePlatforms = [
         "person_id": 1
       },
       {
-        "date_added": "2021-01-17 14:13:00.135421",
+        "date_added": "2021-01-17T14:13:00.135421",
         "game_platform_id": 1,
         "platform_name": "Steam",
         "rank": 1,
@@ -27,7 +27,7 @@ export const MockGamePlatforms = [
   },
   {
     "my_platforms": [{
-      "date_added": "2020-05-04 14:16:59.362386",
+      "date_added": "2020-05-04T14:16:59.362386",
       "game_platform_id": 2,
       "platform_name": "Xbox",
       "rank": 10,
@@ -44,7 +44,7 @@ export const MockGamePlatforms = [
   {
     "my_platforms": [
       {
-        "date_added": "2020-05-04 14:16:19.578332",
+        "date_added": "2020-05-04T14:16:19.578332",
         "game_platform_id": 3,
         "platform_name": "Switch",
         "rank": 5,
@@ -52,7 +52,7 @@ export const MockGamePlatforms = [
         "person_id": 1
       },
       {
-        "date_added": "2021-01-17 14:13:03.200638",
+        "date_added": "2021-01-17T14:13:03.200638",
         "game_platform_id": 3,
         "platform_name": "Switch",
         "rank": 2,
@@ -69,7 +69,7 @@ export const MockGamePlatforms = [
   },
   {
     "my_platforms": [{
-      "date_added": "2020-05-04 14:16:12.305893",
+      "date_added": "2020-05-04T14:16:12.305893",
       "game_platform_id": 4,
       "platform_name": "Xbox One",
       "rank": 3,
@@ -94,7 +94,7 @@ export const MockGamePlatforms = [
   },
   {
     "my_platforms": [{
-      "date_added": "2020-05-04 14:18:19.443633",
+      "date_added": "2020-05-04T14:18:19.443633",
       "game_platform_id": 6,
       "platform_name": "PS3",
       "rank": 14,
@@ -110,7 +110,7 @@ export const MockGamePlatforms = [
   },
   {
     "my_platforms": [{
-      "date_added": "2020-05-04 14:16:44.827256",
+      "date_added": "2020-05-04T14:16:44.827256",
       "game_platform_id": 7,
       "platform_name": "Xbox 360",
       "rank": 7,
@@ -135,7 +135,7 @@ export const MockGamePlatforms = [
   },
   {
     "my_platforms": [{
-      "date_added": "2020-05-04 14:18:15.453522",
+      "date_added": "2020-05-04T14:18:15.453522",
       "game_platform_id": 9,
       "platform_name": "Nintendo DS",
       "rank": 13,
@@ -151,7 +151,7 @@ export const MockGamePlatforms = [
   },
   {
     "my_platforms": [{
-      "date_added": "2020-05-04 14:16:08.425155",
+      "date_added": "2020-05-04T14:16:08.425155",
       "game_platform_id": 10,
       "platform_name": "PC",
       "rank": 2,
@@ -167,7 +167,7 @@ export const MockGamePlatforms = [
   },
   {
     "my_platforms": [{
-      "date_added": "2020-05-04 14:16:15.389918",
+      "date_added": "2020-05-04T14:16:15.389918",
       "game_platform_id": 11,
       "platform_name": "PS4",
       "rank": 4,
@@ -191,7 +191,7 @@ export const MockGamePlatforms = [
   },
   {
     "my_platforms": [{
-      "date_added": "2020-05-04 14:16:55.721055",
+      "date_added": "2020-05-04T14:16:55.721055",
       "game_platform_id": 13,
       "platform_name": "iOS",
       "rank": 9,
@@ -257,7 +257,7 @@ export const MockGamePlatforms = [
   },
   {
     "my_platforms": [{
-      "date_added": "2020-05-04 14:16:32.858724",
+      "date_added": "2020-05-04T14:16:32.858724",
       "game_platform_id": 20,
       "platform_name": "Xbox Live Arcade",
       "rank": 6,
@@ -280,7 +280,7 @@ export const MockGamePlatforms = [
   },
   {
     "my_platforms": [{
-      "date_added": "2020-05-04 14:16:52.630724",
+      "date_added": "2020-05-04T14:16:52.630724",
       "game_platform_id": 22,
       "platform_name": "PlayStation Network",
       "rank": 8,
@@ -303,7 +303,7 @@ export const MockGamePlatforms = [
   },
   {
     "my_platforms": [{
-      "date_added": "2020-05-04 14:18:10.709983",
+      "date_added": "2020-05-04T14:18:10.709983",
       "game_platform_id": 24,
       "platform_name": "Super Nintendo Entertainment System (SNES)",
       "rank": 12,
@@ -366,7 +366,7 @@ export const MockGamePlatforms = [
   },
   {
     "my_platforms": [{
-      "date_added": "2020-05-04 14:18:04.351886",
+      "date_added": "2020-05-04T14:18:04.351886",
       "game_platform_id": 31,
       "platform_name": "SteamVR",
       "rank": 11,
