@@ -3,8 +3,8 @@
     <div class="col-6 gameImageContainer fakeLink">
 
       <img class="rounded gameImage"
-           *ngIf="!!getImageUrl()"
-           src="{{getImageUrl()}}"
+           *ngIf="!!game.getImageUrl()"
+           src="{{game.getImageUrl()}}"
            [game]="game"
            (click)="openDetailPopup()"
            default="../../../assets/GenericSeries.gif"
@@ -24,13 +24,13 @@
           {{game.myPreferredPlatform.platform_name.originalValue}}
         </div>
 
-        <div class="col-12 m-1" *ngIf="isOwned() && !!game.getLastPlayed()">
+        <div class="col-12 m-1" *ngIf="game.isOwned() && !!game.getLastPlayed()">
           <span>
             {{game.getLastPlayed() | date: 'yyyy-MM-dd':'America/Los_Angeles'}}
           </span>
         </div>
 
-        <div class="col-12 m-1" *ngIf="isOwned() && !successfullyAdded">
+        <div class="col-12 m-1" *ngIf="game.isOwned() && !successfullyAdded">
           <mm-rating-box [value]="game.bestMyRatingOrMetacritic"
                          [maxValue]="100"
                          [faded]="!game.bestMyRating">

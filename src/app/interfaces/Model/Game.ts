@@ -58,7 +58,6 @@ export class Game extends DataObject {
               private allPlatforms: GamePlatform[]) {
     super();
   }
-/*
 
   protected makeChangesToInsertPayload(json: any): any {
     const base = super.makeChangesToInsertPayload(json);
@@ -77,8 +76,6 @@ export class Game extends DataObject {
     });
     return availablePlatforms;
   }
-*/
-/*
 
   createAndAddAvailablePlatform(platformObj: any, gamePlatform: GamePlatform): void {
     const realAvailablePlatform = new AvailableGamePlatform(gamePlatform, this).initializedFromJSON(platformObj);
@@ -89,21 +86,71 @@ export class Game extends DataObject {
     this.availablePlatforms.push(availableGamePlatform);
     availableGamePlatform.game = this;
   }
-*/
-/*
+
+  hasPlatform(platformName: string): boolean {
+    const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform_name.value === platformName);
+    return !!existing;
+  }
+
+  hasPlatformWithID(platformID: number): boolean {
+    const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform.id === platformID);
+    return !!existing;
+  }
+
+  hasPlatformWithName(platformName: string): boolean {
+    const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform_name.value === platformName);
+    return !!existing;
+  }
+
+  getOwnedPlatformWithID(platformID: number): MyGamePlatform {
+    return _.find(this.myPlatformsInGlobal, myPlatform => myPlatform.platform.id === platformID);
+  }
+
+  ownsPlatformWithID(platformID: number): boolean {
+    return !!this.getOwnedPlatformWithID(platformID);
+  }
+
+  ownsPlatformWithName(platformName: string): boolean {
+    const existing = _.find(this.myPlatformsInGlobal, myPlatform => myPlatform.platform_name.value === platformName);
+    return !!existing;
+  }
 
   get myPlatforms(): MyGamePlatform[] {
     return _.compact(_.map(this.availablePlatforms, availablePlatform => availablePlatform.myGamePlatform));
   }
-*/
-/*
+
+  get myPlatformsInGlobal(): MyGamePlatform[] {
+    return _.filter(this.myPlatforms, myPlatform => !!myPlatform.platform.myGlobalPlatform);
+  }
+
+  findPlatformWithIGDBID(igdbID: number): AvailableGamePlatform {
+    return _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform.igdb_platform_id === igdbID);
+  }
 
   private removeTemporaryPlatforms(): void {
-    const temporaryPlatforms = _.filter(this.availablePlatforms, availablePlatform => !availablePlatform.id.value && !availablePlatform.platform.id);
+    const temporaryPlatforms = _.filter(this.availablePlatforms, availablePlatform => availablePlatform.isTemporary());
     _.forEach(temporaryPlatforms, availablePlatform => ArrayUtil.removeFromArray(this.availablePlatforms, availablePlatform));
   }
-*/
-/*
+
+  private static cloneArray(originalArray): any[] {
+    return originalArray.slice();
+  }
+
+  get availablePlatformsNotInGlobal(): AvailableGamePlatform[] {
+    return _.filter(this.availablePlatforms, availablePlatform => !availablePlatform.gamePlatform.myGlobalPlatform);
+  }
+
+  getImageUrl(): string {
+    if (!!this.igdb_poster.value && this.igdb_poster.value !== '') {
+      return 'https://images.igdb.com/igdb/image/upload/t_720p/' + this.igdb_poster.value +  '.jpg';
+    } else if (!!this.logo.value && this.logo.value !== '') {
+      return 'https://cdn.edgecast.steamstatic.com/steam/apps/' + this.steamid.value + '/header.jpg';
+    } else if (!!this.giantbomb_medium_url.value && this.giantbomb_medium_url.value !== '') {
+      return this.giantbomb_medium_url.value;
+    } else {
+      return 'images/GenericSeries.gif';
+    }
+  }
 
   initializedFromJSON(jsonObj: any): this {
     super.initializedFromJSON(jsonObj);
@@ -117,20 +164,15 @@ export class Game extends DataObject {
     });
     return this;
   }
-*/
-/*
 
   getOrCreateGamePlatform(platformObj: any, allPlatforms: GamePlatform[]): GamePlatform {
     const foundPlatform = _.find(allPlatforms, (platform: GamePlatform) => platform.id === platformObj.game_platform_id);
     return foundPlatform;
   }
-*/
-/*
 
   isOwned(): boolean {
     return !_.isEmpty(this.myPlatformsInGlobal);
   }
-*/
 
   getLastPlayed(): Date {
     const allLastPlayed = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.last_played.originalValue);
@@ -227,15 +269,15 @@ export class Game extends DataObject {
     const allFinished = _.filter(this.myPlatformsInGlobal, myPlatform => !!myPlatform.finished_date.originalValue);
     return !_.isEmpty(allFinished);
   }
-/*
+
   getApiMethod(): string {
     return 'games';
-  }*/
-/*
+  }
+
   discardChanges(): void {
     super.discardChanges();
     for (const myPlatform of this.myPlatforms) {
       myPlatform.discardChanges();
     }
-  }*/
+  }
 }

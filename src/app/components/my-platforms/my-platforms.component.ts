@@ -44,14 +44,14 @@ export class MyPlatformsComponent implements OnInit {
 
   getCountOfOwnedGames(platform: GamePlatform): number {
     return _.filter(this.allGames, game => {
-      const matching = _.find(this.platformService.getMyPlatforms(game), myPlatform => myPlatform.availableGamePlatform.platform.id === platform.id);
+      const matching = _.find(game.myPlatforms, myPlatform => myPlatform.availableGamePlatform.gamePlatform.id === platform.id);
       return !!matching;
     }).length;
   }
 
   getCountOfPreferredGames(platform: GamePlatform): number {
     return _.filter(this.allGames, game => {
-      const matching = _.find(this.platformService.getMyPlatforms(game), myPlatform => myPlatform.availableGamePlatform.platform.id === platform.id);
+      const matching = _.find(game.myPlatforms, myPlatform => myPlatform.availableGamePlatform.gamePlatform.id === platform.id);
       return !!matching && matching.isManuallyPreferred();
     }).length;
   }

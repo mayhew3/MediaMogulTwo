@@ -20,7 +20,7 @@ export class AddPlatformsComponent {
 
   constructor(public activeModal: NgbActiveModal,
               private gameService: GameService,
-              public platformService: PlatformService) {
+              private platformService: PlatformService) {
   }
 
   get addablePlatforms(): AvailableGamePlatform[] {

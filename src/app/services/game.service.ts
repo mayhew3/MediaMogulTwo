@@ -152,7 +152,7 @@ export class GameService implements OnDestroy {
 
   async platformAboutToBeRemovedFromGlobal(gamePlatform: GamePlatform): Promise<void> {
     for (const game of this._dataStore.games) {
-      const matching = this.platformService.getOwnedPlatformWithID(game, gamePlatform.id);
+      const matching = game.getOwnedPlatformWithID(gamePlatform.id);
 
       if (!!matching && matching.isManuallyPreferred()) {
         matching.preferred.value = false;
@@ -161,22 +161,6 @@ export class GameService implements OnDestroy {
 
     }
     this.pushGameListChange();
-  }
-
-  getImageUrl(game: Game): string {
-    if (!!game.igdb_poster.value && game.igdb_poster.value !== '') {
-      return 'https://images.igdb.com/igdb/image/upload/t_720p/' + game.igdb_poster.value +  '.jpg';
-    } else if (!!game.logo.value && game.logo.value !== '') {
-      return 'https://cdn.edgecast.steamstatic.com/steam/apps/' + game.steamid.value + '/header.jpg';
-    } else if (!!game.giantbomb_medium_url.value && game.giantbomb_medium_url.value !== '') {
-      return game.giantbomb_medium_url.value;
-    } else {
-      return 'images/GenericSeries.gif';
-    }
-  }
-
-  isOwned(game: Game): boolean {
-    return !_.isEmpty(this.platformService.getMyPlatformsInGlobal(game));
   }
 
   // PRIVATE CACHE MANAGEMENT METHODS

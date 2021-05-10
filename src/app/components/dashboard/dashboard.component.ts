@@ -12,7 +12,6 @@ import {PlatformService} from '../../services/platform.service';
 import {OwnedGameFilter} from '../../interfaces/Filters/OwnedGameFilter';
 import {OwnedPlatformGameFilter} from '../../interfaces/Filters/OwnedPlatformGameFilter';
 import {OwnedCloudGameFilter} from '../../interfaces/Filters/OwnedCloudGameFilter';
-import {GameService} from '../../services/game.service';
 
 @Component({
   selector: 'mm-dashboard',
@@ -21,16 +20,15 @@ import {GameService} from '../../services/game.service';
 })
 export class DashboardComponent {
 
-  constructor(private platformService: PlatformService,
-              private gameService: GameService) { }
+  constructor(private platformService: PlatformService) { }
 
   getBaseFilter(): GameFilter {
-    return new OwnedGameFilter(this.gameService);
+    return new OwnedGameFilter();
   }
 
   getChangeableFilters(): GameFilterWithOptions[] {
     return [
-      new OwnedCloudGameFilter(this.platformService),
+      new OwnedCloudGameFilter(),
       new ExistingPlatformGameFilter(this.platformService),
       new OwnedPlatformGameFilter(this.platformService),
       new FinishedGameFilter(),
@@ -41,7 +39,7 @@ export class DashboardComponent {
     return [
       new OrderByRating(OrderingDirection.desc),
       new OrderByLastPlayed(OrderingDirection.desc),
-      new OrderByDateAdded(OrderingDirection.desc, this.gameService),
+      new OrderByDateAdded(OrderingDirection.desc),
     ];
   }
 }

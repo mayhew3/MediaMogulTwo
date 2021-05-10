@@ -9,7 +9,7 @@ enum CloudOptions {
   Null = 'Unknown'
 }
 
-export class MyCloudGameFilter extends GameFilterWithOptions {
+export class ExistingCloudGameFilter extends GameFilterWithOptions {
 
   private static initializeOptions(): GameFilterOption[] {
     const myOptions = [];
@@ -20,14 +20,16 @@ export class MyCloudGameFilter extends GameFilterWithOptions {
   }
 
   constructor() {
-    super(MyCloudGameFilter.initializeOptions());
+    super(ExistingCloudGameFilter.initializeOptions());
   }
 
   gamePassesOption(game: Game, option: GameFilterOption): boolean {
     if (option.value === true) {
-      return game.steam_cloud.value === true && game.ownsPlatformWithName('Steam');
-    } else {
+      return game.steam_cloud.value === true && game.hasPlatformWithName('Steam');
+    } else if (option.value === false) {
       return game.steam_cloud.value === false;
+    } else {
+      return !game.steam_cloud.value;
     }
   }
 
