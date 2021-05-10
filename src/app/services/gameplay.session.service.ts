@@ -1,49 +1,46 @@
-import {Injectable, OnDestroy} from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Game} from '../interfaces/Model/Game';
 import {HttpClient} from '@angular/common/http';
-import * as _ from 'underscore';
-import {GameplaySession} from '../interfaces/Model/GameplaySession';
 import {PersonService} from './person.service';
-import {Observable, Subject} from 'rxjs';
-import {concatMap, filter, map, takeUntil} from 'rxjs/operators';
+import {Observable} from 'rxjs';
+import {concatMap, filter, map, mergeMap} from 'rxjs/operators';
 import {Person} from '../interfaces/Model/Person';
 import {Store} from '@ngxs/store';
-import {GetGameplaySessions} from '../actions/gameplay.session.action';
+import {GetGameplaySessions} from '../actions/game.action';
+import {GameService} from './game.service';
+import {GameplaySession} from '../interfaces/Model/GameplaySession';
 
 @Injectable({
   providedIn: 'root'
 })
-export class GameplaySessionService implements OnDestroy {
-
-  private _gamesUrl = '/api/gameplaySessions';
-
-  private _destroy$ = new Subject();
+export class GameplaySessionService {
 
   constructor(private http: HttpClient,
-              private personService: PersonService) {
+              private personService: PersonService,
+              private gameService: GameService,
+              private store: Store) {
   }
 
-  getGameplaySessions(game: Game): Observable<any[]> {
-    return this.personService.me$.pipe(
-      concatMap((me: Person) => {
-        const personID = me.id;
-        const payload = {
-          person_id: personID.toString(),
-          game_id: game.id.toString()
-        };
-        const options = {
-          params: payload
-        };
-        return this.http.get<GameplaySession[]>(this._gamesUrl, options)
-          .pipe(takeUntil(this._destroy$));
-      }),
-      map((sessionArr: any[]) => _.map(sessionArr, () => {}))
+  getGameplaySessions(game: Game): Observable<GameplaySession[]> {
+    return this.refreshGameplaySessions(game).pipe(
+      mergeMap(() => this.waitForGameWithSessions(game)),
+      map(game => game.data.sessions)
     );
   }
 
-  ngOnDestroy(): void {
-    this._destroy$.next();
-    this._destroy$.complete();
+  refreshGameplaySessions(game: Game): Observable<any> {
+    return this.personService.me$.pipe(
+      mergeMap((me: Person) => {
+        const personID = me.id;
+        return this.store.dispatch(new GetGameplaySessions(personID, game.id));
+      })
+    );
+  }
+
+  waitForGameWithSessions(game: Game): Observable<Game> {
+    return this.gameService.findGameWithID(game.id).pipe(
+      filter(game => !!game.data.sessions)
+    );
   }
 
 }

@@ -15,6 +15,8 @@ import {GameplaySession} from '../../interfaces/Model/GameplaySession';
 import {GameplaySessionService} from '../../services/gameplay.session.service';
 import fast_sort from 'fast-sort';
 import {AvailableGamePlatform} from '../../interfaces/Model/AvailableGamePlatform';
+import {Store} from '@ngxs/store';
+import {GetGameplaySessions} from '../../actions/game.action';
 
 enum DetailNav {RATING = 'Rating', PLAYTIME = 'Playtime'}
 
@@ -51,6 +53,7 @@ export class GameDetailComponent implements OnInit {
               private modalService: NgbModal,
               public activeModal: NgbActiveModal,
               public personService: PersonService,
+              private store: Store,
               private platformService: PlatformService,
               private gameplaySessionService: GameplaySessionService) {
     this.platformService.platforms.subscribe(platforms => ArrayUtil.refreshArray(this.allPlatforms, platforms));
@@ -62,10 +65,14 @@ export class GameDetailComponent implements OnInit {
     this.editedTitle = this.game.title;
     this.initializeDates(this.selectedPlatform);
 
-    this.gameplaySessionService.getGameplaySessions(this.game).subscribe(sessions => {
+    this.gameplaySessionService.waitForGameWithSessions(this.game).subscribe(game => {
+      const sessions = game.data.sessions;
       ArrayUtil.refreshArray(this.gameplaySessions, sessions);
       this.sortSessions();
     });
+
+    this.gameplaySessionService.refreshGameplaySessions(this.game).subscribe();
+
   }
 
   sortSessions(): void {

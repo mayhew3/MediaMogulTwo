@@ -5,6 +5,7 @@ import {AvailableGamePlatform} from './AvailableGamePlatform';
 import {MyGamePlatform} from './MyGamePlatform';
 import fast_sort from 'fast-sort';
 import {GameData} from '../ModelData/GameData';
+import {GameplaySession} from './GameplaySession';
 
 export class Game {
 

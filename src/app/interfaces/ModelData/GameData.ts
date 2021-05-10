@@ -1,4 +1,5 @@
 import {AvailableGamePlatform, AvailableGamePlatformData} from '../Model/AvailableGamePlatform';
+import {GameplaySession} from '../Model/GameplaySession';
 
 export interface GameData {
   id: number;
@@ -46,5 +47,6 @@ export interface GameData {
   date_added: Date;
 
   availablePlatforms: AvailableGamePlatformData[];
+  sessions: GameplaySession[];
 
 }

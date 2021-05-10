@@ -6,7 +6,7 @@ import {HttpParams} from '@angular/common/http';
 import {tap} from 'rxjs/operators';
 import produce from 'immer';
 import {GameData} from '../interfaces/ModelData/GameData';
-import {GetGames} from '../actions/game.action';
+import {GetGameplaySessions, GetGames} from '../actions/game.action';
 import _ from 'underscore';
 
 export class GameStateModel {
@@ -39,4 +39,20 @@ export class GameState {
     );
   }
 
+  @Action(GetGameplaySessions)
+  getGameplaySessions({setState}: StateContext<GameStateModel>, action: GetGameplaySessions): Observable<any> {
+    const params = new HttpParams()
+      .set('person_id', action.person_id.toString())
+      .set('game_id', action.game_id.toString());
+    return this.api.getAfterFullyConnected<any[]>('/api/gameplaySessions', params).pipe(
+      tap(result => {
+        setState(
+          produce(draft => {
+            const game = _.findWhere(draft.games, {id: action.game_id});
+            game.sessions = result;
+          })
+        );
+      })
+    );
+  }
 }

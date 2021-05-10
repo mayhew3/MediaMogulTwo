@@ -37,10 +37,16 @@ export class GameService {
               private store: Store,
               private platformService: PlatformService) {
     this.personService.me$.subscribe(me => {
-      this.platformService.platforms.subscribe(() => {
-        this.store.dispatch(new GetGames(me.id));
-      });
+      this.store.dispatch(new GetGames(me.id));
     });
+  }
+
+  findGameWithID(game_id: number): Observable<Game> {
+    return this.games.pipe(
+      map(games => {
+        return _.findWhere(games, {id: game_id});
+      })
+    );
   }
 
   findGame(igdb_id: number): Observable<Game> {
