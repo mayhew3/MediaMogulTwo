@@ -147,11 +147,11 @@ export class InMemoryDataService implements InMemoryDbService{
       const gameCopy = lodash.cloneDeep(game);
       _.forEach(gameCopy.availablePlatforms, availablePlatform => {
         const myPlatforms = availablePlatform.myPlatforms;
-        availablePlatform.myPlatform = _.findWhere(myPlatforms, {person_id});
+        availablePlatform.myGamePlatform = _.findWhere(myPlatforms, {person_id});
         delete availablePlatform.myPlatforms;
       });
       data.push(gameCopy);
-    });
+  });
 
     return this.packageGetData(data, requestInfo);
   }

@@ -48,6 +48,42 @@ export class PlatformService {
     );
   }
 
+  getMyPlatformsInGlobal(game: Game): Observable<MyGamePlatform[]> {
+    return this.myPlatforms.pipe(
+      map(platforms => {
+        const myGamePlatforms = game.myPlatforms;
+        return _.filter(myGamePlatforms, mgp => !!_.findWhere(platforms, {id: mgp.data.game_platform_id}));
+      })
+    );
+  }
+
+  getMyPreferredPlatform(game: Game): Observable<MyGamePlatform> {
+    return this.getMyPlatformsInGlobal(game).pipe(
+      map(myPlatforms => {
+        if (myPlatforms.length > 0) {
+          const manualPreferred = _.find(myPlatforms, myPlatform => !!myPlatform.data.preferred);
+          if (!!manualPreferred) {
+            return manualPreferred;
+          } else {
+            fast_sort(myPlatforms)
+              .asc(myPlatform => myPlatform.platform.myGlobalPlatform.rank);
+            return myPlatforms[0];
+          }
+        } else {
+          return undefined;
+        }
+      })
+    );
+  }
+  
+  getRating(game: Game): Observable<number> {
+    return this.getMyPreferredPlatform(game).pipe(
+      map(preferred => {
+        return !preferred ? null : preferred.data.rating;
+      })
+    );
+  }
+
   addPlatform(gamePlatform: GamePlatform): void {
     this.apiService.executePostAfterFullyConnected('/api/gamePlatforms', gamePlatform);
   }
