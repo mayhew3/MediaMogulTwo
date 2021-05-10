@@ -4,7 +4,7 @@ import {HttpClient} from '@angular/common/http';
 import * as _ from 'underscore';
 import {GameplaySession} from '../interfaces/Model/GameplaySession';
 import {PersonService} from './person.service';
-import {Observable} from 'rxjs';
+import {combineLatest, Observable} from 'rxjs';
 import {PlatformService} from './platform.service';
 import {filter, map} from 'rxjs/operators';
 import {MyGamePlatform} from '../interfaces/Model/MyGamePlatform';
@@ -19,11 +19,14 @@ import {GameData} from '../interfaces/ModelData/GameData';
   providedIn: 'root'
 })
 export class GameService {
-  games: Observable<Game[]> = this.store.select(store => store.games).pipe(
+  private gameData: Observable<GameData[]> = this.store.select(store => store.games).pipe(
     filter(state => !!state),
     map(state => state.games),
-    filter((games: GameData[]) => !!games),
-    map(games => _.map(games, g => new Game(g)))
+    filter((games: GameData[]) => !!games)
+  );
+
+  games: Observable<Game[]> = combineLatest([this.gameData, this.platformService.platforms]).pipe(
+    map(([games, globalPlatforms]) => _.map(games, g => new Game(g, globalPlatforms)))
   );
 
   constructor(private http: HttpClient,

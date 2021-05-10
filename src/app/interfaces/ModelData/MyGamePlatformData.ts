@@ -1,8 +1,4 @@
-import {Person} from '../Model/Person';
-
 export interface MyGamePlatformData {
-
-  person: Person;
 
   id: number;
   available_game_platform_id: number;

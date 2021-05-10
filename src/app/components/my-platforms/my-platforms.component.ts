@@ -81,7 +81,7 @@ export class MyPlatformsComponent implements OnInit {
   async addToMyPlatforms(platform: GamePlatform): Promise<void> {
     const myGlobalPlatform = {
       game_platform_id: platform.id,
-      platform_name: platform.full_name,
+      platform_name: platform.platform_name,
       rank: undefined
     };
     const gamePlatforms = this.platformsInGlobal();

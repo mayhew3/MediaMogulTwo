@@ -10,7 +10,16 @@ export class Game {
 
   brokenImage = false;
 
-  constructor(public data: GameData) {
+  availablePlatforms: AvailableGamePlatform[] = [];
+
+  myCurrentlySubscribedPlatforms: GamePlatform[];
+
+  constructor(public data: GameData,
+              private globalPlatforms: GamePlatform[]) {
+    _.each(data.availablePlatforms, datum => {
+      const availableGamePlatform = new AvailableGamePlatform(datum, this, globalPlatforms);
+      this.availablePlatforms.push(availableGamePlatform);
+    });
   }
 
   get id(): number {
@@ -21,9 +30,6 @@ export class Game {
     return this.data.title;
   }
 
-  get availablePlatforms(): AvailableGamePlatform[] {
-    return this.data.availablePlatforms;
-  }
 /*
 
   protected makeChangesToInsertPayload(json: any): any {
@@ -61,7 +67,7 @@ export class Game {
   }
 
   hasPlatformWithID(platformID: number): boolean {
-    const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.game_platform_id === platformID);
+    const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.gamePlatform.id === platformID);
     return !!existing;
   }
 
@@ -92,7 +98,7 @@ export class Game {
   }
 
   findPlatformWithIGDBID(igdbID: number): AvailableGamePlatform {
-    return _.find(this.availablePlatforms, availablePlatform => availablePlatform.gamePlatform.igdb_platform_id === igdbID);
+    return _.find(this.availablePlatforms, availablePlatform => availablePlatform.gamePlatform.data.igdb_platform_id === igdbID);
   }
 /*
 
@@ -183,11 +189,13 @@ export class Game {
     }
   }
 */
+/*
 
   get myRating(): number {
     const preferred = this.myPreferredPlatform;
     return !preferred ? null : preferred.data.rating;
   }
+*/
 
   get minutesToFinish(): number {
     const howlongExtras = this.data.howlong_extras;
@@ -216,7 +224,7 @@ export class Game {
   }
 
   get bestMetacritic(): number {
-    const allMetacritics = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.availableGamePlatform.metacritic);
+    const allMetacritics = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.availableGamePlatform.data.metacritic);
     const max = _.max(allMetacritics);
     return max > 0 ? max : null;
   }

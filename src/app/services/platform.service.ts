@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
-import {GamePlatform} from '../interfaces/Model/GamePlatform';
+import {GamePlatform, GamePlatformData} from '../interfaces/Model/GamePlatform';
 import {HttpClient} from '@angular/common/http';
 import {filter, map} from 'rxjs/operators';
 import _ from 'underscore';
@@ -19,6 +19,8 @@ import {MyGamePlatform} from '../interfaces/Model/MyGamePlatform';
 })
 export class PlatformService {
 
+
+
   constructor(private http: HttpClient,
               private apiService: ApiService,
               private store: Store,
@@ -28,12 +30,9 @@ export class PlatformService {
     });
   }
 
-  // public observable for all changes to platform list
   get platforms(): Observable<GamePlatform[]> {
-    return this.store.select(state => state.globalPlatforms).pipe(
-      filter(store => !!store),
-      map(store => store.globalPlatforms),
-      filter(globalPlatforms => !!globalPlatforms)
+    return this.platformData.pipe(
+      map(platformData => _.map(platformData, datum => new GamePlatform(datum)))
     );
   }
 
@@ -75,12 +74,10 @@ export class PlatformService {
       })
     );
   }
-  
-  getRating(game: Game): Observable<number> {
-    return this.getMyPreferredPlatform(game).pipe(
-      map(preferred => {
-        return !preferred ? null : preferred.data.rating;
-      })
+
+  isOwned(game: Game): Observable<boolean> {
+    return this.getMyPlatformsInGlobal(game).pipe(
+      map(platforms => !_.isEmpty(platforms))
     );
   }
 
@@ -111,11 +108,11 @@ export class PlatformService {
   }
 
   addMyGlobalPlatform(myGlobalPlatformObj: any): void {
-    this.personService.me$.subscribe(person => {
+    /*this.personService.me$.subscribe(person => {
       myGlobalPlatformObj.person_id = person.id;
       const gamePlatform = myGlobalPlatformObj.platform;
       this.apiService.executePostAfterFullyConnected('/api/myGlobalPlatforms', gamePlatform);
-    });
+    });*/
   }
 
   removeMyGlobalPlatform(myGlobalPlatform: MyGlobalPlatform): void {
@@ -135,7 +132,17 @@ export class PlatformService {
   }
 
   canAddPlaytime(gamePlatform: GamePlatform): boolean {
-    return gamePlatform.full_name !== 'Steam';
+    return gamePlatform.platform_name !== 'Steam';
   }
+
+  // public observable for all changes to platform list
+  private get platformData(): Observable<GamePlatformData[]> {
+    return this.store.select(state => state.globalPlatforms).pipe(
+      filter(store => !!store),
+      map(store => store.globalPlatforms),
+      filter((globalPlatforms: GamePlatformData[]) => !!globalPlatforms)
+    );
+  }
+
 
 }

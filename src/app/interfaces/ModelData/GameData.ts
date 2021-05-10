@@ -1,4 +1,4 @@
-import {AvailableGamePlatform} from '../Model/AvailableGamePlatform';
+import {AvailableGamePlatform, AvailableGamePlatformData} from '../Model/AvailableGamePlatform';
 
 export interface GameData {
   id: number;
@@ -45,6 +45,6 @@ export interface GameData {
 
   date_added: Date;
 
-  availablePlatforms: AvailableGamePlatform[];
+  availablePlatforms: AvailableGamePlatformData[];
 
 }

@@ -36,7 +36,7 @@
 <div class="row my-1"
      *ngFor="let platform of platformsInGlobal()">
   <div class="col-3">
-    {{platform.full_name}}
+    {{platform.platform_name}}
   </div>
   <div class="col-1">
     <button class="btn btn-sm btn-warning"
@@ -81,7 +81,7 @@
 <div class="row my-1"
      *ngFor="let platform of otherPlatforms()">
   <div class="col-3">
-    {{platform.full_name}}
+    {{platform.platform_name}}
   </div>
   <div class="col-1">
     <button class="btn btn-sm btn-primary"

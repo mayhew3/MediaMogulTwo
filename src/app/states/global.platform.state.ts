@@ -1,4 +1,4 @@
-import {GamePlatform} from '../interfaces/Model/GamePlatform';
+import {GamePlatform, GamePlatformData} from '../interfaces/Model/GamePlatform';
 import {Action, State, StateContext} from '@ngxs/store';
 import {Injectable} from '@angular/core';
 import {ApiService} from '../services/api.service';
@@ -9,9 +9,10 @@ import {tap} from 'rxjs/operators';
 import produce from 'immer';
 import {WritableDraft} from 'immer/dist/types/types-external';
 import _ from 'underscore';
+import {MyGlobalPlatform} from '../interfaces/Model/MyGlobalPlatform';
 
 export class GlobalPlatformStateModel {
-  globalPlatforms: GamePlatform[];
+  globalPlatforms: GamePlatformData[];
 }
 
 @State<GlobalPlatformStateModel>({
@@ -30,7 +31,7 @@ export class GlobalPlatformState {
     const params = new HttpParams()
       .set('person_id', action.person_id.toString());
     return this.api.getAfterFullyConnected<any[]>('/api/gamePlatforms', params).pipe(
-      tap(result => {
+      tap((result: GamePlatformData[]) => {
         setState(
           produce(draft => {
             draft.globalPlatforms = result;
@@ -44,7 +45,7 @@ export class GlobalPlatformState {
   updateGlobalPlatform({setState}: StateContext<GlobalPlatformStateModel>, action: UpdateGlobalPlatform): void {
     setState(
       produce(draft => {
-        const platform = _.findWhere(draft.globalPlatforms, {id: action.global_platform_id});
+        const platform = _.find(draft.globalPlatforms, globalPlatform => globalPlatform.id === action.global_platform_id);
         platform.full_name = action.full_name;
         platform.short_name = action.short_name;
         platform.metacritic_uri = action.metacritic_uri;

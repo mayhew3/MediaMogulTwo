@@ -28,8 +28,8 @@ export class PlatformDetailComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.full_name = this.platform.full_name;
-    this.short_name = this.platform.short_name;
-    this.metacritic_uri = this.platform.metacritic_uri;
+    this.full_name = this.platform.platform_name;
+    this.short_name = this.platform.data.short_name;
+    this.metacritic_uri = this.platform.data.metacritic_uri;
   }
 }

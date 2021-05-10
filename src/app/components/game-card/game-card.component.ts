@@ -8,6 +8,7 @@ import {AvailableGamePlatform} from '../../interfaces/Model/AvailableGamePlatfor
 import {AddPlatformsComponent} from '../add-platforms/add-platforms.component';
 import {PlatformService} from '../../services/platform.service';
 import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'mm-game-card',
@@ -66,6 +67,14 @@ export class GameCardComponent {
 
   showChoosePlatformsButton(): boolean {
     return this.isNotRecentlyUnowned() && !this.hasSingleAvailablePlatform();
+  }
+
+  get myPreferredPlatform(): Observable<MyGamePlatform> {
+    return this.platformService.getMyPreferredPlatform(this.game);
+  }
+
+  isOwned(): Observable<boolean> {
+    return this.platformService.isOwned(this.game);
   }
 
   canAddPlaytime(): boolean {

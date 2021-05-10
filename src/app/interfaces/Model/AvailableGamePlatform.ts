@@ -2,10 +2,34 @@
 import {GamePlatform} from './GamePlatform';
 import {Game} from './Game';
 import {MyGamePlatform} from './MyGamePlatform';
+import {MyGamePlatformData} from '../ModelData/MyGamePlatformData';
+import _ from 'underscore';
 
-export interface AvailableGamePlatform {
+export class AvailableGamePlatform {
+  myGamePlatform?: MyGamePlatform;
+  gamePlatform: GamePlatform;
 
-  myGamePlatform: MyGamePlatform;
+  constructor(public data: AvailableGamePlatformData,
+              public game: Game,
+              private globalPlatforms: GamePlatform[]) {
+    this.gamePlatform = _.findWhere(globalPlatforms, {id: data.game_platform_id});
+    if (!!data.myGamePlatform) {
+      this.myGamePlatform = new MyGamePlatform(data.myGamePlatform, this);
+    }
+  }
+
+  get id(): number {
+    return this.data.id;
+  }
+
+  get platform_name(): string {
+    return this.gamePlatform.platform_name;
+  }
+}
+
+export interface AvailableGamePlatformData {
+
+  myGamePlatform: MyGamePlatformData;
 
   id: number;
   game_platform_id: number;
@@ -15,8 +39,6 @@ export interface AvailableGamePlatform {
   metacritic_matched: Date;
   game_id: number;
 
-  gamePlatform: GamePlatform;
-  game: Game;
   /*
   constructor(public platform: GamePlatform,
               public game: Game) {
