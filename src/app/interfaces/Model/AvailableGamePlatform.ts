@@ -15,7 +15,7 @@ export interface AvailableGamePlatform {
   metacritic_matched: Date;
   game_id: number;
 
-  platform: GamePlatform;
+  gamePlatform: GamePlatform;
   game: Game;
   /*
   constructor(public platform: GamePlatform,

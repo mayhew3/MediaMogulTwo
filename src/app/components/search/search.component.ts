@@ -69,7 +69,7 @@ export class SearchComponent implements OnInit {
     }
     const availablePlatforms = existingGame.availablePlatforms;
     const matchPlatformIDs = _.map(match.platforms, platform => platform.id);
-    return _.filter(availablePlatforms, availablePlatform => !_.contains(matchPlatformIDs, availablePlatform.platform.igdb_platform_id));
+    return _.filter(availablePlatforms, availablePlatform => !_.contains(matchPlatformIDs, availablePlatform.gamePlatform.igdb_platform_id));
   }
 
   private findMatchingGame(match: any): Game {
@@ -117,7 +117,7 @@ export class SearchComponent implements OnInit {
           }
           const availableGamePlatform = this.findExistingPlatformForGame(match, platform);
           if (!!availableGamePlatform) {
-            if (availableGamePlatform.platform.myGlobalPlatform) {
+            if (availableGamePlatform.gamePlatform.myGlobalPlatform) {
               platform.availableGamePlatform = availableGamePlatform;
               platform.myGamePlatform = !platform.availableGamePlatform ? undefined : platform.availableGamePlatform.myGamePlatform;
             } else {
@@ -222,7 +222,7 @@ export class SearchComponent implements OnInit {
 
     for (const platform of match.platforms) {
       const availablePlatform = await this.getOrCreateAvailablePlatform(game, platform);
-      if (selectedPlatform.id === availablePlatform.platform.igdb_platform_id) {
+      if (selectedPlatform.id === availablePlatform.gamePlatform.igdb_platform_id) {
         selectedAvailablePlatform = availablePlatform;
       }
     }

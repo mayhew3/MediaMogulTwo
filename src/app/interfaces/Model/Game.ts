@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/naming-convention, no-underscore-dangle, id-blacklist, id-match */
-import {DataObject} from '../DataObject/DataObject';
 import {GamePlatform} from './GamePlatform';
 import * as _ from 'underscore';
 import {AvailableGamePlatform} from './AvailableGamePlatform';
@@ -54,7 +53,7 @@ export class Game {
   }
 
   hasPlatformWithID(platformID: number): boolean {
-    const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform.id === platformID);
+    const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.gamePlatform.id === platformID);
     return !!existing;
   }
 
@@ -85,7 +84,7 @@ export class Game {
   }
 
   findPlatformWithIGDBID(igdbID: number): AvailableGamePlatform {
-    return _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform.igdb_platform_id === igdbID);
+    return _.find(this.availablePlatforms, availablePlatform => availablePlatform.gamePlatform.igdb_platform_id === igdbID);
   }
 /*
 
@@ -100,7 +99,7 @@ export class Game {
 */
 
   get availablePlatformsNotInGlobal(): AvailableGamePlatform[] {
-    return _.filter(this.availablePlatforms, availablePlatform => !availablePlatform.platform.myGlobalPlatform);
+    return _.filter(this.availablePlatforms, availablePlatform => !availablePlatform.gamePlatform.myGlobalPlatform);
   }
 
   getImageUrl(): string {

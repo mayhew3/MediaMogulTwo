@@ -1,6 +1,7 @@
 import {AvailableGamePlatform} from '../Model/AvailableGamePlatform';
 
 export class GameData {
+  id: number;
   title: string;
   platform: string;
   natural_end: boolean;
