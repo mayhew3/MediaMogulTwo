@@ -19,11 +19,13 @@ import {GameData} from '../interfaces/ModelData/GameData';
   providedIn: 'root'
 })
 export class GameService {
-  private gameData: Observable<GameData[]> = this.store.select(store => store.games).pipe(
-    filter(state => !!state),
-    map(state => state.games),
-    filter((games: GameData[]) => !!games)
-  );
+  private get gameData(): Observable<GameData[]> {
+    return this.store.select(store => store.games).pipe(
+      filter(state => !!state),
+      map(state => state.games),
+      filter((games: GameData[]) => !!games)
+    )
+  };
 
   games: Observable<Game[]> = combineLatest([this.gameData, this.platformService.platforms]).pipe(
     map(([games, globalPlatforms]) => _.map(games, g => new Game(g, globalPlatforms)))

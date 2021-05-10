@@ -37,6 +37,7 @@ import {NgxsLoggerPluginModule} from '@ngxs/logger-plugin';
 import {InMemoryCallbacksService} from './services/in-memory-callbacks.service';
 import {GlobalPlatformState} from './states/global.platform.state';
 import {GameState} from './states/game.state';
+import {AngularDateHttpInterceptor} from './DateInterceptor';
 
 @NgModule({
   declarations: [
@@ -99,6 +100,7 @@ import {GameState} from './states/game.state';
     environment.loggerModule,
     InMemoryCallbacksService,
     { provide: HTTP_INTERCEPTORS, useClass: AuthHttpInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: AngularDateHttpInterceptor, multi: true },
   ],
   bootstrap: [AppComponent]
 })

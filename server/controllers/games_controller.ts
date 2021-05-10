@@ -33,10 +33,10 @@ export const getGames = async (request: Record<string, any>, response: Record<st
     const availableForGame = _.where(availablePlatforms, {game_id: game.id});
     resultObj.availablePlatforms = _.map(availableForGame, availablePlatform => {
       const myPlatformObj = _.findWhere(myPlatforms, {available_game_platform_id: availablePlatform.id});
-      let myPlatform = null;
+      let myGamePlatform = null;
       if (!!myPlatformObj) {
-        myPlatform = myPlatformObj.dataValues;
-        myPlatform.game_platform_id = availablePlatform.game_platform_id;
+        myGamePlatform = myPlatformObj.dataValues;
+        myGamePlatform.game_platform_id = availablePlatform.game_platform_id;
       }
       return {
         id: availablePlatform.id,
@@ -45,7 +45,7 @@ export const getGames = async (request: Record<string, any>, response: Record<st
         metacritic: availablePlatform.metacritic,
         metacritic_page: availablePlatform.metacritic_page,
         metacritic_matched: availablePlatform.metacritic_matched,
-        myPlatform
+        myGamePlatform
       };
     });
 

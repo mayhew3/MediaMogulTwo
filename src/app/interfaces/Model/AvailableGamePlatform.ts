@@ -25,6 +25,10 @@ export class AvailableGamePlatform {
   get platform_name(): string {
     return this.gamePlatform.platform_name;
   }
+
+  get subscribed(): boolean {
+    return !!this.myGamePlatform && !!this.gamePlatform.myGlobalPlatform;
+  }
 }
 
 export interface AvailableGamePlatformData {

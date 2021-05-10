@@ -73,8 +73,8 @@ export class GameCardComponent {
     return this.platformService.getMyPreferredPlatform(this.game);
   }
 
-  isOwned(): Observable<boolean> {
-    return this.platformService.isOwned(this.game);
+  isOwned(): boolean {
+    return this.game.isOwned();
   }
 
   canAddPlaytime(): boolean {

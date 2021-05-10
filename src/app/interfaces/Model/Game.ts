@@ -12,8 +12,6 @@ export class Game {
 
   availablePlatforms: AvailableGamePlatform[] = [];
 
-  myCurrentlySubscribedPlatforms: GamePlatform[];
-
   constructor(public data: GameData,
               private globalPlatforms: GamePlatform[]) {
     _.each(data.availablePlatforms, datum => {
@@ -94,7 +92,7 @@ export class Game {
   }
 
   get myPlatformsInGlobal(): MyGamePlatform[] {
-    return _.filter(this.myPlatforms, myPlatform => !!myPlatform.platform.myGlobalPlatform);
+    return _.filter(this.myPlatforms, myPlatform => myPlatform.availableGamePlatform.subscribed);
   }
 
   findPlatformWithIGDBID(igdbID: number): AvailableGamePlatform {
@@ -152,7 +150,10 @@ export class Game {
   }
 
   getLastPlayed(): Date {
-    const allLastPlayed = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.data.last_played);
+    const allLastPlayed = _.compact(_.map(this.myPlatformsInGlobal, myPlatform => myPlatform.data.last_played));
+    if (allLastPlayed.length === 0) {
+      return null;
+    }
     const max = _.max(allLastPlayed) as Date;
     return !!max ? max : null;
   }
@@ -224,7 +225,10 @@ export class Game {
   }
 
   get bestMetacritic(): number {
-    const allMetacritics = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.availableGamePlatform.data.metacritic);
+    const allMetacritics = _.compact(_.map(this.myPlatformsInGlobal, myPlatform => myPlatform.availableGamePlatform.data.metacritic));
+    if (allMetacritics.length === 0) {
+      return null;
+    }
     const max = _.max(allMetacritics);
     return max > 0 ? max : null;
   }

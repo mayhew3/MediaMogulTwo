@@ -24,13 +24,13 @@
           {{(myPreferredPlatform | async).platform_name}}
         </div>
 
-        <div class="col-12 m-1" *ngIf="(isOwned() | async) && !!game.getLastPlayed()">
+        <div class="col-12 m-1" *ngIf="isOwned() && !!game.getLastPlayed()">
           <span>
             {{game.getLastPlayed() | date: 'yyyy-MM-dd':'America/Los_Angeles'}}
           </span>
         </div>
 
-        <div class="col-12 m-1" *ngIf="(isOwned() | async) && !successfullyAdded">
+        <div class="col-12 m-1" *ngIf="isOwned() && !successfullyAdded">
           <mm-rating-box [value]="game.bestMyRatingOrMetacritic"
                          [maxValue]="100"
                          [faded]="!game.bestMyRating">

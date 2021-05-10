@@ -13,18 +13,14 @@ export class RatingBoxComponent {
 
   constructor(private colorTransformService: ColorTransformService) { }
 
-  getValue(): number {
-    return +this.getFormattedNumber(this.value);
-  }
-
-  getFormattedNumber(value): string {
+  getFormattedNumber(): string {
     if (!!this.value) {
-      const floored = Math.floor(value);
-      const remainder = value - floored;
+      const floored = Math.floor(this.value);
+      const remainder = this.value - floored;
       if (remainder < .05) {
         return floored.toString();
       } else {
-        return value.toFixed(1);
+        return this.value.toFixed(1);
       }
     } else {
       return '--';
