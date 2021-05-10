@@ -33,31 +33,10 @@ export class GameState {
         setState(
           produce(draft => {
             draft.games = result;
-            /*_.each(draft.games, game => {
-              _.each(game.availablePlatforms, availablePlatform => {
-                if (availablePlatform.myGamePlatform) {
-                  this.parseDates(availablePlatform.myGamePlatform);
-                  /!*availablePlatform.myGamePlatform.last_played = new Date(availablePlatform.myGamePlatform.last_played);
-                  availablePlatform.myGamePlatform.collection_add = new Date(availablePlatform.myGamePlatform.collection_add);*!/
-                }
-              });
-            });*/
           })
         );
       })
     );
-  }
-
-  private parseDates(obj: Record<string, any>): void {
-    for (const key in obj) {
-      if (Object.prototype.hasOwnProperty.call(obj, key)) {
-        const value = obj[key];
-        if ((typeof value) === 'object') {
-          const asDate = !obj[key] ? null : new Date(obj[key]);
-          obj[key] = asDate;
-        }
-      }
-    }
   }
 
 }

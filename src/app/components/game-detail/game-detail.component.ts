@@ -35,7 +35,6 @@ export class GameDetailComponent implements OnInit {
   titleEditMode = false;
 
   selectedPlatform: MyGamePlatform;
-  preferredPlatform: MyGamePlatform;
 
   allPlatforms: GamePlatform[] = [];
 
@@ -58,17 +57,14 @@ export class GameDetailComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.platformService.getMyPreferredPlatform(this.game).subscribe(platform => {
-      this.preferredPlatform = platform;
-      this.selectedPlatform = platform;
-      this.finished = !!this.selectedPlatform && !!this.selectedPlatform.data.finished_date;
-      this.editedTitle = this.game.title;
-      this.initializeDates(this.selectedPlatform);
+    this.selectedPlatform = this.game.myPreferredPlatform;
+    this.finished = !!this.selectedPlatform && !!this.selectedPlatform.data.finished_date;
+    this.editedTitle = this.game.title;
+    this.initializeDates(this.selectedPlatform);
 
-      this.gameplaySessionService.getGameplaySessions(this.game).subscribe(sessions => {
-        ArrayUtil.refreshArray(this.gameplaySessions, sessions);
-        this.sortSessions();
-      });
+    this.gameplaySessionService.getGameplaySessions(this.game).subscribe(sessions => {
+      ArrayUtil.refreshArray(this.gameplaySessions, sessions);
+      this.sortSessions();
     });
   }
 
@@ -90,7 +86,7 @@ export class GameDetailComponent implements OnInit {
   }
 
   selectedIsPreferred(): boolean {
-    return this.selectedPlatform.id === this.preferredPlatform.id;
+    return this.selectedPlatform.id === this.game.myPreferredPlatform.id;
   }
 
   getRatingOption(): DetailNav {
