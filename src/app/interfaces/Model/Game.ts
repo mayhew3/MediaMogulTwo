@@ -2,62 +2,22 @@
 import {DataObject} from '../DataObject/DataObject';
 import {GamePlatform} from './GamePlatform';
 import * as _ from 'underscore';
-import {PlatformService} from '../../services/platform.service';
-import {ArrayUtil} from '../../utility/ArrayUtil';
 import {AvailableGamePlatform} from './AvailableGamePlatform';
 import {MyGamePlatform} from './MyGamePlatform';
 import fast_sort from 'fast-sort';
+import {GameData} from '../ModelData/GameData';
 
-export class Game extends DataObject {
-  title = this.registerStringField('title', true);
-  platform = this.registerStringField('platform', true);
-  natural_end = this.registerBooleanField('natural_end', false);
-  timetotal = this.registerDecimalField('timetotal', false);
-
-  // metacritic
-  metacritic = this.registerIntegerField('metacritic', false);
-  metacritic_page = this.registerBooleanField('metacritic_page', false);
-  metacritic_matched = this.registerDateField('metacritic_matched', false);
-  metacritic_hint = this.registerStringField('metacritic_hint', false);
-
-  // steam
-  steamid = this.registerIntegerField('steamid', false);
-  steam_cloud = this.registerBooleanField('steam_cloud', false);
-  steam_page_gone = this.registerDateField('steam_page_gone', false);
-  steam_title = this.registerStringField('steam_title', false);
-  logo = this.registerStringField('logo', false);
-
-  // howlong
-  howlong_id = this.registerIntegerField('howlong_id', false);
-  howlong_title = this.registerStringField('howlong_title', false);
-  howlong_extras = this.registerDecimalField('howlong_extras', false);
-
-  // giant bomb
-  giantbomb_medium_url = this.registerStringField('giantbomb_medium_url', false);
-  giantbomb_id = this.registerIntegerField('giantbomb_id', false);
-  giantbomb_name = this.registerStringField('giantbomb_name', false);
-
-  // IGDB
-  igdb_id = this.registerIntegerField('igdb_id', false);
-  igdb_poster = this.registerStringField('igdb_poster', false);
-  igdb_width = this.registerIntegerField('igdb_width', false);
-  igdb_height = this.registerIntegerField('igdb_height', false);
-  igdb_rating = this.registerDecimalField('igdb_rating', false);
-  igdb_rating_count = this.registerIntegerField('igdb_rating_count', false);
-  igdb_release_date = this.registerDateField('igdb_release_date', false);
-  igdb_popularity = this.registerDecimalField('igdb_popularity', false);
-  igdb_slug = this.registerStringField('igdb_slug', false);
-  igdb_summary = this.registerStringField('igdb_summary', false);
-  igdb_updated = this.registerDateField('igdb_updated', false);
+export class Game {
 
   brokenImage = false;
 
-  availablePlatforms: AvailableGamePlatform[] = [];
-
-  constructor(private platformService: PlatformService,
-              private allPlatforms: GamePlatform[]) {
-    super();
+  constructor(public gameData: GameData) {
   }
+
+  get availablePlatforms(): AvailableGamePlatform[] {
+    return this.gameData.availablePlatforms;
+  }
+/*
 
   protected makeChangesToInsertPayload(json: any): any {
     const base = super.makeChangesToInsertPayload(json);
@@ -86,9 +46,10 @@ export class Game extends DataObject {
     this.availablePlatforms.push(availableGamePlatform);
     availableGamePlatform.game = this;
   }
+*/
 
   hasPlatform(platformName: string): boolean {
-    const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform_name.value === platformName);
+    const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform_name === platformName);
     return !!existing;
   }
 
@@ -98,7 +59,7 @@ export class Game extends DataObject {
   }
 
   hasPlatformWithName(platformName: string): boolean {
-    const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform_name.value === platformName);
+    const existing = _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform_name === platformName);
     return !!existing;
   }
 
@@ -126,6 +87,7 @@ export class Game extends DataObject {
   findPlatformWithIGDBID(igdbID: number): AvailableGamePlatform {
     return _.find(this.availablePlatforms, availablePlatform => availablePlatform.platform.igdb_platform_id === igdbID);
   }
+/*
 
   private removeTemporaryPlatforms(): void {
     const temporaryPlatforms = _.filter(this.availablePlatforms, availablePlatform => availablePlatform.isTemporary());
@@ -135,22 +97,24 @@ export class Game extends DataObject {
   private static cloneArray(originalArray): any[] {
     return originalArray.slice();
   }
+*/
 
   get availablePlatformsNotInGlobal(): AvailableGamePlatform[] {
-    return _.filter(this.availablePlatforms, availablePlatform => !availablePlatform.gamePlatform.myGlobalPlatform);
+    return _.filter(this.availablePlatforms, availablePlatform => !availablePlatform.platform.myGlobalPlatform);
   }
 
   getImageUrl(): string {
-    if (!!this.igdb_poster.value && this.igdb_poster.value !== '') {
-      return 'https://images.igdb.com/igdb/image/upload/t_720p/' + this.igdb_poster.value +  '.jpg';
-    } else if (!!this.logo.value && this.logo.value !== '') {
-      return 'https://cdn.edgecast.steamstatic.com/steam/apps/' + this.steamid.value + '/header.jpg';
-    } else if (!!this.giantbomb_medium_url.value && this.giantbomb_medium_url.value !== '') {
-      return this.giantbomb_medium_url.value;
+    if (!!this.gameData.igdb_poster && this.gameData.igdb_poster !== '') {
+      return 'https://images.igdb.com/igdb/image/upload/t_720p/' + this.gameData.igdb_poster +  '.jpg';
+    } else if (!!this.gameData.logo && this.gameData.logo !== '') {
+      return 'https://cdn.edgecast.steamstatic.com/steam/apps/' + this.gameData.steamid + '/header.jpg';
+    } else if (!!this.gameData.giantbomb_medium_url && this.gameData.giantbomb_medium_url !== '') {
+      return this.gameData.giantbomb_medium_url;
     } else {
       return 'images/GenericSeries.gif';
     }
   }
+/*
 
   initializedFromJSON(jsonObj: any): this {
     super.initializedFromJSON(jsonObj);
@@ -164,10 +128,10 @@ export class Game extends DataObject {
     });
     return this;
   }
+*/
 
   getOrCreateGamePlatform(platformObj: any, allPlatforms: GamePlatform[]): GamePlatform {
-    const foundPlatform = _.find(allPlatforms, (platform: GamePlatform) => platform.id === platformObj.game_platform_id);
-    return foundPlatform;
+    return _.find(allPlatforms, (platform: GamePlatform) => platform.id === platformObj.game_platform_id);
   }
 
   isOwned(): boolean {
@@ -201,6 +165,7 @@ export class Game extends DataObject {
       return undefined;
     }
   }
+/*
 
   get myPreferredPlatformNullAllowed(): MyGamePlatform {
     const allPreferred = _.filter(this.myPlatformsInGlobal, myPlatform => myPlatform.preferred.originalValue === true);
@@ -210,6 +175,7 @@ export class Game extends DataObject {
       return allPreferred[0];
     }
   }
+*/
 
   get myRating(): number {
     const preferred = this.myPreferredPlatform;
@@ -217,8 +183,8 @@ export class Game extends DataObject {
   }
 
   get minutesToFinish(): number {
-    const howlongExtras = this.howlong_extras.originalValue;
-    const timeTotal = this.timetotal.originalValue;
+    const howlongExtras = this.gameData.howlong_extras;
+    const timeTotal = this.gameData.timetotal;
     if (!howlongExtras && !timeTotal) {
       return undefined;
     }
@@ -243,7 +209,7 @@ export class Game extends DataObject {
   }
 
   get bestMetacritic(): number {
-    const allMetacritics = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.availableGamePlatform.metacritic.originalValue);
+    const allMetacritics = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.availableGamePlatform.metacritic);
     const max = _.max(allMetacritics);
     return max > 0 ? max : null;
   }
@@ -270,14 +236,4 @@ export class Game extends DataObject {
     return !_.isEmpty(allFinished);
   }
 
-  getApiMethod(): string {
-    return 'games';
-  }
-
-  discardChanges(): void {
-    super.discardChanges();
-    for (const myPlatform of this.myPlatforms) {
-      myPlatform.discardChanges();
-    }
-  }
 }
