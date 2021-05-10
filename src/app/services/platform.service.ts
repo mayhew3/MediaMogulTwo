@@ -91,15 +91,56 @@ export class PlatformService {
   }
 
   myMutablePlatforms(game: Game): MyGamePlatform[] {
-    return _.filter(game.myPlatformsInGlobal, myGamePlatform => this.canAddPlaytime(myGamePlatform.platform));
+    return _.filter(this.getMyPlatformsInGlobal(game), myGamePlatform => this.canAddPlaytime(myGamePlatform.platform));
   }
 
   canAddToGame(availableGamePlatform: AvailableGamePlatform): boolean {
-    return this.canAddPlaytime(availableGamePlatform.gamePlatform) && !!availableGamePlatform.gamePlatform.myGlobalPlatform;
+    return this.canAddPlaytime(availableGamePlatform.platform) && !!availableGamePlatform.platform.myGlobalPlatform;
   }
 
   canAddPlaytime(gamePlatform: GamePlatform): boolean {
     return gamePlatform.full_name !== 'Steam';
+  }
+
+  /* Transferred from Game object */
+
+  hasPlatformWithName(game: Game, platformName: string): boolean {
+    const existing = _.find(game.availablePlatforms, availablePlatform => availablePlatform.platform_name === platformName);
+    return !!existing;
+  }
+
+  hasPlatformWithID(game: Game, platformID: number): boolean {
+    const existing = _.find(game.availablePlatforms, availablePlatform => availablePlatform.platform.id === platformID);
+    return !!existing;
+  }
+
+  getOwnedPlatformWithID(game: Game, platformID: number): MyGamePlatform {
+    return _.find(this.getMyPlatformsInGlobal(game), myPlatform => myPlatform.platform.id === platformID);
+  }
+
+  ownsPlatformWithID(game: Game, platformID: number): boolean {
+    return !!this.getOwnedPlatformWithID(game, platformID);
+  }
+
+  ownsPlatformWithName(game: Game, platformName: string): boolean {
+    const existing = _.find(this.getMyPlatformsInGlobal(game), myPlatform => myPlatform.platform_name.value === platformName);
+    return !!existing;
+  }
+
+  getMyPlatforms(game: Game): MyGamePlatform[] {
+    return _.compact(_.map(game.availablePlatforms, availablePlatform => availablePlatform.myGamePlatform));
+  }
+
+  getMyPlatformsInGlobal(game: Game): MyGamePlatform[] {
+    return _.filter(this.getMyPlatforms(game), myPlatform => !!myPlatform.platform.myGlobalPlatform);
+  }
+
+  findPlatformWithIGDBID(game: Game, igdbID: number): AvailableGamePlatform {
+    return _.find(game.availablePlatforms, availablePlatform => availablePlatform.platform.igdb_platform_id === igdbID);
+  }
+
+  getAvailablePlatformsNotInGlobal(game: Game): AvailableGamePlatform[] {
+    return _.filter(game.availablePlatforms, availablePlatform => !availablePlatform.platform.myGlobalPlatform);
   }
 
 }

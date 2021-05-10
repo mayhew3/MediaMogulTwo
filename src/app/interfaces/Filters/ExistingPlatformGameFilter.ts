@@ -22,12 +22,12 @@ export class ExistingPlatformGameFilter extends GameFilterWithOptions {
   apply(game: Game): boolean {
     const gameFilterOptions = this.options;
     const selectedOptionKeys = _.map(_.where(gameFilterOptions, {isActive: true, special: false}), option => option.value);
-    const filtered = _.filter(selectedOptionKeys, key => game.hasPlatformWithID(key));
+    const filtered = _.filter(selectedOptionKeys, key => this.platformService.hasPlatformWithID(game, key));
     return filtered.length > 0;
   }
 
   gamePassesOption(game: Game, option: GameFilterOption): boolean {
-    return game.hasPlatformWithID(option.value);
+    return this.platformService.hasPlatformWithID(game, option.value);
   }
 
   getLabel(): string {

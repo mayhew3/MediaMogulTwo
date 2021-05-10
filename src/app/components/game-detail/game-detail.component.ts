@@ -51,7 +51,7 @@ export class GameDetailComponent implements OnInit {
               private modalService: NgbModal,
               public activeModal: NgbActiveModal,
               public personService: PersonService,
-              private platformService: PlatformService,
+              public platformService: PlatformService,
               private gameplaySessionService: GameplaySessionService) {
     this.platformService.platforms.subscribe(platforms => ArrayUtil.refreshArray(this.allPlatforms, platforms));
   }
@@ -78,11 +78,15 @@ export class GameDetailComponent implements OnInit {
   }
 
   showProgressBar(): boolean {
-    return this.game.isOwned() && this.game.natural_end.originalValue && this.game.getProgressPercent() !== undefined;
+    return this.isOwned() && this.game.natural_end.originalValue && this.game.getProgressPercent() !== undefined;
   }
 
   hasMultiplePlatforms(): boolean {
-    return this.game.myPlatformsInGlobal.length > 1;
+    return this.platformService.getMyPlatformsInGlobal(this.game).length > 1;
+  }
+
+  isOwned(): boolean {
+    return this.gameService.isOwned(this.game);
   }
 
   selectedIsPreferred(): boolean {
@@ -150,8 +154,12 @@ export class GameDetailComponent implements OnInit {
   }
 
   anyPlatformsAreFinished(): boolean {
-    const finishedPlatform = _.find(this.game.myPlatformsInGlobal, myPlatform => this.isFinished(myPlatform));
+    const finishedPlatform = _.find(this.platformService.getMyPlatformsInGlobal(this.game), myPlatform => this.isFinished(myPlatform));
     return !!finishedPlatform;
+  }
+
+  getImageUrl(): string {
+    return this.gameService.getImageUrl(this.game);
   }
 
   isFinished(myPlatform: MyGamePlatform): boolean {

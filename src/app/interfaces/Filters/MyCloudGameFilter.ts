@@ -2,6 +2,7 @@ import {GameFilterOption} from './GameFilterOption';
 import {GameFilterWithOptions} from './GameFilterWithOptions';
 import {Game} from '../Model/Game';
 import * as _ from 'underscore';
+import {PlatformService} from '../../services/platform.service';
 
 enum CloudOptions {
   Yes = 'Yes',
@@ -11,6 +12,10 @@ enum CloudOptions {
 
 export class MyCloudGameFilter extends GameFilterWithOptions {
 
+  constructor(private platformService: PlatformService) {
+    super(MyCloudGameFilter.initializeOptions());
+  }
+
   private static initializeOptions(): GameFilterOption[] {
     const myOptions = [];
     myOptions.push(new GameFilterOption(CloudOptions.Yes, true, true, false));
@@ -19,13 +24,9 @@ export class MyCloudGameFilter extends GameFilterWithOptions {
     return myOptions;
   }
 
-  constructor() {
-    super(MyCloudGameFilter.initializeOptions());
-  }
-
   gamePassesOption(game: Game, option: GameFilterOption): boolean {
     if (option.value === true) {
-      return game.steam_cloud.value === true && game.ownsPlatformWithName('Steam');
+      return game.steam_cloud.value === true && this.platformService.ownsPlatformWithName(game, 'Steam');
     } else {
       return game.steam_cloud.value === false;
     }

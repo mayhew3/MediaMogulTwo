@@ -60,7 +60,7 @@
                   [(activeId)]="selectedPlatform"
                   (navChange)="selectedPlatformChanged($event)"
                   class="nav nav-tabs">
-                <li *ngFor="let platform of game.myPlatformsInGlobal"
+                <li *ngFor="let platform of platformService.getMyPlatformsInGlobal(game)"
                     [ngbNavItem]="platform"
                     class="nav-item">
                   <a ngbNavLink
@@ -325,8 +325,8 @@
         <div class="row">
           <div class="col-12 gameImageContainer">
             <img class="rounded gameImage"
-                 *ngIf="!!game.getImageUrl()"
-                 src="{{game.getImageUrl()}}"
+                 *ngIf="!!getImageUrl()"
+                 src="{{getImageUrl()}}"
                  [game]="game"
                  default="../../../assets/GenericSeries.gif"
                  alt="{{game.title.originalValue}}"/>
@@ -369,17 +369,17 @@
       <div class="row"
            *ngFor="let availablePlatform of game.availablePlatforms">
         <div class="col">
-          {{availablePlatform.platform_name.value}}
+          {{availablePlatform.platform_name}}
         </div>
         <div class="col">
-          {{availablePlatform.metacritic.value}}
+          {{availablePlatform.metacritic}}
         </div>
 
         <div class="col">
-          {{availablePlatform.metacritic_matched.value | date: 'yyyy-MM-dd'}}
+          {{availablePlatform.metacritic_matched | date: 'yyyy-MM-dd'}}
         </div>
         <div class="col">
-          {{availablePlatform.metacritic_page.value}}
+          {{availablePlatform.metacritic_page}}
         </div>
 
       </div>
@@ -415,9 +415,9 @@
       </div>
 
 
-      <div *ngIf="game.isOwned()">
+      <div *ngIf="isOwned()">
         <div class="row"
-             *ngFor="let myPlatform of game.myPlatformsInGlobal">
+             *ngFor="let myPlatform of platformService.getMyPlatformsInGlobal(game)">
           <div class="col">
             {{myPlatform.platform_name.value}}
           </div>

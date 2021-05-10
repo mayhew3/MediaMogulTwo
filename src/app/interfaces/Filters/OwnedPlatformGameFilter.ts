@@ -20,7 +20,7 @@ export class OwnedPlatformGameFilter extends GameFilterWithOptions {
   }
 
   gamePassesOption(game: Game, option: GameFilterOption): boolean {
-    return game.ownsPlatformWithID(option.value);
+    return this.platformService.ownsPlatformWithID(game, option.value);
   }
 
   getLabel(): string {

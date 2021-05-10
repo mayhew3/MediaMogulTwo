@@ -25,10 +25,10 @@
   <div class="row m-1"
        *ngFor="let platform of addablePlatforms">
     <div class="col-6 small">
-      <h3>{{platform.platform_name.originalValue}}</h3>
+      <h3>{{platform.platform_name}}</h3>
     </div>
     <div class="col-3">
-      <mm-rating-box [value]="platform.metacritic.originalValue"
+      <mm-rating-box [value]="platform.metacritic"
                      [maxValue]="100"></mm-rating-box>
     </div>
     <div class="col-3">
@@ -39,13 +39,13 @@
     </div>
   </div>
 
-  <div *ngIf="game.availablePlatformsNotInGlobal.length > 0">
+  <div *ngIf="platformService.getAvailablePlatformsNotInGlobal(game).length > 0">
     <br>
     <h5>Unowned Platforms</h5>
     <div class="row m-1"
-         *ngFor="let platform of game.availablePlatformsNotInGlobal">
+         *ngFor="let platform of platformService.getAvailablePlatformsNotInGlobal(game)">
       <div class="col-9">
-        {{platform.platform_name.originalValue}}
+        {{platform.platform_name}}
       </div>
     </div>
   </div>

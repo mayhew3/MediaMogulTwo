@@ -8,6 +8,7 @@ import {AvailableGamePlatform} from '../../interfaces/Model/AvailableGamePlatfor
 import {AddPlatformsComponent} from '../add-platforms/add-platforms.component';
 import {PlatformService} from '../../services/platform.service';
 import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
+import {GameService} from '../../services/game.service';
 
 @Component({
   selector: 'mm-game-card',
@@ -21,7 +22,8 @@ export class GameCardComponent {
   successfullyAdded = false;
 
   constructor(private modalService: NgbModal,
-              private platformService: PlatformService) { }
+              private platformService: PlatformService,
+              private gameService: GameService) { }
 
   private static getDismissReason(reason: any): string {
     if (reason === ModalDismissReasons.ESC) {
@@ -34,7 +36,7 @@ export class GameCardComponent {
   }
 
   isNotRecentlyUnowned(): boolean {
-    return !this.game.isOwned() || this.successfullyAdded;
+    return !this.isOwned() || this.successfullyAdded;
   }
 
   hasSingleAvailablePlatform(): boolean {
@@ -57,7 +59,7 @@ export class GameCardComponent {
   }
 
   showProgressBar(): boolean {
-    return this.game.isOwned() && this.game.natural_end.originalValue && this.game.getProgressPercent() !== undefined;
+    return this.isOwned() && this.game.natural_end.originalValue && this.game.getProgressPercent() !== undefined;
   }
 
   showAddGameButton(): boolean {
@@ -73,7 +75,7 @@ export class GameCardComponent {
   }
 
   showPlaytimeButton(): boolean {
-    return this.canAddPlaytime() && this.game.isOwned() && !this.successfullyAdded;
+    return this.canAddPlaytime() && this.isOwned() && !this.successfullyAdded;
   }
 
   async handlePopupResult(modalRef: NgbModalRef): Promise<void> {
@@ -95,7 +97,7 @@ export class GameCardComponent {
   }
 
   async openDetailPopup(): Promise<void> {
-    if (this.game.isOwned()) {
+    if (this.isOwned()) {
       const modalRef = this.modalService.open(GameDetailComponent, {size: 'lg'});
       modalRef.componentInstance.game = this.game;
       await this.handlePopupResult(modalRef);
@@ -109,7 +111,14 @@ export class GameCardComponent {
   }
 
   isSteamGame(): boolean {
-    return this.game.hasPlatform('Steam');
+    return this.platformService.hasPlatformWithName(this.game, 'Steam');
   }
 
+  getImageUrl(): string {
+    return this.gameService.getImageUrl(this.game);
+  }
+
+  isOwned(): boolean {
+    return this.gameService.isOwned(this.game);
+  }
 }
