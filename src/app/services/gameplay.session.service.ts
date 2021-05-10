@@ -29,7 +29,7 @@ export class GameplaySessionService implements OnDestroy {
         const personID = me.id;
         const payload = {
           person_id: personID.toString(),
-          game_id: game.id.originalValue.toString()
+          game_id: game.id.toString()
         };
         const options = {
           params: payload

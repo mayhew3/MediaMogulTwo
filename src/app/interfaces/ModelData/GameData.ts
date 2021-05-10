@@ -1,6 +1,6 @@
 import {AvailableGamePlatform} from '../Model/AvailableGamePlatform';
 
-export class GameData {
+export interface GameData {
   id: number;
   title: string;
   platform: string;
@@ -43,8 +43,6 @@ export class GameData {
   igdb_summary: string;
   igdb_updated: Date;
 
-  brokenImage = false;
-
-  availablePlatforms: AvailableGamePlatform[] = [];
+  availablePlatforms: AvailableGamePlatform[];
 
 }

@@ -58,8 +58,8 @@ export class GameDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.selectedPlatform = this.game.myPreferredPlatform;
-    this.finished = !!this.selectedPlatform && !!this.selectedPlatform.finished_date.value;
-    this.editedTitle = this.game.title.value;
+    this.finished = !!this.selectedPlatform && !!this.selectedPlatform.finished_date;
+    this.editedTitle = this.game.title;
     this.initializeDates(this.selectedPlatform);
 
     this.gameplaySessionService.getGameplaySessions(this.game).subscribe(sessions => {
@@ -78,7 +78,7 @@ export class GameDetailComponent implements OnInit {
   }
 
   showProgressBar(): boolean {
-    return this.game.isOwned() && this.game.natural_end.originalValue && this.game.getProgressPercent() !== undefined;
+    return this.game.isOwned() && this.game.natural_end && this.game.getProgressPercent() !== undefined;
   }
 
   hasMultiplePlatforms(): boolean {
@@ -86,7 +86,7 @@ export class GameDetailComponent implements OnInit {
   }
 
   selectedIsPreferred(): boolean {
-    return this.selectedPlatform.id.originalValue === this.game.myPreferredPlatform.id.originalValue;
+    return this.selectedPlatform.id === this.game.myPreferredPlatform.id;
   }
 
   getRatingOption(): DetailNav {
@@ -98,7 +98,7 @@ export class GameDetailComponent implements OnInit {
   }
 
   getFilteredSessions(): GameplaySession[] {
-    return _.filter(this.gameplaySessions, gameplaySession => _.last(this.gameplaySessions) === gameplaySession || gameplaySession.minutes.originalValue > 2);
+    return _.filter(this.gameplaySessions, gameplaySession => _.last(this.gameplaySessions) === gameplaySession || gameplaySession.minutes > 2);
   }
 
   getPillClass(detailOption: DetailNav): string {
@@ -110,11 +110,11 @@ export class GameDetailComponent implements OnInit {
   }
 
   async changePreferredPlatform(): Promise<void> {
-    this.game.myPreferredPlatform.preferred.value = false;
+    /*this.game.myPreferredPlatform.preferred = false;
     await this.gameService.updateMyPlatform(this.game.myPreferredPlatform);
 
-    this.selectedPlatform.preferred.value = true;
-    await this.gameService.updateMyPlatform(this.selectedPlatform);
+    this.selectedPlatform.preferred = true;
+    await this.gameService.updateMyPlatform(this.selectedPlatform);*/
   }
 
   get addablePlatforms(): AvailableGamePlatform[] {
@@ -126,7 +126,7 @@ export class GameDetailComponent implements OnInit {
   }
 
   getMetacritic(): number {
-    return this.selectedPlatform.availableGamePlatform.metacritic.originalValue;
+    return this.selectedPlatform.availableGamePlatform.metacritic;
   }
 
   anyFieldsChanged(): boolean {
@@ -134,19 +134,19 @@ export class GameDetailComponent implements OnInit {
   }
 
   onFinishedFieldEdit(event): void {
-    this.finished = event;
-    this.selectedPlatform.finished_date.value = !!this.finished ? new Date() : null;
-    this.onFieldEdit();
+    /*this.finished = event;
+    this.selectedPlatform.finished_date = !!this.finished ? new Date() : null;
+    this.onFieldEdit();*/
   }
 
   onNaturalEndEdit(event): void {
-    this.game.natural_end.value = event;
-    this.onFieldEdit();
+    /*this.game.natural_end = event;
+    this.onFieldEdit();*/
   }
 
   onFieldEdit(): void {
-    this.changedGameFields = this.game.getChangedFields();
-    this.changedPersonFields = this.selectedPlatform.getChangedFields();
+    /*this.changedGameFields = this.game.getChangedFields();
+    this.changedPersonFields = this.selectedPlatform.getChangedFields();*/
   }
 
   anyPlatformsAreFinished(): boolean {
@@ -155,7 +155,7 @@ export class GameDetailComponent implements OnInit {
   }
 
   isFinished(myPlatform: MyGamePlatform): boolean {
-    return !!myPlatform.finished_date.value;
+    return !!myPlatform.finished_date;
   }
 
   hasSelectedPlatform(): boolean {
@@ -217,7 +217,7 @@ export class GameDetailComponent implements OnInit {
   initializeDates(selectedPlatform: MyGamePlatform): void {
     this.original = new GameTime();
     this.timeTotal = new GameTime();
-    this.original.initialize(selectedPlatform.minutes_played.value);
+    this.original.initialize(selectedPlatform.minutes_played);
     this.timeTotal.initialize(this.game.minutesToFinish);
   }
 

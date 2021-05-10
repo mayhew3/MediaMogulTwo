@@ -25,11 +25,11 @@ export class OwnedCloudGameFilter extends GameFilterWithOptions {
 
   gamePassesOption(game: Game, option: GameFilterOption): boolean {
     if (option.value === true) {
-      return game.steam_cloud.value === true && game.ownsPlatformWithName('Steam');
+      return game.steam_cloud === true && game.ownsPlatformWithName('Steam');
     } else if (option.value === false) {
-      return game.steam_cloud.value === false;
+      return game.steam_cloud === false;
     } else {
-      return !game.steam_cloud.value;
+      return !game.steam_cloud;
     }
   }
 

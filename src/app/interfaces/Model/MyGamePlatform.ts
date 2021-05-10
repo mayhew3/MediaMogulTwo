@@ -18,6 +18,10 @@ export class MyGamePlatform {
     return this.availableGamePlatform.game;
   }
 
+  get id(): number {
+    return this.myGamePlatformData.id;
+  }
+
 /*
   initializedFromJSON(jsonObj: any): this {
     super.initializedFromJSON(jsonObj);

@@ -24,7 +24,7 @@ export class PlaytimePopupComponent implements OnInit {
   resulting = new GameTime();
   added = new GameTime();
 
-  gameplaySession = new GameplaySession();
+  gameplaySession = {};
 
   finished = false;
 
@@ -48,9 +48,9 @@ export class PlaytimePopupComponent implements OnInit {
       this.game.myPreferredPlatform :
       this.myMutablePlatforms[0];
     this.initializeDates();
-    this.finished = !!this.selectedPlatform.finished_date.value;
-    this.finalScore = this.selectedPlatform.final_score.value;
-    this.replayScore = this.selectedPlatform.replay_score.value;
+    this.finished = !!this.selectedPlatform.myGamePlatformData.finished_date;
+    this.finalScore = this.selectedPlatform.myGamePlatformData.final_score;
+    this.replayScore = this.selectedPlatform.myGamePlatformData.replay_score;
   }
 
   get myMutablePlatforms(): MyGamePlatform[] {
@@ -70,7 +70,7 @@ export class PlaytimePopupComponent implements OnInit {
   }
 
   platformIsSelected(platform: MyGamePlatform): boolean {
-    return platform.id.originalValue === this.selectedPlatform.id.originalValue;
+    return platform.id === this.selectedPlatform.myGamePlatformData.id;
   }
 
   platformsExceptSelected(): MyGamePlatform[] {
@@ -86,7 +86,7 @@ export class PlaytimePopupComponent implements OnInit {
     this.original = new GameTime();
     this.resulting = new GameTime();
     this.added = new GameTime();
-    this.original.initialize(this.selectedPlatform.minutes_played.value);
+    this.original.initialize(this.selectedPlatform.myGamePlatformData.minutes_played);
   }
 
   convertModelToDate(): Date {
@@ -110,30 +110,31 @@ export class PlaytimePopupComponent implements OnInit {
   }
 
   anyFieldsChanged(): boolean {
-    const gametimeChanged = this.added.asMinutes() > 0;
-    const finishedChanged = !this.finished !== !this.selectedPlatform.finished_date.value;
-    const finalScoreChanged = this.finalScore !== this.selectedPlatform.final_score.value;
-    const replayScoreChanged = this.replayScore !== this.selectedPlatform.replay_score.value;
-    return gametimeChanged || finishedChanged || finalScoreChanged || replayScoreChanged;
+    /*const gametimeChanged = this.added.asMinutes() > 0;
+    const finishedChanged = !this.finished !== !this.selectedPlatform.finished_date;
+    const finalScoreChanged = this.finalScore !== this.selectedPlatform.final_score;
+    const replayScoreChanged = this.replayScore !== this.selectedPlatform.replay_score;
+    return gametimeChanged || finishedChanged || finalScoreChanged || replayScoreChanged;*/
+    return false;
   }
 
   async saveAndClose(): Promise<void> {
     this.personService.me$.subscribe(async person => {
       try {
-        const playedDate = this.convertModelToDate();
+        /*const playedDate = this.convertModelToDate();
         const myPlatform = this.selectedPlatform;
-        myPlatform.minutes_played.value = this.resulting.asMinutes();
-        myPlatform.last_played.value = playedDate;
-        myPlatform.finished_date.value = this.finished ? playedDate : null;
+        myPlatform.minutes_played = this.resulting.asMinutes();
+        myPlatform.last_played = playedDate;
+        myPlatform.finished_date = this.finished ? playedDate : null;
 
-        this.gameplaySession.game_id.value = this.game.id.value;
-        this.gameplaySession.minutes.value = this.added.asMinutes();
-        this.gameplaySession.start_time.value = playedDate;
-        this.gameplaySession.person_id.value = person.id;
+        this.gameplaySession.game_id = this.game.id;
+        this.gameplaySession.minutes = this.added.asMinutes();
+        this.gameplaySession.start_time = playedDate;
+        this.gameplaySession.person_id = person.id;
 
         const resultSession = await this.gameService.insertGameplaySession(this.gameplaySession);
         await this.gameService.updateMyPlatform(myPlatform);
-        this.activeModal.close(resultSession);
+        this.activeModal.close(resultSession);*/
       } catch (err) {
         console.error(err);
       }
@@ -141,7 +142,7 @@ export class PlaytimePopupComponent implements OnInit {
   }
 
   dismiss(): void {
-    this.game.discardChanges();
+    // this.game.discardChanges();
     this.activeModal.dismiss('Cross Click');
   }
 

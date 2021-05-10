@@ -10,6 +10,7 @@ import {Game} from '../../interfaces/Model/Game';
 import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
 import * as _ from 'underscore';
 import {ArrayUtil} from '../../utility/ArrayUtil';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'mm-search',
@@ -72,7 +73,7 @@ export class SearchComponent implements OnInit {
     return _.filter(availablePlatforms, availablePlatform => !_.contains(matchPlatformIDs, availablePlatform.gamePlatform.igdb_platform_id));
   }
 
-  private findMatchingGame(match: any): Game {
+  private findMatchingGame(match: any): Observable<Game> {
     return this.gameService.findGame(match.id);
   }
 
@@ -136,18 +137,19 @@ export class SearchComponent implements OnInit {
   async handleAddClick(match: any, platform: any): Promise<void> {
     const game: Game = this.findMatchingGame(match);
     if (!game) {
-      await this.addGame(match, platform);
+      // await this.addGame(match, platform);
     } else {
-      await this.addToMyPlatforms(game, match, platform);
+      // await this.addToMyPlatforms(game, match, platform);
     }
   }
-
+/*
   async addExistingWithMyPlatform(availablePlatform: AvailableGamePlatform): Promise<MyGamePlatform> {
     const myGamePlatform = new MyGamePlatform(availablePlatform);
-    myGamePlatform.rating.value = this.rating;
+    myGamePlatform.rating = this.rating;
     return this.gameService.addMyGamePlatform(availablePlatform, myGamePlatform);
   }
-
+  */
+/*
   getOrCreateGamePlatform(platform: any): Promise<GamePlatform> {
     return new Promise((resolve) => {
       const existingPlatform = this.findPlatformWithIGDBID(platform.id);
@@ -161,7 +163,8 @@ export class SearchComponent implements OnInit {
         resolve(existingPlatform);
       }
     });
-  }
+  }*/
+/*
 
   async getOrCreateAvailablePlatform(game: Game, platform: any): Promise<AvailableGamePlatform> {
     const gamePlatform = await this.getOrCreateGamePlatform(platform);
@@ -171,6 +174,8 @@ export class SearchComponent implements OnInit {
     }
     return platform.availableGamePlatform;
   }
+*/
+/*
 
   async addToMyPlatforms(game: Game, match: any, platform: any): Promise<MyGamePlatform> {
     for (const platformObj of match.platforms) {
@@ -190,30 +195,31 @@ export class SearchComponent implements OnInit {
       igdb_platform_id: platform.id
     };
   }
-
+*/
+/*
   async addGame(match: any, selectedPlatform: any): Promise<Game> {
     const gameObj = new Game(this.platformService, this.allPlatforms);
 
-    gameObj.title.value = match.name;
-    gameObj.igdb_id.value = match.id;
+    gameObj.title = match.name;
+    gameObj.igdb_id = match.id;
 
-    gameObj.igdb_rating.value = match.rating;
-    gameObj.igdb_rating_count.value = match.rating_count;
-    gameObj.igdb_popularity.value = match.popularity;
-    gameObj.igdb_slug.value = match.slug;
-    gameObj.igdb_summary.value = match.summary;
-    gameObj.igdb_updated.value = this.getDateFrom(match.updated_at);
+    gameObj.igdb_rating = match.rating;
+    gameObj.igdb_rating_count = match.rating_count;
+    gameObj.igdb_popularity = match.popularity;
+    gameObj.igdb_slug = match.slug;
+    gameObj.igdb_summary = match.summary;
+    gameObj.igdb_updated = this.getDateFrom(match.updated_at);
 
     const releaseDates = _.map(match.release_dates, release_date => release_date.date);
     const compact = _.compact(releaseDates);
     const minUnixDate = _.min(compact);
 
-    gameObj.igdb_release_date.value = this.getDateFrom(minUnixDate);
+    gameObj.igdb_release_date = this.getDateFrom(minUnixDate);
 
     if (!!match.cover) {
-      gameObj.igdb_poster.value = match.cover.image_id;
-      gameObj.igdb_width.value = match.cover.width;
-      gameObj.igdb_height.value = match.cover.height;
+      gameObj.igdb_poster = match.cover.image_id;
+      gameObj.igdb_width = match.cover.width;
+      gameObj.igdb_height = match.cover.height;
     }
 
     const game = await this.gameService.addGame(gameObj);
@@ -236,5 +242,5 @@ export class SearchComponent implements OnInit {
 
     return game;
 
-  }
+  }*/
 }

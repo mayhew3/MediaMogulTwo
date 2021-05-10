@@ -28,13 +28,14 @@ export class AddPlatformsComponent {
   }
 
   showAddButton(availableGamePlatform: AvailableGamePlatform): boolean {
-    return !availableGamePlatform.myGamePlatform && availableGamePlatform.platform_name.originalValue !== 'Steam';
+    return !availableGamePlatform.myGamePlatform && availableGamePlatform.platform_name !== 'Steam';
   }
 
   async addPlatform(availableGamePlatform: AvailableGamePlatform): Promise<void> {
+    /*
     const myGamePlatform = new MyGamePlatform(availableGamePlatform);
-    myGamePlatform.rating.value = this.rating;
-    this.mostRecentAdd = await this.gameService.addMyGamePlatform(availableGamePlatform, myGamePlatform);
+    myGamePlatform.rating = this.rating;
+    this.mostRecentAdd = await this.gameService.addMyGamePlatform(availableGamePlatform, myGamePlatform);*/
   }
 
   async close(): Promise<void> {

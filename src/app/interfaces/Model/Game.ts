@@ -13,6 +13,10 @@ export class Game {
   constructor(public gameData: GameData) {
   }
 
+  get id(): number {
+    return this.gameData.id;
+  }
+
   get availablePlatforms(): AvailableGamePlatform[] {
     return this.gameData.availablePlatforms;
   }
@@ -71,7 +75,7 @@ export class Game {
   }
 
   ownsPlatformWithName(platformName: string): boolean {
-    const existing = _.find(this.myPlatformsInGlobal, myPlatform => myPlatform.platform_name.value === platformName);
+    const existing = _.find(this.myPlatformsInGlobal, myPlatform => myPlatform.platform_name === platformName);
     return !!existing;
   }
 
@@ -138,13 +142,13 @@ export class Game {
   }
 
   getLastPlayed(): Date {
-    const allLastPlayed = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.last_played.originalValue);
+    const allLastPlayed = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.last_played);
     const max = _.max(allLastPlayed) as Date;
     return !!max ? max : null;
   }
 
   getOwnershipDateAdded(): Date {
-    const allDateAdded = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.collection_add.originalValue);
+    const allDateAdded = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.collection_add);
     const max = _.max(allDateAdded) as Date;
     return !!max ? max : null;
   }
@@ -152,7 +156,7 @@ export class Game {
   get myPreferredPlatform(): MyGamePlatform {
     const myPlatforms = this.myPlatformsInGlobal;
     if (myPlatforms.length > 0) {
-      const manualPreferred = _.find(myPlatforms, myPlatform => !!myPlatform.preferred.originalValue);
+      const manualPreferred = _.find(myPlatforms, myPlatform => !!myPlatform.preferred);
       if (!!manualPreferred) {
         return manualPreferred;
       } else {
@@ -167,7 +171,7 @@ export class Game {
 /*
 
   get myPreferredPlatformNullAllowed(): MyGamePlatform {
-    const allPreferred = _.filter(this.myPlatformsInGlobal, myPlatform => myPlatform.preferred.originalValue === true);
+    const allPreferred = _.filter(this.myPlatformsInGlobal, myPlatform => myPlatform.preferred === true);
     if (allPreferred.length === 0) {
       return undefined;
     } else {
@@ -178,7 +182,7 @@ export class Game {
 
   get myRating(): number {
     const preferred = this.myPreferredPlatform;
-    return !preferred ? null : preferred.rating.originalValue;
+    return !preferred ? null : preferred.rating;
   }
 
   get minutesToFinish(): number {
@@ -214,13 +218,13 @@ export class Game {
   }
 
   get bestPlaytime(): number {
-    const allPlaytimes = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.minutes_played.originalValue);
+    const allPlaytimes = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.minutes_played);
     const max = _.max(allPlaytimes);
     return max > 0 ? max : null;
   }
 
   get bestMyRating(): number {
-    const allRatings = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.rating.originalValue);
+    const allRatings = _.map(this.myPlatformsInGlobal, myPlatform => myPlatform.rating);
     const max = _.max(allRatings);
     return max > 0 ? max : null;
   }
@@ -231,7 +235,7 @@ export class Game {
   }
 
   get isFinished(): boolean {
-    const allFinished = _.filter(this.myPlatformsInGlobal, myPlatform => !!myPlatform.finished_date.originalValue);
+    const allFinished = _.filter(this.myPlatformsInGlobal, myPlatform => !!myPlatform.finished_date);
     return !_.isEmpty(allFinished);
   }
 

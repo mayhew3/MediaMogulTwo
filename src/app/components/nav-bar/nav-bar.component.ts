@@ -28,13 +28,13 @@ export class NavBarComponent implements OnInit {
               private modalService: NgbModal,
               @Inject(DOCUMENT) public document: Document) { }
 
-  formatter = (game: Game): string => game.title.value;
+  formatter = (game: Game): string => game.title;
 
   search = (text$: Observable<string>): Observable<Game[]> =>
     text$.pipe(
       distinctUntilChanged(),
       map((term: string) =>
-        _.filter(this.games, v => v.title.value.toLowerCase().indexOf(term.toLowerCase()) > -1)
+        _.filter(this.games, v => v.title.toLowerCase().indexOf(term.toLowerCase()) > -1)
           .slice(0, 6))
     );
 
@@ -43,7 +43,6 @@ export class NavBarComponent implements OnInit {
       ArrayUtil.refreshArray(this.games, games);
       this.initializing = false;
     });
-    this.gameService.maybeRefreshCache();
   }
 
   isLoggedIn$(): Observable<boolean> {

@@ -9,7 +9,7 @@ export class OrderByTitle extends GameOrdering {
   }
 
   sortValue(game: Game): any {
-    return game.title.value;
+    return game.title;
   }
 }
 

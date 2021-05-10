@@ -10,7 +10,7 @@ export class OrderByDateAdded extends GameOrdering {
 
   sortValue(game: Game): any {
     const ownershipDateAdded = game.getOwnershipDateAdded();
-    const gameDateAdded = !game.date_added.originalValue ? null : game.date_added.originalValue;
+    const gameDateAdded = !game.date_added ? null : game.date_added;
     return game.isOwned() ? ownershipDateAdded : gameDateAdded;
   }
 }
