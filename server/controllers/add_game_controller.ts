@@ -1,5 +1,8 @@
 import axios from 'axios';
+import _ from 'underscore';
 const tokens = require('./igdb_token_service');
+
+export const cache: IGDBMatch[] = [];
 
 export const getIGDBMatches = async (request: Record<string, any>, response: Record<string, any>): Promise<any> => {
   const game_title = request.query.game_title;
@@ -41,10 +44,76 @@ export const getIGDBMatches = async (request: Record<string, any>, response: Rec
   };
 
   axios.post(igdbUrl, params, options).then(matches => {
-    response.json(matches.data);
+    const igdbMatches: IGDBMatch[] = matches.data;
+    addAllToCache(igdbMatches);
+    response.json(igdbMatches);
   }).catch(err => {
     console.log(err.response.data[0].cause);
   });
 
 
 };
+
+const addAllToCache = (igdbMatches: IGDBMatch[]): void => {
+  _.each(igdbMatches, match => addToCacheIfNotExists(match));
+}
+
+const addToCacheIfNotExists = (igdbMatch: IGDBMatch): void => {
+  const existing = _.findWhere(cache, {id: igdbMatch.id});
+  if (!existing) {
+    igdbMatch.match_date = new Date();
+    cache.push(igdbMatch);
+  } else {
+    existing.match_date = new Date();
+  }
+};
+
+interface IGDBMatch {
+  match_date: Date;
+  id: number;
+  name: string;
+  rating: number;
+  rating_count: number;
+  slug: string;
+  summary: string;
+  updated_at: number;
+  url: string;
+  genres: {
+    id: number;
+    name: string;
+  }[];
+  involved_companies: {
+    id: number;
+    company: {
+      id: number;
+      name: string;
+    }
+  }[];
+  keywords: {
+    id: number;
+    name: string;
+  }[];
+  platforms: {
+    id: number;
+    name: string;
+  }[];
+  cover: {
+    id: number;
+    width: number;
+    height: number;
+    image_id: string;
+  };
+  player_perspectives: {
+    id: number;
+    name: string;
+  }[];
+  release_dates: {
+    id: number;
+    date: number;
+    platform: {
+      id: number;
+      name: string;
+    }
+  }[];
+  tags: number[];
+}

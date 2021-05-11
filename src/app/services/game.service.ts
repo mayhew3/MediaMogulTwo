@@ -64,6 +64,19 @@ export class GameService {
     );
   }
 
+  async addGameToCollection(igdb_id: number,
+                            platform_id?: number,
+                            igdb_platform_id?: number,
+                            rating?: number): Promise<void> {
+    const body = {
+      igdb_id,
+      platform_id,
+      igdb_platform_id,
+      rating
+    }
+    this.apiService.executePostAfterFullyConnected('/api/games', body);
+  }
+
   // PUBLIC CHANGE APIs. Make sure to call pushGameListChange() at the end of each operation.
 
   async addGame(game: Game): Promise<void> {
