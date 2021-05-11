@@ -1,9 +1,9 @@
 import axios from 'axios';
 import _ from 'underscore';
-const tokens = require('./igdb_token_service');
 import * as model from './model';
 import * as moment from 'moment';
-import {match} from 'assert';
+
+const tokens = require('./igdb_token_service');
 
 export const cache: IGDBMatch[] = [];
 
@@ -73,10 +73,49 @@ export const addGameToCollection = async (request, response): Promise<void> => {
   const addedPlatforms = await addGamePlatforms(igdbMatch);
 
   // Step 2: Add Game to DB
-  const {game, posterObj} = await addGame(igdbMatch);
-  
+  let game = model.Game.findOne({
+    where: {
+      igdb_id: igdbMatch.id
+    }
+  });
+
+  if (!game) {
+    const {addedGame, posterObj} = await addGame(igdbMatch);
+    game = addedGame;
+  }
+
   // Step 3: Add Available Platforms to DB
-  await addAvailablePlatforms(igdbMatch);
+  const addedGlobalPlatforms = [];
+  const addedAvailablePlatforms = [];
+  const existingAvailablePlatforms = model.AvailableGamePlatform.findAll({
+    where: {
+      game_id
+    }
+  });
+  _.each(igdbMatch.platforms, async platform => {
+    const {globalPlatform, added} = await getOrCreateGlobalPlatform(platform);
+    if (added) {
+      addedGlobalPlatforms.push(globalPlatform);
+    }
+
+    let availablePlatform = _.findWhere(existingAvailablePlatforms, p => p.igdb_platform_id === platform.id);
+
+    if (!availablePlatform) {
+      const availablePlatformObj = {
+        game_id,
+        game_platform_id: globalPlatform.id,
+        platform_name: globalPlatform.full_name
+      }
+      availablePlatform = await model.AvailableGamePlatform.create(availablePlatformObj);
+      addedAvailablePlatforms.push(availablePlatform);
+    }
+
+    if (platform.id === my_platform_igdb_id) {
+      const myPlatformObj = {
+
+      }
+    }
+  });
 
   // Step 4: Add My Game Platforms to DB
   if (!game_platform_id) {
@@ -92,22 +131,15 @@ export const addGameToCollection = async (request, response): Promise<void> => {
 const addGamePlatforms = async (igdbMatch: IGDBMatch): Promise<any[]> => {
   const addedPlatforms = [];
   _.each(igdbMatch.platforms, async platform => {
-    const game_platform_id = await findPlatformWithIGDBID(platform.id);
-    if (!game_platform_id) {
-      const gamePlatformObj = {
-        full_name: platform.name,
-        short_name: platform.name,
-        igdb_name: platform.name,
-        igdb_platform_id: platform.id
-      };
-      const gamePlatform = await model.GamePlatform.create(gamePlatformObj);
-      addedPlatforms.push(gamePlatform);
+    const globalPlatform = await getOrCreateGlobalPlatform(platform);
+    if (!!globalPlatform) {
+      addedPlatforms.push(globalPlatform);
     }
   });
   return addedPlatforms;
 }
 
-const addGame = async (igdbMatch: IGDBMatch): Promise<any> => {
+const addGame = async (igdbMatch: IGDBMatch): Promise<{addedGame, posterObj}> => {
   const coverObj: any = {
     igdb_game_id: igdbMatch.id,
     image_id: igdbMatch.cover.image_id,
@@ -135,22 +167,42 @@ const addGame = async (igdbMatch: IGDBMatch): Promise<any> => {
     igdb_next_update: !igdbMatch.id ? null : moment().add(7, 'days').toDate()
   };
 
-  const game = await model.Game.create(gameObj);
+  const addedGame = await model.Game.create(gameObj);
 
   let posterObj;
   if (!!coverObj.image_id) {
-    coverObj.game_id = game.id;
+    coverObj.game_id = addedGame.id;
     posterObj = await model.IGDBPoster.create(coverObj);
   }
 
   return {
-    game,
+    addedGame,
     posterObj
   }
 }
 
-const addAvailablePlatforms = async (igdbMatch: IGDBMatch): Promise<any> => {
+const addAvailablePlatforms = async (igdbMatch: IGDBMatch, game_id: number, my_platform_igdb_id: number): Promise<any> => {
 
+}
+
+async function getOrCreateGlobalPlatform(platform: _.TypeOfCollection<{ id: number; name: string }[]>): Promise<{globalPlatform, added: boolean}> {
+  const game_platform = await findPlatformWithIGDBID(platform.id);
+  if (!game_platform) {
+    const gamePlatformObj = {
+      full_name: platform.name,
+      short_name: platform.name,
+      igdb_name: platform.name,
+      igdb_platform_id: platform.id
+    };
+    return {
+      globalPlatform: await model.GamePlatform.create(gamePlatformObj),
+      added: true
+    };
+  }
+  return {
+    globalPlatform: game_platform,
+    added: false
+  };
 }
 
 const addMyPlatform = async (igdbMatch: IGDBMatch, person_id: number, game_platform_id: number, rating: number): Promise<any> => {
@@ -162,13 +214,12 @@ const getDateFrom = (unixTimestamp: number): Date => {
   return !unixTimestamp ? null : moment.unix(unixTimestamp).toDate();
 }
 
-const findPlatformWithIGDBID = async (igdb_platform_id: number): Promise<number> => {
-  const platform = await model.GamePlatform.findOne({
+const findPlatformWithIGDBID = async (igdb_platform_id: number): Promise<any> => {
+  return await model.GamePlatform.findOne({
     where: {
       igdb_platform_id
     }
   });
-  return platform.id;
 }
 
 const addAllToCache = (igdbMatches: IGDBMatch[]): void => {
