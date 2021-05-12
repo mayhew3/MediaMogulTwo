@@ -4,6 +4,7 @@ import * as model from './model';
 import moment from 'moment';
 import {socketServer} from '../www';
 import {MyGameAddedMessage} from '../../src/shared/MyGameAddedMessage';
+import {GlobalGameAddedMessage} from '../../src/shared/GlobalGameAddedMessage';
 
 const tokens = require('./igdb_token_service');
 
@@ -128,7 +129,8 @@ export const addGameToCollection = async (request, response): Promise<void> => {
   }
 
   if (!!newGame || addedGlobalPlatforms.length > 0 || addedAvailablePlatforms.length > 0) {
-    const messageToEveryone = {
+    const messageToEveryone: GlobalGameAddedMessage = {
+      game_id: !newGame ? null : newGame.id,
       addedGlobalPlatforms,
       newGame,
       addedAvailablePlatforms
