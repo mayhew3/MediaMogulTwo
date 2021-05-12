@@ -1,7 +1,7 @@
 import axios from 'axios';
 import _ from 'underscore';
 import * as model from './model';
-import * as moment from 'moment';
+import moment from 'moment';
 import {socketServer} from '../www';
 
 const tokens = require('./igdb_token_service');
@@ -59,40 +59,41 @@ export const getIGDBMatches = async (request: Record<string, any>, response: Rec
 };
 
 export const addGameToCollection = async (request, response): Promise<void> => {
-  const person_id = request.query.person_id;
-  const igdb_id = request.query.igdb_id;
-  let game_platform_id = request.query.platform_id;
-  const igdb_platform_id = request.query.igdb_platform_id;
-  const rating = request.query.rating;
+  const person_id = request.body.person_id;
+  const igdb_id = request.body.igdb_id;
+  let game_platform_id = request.body.platform_id;
+  const igdb_platform_id = request.body.igdb_platform_id;
+  const rating = request.body.rating;
 
   const igdbMatch: IGDBMatch = _.findWhere(cache, {id: igdb_id});
   if (!igdbMatch) {
     throw new Error(`No game found in cache with IGDB ID: ${igdb_id}`);
   }
 
-  let game = model.Game.findOne({
+  let game = await model.Game.findOne({
     where: {
       igdb_id: igdbMatch.id
     }
   });
-  let addedGame;
+  let newGame;
 
   if (!game) {
-    // todo: does this work??
     const {addedGame, posterObj} = await addGame(igdbMatch);
     game = addedGame;
+    newGame = addedGame;
+    console.log(`Added new game: '${game.title}'`);
   }
 
-  // Step 3: Add Available Platforms to DB
   const addedGlobalPlatforms = [];
   const addedAvailablePlatforms = [];
   let myPlatform;
-  const existingAvailablePlatforms = model.AvailableGamePlatform.findAll({
+  const existingAvailablePlatforms = await model.AvailableGamePlatform.findAll({
     where: {
       game_id: game.id
     }
   });
-  _.each(igdbMatch.platforms, async platform => {
+
+  for(const platform of igdbMatch.platforms) {
     const {globalPlatform, added} = await getOrCreateGlobalPlatform(platform);
     if (added) {
       addedGlobalPlatforms.push(globalPlatform);
@@ -107,6 +108,7 @@ export const addGameToCollection = async (request, response): Promise<void> => {
         platform_name: globalPlatform.full_name
       }
       availablePlatform = await model.AvailableGamePlatform.create(availablePlatformObj);
+      console.log(`Added available platform '${globalPlatform.full_name}' for game '${game.title}'`);
       addedAvailablePlatforms.push(availablePlatform);
     }
 
@@ -120,28 +122,33 @@ export const addGameToCollection = async (request, response): Promise<void> => {
         collection_add: new Date()
       };
       myPlatform = await model.MyGamePlatform.create(myPlatformObj);
+      console.log(`Added MyPlatform '${globalPlatform.full_name}' for game '${game.title}', person ${person_id}`);
     }
-  });
+  }
 
-  if (!!addedGame || addedGlobalPlatforms.length > 0 || addedAvailablePlatforms.length > 0) {
+  if (!!newGame || addedGlobalPlatforms.length > 0 || addedAvailablePlatforms.length > 0) {
     const messageToEveryone = {
       addedGlobalPlatforms,
-      addedGame,
+      newGame,
       addedAvailablePlatforms
     };
 
+    console.log(`Sending message to everyone: ${JSON.stringify(messageToEveryone)}`);
+
     socketServer.emitToAllExceptPerson(person_id, 'global_game_added', messageToEveryone);
+  }
 
-    if (!!myPlatform) {
-      const messageToPerson = {
-        addedGlobalPlatforms,
-        addedGame,
-        addedAvailablePlatforms,
-        myPlatform
-      }
-
-      socketServer.emitToPerson(person_id, 'my_game_added', messageToPerson);
+  if (!!myPlatform) {
+    const messageToPerson = {
+      addedGlobalPlatforms,
+      newGame,
+      addedAvailablePlatforms,
+      myPlatform
     }
+
+    console.log(`Sending message to person: ${JSON.stringify(messageToPerson)}`);
+
+    socketServer.emitToPerson(person_id, 'my_game_added', messageToPerson);
   }
 
   response.json({msg: 'Success!'});

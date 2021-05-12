@@ -70,23 +70,30 @@ export class GameService {
                             platform_id?: number,
                             igdb_platform_id?: number,
                             rating?: number): Promise<void> {
-    const body = {
-      igdb_id,
-      platform_id,
-      igdb_platform_id,
-      rating
-    }
-    this.apiService.executePostAfterFullyConnected('/api/games', body);
+    return new Promise(resolve => {
+      this.personService.me$.subscribe(async me => {
+        const body = {
+          person_id: me.id,
+          igdb_id,
+          platform_id,
+          igdb_platform_id,
+          rating
+        }
+        await this.apiService.executePostAfterFullyConnected('/api/games', body);
+        resolve();
+      });
+    });
+
   }
 
   // PUBLIC CHANGE APIs. Make sure to call pushGameListChange() at the end of each operation.
-
+/*
   async addGame(game: Game): Promise<void> {
-    /*const resultGame = await game.commit(this.http);
+    const resultGame = await game.commit(this.http);
     this._dataStore.games.push(resultGame);
     this.pushGameListChange();
-    return resultGame;*/
-  }
+    return resultGame;
+  }*/
 /*
 
   async addAvailablePlatformForExistingGamePlatform(game: Game, availableGamePlatform: AvailableGamePlatform): Promise<AvailableGamePlatform> {
