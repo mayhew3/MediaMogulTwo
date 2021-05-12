@@ -8,6 +8,8 @@ import {LoggerService} from './logger.service';
 
 @Injectable()
 export class SocketService {
+// Migrated from AngularJS https://raw.githubusercontent.com/Ins87/angular-date-interceptor/master/src/angular-date-interceptor.js
+  iso8601 = /^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(\.\d+)?(([+-]\d\d:\d\d)|Z)?$/;
 
   private pendingListeners: PendingListener[] = [];
   private socket: Socket;
@@ -33,12 +35,14 @@ export class SocketService {
     this.socket.on('disconnect', () => this.connectedSubject.next(false));
   }
 
-  on(channel, callback: (msg: any) => void): void {
+  on(channel, callback: (msg: any) => void): (msg: any) => void {
+    const wrappedCallback: (msg: any) => void = (msg: any) => callback(this.convertToDate(msg));
     if (!this.socket) {
-      this.pendingListeners.push(new PendingListener(channel, callback));
+      this.pendingListeners.push(new PendingListener(channel, wrappedCallback));
     } else {
-      this.socket.on(channel, callback);
+      this.socket.on(channel, wrappedCallback);
     }
+    return wrappedCallback;
   }
 
   off(channel, callback): void {
@@ -51,6 +55,33 @@ export class SocketService {
 
   get isConnected$(): Observable<boolean> {
     return this.connectedSubject.asObservable();
+  }
+
+  convertToDate(body): any {
+    if (body === null || body === undefined) {
+      return body;
+    }
+
+    if (typeof body !== 'object') {
+      return body;
+    }
+
+    for (const key of Object.keys(body)) {
+      const value = body[key];
+      if (this.isIso8601(value)) {
+        body[key] = new Date(value);
+      } else if (typeof value === 'object') {
+        this.convertToDate(value);
+      }
+    }
+  }
+
+  isIso8601(value): boolean {
+    if (value === null || value === undefined) {
+      return false;
+    }
+
+    return this.iso8601.test(value);
   }
 }
 

@@ -33,6 +33,9 @@ export class MessagingService {
     if (!this.listenersInitialized) {
 
       this.addSingleActionListener('update_global_platform', msg => new UpdateGlobalPlatform(msg.global_platform_id, msg.full_name, msg.short_name, msg.metacritic_uri));
+      this.socket.on('my_game_added', msg => {
+        const poop = 0;
+      })
 
       this.listenersInitialized = true;
     }
