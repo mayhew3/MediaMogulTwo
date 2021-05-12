@@ -3,7 +3,7 @@ import {SocketService} from './socket.service';
 import {Store} from '@ngxs/store';
 import _ from 'underscore';
 import {LoggerService} from './logger.service';
-import {AddGlobalPlatform, UpdateGlobalPlatform} from '../actions/global.platform.action';
+import {AddGlobalPlatforms, UpdateGlobalPlatform} from '../actions/global.platform.action';
 import {AddAvailableGamePlatforms, AddGameToMyCollection, AddGlobalGame} from '../actions/game.action';
 import {GameData} from '../interfaces/ModelData/GameData';
 import {MyGamePlatformData} from '../interfaces/ModelData/MyGamePlatformData';
@@ -51,12 +51,9 @@ export class MessagingService {
       this.addListener<MyGameAddedMessage>('my_game_added', msg => {
         const actions = [];
         const globalPlatforms = msg.addedGlobalPlatforms;
-        _.each(globalPlatforms, platform => actions.push(new AddGlobalPlatform(
-          platform.full_name,
-          platform.short_name,
-          platform.igdb_name,
-          platform.igdb_platform_id
-        )));
+        if (globalPlatforms.length > 0) {
+          actions.push(new AddGlobalPlatforms(globalPlatforms));
+        }
 
         const game: GameData = msg.newGame;
         const availablePlatforms: AvailableGamePlatformData[] = msg.addedAvailablePlatforms;
@@ -83,12 +80,9 @@ export class MessagingService {
       this.addListener<GlobalGameAddedMessage>('global_game_added', msg => {
         const actions = [];
         const globalPlatforms = msg.addedGlobalPlatforms;
-        _.each(globalPlatforms, platform => actions.push(new AddGlobalPlatform(
-          platform.full_name,
-          platform.short_name,
-          platform.igdb_name,
-          platform.igdb_platform_id
-        )));
+        if (globalPlatforms.length > 0) {
+          actions.push(new AddGlobalPlatforms(globalPlatforms));
+        }
 
         const game: GameData = msg.newGame;
         const availablePlatforms: AvailableGamePlatformData[] = msg.addedAvailablePlatforms;

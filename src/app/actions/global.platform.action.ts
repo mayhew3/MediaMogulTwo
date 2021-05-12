@@ -1,15 +1,14 @@
+import {GamePlatformData} from '../interfaces/Model/GamePlatform';
+
 export class GetGlobalPlatforms {
   static readonly type = '[GlobalPlatform] Get';
   constructor(public person_id: number) {
   }
 }
 
-export class AddGlobalPlatform {
+export class AddGlobalPlatforms {
   static readonly type = '[GlobalPlatform] Add';
-  constructor(public full_name: string,
-              public short_name: string,
-              public igdb_name: string,
-              public igdb_platform_id: number) {
+  constructor(public platforms: GamePlatformData[]) {
   }
 }
 

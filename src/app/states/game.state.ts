@@ -6,8 +6,11 @@ import {HttpParams} from '@angular/common/http';
 import {tap} from 'rxjs/operators';
 import produce from 'immer';
 import {GameData} from '../interfaces/ModelData/GameData';
-import {GetGameplaySessions, GetGames} from '../actions/game.action';
+import {AddAvailableGamePlatforms, AddGameToMyCollection, AddGlobalGame, GetGameplaySessions, GetGames} from '../actions/game.action';
 import _ from 'underscore';
+import {AddGlobalPlatforms} from '../actions/global.platform.action';
+import {GlobalPlatformStateModel} from './global.platform.state';
+import {AvailableGamePlatformData} from '../interfaces/Model/AvailableGamePlatform';
 
 export class GameStateModel {
   games: GameData[];
@@ -55,4 +58,37 @@ export class GameState {
       })
     );
   }
+
+  @Action(AddGlobalGame)
+  addGlobalGame({setState}: StateContext<GameStateModel>, action: AddGlobalGame): void {
+    setState(
+      produce(draft => {
+        draft.games.push(action.game);
+      })
+    );
+  }
+
+  @Action(AddAvailableGamePlatforms)
+  addAvailableGamePlatforms({setState}: StateContext<GameStateModel>, action: AddAvailableGamePlatforms): void {
+    setState(
+      produce(draft => {
+        const game = _.findWhere(draft.games, {id: action.game_id});
+        game.availablePlatforms = action.availableGamePlatforms;
+      })
+    );
+  }
+
+  @Action(AddGameToMyCollection)
+  addGameToCollection({setState}: StateContext<GameStateModel>, action: AddGameToMyCollection): void {
+    setState(
+      produce(draft => {
+        const myGamePlatform = action.myGamePlatform;
+        const game = _.findWhere(draft.games, {id: action.game_id});
+        const availableWhichWillBeMine: AvailableGamePlatformData = _.findWhere(game.availablePlatforms, {id: myGamePlatform.available_game_platform_id});
+        availableWhichWillBeMine.myGamePlatform = myGamePlatform;
+      })
+    );
+  }
+
+
 }

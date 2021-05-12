@@ -2,7 +2,7 @@ import {GamePlatform, GamePlatformData} from '../interfaces/Model/GamePlatform';
 import {Action, State, StateContext} from '@ngxs/store';
 import {Injectable} from '@angular/core';
 import {ApiService} from '../services/api.service';
-import {GetGlobalPlatforms, UpdateGlobalPlatform} from '../actions/global.platform.action';
+import {AddGlobalPlatforms, GetGlobalPlatforms, UpdateGlobalPlatform} from '../actions/global.platform.action';
 import {Observable} from 'rxjs';
 import {HttpParams} from '@angular/common/http';
 import {tap} from 'rxjs/operators';
@@ -49,6 +49,15 @@ export class GlobalPlatformState {
         platform.full_name = action.full_name;
         platform.short_name = action.short_name;
         platform.metacritic_uri = action.metacritic_uri;
+      })
+    );
+  }
+
+  @Action(AddGlobalPlatforms)
+  addGlobalPlatforms({setState}: StateContext<GlobalPlatformStateModel>, action: AddGlobalPlatforms): void {
+    setState(
+      produce(draft => {
+        draft.globalPlatforms.push(...action.platforms);
       })
     );
   }
