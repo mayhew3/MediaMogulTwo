@@ -2,6 +2,7 @@ import axios from 'axios';
 import _ from 'underscore';
 import * as model from './model';
 import * as moment from 'moment';
+import {socketServer} from '../www';
 
 const tokens = require('./igdb_token_service');
 
@@ -74,8 +75,10 @@ export const addGameToCollection = async (request, response): Promise<void> => {
       igdb_id: igdbMatch.id
     }
   });
+  let addedGame;
 
   if (!game) {
+    // todo: does this work??
     const {addedGame, posterObj} = await addGame(igdbMatch);
     game = addedGame;
   }
@@ -120,9 +123,28 @@ export const addGameToCollection = async (request, response): Promise<void> => {
     }
   });
 
-  const messageToEveryone = {
+  if (!!addedGame || addedGlobalPlatforms.length > 0 || addedAvailablePlatforms.length > 0) {
+    const messageToEveryone = {
+      addedGlobalPlatforms,
+      addedGame,
+      addedAvailablePlatforms
+    };
 
-  };
+    socketServer.emitToAllExceptPerson(person_id, 'global_game_added', messageToEveryone);
+
+    if (!!myPlatform) {
+      const messageToPerson = {
+        addedGlobalPlatforms,
+        addedGame,
+        addedAvailablePlatforms,
+        myPlatform
+      }
+
+      socketServer.emitToPerson(person_id, 'my_game_added', messageToPerson);
+    }
+  }
+
+  response.json({msg: 'Success!'});
 }
 
 

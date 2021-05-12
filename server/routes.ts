@@ -52,7 +52,7 @@ module.exports = (app: Express): void => {
 
   privateGet('/games', games.getGames);
   privatePut('/games', games.updateGame);
-  privatePost('/games', games.addGame);
+  privatePost('/games', addGame.addGameToCollection);
 
   privateGet('/gameplaySessions', games.getGameplaySessions);
   privatePost('/gameplaySessions', games.addGameplaySession);
