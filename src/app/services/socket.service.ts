@@ -36,13 +36,13 @@ export class SocketService {
   }
 
   on(channel, callback: (msg: any) => void): (msg: any) => void {
-    const wrappedCallback: (msg: any) => void = (msg: any) => callback(this.convertToDate(msg));
+    const dateWrappedCallback: (msg: any) => void = (msg: any) => callback(this.convertToDate(msg));
     if (!this.socket) {
-      this.pendingListeners.push(new PendingListener(channel, wrappedCallback));
+      this.pendingListeners.push(new PendingListener(channel, dateWrappedCallback));
     } else {
-      this.socket.on(channel, wrappedCallback);
+      this.socket.on(channel, dateWrappedCallback);
     }
-    return wrappedCallback;
+    return dateWrappedCallback;
   }
 
   off(channel, callback): void {
