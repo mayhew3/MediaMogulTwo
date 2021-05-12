@@ -5,6 +5,9 @@ import moment from 'moment';
 import {socketServer} from '../www';
 import {MyGameAddedMessage} from '../../src/shared/MyGameAddedMessage';
 import {GlobalGameAddedMessage} from '../../src/shared/GlobalGameAddedMessage';
+import {GamePlatformData} from '../../src/app/interfaces/Model/GamePlatform';
+import {AvailableGamePlatformData} from '../../src/app/interfaces/Model/AvailableGamePlatform';
+import {MyGamePlatformData} from '../../src/app/interfaces/ModelData/MyGamePlatformData';
 
 const tokens = require('./igdb_token_service');
 
@@ -86,10 +89,10 @@ export const addGameToCollection = async (request, response): Promise<void> => {
     console.log(`Added new game: '${game.title}'`);
   }
 
-  const addedGlobalPlatforms = [];
-  const addedAvailablePlatforms = [];
-  let myPlatform;
-  const existingAvailablePlatforms = await model.AvailableGamePlatform.findAll({
+  const addedGlobalPlatforms: GamePlatformData[] = [];
+  const addedAvailablePlatforms: AvailableGamePlatformData[] = [];
+  let myPlatform: MyGamePlatformData;
+  const existingAvailablePlatforms: AvailableGamePlatformData[] = await model.AvailableGamePlatform.findAll({
     where: {
       game_id: game.id
     }
@@ -101,7 +104,7 @@ export const addGameToCollection = async (request, response): Promise<void> => {
       addedGlobalPlatforms.push(globalPlatform);
     }
 
-    let availablePlatform = _.findWhere(existingAvailablePlatforms, p => p.igdb_platform_id === platform.id);
+    let availablePlatform = _.findWhere(existingAvailablePlatforms, {game_platform_id: globalPlatform.id});
 
     if (!availablePlatform) {
       const availablePlatformObj = {
@@ -130,7 +133,7 @@ export const addGameToCollection = async (request, response): Promise<void> => {
 
   if (!!newGame || addedGlobalPlatforms.length > 0 || addedAvailablePlatforms.length > 0) {
     const messageToEveryone: GlobalGameAddedMessage = {
-      game_id: !newGame ? null : newGame.id,
+      game_id: game.id,
       addedGlobalPlatforms,
       newGame,
       addedAvailablePlatforms
@@ -197,7 +200,7 @@ const addGame = async (igdbMatch: IGDBMatch): Promise<{addedGame, posterObj}> =>
   }
 }
 
-async function getOrCreateGlobalPlatform(platform: _.TypeOfCollection<{ id: number; name: string }[]>): Promise<{globalPlatform, added: boolean}> {
+async function getOrCreateGlobalPlatform(platform: _.TypeOfCollection<{ id: number; name: string }[]>): Promise<{globalPlatform: GamePlatformData, added: boolean}> {
   const game_platform = await findPlatformWithIGDBID(platform.id);
   if (!game_platform) {
     const gamePlatformObj = {
@@ -221,7 +224,7 @@ const getDateFrom = (unixTimestamp: number): Date => {
   return !unixTimestamp ? null : moment.unix(unixTimestamp).toDate();
 }
 
-const findPlatformWithIGDBID = async (igdb_platform_id: number): Promise<any> => {
+const findPlatformWithIGDBID = async (igdb_platform_id: number): Promise<GamePlatformData> => {
   return await model.GamePlatform.findOne({
     where: {
       igdb_platform_id

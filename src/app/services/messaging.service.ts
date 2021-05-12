@@ -10,6 +10,7 @@ import {MyGamePlatformData} from '../interfaces/ModelData/MyGamePlatformData';
 import {AvailableGamePlatformData} from '../interfaces/Model/AvailableGamePlatform';
 import {UpdateGlobalPlatformMessage} from '../../shared/UpdateGlobalPlatformMessage';
 import {MyGameAddedMessage} from '../../shared/MyGameAddedMessage';
+import {GlobalGameAddedMessage} from '../../shared/GlobalGameAddedMessage';
 
 @Injectable({
   providedIn: 'root'
@@ -75,6 +76,28 @@ export class MessagingService {
           if (!!myGamePlatform) {
             actions.push(new AddGameToMyCollection(myGamePlatform, msg.game_id));
           }
+        }
+        return actions;
+      });
+
+      this.addListener<GlobalGameAddedMessage>('global_game_added', msg => {
+        const actions = [];
+        const globalPlatforms = msg.addedGlobalPlatforms;
+        _.each(globalPlatforms, platform => actions.push(new AddGlobalPlatform(
+          platform.full_name,
+          platform.short_name,
+          platform.igdb_name,
+          platform.igdb_platform_id
+        )));
+
+        const game: GameData = msg.newGame;
+        const availablePlatforms: AvailableGamePlatformData[] = msg.addedAvailablePlatforms;
+
+        if (!!game) {
+          game.availablePlatforms = availablePlatforms;
+          actions.push(new AddGlobalGame(game));
+        } else if (!!msg.game_id && availablePlatforms.length > 0) {
+          actions.push(new AddAvailableGamePlatforms(availablePlatforms, msg.game_id));
         }
         return actions;
       });
