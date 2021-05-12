@@ -6,7 +6,7 @@ import {GameplaySession} from '../interfaces/Model/GameplaySession';
 import {PersonService} from './person.service';
 import {combineLatest, Observable} from 'rxjs';
 import {PlatformService} from './platform.service';
-import {filter, map} from 'rxjs/operators';
+import {filter, first, map} from 'rxjs/operators';
 import {MyGamePlatform} from '../interfaces/Model/MyGamePlatform';
 import {AvailableGamePlatform} from '../interfaces/Model/AvailableGamePlatform';
 import {MyGlobalPlatform} from '../interfaces/Model/MyGlobalPlatform';
@@ -43,6 +43,7 @@ export class GameService {
 
   findGameWithID(game_id: number): Observable<Game> {
     return this.games.pipe(
+      first(),
       map(games => {
         return _.findWhere(games, {id: game_id});
       })
@@ -51,6 +52,7 @@ export class GameService {
 
   findGame(igdb_id: number): Observable<Game> {
     return this.games.pipe(
+      first(),
       map(games => {
         const matching = _.filter(games, game => game.data.igdb_id === igdb_id);
         if (matching.length > 1) {

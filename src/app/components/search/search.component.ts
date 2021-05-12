@@ -105,33 +105,38 @@ export class SearchComponent implements OnInit {
   }
 
   async getMatches(): Promise<void> {
-    this.loading = true;
-    try {
-      const matches = await this.gameService.getIGDBMatches(this.searchTitle);
-      ArrayUtil.refreshArray(this.matches, matches);
-      _.forEach(this.matches, match => {
-        match.existingGame = this.findMatchingGame(match);
-        _.forEach(match.platforms, platform => {
-          const existingGamePlatform = this.findPlatformWithIGDBID(platform.id);
-          if (!!existingGamePlatform) {
-            platform.unavailablePlatform = !existingGamePlatform.myGlobalPlatform;
-          }
-          const availableGamePlatform = this.findExistingPlatformForGame(match, platform);
-          if (!!availableGamePlatform) {
-            if (availableGamePlatform.gamePlatform.myGlobalPlatform) {
-              platform.availableGamePlatform = availableGamePlatform;
-              platform.myGamePlatform = !platform.availableGamePlatform ? undefined : platform.availableGamePlatform.myGamePlatform;
-            } else {
-              platform.unavailablePlatform = true;
-            }
-          }
-        });
+    return new Promise((resolve) => {
+      this.gameService.games.subscribe(async games => {
+        this.loading = true;
+        try {
+          const matches = await this.gameService.getIGDBMatches(this.searchTitle);
+          ArrayUtil.refreshArray(this.matches, matches);
+          _.forEach(this.matches, match => {
+            match.existingGame = _.find(games, g => g.data.igdb_id === match.id);
+            _.forEach(match.platforms, platform => {
+              const existingGamePlatform = this.findPlatformWithIGDBID(platform.id);
+              if (!!existingGamePlatform) {
+                platform.unavailablePlatform = !existingGamePlatform.myGlobalPlatform;
+              }
+              const availableGamePlatform = this.findExistingPlatformForGame(match, platform);
+              if (!!availableGamePlatform) {
+                if (availableGamePlatform.gamePlatform.myGlobalPlatform) {
+                  platform.availableGamePlatform = availableGamePlatform;
+                  platform.myGamePlatform = !platform.availableGamePlatform ? undefined : platform.availableGamePlatform.myGamePlatform;
+                } else {
+                  platform.unavailablePlatform = true;
+                }
+              }
+            });
+          });
+          resolve();
+        } catch (err) {
+          this.error = err.message;
+        } finally {
+          this.loading = false;
+        }
       });
-    } catch (err) {
-      this.error = err.message;
-    } finally {
-      this.loading = false;
-    }
+    });
   }
 
   async handleAddClick(match: any, platform: any): Promise<void> {
