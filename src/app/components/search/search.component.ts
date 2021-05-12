@@ -73,21 +73,6 @@ export class SearchComponent implements OnInit {
     return _.filter(availablePlatforms, availablePlatform => !_.contains(matchPlatformIDs, availablePlatform.gamePlatform.igdb_platform_id));
   }
 
-  private findMatchingGame(match: any): Observable<Game> {
-    return this.gameService.findGame(match.id);
-  }
-
-  // noinspection JSMethodCanBeStatic
-  private findExistingPlatformForGame(match: any, platform: any): AvailableGamePlatform {
-    if (!!match.existingGame) {
-      return match.existingGame.findPlatformWithIGDBID(platform.id);
-    }
-  }
-
-  private findPlatformWithIGDBID(igdbID: number): GamePlatform {
-    return _.find(this.allPlatforms, platform => platform.igdb_platform_id === igdbID);
-  }
-
   hasAvailablePlatforms(match: any): boolean {
     return !!match.platforms && this.getAvailablePlatforms(match).length > 0;
   }
@@ -140,12 +125,11 @@ export class SearchComponent implements OnInit {
   }
 
   async handleAddClick(match: any, platform: any): Promise<void> {
-    /*const game: Game = this.findMatchingGame(match);
-    if (!game) {
-      // await this.addGame(match, platform);
-    } else {
-      // await this.addToMyPlatforms(game, match, platform);
-    }*/
+    return new Promise((resolve) => {
+      const existingPlatform = _.findWhere(this.allPlatforms, {igdb_platform_id: platform.id});
+      const existingPlatformID = !existingPlatform ? undefined : existingPlatform.id;
+      this.gameService.addGameToCollection(match.id, existingPlatformID, platform.id, this.rating).then(() => resolve());
+    });
   }
 
   async addExistingWithMyPlatform(availablePlatform: AvailableGamePlatform): Promise<void> {
@@ -199,8 +183,7 @@ export class SearchComponent implements OnInit {
       igdb_platform_id: platform.id
     };
   }
-*/
-/*
+*//*
   async addGame(match: any, selectedPlatform: any): Promise<Game> {
     const gameObj = new Game(this.platformService, this.allPlatforms);
 
@@ -246,5 +229,22 @@ export class SearchComponent implements OnInit {
 
     return game;
 
-  }*/
+  }
+*/
+
+  private findMatchingGame(match: any): Observable<Game> {
+    return this.gameService.findGame(match.id);
+  }
+
+  // noinspection JSMethodCanBeStatic
+  private findExistingPlatformForGame(match: any, platform: any): AvailableGamePlatform {
+    if (!!match.existingGame) {
+      return match.existingGame.findPlatformWithIGDBID(platform.id);
+    }
+  }
+
+  private findPlatformWithIGDBID(igdbID: number): GamePlatform {
+    return _.find(this.allPlatforms, platform => platform.igdb_platform_id === igdbID);
+  }
+
 }
