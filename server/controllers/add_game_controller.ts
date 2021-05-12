@@ -133,8 +133,6 @@ export const addGameToCollection = async (request, response): Promise<void> => {
       addedAvailablePlatforms
     };
 
-    console.log(`Sending message to everyone: ${JSON.stringify(messageToEveryone)}`);
-
     socketServer.emitToAllExceptPerson(person_id, 'global_game_added', messageToEveryone);
   }
 
@@ -145,8 +143,6 @@ export const addGameToCollection = async (request, response): Promise<void> => {
       addedAvailablePlatforms,
       myPlatform
     }
-
-    console.log(`Sending message to person: ${JSON.stringify(messageToPerson)}`);
 
     socketServer.emitToPerson(person_id, 'my_game_added', messageToPerson);
   }
