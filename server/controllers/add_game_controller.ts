@@ -69,10 +69,6 @@ export const addGameToCollection = async (request, response): Promise<void> => {
     throw new Error(`No game found in cache with IGDB ID: ${igdb_id}`);
   }
 
-  // Step 1: Add any available platforms to DB that don't exist
-  const addedPlatforms = await addGamePlatforms(igdbMatch);
-
-  // Step 2: Add Game to DB
   let game = model.Game.findOne({
     where: {
       igdb_id: igdbMatch.id
@@ -87,9 +83,10 @@ export const addGameToCollection = async (request, response): Promise<void> => {
   // Step 3: Add Available Platforms to DB
   const addedGlobalPlatforms = [];
   const addedAvailablePlatforms = [];
+  let myPlatform;
   const existingAvailablePlatforms = model.AvailableGamePlatform.findAll({
     where: {
-      game_id
+      game_id: game.id
     }
   });
   _.each(igdbMatch.platforms, async platform => {
@@ -102,7 +99,7 @@ export const addGameToCollection = async (request, response): Promise<void> => {
 
     if (!availablePlatform) {
       const availablePlatformObj = {
-        game_id,
+        game_id: game.id,
         game_platform_id: globalPlatform.id,
         platform_name: globalPlatform.full_name
       }
@@ -110,34 +107,24 @@ export const addGameToCollection = async (request, response): Promise<void> => {
       addedAvailablePlatforms.push(availablePlatform);
     }
 
-    if (platform.id === my_platform_igdb_id) {
+    if (platform.id === igdb_platform_id || globalPlatform.id === game_platform_id) {
       const myPlatformObj = {
-
-      }
+        person_id,
+        available_game_platform_id: availablePlatform.id,
+        platform_name: globalPlatform.full_name,
+        rating,
+        minutes_played: 0,
+        collection_add: new Date()
+      };
+      myPlatform = await model.MyGamePlatform.create(myPlatformObj);
     }
   });
 
-  // Step 4: Add My Game Platforms to DB
-  if (!game_platform_id) {
-    game_platform_id = await findPlatformWithIGDBID(igdb_platform_id);
-  }
-  await addMyPlatform(igdbMatch, person_id, game_platform_id, rating);
-
-  // Step 5: Send a message back with all the changes made.
-
-
+  const messageToEveryone = {
+    
+  };
 }
 
-const addGamePlatforms = async (igdbMatch: IGDBMatch): Promise<any[]> => {
-  const addedPlatforms = [];
-  _.each(igdbMatch.platforms, async platform => {
-    const globalPlatform = await getOrCreateGlobalPlatform(platform);
-    if (!!globalPlatform) {
-      addedPlatforms.push(globalPlatform);
-    }
-  });
-  return addedPlatforms;
-}
 
 const addGame = async (igdbMatch: IGDBMatch): Promise<{addedGame, posterObj}> => {
   const coverObj: any = {
@@ -181,10 +168,6 @@ const addGame = async (igdbMatch: IGDBMatch): Promise<{addedGame, posterObj}> =>
   }
 }
 
-const addAvailablePlatforms = async (igdbMatch: IGDBMatch, game_id: number, my_platform_igdb_id: number): Promise<any> => {
-
-}
-
 async function getOrCreateGlobalPlatform(platform: _.TypeOfCollection<{ id: number; name: string }[]>): Promise<{globalPlatform, added: boolean}> {
   const game_platform = await findPlatformWithIGDBID(platform.id);
   if (!game_platform) {
@@ -203,11 +186,6 @@ async function getOrCreateGlobalPlatform(platform: _.TypeOfCollection<{ id: numb
     globalPlatform: game_platform,
     added: false
   };
-}
-
-const addMyPlatform = async (igdbMatch: IGDBMatch, person_id: number, game_platform_id: number, rating: number): Promise<any> => {
-
-
 }
 
 const getDateFrom = (unixTimestamp: number): Date => {
