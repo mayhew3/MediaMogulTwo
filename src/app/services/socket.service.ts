@@ -74,6 +74,7 @@ export class SocketService {
         this.convertToDate(value);
       }
     }
+    return body;
   }
 
   isIso8601(value): boolean {
