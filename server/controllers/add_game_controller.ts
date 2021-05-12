@@ -121,7 +121,7 @@ export const addGameToCollection = async (request, response): Promise<void> => {
   });
 
   const messageToEveryone = {
-    
+
   };
 }
 
