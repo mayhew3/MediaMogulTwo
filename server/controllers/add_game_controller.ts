@@ -3,6 +3,7 @@ import _ from 'underscore';
 import * as model from './model';
 import moment from 'moment';
 import {socketServer} from '../www';
+import {MyGameAddedMessage} from '../../src/shared/MyGameAddedMessage';
 
 const tokens = require('./igdb_token_service');
 
@@ -137,7 +138,8 @@ export const addGameToCollection = async (request, response): Promise<void> => {
   }
 
   if (!!myPlatform) {
-    const messageToPerson = {
+    const messageToPerson: MyGameAddedMessage = {
+      game_id: game.id,
       addedGlobalPlatforms,
       newGame,
       addedAvailablePlatforms,

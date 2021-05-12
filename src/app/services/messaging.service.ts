@@ -8,6 +8,8 @@ import {AddAvailableGamePlatforms, AddGameToMyCollection, AddGlobalGame} from '.
 import {GameData} from '../interfaces/ModelData/GameData';
 import {MyGamePlatformData} from '../interfaces/ModelData/MyGamePlatformData';
 import {AvailableGamePlatformData} from '../interfaces/Model/AvailableGamePlatform';
+import {UpdateGlobalPlatformMessage} from '../../shared/UpdateGlobalPlatformMessage';
+import {MyGameAddedMessage} from '../../shared/MyGameAddedMessage';
 
 @Injectable({
   providedIn: 'root'
@@ -21,11 +23,11 @@ export class MessagingService {
     this.maybeInitListeners();
   }
 
-  private addSingleActionListener(channelName: string, createAction: (msg: any) => any): void {
-    this.addListener(channelName, msg => [createAction(msg)]);
+  private addSingleActionListener<T>(channelName: string, createAction: (msg: T) => any): void {
+    this.addListener<T>(channelName, msg => [createAction(msg)]);
   }
 
-  private addListener(channelName: string, createActions: (msg: any) => any[]): void {
+  private addListener<T>(channelName: string, createActions: (msg: T) => any[]): void {
     this.socket.on(channelName, msg => {
       this.logger.log(`Received ${channelName} message: ${JSON.stringify(msg)}`);
       const actions = createActions(msg);
@@ -36,21 +38,44 @@ export class MessagingService {
   private maybeInitListeners(): void {
     if (!this.listenersInitialized) {
 
-      this.addSingleActionListener('update_global_platform', msg => new UpdateGlobalPlatform(msg.global_platform_id, msg.full_name, msg.short_name, msg.metacritic_uri));
-      this.addListener('my_game_added', msg => {
+      this.addSingleActionListener<UpdateGlobalPlatformMessage>(
+        'update_global_platform',
+        msg => new UpdateGlobalPlatform(
+          msg.global_platform_id,
+          msg.full_name,
+          msg.short_name,
+          msg.metacritic_uri
+        ));
+
+      this.addListener<MyGameAddedMessage>('my_game_added', msg => {
         const actions = [];
-        _.each(msg.addedGlobalPlatforms, platform => actions.push(new AddGlobalPlatform(
+        const globalPlatforms = msg.addedGlobalPlatforms;
+        _.each(globalPlatforms, platform => actions.push(new AddGlobalPlatform(
           platform.full_name,
           platform.short_name,
           platform.igdb_name,
           platform.igdb_platform_id
         )));
+
         const game: GameData = msg.newGame;
-        actions.push(new AddGlobalGame(game));
         const availablePlatforms: AvailableGamePlatformData[] = msg.addedAvailablePlatforms;
-        actions.push(new AddAvailableGamePlatforms(availablePlatforms));
         const myGamePlatform: MyGamePlatformData = msg.myPlatform;
-        actions.push(new AddGameToMyCollection(myGamePlatform));
+
+        if (!!game) {
+          if (!!myGamePlatform) {
+            const availableWhichWillBeMine: AvailableGamePlatformData = _.findWhere(availablePlatforms, {id: myGamePlatform.available_game_platform_id});
+            availableWhichWillBeMine.myGamePlatform = myGamePlatform;
+          }
+          game.availablePlatforms = availablePlatforms;
+          actions.push(new AddGlobalGame(game));
+        } else {
+          if (availablePlatforms.length > 0) {
+            actions.push(new AddAvailableGamePlatforms(availablePlatforms, msg.game_id));
+          }
+          if (!!myGamePlatform) {
+            actions.push(new AddGameToMyCollection(myGamePlatform, msg.game_id));
+          }
+        }
         return actions;
       });
 

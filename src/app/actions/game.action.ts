@@ -23,12 +23,14 @@ export class AddGlobalGame {
 
 export class AddAvailableGamePlatforms {
   static readonly type = '[Game] Add Available Game Platforms';
-  constructor(public availableGamePlatforms: AvailableGamePlatformData[]) {
+  constructor(public availableGamePlatforms: AvailableGamePlatformData[],
+              public game_id: number) {
   }
 }
 
 export class AddGameToMyCollection {
   static readonly type = '[Game] Add to My Collection'
-  constructor(public myGamePlatform: MyGamePlatformData) {
+  constructor(public myGamePlatform: MyGamePlatformData,
+              public game_id: number) {
   }
 }
