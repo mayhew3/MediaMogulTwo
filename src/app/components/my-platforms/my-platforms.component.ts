@@ -78,21 +78,22 @@ export class MyPlatformsComponent implements OnInit {
     await this.gameService.updateMultipleGlobalPlatforms(changedPlatforms);
   }
 
-  async addToMyPlatforms(platform: GamePlatform): Promise<void> {
+  get nextRank(): number {
+    const ranks = _.map(this.platformsInGlobal(), mgp => mgp.myGlobalPlatform.rank);
+    return _.max(ranks) > 0 ? _.max(ranks) + 1 : 1;
+  }
+
+  addToMyPlatforms(platform: GamePlatform): void {
     const myGlobalPlatform = {
       game_platform_id: platform.id,
       platform_name: platform.platform_name,
-      rank: undefined
+      rank: this.nextRank,
     };
-    const gamePlatforms = this.platformsInGlobal();
-    const ranks = _.map(gamePlatforms, mgp => mgp.myGlobalPlatform.rank);
-    myGlobalPlatform.rank = _.max(ranks) > 0 ? _.max(ranks) + 1 : 1;
-    await this.platformService.addMyGlobalPlatform(myGlobalPlatform);
+    this.platformService.addMyGlobalPlatform(myGlobalPlatform);
   }
 
-  async removeFromMyPlatforms(platform: GamePlatform): Promise<void> {
-    /*await this.gameService.platformAboutToBeRemovedFromGlobal(platform);
-    await this.platformService.removeMyGlobalPlatform(platform.myGlobalPlatform);*/
+  removeFromMyPlatforms(platform: GamePlatform): void {
+    this.platformService.removeMyGlobalPlatform(platform.myGlobalPlatform);
   }
 
 }

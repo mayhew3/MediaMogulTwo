@@ -1,15 +1,20 @@
-import {GamePlatform, GamePlatformData} from '../interfaces/Model/GamePlatform';
+import {GamePlatformData} from '../interfaces/Model/GamePlatform';
 import {Action, State, StateContext} from '@ngxs/store';
 import {Injectable} from '@angular/core';
 import {ApiService} from '../services/api.service';
-import {AddGlobalPlatforms, GetGlobalPlatforms, UpdateGlobalPlatform} from '../actions/global.platform.action';
+import {
+  AddGlobalPlatforms,
+  AddToMyGlobalPlatforms,
+  GetGlobalPlatforms,
+  RemoveFromMyGlobalPlatforms,
+  UpdateGlobalPlatform
+} from '../actions/global.platform.action';
 import {Observable} from 'rxjs';
 import {HttpParams} from '@angular/common/http';
 import {tap} from 'rxjs/operators';
 import produce from 'immer';
-import {WritableDraft} from 'immer/dist/types/types-external';
 import _ from 'underscore';
-import {MyGlobalPlatform} from '../interfaces/Model/MyGlobalPlatform';
+import {AddGameToMyCollection} from '../actions/game.action';
 
 export class GlobalPlatformStateModel {
   globalPlatforms: GamePlatformData[];
@@ -58,6 +63,26 @@ export class GlobalPlatformState {
     setState(
       produce(draft => {
         draft.globalPlatforms.push(...action.platforms);
+      })
+    );
+  }
+
+  @Action(AddToMyGlobalPlatforms)
+  addToMyGlobalPlatforms({setState}: StateContext<GlobalPlatformStateModel>, action: AddToMyGlobalPlatforms): void {
+    setState(
+      produce(draft => {
+        const platform = _.findWhere(draft.globalPlatforms, {id: action.myGlobalPlatform.game_platform_id});
+        platform.myGlobalPlatform = action.myGlobalPlatform;
+      })
+    );
+  }
+
+  @Action(RemoveFromMyGlobalPlatforms)
+  removeFromMyGlobalPlatforms({setState}: StateContext<GlobalPlatformStateModel>, action: RemoveFromMyGlobalPlatforms): void {
+    setState(
+      produce(draft => {
+        const platform = _.findWhere(draft.globalPlatforms, {id: action.game_platform_id});
+        delete platform.myGlobalPlatform;
       })
     );
   }

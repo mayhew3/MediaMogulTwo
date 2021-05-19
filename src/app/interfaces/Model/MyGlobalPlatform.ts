@@ -22,4 +22,5 @@ export interface MyGlobalPlatformData {
   platform_name: string;
   rank: number;
   person_id: number;
+  date_added: Date;
 }

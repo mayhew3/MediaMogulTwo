@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/naming-convention, no-underscore-dangle, id-blacklist, id-match */
 import {GamePlatform} from './GamePlatform';
 import * as _ from 'underscore';
 import {AvailableGamePlatform} from './AvailableGamePlatform';

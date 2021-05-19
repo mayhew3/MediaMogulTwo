@@ -108,11 +108,10 @@ export class PlatformService {
   }
 
   addMyGlobalPlatform(myGlobalPlatformObj: any): void {
-    /*this.personService.me$.subscribe(person => {
+    this.personService.me$.subscribe(person => {
       myGlobalPlatformObj.person_id = person.id;
-      const gamePlatform = myGlobalPlatformObj.platform;
-      this.apiService.executePostAfterFullyConnected('/api/myGlobalPlatforms', gamePlatform);
-    });*/
+      this.apiService.executePostAfterFullyConnected('/api/myGlobalPlatforms', myGlobalPlatformObj);
+    });
   }
 
   removeMyGlobalPlatform(myGlobalPlatform: MyGlobalPlatform): void {

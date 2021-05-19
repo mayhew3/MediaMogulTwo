@@ -12,6 +12,10 @@ import {ArrayUtil} from '../utility/ArrayUtil';
 import {MockGameplaySessions} from '../mocks/gameplaySessions.mock';
 import {LoggerService} from './logger.service';
 import {InMemoryCallbacksService} from './in-memory-callbacks.service';
+import {MyGlobalPlatformAddedMessage} from '../../shared/MyGlobalPlatformAddedMessage';
+import {RemoveFromMyGlobalPlatforms} from '../actions/global.platform.action';
+import {MyGlobalPlatformRemovedMessage} from '../../shared/MyGlobalPlatformRemovedMessage';
+import {MyGlobalPlatformData} from '../interfaces/Model/MyGlobalPlatform';
 
 @Injectable({
   providedIn: 'root'
@@ -214,6 +218,13 @@ export class InMemoryDataService implements InMemoryDbService{
       gamePlatform.my_platforms = [];
     }
     gamePlatform.my_platforms.push(myGlobalPlatform);
+
+    const msg: MyGlobalPlatformAddedMessage = {
+      myGlobalPlatform
+    }
+
+    this.broadcastToChannel('my_platform_added', msg);
+
     return this.packageUpResponse(myGlobalPlatform, requestInfo);
   }
 
@@ -310,6 +321,13 @@ export class InMemoryDataService implements InMemoryDbService{
     if (!!myGlobalPlatform) {
       const gamePlatform = this.findGamePlatform(myGlobalPlatform.game_platform_id);
       ArrayUtil.removeFromArray(gamePlatform.my_platforms, myGlobalPlatform);
+
+      const msg: MyGlobalPlatformRemovedMessage = {
+        game_platform_id: myGlobalPlatform.game_platform_id
+      }
+
+      this.broadcastToChannel('my_platform_removed', msg);
+
       return this.packageUpResponse({}, requestInfo);
     }
   }
