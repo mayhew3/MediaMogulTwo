@@ -111,6 +111,10 @@ export const addMyGlobalPlatform = async (request: Record<string, any>, response
   const myGlobalObj = request.body;
 
   const myGlobal = await model.MyGlobalPlatform.create(myGlobalObj);
+
+  const person_id = myGlobalObj.person_id;
+  socketServer.emitToPerson(person_id, 'my_platform_added', {myGlobalPlatform: myGlobal});
+
   response.json(myGlobal);
 };
 
@@ -119,6 +123,11 @@ export const deleteMyGlobalPlatform = async (request: Record<string, any>, respo
 
   const myGlobalPlatform = await model.MyGlobalPlatform.findByPk(myGlobalPlatformID);
   await myGlobalPlatform.destroy();
+
+  const person_id = myGlobalPlatform.person_id;
+  const game_platform_id = myGlobalPlatform.game_platform_id;
+
+  socketServer.emitToPerson(person_id, 'my_platform_removed', {game_platform_id});
 
   response.json({msg: 'Success'});
 };
