@@ -139,23 +139,29 @@ export class GameService {
     // this.pushGameListChange();
   }
 
-  async updateMultipleGlobalPlatforms(platformRanks: PlatformRank[]): Promise<any> {
-    const allChangedFields = [];
-    _.forEach(platformRanks, platformRank => {
-      const payload = {
-        id: platformRank.myGlobalPlatform.id,
-        changedFields: {
-          rank: platformRank.rank
-        }
+  updateMultipleGlobalPlatforms(platformRanks: PlatformRank[]): void {
+    this.personService.me$.subscribe(me => {
+
+      const allChangedFields = [];
+      _.forEach(platformRanks, platformRank => {
+        const payload = {
+          id: platformRank.myGlobalPlatform.id,
+          changedFields: {
+            rank: platformRank.rank
+          }
+        };
+        allChangedFields.push(payload);
+      });
+      const fullPayload = {
+        // only need this for in-memory-api
+        id: 213892,
+        person_id: me.id,
+        payloads: allChangedFields
       };
-      allChangedFields.push(payload);
+      this.apiService.executePutAfterFullyConnected('/api/multipleGlobals', fullPayload);
+
     });
-    const fullPayload = {
-      // only need this for in-memory-api
-      id: 213892,
-      payloads: allChangedFields
-    };
-    this.apiService.executePutAfterFullyConnected('/api/multipleGlobals', fullPayload);
+
   }
 
   async insertGameplaySession(gameplaySession: GameplaySession): Promise<void> {

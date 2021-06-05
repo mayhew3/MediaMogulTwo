@@ -2,6 +2,7 @@ import * as model from './model';
 const _ = require('underscore');
 const Sequelize = require('./sequelize');
 import {socketServer} from '../www';
+import {MyGlobalPlatformsRanksChangedMessage} from '../../src/shared/MyGlobalPlatformsRanksChangedMessage';
 
 export const getPlatforms = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   const person_id = request.query.person_id;
@@ -86,6 +87,11 @@ export const updateGamePlatform = async (request: Record<string, any>, response:
 
 export const updateMultipleGlobals = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   try {
+    const person_id = request.body.person_id;
+    const msg: MyGlobalPlatformsRanksChangedMessage = {
+      changes: []
+    };
+
     const result = await Sequelize.sequelize.transaction(async (t) => {
 
       const results = [];
@@ -94,11 +100,18 @@ export const updateMultipleGlobals = async (request: Record<string, any>, respon
         const myGlobalPlatform = await model.MyGlobalPlatform.findByPk(payload.id, {transaction: t});
         await myGlobalPlatform.update(payload.changedFields, {transaction: t});
         results.push(myGlobalPlatform);
+
+        msg.changes.push({
+          my_global_platform_id: myGlobalPlatform.id,
+          rank: myGlobalPlatform.rank
+        });
       }
 
       return results;
 
     });
+
+    socketServer.emitToPerson(person_id, 'my_global_ranks_changed', msg);
 
     response.json(result);
   } catch (err) {
