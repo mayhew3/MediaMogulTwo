@@ -6,6 +6,7 @@ import * as _ from 'underscore';
 import {MyGlobalPlatform} from '../../interfaces/Model/MyGlobalPlatform';
 import {GameService} from '../../services/game.service';
 import {Game} from '../../interfaces/Model/Game';
+import fast_sort from 'fast-sort';
 
 @Component({
   selector: 'mm-my-platforms',
@@ -17,25 +18,24 @@ export class MyPlatformsComponent implements OnInit {
   allPlatforms: GamePlatform[] = [];
   allGames: Game[] = [];
 
+  myPlatforms: PlatformRank[] = [];
+
   constructor(private platformService: PlatformService,
               private gameService: GameService) { }
 
   ngOnInit(): void {
     this.platformService.platforms.subscribe(incoming => {
       ArrayUtil.refreshArray(this.allPlatforms, incoming);
+      _.each(this.allPlatforms, (platform: GamePlatform) => {
+        if (!!platform.myGlobalPlatform) {
+          this.myPlatforms.push(new PlatformRank(platform.myGlobalPlatform, platform.myGlobalPlatform.rank, platform.myGlobalPlatform.rank));
+        }
+      });
+      fast_sort(this.myPlatforms).asc(p => p.rank);
       this.gameService.games.subscribe(games => {
         ArrayUtil.refreshArray(this.allGames, games);
       });
     });
-  }
-
-  platformsInGlobal(): GamePlatform[] {
-    const myPlatforms = _.filter(this.allPlatforms, (platform: GamePlatform) => !!platform.myGlobalPlatform);
-    return _.sortBy(myPlatforms, (platform: GamePlatform) => platform.myGlobalPlatform.rank);
-  }
-
-  myGlobalPlatforms(): MyGlobalPlatform[] {
-    return _.map(this.platformsInGlobal(), platform => platform.myGlobalPlatform);
   }
 
   otherPlatforms(): GamePlatform[] {
@@ -61,11 +61,11 @@ export class MyPlatformsComponent implements OnInit {
   }
 
   hasChanges(): boolean {
-    return _.filter(this.myGlobalPlatforms(), myGlobalPlatform => !!myGlobalPlatform.rank).length > 0;
+    return _.filter(this.myPlatforms, myGlobalPlatform => !!myGlobalPlatform.rank).length > 0;
   }
 
   hasDuplicates(): boolean {
-    const ranks = _.map(this.myGlobalPlatforms(), myGlobalPlatform => myGlobalPlatform.rank);
+    const ranks = _.map(this.myPlatforms, myGlobalPlatform => myGlobalPlatform.rank);
     const uniqRanks = _.uniq(ranks);
     return ranks.length !== uniqRanks.length;
   }
@@ -74,12 +74,12 @@ export class MyPlatformsComponent implements OnInit {
     if (this.hasDuplicates()) {
       throw new Error(`Can't update ranks with duplicates.`);
     }
-    const changedPlatforms = _.filter(this.myGlobalPlatforms(), myGlobalPlatform => true);
+    const changedPlatforms = _.filter(this.myPlatforms, platformRank => platformRank.originalRank !== platformRank.rank);
     await this.gameService.updateMultipleGlobalPlatforms(changedPlatforms);
   }
 
   get nextRank(): number {
-    const ranks = _.map(this.platformsInGlobal(), mgp => mgp.myGlobalPlatform.rank);
+    const ranks = _.map(this.myPlatforms, mgp => mgp.myGlobalPlatform.rank);
     return _.max(ranks) > 0 ? _.max(ranks) + 1 : 1;
   }
 
@@ -96,4 +96,11 @@ export class MyPlatformsComponent implements OnInit {
     this.platformService.removeMyGlobalPlatform(platform.myGlobalPlatform);
   }
 
+}
+
+export class PlatformRank {
+  constructor(public myGlobalPlatform: MyGlobalPlatform,
+              public originalRank: number,
+              public rank: number) {
+  }
 }

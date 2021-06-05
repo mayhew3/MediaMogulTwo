@@ -34,13 +34,13 @@
 
 
 <div class="row my-1"
-     *ngFor="let platform of platformsInGlobal()">
+     *ngFor="let platformRank of myPlatforms">
   <div class="col-3">
-    {{platform.platform_name}}
+    {{platformRank.myGlobalPlatform.platform.platform_name}}
   </div>
   <div class="col-1">
     <button class="btn btn-sm btn-warning"
-            (click)="removeFromMyPlatforms(platform)">
+            (click)="removeFromMyPlatforms(platformRank.myGlobalPlatform.platform)">
       Remove
     </button>
   </div>
@@ -48,13 +48,13 @@
     <!--suppress HtmlFormInputWithoutLabel -->
     <input type="number"
            class="form-control form-control-sm darkInput"
-           [(ngModel)]="platform.myGlobalPlatform.rank"/>
+           [(ngModel)]="platformRank.rank"/>
   </div>
   <div class="col-1">
-    {{getCountOfOwnedGames(platform)}}
+    {{getCountOfOwnedGames(platformRank.myGlobalPlatform.platform)}}
   </div>
   <div class="col-1">
-    {{getCountOfPreferredGames(platform)}}
+    {{getCountOfPreferredGames(platformRank.myGlobalPlatform.platform)}}
   </div>
 </div>
 

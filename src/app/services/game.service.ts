@@ -14,6 +14,7 @@ import {ApiService} from './api.service';
 import {Store} from '@ngxs/store';
 import {GetGames} from '../actions/game.action';
 import {GameData} from '../interfaces/ModelData/GameData';
+import {PlatformRank} from '../components/my-platforms/my-platforms.component';
 
 @Injectable({
   providedIn: 'root'
@@ -138,12 +139,14 @@ export class GameService {
     // this.pushGameListChange();
   }
 
-  async updateMultipleGlobalPlatforms(myGlobalPlatforms: MyGlobalPlatform[]): Promise<any> {
+  async updateMultipleGlobalPlatforms(platformRanks: PlatformRank[]): Promise<any> {
     const allChangedFields = [];
-    _.forEach(myGlobalPlatforms, myGlobalPlatform => {
+    _.forEach(platformRanks, platformRank => {
       const payload = {
-        id: myGlobalPlatform.id,
-        // changedFields: myGlobalPlatform.getChangedFields()
+        id: platformRank.myGlobalPlatform.id,
+        changedFields: {
+          rank: platformRank.rank
+        }
       };
       allChangedFields.push(payload);
     });
@@ -152,8 +155,7 @@ export class GameService {
       id: 213892,
       payloads: allChangedFields
     };
-    await this.http.put('/api/multipleGlobals', fullPayload).toPromise();
-    // _.forEach(myGlobalPlatforms, myGlobalPlatform => myGlobalPlatform.moveChanges());
+    this.apiService.executePutAfterFullyConnected('/api/multipleGlobals', fullPayload);
   }
 
   async insertGameplaySession(gameplaySession: GameplaySession): Promise<void> {
