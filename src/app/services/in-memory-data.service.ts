@@ -16,6 +16,7 @@ import {MyGlobalPlatformAddedMessage} from '../../shared/MyGlobalPlatformAddedMe
 import {RemoveFromMyGlobalPlatforms} from '../actions/global.platform.action';
 import {MyGlobalPlatformRemovedMessage} from '../../shared/MyGlobalPlatformRemovedMessage';
 import {MyGlobalPlatformData} from '../interfaces/Model/MyGlobalPlatform';
+import {MyGlobalPlatformsRanksChangedMessage} from '../../shared/MyGlobalPlatformsRanksChangedMessage';
 
 @Injectable({
   providedIn: 'root'
@@ -306,13 +307,24 @@ export class InMemoryDataService implements InMemoryDbService{
 
   private updateMultipleGlobals(requestInfo: RequestInfo): Observable<Response> {
     const jsonBody = this.getBody(requestInfo);
+    const msg: MyGlobalPlatformsRanksChangedMessage = {
+      changes: []
+    };
     for (const payload of jsonBody.payloads) {
       const myGlobalPlatform = this.findMyGlobalPlatform(payload.id);
       if (!!myGlobalPlatform) {
         this.updateChangedFieldsOnObject(myGlobalPlatform, payload.changedFields);
-        return this.packageUpResponse(myGlobalPlatform, requestInfo);
+
+        msg.changes.push({
+          my_global_platform_id: myGlobalPlatform.id,
+          rank: myGlobalPlatform.rank
+        });
       }
     }
+
+    this.broadcastToChannel('my_global_ranks_changed', msg);
+
+    return this.packageUpResponse({msg: 'Success!'}, requestInfo);
   }
 
   private deleteMyGlobalPlatform(requestInfo: RequestInfo): Observable<Response> {

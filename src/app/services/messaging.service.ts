@@ -5,7 +5,7 @@ import _ from 'underscore';
 import {LoggerService} from './logger.service';
 import {
   AddGlobalPlatforms,
-  AddToMyGlobalPlatforms,
+  AddToMyGlobalPlatforms, MyGlobalPlatformsChangeRanks,
   RemoveFromMyGlobalPlatforms,
   UpdateGlobalPlatform
 } from '../actions/global.platform.action';
@@ -18,6 +18,7 @@ import {MyGameAddedMessage} from '../../shared/MyGameAddedMessage';
 import {GlobalGameAddedMessage} from '../../shared/GlobalGameAddedMessage';
 import {MyGlobalPlatformAddedMessage} from '../../shared/MyGlobalPlatformAddedMessage';
 import {MyGlobalPlatformRemovedMessage} from '../../shared/MyGlobalPlatformRemovedMessage';
+import {MyGlobalPlatformsRanksChangedMessage} from '../../shared/MyGlobalPlatformsRanksChangedMessage';
 
 @Injectable({
   providedIn: 'root'
@@ -39,12 +40,19 @@ export class MessagingService {
       this.addGlobalGame();
       this.addPlatformToMyPlatforms();
       this.removePlatformFromMyPlatforms();
+      this.changeMyPlatformRanks();
 
       this.listenersInitialized = true;
     }
   }
 
   // Extracted methods
+
+  private changeMyPlatformRanks(): void {
+    this.addSingleActionListener<MyGlobalPlatformsRanksChangedMessage>('my_global_ranks_changed', msg => {
+      return new MyGlobalPlatformsChangeRanks(msg.changes);
+    });
+  }
 
   private removePlatformFromMyPlatforms(): void {
     this.addSingleActionListener<MyGlobalPlatformRemovedMessage>('my_platform_removed', msg => {

@@ -5,7 +5,7 @@ import {ApiService} from '../services/api.service';
 import {
   AddGlobalPlatforms,
   AddToMyGlobalPlatforms,
-  GetGlobalPlatforms,
+  GetGlobalPlatforms, MyGlobalPlatformsChangeRanks,
   RemoveFromMyGlobalPlatforms,
   UpdateGlobalPlatform
 } from '../actions/global.platform.action';
@@ -87,4 +87,16 @@ export class GlobalPlatformState {
     );
   }
 
+  @Action(MyGlobalPlatformsChangeRanks)
+  changeRanks({setState}: StateContext<GlobalPlatformStateModel>, action: MyGlobalPlatformsChangeRanks): void {
+    setState(
+      produce(draft => {
+        _.each(action.changes, change => {
+          const platform = _.find(draft.globalPlatforms, platform =>
+            !!platform.myGlobalPlatform && platform.myGlobalPlatform.id === change.my_global_platform_id);
+          platform.myGlobalPlatform.rank = change.rank;
+        });
+      })
+    );
+  }
 }

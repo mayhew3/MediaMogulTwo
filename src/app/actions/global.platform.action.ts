@@ -33,3 +33,9 @@ export class RemoveFromMyGlobalPlatforms {
   constructor(public game_platform_id: number) {
   }
 }
+
+export class MyGlobalPlatformsChangeRanks {
+  static readonly type = '[GlobalPlatform] Change My Ranks';
+  constructor(public changes: any[]) {
+  }
+}

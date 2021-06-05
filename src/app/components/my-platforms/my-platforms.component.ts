@@ -26,6 +26,7 @@ export class MyPlatformsComponent implements OnInit {
   ngOnInit(): void {
     this.platformService.platforms.subscribe(incoming => {
       ArrayUtil.refreshArray(this.allPlatforms, incoming);
+      ArrayUtil.emptyArray(this.myPlatforms);
       _.each(this.allPlatforms, (platform: GamePlatform) => {
         if (!!platform.myGlobalPlatform) {
           this.myPlatforms.push(new PlatformRank(platform.myGlobalPlatform, platform.myGlobalPlatform.rank, platform.myGlobalPlatform.rank));
