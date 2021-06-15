@@ -1,10 +1,10 @@
 import {Component, Input} from '@angular/core';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
-import {Game} from '../../interfaces/Model/Game';
-import {AvailableGamePlatform} from '../../interfaces/Model/AvailableGamePlatform';
-import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
-import {GameService} from '../../services/game.service';
-import {PlatformService} from '../../services/platform.service';
+import {Game} from '../../../interfaces/Model/Game';
+import {AvailableGamePlatform} from '../../../interfaces/Model/AvailableGamePlatform';
+import {MyGamePlatform} from '../../../interfaces/Model/MyGamePlatform';
+import {GameService} from '../../../services/game.service';
+import {PlatformService} from '../../../services/platform.service';
 
 @Component({
   selector: 'mm-add-game',

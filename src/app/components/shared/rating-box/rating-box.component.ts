@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {ColorTransformService} from '../../services/color-transform.service';
+import {ColorTransformService} from '../../../services/color-transform.service';
 
 @Component({
   selector: 'mm-rating-box',

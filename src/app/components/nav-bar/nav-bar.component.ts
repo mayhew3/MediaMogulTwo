@@ -5,7 +5,7 @@ import {distinctUntilChanged, map} from 'rxjs/operators';
 import * as _ from 'underscore';
 import {Game} from '../../interfaces/Model/Game';
 import {NgbModal, NgbTypeaheadSelectItemEvent} from '@ng-bootstrap/ng-bootstrap';
-import {GameDetailComponent} from '../game-detail/game-detail.component';
+import {GameDetailComponent} from '../gamelist/game-detail/game-detail.component';
 import {PersonService} from '../../services/person.service';
 import {DOCUMENT} from '@angular/common';
 import {ArrayUtil} from '../../utility/ArrayUtil';

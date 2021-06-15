@@ -1,5 +1,5 @@
 import {Game} from '../Model/Game';
-import {OrderingDirection} from '../../components/game-list/OrderingDirection';
+import {OrderingDirection} from '../../components/gamelist/game-list/OrderingDirection';
 import {GameOrdering} from './GameOrdering';
 
 export class OrderByLastPlayed extends GameOrdering {

@@ -1,14 +1,14 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {NgbActiveModal, NgbCalendar, NgbDate} from '@ng-bootstrap/ng-bootstrap';
-import {Game} from '../../interfaces/Model/Game';
-import {GameService} from '../../services/game.service';
+import {Game} from '../../../interfaces/Model/Game';
+import {GameService} from '../../../services/game.service';
 import * as moment from 'moment';
-import {PersonService} from '../../services/person.service';
-import {GameplaySession} from '../../interfaces/Model/GameplaySession';
-import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
+import {PersonService} from '../../../services/person.service';
+import {GameplaySession} from '../../../interfaces/Model/GameplaySession';
+import {MyGamePlatform} from '../../../interfaces/Model/MyGamePlatform';
 import * as _ from 'underscore';
-import {GameTime} from '../../interfaces/Utility/GameTime';
-import {PlatformService} from '../../services/platform.service';
+import {GameTime} from '../../../interfaces/Utility/GameTime';
+import {PlatformService} from '../../../services/platform.service';
 
 @Component({
   selector: 'mm-playtime-popup',

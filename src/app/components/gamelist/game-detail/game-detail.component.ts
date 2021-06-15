@@ -1,22 +1,22 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {GameService} from '../../services/game.service';
+import {GameService} from '../../../services/game.service';
 import {NgbActiveModal, NgbModal} from '@ng-bootstrap/ng-bootstrap';
-import {PersonService} from '../../services/person.service';
-import {Game} from '../../interfaces/Model/Game';
-import {PlatformService} from '../../services/platform.service';
-import {GamePlatform} from '../../interfaces/Model/GamePlatform';
-import {ArrayUtil} from '../../utility/ArrayUtil';
+import {PersonService} from '../../../services/person.service';
+import {Game} from '../../../interfaces/Model/Game';
+import {PlatformService} from '../../../services/platform.service';
+import {GamePlatform} from '../../../interfaces/Model/GamePlatform';
+import {ArrayUtil} from '../../../utility/ArrayUtil';
 import * as _ from 'underscore';
-import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
+import {MyGamePlatform} from '../../../interfaces/Model/MyGamePlatform';
 import {AddPlatformsComponent} from '../add-platforms/add-platforms.component';
-import {GameTime} from '../../interfaces/Utility/GameTime';
+import {GameTime} from '../../../interfaces/Utility/GameTime';
 import {PlaytimePopupComponent} from '../playtime-popup/playtime-popup.component';
-import {GameplaySession} from '../../interfaces/Model/GameplaySession';
-import {GameplaySessionService} from '../../services/gameplay.session.service';
+import {GameplaySession} from '../../../interfaces/Model/GameplaySession';
+import {GameplaySessionService} from '../../../services/gameplay.session.service';
 import fast_sort from 'fast-sort';
-import {AvailableGamePlatform} from '../../interfaces/Model/AvailableGamePlatform';
+import {AvailableGamePlatform} from '../../../interfaces/Model/AvailableGamePlatform';
 import {Store} from '@ngxs/store';
-import {GetGameplaySessions} from '../../actions/game.action';
+import {GetGameplaySessions} from '../../../actions/game.action';
 
 enum DetailNav {RATING = 'Rating', PLAYTIME = 'Playtime'}
 

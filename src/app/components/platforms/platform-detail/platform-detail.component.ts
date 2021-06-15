@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {GamePlatform} from '../../interfaces/Model/GamePlatform';
+import {GamePlatform} from '../../../interfaces/Model/GamePlatform';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
-import {PlatformService} from '../../services/platform.service';
+import {PlatformService} from '../../../services/platform.service';
 
 @Component({
   selector: 'mm-platform-detail',

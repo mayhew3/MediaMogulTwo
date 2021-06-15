@@ -1,13 +1,13 @@
 import {Component, Input} from '@angular/core';
-import {Game} from '../../interfaces/Model/Game';
+import {Game} from '../../../interfaces/Model/Game';
 import {ModalDismissReasons, NgbModal, NgbModalRef} from '@ng-bootstrap/ng-bootstrap';
 import {PlaytimePopupComponent} from '../playtime-popup/playtime-popup.component';
 import {GameDetailComponent} from '../game-detail/game-detail.component';
 import {GameListComponent} from '../game-list/game-list.component';
-import {AvailableGamePlatform} from '../../interfaces/Model/AvailableGamePlatform';
+import {AvailableGamePlatform} from '../../../interfaces/Model/AvailableGamePlatform';
 import {AddPlatformsComponent} from '../add-platforms/add-platforms.component';
-import {PlatformService} from '../../services/platform.service';
-import {MyGamePlatform} from '../../interfaces/Model/MyGamePlatform';
+import {PlatformService} from '../../../services/platform.service';
+import {MyGamePlatform} from '../../../interfaces/Model/MyGamePlatform';
 import {Observable} from 'rxjs';
 
 @Component({
