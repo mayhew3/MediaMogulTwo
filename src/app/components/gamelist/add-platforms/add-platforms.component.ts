@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import {Game} from '../../../interfaces/Model/Game';
 import {AvailableGamePlatform} from '../../../interfaces/Model/AvailableGamePlatform';
@@ -11,16 +11,23 @@ import {PlatformService} from '../../../services/platform.service';
   templateUrl: './add-platforms.component.html',
   styleUrls: ['./add-platforms.component.scss']
 })
-export class AddPlatformsComponent {
-  @Input() game: Game;
+export class AddPlatformsComponent implements OnInit {
+  @Input() game_id: number;
 
   rating: number;
+  game: Game;
 
   mostRecentAdd: MyGamePlatform;
 
   constructor(public activeModal: NgbActiveModal,
               private gameService: GameService,
               private platformService: PlatformService) {
+  }
+
+  ngOnInit(): void {
+    this.gameService.gameWithIDObservable(this.game_id).subscribe(game => {
+      this.game = game;
+    });
   }
 
   get addablePlatforms(): AvailableGamePlatform[] {
@@ -42,4 +49,5 @@ export class AddPlatformsComponent {
   dismiss(): void {
     this.activeModal.dismiss();
   }
+
 }

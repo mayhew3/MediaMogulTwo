@@ -41,9 +41,17 @@ export class GameService {
     });
   }
 
-  findGameWithID(game_id: number): Observable<Game> {
+  findGameWithIDOnce(game_id: number): Observable<Game> {
     return this.games.pipe(
       first(),
+      map(games => {
+        return _.findWhere(games, {id: game_id});
+      })
+    );
+  }
+
+  gameWithIDObservable(game_id: number): Observable<Game> {
+    return this.games.pipe(
       map(games => {
         return _.findWhere(games, {id: game_id});
       })

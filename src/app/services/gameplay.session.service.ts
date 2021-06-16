@@ -38,7 +38,7 @@ export class GameplaySessionService {
   }
 
   waitForGameWithSessions(game: Game): Observable<Game> {
-    return this.gameService.findGameWithID(game.id).pipe(
+    return this.gameService.findGameWithIDOnce(game.id).pipe(
       filter(game => !!game.data.sessions)
     );
   }

@@ -113,7 +113,7 @@ export class GameCardComponent {
 
   async openAddPlatformsPopup(): Promise<void> {
     const modalRef = this.modalService.open(AddPlatformsComponent, {size: 'md'});
-    modalRef.componentInstance.game = this.game;
+    modalRef.componentInstance.game_id = this.game.id;
     await this.handlePopupResult(modalRef);
   }
 

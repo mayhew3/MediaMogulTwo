@@ -171,7 +171,7 @@ export class GameDetailComponent implements OnInit {
 
   async openAddPlatformsPopup(): Promise<void> {
     const modalRef = this.modalService.open(AddPlatformsComponent, {size: 'md'});
-    modalRef.componentInstance.game = this.game;
+    modalRef.componentInstance.game_id = this.game.id;
     const resultPlatform = await modalRef.result;
     if (!!resultPlatform) {
       this.selectedPlatform = resultPlatform;
