@@ -83,8 +83,8 @@ export class GameState {
     setState(
       produce(draft => {
         const myGamePlatform = action.myGamePlatform;
-        const game = _.findWhere(draft.games, {id: action.game_id});
-        const availableWhichWillBeMine: AvailableGamePlatformData = _.findWhere(game.availablePlatforms, {id: myGamePlatform.available_game_platform_id});
+        const availablePlatforms = _.flatten(_.map(draft.games, game => game.availablePlatforms));
+        const availableWhichWillBeMine: AvailableGamePlatformData = _.findWhere(availablePlatforms, {id: myGamePlatform.available_game_platform_id});
         availableWhichWillBeMine.myGamePlatform = myGamePlatform;
       })
     );

@@ -9,7 +9,6 @@ import {PlatformService} from './platform.service';
 import {filter, first, map} from 'rxjs/operators';
 import {MyGamePlatform} from '../interfaces/Model/MyGamePlatform';
 import {AvailableGamePlatform} from '../interfaces/Model/AvailableGamePlatform';
-import {MyGlobalPlatform} from '../interfaces/Model/MyGlobalPlatform';
 import {ApiService} from './api.service';
 import {Store} from '@ngxs/store';
 import {GetGames} from '../actions/game.action';
@@ -105,18 +104,23 @@ export class GameService {
   }
 */
 
-  async addMyGamePlatform(availableGamePlatform: AvailableGamePlatform, myGamePlatform: MyGamePlatform): Promise<void> {
-    /*myGamePlatform.person_id.value = this.me.id;
-    myGamePlatform.preferred.value = !availableGamePlatform.game.myPreferredPlatform;
-    myGamePlatform.platform_name.value = availableGamePlatform.platform_name.value;
-    myGamePlatform.game_platform_id.value = availableGamePlatform.game_platform_id.value;
-    myGamePlatform.minutes_played.value = 0;
-    myGamePlatform.collection_add.value = new Date();
+  addMyGamePlatform(availableGamePlatform: AvailableGamePlatform, rating: number): void {
+    this.personService.me$.subscribe(me => {
 
-    const returnMyGamePlatform = await myGamePlatform.commit(this.http);
-    availableGamePlatform.myGamePlatform = returnMyGamePlatform;
-    this.pushGameListChange();
-    return returnMyGamePlatform;*/
+      const myGamePlatformObj = {
+        person_id: me.id,
+        preferred: !availableGamePlatform.game.myPreferredPlatform,
+        platform_name: availableGamePlatform.platform_name,
+        available_game_platform_id: availableGamePlatform.id,
+        game_platform_id: availableGamePlatform.gamePlatform.id,
+        minutes_played: 0,
+        collection_add: new Date(),
+        rating
+      };
+
+      this.apiService.executePostAfterFullyConnected('/api/myPlatforms', myGamePlatformObj);
+    });
+
   }
 
   async updateGame(game: Game): Promise<any> {

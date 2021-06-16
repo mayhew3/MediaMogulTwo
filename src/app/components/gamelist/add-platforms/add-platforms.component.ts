@@ -31,11 +31,8 @@ export class AddPlatformsComponent {
     return !availableGamePlatform.myGamePlatform && availableGamePlatform.platform_name !== 'Steam';
   }
 
-  async addPlatform(availableGamePlatform: AvailableGamePlatform): Promise<void> {
-    /*
-    const myGamePlatform = new MyGamePlatform(availableGamePlatform);
-    myGamePlatform.rating = this.rating;
-    this.mostRecentAdd = await this.gameService.addMyGamePlatform(availableGamePlatform, myGamePlatform);*/
+  addPlatform(availableGamePlatform: AvailableGamePlatform): void {
+    this.gameService.addMyGamePlatform(availableGamePlatform, this.rating);
   }
 
   async close(): Promise<void> {
@@ -43,7 +40,6 @@ export class AddPlatformsComponent {
   }
 
   dismiss(): void {
-    // this.game.discardChanges();
     this.activeModal.dismiss();
   }
 }

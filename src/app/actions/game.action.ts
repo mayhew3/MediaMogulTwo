@@ -30,7 +30,6 @@ export class AddAvailableGamePlatforms {
 
 export class AddGameToMyCollection {
   static readonly type = '[Game] Add to My Collection'
-  constructor(public myGamePlatform: MyGamePlatformData,
-              public game_id: number) {
+  constructor(public myGamePlatform: MyGamePlatformData) {
   }
 }

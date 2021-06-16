@@ -10,12 +10,9 @@ import {MockIGDBMatches} from '../mocks/igdb.matches.mock';
 import {MockGamePlatforms} from '../mocks/gamePlatforms.mock';
 import {ArrayUtil} from '../utility/ArrayUtil';
 import {MockGameplaySessions} from '../mocks/gameplaySessions.mock';
-import {LoggerService} from './logger.service';
 import {InMemoryCallbacksService} from './in-memory-callbacks.service';
 import {MyGlobalPlatformAddedMessage} from '../../shared/MyGlobalPlatformAddedMessage';
-import {RemoveFromMyGlobalPlatforms} from '../actions/global.platform.action';
 import {MyGlobalPlatformRemovedMessage} from '../../shared/MyGlobalPlatformRemovedMessage';
-import {MyGlobalPlatformData} from '../interfaces/Model/MyGlobalPlatform';
 import {MyGlobalPlatformsRanksChangedMessage} from '../../shared/MyGlobalPlatformsRanksChangedMessage';
 
 @Injectable({
@@ -28,8 +25,7 @@ export class InMemoryDataService implements InMemoryDbService{
   gamePlatforms = MockGamePlatforms;
   gameplaySessions = MockGameplaySessions;
 
-  constructor(private callbackService: InMemoryCallbacksService,
-              private logger: LoggerService) { }
+  constructor(private callbackService: InMemoryCallbacksService) { }
 
   // STATIC HELPERS
 
@@ -238,6 +234,13 @@ export class InMemoryDataService implements InMemoryDbService{
       availableGamePlatform.myPlatforms = [];
     }
     availableGamePlatform.myPlatforms.push(myGamePlatform);
+
+    const msg = {
+      myPlatform: myGamePlatform
+    };
+
+    this.broadcastToChannel('my_game_added', msg);
+
     return this.packageUpResponse(myGamePlatform, requestInfo);
   }
 

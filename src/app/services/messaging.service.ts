@@ -91,7 +91,7 @@ export class MessagingService {
     this.addListener<MyGameAddedMessage>('my_game_added', msg => {
       const actions = [];
       const globalPlatforms = msg.addedGlobalPlatforms;
-      if (globalPlatforms.length > 0) {
+      if (!!globalPlatforms && globalPlatforms.length > 0) {
         actions.push(new AddGlobalPlatforms(globalPlatforms));
       }
 
@@ -107,11 +107,11 @@ export class MessagingService {
         game.availablePlatforms = availablePlatforms;
         actions.push(new AddGlobalGame(game));
       } else {
-        if (availablePlatforms.length > 0) {
+        if (!!availablePlatforms && availablePlatforms.length > 0) {
           actions.push(new AddAvailableGamePlatforms(availablePlatforms, msg.game_id));
         }
         if (!!myGamePlatform) {
-          actions.push(new AddGameToMyCollection(myGamePlatform, msg.game_id));
+          actions.push(new AddGameToMyCollection(myGamePlatform));
         }
       }
       return actions;
