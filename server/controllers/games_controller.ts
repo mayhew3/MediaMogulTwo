@@ -1,4 +1,5 @@
 import * as model from './model';
+import {socketServer} from '../www';
 const _ = require('underscore');
 const moment = require('moment');
 
@@ -154,5 +155,12 @@ export const addMyGamePlatform = async (request: Record<string, any>, response: 
   const myGamePlatformObj = request.body;
 
   const myGamePlatform = await model.MyGamePlatform.create(myGamePlatformObj);
-  response.json(myGamePlatform);
+
+  const msg = {
+    myPlatform: myGamePlatform
+  };
+
+  socketServer.emitToPerson(myGamePlatform.person_id, 'my_game_added', msg);
+
+  response.json({msg: 'Success!'});
 };
