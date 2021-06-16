@@ -122,6 +122,8 @@ export class InMemoryDataService implements InMemoryDbService{
       this.updateMyGlobalPlatform(requestInfo);
     } else if (collectionName === 'multipleGlobals') {
       this.updateMultipleGlobals(requestInfo);
+    } else if (collectionName === 'finishGame') {
+
     }
     return null;
   }
@@ -354,6 +356,13 @@ export class InMemoryDataService implements InMemoryDbService{
       this.updateChangedFieldsOnObject(myGamePlatform, jsonBody.changedFields);
       return this.packageUpResponse(myGamePlatform, requestInfo);
     }
+
+    const msg = {
+      id: jsonBody.id,
+      changed_fields: jsonBody.changedFields
+    }
+
+    this.broadcastToChannel('my_game_platform_changed', msg);
   }
 
   private updateAllAvailablePlatformsWithName(oldName: string, newName: string): void {

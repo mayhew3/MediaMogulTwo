@@ -146,9 +146,9 @@ export class GameDetailComponent implements OnInit {
   }
 
   onFinishedFieldEdit(event): void {
-    /*this.finished = event;
-    this.selectedPlatform.finished_date = !!this.finished ? new Date() : null;
-    this.onFieldEdit();*/
+    this.finished = event;
+    this.selectedPlatform.data.finished_date = !!this.finished ? new Date() : null;
+    this.onFieldEdit();
   }
 
   onNaturalEndEdit(event): void {
