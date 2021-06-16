@@ -51,6 +51,6 @@ export class NavBarComponent implements OnInit {
 
   async openPopup(event: NgbTypeaheadSelectItemEvent): Promise<void> {
     const modalRef = this.modalService.open(GameDetailComponent, {size: 'lg'});
-    modalRef.componentInstance.game = event.item;
+    modalRef.componentInstance.game_id = event.item.id;
   }
 }

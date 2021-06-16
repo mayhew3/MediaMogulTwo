@@ -21,25 +21,12 @@ export class GameplaySessionService {
               private store: Store) {
   }
 
-  getGameplaySessions(game: Game): Observable<GameplaySession[]> {
-    return this.refreshGameplaySessions(game).pipe(
-      mergeMap(() => this.waitForGameWithSessions(game)),
-      map(game => game.data.sessions)
-    );
-  }
-
-  refreshGameplaySessions(game: Game): Observable<any> {
+  refreshGameplaySessions(game_id: number): Observable<any> {
     return this.personService.me$.pipe(
       mergeMap((me: Person) => {
         const personID = me.id;
-        return this.store.dispatch(new GetGameplaySessions(personID, game.id));
+        return this.store.dispatch(new GetGameplaySessions(personID, game_id));
       })
-    );
-  }
-
-  waitForGameWithSessions(game: Game): Observable<Game> {
-    return this.gameService.findGameWithIDOnce(game.id).pipe(
-      filter(game => !!game.data.sessions)
     );
   }
 

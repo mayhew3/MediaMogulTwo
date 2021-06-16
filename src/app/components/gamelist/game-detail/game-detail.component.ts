@@ -16,7 +16,6 @@ import {GameplaySessionService} from '../../../services/gameplay.session.service
 import fast_sort from 'fast-sort';
 import {AvailableGamePlatform} from '../../../interfaces/Model/AvailableGamePlatform';
 import {Store} from '@ngxs/store';
-import {GetGameplaySessions} from '../../../actions/game.action';
 
 enum DetailNav {RATING = 'Rating', PLAYTIME = 'Playtime'}
 
@@ -26,7 +25,9 @@ enum DetailNav {RATING = 'Rating', PLAYTIME = 'Playtime'}
   styleUrls: ['./game-detail.component.scss']
 })
 export class GameDetailComponent implements OnInit {
-  @Input() game: Game;
+  @Input() game_id: number;
+
+  game: Game;
 
   changedGameFields = {};
   changedPersonFields = {};
@@ -60,19 +61,23 @@ export class GameDetailComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.selectedPlatform = this.game.myPreferredPlatform;
-    this.finished = !!this.selectedPlatform && !!this.selectedPlatform.data.finished_date;
-    this.editedTitle = this.game.title;
-    this.initializeDates(this.selectedPlatform);
+    this.gameplaySessionService.refreshGameplaySessions(this.game_id).subscribe();
 
-    this.gameplaySessionService.waitForGameWithSessions(this.game).subscribe(game => {
-      const sessions = game.data.sessions;
-      ArrayUtil.refreshArray(this.gameplaySessions, sessions);
-      this.sortSessions();
+    this.gameService.gameWithIDObservable(this.game_id).subscribe(game => {
+      this.game = game;
+
+      this.selectedPlatform = this.game.myPreferredPlatform;
+      this.finished = !!this.selectedPlatform && !!this.selectedPlatform.data.finished_date;
+      this.editedTitle = this.game.title;
+      this.initializeDates(this.selectedPlatform);
+
+      if (!!game.data.sessions) {
+        const sessions = game.data.sessions;
+        ArrayUtil.refreshArray(this.gameplaySessions, sessions);
+        this.sortSessions();
+      }
+
     });
-
-    this.gameplaySessionService.refreshGameplaySessions(this.game).subscribe();
-
   }
 
   sortSessions(): void {

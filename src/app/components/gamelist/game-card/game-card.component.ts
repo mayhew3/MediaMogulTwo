@@ -106,7 +106,7 @@ export class GameCardComponent {
   async openDetailPopup(): Promise<void> {
     if (this.game.isOwned()) {
       const modalRef = this.modalService.open(GameDetailComponent, {size: 'lg'});
-      modalRef.componentInstance.game = this.game;
+      modalRef.componentInstance.game_id = this.game.id;
       await this.handlePopupResult(modalRef);
     }
   }
