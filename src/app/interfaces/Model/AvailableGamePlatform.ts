@@ -29,6 +29,10 @@ export class AvailableGamePlatform {
   get subscribed(): boolean {
     return !!this.myGamePlatform && !!this.gamePlatform.myGlobalPlatform;
   }
+
+  get metacritic(): number {
+    return this.data.metacritic;
+  }
 }
 
 export interface AvailableGamePlatformData {

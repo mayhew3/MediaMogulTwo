@@ -1,15 +1,15 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Game} from '../../interfaces/Model/Game';
+import {Game} from '../../../interfaces/Model/Game';
 import fast_sort from 'fast-sort';
 import * as _ from 'underscore';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
-import {GameService} from '../../services/game.service';
-import {GameFilter} from '../../interfaces/Filters/GameFilter';
-import {GameOrdering} from '../../interfaces/OrderBy/GameOrdering';
+import {GameService} from '../../../services/game.service';
+import {GameFilter} from '../../../interfaces/Filters/GameFilter';
+import {GameOrdering} from '../../../interfaces/OrderBy/GameOrdering';
 import {OrderingDirection} from './OrderingDirection';
-import {GameFilterWithOptions} from '../../interfaces/Filters/GameFilterWithOptions';
-import {GameFilterOption} from '../../interfaces/Filters/GameFilterOption';
-import {ArrayUtil} from '../../utility/ArrayUtil';
+import {GameFilterWithOptions} from '../../../interfaces/Filters/GameFilterWithOptions';
+import {GameFilterOption} from '../../../interfaces/Filters/GameFilterOption';
+import {ArrayUtil} from '../../../utility/ArrayUtil';
 
 @Component({
   selector: 'mm-game-list',
