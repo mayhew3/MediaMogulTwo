@@ -49,7 +49,7 @@ export class ArrayUtil {
     for (const key in changedFields) {
       if (Object.prototype.hasOwnProperty.call(changedFields, key)) {
         const prop = changedFields[key];
-        if (!_.isArray(prop)) {
+        if (!_.isArray(prop) && !_.isObject(prop)) {
           obj[key] = prop;
         }
       }
