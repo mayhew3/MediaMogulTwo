@@ -198,7 +198,8 @@
                        name="finishedInput"
                        checked
                        class="form-control"
-                       [(ngModel)]="finished">
+                       [(ngModel)]="finished"
+                       (ngModelChange)="onFinishedChanged($event)">
               </div>
             </div>
           </div>
@@ -207,7 +208,7 @@
             <div class="form-row">
               <label class="col-4 col-form-label" for="finalScoreInput">Final</label>
               <div class="col-8">
-                <input [(ngModel)]="selectedPlatform.data.final_score"
+                <input [(ngModel)]="finalScore"
                        class="darkInput form-control"
                        type="number"
                        id="finalScoreInput"
@@ -221,7 +222,7 @@
             <div class="form-row">
               <label class="col-4 col-form-label" for="replayInput">Replay</label>
               <div class="col-8">
-                <input [(ngModel)]="selectedPlatform.data.replay_score"
+                <input [(ngModel)]="replayScore"
                        class="darkInput form-control"
                        type="number"
                        id="replayInput"

@@ -106,6 +106,13 @@ export class PlaytimePopupComponent implements OnInit {
     this.validDate = this.isValidDate();
   }
 
+  onFinishedChanged(event): void {
+    if (!event) {
+      this.finalScore = undefined;
+      this.replayScore = undefined;
+    }
+  }
+
   platformIsSelected(platform: MyGamePlatform): boolean {
     return platform.id === this.selectedPlatform.data.id;
   }
@@ -163,7 +170,9 @@ export class PlaytimePopupComponent implements OnInit {
         const platformUpdate: MyPlatformSessionUpdate = {
           minutes_played: this.resulting.asMinutes(),
           last_played: playedDate,
-          finished_date: this.finished ? playedDate : null
+          finished_date: this.finished ? playedDate : null,
+          final_score: this.finalScore,
+          replay_score: this.replayScore
         };
 
         const insertSession: GameplaySessionInsertObj = {

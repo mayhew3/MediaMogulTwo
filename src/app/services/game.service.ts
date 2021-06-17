@@ -215,5 +215,7 @@ export class GameplaySessionInsertObj {
 export class MyPlatformSessionUpdate {
   minutes_played: number;
   last_played: Date;
-  finished_date: Date;
+  finished_date?: Date;
+  final_score?: number;
+  replay_score?: number;
 }
