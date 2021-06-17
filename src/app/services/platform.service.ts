@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
 import {GamePlatform, GamePlatformData} from '../interfaces/Model/GamePlatform';
 import {HttpClient} from '@angular/common/http';
-import {filter, map} from 'rxjs/operators';
+import {filter, first, map} from 'rxjs/operators';
 import _ from 'underscore';
 import fast_sort from 'fast-sort';
 import {PersonService} from './person.service';
@@ -51,7 +51,7 @@ export class PlatformService {
     return this.myPlatforms.pipe(
       map(platforms => {
         const myGamePlatforms = game.myPlatforms;
-        return _.filter(myGamePlatforms, mgp => !!_.findWhere(platforms, {id: mgp.data.game_platform_id}));
+        return _.filter(myGamePlatforms, mgp => !!_.findWhere(platforms, {id: mgp.platform.id}));
       })
     );
   }
@@ -72,12 +72,6 @@ export class PlatformService {
           return undefined;
         }
       })
-    );
-  }
-
-  isOwned(game: Game): Observable<boolean> {
-    return this.getMyPlatformsInGlobal(game).pipe(
-      map(platforms => !_.isEmpty(platforms))
     );
   }
 

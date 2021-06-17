@@ -4,7 +4,6 @@ import {Game} from '../../../interfaces/Model/Game';
 import {GameService} from '../../../services/game.service';
 import * as moment from 'moment';
 import {PersonService} from '../../../services/person.service';
-import {GameplaySession} from '../../../interfaces/Model/GameplaySession';
 import {MyGamePlatform} from '../../../interfaces/Model/MyGamePlatform';
 import * as _ from 'underscore';
 import {GameTime} from '../../../interfaces/Utility/GameTime';
@@ -16,7 +15,9 @@ import {PlatformService} from '../../../services/platform.service';
   styleUrls: ['./playtime-popup.component.scss']
 })
 export class PlaytimePopupComponent implements OnInit {
-  @Input() game: Game;
+  @Input() game_id: number;
+
+  game: Game;
   model: NgbDate;
   validDate: boolean;
 
@@ -45,14 +46,18 @@ export class PlaytimePopupComponent implements OnInit {
   }
 
   async ngOnInit(): Promise<any> {
-    this.platformService.getMyPreferredPlatform(this.game).subscribe(myGamePlatform => {
-      this.selectedPlatform = this.platformService.canAddToGame(myGamePlatform.availableGamePlatform) ?
-        myGamePlatform :
-        this.myMutablePlatforms[0];
-      this.initializeDates();
-      this.finished = !!this.selectedPlatform.data.finished_date;
-      this.finalScore = this.selectedPlatform.data.final_score;
-      this.replayScore = this.selectedPlatform.data.replay_score;
+    this.gameService.gameWithIDObservable(this.game_id).subscribe(game => {
+      this.game = game;
+
+      this.platformService.getMyPreferredPlatform(this.game).subscribe(myGamePlatform => {
+        this.selectedPlatform = this.platformService.canAddToGame(myGamePlatform.availableGamePlatform) ?
+          myGamePlatform :
+          this.myMutablePlatforms[0];
+        this.initializeDates();
+        this.finished = !!this.selectedPlatform.data.finished_date;
+        this.finalScore = this.selectedPlatform.data.final_score;
+        this.replayScore = this.selectedPlatform.data.replay_score;
+      });
     });
   }
 

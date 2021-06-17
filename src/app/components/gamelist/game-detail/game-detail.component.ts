@@ -289,7 +289,7 @@ export class GameDetailComponent implements OnInit {
 
   async openPlaytimePopup(): Promise<void> {
     const modalRef = this.modalService.open(PlaytimePopupComponent, {size: 'lg'});
-    modalRef.componentInstance.game = this.game;
+    modalRef.componentInstance.game_id = this.game.id;
     const resultSession = await modalRef.result;
     this.gameplaySessions.push(resultSession);
     this.sortSessions();

@@ -99,7 +99,7 @@ export class GameCardComponent {
 
   async openPlaytimePopup(): Promise<void> {
     const modalRef = this.modalService.open(PlaytimePopupComponent, {size: 'lg'});
-    modalRef.componentInstance.game = this.game;
+    modalRef.componentInstance.game_id = this.game.id;
     await this.handlePopupResult(modalRef);
   }
 

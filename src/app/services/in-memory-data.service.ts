@@ -17,6 +17,7 @@ import {MyGlobalPlatformsRanksChangedMessage} from '../../shared/MyGlobalPlatfor
 import {UpdateMyGamePlatformMessage} from '../../shared/UpdateMyGamePlatformMessage';
 import {LoggerService} from './logger.service';
 import {UpdateGameMessage} from '../../shared/UpdateGameMessage';
+import {AddGameplaySessionMessage} from '../../shared/AddGameplaySessionMessage';
 
 @Injectable({
   providedIn: 'root'
@@ -106,6 +107,8 @@ export class InMemoryDataService implements InMemoryDbService{
       this.addAvailablePlatform(requestInfo);
     } else if (collectionName === 'myGlobalPlatforms') {
       this.addMyGlobalPlatform(requestInfo);
+    } else if (collectionName === 'gameplaySessions') {
+      this.addGameplaySession(requestInfo);
     }
     return null;
   }
@@ -206,6 +209,21 @@ export class InMemoryDataService implements InMemoryDbService{
     game.date_added = new Date();
     this.updatePlatforms(game.availablePlatforms, this.getAllAvailablePlatforms());
     return this.packageUpResponse(game, requestInfo);
+  }
+
+  private addGameplaySession(requestInfo: RequestInfo): Observable<Response> {
+    const gameplaySession = this.getBody(requestInfo);
+    gameplaySession.id = this.nextID(this.gameplaySessions);
+    gameplaySession.date_added = new Date();
+    this.gameplaySessions.push(gameplaySession);
+
+    const msg: AddGameplaySessionMessage = {
+      gameplaySession
+    }
+
+    this.broadcastToChannel('add_gameplay_session', msg);
+
+    return this.packageUpResponse({msg: 'Success!'}, requestInfo);
   }
 
   private addAvailablePlatform(requestInfo: RequestInfo): Observable<Response> {

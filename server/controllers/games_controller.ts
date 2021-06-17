@@ -2,6 +2,7 @@ import * as model from './model';
 import {socketServer} from '../www';
 import {UpdateMyGamePlatformMessage} from '../../src/shared/UpdateMyGamePlatformMessage';
 import {UpdateGameMessage} from '../../src/shared/UpdateGameMessage';
+import {AddGameplaySessionMessage} from '../../src/shared/AddGameplaySessionMessage';
 const _ = require('underscore');
 const moment = require('moment');
 
@@ -154,9 +155,16 @@ export const getGameplaySessions = async (request: Record<string, any>, response
 };
 
 export const addGameplaySession = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
-  const gameplaySession = request.body;
+  const gameplaySessionObj = request.body;
 
-  await model.GameplaySession.create(gameplaySession);
+  const gameplaySession = await model.GameplaySession.create(gameplaySessionObj);
+
+  const msg: AddGameplaySessionMessage = {
+    gameplaySession
+  }
+
+  socketServer.emitToPerson(gameplaySession.person_id, 'add_gameplay_session', msg);
+
   response.json({});
 };
 
