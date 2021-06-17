@@ -131,9 +131,12 @@ export class GameService {
 
   }
 
-  async updateGame(game: Game): Promise<any> {
-   /* await game.commit(this.http);
-    this.pushGameListChange();*/
+  updateGame(gameID: number, changedFields: any): void {
+    const body = {
+      id: gameID,
+      changedFields
+    };
+    this.apiService.executePutAfterFullyConnected('/api/games', body);
   }
 
   async getIGDBMatches(searchTitle: string): Promise<any[]> {

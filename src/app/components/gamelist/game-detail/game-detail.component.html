@@ -36,8 +36,7 @@
               <input type="text"
                      name="gameTitle"
                      class="form-control darkInput"
-                     [(ngModel)]="editedTitle"
-                     (ngModelChange)="onFieldEdit()"/>
+                     [(ngModel)]="changedGameFields.title"/>
               <div class="input-group-append">
                 <button class="btn btn-secondary"
                         (click)="toggleTitleEdit()"
@@ -98,7 +97,7 @@
                                 <input type="number"
                                        id="rating"
                                        name="rating"
-                                       [disabled]="updating"
+                                       [disabled]="updatingMyGame"
                                        class="darkInput form-control form-control-lg"
                                        [(ngModel)]="changedPersonFields.rating"/>
                               </div>
@@ -119,7 +118,7 @@
                                   <input type="number"
                                          id="finalScore"
                                          name="finalScore"
-                                         [disabled]="updating"
+                                         [disabled]="updatingMyGame"
                                          class="darkInput form-control form-control-lg"
                                          [(ngModel)]="changedPersonFields.final_score"/>
                                 </div>
@@ -132,7 +131,7 @@
                                   <input type="number"
                                          id="replay"
                                          name="replay"
-                                         [disabled]="updating"
+                                         [disabled]="updatingMyGame"
                                          class="darkInput form-control form-control-lg"
                                          [(ngModel)]="changedPersonFields.replay_score"/>
                                 </div>
@@ -279,8 +278,7 @@
                    id="metacriticHint"
                    class="darkInput form-control"
                    name="metacriticHint"
-                   [(ngModel)]="game.data.metacritic_hint"
-                   (ngModelChange)="onFieldEdit()"/>
+                   [(ngModel)]="changedGameFields.metacritic_hint"/>
           </div>
 
           <!--NATURAL END-->
@@ -288,7 +286,7 @@
             <div class="custom-control custom-switch">
               <label for="naturalEnd">Natural End</label><br>
               <mm-big-checkbox id="naturalEnd"
-                               [value]="game.data.natural_end"
+                               [value]="changedGameFields.natural_end"
                                (valueChanged)="onNaturalEndEdit($event)"></mm-big-checkbox>
             </div>
           </div>
@@ -300,8 +298,7 @@
                    id="howlong"
                    name="howlong"
                    class="darkInput form-control"
-                   [(ngModel)]="game.data.howlong_id"
-                   (ngModelChange)="onFieldEdit()"/>
+                   [(ngModel)]="changedGameFields.howlong_id"/>
           </div>
 
           <!--GIANTBOMB-->
@@ -311,8 +308,7 @@
                    id="giantbomb"
                    name="giantbomb"
                    class="darkInput form-control"
-                   [(ngModel)]="game.data.giantbomb_id"
-                   (ngModelChange)="onFieldEdit()"/>
+                   [(ngModel)]="changedGameFields.giantbomb_id"/>
           </div>
 
         </div>
@@ -576,6 +572,6 @@
 <div class="modal-footer">
   <button type="button"
           class="btn btn-primary"
-          [disabled]="!anyFieldsChanged() || updating"
+          [disabled]="!anyFieldsChanged() || updatingMyGame"
           (click)="changeValues()">Update and Close</button>
 </div>

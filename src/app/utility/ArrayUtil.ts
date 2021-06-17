@@ -48,7 +48,10 @@ export class ArrayUtil {
   static updateChangedFieldsOnObject(obj: any, changedFields: any): void {
     for (const key in changedFields) {
       if (Object.prototype.hasOwnProperty.call(changedFields, key)) {
-        obj[key] = changedFields[key];
+        const prop = changedFields[key];
+        if (!_.isArray(prop)) {
+          obj[key] = prop;
+        }
       }
     }
   }

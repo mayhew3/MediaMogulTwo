@@ -16,6 +16,7 @@ import {MyGlobalPlatformRemovedMessage} from '../../shared/MyGlobalPlatformRemov
 import {MyGlobalPlatformsRanksChangedMessage} from '../../shared/MyGlobalPlatformsRanksChangedMessage';
 import {UpdateMyGamePlatformMessage} from '../../shared/UpdateMyGamePlatformMessage';
 import {LoggerService} from './logger.service';
+import {UpdateGameMessage} from '../../shared/UpdateGameMessage';
 
 @Injectable({
   providedIn: 'root'
@@ -188,7 +189,14 @@ export class InMemoryDataService implements InMemoryDbService{
     const game = this.findGame(jsonBody.id);
     if (!!game) {
       ArrayUtil.updateChangedFieldsOnObject(game, jsonBody.changedFields);
-      return this.packageUpResponse(game, requestInfo);
+
+      const msg: UpdateGameMessage = {
+        game
+      }
+
+      this.broadcastToChannel('update_game', msg);
+
+      return this.packageUpResponse({msg: 'Success!'}, requestInfo);
     }
   }
 

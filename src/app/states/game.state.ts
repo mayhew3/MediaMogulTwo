@@ -11,7 +11,7 @@ import {
   AddGameToMyCollection,
   AddGlobalGame,
   GetGameplaySessions,
-  GetGames,
+  GetGames, UpdateGame,
   UpdateMyGamePlatform
 } from '../actions/game.action';
 import _ from 'underscore';
@@ -104,6 +104,17 @@ export class GameState {
         const availablePlatforms = _.flatten(_.map(draft.games, game => game.availablePlatforms));
         const availableWhichWillBeMine: AvailableGamePlatformData = _.findWhere(availablePlatforms, {id: myGamePlatform.available_game_platform_id});
         ArrayUtil.updateChangedFieldsOnObject(availableWhichWillBeMine.myGamePlatform, myGamePlatform);
+      })
+    );
+  }
+
+  @Action(UpdateGame)
+  updateGame({setState}: StateContext<GameStateModel>, action: UpdateGame): void {
+    setState(
+      produce(draft => {
+        const gameData = action.game;
+        const game = _.findWhere(draft.games, {id: action.game.id});
+        ArrayUtil.updateChangedFieldsOnObject(game, gameData);
       })
     );
   }

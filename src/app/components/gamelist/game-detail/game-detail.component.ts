@@ -30,11 +30,17 @@ export class GameDetailComponent implements OnInit {
 
   game: Game;
 
-  changedGameFields = {};
+  changedGameFields = {
+    metacritic_hint: undefined,
+    natural_end: undefined,
+    howlong_id: undefined,
+    giantbomb_id: undefined,
+    title: undefined
+  };
   changedPersonFields = {
-    rating: null,
-    final_score: null,
-    replay_score: null,
+    rating: undefined,
+    final_score: undefined,
+    replay_score: undefined,
     finished_date: undefined
   };
   finished = false;
@@ -52,7 +58,8 @@ export class GameDetailComponent implements OnInit {
   original = new GameTime();
   timeTotal = new GameTime();
 
-  updating = false;
+  updatingMyGame = false;
+  updatingGame = false;
 
   debug = false;
 
@@ -75,7 +82,6 @@ export class GameDetailComponent implements OnInit {
     this.gameService.gameWithIDObservable(this.game_id).subscribe(game => {
       this.game = game;
 
-
       this.selectedPlatform = this.game.myPreferredPlatform;
 
       this.changedPersonFields.rating = this.selectedPlatform.data.rating;
@@ -83,8 +89,13 @@ export class GameDetailComponent implements OnInit {
       this.changedPersonFields.replay_score = this.selectedPlatform.data.replay_score;
       this.changedPersonFields.finished_date = this.selectedPlatform.data.finished_date;
 
+      this.changedGameFields.metacritic_hint = this.game.data.metacritic_hint;
+      this.changedGameFields.natural_end = this.game.data.natural_end;
+      this.changedGameFields.howlong_id = this.game.data.howlong_id;
+      this.changedGameFields.giantbomb_id = this.game.data.giantbomb_id;
+      this.changedGameFields.title = this.game.data.title;
+
       this.finished = !!this.selectedPlatform && !!this.selectedPlatform.data.finished_date;
-      this.editedTitle = this.game.title;
       this.initializeDates(this.selectedPlatform);
 
       if (!!game.data.sessions) {
@@ -95,12 +106,27 @@ export class GameDetailComponent implements OnInit {
 
       this.socketService.on('update_my_game_platform', msg => {
         if (msg.my_game_platform.id === this.selectedPlatform.id) {
-          this.updating = false;
-          this.activeModal.close('Update Click');
+          this.updatingMyGame = false;
+          if (!this.isUpdating()) {
+            this.activeModal.close('Update Click');
+          }
+        }
+      });
+
+      this.socketService.on('update_game', msg => {
+        if (msg.game.id === this.game.id) {
+          this.updatingGame = false;
+          if (!this.isUpdating()) {
+            this.activeModal.close('Update Click');
+          }
         }
       });
 
     });
+  }
+
+  isUpdating(): boolean {
+    return this.updatingGame || this.updatingMyGame;
   }
 
   sortSessions(): void {
@@ -165,7 +191,7 @@ export class GameDetailComponent implements OnInit {
   }
 
   anyFieldsChanged(): boolean {
-    return Object.keys(this.changedGameFields).length > 0 || this.anyMyGamePlatformFieldsChanged();
+    return this.anyGameFieldsChanged() || this.anyMyGamePlatformFieldsChanged();
   }
 
   anyMyGamePlatformFieldsChanged(): boolean {
@@ -177,22 +203,27 @@ export class GameDetailComponent implements OnInit {
     );
   }
 
+  anyGameFieldsChanged(): boolean {
+    let changes = 0;
+    for (const key in this.changedGameFields) {
+      if (Object.prototype.hasOwnProperty.call(this.changedGameFields, key)) {
+        if (this.game.data[key] !== this.changedGameFields[key]) {
+          changes++;
+        }
+      }
+    }
+    return changes > 0;
+  }
+
   onFinishedFieldEdit(event): void {
     this.finished = event;
     this.changedPersonFields.finished_date = !!this.finished ? new Date() : undefined;
     this.changedPersonFields.final_score = undefined;
     this.changedPersonFields.replay_score = undefined;
-    this.onFieldEdit();
   }
 
   onNaturalEndEdit(event): void {
-    /*this.game.natural_end = event;
-    this.onFieldEdit();*/
-  }
-
-  onFieldEdit(): void {
-    /*this.changedGameFields = this.game.getChangedFields();
-    this.changedPersonFields = this.selectedPlatform.getChangedFields();*/
+    this.changedGameFields.natural_end = event;
   }
 
   anyPlatformsAreFinished(): boolean {
@@ -218,23 +249,18 @@ export class GameDetailComponent implements OnInit {
   }
 
   async changeValues(): Promise<void> {
-    const allUpdates = [];
-
-    this.updating = true;
-
     if (this.anyMyGamePlatformFieldsChanged()) {
+      this.updatingMyGame = true;
       this.doPersonUpdate();
     }
 
-    if (Object.getOwnPropertyNames(this.changedGameFields).length > 0) {
-      allUpdates.push(this.doGameUpdate());
+    if (this.anyGameFieldsChanged()) {
+      this.updatingGame = true;
+      this.doGameUpdate();
     }
-
-    await Promise.all(allUpdates);
   }
 
   dismiss(): void {
-    // this.game.discardChanges();
     this.activeModal.dismiss('Cross Click');
   }
 
@@ -251,8 +277,8 @@ export class GameDetailComponent implements OnInit {
     this.gameService.updateMyPlatform(this.selectedPlatform.id, this.changedPersonFields);
   }
 
-  async doGameUpdate(): Promise<void> {
-    await this.gameService.updateGame(this.game);
+  doGameUpdate(): void {
+    this.gameService.updateGame(this.game.id, this.changedGameFields);
   }
 
   // PLAYTIME
