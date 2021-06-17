@@ -99,8 +99,7 @@
                                        id="rating"
                                        name="rating"
                                        class="darkInput form-control form-control-lg"
-                                       [(ngModel)]="selectedPlatform.data.rating"
-                                       (ngModelChange)="onFieldEdit()"/>
+                                       [(ngModel)]="changedPersonFields.rating"/>
                               </div>
 
                               <!--FINISHED-->
@@ -120,8 +119,7 @@
                                          id="finalScore"
                                          name="finalScore"
                                          class="darkInput form-control form-control-lg"
-                                         [(ngModel)]="selectedPlatform.data.final_score"
-                                         (ngModelChange)="onFieldEdit()"/>
+                                         [(ngModel)]="changedPersonFields.final_score"/>
                                 </div>
                               </div>
 
@@ -133,8 +131,7 @@
                                          id="replay"
                                          name="replay"
                                          class="darkInput form-control form-control-lg"
-                                         [(ngModel)]="selectedPlatform.data.replay_score"
-                                         (ngModelChange)="onFieldEdit()"/>
+                                         [(ngModel)]="changedPersonFields.replay_score"/>
                                 </div>
                               </div>
 

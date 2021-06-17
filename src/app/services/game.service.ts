@@ -146,9 +146,12 @@ export class GameService {
     return await this.http.get<any[]>('/api/igdbMatches', options).toPromise();
   }
 
-  async updateMyPlatform(myGamePlatform: MyGamePlatform): Promise<any> {
-    // await myGamePlatform.commit(this.http);
-    // this.pushGameListChange();
+  updateMyPlatform(myGamePlatformID: number, changedFields: any): void {
+    const body = {
+      id: myGamePlatformID,
+      changedFields
+    };
+    this.apiService.executePutAfterFullyConnected('/api/myPlatforms', body);
   }
 
   updateMultipleGlobalPlatforms(platformRanks: PlatformRank[]): void {

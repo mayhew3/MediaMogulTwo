@@ -30,7 +30,12 @@ export class GameDetailComponent implements OnInit {
   game: Game;
 
   changedGameFields = {};
-  changedPersonFields = {};
+  changedPersonFields = {
+    rating: null,
+    final_score: null,
+    replay_score: null,
+    finished_date: undefined
+  };
   finished = false;
 
   editedTitle: string;
@@ -66,7 +71,14 @@ export class GameDetailComponent implements OnInit {
     this.gameService.gameWithIDObservable(this.game_id).subscribe(game => {
       this.game = game;
 
+
       this.selectedPlatform = this.game.myPreferredPlatform;
+
+      this.changedPersonFields.rating = this.selectedPlatform.data.rating;
+      this.changedPersonFields.final_score = this.selectedPlatform.data.final_score;
+      this.changedPersonFields.replay_score = this.selectedPlatform.data.replay_score;
+      this.changedPersonFields.finished_date = this.selectedPlatform.data.finished_date;
+
       this.finished = !!this.selectedPlatform && !!this.selectedPlatform.data.finished_date;
       this.editedTitle = this.game.title;
       this.initializeDates(this.selectedPlatform);
@@ -142,12 +154,23 @@ export class GameDetailComponent implements OnInit {
   }
 
   anyFieldsChanged(): boolean {
-    return Object.keys(this.changedGameFields).length > 0 || Object.keys(this.changedPersonFields).length > 0;
+    return Object.keys(this.changedGameFields).length > 0 || this.anyMyGamePlatformFieldsChanged();
+  }
+
+  anyMyGamePlatformFieldsChanged(): boolean {
+    return (
+      this.changedPersonFields.rating !== this.selectedPlatform.data.rating ||
+      this.changedPersonFields.final_score !== this.selectedPlatform.data.final_score ||
+      this.changedPersonFields.replay_score !== this.selectedPlatform.data.replay_score ||
+      this.changedPersonFields.finished_date !== this.selectedPlatform.data.finished_date
+    );
   }
 
   onFinishedFieldEdit(event): void {
     this.finished = event;
-    this.selectedPlatform.data.finished_date = !!this.finished ? new Date() : null;
+    this.changedPersonFields.finished_date = !!this.finished ? new Date() : undefined;
+    this.changedPersonFields.final_score = undefined;
+    this.changedPersonFields.replay_score = undefined;
     this.onFieldEdit();
   }
 
@@ -186,8 +209,8 @@ export class GameDetailComponent implements OnInit {
   async changeValues(): Promise<void> {
     const allUpdates = [];
 
-    if (Object.getOwnPropertyNames(this.changedPersonFields).length > 0) {
-      allUpdates.push(this.doPersonUpdate());
+    if (this.anyMyGamePlatformFieldsChanged()) {
+      this.doPersonUpdate();
     }
 
     if (Object.getOwnPropertyNames(this.changedGameFields).length > 0) {
@@ -203,8 +226,8 @@ export class GameDetailComponent implements OnInit {
     this.activeModal.dismiss('Cross Click');
   }
 
-  async doPersonUpdate(): Promise<void> {
-    await this.gameService.updateMyPlatform(this.selectedPlatform);
+  doPersonUpdate(): void {
+    this.gameService.updateMyPlatform(this.selectedPlatform.id, this.changedPersonFields);
   }
 
   async doGameUpdate(): Promise<void> {

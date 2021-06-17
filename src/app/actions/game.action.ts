@@ -29,7 +29,19 @@ export class AddAvailableGamePlatforms {
 }
 
 export class AddGameToMyCollection {
-  static readonly type = '[Game] Add to My Collection'
+  static readonly type = '[Game] Add to My Collection';
+  constructor(public myGamePlatform: MyGamePlatformData) {
+  }
+}
+
+export class UpdateGame {
+  static readonly type = '[Game] Update Game';
+  constructor(public game: GameData) {
+  }
+}
+
+export class UpdateMyGamePlatform {
+  static readonly type = '[Game] Update MyGamePlatform';
   constructor(public myGamePlatform: MyGamePlatformData) {
   }
 }

@@ -25,6 +25,7 @@ export class GameListComponent implements OnInit{
   nailedDownFilters: GameFilter[];
   nailedDownOrderings: GameOrdering[];
   selectedOrdering: GameOrdering;
+  allGames: Game[] = [];
   filteredGames: Game[] = [];
   page = 1;
   initializing = true;
@@ -42,7 +43,15 @@ export class GameListComponent implements OnInit{
     this.selectedOrdering = this.orderings[0];
     this.nailedDownFilters = ArrayUtil.cloneArray(this.changeableFilters);
     this.nailedDownOrderings = ArrayUtil.cloneArray(this.orderings);
-    this.sortAndFilterGames();
+
+    this.gameService.games.subscribe(allGames => {
+      this.allGames = allGames;
+      if (allGames.length > 0) {
+        this.initializing = false;
+      }
+
+      this.sortAndFilterGames();
+    });
   }
 
   showOrderingDropdown(): boolean {
@@ -55,17 +64,10 @@ export class GameListComponent implements OnInit{
   }
 
   sortAndFilterGames(): void {
-    this.gameService.games.subscribe(allGames => {
-
-      const allFilters = this.getAllFilters();
-      this.filteredGames = this.applyAll(allGames, allFilters);
-      this.sortGames();
-      this.updateVisibleOptions(allGames);
-
-      if (allGames.length > 0) {
-        this.initializing = false;
-      }
-    });
+    const allFilters = this.getAllFilters();
+    this.filteredGames = this.applyAll(this.allGames, allFilters);
+    this.sortGames();
+    this.updateVisibleOptions(this.allGames);
   }
 
   /* eslint-disable @typescript-eslint/explicit-function-return-type */

@@ -14,6 +14,8 @@ import {InMemoryCallbacksService} from './in-memory-callbacks.service';
 import {MyGlobalPlatformAddedMessage} from '../../shared/MyGlobalPlatformAddedMessage';
 import {MyGlobalPlatformRemovedMessage} from '../../shared/MyGlobalPlatformRemovedMessage';
 import {MyGlobalPlatformsRanksChangedMessage} from '../../shared/MyGlobalPlatformsRanksChangedMessage';
+import {UpdateMyGamePlatformMessage} from '../../shared/UpdateMyGamePlatformMessage';
+import {LoggerService} from './logger.service';
 
 @Injectable({
   providedIn: 'root'
@@ -25,7 +27,8 @@ export class InMemoryDataService implements InMemoryDbService{
   gamePlatforms = MockGamePlatforms;
   gameplaySessions = MockGameplaySessions;
 
-  constructor(private callbackService: InMemoryCallbacksService) { }
+  constructor(private callbackService: InMemoryCallbacksService,
+              private logger: LoggerService) { }
 
   // STATIC HELPERS
 
@@ -122,8 +125,6 @@ export class InMemoryDataService implements InMemoryDbService{
       this.updateMyGlobalPlatform(requestInfo);
     } else if (collectionName === 'multipleGlobals') {
       this.updateMultipleGlobals(requestInfo);
-    } else if (collectionName === 'finishGame') {
-
     }
     return null;
   }
@@ -349,20 +350,44 @@ export class InMemoryDataService implements InMemoryDbService{
     }
   }
 
+  private logReadOnly(): void {
+    let readOnly = 0;
+    let writeable = 0;
+    _.chain(this.games)
+      .map(g => g.availablePlatforms)
+      .flatten()
+      .filter(a => !!a.myPlatforms)
+      .map(a => a.myPlatforms)
+      .flatten()
+      .filter(n => !!n.rating)
+      .each(n => {
+        if (Object.getOwnPropertyDescriptor(n, 'rating').writable) {
+          writeable++;
+        } else {
+          readOnly++;
+        }
+      });
+    this.logger.log(`Read-only: ${readOnly}, Writeable: ${writeable}`);
+  }
+
   private updateMyGamePlatform(requestInfo: RequestInfo): Observable<Response> {
     const jsonBody = this.getBody(requestInfo);
     const myGamePlatform = this.findMyGamePlatform(jsonBody.id);
     if (!!myGamePlatform) {
+      this.logReadOnly();
+
       this.updateChangedFieldsOnObject(myGamePlatform, jsonBody.changedFields);
-      return this.packageUpResponse(myGamePlatform, requestInfo);
-    }
 
-    const msg = {
-      id: jsonBody.id,
-      changed_fields: jsonBody.changedFields
-    }
+      const msg: UpdateMyGamePlatformMessage = {
+        my_game_platform: myGamePlatform
+      }
 
-    this.broadcastToChannel('my_game_platform_changed', msg);
+      this.broadcastToChannel('update_my_game_platform', msg);
+
+      this.logReadOnly();
+
+      return this.packageUpResponse({msg: 'Success!'}, requestInfo);
+    }
   }
 
   private updateAllAvailablePlatformsWithName(oldName: string, newName: string): void {

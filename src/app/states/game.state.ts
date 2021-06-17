@@ -6,7 +6,14 @@ import {HttpParams} from '@angular/common/http';
 import {tap} from 'rxjs/operators';
 import produce from 'immer';
 import {GameData} from '../interfaces/ModelData/GameData';
-import {AddAvailableGamePlatforms, AddGameToMyCollection, AddGlobalGame, GetGameplaySessions, GetGames} from '../actions/game.action';
+import {
+  AddAvailableGamePlatforms,
+  AddGameToMyCollection,
+  AddGlobalGame,
+  GetGameplaySessions,
+  GetGames,
+  UpdateMyGamePlatform
+} from '../actions/game.action';
 import _ from 'underscore';
 import {AddGlobalPlatforms} from '../actions/global.platform.action';
 import {GlobalPlatformStateModel} from './global.platform.state';
@@ -88,6 +95,27 @@ export class GameState {
         availableWhichWillBeMine.myGamePlatform = myGamePlatform;
       })
     );
+  }
+
+  @Action(UpdateMyGamePlatform)
+  updateMyGamePlatform({setState}: StateContext<GameStateModel>, action: UpdateMyGamePlatform): void {
+    setState(
+      produce(draft => {
+        const myGamePlatform = action.myGamePlatform;
+        const availablePlatforms = _.flatten(_.map(draft.games, game => game.availablePlatforms));
+        const availableWhichWillBeMine: AvailableGamePlatformData = _.findWhere(availablePlatforms, {id: myGamePlatform.available_game_platform_id});
+        this.updateChangedFieldsOnObject(availableWhichWillBeMine.myGamePlatform, myGamePlatform);
+      })
+    );
+  }
+
+  // noinspection JSMethodCanBeStatic
+  private updateChangedFieldsOnObject(obj: any, changedFields: any): void {
+    for (const key in changedFields) {
+      if (Object.prototype.hasOwnProperty.call(changedFields, key)) {
+        obj[key] = changedFields[key];
+      }
+    }
   }
 
 

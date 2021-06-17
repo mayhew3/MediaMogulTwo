@@ -9,7 +9,7 @@ import {
   RemoveFromMyGlobalPlatforms,
   UpdateGlobalPlatform
 } from '../actions/global.platform.action';
-import {AddAvailableGamePlatforms, AddGameToMyCollection, AddGlobalGame} from '../actions/game.action';
+import {AddAvailableGamePlatforms, AddGameToMyCollection, AddGlobalGame, UpdateMyGamePlatform} from '../actions/game.action';
 import {GameData} from '../interfaces/ModelData/GameData';
 import {MyGamePlatformData} from '../interfaces/ModelData/MyGamePlatformData';
 import {AvailableGamePlatformData} from '../interfaces/Model/AvailableGamePlatform';
@@ -19,6 +19,7 @@ import {GlobalGameAddedMessage} from '../../shared/GlobalGameAddedMessage';
 import {MyGlobalPlatformAddedMessage} from '../../shared/MyGlobalPlatformAddedMessage';
 import {MyGlobalPlatformRemovedMessage} from '../../shared/MyGlobalPlatformRemovedMessage';
 import {MyGlobalPlatformsRanksChangedMessage} from '../../shared/MyGlobalPlatformsRanksChangedMessage';
+import {UpdateMyGamePlatformMessage} from '../../shared/UpdateMyGamePlatformMessage';
 
 @Injectable({
   providedIn: 'root'
@@ -36,6 +37,7 @@ export class MessagingService {
     if (!this.listenersInitialized) {
 
       this.updateGlobalPlatform();
+      this.updateMyGamePlatform();
       this.addGameToMyCollection();
       this.addGlobalGame();
       this.addPlatformToMyPlatforms();
@@ -116,6 +118,14 @@ export class MessagingService {
       }
       return actions;
     });
+  }
+
+  private updateMyGamePlatform(): void {
+    this.addSingleActionListener<UpdateMyGamePlatformMessage>(
+      'update_my_game_platform',
+      msg => new UpdateMyGamePlatform(
+        msg.my_game_platform
+      ));
   }
 
   private updateGlobalPlatform(): void {
