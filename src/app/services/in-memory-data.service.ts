@@ -187,7 +187,7 @@ export class InMemoryDataService implements InMemoryDbService{
     const jsonBody = this.getBody(requestInfo);
     const game = this.findGame(jsonBody.id);
     if (!!game) {
-      this.updateChangedFieldsOnObject(game, jsonBody.changedFields);
+      ArrayUtil.updateChangedFieldsOnObject(game, jsonBody.changedFields);
       return this.packageUpResponse(game, requestInfo);
     }
   }
@@ -284,7 +284,7 @@ export class InMemoryDataService implements InMemoryDbService{
     if (!!gamePlatform) {
       const changedFields = jsonBody.changedFields;
       const old_name = gamePlatform.full_name;
-      this.updateChangedFieldsOnObject(gamePlatform, changedFields);
+      ArrayUtil.updateChangedFieldsOnObject(gamePlatform, changedFields);
       const full_name = changedFields.full_name;
       if (!!full_name && full_name !== old_name) {
         this.updateAllAvailablePlatformsWithName(old_name, full_name);
@@ -306,7 +306,7 @@ export class InMemoryDataService implements InMemoryDbService{
     const jsonBody = this.getBody(requestInfo);
     const myGlobalPlatform = this.findMyGlobalPlatform(jsonBody.id);
     if (!!myGlobalPlatform) {
-      this.updateChangedFieldsOnObject(myGlobalPlatform, jsonBody.changedFields);
+      ArrayUtil.updateChangedFieldsOnObject(myGlobalPlatform, jsonBody.changedFields);
       return this.packageUpResponse(myGlobalPlatform, requestInfo);
     }
   }
@@ -319,7 +319,7 @@ export class InMemoryDataService implements InMemoryDbService{
     for (const payload of jsonBody.payloads) {
       const myGlobalPlatform = this.findMyGlobalPlatform(payload.id);
       if (!!myGlobalPlatform) {
-        this.updateChangedFieldsOnObject(myGlobalPlatform, payload.changedFields);
+        ArrayUtil.updateChangedFieldsOnObject(myGlobalPlatform, payload.changedFields);
 
         msg.changes.push({
           my_global_platform_id: myGlobalPlatform.id,
@@ -350,6 +350,7 @@ export class InMemoryDataService implements InMemoryDbService{
     }
   }
 
+  // noinspection JSUnusedLocalSymbols
   private logReadOnly(): void {
     let readOnly = 0;
     let writeable = 0;
@@ -374,17 +375,14 @@ export class InMemoryDataService implements InMemoryDbService{
     const jsonBody = this.getBody(requestInfo);
     const myGamePlatform = this.findMyGamePlatform(jsonBody.id);
     if (!!myGamePlatform) {
-      this.logReadOnly();
 
-      this.updateChangedFieldsOnObject(myGamePlatform, jsonBody.changedFields);
+      ArrayUtil.updateChangedFieldsOnObject(myGamePlatform, jsonBody.changedFields);
 
       const msg: UpdateMyGamePlatformMessage = {
         my_game_platform: myGamePlatform
       }
 
       this.broadcastToChannel('update_my_game_platform', msg);
-
-      this.logReadOnly();
 
       return this.packageUpResponse({msg: 'Success!'}, requestInfo);
     }
@@ -473,16 +471,6 @@ export class InMemoryDataService implements InMemoryDbService{
 
 
   // DOMAIN-INDEPENDENT HELPERS
-
-
-  // noinspection JSMethodCanBeStatic
-  private updateChangedFieldsOnObject(obj: any, changedFields: any): void {
-    for (const key in changedFields) {
-      if (Object.prototype.hasOwnProperty.call(changedFields, key)) {
-        obj[key] = changedFields[key];
-      }
-    }
-  }
 
   // noinspection JSMethodCanBeStatic
   private getBody(requestInfo): any {

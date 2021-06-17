@@ -15,9 +15,8 @@ import {
   UpdateMyGamePlatform
 } from '../actions/game.action';
 import _ from 'underscore';
-import {AddGlobalPlatforms} from '../actions/global.platform.action';
-import {GlobalPlatformStateModel} from './global.platform.state';
 import {AvailableGamePlatformData} from '../interfaces/Model/AvailableGamePlatform';
+import {ArrayUtil} from '../utility/ArrayUtil';
 
 export class GameStateModel {
   games: GameData[];
@@ -104,19 +103,9 @@ export class GameState {
         const myGamePlatform = action.myGamePlatform;
         const availablePlatforms = _.flatten(_.map(draft.games, game => game.availablePlatforms));
         const availableWhichWillBeMine: AvailableGamePlatformData = _.findWhere(availablePlatforms, {id: myGamePlatform.available_game_platform_id});
-        this.updateChangedFieldsOnObject(availableWhichWillBeMine.myGamePlatform, myGamePlatform);
+        ArrayUtil.updateChangedFieldsOnObject(availableWhichWillBeMine.myGamePlatform, myGamePlatform);
       })
     );
   }
-
-  // noinspection JSMethodCanBeStatic
-  private updateChangedFieldsOnObject(obj: any, changedFields: any): void {
-    for (const key in changedFields) {
-      if (Object.prototype.hasOwnProperty.call(changedFields, key)) {
-        obj[key] = changedFields[key];
-      }
-    }
-  }
-
 
 }
