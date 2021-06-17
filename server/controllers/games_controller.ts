@@ -160,13 +160,6 @@ export const addGameplaySession = async (request: Record<string, any>, response:
   response.json({});
 };
 
-export const addAvailableGamePlatform = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
-  const availableGamePlatformObj = request.body;
-
-  const availableGamePlatform = await model.AvailableGamePlatform.create(availableGamePlatformObj);
-  response.json(availableGamePlatform);
-};
-
 export const addMyGamePlatform = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   const myGamePlatformObj = request.body;
 

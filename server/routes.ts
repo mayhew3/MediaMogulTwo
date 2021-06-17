@@ -68,8 +68,6 @@ module.exports = (app: Express): void => {
 
   privatePut('/multipleGlobals', platforms.updateMultipleGlobals);
 
-  privatePost('/availablePlatforms', games.addAvailableGamePlatform);
-
   privatePost('/myPlatforms', games.addMyGamePlatform);
   privatePut('/myPlatforms', games.updateMyGamePlatform);
 

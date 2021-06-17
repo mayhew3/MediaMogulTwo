@@ -47,27 +47,4 @@ export interface AvailableGamePlatformData {
   metacritic_matched: Date;
   game_id: number;
 
-  /*
-  constructor(public platform: GamePlatform,
-              public game: Game) {
-    super();
-    this.game_platform_id.value = platform.id;
-    this.game_id.value = game.id.value;
-    this.platform_name.value = platform.full_name;
-  }
-*/
-/*
-
-  initializedFromJSON(jsonObj: any): this {
-    super.initializedFromJSON(jsonObj);
-    if (!this.platform_name.value) {
-      this.platform_name.initializeValue(this.platform.full_name);
-    }
-    if (!!jsonObj.myPlatform) {
-      this.myGamePlatform = new MyGamePlatform(this).initializedFromJSON(jsonObj.myPlatform);
-    }
-    return this;
-  }
-*/
-
 }
