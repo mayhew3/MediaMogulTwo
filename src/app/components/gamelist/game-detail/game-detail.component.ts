@@ -239,6 +239,15 @@ export class GameDetailComponent implements OnInit {
   }
 
   doPersonUpdate(): void {
+    if (!this.changedPersonFields.finished_date) {
+      this.changedPersonFields.finished_date = null;
+    }
+    if (!this.changedPersonFields.final_score) {
+      this.changedPersonFields.final_score = null;
+    }
+    if (!this.changedPersonFields.replay_score) {
+      this.changedPersonFields.replay_score = null;
+    }
     this.gameService.updateMyPlatform(this.selectedPlatform.id, this.changedPersonFields);
   }
 

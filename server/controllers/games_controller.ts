@@ -1,5 +1,6 @@
 import * as model from './model';
 import {socketServer} from '../www';
+import {UpdateMyGamePlatformMessage} from '../../src/shared/UpdateMyGamePlatformMessage';
 const _ = require('underscore');
 const moment = require('moment');
 
@@ -116,6 +117,13 @@ export const updateMyGamePlatform = async (request: Record<string, any>, respons
   try {
     const myGamePlatform = await model.MyGamePlatform.findByPk(myPlatformID);
     await myGamePlatform.update(changedFields);
+
+    const msg: UpdateMyGamePlatformMessage = {
+      my_game_platform: myGamePlatform
+    };
+
+    socketServer.emitToPerson(myGamePlatform.person_id, 'update_my_game_platform', msg);
+
     response.json({});
   } catch (err) {
     console.error(err);
