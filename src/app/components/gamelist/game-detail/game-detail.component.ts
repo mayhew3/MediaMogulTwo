@@ -16,6 +16,7 @@ import {GameplaySessionService} from '../../../services/gameplay.session.service
 import fast_sort from 'fast-sort';
 import {AvailableGamePlatform} from '../../../interfaces/Model/AvailableGamePlatform';
 import {Store} from '@ngxs/store';
+import {SocketService} from '../../../services/socket.service';
 
 enum DetailNav {RATING = 'Rating', PLAYTIME = 'Playtime'}
 
@@ -51,6 +52,8 @@ export class GameDetailComponent implements OnInit {
   original = new GameTime();
   timeTotal = new GameTime();
 
+  updating = false;
+
   debug = false;
 
   gameplaySessions: GameplaySession[] = [];
@@ -61,6 +64,7 @@ export class GameDetailComponent implements OnInit {
               public personService: PersonService,
               private store: Store,
               private platformService: PlatformService,
+              private socketService: SocketService,
               private gameplaySessionService: GameplaySessionService) {
     this.platformService.platforms.subscribe(platforms => ArrayUtil.refreshArray(this.allPlatforms, platforms));
   }
@@ -88,6 +92,13 @@ export class GameDetailComponent implements OnInit {
         ArrayUtil.refreshArray(this.gameplaySessions, sessions);
         this.sortSessions();
       }
+
+      this.socketService.on('update_my_game_platform', msg => {
+        if (msg.my_game_platform.id === this.selectedPlatform.id) {
+          this.updating = false;
+          this.activeModal.close('Update Click');
+        }
+      });
 
     });
   }
@@ -209,6 +220,8 @@ export class GameDetailComponent implements OnInit {
   async changeValues(): Promise<void> {
     const allUpdates = [];
 
+    this.updating = true;
+
     if (this.anyMyGamePlatformFieldsChanged()) {
       this.doPersonUpdate();
     }
@@ -218,7 +231,6 @@ export class GameDetailComponent implements OnInit {
     }
 
     await Promise.all(allUpdates);
-    this.activeModal.close('Update Click');
   }
 
   dismiss(): void {
