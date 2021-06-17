@@ -576,6 +576,6 @@
 <div class="modal-footer">
   <button type="button"
           class="btn btn-primary"
-          [disabled]="!anyFieldsChanged()"
+          [disabled]="!anyFieldsChanged() || updating"
           (click)="changeValues()">Update and Close</button>
 </div>
