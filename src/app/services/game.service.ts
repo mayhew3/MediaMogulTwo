@@ -182,8 +182,8 @@ export class GameService {
 
   }
 
-  async insertGameplaySession(gameplaySession: GameplaySession): Promise<void> {
-    this.apiService.executePostAfterFullyConnected( '/api/gameplaySessions', gameplaySession);
+  insertGameplaySession(gameplaySessionObj: GameplaySessionInsertObj): void {
+    this.apiService.executePostAfterFullyConnected( '/api/gameplaySessions', gameplaySessionObj);
   }
 /*
 
@@ -202,4 +202,18 @@ export class GameService {
 */
 
 
+}
+
+export class GameplaySessionInsertObj {
+  game_id: number;
+  start_time: Date;
+  minutes: number;
+  person_id: number;
+  rating: number;
+}
+
+export class MyPlatformSessionUpdate {
+  minutes_played: number;
+  last_played: Date;
+  finished_date: Date;
 }

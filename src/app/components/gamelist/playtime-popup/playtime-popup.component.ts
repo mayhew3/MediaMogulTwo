@@ -1,13 +1,16 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {NgbActiveModal, NgbCalendar, NgbDate} from '@ng-bootstrap/ng-bootstrap';
 import {Game} from '../../../interfaces/Model/Game';
-import {GameService} from '../../../services/game.service';
+import {GameplaySessionInsertObj, GameService, MyPlatformSessionUpdate} from '../../../services/game.service';
 import * as moment from 'moment';
 import {PersonService} from '../../../services/person.service';
 import {MyGamePlatform} from '../../../interfaces/Model/MyGamePlatform';
 import * as _ from 'underscore';
 import {GameTime} from '../../../interfaces/Utility/GameTime';
 import {PlatformService} from '../../../services/platform.service';
+import {SocketService} from '../../../services/socket.service';
+import {AddGameplaySessionMessage} from '../../../../shared/AddGameplaySessionMessage';
+import {UpdateMyGamePlatformMessage} from '../../../../shared/UpdateMyGamePlatformMessage';
 
 @Component({
   selector: 'mm-playtime-popup',
@@ -33,6 +36,9 @@ export class PlaytimePopupComponent implements OnInit {
 
   selectedPlatform: MyGamePlatform;
 
+  addingSession = false;
+  updatingMyPlatform = false;
+
   finalScore: number;
   replayScore: number;
 
@@ -40,6 +46,7 @@ export class PlaytimePopupComponent implements OnInit {
               private gameService: GameService,
               private platformService: PlatformService,
               private calendar: NgbCalendar,
+              private socketService: SocketService,
               private personService: PersonService) {
     this.model = calendar.getToday();
     this.validDate = true;
@@ -57,8 +64,30 @@ export class PlaytimePopupComponent implements OnInit {
         this.finished = !!this.selectedPlatform.data.finished_date;
         this.finalScore = this.selectedPlatform.data.final_score;
         this.replayScore = this.selectedPlatform.data.replay_score;
+
+        this.socketService.on('add_gameplay_session', (msg: AddGameplaySessionMessage) => {
+          if (msg.gameplaySession.game_id === game.id) {
+            this.addingSession = false;
+            if (!this.isUpdating()) {
+              this.activeModal.close();
+            }
+          }
+        });
+
+        this.socketService.on('update_my_game_platform', (msg: UpdateMyGamePlatformMessage) => {
+          if (msg.my_game_platform.id === this.selectedPlatform.id) {
+            this.updatingMyPlatform = false;
+            if (!this.isUpdating()) {
+              this.activeModal.close();
+            }
+          }
+        });
       });
     });
+  }
+
+  isUpdating(): boolean {
+    return this.addingSession || this.updatingMyPlatform;
   }
 
   get myMutablePlatforms(): MyGamePlatform[] {
@@ -118,31 +147,38 @@ export class PlaytimePopupComponent implements OnInit {
   }
 
   anyFieldsChanged(): boolean {
-    /*const gametimeChanged = this.added.asMinutes() > 0;
-    const finishedChanged = !this.finished !== !this.selectedPlatform.finished_date;
-    const finalScoreChanged = this.finalScore !== this.selectedPlatform.final_score;
-    const replayScoreChanged = this.replayScore !== this.selectedPlatform.replay_score;
-    return gametimeChanged || finishedChanged || finalScoreChanged || replayScoreChanged;*/
-    return false;
+    const gameTimeChanged = this.added.asMinutes() > 0;
+    const finishedChanged = !this.finished !== !this.selectedPlatform.data.finished_date;
+    const finalScoreChanged = this.finalScore !== this.selectedPlatform.data.final_score;
+    const replayScoreChanged = this.replayScore !== this.selectedPlatform.data.replay_score;
+    return gameTimeChanged || finishedChanged || finalScoreChanged || replayScoreChanged;
   }
 
   async saveAndClose(): Promise<void> {
     this.personService.me$.subscribe(async person => {
       try {
-        /*const playedDate = this.convertModelToDate();
-        const myPlatform = this.selectedPlatform;
-        myPlatform.minutes_played = this.resulting.asMinutes();
-        myPlatform.last_played = playedDate;
-        myPlatform.finished_date = this.finished ? playedDate : null;
 
-        this.gameplaySession.game_id = this.game.id;
-        this.gameplaySession.minutes = this.added.asMinutes();
-        this.gameplaySession.start_time = playedDate;
-        this.gameplaySession.person_id = person.id;
+        const playedDate = this.convertModelToDate();
 
-        const resultSession = await this.gameService.insertGameplaySession(this.gameplaySession);
-        await this.gameService.updateMyPlatform(myPlatform);
-        this.activeModal.close(resultSession);*/
+        const platformUpdate: MyPlatformSessionUpdate = {
+          minutes_played: this.resulting.asMinutes(),
+          last_played: playedDate,
+          finished_date: this.finished ? playedDate : null
+        };
+
+        const insertSession: GameplaySessionInsertObj = {
+          game_id: this.game.id,
+          minutes: this.added.asMinutes(),
+          start_time: playedDate,
+          person_id: person.id,
+          rating: this.gameplaySession.rating
+        };
+
+        this.addingSession = true;
+        this.gameService.insertGameplaySession(insertSession);
+
+        this.updatingMyPlatform = true;
+        this.gameService.updateMyPlatform(this.selectedPlatform.id, platformUpdate);
       } catch (err) {
         console.error(err);
       }
@@ -150,7 +186,6 @@ export class PlaytimePopupComponent implements OnInit {
   }
 
   dismiss(): void {
-    // this.game.discardChanges();
     this.activeModal.dismiss('Cross Click');
   }
 
