@@ -3,6 +3,7 @@ import {socketServer} from '../www';
 import {UpdateMyGamePlatformMessage} from '../../src/shared/UpdateMyGamePlatformMessage';
 import {UpdateGameMessage} from '../../src/shared/UpdateGameMessage';
 import {AddGameplaySessionMessage} from '../../src/shared/AddGameplaySessionMessage';
+import {ChangePreferredPlatformMessage} from '../../src/shared/ChangePreferredPlatformMessage';
 const _ = require('underscore');
 const moment = require('moment');
 
@@ -139,6 +140,50 @@ export const updateMyGamePlatform = async (request: Record<string, any>, respons
     response.send({msg: 'Error updating myGamePlatform: ' + JSON.stringify(changedFields)});
   }
 };
+
+export const changePreferredPlatform = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
+  const myPlatformID = request.body.id;
+
+  try {
+    const myGamePlatform = await model.MyGamePlatform.findByPk(myPlatformID);
+
+    const availablePlatform = await model.AvailableGamePlatform.findByPk(myGamePlatform.available_game_platform_id);
+    const availablePlatforms = await model.AvailableGamePlatform.findAll(
+      {
+        where: {
+          game_id: availablePlatform.game_id
+        }
+      }
+    );
+    const availableIDs = _.map(availablePlatforms, ap => ap.id);
+    const existingPreferred = await model.MyGamePlatform.findAll(
+      {
+        where: {
+          available_game_platform_id: availableIDs,
+          preferred: true
+        }
+      }
+    );
+
+    if (existingPreferred.length > 0) {
+      await existingPreferred[0].update({preferred: false});
+    }
+
+    await myGamePlatform.update({preferred: true});
+
+    const msg: ChangePreferredPlatformMessage = {
+      my_game_platform_id: myGamePlatform.id
+    };
+
+    socketServer.emitToPerson(myGamePlatform.person_id, 'change_preferred_platform', msg);
+
+    response.json({});
+  } catch (err) {
+    console.error(err);
+    response.send({msg: `Error changing preferred platform to: ${myPlatformID}`});
+  }
+};
+
 
 export const getGameplaySessions = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   const person_id = request.query.person_id;

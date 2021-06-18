@@ -71,6 +71,8 @@ module.exports = (app: Express): void => {
   privatePost('/myPlatforms', games.addMyGamePlatform);
   privatePut('/myPlatforms', games.updateMyGamePlatform);
 
+  privatePost('/changePreferredPlatform', games.changePreferredPlatform);
+
   privateGet('/igdbMatches', addGame.getIGDBMatches);
 
 
