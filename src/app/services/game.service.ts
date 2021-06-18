@@ -157,6 +157,13 @@ export class GameService {
     this.apiService.executePutAfterFullyConnected('/api/myPlatforms', body);
   }
 
+  changePreferredPlatform(myGamePlatformID: number): void {
+    const body = {
+      id: myGamePlatformID
+    };
+    this.apiService.executePostAfterFullyConnected('/api/changePreferredPlatform', body);
+  }
+
   updateMultipleGlobalPlatforms(platformRanks: PlatformRank[]): void {
     this.personService.me$.subscribe(me => {
 

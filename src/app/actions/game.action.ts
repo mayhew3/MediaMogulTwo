@@ -45,3 +45,9 @@ export class UpdateMyGamePlatform {
   constructor(public myGamePlatform: MyGamePlatformData) {
   }
 }
+
+export class ChangePreferredPlatform {
+  static readonly type = '[Game] Change Preferred Platform';
+  constructor(public myGamePlatformID: number) {
+  }
+}

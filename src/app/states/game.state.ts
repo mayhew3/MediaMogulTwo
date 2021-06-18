@@ -10,13 +10,17 @@ import {
   AddAvailableGamePlatforms,
   AddGameToMyCollection,
   AddGlobalGame,
+  ChangePreferredPlatform,
   GetGameplaySessions,
-  GetGames, UpdateGame,
+  GetGames,
+  UpdateGame,
   UpdateMyGamePlatform
 } from '../actions/game.action';
 import _ from 'underscore';
 import {AvailableGamePlatformData} from '../interfaces/Model/AvailableGamePlatform';
 import {ArrayUtil} from '../utility/ArrayUtil';
+import {MyGamePlatformData} from '../interfaces/ModelData/MyGamePlatformData';
+import {WritableDraft} from 'immer/dist/types/types-external';
 
 export class GameStateModel {
   games: GameData[];
@@ -108,6 +112,23 @@ export class GameState {
     );
   }
 
+  @Action(ChangePreferredPlatform)
+  changePreferredPlatform({setState}: StateContext<GameStateModel>, action: ChangePreferredPlatform): void {
+    setState(
+      produce(draft => {
+        const myGamePlatform = this.findMyGamePlatform(draft.games, action.myGamePlatformID);
+        const game = this.getGameFromMy(draft.games, myGamePlatform);
+        const currentlyPreferred = this.getPreferredPlatform(game);
+
+        if (!!currentlyPreferred) {
+          currentlyPreferred.preferred = false;
+        }
+
+        myGamePlatform.preferred = true;
+      })
+    );
+  }
+
   @Action(UpdateGame)
   updateGame({setState}: StateContext<GameStateModel>, action: UpdateGame): void {
     setState(
@@ -117,6 +138,47 @@ export class GameState {
         ArrayUtil.updateChangedFieldsOnObject(game, gameData);
       })
     );
+  }
+
+
+  private getGameFromMy(games: WritableDraft<GameData[]>, myGamePlatform: WritableDraft<MyGamePlatformData>): WritableDraft<GameData> {
+    const availableGamePlatform = this.getAvailableGamePlatform(games, myGamePlatform);
+    return this.getGameFromAvail(games, availableGamePlatform);
+  }
+
+  // noinspection JSMethodCanBeStatic
+  private getGameFromAvail(games: WritableDraft<GameData[]>, availableGamePlatform: WritableDraft<AvailableGamePlatformData>): WritableDraft<GameData> {
+    return _.find(games, game => !!_.findWhere(game.availablePlatforms, {id: availableGamePlatform.id}));
+  }
+
+  // noinspection JSMethodCanBeStatic
+  private getAvailableGamePlatform(games: WritableDraft<GameData[]>, myGamePlatform: WritableDraft<MyGamePlatformData>): WritableDraft<AvailableGamePlatformData> {
+    return _.chain(games)
+      .map(g => g.availablePlatforms)
+      .flatten()
+      .findWhere({id: myGamePlatform.available_game_platform_id})
+      .value();
+  }
+
+  private findMyGamePlatform(games: WritableDraft<GameData[]>, myGamePlatformID: number): WritableDraft<MyGamePlatformData> {
+    return _.chain(games)
+      .map(g => g.availablePlatforms)
+      .flatten()
+      .filter(a => !!a.myGamePlatform)
+      .map(a => a.myGamePlatform)
+      .findWhere({id: myGamePlatformID})
+      .value();
+  }
+
+  // noinspection JSMethodCanBeStatic
+  private getPreferredPlatform(game: GameData): MyGamePlatformData {
+    return _.chain(game.availablePlatforms)
+      .flatten()
+      .filter(a => !!a.myGamePlatform)
+      .map(a => a.myGamePlatform)
+      .filter(m => !!m.preferred)
+      .first()
+      .value();
   }
 
 }

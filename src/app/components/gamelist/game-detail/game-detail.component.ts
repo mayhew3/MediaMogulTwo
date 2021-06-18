@@ -170,12 +170,8 @@ export class GameDetailComponent implements OnInit {
     this.initializeDates(event.nextId);
   }
 
-  async changePreferredPlatform(): Promise<void> {
-    /*this.game.myPreferredPlatform.preferred = false;
-    await this.gameService.updateMyPlatform(this.game.myPreferredPlatform);
-
-    this.selectedPlatform.preferred = true;
-    await this.gameService.updateMyPlatform(this.selectedPlatform);*/
+  changePreferredPlatform(): void {
+    this.gameService.changePreferredPlatform(this.selectedPlatform.id);
   }
 
   get addablePlatforms(): AvailableGamePlatform[] {

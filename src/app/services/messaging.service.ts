@@ -9,7 +9,14 @@ import {
   RemoveFromMyGlobalPlatforms,
   UpdateGlobalPlatform
 } from '../actions/global.platform.action';
-import {AddAvailableGamePlatforms, AddGameToMyCollection, AddGlobalGame, UpdateGame, UpdateMyGamePlatform} from '../actions/game.action';
+import {
+  AddAvailableGamePlatforms,
+  AddGameToMyCollection,
+  AddGlobalGame,
+  ChangePreferredPlatform,
+  UpdateGame,
+  UpdateMyGamePlatform
+} from '../actions/game.action';
 import {GameData} from '../interfaces/ModelData/GameData';
 import {MyGamePlatformData} from '../interfaces/ModelData/MyGamePlatformData';
 import {AvailableGamePlatformData} from '../interfaces/Model/AvailableGamePlatform';
@@ -21,6 +28,7 @@ import {MyGlobalPlatformRemovedMessage} from '../../shared/MyGlobalPlatformRemov
 import {MyGlobalPlatformsRanksChangedMessage} from '../../shared/MyGlobalPlatformsRanksChangedMessage';
 import {UpdateMyGamePlatformMessage} from '../../shared/UpdateMyGamePlatformMessage';
 import {UpdateGameMessage} from '../../shared/UpdateGameMessage';
+import {ChangePreferredPlatformMessage} from '../../shared/ChangePreferredPlatformMessage';
 
 @Injectable({
   providedIn: 'root'
@@ -39,6 +47,7 @@ export class MessagingService {
 
       this.updateGlobalPlatform();
       this.updateMyGamePlatform();
+      this.changePreferredPlatform();
       this.updateGame();
       this.addGameToMyCollection();
       this.addGlobalGame();
@@ -127,6 +136,14 @@ export class MessagingService {
       'update_my_game_platform',
       msg => new UpdateMyGamePlatform(
         msg.my_game_platform
+      ));
+  }
+
+  private changePreferredPlatform(): void {
+    this.addSingleActionListener<ChangePreferredPlatformMessage>(
+      'change_preferred_platform',
+      msg => new ChangePreferredPlatform(
+        msg.my_game_platform_id
       ));
   }
 

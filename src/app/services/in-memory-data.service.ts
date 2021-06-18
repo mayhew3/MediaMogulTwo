@@ -18,6 +18,9 @@ import {UpdateMyGamePlatformMessage} from '../../shared/UpdateMyGamePlatformMess
 import {LoggerService} from './logger.service';
 import {UpdateGameMessage} from '../../shared/UpdateGameMessage';
 import {AddGameplaySessionMessage} from '../../shared/AddGameplaySessionMessage';
+import {MyGamePlatformData} from '../interfaces/ModelData/MyGamePlatformData';
+import {ChangePreferredPlatformMessage} from '../../shared/ChangePreferredPlatformMessage';
+import {AvailableGamePlatformData} from '../interfaces/Model/AvailableGamePlatform';
 
 @Injectable({
   providedIn: 'root'
@@ -109,6 +112,8 @@ export class InMemoryDataService implements InMemoryDbService{
       this.addMyGlobalPlatform(requestInfo);
     } else if (collectionName === 'gameplaySessions') {
       this.addGameplaySession(requestInfo);
+    } else if (collectionName === 'changePreferredPlatform') {
+      this.changePreferredPlatform(requestInfo);
     }
     return null;
   }
@@ -414,6 +419,28 @@ export class InMemoryDataService implements InMemoryDbService{
     }
   }
 
+  private changePreferredPlatform(requestInfo: RequestInfo): Observable<Response> {
+    const jsonBody = this.getBody(requestInfo);
+    const myGamePlatform = this.findMyGamePlatform(jsonBody.id);
+    if (!!myGamePlatform) {
+      const availablePlatform: AvailableGamePlatformData = this.findAvailableGamePlatform(myGamePlatform.available_game_platform_id);
+      const game = this.getGame(availablePlatform);
+      const currentPreferred = this.getPreferredPlatform(game);
+      if (!!currentPreferred) {
+        currentPreferred.preferred = false;
+      }
+      myGamePlatform.preferred = true;
+
+      const msg: ChangePreferredPlatformMessage = {
+        my_game_platform_id: jsonBody.id
+      };
+
+      this.broadcastToChannel('change_preferred_platform', msg);
+
+      return this.packageUpResponse({msg: 'Success!'}, requestInfo);
+    }
+  }
+
   private updateAllAvailablePlatformsWithName(oldName: string, newName: string): void {
     const withName = _.where(this.getAllAvailablePlatforms(), {platform_name: oldName});
     withName.forEach(availablePlatform => availablePlatform.platform_name = newName);
@@ -438,6 +465,20 @@ export class InMemoryDataService implements InMemoryDbService{
 
   private getAllMyGlobalPlatforms(): any[] {
     return _.flatten(_.map(this.gamePlatforms, gamePlatform => gamePlatform.my_platforms));
+  }
+
+  private getGame(availableGamePlatform: AvailableGamePlatformData): any {
+    return _.find(this.games, game => !!_.findWhere(game.availablePlatforms, {id: availableGamePlatform.id}));
+  }
+
+  private getPreferredPlatform(game: any): MyGamePlatformData {
+    return _.chain(game.availablePlatforms)
+      .flatten()
+      .map(a => a.myPlatforms)
+      .flatten()
+      .filter(m => !!m.preferred)
+      .first()
+      .value();
   }
 
   private getAllMyPlatforms(): any[] {
