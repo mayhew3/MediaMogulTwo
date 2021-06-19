@@ -49,6 +49,7 @@ export class GameDetailComponent implements OnInit {
 
   titleEditMode = false;
 
+  selectedPlatformID: number;
   selectedPlatform: MyGamePlatform;
 
   allPlatforms: GamePlatform[] = [];
@@ -82,21 +83,16 @@ export class GameDetailComponent implements OnInit {
     this.gameService.gameWithIDObservable(this.game_id).subscribe(game => {
       this.game = game;
 
-      this.selectedPlatform = this.game.myPreferredPlatform;
+      if (!this.selectedPlatformID) {
+        this.selectedPlatform = this.game.myPreferredPlatform;
+        this.selectedPlatformID = this.selectedPlatform.id;
+      } else {
+        this.selectedPlatform = this.game.getMyPlatformWithID(this.selectedPlatformID);
+      }
 
-      this.changedPersonFields.rating = this.selectedPlatform.data.rating;
-      this.changedPersonFields.final_score = this.selectedPlatform.data.final_score;
-      this.changedPersonFields.replay_score = this.selectedPlatform.data.replay_score;
-      this.changedPersonFields.finished_date = this.selectedPlatform.data.finished_date;
-
-      this.changedGameFields.metacritic_hint = this.game.data.metacritic_hint;
-      this.changedGameFields.natural_end = this.game.data.natural_end;
-      this.changedGameFields.howlong_id = this.game.data.howlong_id;
-      this.changedGameFields.giantbomb_id = this.game.data.giantbomb_id;
-      this.changedGameFields.title = this.game.data.title;
-
-      this.finished = !!this.selectedPlatform && !!this.selectedPlatform.data.finished_date;
+      this.initializePlatformUIFields(this.selectedPlatform);
       this.initializeDates(this.selectedPlatform);
+      this.initializeGameUIFields();
 
       if (!!game.data.sessions) {
         const sessions = game.data.sessions;
@@ -104,25 +100,52 @@ export class GameDetailComponent implements OnInit {
         this.sortSessions();
       }
 
-      this.socketService.on('update_my_game_platform', msg => {
-        if (msg.my_game_platform.id === this.selectedPlatform.id) {
-          this.updatingMyGame = false;
-          if (!this.isUpdating()) {
-            this.activeModal.close('Update Click');
-          }
-        }
-      });
-
-      this.socketService.on('update_game', msg => {
-        if (msg.game.id === this.game.id) {
-          this.updatingGame = false;
-          if (!this.isUpdating()) {
-            this.activeModal.close('Update Click');
-          }
-        }
-      });
+      this.initializeListeners();
 
     });
+  }
+
+  initializePlatformUIFields(myGamePlatform: MyGamePlatform): void {
+
+    this.changedPersonFields.rating = myGamePlatform.data.rating;
+    this.changedPersonFields.final_score = myGamePlatform.data.final_score;
+    this.changedPersonFields.replay_score = myGamePlatform.data.replay_score;
+    this.changedPersonFields.finished_date = myGamePlatform.data.finished_date;
+
+    this.finished = !!myGamePlatform && !!myGamePlatform.data.finished_date;
+
+  }
+
+  initializeGameUIFields(): void {
+
+    this.changedGameFields.metacritic_hint = this.game.data.metacritic_hint;
+    this.changedGameFields.natural_end = this.game.data.natural_end;
+    this.changedGameFields.howlong_id = this.game.data.howlong_id;
+    this.changedGameFields.giantbomb_id = this.game.data.giantbomb_id;
+    this.changedGameFields.title = this.game.data.title;
+
+  }
+
+  initializeListeners(): void {
+
+    this.socketService.on('update_my_game_platform', msg => {
+      if (msg.my_game_platform.id === this.selectedPlatform.id) {
+        this.updatingMyGame = false;
+        if (!this.isUpdating()) {
+          this.activeModal.close('Update Click');
+        }
+      }
+    });
+
+    this.socketService.on('update_game', msg => {
+      if (msg.game.id === this.game.id) {
+        this.updatingGame = false;
+        if (!this.isUpdating()) {
+          this.activeModal.close('Update Click');
+        }
+      }
+    });
+
   }
 
   isUpdating(): boolean {
@@ -167,6 +190,8 @@ export class GameDetailComponent implements OnInit {
   }
 
   selectedPlatformChanged(event): void {
+    this.selectedPlatformID = event.nextId.id;
+    this.initializePlatformUIFields(event.nextId);
     this.initializeDates(event.nextId);
   }
 

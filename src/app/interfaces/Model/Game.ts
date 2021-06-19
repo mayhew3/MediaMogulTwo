@@ -179,6 +179,14 @@ export class Game {
       return undefined;
     }
   }
+
+  getMyPlatformWithID(myGamePlatformID: number): MyGamePlatform {
+    return _.chain(this.availablePlatforms)
+      .filter(a => !!a.myGamePlatform)
+      .map(a => a.myGamePlatform)
+      .find(mgp => mgp.id === myGamePlatformID)
+      .value();
+  }
 /*
 
   get myPreferredPlatformNullAllowed(): MyGamePlatform {

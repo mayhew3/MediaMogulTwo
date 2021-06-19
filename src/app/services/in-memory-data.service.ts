@@ -260,7 +260,7 @@ export class InMemoryDataService implements InMemoryDbService{
   }
 
   private addMyPlatform(requestInfo: RequestInfo): Observable<Response> {
-    const myGamePlatform = this.getBody(requestInfo);
+    const myGamePlatform = {...(this.getBody(requestInfo))};
     myGamePlatform.id = this.nextMyPlatformID();
     myGamePlatform.date_added = new Date();
     const availableGamePlatform = this.findAvailableGamePlatform(myGamePlatform.available_game_platform_id);

@@ -92,7 +92,7 @@ export class GameState {
   addGameToCollection({setState}: StateContext<GameStateModel>, action: AddGameToMyCollection): void {
     setState(
       produce(draft => {
-        const myGamePlatform = action.myGamePlatform;
+        const myGamePlatform = {...action.myGamePlatform};
         const availablePlatforms = _.flatten(_.map(draft.games, game => game.availablePlatforms));
         const availableWhichWillBeMine: AvailableGamePlatformData = _.findWhere(availablePlatforms, {id: myGamePlatform.available_game_platform_id});
         availableWhichWillBeMine.myGamePlatform = myGamePlatform;
