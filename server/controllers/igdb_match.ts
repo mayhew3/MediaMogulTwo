@@ -47,4 +47,7 @@ interface IGDBMatch {
     }
   }[];
   tags: number[];
+  websites: {
+    url: string;
+  }[];
 }

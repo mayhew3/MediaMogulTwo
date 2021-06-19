@@ -38,7 +38,7 @@ export const getIGDBMatches = async (request: Record<string, any>, response: Rec
   fields name, platforms.name, cover.image_id, cover.width, cover.height, keywords.name, aggregated_rating,
     aggregated_rating_count, version_parent, first_release_date, genres.name, involved_companies.company.name,
     player_perspectives.name, rating, rating_count, release_dates.date, release_dates.platform.name,
-    slug, summary, tags, updated_at, url;
+    slug, summary, tags, updated_at, url, websites.url;
   where release_dates.region = (2,8);
   limit 30;`;
 
@@ -182,8 +182,12 @@ const addGame = async (igdbMatch: IGDBMatch): Promise<{addedGame, posterObj}> =>
     .min()
     .value();
 
+  const steamUrl = _.find(igdbMatch.websites, website => website.url.startsWith('https://store.steampowered.com'));
+  const steamID = !steamUrl ? null : +_.last(steamUrl.url.split('/'));
+
   const gameObj = {
     title: igdbMatch.name,
+    steamid: steamID,
     igdb_id: igdbMatch.id,
     igdb_rating: igdbMatch.rating,
     igdb_rating_count: igdbMatch.rating_count,
