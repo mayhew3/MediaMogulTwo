@@ -1,6 +1,6 @@
 {
   "name": "media-mogul-two",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "ng": "ng",
     "start": "node ./dist/out-tsc/server/www",
