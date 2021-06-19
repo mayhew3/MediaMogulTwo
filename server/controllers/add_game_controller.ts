@@ -12,6 +12,7 @@ import {MyGamePlatformData} from '../../src/app/interfaces/ModelData/MyGamePlatf
 const tokens = require('./igdb_token_service');
 
 export const cache: IGDBMatch[] = [];
+const MAX_CACHE = 100;
 
 export const getIGDBMatches = async (request: Record<string, any>, response: Record<string, any>): Promise<any> => {
   const game_title = request.query.game_title;
@@ -53,8 +54,16 @@ export const getIGDBMatches = async (request: Record<string, any>, response: Rec
   };
 
   axios.post(igdbUrl, params, options).then(matches => {
+    const initialCacheSize = cache.length;
     const igdbMatches: IGDBMatch[] = matches.data;
     addAllToCache(igdbMatches);
+    const addedToCache = cache.length - initialCacheSize;
+    console.debug(`Added ${addedToCache} matches to cache, for a total of ${cache.length}`);
+    const oversize = cache.length - MAX_CACHE;
+    if (oversize > 0) {
+      cache.splice(0, oversize);
+      console.debug(`Removed ${oversize} elements from cache, for new total of ${cache.length}`);
+    }
     response.json(igdbMatches);
   }).catch(err => {
     console.log(err.response.data[0].cause);
