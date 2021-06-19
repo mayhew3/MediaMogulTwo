@@ -1,6 +1,8 @@
 import * as model from './model';
 const _ = require('underscore');
 const Sequelize = require('./sequelize');
+import {socketServer} from '../www';
+import {MyGlobalPlatformsRanksChangedMessage} from '../../src/shared/MyGlobalPlatformsRanksChangedMessage';
 
 export const getPlatforms = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   const person_id = request.query.person_id;
@@ -23,7 +25,7 @@ export const getPlatforms = async (request: Record<string, any>, response: Recor
     const returnObj = platform.dataValues;
 
     if (!!myGlobalPlatform) {
-      returnObj.myPlatform = myGlobalPlatform;
+      returnObj.myGlobalPlatform = myGlobalPlatform;
     }
 
     outputObj.push(returnObj);
@@ -67,6 +69,15 @@ export const updateGamePlatform = async (request: Record<string, any>, response:
       });
     }
 
+    const msg = {
+      global_platform_id: gamePlatformID,
+      full_name: changedFields.full_name,
+      short_name: changedFields.short_name,
+      metacritic_uri: changedFields.metacritic_uri
+    };
+
+    socketServer.emitToAll('update_global_platform', msg);
+
     response.json({});
   } catch (err) {
     console.error(err);
@@ -76,6 +87,11 @@ export const updateGamePlatform = async (request: Record<string, any>, response:
 
 export const updateMultipleGlobals = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   try {
+    const person_id = request.body.person_id;
+    const msg: MyGlobalPlatformsRanksChangedMessage = {
+      changes: []
+    };
+
     const result = await Sequelize.sequelize.transaction(async (t) => {
 
       const results = [];
@@ -84,11 +100,18 @@ export const updateMultipleGlobals = async (request: Record<string, any>, respon
         const myGlobalPlatform = await model.MyGlobalPlatform.findByPk(payload.id, {transaction: t});
         await myGlobalPlatform.update(payload.changedFields, {transaction: t});
         results.push(myGlobalPlatform);
+
+        msg.changes.push({
+          my_global_platform_id: myGlobalPlatform.id,
+          rank: myGlobalPlatform.rank
+        });
       }
 
       return results;
 
     });
+
+    socketServer.emitToPerson(person_id, 'my_global_ranks_changed', msg);
 
     response.json(result);
   } catch (err) {
@@ -101,6 +124,10 @@ export const addMyGlobalPlatform = async (request: Record<string, any>, response
   const myGlobalObj = request.body;
 
   const myGlobal = await model.MyGlobalPlatform.create(myGlobalObj);
+
+  const person_id = myGlobalObj.person_id;
+  socketServer.emitToPerson(person_id, 'my_platform_added', {myGlobalPlatform: myGlobal});
+
   response.json(myGlobal);
 };
 
@@ -109,6 +136,11 @@ export const deleteMyGlobalPlatform = async (request: Record<string, any>, respo
 
   const myGlobalPlatform = await model.MyGlobalPlatform.findByPk(myGlobalPlatformID);
   await myGlobalPlatform.destroy();
+
+  const person_id = myGlobalPlatform.person_id;
+  const game_platform_id = myGlobalPlatform.game_platform_id;
+
+  socketServer.emitToPerson(person_id, 'my_platform_removed', {game_platform_id});
 
   response.json({msg: 'Success'});
 };

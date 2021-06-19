@@ -1,0 +1,77 @@
+<div class="gameCardInside">
+  <div class="form-row">
+    <div class="col-6 gameImageContainer fakeLink">
+
+      <img class="rounded gameImage"
+           *ngIf="!!game.getImageUrl()"
+           src="{{game.getImageUrl()}}"
+           [game]="game"
+           (click)="openDetailPopup()"
+           default="../../../assets/GenericSeries.gif"
+           alt="{{game.title}}"/>
+
+    </div>
+
+    <div class="col-6"
+         style="padding-right: 15px">
+      <div class="row">
+
+        <div class="col-12 m-1">
+          {{game.title}}
+        </div>
+
+        <div class="col-12 m-1" *ngIf="myPreferredPlatform | async">
+          {{(myPreferredPlatform | async).platform_name}}
+        </div>
+
+        <div class="col-12 m-1" *ngIf="isOwned() && !!game.getLastPlayed()">
+          <span>
+            {{game.getLastPlayed() | date: 'yyyy-MM-dd':'America/Los_Angeles'}}
+          </span>
+        </div>
+
+        <div class="col-12 m-1" *ngIf="isOwned() && !successfullyAdded">
+          <mm-rating-box [value]="game.bestMyRatingOrMetacritic"
+                         [maxValue]="100"
+                         [faded]="!game.bestMyRating">
+          </mm-rating-box>
+        </div>
+
+        <div class="col-12 m-1"
+             *ngIf="showPlaytimeButton()">
+          <button class="btn btn-primary"
+                  (click)="openPlaytimePopup()">Playtime</button>
+        </div>
+
+        <div class="col-12 m-1"
+             *ngIf="showAddGameButton()">
+          Platform: {{getSingleAvailablePlatform().platform_name}}
+        </div>
+
+        <div class="col-12 m-1"
+             *ngIf="showChoosePlatformsButton()">
+          {{addablePlatforms.length}} Platforms
+        </div>
+
+        <div class="col-12 m-1"
+             *ngIf="isNotRecentlyUnowned()">
+          <button class="btn btn-success"
+                  [disabled]="successfullyAdded"
+                  (click)="openAddPlatformsPopup()">Add Game</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 m-1 align-bottom"
+             *ngIf="showProgressBar()">
+          <p><ngb-progressbar type="primary"
+                              [value]="game.getProgressPercent()">
+            <span class="progress-text">{{game.getProgressPercent()}}%</span>
+          </ngb-progressbar></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

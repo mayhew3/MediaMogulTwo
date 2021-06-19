@@ -1,40 +1,36 @@
 /* eslint-disable @typescript-eslint/naming-convention, no-underscore-dangle, id-blacklist, id-match */
-import {DataObject} from '../DataObject/DataObject';
-import {MyGlobalPlatform} from './MyGlobalPlatform';
+import {MyGlobalPlatform, MyGlobalPlatformData} from './MyGlobalPlatform';
 
-export class GamePlatform extends DataObject {
-  full_name = this.registerStringField('full_name', false);
-  short_name = this.registerStringField('short_name', false);
-  igdb_platform_id = this.registerIntegerField('igdb_platform_id', false);
-  igdb_name = this.registerStringField('igdb_name', false);
-  metacritic_uri = this.registerStringField('metacritic_uri', false);
+export class GamePlatform {
+  myGlobalPlatform?: MyGlobalPlatform;
 
-  myGlobalPlatform: MyGlobalPlatform;
-
-  parent: GamePlatform;
-
-  initializedFromJSON(jsonObj: any): this {
-    super.initializedFromJSON(jsonObj);
-    if (!!jsonObj.myPlatform) {
-      this.myGlobalPlatform = new MyGlobalPlatform(this).initializedFromJSON(jsonObj.myPlatform);
+  constructor(public data: GamePlatformData) {
+    if (!!data.myGlobalPlatform) {
+      this.myGlobalPlatform = new MyGlobalPlatform(data.myGlobalPlatform, this);
     }
-    return this;
   }
 
-  isAvailableForMe(): boolean {
-    return !!this.myGlobalPlatform;
+  get id(): number {
+    return this.data.id;
   }
 
-  getApiMethod(): string {
-    return 'gamePlatforms';
+  get platform_name(): string {
+    return this.data.full_name;
   }
 
-  canAddPlaytime(): boolean {
-    return this.full_name.value !== 'Steam';
+  get igdb_platform_id(): number {
+    return this.data.igdb_platform_id;
   }
+}
 
-  isTemporary(): boolean {
-    return !this.id.value;
-  }
+export interface GamePlatformData {
+  id: number;
+  full_name: string;
+  short_name: string;
+  igdb_platform_id: number;
+  igdb_name: string;
+  metacritic_uri?: string;
+
+  myGlobalPlatform?: MyGlobalPlatformData;
 
 }

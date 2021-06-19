@@ -1,0 +1,19 @@
+@import '../../../../solar_variables';
+
+.selectedPlatform {
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+.selectedPill {
+  background-color: $gray-800;
+  border-radius: 3px;
+  color: $gray-400;
+}
+
+.progress-text {
+  color: white;
+  position: absolute;
+  display: block;
+  left: 46%; /* just in case calc is unavailable in a browser */
+}

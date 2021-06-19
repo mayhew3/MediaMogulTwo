@@ -44,4 +44,16 @@ export class ArrayUtil {
     const total = _.reduce(numbers, (m, n) => m + n);
     return total / numbers.length;
   }
+
+  static updateChangedFieldsOnObject(obj: any, changedFields: any): void {
+    for (const key in changedFields) {
+      if (Object.prototype.hasOwnProperty.call(changedFields, key)) {
+        const prop = changedFields[key];
+        if (!_.isArray(prop)) {
+          obj[key] = prop;
+        }
+      }
+    }
+  }
+
 }

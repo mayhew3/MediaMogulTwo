@@ -10,6 +10,17 @@ import {MockIGDBMatches} from '../mocks/igdb.matches.mock';
 import {MockGamePlatforms} from '../mocks/gamePlatforms.mock';
 import {ArrayUtil} from '../utility/ArrayUtil';
 import {MockGameplaySessions} from '../mocks/gameplaySessions.mock';
+import {InMemoryCallbacksService} from './in-memory-callbacks.service';
+import {MyGlobalPlatformAddedMessage} from '../../shared/MyGlobalPlatformAddedMessage';
+import {MyGlobalPlatformRemovedMessage} from '../../shared/MyGlobalPlatformRemovedMessage';
+import {MyGlobalPlatformsRanksChangedMessage} from '../../shared/MyGlobalPlatformsRanksChangedMessage';
+import {UpdateMyGamePlatformMessage} from '../../shared/UpdateMyGamePlatformMessage';
+import {LoggerService} from './logger.service';
+import {UpdateGameMessage} from '../../shared/UpdateGameMessage';
+import {AddGameplaySessionMessage} from '../../shared/AddGameplaySessionMessage';
+import {MyGamePlatformData} from '../interfaces/ModelData/MyGamePlatformData';
+import {ChangePreferredPlatformMessage} from '../../shared/ChangePreferredPlatformMessage';
+import {AvailableGamePlatformData} from '../interfaces/Model/AvailableGamePlatform';
 
 @Injectable({
   providedIn: 'root'
@@ -21,7 +32,8 @@ export class InMemoryDataService implements InMemoryDbService{
   gamePlatforms = MockGamePlatforms;
   gameplaySessions = MockGameplaySessions;
 
-  constructor() { }
+  constructor(private callbackService: InMemoryCallbacksService,
+              private logger: LoggerService) { }
 
   // STATIC HELPERS
 
@@ -49,7 +61,26 @@ export class InMemoryDataService implements InMemoryDbService{
 
   // noinspection JSUnusedGlobalSymbols
   genId(sessions: GameplaySession[]): number {
-    return sessions.length > 0 ? _.max(sessions.map(session => session.id)) + 1 : 1;
+    return sessions.length > 0 ? _.max(sessions.map(session => session.id)) as number + 1 : 1;
+  }
+
+  /* SOCKET METHODS */
+
+  on(channel, callback): void {
+    this.callbackService.on(channel, callback);
+  }
+
+  off(channel, callback): void {
+    this.callbackService.off(channel, callback);
+  }
+
+  getCallbacks(channel): any[] {
+    return this.callbackService.getCallbacks(channel);
+  }
+
+  broadcastToChannel(channel, msg): void {
+    const callbacks = this.getCallbacks(channel);
+    _.forEach(callbacks, callback => callback(msg));
   }
 
 
@@ -79,6 +110,10 @@ export class InMemoryDataService implements InMemoryDbService{
       this.addAvailablePlatform(requestInfo);
     } else if (collectionName === 'myGlobalPlatforms') {
       this.addMyGlobalPlatform(requestInfo);
+    } else if (collectionName === 'gameplaySessions') {
+      this.addGameplaySession(requestInfo);
+    } else if (collectionName === 'changePreferredPlatform') {
+      this.changePreferredPlatform(requestInfo);
     }
     return null;
   }
@@ -125,11 +160,11 @@ export class InMemoryDataService implements InMemoryDbService{
       const gameCopy = lodash.cloneDeep(game);
       _.forEach(gameCopy.availablePlatforms, availablePlatform => {
         const myPlatforms = availablePlatform.myPlatforms;
-        availablePlatform.myPlatform = _.findWhere(myPlatforms, {person_id});
+        availablePlatform.myGamePlatform = _.findWhere(myPlatforms, {person_id});
         delete availablePlatform.myPlatforms;
       });
       data.push(gameCopy);
-    });
+  });
 
     return this.packageGetData(data, requestInfo);
   }
@@ -143,7 +178,7 @@ export class InMemoryDataService implements InMemoryDbService{
       const gamePlatformCopy = lodash.cloneDeep(gamePlatform);
       const myPlatforms = gamePlatformCopy.my_platforms;
       if (!!myPlatforms) {
-        gamePlatformCopy.myPlatform = _.findWhere(myPlatforms, {person_id});
+        gamePlatformCopy.myGlobalPlatform = _.findWhere(myPlatforms, {person_id});
         delete gamePlatformCopy.my_platforms;
       }
 
@@ -161,8 +196,15 @@ export class InMemoryDataService implements InMemoryDbService{
     const jsonBody = this.getBody(requestInfo);
     const game = this.findGame(jsonBody.id);
     if (!!game) {
-      this.updateChangedFieldsOnObject(game, jsonBody.changedFields);
-      return this.packageUpResponse(game, requestInfo);
+      ArrayUtil.updateChangedFieldsOnObject(game, jsonBody.changedFields);
+
+      const msg: UpdateGameMessage = {
+        game
+      }
+
+      this.broadcastToChannel('update_game', msg);
+
+      return this.packageUpResponse({msg: 'Success!'}, requestInfo);
     }
   }
 
@@ -172,6 +214,21 @@ export class InMemoryDataService implements InMemoryDbService{
     game.date_added = new Date();
     this.updatePlatforms(game.availablePlatforms, this.getAllAvailablePlatforms());
     return this.packageUpResponse(game, requestInfo);
+  }
+
+  private addGameplaySession(requestInfo: RequestInfo): Observable<Response> {
+    const gameplaySession = this.getBody(requestInfo);
+    gameplaySession.id = this.nextID(this.gameplaySessions);
+    gameplaySession.date_added = new Date();
+    this.gameplaySessions.push(gameplaySession);
+
+    const msg: AddGameplaySessionMessage = {
+      gameplaySession
+    }
+
+    this.broadcastToChannel('add_gameplay_session', msg);
+
+    return this.packageUpResponse({msg: 'Success!'}, requestInfo);
   }
 
   private addAvailablePlatform(requestInfo: RequestInfo): Observable<Response> {
@@ -192,11 +249,18 @@ export class InMemoryDataService implements InMemoryDbService{
       gamePlatform.my_platforms = [];
     }
     gamePlatform.my_platforms.push(myGlobalPlatform);
+
+    const msg: MyGlobalPlatformAddedMessage = {
+      myGlobalPlatform
+    }
+
+    this.broadcastToChannel('my_platform_added', msg);
+
     return this.packageUpResponse(myGlobalPlatform, requestInfo);
   }
 
   private addMyPlatform(requestInfo: RequestInfo): Observable<Response> {
-    const myGamePlatform = this.getBody(requestInfo);
+    const myGamePlatform = {...(this.getBody(requestInfo))};
     myGamePlatform.id = this.nextMyPlatformID();
     myGamePlatform.date_added = new Date();
     const availableGamePlatform = this.findAvailableGamePlatform(myGamePlatform.available_game_platform_id);
@@ -204,6 +268,13 @@ export class InMemoryDataService implements InMemoryDbService{
       availableGamePlatform.myPlatforms = [];
     }
     availableGamePlatform.myPlatforms.push(myGamePlatform);
+
+    const msg = {
+      myPlatform: myGamePlatform
+    };
+
+    this.broadcastToChannel('my_game_added', msg);
+
     return this.packageUpResponse(myGamePlatform, requestInfo);
   }
 
@@ -244,12 +315,20 @@ export class InMemoryDataService implements InMemoryDbService{
     if (!!gamePlatform) {
       const changedFields = jsonBody.changedFields;
       const old_name = gamePlatform.full_name;
-      this.updateChangedFieldsOnObject(gamePlatform, changedFields);
+      ArrayUtil.updateChangedFieldsOnObject(gamePlatform, changedFields);
       const full_name = changedFields.full_name;
       if (!!full_name && full_name !== old_name) {
         this.updateAllAvailablePlatformsWithName(old_name, full_name);
         this.updateAllMyPlatformsWithName(old_name, full_name);
       }
+
+      this.broadcastToChannel('update_global_platform', {
+        global_platform_id: jsonBody.id,
+        full_name: changedFields.full_name,
+        short_name: changedFields.short_name,
+        metacritic_uri: changedFields.metacritic_uri
+      });
+
       return this.packageUpResponse(gamePlatform, requestInfo);
     }
   }
@@ -258,20 +337,31 @@ export class InMemoryDataService implements InMemoryDbService{
     const jsonBody = this.getBody(requestInfo);
     const myGlobalPlatform = this.findMyGlobalPlatform(jsonBody.id);
     if (!!myGlobalPlatform) {
-      this.updateChangedFieldsOnObject(myGlobalPlatform, jsonBody.changedFields);
+      ArrayUtil.updateChangedFieldsOnObject(myGlobalPlatform, jsonBody.changedFields);
       return this.packageUpResponse(myGlobalPlatform, requestInfo);
     }
   }
 
   private updateMultipleGlobals(requestInfo: RequestInfo): Observable<Response> {
     const jsonBody = this.getBody(requestInfo);
+    const msg: MyGlobalPlatformsRanksChangedMessage = {
+      changes: []
+    };
     for (const payload of jsonBody.payloads) {
       const myGlobalPlatform = this.findMyGlobalPlatform(payload.id);
       if (!!myGlobalPlatform) {
-        this.updateChangedFieldsOnObject(myGlobalPlatform, payload.changedFields);
-        return this.packageUpResponse(myGlobalPlatform, requestInfo);
+        ArrayUtil.updateChangedFieldsOnObject(myGlobalPlatform, payload.changedFields);
+
+        msg.changes.push({
+          my_global_platform_id: myGlobalPlatform.id,
+          rank: myGlobalPlatform.rank
+        });
       }
     }
+
+    this.broadcastToChannel('my_global_ranks_changed', msg);
+
+    return this.packageUpResponse({msg: 'Success!'}, requestInfo);
   }
 
   private deleteMyGlobalPlatform(requestInfo: RequestInfo): Observable<Response> {
@@ -280,16 +370,74 @@ export class InMemoryDataService implements InMemoryDbService{
     if (!!myGlobalPlatform) {
       const gamePlatform = this.findGamePlatform(myGlobalPlatform.game_platform_id);
       ArrayUtil.removeFromArray(gamePlatform.my_platforms, myGlobalPlatform);
+
+      const msg: MyGlobalPlatformRemovedMessage = {
+        game_platform_id: myGlobalPlatform.game_platform_id
+      }
+
+      this.broadcastToChannel('my_platform_removed', msg);
+
       return this.packageUpResponse({}, requestInfo);
     }
+  }
+
+  // noinspection JSUnusedLocalSymbols
+  private logReadOnly(): void {
+    let readOnly = 0;
+    let writeable = 0;
+    _.chain(this.games)
+      .map(g => g.availablePlatforms)
+      .flatten()
+      .filter(a => !!a.myPlatforms)
+      .map(a => a.myPlatforms)
+      .flatten()
+      .filter(n => !!n.rating)
+      .each(n => {
+        if (Object.getOwnPropertyDescriptor(n, 'rating').writable) {
+          writeable++;
+        } else {
+          readOnly++;
+        }
+      });
+    this.logger.log(`Read-only: ${readOnly}, Writeable: ${writeable}`);
   }
 
   private updateMyGamePlatform(requestInfo: RequestInfo): Observable<Response> {
     const jsonBody = this.getBody(requestInfo);
     const myGamePlatform = this.findMyGamePlatform(jsonBody.id);
     if (!!myGamePlatform) {
-      this.updateChangedFieldsOnObject(myGamePlatform, jsonBody.changedFields);
-      return this.packageUpResponse(myGamePlatform, requestInfo);
+
+      ArrayUtil.updateChangedFieldsOnObject(myGamePlatform, jsonBody.changedFields);
+
+      const msg: UpdateMyGamePlatformMessage = {
+        my_game_platform: myGamePlatform
+      }
+
+      this.broadcastToChannel('update_my_game_platform', msg);
+
+      return this.packageUpResponse({msg: 'Success!'}, requestInfo);
+    }
+  }
+
+  private changePreferredPlatform(requestInfo: RequestInfo): Observable<Response> {
+    const jsonBody = this.getBody(requestInfo);
+    const myGamePlatform = this.findMyGamePlatform(jsonBody.id);
+    if (!!myGamePlatform) {
+      const availablePlatform: AvailableGamePlatformData = this.findAvailableGamePlatform(myGamePlatform.available_game_platform_id);
+      const game = this.getGame(availablePlatform);
+      const currentPreferred = this.getPreferredPlatform(game);
+      if (!!currentPreferred) {
+        currentPreferred.preferred = false;
+      }
+      myGamePlatform.preferred = true;
+
+      const msg: ChangePreferredPlatformMessage = {
+        my_game_platform_id: jsonBody.id
+      };
+
+      this.broadcastToChannel('change_preferred_platform', msg);
+
+      return this.packageUpResponse({msg: 'Success!'}, requestInfo);
     }
   }
 
@@ -317,6 +465,20 @@ export class InMemoryDataService implements InMemoryDbService{
 
   private getAllMyGlobalPlatforms(): any[] {
     return _.flatten(_.map(this.gamePlatforms, gamePlatform => gamePlatform.my_platforms));
+  }
+
+  private getGame(availableGamePlatform: AvailableGamePlatformData): any {
+    return _.find(this.games, game => !!_.findWhere(game.availablePlatforms, {id: availableGamePlatform.id}));
+  }
+
+  private getPreferredPlatform(game: any): MyGamePlatformData {
+    return _.chain(game.availablePlatforms)
+      .flatten()
+      .map(a => a.myPlatforms)
+      .flatten()
+      .filter(m => !!m.preferred)
+      .first()
+      .value();
   }
 
   private getAllMyPlatforms(): any[] {
@@ -376,16 +538,6 @@ export class InMemoryDataService implements InMemoryDbService{
 
 
   // DOMAIN-INDEPENDENT HELPERS
-
-
-  // noinspection JSMethodCanBeStatic
-  private updateChangedFieldsOnObject(obj: any, changedFields: any): void {
-    for (const key in changedFields) {
-      if (Object.prototype.hasOwnProperty.call(changedFields, key)) {
-        obj[key] = changedFields[key];
-      }
-    }
-  }
 
   // noinspection JSMethodCanBeStatic
   private getBody(requestInfo): any {

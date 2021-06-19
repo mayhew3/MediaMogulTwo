@@ -8,6 +8,11 @@ export abstract class GameFilterWithOptions extends GameFilter {
 
   abstract getLabel(): string;
 
+
+  hasOptions(): boolean {
+    return true;
+  }
+
   getRegularOptions(): GameFilterOption[] {
     return _.where(this.options, {special: false});
   }

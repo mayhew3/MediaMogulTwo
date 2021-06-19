@@ -1,43 +1,32 @@
 /* eslint-disable @typescript-eslint/naming-convention, no-underscore-dangle, id-blacklist, id-match */
-import {DataObject} from '../DataObject/DataObject';
 import {AvailableGamePlatform} from './AvailableGamePlatform';
-import {Person} from './Person';
 import {GamePlatform} from './GamePlatform';
 import {Game} from './Game';
+import {MyGamePlatformData} from '../ModelData/MyGamePlatformData';
 
-export class MyGamePlatform extends DataObject {
+export class MyGamePlatform {
 
-  person: Person;
-
-  available_game_platform_id = this.registerIntegerField('available_game_platform_id', true);
-  game_platform_id = this.registerIntegerField('game_platform_id', true);
-  platform_name = this.registerStringField('platform_name', true);
-  rating = this.registerDecimalField('rating', true);
-  tier = this.registerIntegerField('tier', false);
-  final_score = this.registerDecimalField('final_score', false);
-  minutes_played = this.registerIntegerField('minutes_played', true);
-  replay_score = this.registerDecimalField('replay_score', false);
-  last_played = this.registerDateField('last_played', false);
-  finished_date = this.registerDateField('finished_date', false);
-  collection_add = this.registerDateField('collection_add', false);
-  preferred = this.registerBooleanField('preferred', true);
-  replay_reason = this.registerStringField('replay_reason', false);
-  person_id = this.registerIntegerField('person_id', true);
-
-  constructor(public availableGamePlatform: AvailableGamePlatform) {
-    super();
-    this.platform_name.value = availableGamePlatform.platform_name.value;
-    this.available_game_platform_id.value = availableGamePlatform.id.value;
+  constructor(public data: MyGamePlatformData,
+              public availableGamePlatform: AvailableGamePlatform) {
   }
 
   get platform(): GamePlatform {
-    return this.availableGamePlatform.platform;
+    return this.availableGamePlatform.gamePlatform;
+  }
+
+  get platform_name(): string {
+    return this.data.platform_name;
   }
 
   get game(): Game {
     return this.availableGamePlatform.game;
   }
 
+  get id(): number {
+    return this.data.id;
+  }
+
+/*
   initializedFromJSON(jsonObj: any): this {
     super.initializedFromJSON(jsonObj);
     if (!this.platform_name.value) {
@@ -45,13 +34,10 @@ export class MyGamePlatform extends DataObject {
     }
     return this;
   }
-
-  canAddPlaytime(): boolean {
-    return this.availableGamePlatform.canAddToGame();
-  }
+*/
 
   getProgressPercent(): number {
-    const minutesPlayed = this.minutes_played.originalValue;
+    const minutesPlayed = this.data.minutes_played;
     const minutesToFinish = this.game.minutesToFinish;
 
     if (!minutesToFinish) {
@@ -67,11 +53,11 @@ export class MyGamePlatform extends DataObject {
   }
 
   isManuallyPreferred(): boolean {
-    return this.preferred.originalValue === true;
+    return this.data.preferred === true;
   }
 
   isTemporary(): boolean {
-    return !this.id.value || this.platform.isTemporary();
+    return !this.data.id || !this.platform.id;
   }
 
   getApiMethod(): string {

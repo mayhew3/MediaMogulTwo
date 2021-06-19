@@ -52,7 +52,7 @@ module.exports = (app: Express): void => {
 
   privateGet('/games', games.getGames);
   privatePut('/games', games.updateGame);
-  privatePost('/games', games.addGame);
+  privatePost('/games', addGame.addGameToCollection);
 
   privateGet('/gameplaySessions', games.getGameplaySessions);
   privatePost('/gameplaySessions', games.addGameplaySession);
@@ -68,10 +68,10 @@ module.exports = (app: Express): void => {
 
   privatePut('/multipleGlobals', platforms.updateMultipleGlobals);
 
-  privatePost('/availablePlatforms', games.addAvailableGamePlatform);
-
   privatePost('/myPlatforms', games.addMyGamePlatform);
   privatePut('/myPlatforms', games.updateMyGamePlatform);
+
+  privatePost('/changePreferredPlatform', games.changePreferredPlatform);
 
   privateGet('/igdbMatches', addGame.getIGDBMatches);
 

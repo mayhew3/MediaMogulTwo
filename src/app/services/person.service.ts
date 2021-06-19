@@ -1,19 +1,18 @@
-import {Injectable, OnDestroy} from '@angular/core';
+import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Observable, of, Subject} from 'rxjs';
-import {catchError, filter, mergeMap, takeUntil, tap} from 'rxjs/operators';
-import * as _ from 'underscore';
+import {Observable} from 'rxjs';
+import {filter, map, mergeMap, tap} from 'rxjs/operators';
+import _ from 'underscore';
 import {Person} from '../interfaces/Model/Person';
-import {ArrayUtil} from '../utility/ArrayUtil';
 import {MyAuthService} from './my-auth.service';
 import {ApiService} from './api.service';
+import {Store} from '@ngxs/store';
+import {GetPersons} from '../actions/persons.action';
 
 @Injectable({
   providedIn: 'root'
 })
-export class PersonService implements OnDestroy {
-  personsUrl = '/api/persons';
-  cache: Person[];
+export class PersonService {
 
   isAdmin: boolean = null;
   failedEmail = false;
@@ -24,80 +23,27 @@ export class PersonService implements OnDestroy {
     filter(person => !!person)
   );
 
-  private _destroy$ = new Subject();
+  persons: Observable<Person[]> = this.store.select(state => state.persons).pipe(
+    filter(state => !!state),
+    map(state => state.persons),
+    filter(persons => !!persons)
+  );
 
   constructor(private http: HttpClient,
               private auth: MyAuthService,
-              private apiService: ApiService) {
-    this.cache = [];
+              private apiService: ApiService,
+              private store: Store) {
+    this.store.dispatch(new GetPersons());
     this.me$.subscribe(me => {
-      this.isAdmin = (me.user_role.value === 'admin');
+      this.isAdmin = (me.user_role === 'admin');
       this.apiService.meChanged(me);
     });
   }
 
-  ngOnDestroy(): void {
-    this._destroy$.next();
-    this._destroy$.complete();
-  }
-
   getPersonWithEmail(email: string): Observable<Person> {
-    return this.getDataWithCacheUpdate<Person>(() => this.getPersonWithEmailFromCache(email));
-  }
-
-  private getPersonWithEmailFromCache(email: string): Person {
-    return _.find(this.cache, person => person.email.value === email);
-  }
-
-
-  // DATA HELPERS
-
-  private getDataWithCacheUpdate<T>(getCallback): Observable<T> {
-    return new Observable(observer => {
-      this.maybeUpdateCache().subscribe(
-        () => observer.next(getCallback()),
-        (err: Error) => observer.error(err)
-      );
-    });
-  }
-
-  private maybeUpdateCache(): Observable<Person[]> {
-    if (this.cache.length === 0) {
-      return new Observable<Person[]>((observer) => {
-        this.http.get<any[]>(this.personsUrl)
-          .pipe(
-            takeUntil(this._destroy$),
-            catchError(this.handleError<any[]>('getPersons', [])),
-          )
-          .subscribe(
-            (personObjs: any[]) => {
-              const persons = _.map(personObjs, personObj => new Person().initializedFromJSON(personObj));
-              ArrayUtil.addToArray(this.cache, persons);
-              observer.next(persons);
-            },
-            (err: Error) => observer.error(err)
-          );
-      });
-    } else {
-      return of(this.cache);
-    }
-  }
-
-  /**
-   * Handle Http operation that failed.
-   * Let the app continue.
-   *
-   * @param operation - name of the operation that failed
-   * @param result - optional value to return as the observable result
-   */
-  private handleError<T>(operation = 'operation', result?: T) {
-    return (error: any): Observable<T> => {
-
-      console.error(error); // log to console instead
-
-      // Let the app keep running by returning an empty result.
-      return of(result as T);
-    };
+    return this.persons.pipe(
+      map(persons => _.findWhere(persons, {email}))
+    );
   }
 
 }

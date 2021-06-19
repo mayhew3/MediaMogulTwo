@@ -1,0 +1,46 @@
+
+<div class="row">
+
+  <div class="col-1">
+    ID
+  </div>
+  <div class="col-3">
+    Full Name
+  </div>
+  <div class="col-3">
+    Short Name
+  </div>
+  <div class="col-1">
+    IGDB ID
+  </div>
+  <div class="col-3">
+    IGDB Name
+  </div>
+  <div class="col-1">
+    Metacritic
+  </div>
+</div>
+
+<div class="row"
+     *ngFor="let platform of platformService.platforms | async"
+     (click)="openDetailPopup(platform)">
+
+  <div class="col-1">
+    {{platform.id}}
+  </div>
+  <div class="col-3">
+    {{platform.platform_name}}
+  </div>
+  <div class="col-3">
+    {{platform.data.short_name}}
+  </div>
+  <div class="col-1">
+    {{platform.igdb_platform_id}}
+  </div>
+  <div class="col-3">
+    {{platform.data.igdb_name}}
+  </div>
+  <div class="col-1">
+    {{platform.data.metacritic_uri}}
+  </div>
+</div>

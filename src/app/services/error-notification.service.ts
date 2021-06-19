@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Observable, of, Subject, Subscription} from 'rxjs';
-import {ErrorNotificationComponent} from '../components/error-notification/error-notification.component';
+import {ErrorNotificationComponent} from '../components/shared/error-notification/error-notification.component';
 import {MatSnackBar, MatSnackBarRef} from '@angular/material/snack-bar';
 
 @Injectable({

@@ -1,58 +1,50 @@
 /* eslint-disable @typescript-eslint/naming-convention, no-underscore-dangle, id-blacklist, id-match */
-import {DataObject} from '../DataObject/DataObject';
 import {GamePlatform} from './GamePlatform';
 import {Game} from './Game';
 import {MyGamePlatform} from './MyGamePlatform';
+import {MyGamePlatformData} from '../ModelData/MyGamePlatformData';
+import _ from 'underscore';
 
-export class AvailableGamePlatform extends DataObject {
+export class AvailableGamePlatform {
+  myGamePlatform?: MyGamePlatform;
+  gamePlatform: GamePlatform;
 
-  myGamePlatform: MyGamePlatform;
-
-  game_platform_id = this.registerIntegerField('game_platform_id', true);
-  platform_name = this.registerStringField('platform_name', true);
-  metacritic = this.registerDecimalField('metacritic', false);
-  metacritic_page = this.registerBooleanField('metacritic_page', false);
-  metacritic_matched = this.registerDateField('metacritic_matched', false);
-  game_id = this.registerIntegerField('game_id', true);
-
-  constructor(private gamePlatform: GamePlatform,
-              public game: Game) {
-    super();
-    this.game_platform_id.value = gamePlatform.id.value;
-    this.game_id.value = game.id.value;
-    this.platform_name.value = gamePlatform.full_name.value;
-  }
-
-
-  initializedFromJSON(jsonObj: any): this {
-    super.initializedFromJSON(jsonObj);
-    if (!this.platform_name.value) {
-      this.platform_name.initializeValue(this.gamePlatform.full_name.value);
+  constructor(public data: AvailableGamePlatformData,
+              public game: Game,
+              private globalPlatforms: GamePlatform[]) {
+    this.gamePlatform = _.findWhere(globalPlatforms, {id: data.game_platform_id});
+    if (!!data.myGamePlatform) {
+      this.myGamePlatform = new MyGamePlatform(data.myGamePlatform, this);
     }
-    if (!!jsonObj.myPlatform) {
-      this.myGamePlatform = new MyGamePlatform(this).initializedFromJSON(jsonObj.myPlatform);
-    }
-    return this;
   }
 
-  get platform(): GamePlatform {
-    return this.gamePlatform;
+  get id(): number {
+    return this.data.id;
   }
 
-  isOwned(): boolean {
-    return !!this.myGamePlatform;
+  get platform_name(): string {
+    return this.gamePlatform.platform_name;
   }
 
-  canAddToGame(): boolean {
-    return this.gamePlatform.canAddPlaytime() && this.gamePlatform.isAvailableForMe();
+  get subscribed(): boolean {
+    return !!this.myGamePlatform && !!this.gamePlatform.myGlobalPlatform;
   }
 
-  isTemporary(): boolean {
-    return !this.id.value || this.platform.isTemporary();
+  get metacritic(): number {
+    return this.data.metacritic;
   }
+}
 
-  getApiMethod(): string {
-    return 'availablePlatforms';
-  }
+export interface AvailableGamePlatformData {
+
+  myGamePlatform: MyGamePlatformData;
+
+  id: number;
+  game_platform_id: number;
+  platform_name: string;
+  metacritic: number;
+  metacritic_page: string;
+  metacritic_matched: Date;
+  game_id: number;
 
 }

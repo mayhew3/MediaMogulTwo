@@ -1,4 +1,9 @@
 import * as model from './model';
+import {socketServer} from '../www';
+import {UpdateMyGamePlatformMessage} from '../../src/shared/UpdateMyGamePlatformMessage';
+import {UpdateGameMessage} from '../../src/shared/UpdateGameMessage';
+import {AddGameplaySessionMessage} from '../../src/shared/AddGameplaySessionMessage';
+import {ChangePreferredPlatformMessage} from '../../src/shared/ChangePreferredPlatformMessage';
 const _ = require('underscore');
 const moment = require('moment');
 
@@ -33,10 +38,10 @@ export const getGames = async (request: Record<string, any>, response: Record<st
     const availableForGame = _.where(availablePlatforms, {game_id: game.id});
     resultObj.availablePlatforms = _.map(availableForGame, availablePlatform => {
       const myPlatformObj = _.findWhere(myPlatforms, {available_game_platform_id: availablePlatform.id});
-      let myPlatform = null;
+      let myGamePlatform = null;
       if (!!myPlatformObj) {
-        myPlatform = myPlatformObj.dataValues;
-        myPlatform.game_platform_id = availablePlatform.game_platform_id;
+        myGamePlatform = myPlatformObj.dataValues;
+        myGamePlatform.game_platform_id = availablePlatform.game_platform_id;
       }
       return {
         id: availablePlatform.id,
@@ -45,7 +50,7 @@ export const getGames = async (request: Record<string, any>, response: Record<st
         metacritic: availablePlatform.metacritic,
         metacritic_page: availablePlatform.metacritic_page,
         metacritic_matched: availablePlatform.metacritic_matched,
-        myPlatform
+        myGamePlatform
       };
     });
 
@@ -101,6 +106,13 @@ export const updateGame = async (request: Record<string, any>, response: Record<
   try {
     const game = await model.Game.findByPk(gameID);
     await game.update(changedFields);
+
+    const msg: UpdateGameMessage = {
+      game
+    };
+
+    socketServer.emitToAll('update_game', msg);
+
     response.json({});
   } catch (err) {
     console.error(err);
@@ -115,12 +127,63 @@ export const updateMyGamePlatform = async (request: Record<string, any>, respons
   try {
     const myGamePlatform = await model.MyGamePlatform.findByPk(myPlatformID);
     await myGamePlatform.update(changedFields);
+
+    const msg: UpdateMyGamePlatformMessage = {
+      my_game_platform: myGamePlatform
+    };
+
+    socketServer.emitToPerson(myGamePlatform.person_id, 'update_my_game_platform', msg);
+
     response.json({});
   } catch (err) {
     console.error(err);
     response.send({msg: 'Error updating myGamePlatform: ' + JSON.stringify(changedFields)});
   }
 };
+
+export const changePreferredPlatform = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
+  const myPlatformID = request.body.id;
+
+  try {
+    const myGamePlatform = await model.MyGamePlatform.findByPk(myPlatformID);
+
+    const availablePlatform = await model.AvailableGamePlatform.findByPk(myGamePlatform.available_game_platform_id);
+    const availablePlatforms = await model.AvailableGamePlatform.findAll(
+      {
+        where: {
+          game_id: availablePlatform.game_id
+        }
+      }
+    );
+    const availableIDs = _.map(availablePlatforms, ap => ap.id);
+    const existingPreferred = await model.MyGamePlatform.findAll(
+      {
+        where: {
+          available_game_platform_id: availableIDs,
+          preferred: true
+        }
+      }
+    );
+
+    if (existingPreferred.length > 0) {
+      await existingPreferred[0].update({preferred: false});
+    }
+
+    await myGamePlatform.update({preferred: true});
+
+    const msg: ChangePreferredPlatformMessage = {
+      my_game_platform_id: myGamePlatform.id
+    };
+
+    socketServer.emitToPerson(myGamePlatform.person_id, 'change_preferred_platform', msg);
+
+    response.json({});
+  } catch (err) {
+    console.error(err);
+    response.send({msg: `Error changing preferred platform to: ${myPlatformID}`});
+  }
+};
+
 
 export const getGameplaySessions = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   const person_id = request.query.person_id;
@@ -137,22 +200,29 @@ export const getGameplaySessions = async (request: Record<string, any>, response
 };
 
 export const addGameplaySession = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
-  const gameplaySession = request.body;
+  const gameplaySessionObj = request.body;
 
-  await model.GameplaySession.create(gameplaySession);
+  const gameplaySession = await model.GameplaySession.create(gameplaySessionObj);
+
+  const msg: AddGameplaySessionMessage = {
+    gameplaySession
+  }
+
+  socketServer.emitToPerson(gameplaySession.person_id, 'add_gameplay_session', msg);
+
   response.json({});
-};
-
-export const addAvailableGamePlatform = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
-  const availableGamePlatformObj = request.body;
-
-  const availableGamePlatform = await model.AvailableGamePlatform.create(availableGamePlatformObj);
-  response.json(availableGamePlatform);
 };
 
 export const addMyGamePlatform = async (request: Record<string, any>, response: Record<string, any>): Promise<void> => {
   const myGamePlatformObj = request.body;
 
   const myGamePlatform = await model.MyGamePlatform.create(myGamePlatformObj);
-  response.json(myGamePlatform);
+
+  const msg = {
+    myPlatform: myGamePlatform
+  };
+
+  socketServer.emitToPerson(myGamePlatform.person_id, 'my_game_added', msg);
+
+  response.json({msg: 'Success!'});
 };

@@ -1,36 +1,26 @@
 /* eslint-disable @typescript-eslint/naming-convention, no-underscore-dangle, id-blacklist, id-match */
-import {DataObject} from '../DataObject/DataObject';
-import {AvailableGamePlatform} from './AvailableGamePlatform';
-import {Person} from './Person';
+
 import {GamePlatform} from './GamePlatform';
 
-export class MyGlobalPlatform extends DataObject {
-
-  game_platform_id = this.registerIntegerField('game_platform_id', true);
-  platform_name = this.registerStringField('platform_name', true);
-  rank = this.registerIntegerField('rank', true);
-  person_id = this.registerIntegerField('person_id', true);
-
-  constructor(private gamePlatform: GamePlatform) {
-    super();
-    this.platform_name.value = gamePlatform.full_name.value;
-    this.game_platform_id.value = gamePlatform.id.value;
+export class MyGlobalPlatform {
+  constructor(public data: MyGlobalPlatformData,
+              public platform: GamePlatform) {
   }
 
-  get platform(): GamePlatform {
-    return this.gamePlatform;
+  get id(): number {
+    return this.data.id;
   }
 
-  initializedFromJSON(jsonObj: any): this {
-    super.initializedFromJSON(jsonObj);
-    if (!this.platform_name.value) {
-      this.platform_name.initializeValue(this.gamePlatform.full_name.value);
-    }
-    return this;
+  get rank(): number {
+    return this.data.rank;
   }
+}
 
-  getApiMethod(): string {
-    return 'myGlobalPlatforms';
-  }
-
+export interface MyGlobalPlatformData {
+  id: number;
+  game_platform_id: number;
+  platform_name: string;
+  rank: number;
+  person_id: number;
+  date_added: Date;
 }
