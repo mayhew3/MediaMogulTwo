@@ -2,7 +2,7 @@ import {GamePlatform} from './GamePlatform';
 import * as _ from 'underscore';
 import {AvailableGamePlatform} from './AvailableGamePlatform';
 import {MyGamePlatform} from './MyGamePlatform';
-import fast_sort from 'fast-sort';
+import { inPlaceSort } from 'fast-sort';
 import {GameData} from '../ModelData/GameData';
 import {GameplaySession} from './GameplaySession';
 
@@ -171,7 +171,7 @@ export class Game {
       if (!!manualPreferred) {
         return manualPreferred;
       } else {
-        fast_sort(myPlatforms)
+        inPlaceSort(myPlatforms)
           .asc(myPlatform => myPlatform.platform.myGlobalPlatform.rank);
         return myPlatforms[0];
       }

@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Game} from '../../../interfaces/Model/Game';
-import fast_sort from 'fast-sort';
+import { inPlaceSort } from 'fast-sort';
 import * as _ from 'underscore';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {GameService} from '../../../services/game.service';
@@ -75,14 +75,14 @@ export class GameListComponent implements OnInit{
     const isAscending = OrderingDirection[this.selectedOrdering.direction] === OrderingDirection.asc;
     if (isAscending) {
       // noinspection TypeScriptValidateJSTypes
-      fast_sort(this.filteredGames)
+      inPlaceSort(this.filteredGames)
         .by([
           {asc: this.selectedOrdering.sortValue},
           {asc: game => game.title}
         ]);
     } else {
       // noinspection TypeScriptValidateJSTypes
-      fast_sort(this.filteredGames)
+      inPlaceSort(this.filteredGames)
         .by([
           {desc: this.selectedOrdering.sortValue},
           {asc: game => game.title}

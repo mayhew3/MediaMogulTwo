@@ -4,7 +4,7 @@ import {GamePlatform, GamePlatformData} from '../interfaces/Model/GamePlatform';
 import {HttpClient} from '@angular/common/http';
 import {filter, first, map} from 'rxjs/operators';
 import _ from 'underscore';
-import fast_sort from 'fast-sort';
+import { inPlaceSort } from 'fast-sort';
 import {PersonService} from './person.service';
 import {MyGlobalPlatform} from '../interfaces/Model/MyGlobalPlatform';
 import {Game} from '../interfaces/Model/Game';
@@ -40,7 +40,7 @@ export class PlatformService {
     return this.platforms.pipe(
       map((platforms: GamePlatform[]) => {
         const filtered: GamePlatform[] = _.filter(platforms, platform => !!platform.myGlobalPlatform);
-        fast_sort(filtered)
+        inPlaceSort(filtered)
           .asc(platform => platform.myGlobalPlatform.rank);
         return filtered;
       })
@@ -64,7 +64,7 @@ export class PlatformService {
           if (!!manualPreferred) {
             return manualPreferred;
           } else {
-            fast_sort(myPlatforms)
+            inPlaceSort(myPlatforms)
               .asc(myPlatform => myPlatform.platform.myGlobalPlatform.rank);
             return myPlatforms[0];
           }

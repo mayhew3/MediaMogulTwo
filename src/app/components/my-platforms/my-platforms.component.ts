@@ -6,7 +6,7 @@ import * as _ from 'underscore';
 import {MyGlobalPlatform} from '../../interfaces/Model/MyGlobalPlatform';
 import {GameService} from '../../services/game.service';
 import {Game} from '../../interfaces/Model/Game';
-import fast_sort from 'fast-sort';
+import { inPlaceSort } from 'fast-sort';
 
 @Component({
   selector: 'mm-my-platforms',
@@ -32,7 +32,7 @@ export class MyPlatformsComponent implements OnInit {
           this.myPlatforms.push(new PlatformRank(platform.myGlobalPlatform, platform.myGlobalPlatform.rank, platform.myGlobalPlatform.rank));
         }
       });
-      fast_sort(this.myPlatforms).asc(p => p.rank);
+      inPlaceSort(this.myPlatforms).asc(p => p.rank);
       this.gameService.games.subscribe(games => {
         ArrayUtil.refreshArray(this.allGames, games);
       });
