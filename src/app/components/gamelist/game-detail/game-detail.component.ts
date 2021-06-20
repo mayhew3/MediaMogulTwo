@@ -13,7 +13,7 @@ import {GameTime} from '../../../interfaces/Utility/GameTime';
 import {PlaytimePopupComponent} from '../playtime-popup/playtime-popup.component';
 import {GameplaySession} from '../../../interfaces/Model/GameplaySession';
 import {GameplaySessionService} from '../../../services/gameplay.session.service';
-import fast_sort from 'fast-sort';
+import { inPlaceSort } from 'fast-sort';
 import {AvailableGamePlatform} from '../../../interfaces/Model/AvailableGamePlatform';
 import {Store} from '@ngxs/store';
 import {SocketService} from '../../../services/socket.service';
@@ -153,7 +153,7 @@ export class GameDetailComponent implements OnInit {
   }
 
   sortSessions(): void {
-    fast_sort(this.gameplaySessions)
+    inPlaceSort(this.gameplaySessions)
       .desc(session => session.start_time);
   }
 
