@@ -1,13 +1,13 @@
 <div class="card">
 
   <div class="card-header">
-    <div class="row d-flex justify-content-between">
+    <div class="d-flex flex-row justify-content-between">
       <div>
         <h1>{{title}}</h1>
       </div>
-      <div class="d-flex justify-content-end">
+      <div>
 
-        <form class="form-inline" *ngIf="showOrderingDropdown()">
+        <form class="d-inline-flex" *ngIf="showOrderingDropdown()">
 
           <div ngbDropdown
                *ngFor="let filter of nailedDownFilters"

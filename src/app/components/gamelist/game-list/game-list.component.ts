@@ -22,7 +22,7 @@ export class GameListComponent implements OnInit{
   @Input() baseFilter: GameFilter;
   @Input() changeableFilters: GameFilterWithOptions[];
   @Input() orderings: GameOrdering[];
-  nailedDownFilters: GameFilter[];
+  nailedDownFilters: GameFilterWithOptions[];
   nailedDownOrderings: GameOrdering[];
   selectedOrdering: GameOrdering;
   allGames: Game[] = [];
@@ -100,7 +100,7 @@ export class GameListComponent implements OnInit{
   }
 
   private getAllFilters(): GameFilter[] {
-    const allFilters = ArrayUtil.cloneArray(this.nailedDownFilters);
+    const allFilters: GameFilter[] = ArrayUtil.cloneArray(this.nailedDownFilters);
     if (!!this.baseFilter) {
       allFilters.push(this.baseFilter);
     }
