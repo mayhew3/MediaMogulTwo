@@ -35,9 +35,9 @@
               <!--suppress HtmlFormInputWithoutLabel -->
               <input type="text"
                      name="gameTitle"
-                     class="form-control darkInput"
+                     class="form-control darkInput input-group-text"
                      [(ngModel)]="changedGameFields.title"/>
-              <div class="input-group-append">
+              <div>
                 <button class="btn btn-secondary"
                         (click)="toggleTitleEdit()"
                         type="button">Cancel</button>
@@ -103,7 +103,7 @@
                               </div>
 
                               <!--FINISHED-->
-                              <div class="form-group col">
+                              <div class="mb-1 col">
                                 <label class="col-form-label col-form-label-sm" for="finished">Finished</label><br>
                                 <mm-big-checkbox [value]="finished"
                                                  id="finished"
@@ -269,10 +269,10 @@
 
 
         <!-- PLATFORM-AGNOSTIC FIELDS -->
-        <div class="form-row" *ngIf="titleEditMode">
+        <div class="row" *ngIf="titleEditMode">
 
           <!--METACRITIC HINT-->
-          <div class="form-group col-4">
+          <div class="mb-1 col-4">
             <label class="control-label" for="metacriticHint">Metacritic Hint</label>
             <input type="text"
                    id="metacriticHint"
@@ -282,7 +282,7 @@
           </div>
 
           <!--NATURAL END-->
-          <div class="form-group col-4">
+          <div class="mb-1 col-4">
             <div class="custom-control custom-switch">
               <label for="naturalEnd">Natural End</label><br>
               <mm-big-checkbox id="naturalEnd"
@@ -292,7 +292,7 @@
           </div>
 
           <!--HOWLONG-->
-          <div class="form-group col-4">
+          <div class="mb-1 col-4">
             <label class="control-label" for="howlong">Howlong ID</label>
             <input type="number"
                    id="howlong"
@@ -302,7 +302,7 @@
           </div>
 
           <!--GIANTBOMB-->
-          <div class="form-group col-4">
+          <div class="mb-1 col-4">
             <label class="control-label" for="giantbomb">GiantBomb ID</label>
             <input type="number"
                    id="giantbomb"
