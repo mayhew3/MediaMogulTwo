@@ -19,7 +19,7 @@
 
 .progress-text {
   color: white;
-  position: absolute;
+  position: relative;
   display: block;
   left: 46%; /* just in case calc is unavailable in a browser */
 }
